@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "utc": "2026-11-25T22:34:53.638081+00:00",
+  "baseline_file": "KALIBATAKU_STATIC_1.1.0_UIUX_SOURCE_DIST_BANK_EVIDENCE.zip",
+  "baseline_sha256": "23e5d826e00bf34c9f8b31e0acf938a133711c1d243623f2fc38274cef21841f",
+  "public_bank_files_identical": 4677,
+  "public_bank_tree_sha256": "a3db1e86d6f10ac9f389d479a4d5d6ab28ffc2fe8c8e3286d0de222979c67866",
+  "added": 0,
+  "removed": 0,
+  "modified": 0
+}

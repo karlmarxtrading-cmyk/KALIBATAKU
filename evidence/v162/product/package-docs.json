@@ -1,0 +1,94 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "package-docs",
+  "build": {
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "f630b3dc6aa6b5a5"
+  },
+  "started": "2026-11-28T18:49:23.803877+00:00",
+  "finished": "2026-11-28T18:49:23.806339+00:00",
+  "checks": [
+    {
+      "id": "guide-start",
+      "status": "PASS",
+      "expected": "Operator material includes required topics and local links resolve.",
+      "actual": {
+        "path": "00_MULAI_DI_SINI.txt",
+        "sha256": "856ecf208a65ee1be20db83ce0e421cd71ef23a6e88a6ede0eb229b7cbf45316",
+        "missing_topics": [],
+        "missing_links": []
+      }
+    },
+    {
+      "id": "guide-student",
+      "status": "PASS",
+      "expected": "Operator material includes required topics and local links resolve.",
+      "actual": {
+        "path": "docs/PANDUAN_SISWA.md",
+        "sha256": "4b90ceb5000f3658ed23a8b5dc85ea18a40013dbe8e5e19efa3c10d8b4d73ad1",
+        "missing_topics": [],
+        "missing_links": []
+      }
+    },
+    {
+      "id": "guide-teacher",
+      "status": "PASS",
+      "expected": "Operator material includes required topics and local links resolve.",
+      "actual": {
+        "path": "docs/PANDUAN_GURU.md",
+        "sha256": "4fa3e68038fdb690347dc5e9c6e3cd50c47f834b055764983cc04364b5b52f30",
+        "missing_topics": [],
+        "missing_links": []
+      }
+    },
+    {
+      "id": "guide-deploy",
+      "status": "PASS",
+      "expected": "Operator material includes required topics and local links resolve.",
+      "actual": {
+        "path": "docs/DEPLOY.md",
+        "sha256": "6d2ed961c491add737c65da389a40c10baf493ba2dcb9ab1c87d1090b4bf09e8",
+        "missing_topics": [],
+        "missing_links": []
+      }
+    },
+    {
+      "id": "guide-recovery",
+      "status": "PASS",
+      "expected": "Operator material includes required topics and local links resolve.",
+      "actual": {
+        "path": "docs/PANDUAN_CADANGAN_OFFLINE.md",
+        "sha256": "528b3a10f3d622a25db5c3a433de137100fe482b49965399445ee8c6dc317792",
+        "missing_topics": [],
+        "missing_links": []
+      }
+    },
+    {
+      "id": "guide-support",
+      "status": "PASS",
+      "expected": "Operator material includes required topics and local links resolve.",
+      "actual": {
+        "path": "KNOWN_LIMITATIONS.md",
+        "sha256": "493593da25a8ee18b9a4a8b9b860dcefe62c7c4a18f8b14cdf35bf9d6c5038df",
+        "missing_topics": [],
+        "missing_links": []
+      }
+    },
+    {
+      "id": "guide-changelog",
+      "status": "PASS",
+      "expected": "Operator material includes required topics and local links resolve.",
+      "actual": {
+        "path": "CHANGELOG_1.6.2.md",
+        "sha256": "265f3f0d64c62ce523261b075f33ca114bfd59bafcc25e21987b56ae3b42e908",
+        "missing_topics": [],
+        "missing_links": []
+      }
+    }
+  ],
+  "assertions": 7,
+  "status": "PASS",
+  "scope": "Local deterministic package and browser checks; synthetic profiles."
+}

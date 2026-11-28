@@ -1,0 +1,43 @@
+{
+  "diagnostic_only": true,
+  "build": {
+    "dist_tree_sha256": "00e3ce3b4dc1fc76cc60b2dd48b51543970d342cbdd7b06c36cecf4fc3255147",
+    "offline_release": "83fef50a05e52452",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "26813c26b7884587af4dec071dce2f88a0a4835336bd763f37922dff564d2393"
+  },
+  "original_run": {
+    "suite": "offline-capability-firefox",
+    "status": "FAIL",
+    "cases": 10,
+    "failed": [
+      "map"
+    ],
+    "started": "2026-11-28T17:14:13.745545+00:00",
+    "finished": "2026-11-28T17:15:28.893115+00:00",
+    "sha256": "6e9bab69bc89c145ead712f1a1b943414874a4162ac130e9ee47df52b0531fcd"
+  },
+  "map_retry_with_grade_instrumentation": {
+    "started": "2026-11-28T17:17:41.987913+00:00",
+    "finished": "2026-11-28T17:18:48.107373+00:00",
+    "engine": "firefox",
+    "version": "153.0",
+    "cases": 6,
+    "pass": 6,
+    "fail": 0,
+    "log_sha256": "49ac9c53a5ee19e03086904c769e19cb843fcdb445381a3c660a3243e1881da9"
+  },
+  "map_retry_with_passive_listeners_only": {
+    "started": "2026-11-28T17:18:43.883696+00:00",
+    "finished": "2026-11-28T17:20:28.986871+00:00",
+    "engine": "firefox",
+    "version": "153.0",
+    "cases": 10,
+    "pass": 10,
+    "fail": 0,
+    "log_sha256": "72a97aaaf7c54a1edf54d1d9c9edcb94a4ea5b1ea5eecea1e6a446d2b07d2327"
+  },
+  "test_boundary": "Diagnosis only and separate from acceptance. Neither rerun modifies the 14,000 ms wait or retries a step inside a case.",
+  "isolation_review": "A separate checkout per suite group, a fresh Playwright BrowserContext per case, loopback port 0 per test origin and separate evidence filenames preclude sharing a local storage/cache namespace across workers. The processes share host CPU, memory, filesystem and scheduling. The original map receipt has no event trace or current index, so timing contention and the missed feedback have no established causal link."
+}

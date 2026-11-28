@@ -1,0 +1,4196 @@
+{
+  "suite": "reflow-ux",
+  "utc": "2026-11-28T04:16:28.294Z",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "checks": [
+    {
+      "id": "reflow//id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//id/light/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//id/light/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//id/light/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//id/light/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//id/light/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//id/light/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//id/light/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//id/light/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/id/light/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/curriculum/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/curriculum/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/curriculum?grade=1/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/curriculum?grade=1/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/id/light/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/session/new?grade=1&level=1&op=ADD/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/session/new?grade=1&level=1&op=ADD/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/history/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/history/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/progress/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/progress/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/profiles/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/profiles/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/settings/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/settings/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/offline/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/offline/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/id/light/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/id/light/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/student/demo-04/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/student/demo-04/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/assignments/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/assignments/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/admin/id/light/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/admin/id/light/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow//en/dark/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/start/en/dark/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/curriculum/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/curriculum/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/curriculum?grade=1/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/curriculum?grade=1/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/packs?grade=1&level=1&op=ADD/en/dark/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/session/new?grade=1&level=1&op=ADD/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/session/new?grade=1&level=1&op=ADD/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/history/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/history/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/progress/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/progress/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/profiles/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/profiles/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/settings/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/settings/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/offline/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/offline/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/reports?source=local_practice/en/dark/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/360/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 360,
+        "scroll": 360,
+        "visible": 360,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/390/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 390,
+        "scroll": 390,
+        "visible": 390,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/568/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 568,
+        "scroll": 568,
+        "visible": 568,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/768/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 768,
+        "scroll": 768,
+        "visible": 768,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/1024/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1024,
+        "scroll": 1024,
+        "visible": 1024,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/1366/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1366,
+        "scroll": 1366,
+        "visible": 1366,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/1440/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 1440,
+        "scroll": 1440,
+        "visible": 1440,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/teacher/en/dark/2560/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 2560,
+        "scroll": 2560,
+        "visible": 2560,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/student/demo-04/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/student/demo-04/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/assignments/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/assignments/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/admin/en/dark/320/100",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    },
+    {
+      "id": "reflow/demo/admin/en/dark/320/200",
+      "status": "PASS",
+      "expected": "CSS viewport target and no page overflow",
+      "actual": {
+        "actualWidth": 320,
+        "scroll": 320,
+        "visible": 320,
+        "overflow": []
+      }
+    }
+  ],
+  "runtime": {
+    "release": "137cc1a9b76ed428",
+    "bootstrap": "c0f2a6f05c5005335a61c4f839af852715f5cd4ff4bc26cbb50768c028a21781",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "samples": [
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 155,
+      "visibleControls": 18
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "curriculum",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 189,
+      "visibleControls": 33
+    },
+    {
+      "page": "curriculum",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 189,
+      "visibleControls": 33
+    },
+    {
+      "page": "curriculum?grade=1",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 189,
+      "visibleControls": 33
+    },
+    {
+      "page": "curriculum?grade=1",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 189,
+      "visibleControls": 33
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 163,
+      "visibleControls": 22
+    },
+    {
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Siapkan latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 181,
+      "visibleControls": 19
+    },
+    {
+      "page": "history",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Riwayat latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 117,
+      "visibleControls": 17
+    },
+    {
+      "page": "history",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Riwayat latihan"
+      ],
+      "overflowElements": [],
+      "domCount": 117,
+      "visibleControls": 17
+    },
+    {
+      "page": "progress",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Progres belajarmu"
+      ],
+      "overflowElements": [],
+      "domCount": 147,
+      "visibleControls": 21
+    },
+    {
+      "page": "progress",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Progres belajarmu"
+      ],
+      "overflowElements": [],
+      "domCount": 147,
+      "visibleControls": 21
+    },
+    {
+      "page": "profiles",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Profil dan data"
+      ],
+      "overflowElements": [],
+      "domCount": 130,
+      "visibleControls": 24
+    },
+    {
+      "page": "profiles",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Profil dan data"
+      ],
+      "overflowElements": [],
+      "domCount": 130,
+      "visibleControls": 24
+    },
+    {
+      "page": "settings",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Pengaturan"
+      ],
+      "overflowElements": [],
+      "domCount": 192,
+      "visibleControls": 31
+    },
+    {
+      "page": "settings",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Pengaturan"
+      ],
+      "overflowElements": [],
+      "domCount": 192,
+      "visibleControls": 31
+    },
+    {
+      "page": "offline",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Paket offline"
+      ],
+      "overflowElements": [],
+      "domCount": 100,
+      "visibleControls": 16
+    },
+    {
+      "page": "offline",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Paket offline"
+      ],
+      "overflowElements": [],
+      "domCount": 100,
+      "visibleControls": 16
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "id",
+      "theme": "light",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/student/demo-04",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Demo 04"
+      ],
+      "overflowElements": [],
+      "domCount": 244,
+      "visibleControls": 22
+    },
+    {
+      "page": "demo/student/demo-04",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Demo 04"
+      ],
+      "overflowElements": [],
+      "domCount": 244,
+      "visibleControls": 22
+    },
+    {
+      "page": "demo/assignments",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Penugasan"
+      ],
+      "overflowElements": [],
+      "domCount": 160,
+      "visibleControls": 21
+    },
+    {
+      "page": "demo/assignments",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Penugasan"
+      ],
+      "overflowElements": [],
+      "domCount": 160,
+      "visibleControls": 21
+    },
+    {
+      "page": "demo/admin",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Administrasi"
+      ],
+      "overflowElements": [],
+      "domCount": 260,
+      "visibleControls": 14
+    },
+    {
+      "page": "demo/admin",
+      "lang": "id",
+      "theme": "light",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Administrasi"
+      ],
+      "overflowElements": [],
+      "domCount": 260,
+      "visibleControls": 14
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 157,
+      "visibleControls": 18
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "curriculum",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 191,
+      "visibleControls": 33
+    },
+    {
+      "page": "curriculum",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 191,
+      "visibleControls": 33
+    },
+    {
+      "page": "curriculum?grade=1",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 191,
+      "visibleControls": 33
+    },
+    {
+      "page": "curriculum?grade=1",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 191,
+      "visibleControls": 33
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 165,
+      "visibleControls": 22
+    },
+    {
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 183,
+      "visibleControls": 19
+    },
+    {
+      "page": "history",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Practice history"
+      ],
+      "overflowElements": [],
+      "domCount": 118,
+      "visibleControls": 17
+    },
+    {
+      "page": "history",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Practice history"
+      ],
+      "overflowElements": [],
+      "domCount": 118,
+      "visibleControls": 17
+    },
+    {
+      "page": "progress",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Your learning progress"
+      ],
+      "overflowElements": [],
+      "domCount": 148,
+      "visibleControls": 21
+    },
+    {
+      "page": "progress",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Your learning progress"
+      ],
+      "overflowElements": [],
+      "domCount": 148,
+      "visibleControls": 21
+    },
+    {
+      "page": "profiles",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Profiles and data"
+      ],
+      "overflowElements": [],
+      "domCount": 131,
+      "visibleControls": 24
+    },
+    {
+      "page": "profiles",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Profiles and data"
+      ],
+      "overflowElements": [],
+      "domCount": 131,
+      "visibleControls": 24
+    },
+    {
+      "page": "settings",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Settings"
+      ],
+      "overflowElements": [],
+      "domCount": 193,
+      "visibleControls": 31
+    },
+    {
+      "page": "settings",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Settings"
+      ],
+      "overflowElements": [],
+      "domCount": 193,
+      "visibleControls": 31
+    },
+    {
+      "page": "offline",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Offline packs"
+      ],
+      "overflowElements": [],
+      "domCount": 101,
+      "visibleControls": 16
+    },
+    {
+      "page": "offline",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Offline packs"
+      ],
+      "overflowElements": [],
+      "domCount": 101,
+      "visibleControls": 16
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports?source=local_practice",
+      "lang": "en",
+      "theme": "dark",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 246,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 360,
+      "height": 800,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 360,
+      "viewport": 360,
+      "scroll": 360,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 390,
+      "height": 844,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 390,
+      "viewport": 390,
+      "scroll": 390,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 568,
+      "height": 320,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 568,
+      "viewport": 568,
+      "scroll": 568,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 768,
+      "height": 1024,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 768,
+      "viewport": 768,
+      "scroll": 768,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1024,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1366,
+      "height": 768,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1366,
+      "viewport": 1366,
+      "scroll": 1366,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 1440,
+      "height": 900,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "width": 2560,
+      "height": 1080,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 248,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/student/demo-04",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Demo 04"
+      ],
+      "overflowElements": [],
+      "domCount": 244,
+      "visibleControls": 22
+    },
+    {
+      "page": "demo/student/demo-04",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Demo 04"
+      ],
+      "overflowElements": [],
+      "domCount": 244,
+      "visibleControls": 22
+    },
+    {
+      "page": "demo/assignments",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Assignments"
+      ],
+      "overflowElements": [],
+      "domCount": 160,
+      "visibleControls": 21
+    },
+    {
+      "page": "demo/assignments",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Assignments"
+      ],
+      "overflowElements": [],
+      "domCount": 160,
+      "visibleControls": 21
+    },
+    {
+      "page": "demo/admin",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS viewport on inert DOM clone using production CSS",
+      "zoom": 100,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Administration"
+      ],
+      "overflowElements": [],
+      "domCount": 260,
+      "visibleControls": 14
+    },
+    {
+      "page": "demo/admin",
+      "lang": "en",
+      "theme": "dark",
+      "width": 320,
+      "height": 568,
+      "method": "exact CSS clone; root text ×2",
+      "zoom": 200,
+      "innerWidth": 320,
+      "viewport": 320,
+      "scroll": 320,
+      "h1": [
+        "Administration"
+      ],
+      "overflowElements": [],
+      "domCount": 260,
+      "visibleControls": 14
+    }
+  ],
+  "runtime_after": {
+    "release": "137cc1a9b76ed428",
+    "bootstrap": "c0f2a6f05c5005335a61c4f839af852715f5cd4ff4bc26cbb50768c028a21781",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "finished_utc": "2026-11-28T04:17:36.579Z"
+}

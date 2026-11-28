@@ -1,0 +1,119 @@
+{
+  "schema": "kalibataku-external-receipt/1",
+  "receipt_id": "REL-03-",
+  "criterion": "REL-03",
+  "phase": "WAJIB",
+  "template_only": true,
+  "test_only": false,
+  "action": "record",
+  "result": null,
+  "previous": [],
+  "change_reason": "",
+  "test_event_id": "",
+  "build": {
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "offline_release": "a2f40449c4738fe6",
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "protocol_reference": "",
+  "started_at_utc": "",
+  "finished_at_utc": "",
+  "operator": {
+    "actor_id": "",
+    "role": "hosting-operator",
+    "statement": "",
+    "at_utc": ""
+  },
+  "reviewer": {
+    "actor_id": "",
+    "role": "reviewer",
+    "statement": "",
+    "at_utc": "",
+    "decision": null
+  },
+  "scenarios": [
+    {
+      "case_id": "device-1",
+      "environment": {
+        "mode": "authorized-deployment",
+        "candidate_url": "",
+        "deployment_id": "",
+        "model": "",
+        "os_version": "",
+        "app_version": ""
+      },
+      "checks": {
+        "install_offline": "",
+        "active_old_tab": "",
+        "draft_on_update": "",
+        "finish_old_session": "",
+        "close_tabs": "",
+        "activate_new_worker": "",
+        "rollback": "",
+        "history_after_rollback": "",
+        "offline_play_after_rollback": ""
+      },
+      "measurements": {
+        "before_deployment": "",
+        "after_deployment": "",
+        "rollback_deployment": "",
+        "before_release": "",
+        "after_release": "",
+        "rollback_release": "",
+        "before_dist_sha256": "",
+        "after_dist_sha256": "",
+        "rollback_dist_sha256": "",
+        "device_alias": ""
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "deployment-record",
+        "device-recording"
+      ]
+    },
+    {
+      "case_id": "device-2",
+      "environment": {
+        "mode": "authorized-deployment",
+        "candidate_url": "",
+        "deployment_id": "",
+        "model": "",
+        "os_version": "",
+        "app_version": ""
+      },
+      "checks": {
+        "install_offline": "",
+        "active_old_tab": "",
+        "draft_on_update": "",
+        "finish_old_session": "",
+        "close_tabs": "",
+        "activate_new_worker": "",
+        "rollback": "",
+        "history_after_rollback": "",
+        "offline_play_after_rollback": ""
+      },
+      "measurements": {
+        "before_deployment": "",
+        "after_deployment": "",
+        "rollback_deployment": "",
+        "before_release": "",
+        "after_release": "",
+        "rollback_release": "",
+        "before_dist_sha256": "",
+        "after_dist_sha256": "",
+        "rollback_dist_sha256": "",
+        "device_alias": ""
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "deployment-record",
+        "device-recording"
+      ]
+    }
+  ],
+  "artifacts": []
+}

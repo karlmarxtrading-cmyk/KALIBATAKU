@@ -1,0 +1,1 @@
+journey-perf-lab: PASS · home 50.5 KiB · player 41.6 KiB · ready median 137 ms · feedback median 28 ms p95 36 ms

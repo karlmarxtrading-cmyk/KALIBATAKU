@@ -1,0 +1,15 @@
+UX-001-VERSION PASS {'app': '1.5.0', 'bank': '1.2.0', 'release': '460c98b682110f7e', 'offline_reload': '1.5.0', 'installed': ['MM-G01-L01-ADD-P001'], 'offline_transport': 'closed H
+UX-002-TIMER PASS {'on_request': 'Sisa waktu 1 menit.', 'silent_6s': True, 'hidden_timer_deadline_running': True}
+UX-002-THRESHOLD PASS ['Sisa waktu 10 detik.']
+UX-003-AUDIO PASS {'native': {'option': True, 'contexts': 1}, 'prefixed': {'option': True, 'contexts': 1}, 'none': {'option': False, 'contexts': 0}}
+UX-004-SETUP PASS {'pace_after_switch': '90', 'count_after_op_switch': '12', 'count_after_grade_switch': 10, 'pack_max': 10}
+UX-006-FEEDBACK PASS {'idea': 'Dengan penyebut 12, pembilangnya 11 dan 10. Hitung 11 + (10) = 21, lalu sederhanakan \n21/12\n.', 'steps': 2, 'ledger': {'first': True, 'final': False
+MATH-001-FALLBACK PASS {'blocked': {'fallback_text': '21 ÷ (3/11)', 'spoken': '21 dibagi buka kurung 3 per 11 tutup kurung', 'recovered': 'svg'}, 'timeout': {'fallback_text': '21 ÷ (3
+TECH-01-BACKUP-UI PASS {'file': 'KALIBATAKU-cadangan-2cd2d461-7320-446c-88bb-d6b1f5c5bc1d-2026-11-28.zip', 'bytes': 1032576, 'parts': 2, 'quota_failure_rows': 0, 'restored': [40, 2080
+TECH-04-CACHE PASS {'held': 'install-in-progress', 'removed': ['kalibataku:/school/math/:shell:aaaaaaaaaaaaaaaa', 'kalibataku:/school/math/:shell:cccccccccccccccc', 'kalibataku:/s
+PREFS-RESET PASS {'lang': 'id', 'theme': 'system', 'textSize': 'regular', 'sound': False, 'reduceMotion': False, 'keypad': True, 'showTimer': True}
+REFLOW-1.3 PASS {'samples': 48, 'max_overflow_px': 0, 'setup_opening_320_xlarge': {'width': 320, 'placeholder_right': 274.8333282470703}}
+browser-v13 firefox PASS 11 assertions [] page_errors 0
+
+[stderr]
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.

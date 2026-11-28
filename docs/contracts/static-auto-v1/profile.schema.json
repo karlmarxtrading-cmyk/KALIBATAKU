@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema",
+    "profile_id",
+    "version",
+    "effective_date",
+    "app_version",
+    "authorization",
+    "scope",
+    "supported",
+    "claim_limits",
+    "source_candidate",
+    "rules",
+    "cannot_waive",
+    "gates"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "minLength": 1
+    },
+    "profile_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "effective_date": {
+      "type": "string",
+      "minLength": 1
+    },
+    "app_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "authorization": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "supported": {
+      "type": "object",
+      "required": [
+        "build",
+        "browsers",
+        "mobile",
+        "deployment_directory"
+      ],
+      "properties": {
+        "build": {
+          "type": "string",
+          "minLength": 1
+        },
+        "browsers": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "mobile": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deployment_directory": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "claim_limits": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "source_candidate": {
+      "type": "object",
+      "required": [
+        "version",
+        "archive_sha256"
+      ],
+      "properties": {
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "archive_sha256": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "rules": {
+      "type": "object",
+      "required": [
+        "package",
+        "deployment",
+        "staging"
+      ],
+      "properties": {
+        "package": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deployment": {
+          "type": "string",
+          "minLength": 1
+        },
+        "staging": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "cannot_waive": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "method",
+          "expected",
+          "historical_refs",
+          "phase",
+          "suites",
+          "applicability"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "method": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expected": {
+            "type": "string",
+            "minLength": 1
+          },
+          "historical_refs": {
+            "type": "string",
+            "minLength": 1
+          },
+          "phase": {
+            "enum": [
+              "PACKAGE",
+              "DEPLOYMENT",
+              "OPTIONAL_COMPATIBILITY",
+              "POST_RELEASE"
+            ]
+          },
+          "suites": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true
+          },
+          "applicability": {
+            "enum": [
+              "REQUIRED",
+              "DEPLOYMENT_ONLY",
+              "OPTIONAL_COMPATIBILITY",
+              "POST_RELEASE"
+            ]
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 26,
+      "maxItems": 26
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,41 @@
+{
+  "runtime": "v24.22.3",
+  "scenarios": [
+    {
+      "name": "whole-route-one-mission-per-eight-days",
+      "status": "PASS",
+      "missions": 1070,
+      "review_missions": 167,
+      "checkpoint_missions": 60,
+      "ready_nodes": 281,
+      "clock_simulated": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "frozen-registry-all-281",
+      "status": "PASS",
+      "nodes": 281
+    },
+    {
+      "name": "old-new-derivation-six-real-history-prefixes",
+      "status": "PASS",
+      "history_sizes": [
+        0,
+        1,
+        5,
+        40,
+        200,
+        1070
+      ]
+    },
+    {
+      "name": "all-281-ready-retained-after-pool-prerequisite-threshold-mutation",
+      "status": "PASS"
+    },
+    {
+      "name": "report-all-281-matches-map-for-long-review-history",
+      "status": "PASS"
+    }
+  ]
+}

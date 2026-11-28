@@ -1,0 +1,95 @@
+{
+  "pdf": {
+    "all_paths": [
+      "math/model.mjs",
+      "player/analytics.mjs",
+      "player/math.mjs",
+      "teacher/document.js",
+      "teacher/export/index.js",
+      "teacher/export/pdf.js",
+      "teacher/export/work.js",
+      "teacher/export/zip.js",
+      "teacher/font/DejaVuSans.ttf",
+      "teacher/font/metrics.json",
+      "teacher/report.js"
+    ],
+    "gzip_bytes": 437293,
+    "additional_after_home": 437293
+  },
+  "docx": {
+    "all_paths": [
+      "math/model.mjs",
+      "player/analytics.mjs",
+      "player/math.mjs",
+      "teacher/document.js",
+      "teacher/export/docx.js",
+      "teacher/export/index.js",
+      "teacher/export/office.js",
+      "teacher/export/work.js",
+      "teacher/export/zip.js",
+      "teacher/report.js"
+    ],
+    "gzip_bytes": 19518,
+    "additional_after_home": 19518
+  },
+  "xlsx": {
+    "all_paths": [
+      "math/model.mjs",
+      "player/analytics.mjs",
+      "player/math.mjs",
+      "teacher/document.js",
+      "teacher/export/index.js",
+      "teacher/export/office.js",
+      "teacher/export/work.js",
+      "teacher/export/xlsx.js",
+      "teacher/export/zip.js",
+      "teacher/report.js"
+    ],
+    "gzip_bytes": 18768,
+    "additional_after_home": 18768
+  },
+  "json": {
+    "all_paths": [
+      "math/model.mjs",
+      "player/analytics.mjs",
+      "player/math.mjs",
+      "teacher/document.js",
+      "teacher/export/index.js",
+      "teacher/export/work.js",
+      "teacher/report.js"
+    ],
+    "gzip_bytes": 16846,
+    "additional_after_home": 16846
+  },
+  "csv": {
+    "all_paths": [
+      "math/model.mjs",
+      "player/analytics.mjs",
+      "player/math.mjs",
+      "teacher/document.js",
+      "teacher/export/csv.js",
+      "teacher/export/index.js",
+      "teacher/export/work.js",
+      "teacher/report.js"
+    ],
+    "gzip_bytes": 17183,
+    "additional_after_home": 17183
+  },
+  "zip": {
+    "all_paths": [
+      "math/model.mjs",
+      "player/analytics.mjs",
+      "player/math.mjs",
+      "teacher/document.js",
+      "teacher/export/index.js",
+      "teacher/export/pdf.js",
+      "teacher/export/work.js",
+      "teacher/export/zip.js",
+      "teacher/font/DejaVuSans.ttf",
+      "teacher/font/metrics.json",
+      "teacher/report.js"
+    ],
+    "gzip_bytes": 437293,
+    "additional_after_home": 437293
+  }
+}

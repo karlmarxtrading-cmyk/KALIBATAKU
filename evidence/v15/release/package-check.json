@@ -1,0 +1,36 @@
+{
+ "status": "PASS",
+ "problems": [],
+ "steps": {
+  "files": 6371,
+  "seal_in_copy": {
+   "exit": 0,
+   "tail": "{\"verified\": \"CRC-32 for every entry, original file SHA-256 and byte count, safe relative paths; no symbolic links\", \"files\": 6371, \"bytes\": 116257141, \"sha256\": \"09d0e5331d680194d50375c3b2519315ba9a6bec967000b805f32471e783d4af\"}\n"
+  },
+  "release_verify": {
+   "exit": 0,
+   "tail": "Verified inventory, distribution, bank sources, release evidence and QA binding\n"
+  },
+  "bank_preservation": {
+   "exit": 0,
+   "tail": "{\"files_before\": 4677, \"files_now\": 4677, \"changed\": 0, \"missing\": 0, \"added\": 0, \"tree_sha256_before\": \"6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43\", \"tree_sha256_now\": \"6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43\", \"package_count\": 4604, \"question_slots\": 177640}\nbank preserved: 4677 files byte-identical\n"
+  },
+  "journey_check": {
+   "exit": 0,
+   "tail": "journey sidecar ok d04820e1932e9e00 177640 placements\n"
+  },
+  "rebuild": {
+   "exit": 0,
+   "dist_before": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+   "dist_after": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+   "identical": true
+  },
+  "guide_references": {
+   "checked": 30,
+   "missing": []
+  }
+ },
+ "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+ "checked_utc": "2026-11-28T09:22:35+00:00",
+ "scope": "Trial ZIP of the payload as it stood before this file and the final inventory were written; the sealed ZIP adds only those."
+}

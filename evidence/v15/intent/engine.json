@@ -1,0 +1,212 @@
+{
+  "suite": "AUD-03 start intent",
+  "method": "Node, real selector, verified package bytes, player, store transactions with memory adapter",
+  "runtime": "v24.22.3",
+  "at": "2026-11-28T09:03:24.132Z",
+  "cases": [
+    {
+      "id": "empty profile",
+      "expected": "choose_start",
+      "actual": "choose_start",
+      "status": "PASS"
+    },
+    {
+      "id": "audit history",
+      "expected": [
+        0,
+        6,
+        "reinforce"
+      ],
+      "actual": [
+        0,
+        6,
+        "reinforce"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "new module reads persisted choice",
+      "expected": [
+        "S-G05-L01",
+        "188269ef-3387-4fb4-bd6e-24a4685f0d2b",
+        1
+      ],
+      "actual": [
+        "S-G05-L01",
+        "188269ef-3387-4fb4-bd6e-24a4685f0d2b",
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "AUD-03 after failed G1 intro",
+      "expected": [
+        "arithmetic.addition.g05.l01",
+        "intro"
+      ],
+      "actual": [
+        "arithmetic.addition.g05.l01",
+        "intro"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "failed preparation preserves intent",
+      "expected": [
+        1,
+        "arithmetic.addition.g05.l01"
+      ],
+      "actual": [
+        1,
+        "arithmetic.addition.g05.l01"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "launch binds persisted intent",
+      "expected": [
+        "188269ef-3387-4fb4-bd6e-24a4685f0d2b",
+        1
+      ],
+      "actual": [
+        "188269ef-3387-4fb4-bd6e-24a4685f0d2b",
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "ongoing first",
+      "expected": [
+        "continue",
+        "ca912f93-0e82-407d-b7a5-060e50c0f799"
+      ],
+      "actual": [
+        "continue",
+        "ca912f93-0e82-407d-b7a5-060e50c0f799"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "same frozen session",
+      "expected": "4d4b5eecc0575d1229aacacae966a6db1e91c42015bf1cec564bd74a74812e78",
+      "actual": "4d4b5eecc0575d1229aacacae966a6db1e91c42015bf1cec564bd74a74812e78",
+      "status": "PASS"
+    },
+    {
+      "id": "deferred stage used after final commit",
+      "expected": "arithmetic.addition.g07.l01",
+      "actual": "arithmetic.addition.g07.l01",
+      "status": "PASS"
+    },
+    {
+      "id": "clock rollback after choosing",
+      "expected": [
+        "arithmetic.addition.g07.l01",
+        "regular",
+        "6cc2864d-443f-412c-980d-e058ad3362ac"
+      ],
+      "actual": [
+        "arithmetic.addition.g07.l01",
+        "regular",
+        "6cc2864d-443f-412c-980d-e058ad3362ac"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "selecting a stage with a ready first skill",
+      "expected": "arithmetic.subtraction.g07.l01",
+      "actual": "arithmetic.subtraction.g07.l01",
+      "status": "PASS"
+    },
+    {
+      "id": "prior counts and answers unchanged",
+      "expected": "4b5ea211788cf7b1bf8122ff5aabfe172731783e5e0f3206fa9af59e96cb000b",
+      "actual": "4b5ea211788cf7b1bf8122ff5aabfe172731783e5e0f3206fa9af59e96cb000b",
+      "status": "PASS"
+    },
+    {
+      "id": "selecting a fully ready stage offers its own review",
+      "expected": [
+        "arithmetic.addition.g07.l01",
+        "review"
+      ],
+      "actual": [
+        "arithmetic.addition.g07.l01",
+        "review"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "profile isolation, before choice",
+      "expected": null,
+      "actual": null,
+      "status": "PASS"
+    },
+    {
+      "id": "legacy preserved",
+      "expected": [
+        "S-G01-L01",
+        0
+      ],
+      "actual": [
+        "S-G01-L01",
+        0
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "three writes with equal clocks",
+      "expected": [
+        1,
+        2,
+        3
+      ],
+      "actual": [
+        1,
+        2,
+        3
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "three equal timestamps",
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "ordered by committed revision above a future-dated legacy choice",
+      "expected": 3,
+      "actual": 3,
+      "status": "PASS"
+    },
+    {
+      "id": "last revision governs recommendation",
+      "expected": "arithmetic.addition.g08.l01",
+      "actual": "arithmetic.addition.g08.l01",
+      "status": "PASS"
+    },
+    {
+      "id": "other profile leaves original choice intact",
+      "expected": "S-G07-L01",
+      "actual": "S-G07-L01",
+      "status": "PASS"
+    },
+    {
+      "id": "JSON actual restore preserves choice and recommendation",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "id": "ZIP actual restore preserves choice and recommendation",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    }
+  ],
+  "tested_release": "460c98b682110f7e",
+  "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+  "source_matches_dist": true,
+  "offline_assets_sha256": "7d05df34af8cbd5c18d00ce310d8f0448c22e1d158527111df595dd3980f0add"
+}

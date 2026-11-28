@@ -1,0 +1,36 @@
+{
+  "node": "v24.22.3",
+  "npm": "11.19.1",
+  "python": "3.12.14",
+  "test_tools_installed": {
+    "jsonschema": "4.26.0",
+    "playwright": "1.62.0",
+    "PyMuPDF": "1.26.6",
+    "python-docx": "1.2.0",
+    "openpyxl": "3.1.5",
+    "fonttools": "4.61.1"
+  },
+  "lockfile_npm_dependencies": 0,
+  "vendored_runtime": {
+    "mathjax": "4.1.3",
+    "fonts": "MathJax-NewCM 4.1.3 embedded SVG glyphs",
+    "hashes": "tools/mathjax-files.json"
+  },
+  "local_fonts": [
+    {
+      "file": "src/assets/noto-Bold.woff",
+      "sha256": "79d2a89310420cd7f3efbf09efef998403e6f6a5b503a8f878ea80d3d5acd267",
+      "license": "src/assets/FONT-LICENSE.txt"
+    },
+    {
+      "file": "src/assets/noto-Regular.woff",
+      "sha256": "675d26770d39bf713c944360741eada3e8c173b501a5bd0c60a2fc4754abc033",
+      "license": "src/assets/FONT-LICENSE.txt"
+    },
+    {
+      "file": "src/teacher/font/DejaVuSans.ttf",
+      "sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+      "license": "src/teacher/font/LICENSE.txt"
+    }
+  ]
+}

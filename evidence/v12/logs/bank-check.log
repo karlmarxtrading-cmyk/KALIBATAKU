@@ -1,0 +1,18 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kalibataku-mental-math@1.2.0 bank:verify
+> python3 tests/bank/verify_bank.py && node tools/audit-bank.mjs
+
+{"packages":4604,"slots":177640,"unique":168142,"independently_checked_steps":386834,"checks":19}
+Grade 1 44 packages; 0 errors
+Grade 2 204 packages; 0 errors
+Grade 3 504 packages; 0 errors
+Grade 4 804 packages; 0 errors
+Grade 5 1204 packages; 0 errors
+Grade 6 1604 packages; 0 errors
+Grade 7 2104 packages; 0 errors
+Grade 8 2604 packages; 0 errors
+Grade 9 3104 packages; 0 errors
+Grade 10 3604 packages; 0 errors
+Grade 11 4104 packages; 0 errors
+Grade 12 4604 packages; 0 errors

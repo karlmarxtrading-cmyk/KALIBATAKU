@@ -1,0 +1,32 @@
+{
+  "scenario": "Install one package through catalog UI; corrupt one cached package byte; compare map, catalog list, offline management and launch",
+  "started": "2026-11-28T10:10:53.586166+00:00",
+  "checks": [],
+  "build": {
+    "app_version": "1.5.0",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "460c98b682110f7e",
+    "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c"
+  },
+  "browser": "153.0",
+  "mutation": {
+    "id": "MM-G01-L01-ADD-P001",
+    "url": "http://127.0.0.1:34963/bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+    "before": 101,
+    "after": 100
+  },
+  "map_state": "Main tanpa internet\n\nSebagian berkas misi hilang atau perlu diperbarui. Simpan misi berikutnya (Penjumlahan · Pasangan bilangan sampai 5) supaya bisa dimainkan, dilanjutkan, dan diselesaikan tanpa internet. Hanya paket misi ini dan cadangannya yang diunduh, bukan seluruh bank soal.\n\nKelola penyimpanan offline",
+  "catalog_row": "+\nPengenalan 001 · Penjumlahan — Pasangan bilangan sampai 5\n10 soal · Latihan · Tersedia offline · Belum pernah dibuka",
+  "catalog_href": "#/session/new?grade=1&level=1&op=ADD&pack=MM-G01-L01-ADD-P001",
+  "offline_management": "Profil dan data\nPaket offline\nPengiriman hasil\nPaket offline\n\nPengenalan 001 · Penjumlahan — Pasangan bilangan sampai 5\n\nPerkiraan unduhan tersisa, termasuk aplikasi dan dependensi: 23,8 KiB.\n\nUkuran isi sebelum kompresi jaringan.\n\nPerbaiki salinan offline\nPaket di perangkat ini\nPengenalan 001 · Penjumlahan — Pasangan bilangan sampai 5\n\nSiap untuk latihan · 12,2 KiB · v1.2.0\n\nBuka latihan\nHapus salinan offline\nPilih paket latihan\n\nMenghapus salinan offline hanya menghapus berkas paket. Riwayat jawaban tetap berada di profil.\n\nYang tersedia tanpa internet\n\nLatihan, tinjauan jawaban, dan riwayat lokal dapat dibuka setelah satu paket siap.\n\nMengunduh materi baru, membuka ruang guru, dan membuat laporan atau ekspor memerlukan koneksi.",
+  "setup": "Ruang latihan\nSiapkan latihan\nPenjumlahan — Pasangan bilangan sampai 5\n\nUbah materi\nMode\n\nLatih satu soal demi satu soal dengan petunjuk dan umpan balik langsung.\n\nJumlah soal\n\nIsi paket belum sesuai dengan katalognya. Coba muat kembali atau pilih paket lain.\n\nCoba lagi\nPaket offline\nRiwayat\nMulai sesi\nAtur latihan\nMateri dan prasyarat",
+  "setup_buttons": [
+    "Coba lagi",
+    "Mulai sesi"
+  ],
+  "launch_disabled": true,
+  "page_errors": [],
+  "finding_confirmed": true,
+  "finished": "2026-11-28T10:11:00.131065+00:00"
+}

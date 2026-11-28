@@ -1,0 +1,1425 @@
+{
+  "scope": "32 proposed typography fixtures; 6 bank examples and 26 synthetic cases. Expected arithmetic computed independently with Python Fraction; no new renderer exists or has passed these tests.",
+  "fixture_count": 32,
+  "expected_arithmetic_status": "COMPUTED_EXACTLY",
+  "rendering_status": "NOT_RUN",
+  "fixtures": [
+    {
+      "label": "integer_control",
+      "origin": "BANK_1.1.0",
+      "source_package": "MM-G01-L01-ADD-P001",
+      "source_question": 1,
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "0",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "5",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        }
+      },
+      "original_neutral_expression": "0 + 5",
+      "target": "Pertahankan nilai, urutan AST, display numerator/denominator dan decimal_places; font/line break/aksesibilitas diuji terpisah.",
+      "fixture_id": "MATH-FX-01",
+      "expected_exact_value": {
+        "numerator": "5",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "fraction_visual",
+      "origin": "BANK_1.1.0",
+      "source_package": "MM-G05-L03-ADD-P001",
+      "source_question": 1,
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "11",
+          "denominator": "12",
+          "display": {
+            "kind": "fraction",
+            "numerator": "11",
+            "denominator": "12"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "5",
+          "denominator": "6",
+          "display": {
+            "kind": "fraction",
+            "numerator": "10",
+            "denominator": "12"
+          }
+        }
+      },
+      "original_neutral_expression": "(11⁄12) + (10⁄12)",
+      "target": "Pertahankan nilai, urutan AST, display numerator/denominator dan decimal_places; font/line break/aksesibilitas diuji terpisah.",
+      "fixture_id": "MATH-FX-02",
+      "expected_exact_value": {
+        "numerator": "7",
+        "denominator": "4"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "decimals",
+      "origin": "BANK_1.1.0",
+      "source_package": "MM-G05-L01-ADD-P001",
+      "source_question": 1,
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "20",
+          "denominator": "1",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 1
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "353",
+          "denominator": "10",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 1
+          }
+        }
+      },
+      "original_neutral_expression": "20.0 + 35.3",
+      "target": "Pertahankan nilai, urutan AST, display numerator/denominator dan decimal_places; font/line break/aksesibilitas diuji terpisah.",
+      "fixture_id": "MATH-FX-03",
+      "expected_exact_value": {
+        "numerator": "553",
+        "denominator": "10"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "negative",
+      "origin": "BANK_1.1.0",
+      "source_package": "MM-G07-L01-ADD-P001",
+      "source_question": 1,
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "-37",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "22",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        }
+      },
+      "original_neutral_expression": "(−37) + 22",
+      "target": "Pertahankan nilai, urutan AST, display numerator/denominator dan decimal_places; font/line break/aksesibilitas diuji terpisah.",
+      "fixture_id": "MATH-FX-04",
+      "expected_exact_value": {
+        "numerator": "-15",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "mixed_visual",
+      "origin": "BANK_1.1.0",
+      "source_package": "MM-G05-L05-ADD-P001",
+      "source_question": 1,
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "72",
+          "denominator": "5",
+          "display": {
+            "kind": "fraction",
+            "numerator": "72",
+            "denominator": "5"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "45881",
+          "denominator": "500",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 3
+          }
+        }
+      },
+      "original_neutral_expression": "(72⁄5) + 91.762",
+      "target": "Pertahankan nilai, urutan AST, display numerator/denominator dan decimal_places; font/line break/aksesibilitas diuji terpisah.",
+      "fixture_id": "MATH-FX-05",
+      "expected_exact_value": {
+        "numerator": "53081",
+        "denominator": "500"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "longest",
+      "origin": "BANK_1.1.0",
+      "source_package": "MM-G12-L03-MIX-P001",
+      "source_question": 14,
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "SUB",
+        "left": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "binary",
+            "operation": "MUL",
+            "left": {
+              "kind": "binary",
+              "operation": "ADD",
+              "left": {
+                "kind": "binary",
+                "operation": "MUL",
+                "left": {
+                  "kind": "rational",
+                  "numerator": "-39",
+                  "denominator": "20",
+                  "display": {
+                    "kind": "fraction",
+                    "numerator": "-39",
+                    "denominator": "20"
+                  }
+                },
+                "right": {
+                  "kind": "rational",
+                  "numerator": "-28",
+                  "denominator": "15",
+                  "display": {
+                    "kind": "fraction",
+                    "numerator": "-28",
+                    "denominator": "15"
+                  }
+                }
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "-1",
+                "denominator": "3",
+                "display": {
+                  "kind": "fraction",
+                  "numerator": "-1",
+                  "denominator": "3"
+                }
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "11",
+              "denominator": "1",
+              "display": {
+                "kind": "integer"
+              }
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1",
+            "display": {
+              "kind": "integer"
+            }
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "2",
+          "display": {
+            "kind": "fraction",
+            "numerator": "1",
+            "denominator": "2"
+          }
+        }
+      },
+      "original_neutral_expression": "(((((−39⁄20) × (−28⁄15)) + (−1⁄3)) × 11) ÷ 2) − (1⁄2)",
+      "target": "Pertahankan nilai, urutan AST, display numerator/denominator dan decimal_places; font/line break/aksesibilitas diuji terpisah.",
+      "fixture_id": "MATH-FX-06",
+      "expected_exact_value": {
+        "numerator": "2653",
+        "denominator": "150"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Perkalian dengan nol",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "MUL",
+        "left": {
+          "kind": "rational",
+          "numerator": "999",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "0",
+          "denominator": "1"
+        }
+      },
+      "target": "Angka nol tampil jelas; tidak hilang karena falsy check.",
+      "fixture_id": "MATH-FX-07",
+      "expected_exact_value": {
+        "numerator": "0",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pembagian bilangan bulat",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "rational",
+          "numerator": "12",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "3",
+          "denominator": "1"
+        }
+      },
+      "target": "Operator pembagian konsisten.",
+      "fixture_id": "MATH-FX-08",
+      "expected_exact_value": {
+        "numerator": "4",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Hasil negatif",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "SUB",
+        "left": {
+          "kind": "rational",
+          "numerator": "2",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "7",
+          "denominator": "1"
+        }
+      },
+      "target": "Kunci minus matematika konsisten; nilai tersimpan tetap -5.",
+      "fixture_id": "MATH-FX-09",
+      "expected_exact_value": {
+        "numerator": "-5",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Kurang bilangan negatif",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "SUB",
+        "left": {
+          "kind": "rational",
+          "numerator": "-3",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "-5",
+          "denominator": "1"
+        }
+      },
+      "target": "Tanda unary dan biner berbeda; kurung diperlukan pada operand negatif.",
+      "fixture_id": "MATH-FX-10",
+      "expected_exact_value": {
+        "numerator": "2",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Perkalian dua negatif",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "MUL",
+        "left": {
+          "kind": "rational",
+          "numerator": "-8",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "-3",
+          "denominator": "1"
+        }
+      },
+      "target": "Minus tetap melekat pada operand, tidak menjadi operator pengurangan.",
+      "fixture_id": "MATH-FX-11",
+      "expected_exact_value": {
+        "numerator": "24",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pembagian dua negatif",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "rational",
+          "numerator": "-21",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "-7",
+          "denominator": "1"
+        }
+      },
+      "target": "Struktur pembagian dan dua tanda negatif terbaca.",
+      "fixture_id": "MATH-FX-12",
+      "expected_exact_value": {
+        "numerator": "3",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pecahan beda penyebut",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "2",
+          "display": {
+            "kind": "fraction",
+            "numerator": "1",
+            "denominator": "2"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "3",
+          "display": {
+            "kind": "fraction",
+            "numerator": "1",
+            "denominator": "3"
+          }
+        }
+      },
+      "target": "Dua garis pecahan sejajar dengan sumbu operator.",
+      "fixture_id": "MATH-FX-13",
+      "expected_exact_value": {
+        "numerator": "5",
+        "denominator": "6"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pengurangan pecahan",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "SUB",
+        "left": {
+          "kind": "rational",
+          "numerator": "3",
+          "denominator": "4",
+          "display": {
+            "kind": "fraction",
+            "numerator": "3",
+            "denominator": "4"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "8",
+          "display": {
+            "kind": "fraction",
+            "numerator": "1",
+            "denominator": "8"
+          }
+        }
+      },
+      "target": "Tidak ada pemenggalan numerator/denominator.",
+      "fixture_id": "MATH-FX-14",
+      "expected_exact_value": {
+        "numerator": "5",
+        "denominator": "8"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Perkalian pecahan",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "MUL",
+        "left": {
+          "kind": "rational",
+          "numerator": "7",
+          "denominator": "9",
+          "display": {
+            "kind": "fraction",
+            "numerator": "7",
+            "denominator": "9"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "3",
+          "denominator": "14",
+          "display": {
+            "kind": "fraction",
+            "numerator": "3",
+            "denominator": "14"
+          }
+        }
+      },
+      "target": "Kunci sederhana tidak mengubah operand soal.",
+      "fixture_id": "MATH-FX-15",
+      "expected_exact_value": {
+        "numerator": "1",
+        "denominator": "6"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pembagian pecahan",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "rational",
+          "numerator": "2",
+          "denominator": "3",
+          "display": {
+            "kind": "fraction",
+            "numerator": "2",
+            "denominator": "3"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "4",
+          "denominator": "5",
+          "display": {
+            "kind": "fraction",
+            "numerator": "4",
+            "denominator": "5"
+          }
+        }
+      },
+      "target": "Dua pecahan dan operator pembagian tidak tercampur dengan garis pecahan.",
+      "fixture_id": "MATH-FX-16",
+      "expected_exact_value": {
+        "numerator": "5",
+        "denominator": "6"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pecahan bertanda negatif",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "-1",
+          "denominator": "2",
+          "display": {
+            "kind": "fraction",
+            "numerator": "-1",
+            "denominator": "2"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "3",
+          "denominator": "4",
+          "display": {
+            "kind": "fraction",
+            "numerator": "3",
+            "denominator": "4"
+          }
+        }
+      },
+      "target": "Tanda negatif menjadi bagian operand.",
+      "fixture_id": "MATH-FX-17",
+      "expected_exact_value": {
+        "numerator": "1",
+        "denominator": "4"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Dua pecahan negatif",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "rational",
+          "numerator": "-3",
+          "denominator": "5",
+          "display": {
+            "kind": "fraction",
+            "numerator": "-3",
+            "denominator": "5"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "-2",
+          "denominator": "7",
+          "display": {
+            "kind": "fraction",
+            "numerator": "-2",
+            "denominator": "7"
+          }
+        }
+      },
+      "target": "Pertahankan tanda dan grouping.",
+      "fixture_id": "MATH-FX-18",
+      "expected_exact_value": {
+        "numerator": "21",
+        "denominator": "10"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Desimal tiga tempat",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "MUL",
+        "left": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "8",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 3
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "8",
+          "denominator": "1"
+        }
+      },
+      "target": "ID0,125; EN0.125; nilai eksak1.",
+      "fixture_id": "MATH-FX-19",
+      "expected_exact_value": {
+        "numerator": "1",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Nol desimal pedagogis",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "6",
+          "denominator": "5",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 2
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "3",
+          "denominator": "10",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 2
+          }
+        }
+      },
+      "target": "Dua tempat desimal tetap terlihat pada soal.",
+      "fixture_id": "MATH-FX-20",
+      "expected_exact_value": {
+        "numerator": "3",
+        "denominator": "2"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Kunci tidak terminasi",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "1",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 1
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "3",
+          "denominator": "1"
+        }
+      },
+      "target": "Kunci1/3 tidak dibulatkan menjadi0.333.",
+      "fixture_id": "MATH-FX-21",
+      "expected_exact_value": {
+        "numerator": "1",
+        "denominator": "3"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Bilangan panjang",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "SUB",
+        "left": {
+          "kind": "rational",
+          "numerator": "1000000",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "1"
+        }
+      },
+      "target": "Tidak memecah operand per karakter atau menambah separator yang tidak didukung input.",
+      "fixture_id": "MATH-FX-22",
+      "expected_exact_value": {
+        "numerator": "999999",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pengurangan grouping kanan",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "SUB",
+        "left": {
+          "kind": "rational",
+          "numerator": "12",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "binary",
+          "operation": "SUB",
+          "left": {
+            "kind": "rational",
+            "numerator": "5",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1"
+          }
+        }
+      },
+      "target": "12−(5−2)=9, jangan hilangkan kurung yang mengubah nilai.",
+      "fixture_id": "MATH-FX-23",
+      "expected_exact_value": {
+        "numerator": "9",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pengurangan grouping kiri",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "SUB",
+        "left": {
+          "kind": "binary",
+          "operation": "SUB",
+          "left": {
+            "kind": "rational",
+            "numerator": "12",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "5",
+            "denominator": "1"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "2",
+          "denominator": "1"
+        }
+      },
+      "target": "(12−5)−2=5; harus berbeda dari fixture sebelumnya.",
+      "fixture_id": "MATH-FX-24",
+      "expected_exact_value": {
+        "numerator": "5",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pembagian grouping kanan",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "rational",
+          "numerator": "24",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "rational",
+            "numerator": "6",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1"
+          }
+        }
+      },
+      "target": "24÷(6÷2)=8; pertahankan grouping.",
+      "fixture_id": "MATH-FX-25",
+      "expected_exact_value": {
+        "numerator": "8",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pembagian grouping kiri",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "rational",
+            "numerator": "24",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "6",
+            "denominator": "1"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "2",
+          "denominator": "1"
+        }
+      },
+      "target": "(24÷6)÷2=2; bukan fixture sebelumnya.",
+      "fixture_id": "MATH-FX-26",
+      "expected_exact_value": {
+        "numerator": "2",
+        "denominator": "1"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pecahan campur dan grouping",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "binary",
+          "operation": "ADD",
+          "left": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "2",
+            "display": {
+              "kind": "fraction",
+              "numerator": "1",
+              "denominator": "2"
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "3",
+            "display": {
+              "kind": "fraction",
+              "numerator": "1",
+              "denominator": "3"
+            }
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "7",
+          "denominator": "6",
+          "display": {
+            "kind": "fraction",
+            "numerator": "7",
+            "denominator": "6"
+          }
+        }
+      },
+      "target": "Kurung mengikuti tinggi pecahan bila ditampilkan dengan operator ÷.",
+      "fixture_id": "MATH-FX-27",
+      "expected_exact_value": {
+        "numerator": "5",
+        "denominator": "7"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pembagian oleh penjumlahan",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "1"
+        },
+        "right": {
+          "kind": "binary",
+          "operation": "ADD",
+          "left": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "3",
+            "display": {
+              "kind": "fraction",
+              "numerator": "1",
+              "denominator": "3"
+            }
+          }
+        }
+      },
+      "target": "Penyebut komposit tidak kehilangan pengelompokan.",
+      "fixture_id": "MATH-FX-28",
+      "expected_exact_value": {
+        "numerator": "3",
+        "denominator": "7"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Rasional melampaui presisi float",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "100000000000000000000000000000001",
+          "denominator": "100",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 2
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "50",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 2
+          }
+        }
+      },
+      "target": "Serializer tidak memakai Number/parseFloat sehingga0.03 tetap eksak.",
+      "fixture_id": "MATH-FX-29",
+      "expected_exact_value": {
+        "numerator": "100000000000000000000000000000003",
+        "denominator": "100"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pecahan belum disederhanakan",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "rational",
+        "numerator": "1",
+        "denominator": "2",
+        "display": {
+          "kind": "fraction",
+          "numerator": "100",
+          "denominator": "200"
+        }
+      },
+      "target": "Nilai1/2 dengan display100/200 harus mempertahankan bentuk soal100/200.",
+      "fixture_id": "MATH-FX-30",
+      "expected_exact_value": {
+        "numerator": "1",
+        "denominator": "2"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Perkalian berantai pecahan",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "MUL",
+        "left": {
+          "kind": "binary",
+          "operation": "MUL",
+          "left": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "2",
+            "display": {
+              "kind": "fraction",
+              "numerator": "1",
+              "denominator": "2"
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "2",
+            "display": {
+              "kind": "fraction",
+              "numerator": "1",
+              "denominator": "2"
+            }
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "2",
+          "display": {
+            "kind": "fraction",
+            "numerator": "1",
+            "denominator": "2"
+          }
+        }
+      },
+      "target": "Pemenggalan hanya batas semantik tanpa hilang operator.",
+      "fixture_id": "MATH-FX-31",
+      "expected_exact_value": {
+        "numerator": "1",
+        "denominator": "8"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    },
+    {
+      "label": "Pecahan ekuivalen dengan desimal",
+      "origin": "SYNTHETIC_QA_NOT_BANK",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "4",
+          "display": {
+            "kind": "fraction",
+            "numerator": "2",
+            "denominator": "8"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "4",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 2
+          }
+        }
+      },
+      "target": "Soal mempertahankan2/8 dan0.25; kunci1/2, boleh ekuivalensi0.5 berlabel.",
+      "fixture_id": "MATH-FX-32",
+      "expected_exact_value": {
+        "numerator": "1",
+        "denominator": "2"
+      },
+      "render_test_status": "NOT_RUN",
+      "locales": [
+        "id",
+        "en"
+      ],
+      "themes": [
+        "light",
+        "dark"
+      ],
+      "semantic_check": "Validate AST structure, leaf display metadata and exact value. Renderer output must preserve operand order and non-associative grouping. Do not rely on screenshot equality alone."
+    }
+  ],
+  "additional_security_cases": [
+    {
+      "input": "Unexpected AST kind or operation",
+      "expected": "Reject before serializer, show recoverable error; no innerHTML execution."
+    },
+    {
+      "input": "Non-numeric numerator or display token containing TeX macro/HTML/URL",
+      "expected": "Reject schema; no arbitrary require, href, htmlClass, style or script reaches renderer."
+    }
+  ],
+  "cross_surface_matrix": [
+    "question",
+    "feedback response",
+    "feedback key",
+    "hint",
+    "worked solution",
+    "session review",
+    "teacher evidence",
+    "family report",
+    "print",
+    "PDF",
+    "DOCX"
+  ]
+}

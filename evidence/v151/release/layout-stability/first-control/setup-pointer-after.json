@@ -1,0 +1,1957 @@
+{
+  "method": "Native Firefox pointer and material changes in fresh browser contexts. Capture listeners and requestAnimationFrame only observe DOM, control, and pointer state. No injected delays or simulated mouse handlers.",
+  "at_utc": "2026-11-28T10:41:03.738155+00:00",
+  "browser": "153.0",
+  "offline_release": "ef0b6798d9633ca8",
+  "offline_manifest_sha256": "a4ec2889dc01be337007054ccad166385c387354f4750c900cfbcc0787ef8bc6",
+  "viewport": [
+    1100,
+    860
+  ],
+  "locale": "id-ID",
+  "status": "PASS",
+  "failures": 0,
+  "fields": [
+    "performance_ms",
+    "event",
+    "target",
+    "form_instance",
+    "summary_center_y_px",
+    "scroll_y_px",
+    "advanced_open",
+    "launch_disabled",
+    "plan_text"
+  ],
+  "runs": [
+    {
+      "visible": true,
+      "history": [
+        [
+          1380,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1382,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1467,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1537,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1559,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1559,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1562,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1563,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 0
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          616,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          627,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          671,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          718,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          729,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          730,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          733,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          733,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 1
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          715,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          720,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          857,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1249,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1288,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1288,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1290,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1292,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 2
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          765,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          773,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          859,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1243,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1266,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1267,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1270,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1270,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 3
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          872,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          883,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          945,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1393,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1446,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1449,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1456,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1456,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 4
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          521,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          532,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          607,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          637,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          652,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          652,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          653,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          654,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 5
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          545,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          555,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          592,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          628,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          652,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          652,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          654,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          654,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 6
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          497,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          510,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          541,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          560,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          575,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          575,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          577,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          578,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 7
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          513,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          517,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          594,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          647,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          677,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          682,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          693,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          694,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 8
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          445,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          453,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          539,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          550,
+          "controller",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          552,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          552,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          556,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          556,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "normal",
+      "i": 9
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          443,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          454,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          561,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          590,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          590,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          594,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          595,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 0
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          673,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          674,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1187,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1213,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1213,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1222,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1223,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 1
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          614,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          619,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          729,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          763,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          764,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          770,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          770,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 2
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          632,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          642,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          729,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          780,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          780,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          782,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          785,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 3
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          437,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          439,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          544,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          577,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          577,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          581,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          582,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 4
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          418,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          425,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          577,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          591,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          591,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          593,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          594,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 5
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          590,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          593,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          736,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          767,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          767,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          769,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          771,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 6
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          561,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          562,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          698,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          731,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          732,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          734,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          735,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 7
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          1009,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1012,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1117,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1155,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1155,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1157,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          1158,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 8
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          398,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          405,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          646,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          734,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          735,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          744,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          744,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "material_changed": {
+        "operation_switched_to": "SUB",
+        "grade_switched_to": 1,
+        "pace": "90",
+        "count": 10,
+        "max": 10
+      },
+      "phase": "no-worker",
+      "i": 9
+    }
+  ]
+}

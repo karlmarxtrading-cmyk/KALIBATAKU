@@ -1,0 +1,36 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "offline-capability-firefox",
+  "scope": "Journey offline installers and map reflow on localhost; desktop browser automation",
+  "started": "2026-11-28T16:57:02.439025+00:00",
+  "finished": "2026-11-28T16:57:10.946353+00:00",
+  "build": {
+    "app_version": "1.6.0",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "6c43a824957f99ed"
+  },
+  "engine": "firefox",
+  "version": "153.0",
+  "status": "PASS",
+  "assertions": 1,
+  "checks": [
+    {
+      "id": "legacy",
+      "status": "PASS",
+      "expected": "Actual map capability matches launch. Complete or repaired material supports fresh offline start, feedback, resume and final commit.",
+      "actual": {
+        "installed": [
+          "MM-G01-L01-ADD-P001"
+        ],
+        "material_repaired": true,
+        "pack_played": "MM-G01-L01-ADD-P001",
+        "items": 6,
+        "retained_after_reload": true,
+        "final_commits": 1,
+        "network_probe_failed": true,
+        "evicted_after_start": false
+      }
+    }
+  ]
+}

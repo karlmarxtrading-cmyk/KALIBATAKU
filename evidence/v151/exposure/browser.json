@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "offline_release": "ef0b6798d9633ca8",
+  "runtime": "Firefox 153.0",
+  "started": "2026-11-28T10:40:05.268496+00:00",
+  "finished": "2026-11-28T10:40:19.745190+00:00",
+  "checks": [
+    {
+      "case": "catalogue variation keeps allocated but unvisited questions available",
+      "selection": {
+        "expected": [
+          "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+          "arithmetic.addition.g01.l01.e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+          "arithmetic.addition.g01.l01.bf41acffebc5762fd65f7e8dae4d8dde40ac0844384514772d7165c88bbf274b",
+          "arithmetic.addition.g01.l01.34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+          "arithmetic.addition.g01.l01.ea1fed301fa17863f9912aa6b895a9301abb37e138b5843a13f1751d75f238ad",
+          "arithmetic.addition.g01.l01.4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+          "arithmetic.addition.g01.l01.1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+          "arithmetic.addition.g01.l01.00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd"
+        ],
+        "actual": [
+          "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+          "arithmetic.addition.g01.l01.e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+          "arithmetic.addition.g01.l01.bf41acffebc5762fd65f7e8dae4d8dde40ac0844384514772d7165c88bbf274b",
+          "arithmetic.addition.g01.l01.34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+          "arithmetic.addition.g01.l01.ea1fed301fa17863f9912aa6b895a9301abb37e138b5843a13f1751d75f238ad",
+          "arithmetic.addition.g01.l01.4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+          "arithmetic.addition.g01.l01.1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+          "arithmetic.addition.g01.l01.00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd"
+        ]
+      }
+    },
+    {
+      "case": "new intro ended on first displayed question after reload",
+      "items": [
+        {
+          "seen": true,
+          "status": "blank",
+          "responses": 0
+        },
+        {
+          "seen": false,
+          "status": "unseen",
+          "responses": 0
+        },
+        {
+          "seen": false,
+          "status": "unseen",
+          "responses": 0
+        },
+        {
+          "seen": false,
+          "status": "unseen",
+          "responses": 0
+        },
+        {
+          "seen": false,
+          "status": "unseen",
+          "responses": 0
+        },
+        {
+          "seen": false,
+          "status": "unseen",
+          "responses": 0
+        }
+      ],
+      "result": "Penjumlahan · Pasangan bilangan sampai 5 · Tahap 1 · Kelas 1 · Level 1 · Pengenalan · 6 soal\n\n0 dari 6 benar pada jawaban pertama tanpa bantuan\nSoal dilihat · 1 / 6\nSoal dijawab · 0 / 6\nJawaban akhir benar · 0 / 6\nSoal dengan petunjuk atau kunci terlihat · 0\nSoal target mandiri · 0 / 4\nXP misi ini · 5 (penanda usaha, bukan nilai)\n\nMisi target mandiri 0/2 · soal unik dilihat 1/12 · strategi dicoba 0/2\n\nMisi penguatan: soal lebih bertahap pada keterampilan yang sama. · Penjumlahan · Pasangan bilangan sampai 5\n\nMisi berikutnya\nTinjau jawaban\nPeta\nBeranda",
+      "map": "Perlu penguatan\nPenjumlahan · Pasangan bilangan sampai 5\n\nMisi target mandiri 0/2 · soal unik dilihat 1/12 · strategi dicoba 0/2\n\nMisi yang disarankan: Misi penguatan: soal lebih bertahap pada keterampilan yang sama.\n\nMain lagi\n· Penjumlahan · Pasangan bilangan sampai 5"
+    },
+    {
+      "case": "restored sparse fixture, two passing missions, subtraction still locked",
+      "map": "Siap dimainkan\nPenjumlahan · Pasangan bilangan sampai 5\n\nMisi target mandiri 2/2 · soal unik dilihat 10/12 · strategi dicoba 2/2\n\nMisi yang disarankan: Coba soal berbeda pada keterampilan ini untuk melengkapi latihanmu.\n\nMain lagi\n· Penjumlahan · Pasangan bilangan sampai 5",
+      "backup_sha256": "ecf8dc820d59eaaacc78cd76638069dd7020e7b79fe6ae53b8870e51b234a3be"
+    }
+  ]
+}

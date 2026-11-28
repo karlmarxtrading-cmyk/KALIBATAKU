@@ -1,0 +1,19 @@
+Error Locator expected to be focused
+Actual value: None
+Error: element(s) not found 
+Call log:
+  - Expect "to_be_focused" with timeout 5000ms
+  - waiting for locator("#kp-answe
+['pointerdown', 0, 'A', '', 487.70001220703125, 0, 431.80000000074506]
+['pointerup', 0, 'A', '', 487.70001220703125, 0, 432.1000000014901]
+['click', 1, 'A', '', 487, 0, 432.1000000014901]
+['pointerdown', 0, 'BUTTON', 'next', 537.1500244140625, 163, 792.5]
+['touchstart', 0, 'BUTTON', 'next', None, 163, 792.7000000011176]
+['pointerup', 0, 'BUTTON', 'next', 537.1500244140625, 163, 792.8000000007451]
+['touchend', 0, 'BUTTON', 'next', None, 163, 793]
+['click', 1, 'BUTTON', 'next', 537, 163, 794.2000000011176]
+['pointerdown', 0, 'BUTTON', 'next', 537.1500244140625, 163, 1027.800000000745]
+['touchstart', 0, 'BUTTON', 'next', None, 163, 1027.800000000745]
+['pointerup', 0, 'BUTTON', 'next', 537.1500244140625, 163, 1028]
+['touchend', 0, 'BUTTON', 'next', None, 163, 1028.1000000014901]
+['click', 2, 'BUTTON', 'next', 537, 163, 1029.4000000003725]

@@ -1,0 +1,40 @@
+﻿id_usulan,area,kriteria,metode,status_redesign
+NAV-01,Beranda,Profil baru mencapai soal pertama dengan satu CTA tanpa filter wajib.,Firefox/Chromium/WebKit dan pilot,BELUM_DIJALANKAN
+NAV-02,Resume,"Profil kembali melanjutkan attempt, indeks, urutan dan draft yang sama.",Browser dan snapshot assertion,BELUM_DIJALANKAN
+NAV-03,Peta,Profil kosong mempunyai tepat satu misi rekomendasi yang ditandai.,DOM dan observasi visual,BELUM_DIJALANKAN
+NAV-04,Peta,Node inactive tidak tampil dalam jalur siswa; metadata guru tetap utuh.,Perbandingan registry dan view,BELUM_DIJALANKAN
+NAV-05,Peta,Semua281 kompetensi aktif tetap dapat dicapai sesuai prasyarat.,Simulasi seluruh route,BELUM_DIJALANKAN
+NAV-06,Katalog,Latihan bebas tetap mengakses semua 4.604 paket; tautan lama tetap valid.,Pemetaan semua paket dan route,BELUM_DIJALANKAN
+NAV-07,Katalog,"Navigasi aktif mencerminkan Latihan bebas, dengan kembali ke Petualangan.",Browser desktop/ponsel,BELUM_DIJALANKAN
+NAV-08,Titik mulai,Pilihan terakhir per profil berlaku setelah sesi aktif selesai.,Kasus ganti awal saat ongoing,BELUM_DIJALANKAN
+UI-01,Mobile,CTA utama peta online terlihat pada 390 × 844 tanpa panel administratif mendahului.,Geometri dan inspeksi,BELUM_DIJALANKAN
+UI-02,Feedback,"Inti hasil, kunci, dan aksi lanjut terjangkau pada 320 × 568 dan390 × 844.",Jawaban benar/salah/ekuivalen; tidak wajib seluruh detail muat,BELUM_DIJALANKAN
+UI-03,Keyboard,"Input, feedback dan aksi aman dengan keyboard Android/iOS terbuka pada dua orientasi.",Perangkat fisik,BELUM_DIJALANKAN
+UI-04,Keyboard,Enter/klik ganda tidak melompati soal atau menduplikasi penilaian.,Keyboard/IME/auto-repeat,BELUM_DIJALANKAN
+UI-05,Aksesibilitas,"Fokus, label, kontras, zoom/reflow dan pesan status memenuhi kriteria yang ditetapkan.",Audit WCAG yang relevan,BELUM_DIJALANKAN
+UI-06,Aksesibilitas,Ujaran matematika dan perubahan keadaan benar pada NVDA/VoiceOver/TalkBack.,Uji ujaran nyata,BELUM_DIJALANKAN
+UI-07,Gerak/suara,Reduced motion dan suara mati tetap memberi semua informasi penting.,Preferensi OS/aplikasi,BELUM_DIJALANKAN
+UI-08,Arena,Timer tidak diwajibkan pada jalur utama; jeda dan keluar aman tetap ada.,Browser dan simpan gagal,BELUM_DIJALANKAN
+PED-01,Readiness,Label minimal benar memakai ceil(rate×jumlah target aktual).,"Kasus target 4, target 6, fallback",BELUM_DIJALANKAN
+PED-02,Readiness,7/8 keseluruhan dan3/4target dijelaskan tanpa salah memberi kelulusan.,Counterexample G3L1,BELUM_DIJALANKAN
+PED-03,Bantuan,Hint/kunci/revisi tetap terpisah dari jawaban pertama mandiri.,Engine+snapshot+ekspor,BELUM_DIJALANKAN
+PED-04,Cakupan,Dilihat/dijawab/benar/strategi dicoba tidak dipertukarkan.,Exposure/restore/peta/laporan,BELUM_DIJALANKAN
+PED-05,Kesulitan,Setiap label kesulitan mempunyai dasar metadata ditelaah; skor seri tidak dipaksa bermakna berbeda.,Reviewer keluarga dan pilot,BELUM_DIJALANKAN
+PED-06,Review,Antrean review menyisipkan latihan lama tanpa menghambat kemajuan tanpa batas.,Clock-controlled test dan pilot,BELUM_DIJALANKAN
+PED-07,Checkpoint,Label sesuai kompetensi dan fungsi; gate baru mempunyai kebijakan berversi.,Kasus0/10 dan hasil penelaahan,BELUM_DIJALANKAN
+PED-08,Evaluasi,Form A/B tetap terpisah dari seluruh jenis misi materi ajar.,Semua kandidat selector,BELUM_DIJALANKAN
+DATA-01,Bank,Checksum 4.677 file bank identik dengan baseline.,Bank preservation,BELUM_DIJALANKAN
+DATA-02,Pemetaan,Setiap paket punya tujuan akses; tidak ada paket tertinggal dalam redesign.,CSV 4.604 pemetaan,BELUM_DIJALANKAN
+DATA-03,Snapshot,Perubahan UI/kebijakan tidak mengubah soal sesi aktif.,Upgrade dengan draft ongoing,BELUM_DIJALANKAN
+DATA-04,Migrasi,"Backup lama, restore besar, profil terpisah dan riwayat tetap lulus.",Contract/archive/browser,BELUM_DIJALANKAN
+DATA-05,Konsistensi,"Beranda,peta,hasil dan5 format laporan konsisten untuk riwayat sama.",Golden fixture dan ekspor,BELUM_DIJALANKAN
+OFF-01,Offline,"Misi berikut dapat disiapkan, dilanjutkan, selesai offline pada paket/dependensi yang tepat.",Browser network off,BELUM_DIJALANKAN
+OFF-02,Offline,Cache hilang/corrupt/update menampilkan perbaikan; tidak ada false ready.,Fault injection,BELUM_DIJALANKAN
+REL-01,Windows,Hash semua pohon sama untuk byte sama pada Windows/Linux.,PurePath tests dan CI native,BELUM_DIJALANKAN
+REL-02,Build,Dua build bersih deterministik dan sealedZIP dapat verify/build/verify ulang.,Reproducible build,BELUM_DIJALANKAN
+REL-03,Konten,394 keluarga ditelaah dan koreksi tercatat; tidak ada klaim review fiktif.,Reviewer manusia,BELUM_DIJALANKAN
+REL-04,Word,Persamaan5 formatekspor diperiksa termasuk Microsoft Word sasaran.,Aplikasi sasaran,BELUM_DIJALANKAN
+REL-05,Pilot,12 siswa dan 3 guru menjalankan protokol; target kegunaan disepakati dan hasil dicatat.,Observasi tugas nyata,BELUM_DIJALANKAN
+REL-06,Domain,"HTTPS,headers,MIME,routingroot/subfolder,update/rollback diuji pada domain.",Preview dan rilis terkendali,BELUM_DIJALANKAN
+REL-07,Keputusan,Semua 70 kriteria wajib yang berlaku pada build baru ditutup dengan bukti build yang benar.,Pemilik rilis,BELUM_DIJALANKAN
+POST-01,Lapangan,p75 performa lapangan diukur setelah pilot sesuai fase register.,Data lapangan,BELUM_DIJALANKAN

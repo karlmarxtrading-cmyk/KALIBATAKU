@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KALIBATAKU release status 1.3",
+  "type": "object",
+  "required": [
+    "artifact_status",
+    "release_id",
+    "app_version",
+    "bank_version",
+    "dist_tree_sha256",
+    "offline_release",
+    "qa_binding",
+    "readiness"
+  ],
+  "properties": {
+    "artifact_status": {
+      "const": "release_verdict"
+    },
+    "release_id": {
+      "type": "string",
+      "pattern": "^kalibataku-static-\\d+\\.\\d+\\.\\d+$"
+    },
+    "app_version": {
+      "type": "string"
+    },
+    "bank_version": {
+      "type": "string"
+    },
+    "dist_tree_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "offline_release": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{16}$"
+    },
+    "qa_binding": {
+      "type": "string"
+    },
+    "readiness": {
+      "type": "object",
+      "required": [
+        "static_application",
+        "ui_ux",
+        "arithmetic_bank",
+        "representation_narrative",
+        "pedagogy_pilot",
+        "bridge_contract",
+        "live_lms",
+        "performance_lab",
+        "field_performance",
+        "live_deployment"
+      ],
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "status",
+          "evidence",
+          "claim_boundary",
+          "blockers"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "PASS",
+              "HOLD",
+              "FAIL",
+              "NOT_PERFORMED",
+              "NOT_RUN",
+              "DEFERRED_BY_SCOPE",
+              "PREVIEW_PASS",
+              "TECHNICAL_PASS_USABILITY_NOT_VALIDATED"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "claim_boundary": {
+            "type": "string",
+            "minLength": 10
+          },
+          "blockers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

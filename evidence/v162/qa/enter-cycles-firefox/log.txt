@@ -1,0 +1,10 @@
+PASS J01 J02 fresh home and optional map recommend same actual mission
+PASS E06 empty and composing input
+PASS E01 E05 pending up-before-commit and no queued action
+PASS E02 E03 E08 held key, wrong answer, secondary detail, assisted revision, saved feedback reload
+PASS E07 E10-desktop aborted write, retry, click check and click next parity, narrow reflow
+PASS E04 E09 one completion, distinct follow-on press, one new attempt, no unintended answer
+Engine firefox 153.0 old ledger 7 new ledger 0
+
+[stderr]
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.

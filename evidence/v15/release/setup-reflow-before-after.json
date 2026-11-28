@@ -1,0 +1,119 @@
+{
+  "viewport_css_px": 320,
+  "text_size": "xlarge (138%)",
+  "route": "session/new?grade=5&level=3&op=ADD&pack=MM-G05-L03-ADD-P001&count=2",
+  "before": {
+    "offline_release": "423e07b2efb0bd55",
+    "engine": "Firefox 153.0",
+    "method": "Measured document and bounding rectangles during opening HTML and after setup submit enabled, document.fonts.ready + one frame.",
+    "observations": [
+      {
+        "lang": "id",
+        "phase": "immediate",
+        "document_scroll_width_css_px": 355,
+        "font_status": "loaded",
+        "setup_submit_disabled": null,
+        "overflowing_elements": [
+          {
+            "el": "DIV.sheet",
+            "left": 22.1,
+            "right": 355.3,
+            "txt": ""
+          },
+          {
+            "el": "SPAN.bone head-bone",
+            "left": 45.2,
+            "right": 332.2,
+            "txt": ""
+          }
+        ]
+      },
+      {
+        "lang": "id",
+        "phase": "settled",
+        "document_scroll_width_css_px": 320,
+        "font_status": "loaded",
+        "setup_submit_disabled": false,
+        "overflowing_elements": []
+      },
+      {
+        "lang": "en",
+        "phase": "immediate",
+        "document_scroll_width_css_px": 355,
+        "font_status": "loaded",
+        "setup_submit_disabled": null,
+        "overflowing_elements": [
+          {
+            "el": "DIV.sheet",
+            "left": 22.1,
+            "right": 355.3,
+            "txt": ""
+          },
+          {
+            "el": "SPAN.bone head-bone",
+            "left": 45.2,
+            "right": 332.2,
+            "txt": ""
+          }
+        ]
+      },
+      {
+        "lang": "en",
+        "phase": "settled",
+        "document_scroll_width_css_px": 320,
+        "font_status": "loaded",
+        "setup_submit_disabled": false,
+        "overflowing_elements": []
+      }
+    ]
+  },
+  "change": "src/assets/base.css, .head-bone width capped at min(13rem,100%).",
+  "after": {
+    "offline_release": "460c98b682110f7e",
+    "method": "Real initial HTML and early font settings with app.mjs blocked, plus 48 settled route/size samples in each browser.",
+    "canonical_qa": [
+      {
+        "engine": "chromium",
+        "version": "151.0.7922.34",
+        "evidence": "evidence/v15/qa/browser-v13-chromium/browser-v13-chromium.json",
+        "sha256": "9d7c9aa5167b1d9fb455b34b1a9957298d57906aa00946f1e289a0f510ab1401",
+        "observed": {
+          "samples": 48,
+          "max_overflow_px": 0,
+          "setup_opening_320_xlarge": {
+            "width": 320,
+            "placeholder_right": 274.84375
+          }
+        }
+      },
+      {
+        "engine": "firefox",
+        "version": "153.0",
+        "evidence": "evidence/v15/qa/browser-v13-firefox/browser-v13-firefox.json",
+        "sha256": "4b1a2a95704fe3fd710aa11c0f7f39661951ef74670d241f4ef8f1b12c6bcdf5",
+        "observed": {
+          "samples": 48,
+          "max_overflow_px": 0,
+          "setup_opening_320_xlarge": {
+            "width": 320,
+            "placeholder_right": 274.8333282470703
+          }
+        }
+      },
+      {
+        "engine": "webkit",
+        "version": "26.5",
+        "evidence": "evidence/v15/qa/browser-v13-webkit/browser-v13-webkit.json",
+        "sha256": "788f612e814aed91370a2799d5ed88033a3b8481dbbda023a5001ea1bfaf5622",
+        "observed": {
+          "samples": 48,
+          "max_overflow_px": 0,
+          "setup_opening_320_xlarge": {
+            "width": 320,
+            "placeholder_right": 274.84375
+          }
+        }
+      }
+    ]
+  }
+}

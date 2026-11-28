@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-28T18:45:17.570842+00:00",
+  "historical_archive_sha256": "37169d1c06edd8216acd3a263282004d893494c74d3dabc6dcb9376e9d7bf198",
+  "unchanged_historical_evidence": 1640,
+  "unchanged_historical_registers": 10,
+  "reference_inventory": "evidence/v162/history-1.6.1/FILE_INVENTORY.json",
+  "procedure": "Compare SHA-256 of every historical evidence file and original top-level historical register against the supplied archive inventory before sealing."
+}

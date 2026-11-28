@@ -1,0 +1,8 @@
+docx-omml PASS
+xlsx-reopen PASS
+csv-reopen PASS
+json-reopen PASS
+pdf-vector-text PASS
+docx-render-layout PASS
+docx-render-equations BLOCKED_ENV
+documents-reopened: BLOCKED_ENV · 7 assertions · 0 failed []

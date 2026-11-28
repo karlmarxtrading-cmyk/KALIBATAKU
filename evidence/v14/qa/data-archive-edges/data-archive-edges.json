@@ -1,0 +1,125 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "data-archive-edges",
+  "scope": "TEK-01 bounded merge and aligned limits; TEK-02 STORED size validation before read (Node memory adapter)",
+  "build": {
+    "offline_release": "137cc1a9b76ed428",
+    "app_version": "1.4.0",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "node": "v22.23.5",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "started": "2026-11-28T04:20:14.854Z",
+  "finished": "2026-11-28T04:20:25.370Z",
+  "assertions": 10,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "roundtrip-small",
+      "status": "PASS",
+      "expected": "3 records restored with identical ids and values",
+      "actual": {
+        "attempts": 0,
+        "events": 0,
+        "records": 3,
+        "parts": 1,
+        "bytes": 827,
+        "max_part_bytes": 387
+      }
+    },
+    {
+      "id": "roundtrip-150000-records",
+      "status": "PASS",
+      "expected": "150,000 records restored; ids, values and counts equal; every part within the reader limit",
+      "actual": {
+        "attempts": 0,
+        "events": 0,
+        "records": 150000,
+        "parts": 2,
+        "bytes": 1513065,
+        "max_part_bytes": 8388726
+      }
+    },
+    {
+      "id": "roundtrip-mixed",
+      "status": "PASS",
+      "expected": "30 attempts, their events and 20,000 records restored identically",
+      "actual": {
+        "attempts": 30,
+        "events": 105,
+        "records": 20000,
+        "parts": 2,
+        "bytes": 225490,
+        "max_part_bytes": 1764756
+      }
+    },
+    {
+      "id": "limits-aligned",
+      "status": "PASS",
+      "expected": "writer checks the same max_rows the reader enforces",
+      "actual": {
+        "max_rows": 2000000,
+        "max_part": 33554432,
+        "part_target": 8388608
+      }
+    },
+    {
+      "id": "tek02-stored-csize-larger-than-size",
+      "status": "PASS",
+      "expected": "rejected with INVALID_ARCHIVE and no body bytes read",
+      "actual": {
+        "code": "INVALID_ARCHIVE",
+        "reads": []
+      }
+    },
+    {
+      "id": "tek02-stored-csize-smaller-than-size",
+      "status": "PASS",
+      "expected": "rejected with INVALID_ARCHIVE and no body bytes read",
+      "actual": {
+        "code": "INVALID_ARCHIVE",
+        "reads": []
+      }
+    },
+    {
+      "id": "tek02-stored-both-over-limit",
+      "status": "PASS",
+      "expected": "rejected with ARCHIVE_TOO_LARGE and no body bytes read",
+      "actual": {
+        "code": "ARCHIVE_TOO_LARGE",
+        "reads": []
+      }
+    },
+    {
+      "id": "tek02-declared-size-over-limit",
+      "status": "PASS",
+      "expected": "rejected with ARCHIVE_TOO_LARGE and no body bytes read",
+      "actual": {
+        "code": "ARCHIVE_TOO_LARGE",
+        "reads": []
+      }
+    },
+    {
+      "id": "tek02-negative-or-non-integer-size",
+      "status": "PASS",
+      "expected": "rejected with INVALID_ARCHIVE and no body bytes read",
+      "actual": {
+        "code": "INVALID_ARCHIVE",
+        "reads": []
+      }
+    },
+    {
+      "id": "tek02-valid-stored-still-reads",
+      "status": "PASS",
+      "expected": "a consistent STORED entry is read and checksummed",
+      "actual": {
+        "method": 0,
+        "size": 11
+      }
+    }
+  ]
+}

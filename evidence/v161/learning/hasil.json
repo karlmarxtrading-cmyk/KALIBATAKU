@@ -1,0 +1,26 @@
+{
+  "created_utc": "2026-11-28T17:25:15.486652+00:00",
+  "build": {
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "offline_release": "a2f40449c4738fe6",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "command": "node probe_learning.mjs <checkout 1.6.1> <checkout 1.5.1>",
+  "files": {
+    "independent-learning-probe.json": "9ba08d5b76334132301bb2b8ebae54e72345805d983d51ce6cb33f8c90831ab9"
+  },
+  "prior_model_zip_sha256": "03e0dd651667c7f9c1a81db027d45bdd7534fdf2c8ef8815ca20d85ae4211b52",
+  "scenarios": [
+    {
+      "name": "whole-route-one-mission-per-eight-days",
+      "status": "PASS",
+      "missions": 1070,
+      "review_missions": 167,
+      "checkpoint_missions": 60,
+      "ready_nodes": 281,
+      "clock_simulated": true
+    }
+  ]
+}

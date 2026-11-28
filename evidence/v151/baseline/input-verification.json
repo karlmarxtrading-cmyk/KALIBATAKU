@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-28T10:14:13.374860+00:00",
+  "method": "Read ZIP payload bytes, verify CRC, recompute every SHA-256 and count actual package rows; no product module imported.",
+  "candidate": {
+    "filename": "KALIBATAKU_1.5.0_KANDIDAT_HOLD.zip",
+    "sha256": "e61b032a091bda4e0867c15c3001e802bf808372f6dcee7ada073daefa21f534",
+    "bytes": 116258093,
+    "files": 6372,
+    "uncompressed_bytes": 495342508,
+    "dist_files": 5047,
+    "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+    "stored_offline_release": "460c98b682110f7e",
+    "checksum_entries": 6371,
+    "payload_inventory_entries": 6370
+  },
+  "bank": {
+    "files": 4677,
+    "bytes": 351242395,
+    "tree_sha256": "6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43",
+    "packages": 4604,
+    "question_placements": 177640,
+    "active_nodes": 281,
+    "inactive_nodes": 19,
+    "unique_template_ids": 394
+  },
+  "baseline_evidence_files": 704,
+  "audit": {
+    "filename": "KALIBATAKU_1.5.0_AUDIT_LENGKAP_ARAHAN_DAN_PROMPT_ASTRA_20261128.zip",
+    "sha256": "e51a9e9baf6069a6c9de06acca2456c2bfb59f59151535772ea233e5d4011cfb",
+    "bytes": 1934632,
+    "files": 139,
+    "checksums_checked": 138,
+    "referenced_input_identity_matches": true,
+    "core_inputs": {
+      "00_MULAI_DI_SINI.html": "c556292bfaddf58db8e1aa1cf4c1ea09ec08caee9b3af6ac99472480134f1521",
+      "01_LAPORAN_AUDIT.pdf": "07f070f9782d12896e5f18daaf0b84797eb68468e8e59a7d5ea66872e9cba066",
+      "06_ARAHAN_PENUNTASAN_PRODUKSI.txt": "6bf3151125b30002d0499c1a25934eafadeccc94ceea17961fa5d33b42ab6610",
+      "07_PROMPT_ASTRA_PRODUCTION_READY.txt": "1b4c00b85acb7a2954d8e0b511fc59357726282143190c24323a89beea85f571"
+    },
+    "mandatory_status_at_audit": {
+      "PASS": 57,
+      "BLOCKED": 8,
+      "FAIL": 2,
+      "NOT_RUN": 3
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "covers": {
+    "TC-151": "MET-C pooled 59/110 response accuracy; incomplete forms excluded",
+    "TC-153": "Matching dashboard and exported snapshot. Filter checks include subject, admin class, module, source, grade, level, mode and local-date-exclusive period.",
+    "TC-154": "Traceable recommendations for zero, insufficient and observed arithmetic evidence.",
+    "TC-155": "All six metric fixtures parsed from PDF and DOCX; embedded Unicode PDF font, DOCX repeat-header, LibreOffice rendering and multipage stress checks.",
+    "TC-156": "XLSX numerics and typed-string aliases, CSV quoted names, semicolon/comma, UTF-8 BOM, injection escaping and numeric negative preservation.",
+    "TC-157": "Schema-validated strict core JSON and versioned report detail. ZIP CRC, SHA-256, membership, safe filenames and report-to-subject mapping.",
+    "TC-158": "Batch progress per subject, abort after first file and single-failure manifest; worker transport tested separately in browser.",
+    "TC-159": "Unverified local label and scope isolation; demo watermark and metadata in documents and spreadsheets."
+  },
+  "cases": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "pdf pages=7",
+    "docx pages=7"
+  ],
+  "readers": [
+    "PyMuPDF",
+    "LibreOffice headless",
+    "python-docx",
+    "openpyxl",
+    "csv",
+    "zipfile",
+    "jsonschema"
+  ],
+  "limitation": "Renderer bounds and text extraction are automated. Visual review observations are recorded separately."
+}

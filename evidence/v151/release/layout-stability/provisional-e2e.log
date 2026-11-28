@@ -1,0 +1,32 @@
+{
+  "browser": "151.0.7922.34",
+  "suites": [
+    "data",
+    "performance",
+    "layout",
+    "journeys",
+    "semantics",
+    "faults",
+    "teacher",
+    "offline"
+  ],
+  "failures": [
+    {
+      "id": "lab-paint",
+      "status": "FAIL",
+      "detail": {
+        "lcp": [
+          152,
+          184,
+          300
+        ],
+        "layout_shifts": [
+          0.12419976790746054,
+          0.12419976790746054,
+          0.12419976790746054
+        ]
+      },
+      "suite": "performance"
+    }
+  ]
+}

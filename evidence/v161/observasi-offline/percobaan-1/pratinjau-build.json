@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-11-28T17:13:07.005581+00:00",
+  "build": {
+    "dist_tree_sha256": "00e3ce3b4dc1fc76cc60b2dd48b51543970d342cbdd7b06c36cecf4fc3255147",
+    "offline_release": "83fef50a05e52452",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "26813c26b7884587af4dec071dce2f88a0a4835336bd763f37922dff564d2393"
+  },
+  "command": "python tests/journey/browser_flow.py --engine chromium",
+  "files": {
+    "04-result.png": "d49eecc9e43c63e22cbad4ae2a46c52717107b60b3d6bfe23f32e2437e7f529d",
+    "journey-browser.json": "bd1319520fcef7b737874c1673c580d660e6a2eb42576a3a55fcd5b0f6743e6d",
+    "02-arena.png": "42b21886dfde762539896156b04e8af2d3a2685c90ba15ad94409a806f43b0e5",
+    "06-arena-320.png": "ea2e57e11c83cc74f704ed270876a642f30896cda77fdba4cc53c9445ae5375a",
+    "05-map.png": "c4274ed762c09dfb7af4e3b97628ed1404d1f59712fb926778f54ca31c78c875",
+    "01-home-new.png": "9e497ca8b20b96d12bf81b39e7e14062a8c54b960303c4422f08ba6b216ca4c2",
+    "07-home-en-dark-1024.png": "f69f23a970221c0384bfa033d142825196490133938b987d2140b7fa30da02c1",
+    "03-wrong-streak.png": "05acb230343656e5a55661e02be9a8954c7fa4df33a2990767bed0ec195396ed"
+  }
+}

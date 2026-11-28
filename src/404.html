@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 · KALIBATAKU</title>
+<style>
+:root{color-scheme:light;--bg:#f6f7f4;--fg:#172b27;--muted:#4f625b;--brand:#145c4b;--on:#fff;--focus:#8a4b08}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#111d1a;--fg:#f1f6f1;--muted:#b4c9be;--brand:#8bd5b5;--on:#10291f;--focus:#f2c46d}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#111d1a;--fg:#f1f6f1;--muted:#b4c9be;--brand:#8bd5b5;--on:#10291f;--focus:#f2c46d}}
+*{box-sizing:border-box}body{margin:0;padding:clamp(1.25rem,6vw,5rem);font:1.0625rem/1.6 system-ui,sans-serif;background:var(--bg);color:var(--fg)}
+main{max-width:40rem;margin:clamp(2.5rem,15vh,11rem) auto}header{font-weight:750;display:flex;gap:.6rem;align-items:center;letter-spacing:.06em}header strong{background:var(--brand);color:var(--on);border-radius:.55rem;text-align:center;line-height:2.1;width:2.2rem}h1{margin:1.75rem 0 .5rem;font-size:clamp(2.25rem,6vw,4rem);line-height:1.08;letter-spacing:-.04em}p{color:var(--muted);margin:1rem 0 1.75rem}
+a{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.65rem 1.25rem;border-radius:.75rem;font-weight:700;background:var(--brand);color:var(--on);text-decoration:none}
+a:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+html:lang(id) [lang="en"],html:lang(en) [lang="id"]{display:none}
+</style>
+<script>
+(() => {
+  const root = document.documentElement;
+  try {
+    const prefs = JSON.parse(localStorage.getItem('kalibataku.preferences.v1') || '{}');
+    root.lang = prefs.lang === 'en' ? 'en' : 'id';
+    if (['light','dark'].includes(prefs.theme)) root.dataset.theme = prefs.theme;
+    if (prefs.textSize === 'large') root.style.fontSize = '120%';
+  } catch {}
+  document.addEventListener('DOMContentLoaded', async () => {
+    const home = document.getElementById('home');
+    let directory = new URL('.', location.href);
+    // The closest installation can live below the domain root. Only inspect this origin.
+    while (true) {
+      try {
+        const response = await fetch(new URL('manifest.webmanifest', directory), {credentials:'same-origin',redirect:'error'});
+        if (response.ok && (await response.json()).short_name === 'KALIBATAKU') {
+          home.href = directory.href + '#/';
+          break;
+        }
+      } catch {}
+      const parent = new URL('../', directory);
+      if (parent.href === directory.href) break;
+      directory = parent;
+    }
+  });
+})();
+</script>
+</head>
+<body>
+<header><strong aria-hidden="true">K</strong> KALIBATAKU</header>
+<main>
+<h1><span lang="id">Halaman tidak ditemukan</span><span lang="en">Page not found</span></h1>
+<p><span lang="id">Alamat ini tidak tersedia. Buka beranda untuk memilih materi atau melanjutkan sesi pada perangkat ini.</span><span lang="en">This address is unavailable. Open the home page to choose a topic or continue a session on this device.</span></p>
+<a id="home" href="./"><span lang="id">Kembali ke beranda</span><span lang="en">Return home</span></a>
+</main>
+</body>
+</html>

@@ -1,0 +1,176 @@
+{
+  "environment": "v24.22.3",
+  "scope": "Node domain and actual file writers; synthetic records only",
+  "checks": [
+    {
+      "id": "one revision wins a simultaneous change",
+      "status": "PASS",
+      "actual": [
+        "fulfilled",
+        "rejected"
+      ],
+      "expected": [
+        "fulfilled",
+        "rejected"
+      ]
+    },
+    {
+      "id": "active note",
+      "status": "PASS",
+      "actual": [
+        "revision-b4c63fc1c68c8a9d66ed2d8db2d10c2f63883da7479f916cf1d0c9db010b45fc"
+      ],
+      "expected": [
+        "revision-b4c63fc1c68c8a9d66ed2d8db2d10c2f63883da7479f916cf1d0c9db010b45fc"
+      ]
+    },
+    {
+      "id": "history retained",
+      "status": "PASS",
+      "actual": [
+        1,
+        2
+      ],
+      "expected": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "effective revision only in family document",
+      "status": "PASS",
+      "actual": [
+        false,
+        true,
+        true,
+        true
+      ],
+      "expected": [
+        false,
+        true,
+        true,
+        true
+      ]
+    },
+    {
+      "id": "24 × 4 contextual evidence",
+      "status": "PASS",
+      "actual": [
+        "24 × 4",
+        "92",
+        "96",
+        true,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "expected": [
+        "24 × 4",
+        "92",
+        "96",
+        true,
+        1,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "id": "family plan and provenance",
+      "status": "PASS",
+      "actual": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ],
+      "expected": [
+        true,
+        true,
+        true,
+        false,
+        false
+      ]
+    },
+    {
+      "id": "filter-scoped learner and modes",
+      "status": "PASS",
+      "actual": [
+        "demo-04",
+        3,
+        1,
+        "practice"
+      ],
+      "expected": [
+        "demo-04",
+        3,
+        1,
+        "practice"
+      ]
+    },
+    {
+      "id": "empty data differs from zero",
+      "status": "PASS",
+      "actual": [
+        null,
+        0,
+        null
+      ],
+      "expected": [
+        null,
+        0,
+        null
+      ]
+    },
+    {
+      "id": "all table reports carry the action plan",
+      "status": "PASS",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "unsupported glyph retained in DOCX bytes",
+      "status": "PASS",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "id": "30-subject batch from 1,080 sessions",
+      "status": "PASS",
+      "actual": [
+        30,
+        0
+      ],
+      "expected": [
+        30,
+        0
+      ]
+    },
+    {
+      "id": "cancel starts no second PDF",
+      "status": "PASS",
+      "actual": 1,
+      "expected": 1
+    }
+  ],
+  "stress": {
+    "people": 30,
+    "sessions": 1080,
+    "pdfs": 30,
+    "aggregation_ms": 114,
+    "batch_ms": 2210,
+    "archive_bytes": 11940230
+  },
+  "sourceHashes": {
+    "src/teacher/demo.js": "488bc00c6b6b2ad45e18038ea604a2324962d70965e1e77282a57a1247dd241c",
+    "src/teacher/report.js": "f20fd1491ae5cf009167642544b8f275a4f890d32d51a57e39102ffb162d980c",
+    "src/teacher/document.js": "103592d54308923700cb8711b70a7ec623cc55c6c60adb26c5072def2b7dab5c",
+    "src/teacher/export/index.js": "5c83be87f3b693de70cc727d84da21b317de40f077f727f0a63a21853728831a",
+    "src/teacher/export/pdf.js": "547fa6b4a391612af2fa148d8934f4cff401a225b076af97c52ac1a9ec524fe0",
+    "src/teacher/export/docx.js": "1980fc78ad5870c4bc8f08cee1a1e8c8303e11c78592a0961870b278b08991b1"
+  }
+}

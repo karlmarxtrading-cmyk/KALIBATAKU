@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "method": "Real WebKit page on the settled catalogue. Navigate to the identical URL again, then run the guarded helper with the same target. Each document has a new JS marker and navigation time origin.",
+  "engine": "webkit",
+  "version": "26.5",
+  "release": "ef0b6798d9633ca8",
+  "run_utc": "2026-11-28T10:40:20.757747+00:00",
+  "initial_document": {
+    "origin": 1795862419777,
+    "document": "0ceac9aa-5662-4da4-983c-216d45d85a31"
+  },
+  "unguarded_same_href": {
+    "origin": 1795862420292,
+    "document": "0c265a41-c8c3-4def-a92c-4f51c6c10d52"
+  },
+  "guarded_same_href": {
+    "origin": 1795862420292,
+    "document": "0c265a41-c8c3-4def-a92c-4f51c6c10d52"
+  },
+  "unguarded_replaced_document": true,
+  "guarded_kept_document": true
+}

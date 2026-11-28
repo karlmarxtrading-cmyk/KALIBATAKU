@@ -1,0 +1,63 @@
+{
+  "status": "PASS",
+  "scope": "source_curriculum_examples_and_known_errata_only_not_production_bank",
+  "registry": "curriculum/KALIBATAKU_CURRICULUM_REGISTRY_v1_0_DRAFT2.json",
+  "sha256": "e12014971bded91fc35a52260a0c54c4ef5c546c78fad573f79c826fffb0c37e",
+  "matches_original_source_bytes": false,
+  "curriculum_version": "1.0.0-draft.2",
+  "audit_profile": "patched_zero_known_findings",
+  "profile_selected_by": "--patched",
+  "method": "Independent recursive-descent expression parser, Fraction exact arithmetic, whitelist AST evaluator; no eval.",
+  "counts": {
+    "slots": 300,
+    "active": 281,
+    "package_target_ceiling": 4604,
+    "question_slot_target_ceiling": 177640,
+    "expression_checks": 281,
+    "exact_answers_passed": 281,
+    "ast_checks": 281,
+    "ast_checks_passed": 281,
+    "display_answer_checks": 281,
+    "display_answer_checks_passed": 281,
+    "inactive": 19
+  },
+  "active_by_grade": {
+    "1": 11,
+    "2": 20,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 25,
+    "10": 25,
+    "11": 25,
+    "12": 25
+  },
+  "findings": [],
+  "errors": [],
+  "small_pool_exact_counts": {
+    "G01-L01-ADD": 12,
+    "G01-L01-SUB": 21,
+    "G01-L02-ADD": 36,
+    "G01-L02-SUB": 66,
+    "G01-L03-ADD": 55,
+    "G01-L03-SUB": 55,
+    "G01-L04-ADD": 25,
+    "G01-L04-SUB": 45,
+    "G01-L05-ADD": 115,
+    "G01-L05-SUB": 955,
+    "G01-L05-MIX": 405,
+    "G02-L03-MUL": 30,
+    "G02-L04-MUL": 36,
+    "G02-L05-MUL": 45,
+    "G03-L01-MUL": 66
+  },
+  "pool_count_convention": "Finite source domains; ADD/MUL operand swaps canonicalized; ordered SUB; fraction literals are values, not extra DIV nodes.",
+  "limitations": [
+    "Editorial constraints for all 281 cells are not fully executable here.",
+    "Only the four documented source conflicts and stated generic mathematical/structural checks are asserted.",
+    "The future generated bank, website, UX, LMS, academic pilot and production readiness are not tested by this script."
+  ]
+}

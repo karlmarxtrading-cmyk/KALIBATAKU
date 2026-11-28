@@ -1,0 +1,222 @@
+{
+  "status": "PASS",
+  "scope": "specification_handoff_only_not_website_or_production_bank",
+  "checks": [
+    {
+      "check": "all_json_parse_without_duplicate_keys",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "original_source_bytes_preserved",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "original_source_audit_with_known_findings",
+      "status": "PASS",
+      "detail": {
+        "exact_answers": 281,
+        "known_findings": 4,
+        "scope": "source_curriculum_examples_and_known_errata_only_not_production_bank"
+      }
+    },
+    {
+      "check": "patched_source_audit",
+      "status": "PASS",
+      "detail": {
+        "exact_answers": 281,
+        "known_findings": 0,
+        "scope": "source_curriculum_examples_and_known_errata_only_not_production_bank"
+      }
+    },
+    {
+      "check": "competency_plan_300_cells_281_active_19_inactive",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "package_plan_4604_targets_177640_slots",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "planned_packages_have_unique_ids",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "every_planned_active_cell_has_correct_quota_and_two_assessment_forms",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "plans_not_misrepresented_as_runtime_bank",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "68_unique_requirements",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "90_contiguous_test_cases_all_not_run",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "requirements_resolve_docs_and_test_ids",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "27_decisions_resolve_references",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "test_matrix_matches_document",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "core_schema_meta_validation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "four_contract_examples_structurally_valid",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "example_math_solution_fingerprint_event_hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "mock_receipt_matches_event_and_is_unverified",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "esm_example_is_data_only_same_as_json",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_zero_denominator",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_missing_language",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_unknown_operation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_mock_verified",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_demo_report_verified",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_semantic_package_count",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_semantic_mutated_event_hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_semantic_wrong_solution_step",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "46_answer_fixture_values_and_grammar_consistent",
+      "status": "PASS",
+      "detail": "Validates fixtures only; does not test a future JavaScript parser or its error-code precedence."
+    },
+    {
+      "check": "analytics_numeric_fixture_arithmetic",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "mastery_policy_has_cycle_and_explicit_eligibility",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "ui_artifacts_match_ux_source_hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "18_theme_contrast_pairs_recalculated",
+      "status": "PASS",
+      "detail": {
+        "minimum_text_ratio": 4.85152728
+      }
+    },
+    {
+      "check": "23_bilingual_microcopy_pairs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "18_screens_present",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "release_status_schema_and_template",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_release_pass_without_evidence",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_release_verdict_without_release_id",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "main_markdown_fences_balanced",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "manifest_covers_all_files",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "manifest_file_hashes",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "errors": [],
+  "future_website_tests_status": "NOT_RUN",
+  "limitations": [
+    "All 281 editorial rule predicates are not implemented here.",
+    "No website, mass question bank, real LMS, deployment or pedagogical pilot is certified by this check."
+  ]
+}

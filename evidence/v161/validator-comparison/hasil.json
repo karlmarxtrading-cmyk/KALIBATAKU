@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-11-28T17:25:15.590243+00:00",
+  "build": {
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "offline_release": "a2f40449c4738fe6",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "command": "python reproduce_qa_receipt_shape.py <checkout> <result.json>",
+  "files": {
+    "1.6.0.json": "98898624e240e1c758f2fbc2bebc9b38796e25e8fe1999c93fdc31fd93b8d9e7",
+    "1.6.1.json": "232b1470b7ec02d63b1f8fb165c5d6b93719e3d5aec4bb7f56e7837d0e65bee5"
+  },
+  "probe_sha256": "4dcc49568cd652ce58ca1e15238c1a621582b6925fa59cf580278c397d5cc0c0",
+  "scope": "Contoh masukan validator sintetis dari auditor. Bukti ini mengukur penolakan QA, bukan hasil aktivitas siswa."
+}

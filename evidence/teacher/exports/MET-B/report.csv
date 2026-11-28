@@ -1,0 +1,70 @@
+﻿"Summary","Student","Source","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Summary","Demo Éka, ""Arum""","SIMULASI / DEMONSTRATION DATA",10,5,0,0,5,0,50,100,50
+"Competencies","Competency","Grade","Level","Operation","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Competencies","arithmetic.multiplication.g03.l02",3,2,"Multiplication",10,5,0,0,5,0,50,100,50
+"Operations","Operation","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Operations","Addition",0,0,0,0,0,0,,,
+"Operations","Subtraction",0,0,0,0,0,0,,,
+"Operations","Multiplication",10,5,0,0,5,0,50,100,50
+"Operations","Division",0,0,0,0,0,0,,,
+"Operations","Mixed operations",0,0,0,0,0,0,,,
+"Sessions","ID","UTC","Package","Mode","Status","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Sessions","24753bbd-da6e-41a1-b6ba-fd100b30aac0","2026-11-05T01:00:00.000Z","TEST-MUL","Assessment","Completed",10,5,0,0,5,0,50,100,50
+"Dictionary","Measure","Definition"
+"Dictionary","Form score","5 / 10"
+"Dictionary","Response accuracy","5 / 5"
+"Dictionary","Questions responded to","5 / 10"
+"Dictionary","First response correct","5 / 5"
+"Dictionary","Zero denominator","Empty = not assessed"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-0e1fbb7e-6f00-471e-b9ce-58d63717831a"
+"Metadata","data_origin","demo"
+"Metadata","verification_status","unverified"
+"Metadata","locale","en"
+"Metadata","period_start_utc","1969-12-31T17:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2099-12-31T17:00:00.000Z"
+"Metadata","display_timezone","Asia/Jakarta"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-25T12:05:00Z"
+"Metadata","assigned_count",10
+"Metadata","correct_count",5
+"Metadata","incorrect_count",0
+"Metadata","skipped_count",0
+"Metadata","blank_count",5
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",50
+"Metadata","valid_response_accuracy_percent",100
+"Metadata","responded_percent",50
+"Metadata","subject_id","demo-01"
+"Metadata","subject_alias","Demo Éka, ""Arum"""
+"Metadata","source","demo"
+"Metadata","classId",""
+"Metadata","studentId","demo-01"
+"Metadata","from",""
+"Metadata","to",""
+"Metadata","timezone","Asia/Jakarta"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions","1.0.0"
+"Metadata","change_pp",
+"Notes","Author","UTC","Revision","Note","ID","Supersedes","Status"
+"Math","Source","ID","Expression","Key numerator","Key denominator","First response","Last response"
+"Family","SIMULASI / DEMONSTRATION DATA"
+"Family","Demo Éka, ""Arum"""
+"Family","3A · All dates · Asia/Jakarta"
+"Family","Completed sessions in this period: 1 · In progress: 0"
+"Family","What went well"
+"Family","Multiplication · grade 3 · level 2 · Assessment — 5 of 5 answered questions were correct on the first try without help."
+"Family","What to work on"
+"Family","Try a similar question to see whether the result is consistent."
+"Family","Not assessed in this period — Addition, Subtraction, Division, Mixed operations."
+"Family","Next practice plan"
+"Family","Collect more responses in one topic and mode before drawing conclusions."
+"Family","Review date · To be agreed with the teacher."
+"Contexts","Grade","Level","Operation","Mode","First correct","First responses","With hints","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Contexts",3,2,"Multiplication","Assessment",5,5,0,10,5,0,0,5,0,50,100,50

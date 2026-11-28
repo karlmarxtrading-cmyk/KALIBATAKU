@@ -1,0 +1,61 @@
+stage_id,grade,level,focus,active_operations,active_nodes,checkpoint_anchor
+S-G01-L01,1,1,Pasangan bilangan sampai 5,ADD+SUB,2,arithmetic.subtraction.g01.l01
+S-G01-L02,1,2,Pasangan bilangan sampai 10,ADD+SUB,2,arithmetic.subtraction.g01.l02
+S-G01-L03,1,3,Belasan tanpa melewati puluhan,ADD+SUB,2,arithmetic.subtraction.g01.l03
+S-G01-L04,1,4,Melewati batas sepuluh,ADD+SUB,2,arithmetic.subtraction.g01.l04
+S-G01-L05,1,5,Puluhan dan satuan,ADD+SUB+MIX,3,arithmetic.mixed.g01.l05
+S-G02-L01,2,1,Dua digit tanpa pengelompokan ulang,ADD+SUB+MIX,3,arithmetic.mixed.g02.l01
+S-G02-L02,2,2,Dua digit dengan pengelompokan ulang,ADD+SUB+MIX,3,arithmetic.mixed.g02.l02
+S-G02-L03,2,3,"Fakta kali 2, 5, dan 10",ADD+SUB+MUL+MIX,4,arithmetic.mixed.g02.l03
+S-G02-L04,2,4,Pembagian sebagai kebalikan perkalian,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g02.l04
+S-G02-L05,2,5,Kelancaran dasar sampai ratusan,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g02.l05
+S-G03-L01,3,1,Fakta perkalian dan pembagian,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g03.l01
+S-G03-L02,3,2,Pemecahan nilai tempat,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g03.l02
+S-G03-L03,3,3,Kelipatan sepuluh dan kompensasi,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g03.l03
+S-G03-L04,3,4,Perkalian dua digit dengan satu digit,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g03.l04
+S-G03-L05,3,5,Integrasi operasi sampai ribuan,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g03.l05
+S-G04-L01,4,1,Bilangan ribuan dan nilai tempat,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g04.l01
+S-G04-L02,4,2,"Faktor 11, 12, 15, dan 20",ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g04.l02
+S-G04-L03,4,3,Faktor 25 dan 50,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g04.l03
+S-G04-L04,4,4,"Faktor 9, 19 dan 99",ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g04.l04
+S-G04-L05,4,5,Integrasi faktor ramah mental,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g04.l05
+S-G05-L01,5,1,Desimal satu tempat,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g05.l01
+S-G05-L02,5,2,Desimal dua tempat,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g05.l02
+S-G05-L03,5,3,Pecahan berpenyebut sama,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g05.l03
+S-G05-L04,5,4,Pecahan ekuivalen sederhana,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g05.l04
+S-G05-L05,5,5,Integrasi pecahan dan desimal ramah,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g05.l05
+S-G06-L01,6,1,Pecahan beda penyebut,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g06.l01
+S-G06-L02,6,2,Desimal perkalian dan pembagian,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g06.l02
+S-G06-L03,6,3,Penskalaan pecahan dan desimal,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g06.l03
+S-G06-L04,6,4,Kompensasi dan faktor bertingkat,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g06.l04
+S-G06-L05,6,5,Penguasaan aritmetika nonnegatif,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g06.l05
+S-G07-L01,7,1,Penjumlahan dan pengurangan bilangan bertanda,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g07.l01
+S-G07-L02,7,2,Tanda dan nilai tempat,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g07.l02
+S-G07-L03,7,3,Kompensasi bilangan bulat bertanda,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g07.l03
+S-G07-L04,7,4,Desimal dan pecahan bertanda dasar,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g07.l04
+S-G07-L05,7,5,Integrasi tanda dan urutan operasi,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g07.l05
+S-G08-L01,8,1,Pecahan bertanda dan ekuivalensi,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g08.l01
+S-G08-L02,8,2,Desimal bertanda dan penskalaan,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g08.l02
+S-G08-L03,8,3,Pecahan rasional dan faktor silang,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g08.l03
+S-G08-L04,8,4,Rekombinasi faktor rasional,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g08.l04
+S-G08-L05,8,5,Integrasi rasional bertanda,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g08.l05
+S-G09-L01,9,1,Kompensasi basis 100 dan 1000,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g09.l01
+S-G09-L02,9,2,"Faktor 16, 32, 64, 125, 250",ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g09.l02
+S-G09-L03,9,3,Aritmetika pecahan dengan penyebut terkait,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g09.l03
+S-G09-L04,9,4,Desimal dekat bilangan patokan,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g09.l04
+S-G09-L05,9,5,Integrasi strategi SMP,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g09.l05
+S-G10-L01,10,1,Penskalaan mental bilangan besar,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g10.l01
+S-G10-L02,10,2,Distributivitas dan faktor dekat basis,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g10.l02
+S-G10-L03,10,3,Faktor rasional dan pembatalan,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g10.l03
+S-G10-L04,10,4,Skala desimal ekstrem yang ramah,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g10.l04
+S-G10-L05,10,5,Integrasi aritmetika efisien,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g10.l05
+S-G11-L01,11,1,Desimal eksak dan pecahan patokan,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g11.l01
+S-G11-L02,11,2,Kompensasi multi-digit terstruktur,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g11.l02
+S-G11-L03,11,3,Faktor bertingkat dan pecahan silang,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g11.l03
+S-G11-L04,11,4,Rekombinasi multioperasi,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g11.l04
+S-G11-L05,11,5,Kelancaran rasional lanjut,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g11.l05
+S-G12-L01,12,1,Basis besar dan pasangan komplemen,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g12.l01
+S-G12-L02,12,2,Penskalaan lintas representasi,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g12.l02
+S-G12-L03,12,3,Rasional eksak dan pembatalan majemuk,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g12.l03
+S-G12-L04,12,4,Efisiensi komputasi dengan beberapa strategi,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g12.l04
+S-G12-L05,12,5,Penguasaan kumulatif KALIBATAKU,ADD+SUB+MUL+DIV+MIX,5,arithmetic.mixed.g12.l05

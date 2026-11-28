@@ -1,0 +1,124 @@
+﻿"Summary";"Siswa / Student";"Sumber / Source";"Soal / Assigned";"Benar / Correct";"Salah / Incorrect";"Dilewati / Skipped";"Kosong / Blank";"Belum dilihat / Unseen";"Skor (%) / Score (%)";"Akurasi (%) / Accuracy (%)";"Ditanggapi (%) / Responded (%)"
+"Summary";"'=SUM(1,2) Demo Prévisualisation Nusantara Nusantara Nusantara Nusantara Nusantara Nusantara Nusantara ";"SIMULASI / DEMONSTRATION DATA";960;672;144;96;48;0;70;82.3529411764706;95
+"Competencies";"Kompetensi / Competency";"Kelas / Grade";"Level";"Operasi / Operation";"Soal / Assigned";"Benar / Correct";"Salah / Incorrect";"Dilewati / Skipped";"Kosong / Blank";"Belum dilihat / Unseen";"Skor (%) / Score (%)";"Akurasi (%) / Accuracy (%)";"Ditanggapi (%) / Responded (%)"
+"Competencies";"arithmetic.multiplication.g03.l02";3;2;"Perkalian / Multiplication";960;672;144;96;48;0;70;82.3529411764706;95
+"Operations";"Operasi / Operation";"Soal / Assigned";"Benar / Correct";"Salah / Incorrect";"Dilewati / Skipped";"Kosong / Blank";"Belum dilihat / Unseen";"Skor (%) / Score (%)";"Akurasi (%) / Accuracy (%)";"Ditanggapi (%) / Responded (%)"
+"Operations";"Penjumlahan / Addition";0;0;0;0;0;0;;;
+"Operations";"Pengurangan / Subtraction";0;0;0;0;0;0;;;
+"Operations";"Perkalian / Multiplication";960;672;144;96;48;0;70;82.3529411764706;95
+"Operations";"Pembagian / Division";0;0;0;0;0;0;;;
+"Operations";"Campuran / Mixed operations";0;0;0;0;0;0;;;
+"Sessions";"ID";"UTC";"Paket / Package";"Mode";"Status";"Soal / Assigned";"Benar / Correct";"Salah / Incorrect";"Dilewati / Skipped";"Kosong / Blank";"Belum dilihat / Unseen";"Skor (%) / Score (%)";"Akurasi (%) / Accuracy (%)";"Ditanggapi (%) / Responded (%)"
+"Sessions";"long-0";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-1";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-10";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-11";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-12";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-13";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-14";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-15";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-16";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-17";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-18";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-19";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-2";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-20";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-21";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-22";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-23";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-24";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-25";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-26";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-27";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-28";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-29";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-3";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-30";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-31";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-32";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-33";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-34";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-35";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-36";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-37";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-38";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-39";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-4";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-40";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-41";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-42";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-43";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-44";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-45";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-46";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-47";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-5";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-6";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-7";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-8";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Sessions";"long-9";"2026-11-05T01:00:00.000Z";"TEST-MUL";"Evaluasi / Assessment";"Selesai / Completed";20;14;3;2;1;0;70;82.3529411764706;95
+"Dictionary";"Ukuran / Measure";"Definisi / Definition"
+"Dictionary";"Skor paket / Form score";"672 / 960"
+"Dictionary";"Akurasi jawaban / Response accuracy";"672 / 816"
+"Dictionary";"Soal ditanggapi / Questions responded to";"912 / 960"
+"Dictionary";"Jawaban pertama benar / First response correct";"672 / 816"
+"Dictionary";"Penyebut nol / Zero denominator";"Kosong = belum dievaluasi / Empty = not assessed"
+"Metadata";"schema_version";"1.0.0"
+"Metadata";"report_id";"R-91afba6d-dddd-4b46-a677-b03de7580d87"
+"Metadata";"data_origin";"demo"
+"Metadata";"verification_status";"unverified"
+"Metadata";"locale";"bilingual"
+"Metadata";"period_start_utc";"1969-12-31T17:00:00.000Z"
+"Metadata";"period_end_exclusive_utc";"2099-12-31T17:00:00.000Z"
+"Metadata";"display_timezone";"Asia/Jakarta"
+"Metadata";"policy_version";"analytics-local-v1"
+"Metadata";"created_at";"2026-11-25T12:05:00Z"
+"Metadata";"assigned_count";960
+"Metadata";"correct_count";672
+"Metadata";"incorrect_count";144
+"Metadata";"skipped_count";96
+"Metadata";"blank_count";48
+"Metadata";"unseen_count";0
+"Metadata";"form_score_percent";70
+"Metadata";"valid_response_accuracy_percent";82.3529411764706
+"Metadata";"responded_percent";95
+"Metadata";"subject_id";"demo-01"
+"Metadata";"subject_alias";"'=SUM(1,2) Demo Prévisualisation Nusantara Nusantara Nusantara Nusantara Nusantara Nusantara Nusantara "
+"Metadata";"source";"demo"
+"Metadata";"classId";""
+"Metadata";"studentId";"demo-01"
+"Metadata";"from";""
+"Metadata";"to";""
+"Metadata";"timezone";"Asia/Jakarta"
+"Metadata";"module";"mental-math"
+"Metadata";"grade";""
+"Metadata";"level";""
+"Metadata";"operation";""
+"Metadata";"mode";""
+"Metadata";"status";""
+"Metadata";"packageId";""
+"Metadata";"content_versions";"1.0.0"
+"Metadata";"change_pp";-12.3
+"Notes";"Penulis / Author";"UTC";"Revisi / Revision";"Catatan / Note";"ID";"Menggantikan / Supersedes";"Status"
+"Notes";"Demo A";"2026-11-25T12:05:00Z";1;"Contoh: −12 ÷ 3 = −4, ½ × 2 = 1, 1⁄8, 0,125. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. ";;;"Digantikan / Superseded"
+"Math";"Sumber / Source";"ID";"Ekspresi / Expression";"Pembilang kunci / Key numerator";"Penyebut kunci / Key denominator";"Respons pertama / First response";"Respons terakhir / Last response"
+"Math";"demo";"long-0";"2 × 4";"8";"1";"7";"7"
+"Family";"SIMULASI / DEMONSTRATION DATA"
+"Family";"'=SUM(1,2) Demo Prévisualisation Nusantara Nusantara Nusantara Nusantara Nusantara Nusantara Nusantara "
+"Family";"3A · Semua tanggal / All dates · Asia/Jakarta"
+"Family";"Sesi selesai dalam periode ini:  / Completed sessions in this period: 48 · Berjalan:  / In progress: 0"
+"Family";"Yang sudah terlihat / What went well"
+"Family";"Perkalian / Multiplication · kelas / grade 3 · level 2 · Evaluasi / Assessment — 672 dari 816 soal yang dijawab benar pada upaya pertama tanpa bantuan. / 672 of 816 answered questions were correct on the first try without help."
+"Family";"Fokus pendampingan / What to work on"
+"Family";"Perkalian / Multiplication · kelas / grade 3 · level 2 · Evaluasi / Assessment — 144 dari 816 respons pertama perlu diperbaiki. / 144 of 816 first responses needed correction."
+"Family";"Contoh dari sesi / Example from the session 5 Nov 2026, 08:00 · Evaluasi / Assessment"
+"Family";"2 × 4"
+"Family";"Jawaban pertama / First response · 7"
+"Family";"Belum diuji melalui evaluasi pada periode ini / Not assessed in this period — Penjumlahan / Addition, Pengurangan / Subtraction, Pembagian / Division, Campuran / Mixed operations."
+"Family";"Rencana latihan berikutnya / Next practice plan"
+"Family";"Bahas satu contoh perkalian · kelas 3 · level 2 · Evaluasi bersama, lalu minta siswa mencoba satu soal sejenis sendiri (672 dari 816 respons pertama benar). / Discuss one example of multiplication · grade 3 · level 2 · Assessment together, then try one similar item independently (672 of 816 first responses correct)."
+"Family";"Tanggal tinjauan / Review date · Belum ditetapkan bersama guru. / To be agreed with the teacher."
+"Family";"Catatan guru yang berlaku / Current teacher notes"
+"Family";"Demo A · 25 Nov 2026, 19:05 · r1 — Contoh: −12 ÷ 3 = −4, ½ × 2 = 1, 1⁄8, 0,125. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. Kemajuan individu diperiksa dari dua form sebanding. "
+"Contexts";"Kelas / Grade";"Level";"Operasi / Operation";"Mode";"Respons pertama benar / First correct";"Jumlah respons pertama / First responses";"Dengan petunjuk / With hints";"Soal / Assigned";"Benar / Correct";"Salah / Incorrect";"Dilewati / Skipped";"Kosong / Blank";"Belum dilihat / Unseen";"Skor (%) / Score (%)";"Akurasi (%) / Accuracy (%)";"Ditanggapi (%) / Responded (%)"
+"Contexts";3;2;"Perkalian / Multiplication";"Evaluasi / Assessment";672;816;0;960;672;144;96;48;0;70;82.3529411764706;95

@@ -1,0 +1,143 @@
+{
+  "suite": "local-update-rollback",
+  "baseline": {
+    "release": "460c98b682110f7e",
+    "app": "1.5.0",
+    "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+    "manifest_sha256": "7d05df34af8cbd5c18d00ce310d8f0448c22e1d158527111df595dd3980f0add",
+    "worker_sha256": "3bddca072f67f030e46444ec63bad87fece40c8fa6e948fcff195cdc414b0e9e",
+    "app_module_sha256": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b"
+  },
+  "candidate": {
+    "release": "ef0b6798d9633ca8",
+    "app": "1.5.1",
+    "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+    "manifest_sha256": "a4ec2889dc01be337007054ccad166385c387354f4750c900cfbcc0787ef8bc6",
+    "worker_sha256": "fa9a3ebdc01a2cc6c0558e9133e4f6ec60c201a25ef0155a01fcb11d112bdbaa",
+    "app_module_sha256": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b"
+  },
+  "observations": [
+    {
+      "phase": "baseline",
+      "snapshot": {
+        "frozen": "d54253fb026b4a2ef125a18434a9e9a36adc20a46375fb846bc2bf7e85401e56",
+        "events": "14829b07dd8e03e5d83e042f5ee49788ecc1455015fdf9ad316bb5840a3d9587",
+        "responses": "b947ee9c3134ebeb1c38dc478ed1c48b962b81ef1fabe3ef88c5e4ca94d444b2"
+      },
+      "draft": "37/9",
+      "cache": {
+        "shell_assets_verified": 64,
+        "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+        "package": "MM-G01-L01-ADD-P001",
+        "release": "460c98b682110f7e",
+        "installed_release": "460c98b682110f7e",
+        "shell_caches": 1
+      }
+    },
+    {
+      "phase": "update waiting in two tabs",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d54253fb026b4a2ef125a18434a9e9a36adc20a46375fb846bc2bf7e85401e56",
+        "events": "14829b07dd8e03e5d83e042f5ee49788ecc1455015fdf9ad316bb5840a3d9587",
+        "responses": "b947ee9c3134ebeb1c38dc478ed1c48b962b81ef1fabe3ef88c5e4ca94d444b2"
+      }
+    },
+    {
+      "phase": "update workers",
+      "two_clients": [
+        "460c98b682110f7e",
+        "460c98b682110f7e"
+      ],
+      "next_worker": "installed/waiting"
+    },
+    {
+      "phase": "update resumed",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d54253fb026b4a2ef125a18434a9e9a36adc20a46375fb846bc2bf7e85401e56",
+        "events": "14829b07dd8e03e5d83e042f5ee49788ecc1455015fdf9ad316bb5840a3d9587",
+        "responses": "b947ee9c3134ebeb1c38dc478ed1c48b962b81ef1fabe3ef88c5e4ca94d444b2"
+      }
+    },
+    {
+      "phase": "candidate cache",
+      "cache": {
+        "shell_assets_verified": 69,
+        "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+        "package": "MM-G01-L01-ADD-P001",
+        "release": "ef0b6798d9633ca8",
+        "installed_release": "ef0b6798d9633ca8",
+        "shell_caches": 2
+      }
+    },
+    {
+      "phase": "offline candidate reload",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d54253fb026b4a2ef125a18434a9e9a36adc20a46375fb846bc2bf7e85401e56",
+        "events": "14829b07dd8e03e5d83e042f5ee49788ecc1455015fdf9ad316bb5840a3d9587",
+        "responses": "b947ee9c3134ebeb1c38dc478ed1c48b962b81ef1fabe3ef88c5e4ca94d444b2"
+      }
+    },
+    {
+      "phase": "rollback waiting in two tabs",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d54253fb026b4a2ef125a18434a9e9a36adc20a46375fb846bc2bf7e85401e56",
+        "events": "14829b07dd8e03e5d83e042f5ee49788ecc1455015fdf9ad316bb5840a3d9587",
+        "responses": "b947ee9c3134ebeb1c38dc478ed1c48b962b81ef1fabe3ef88c5e4ca94d444b2"
+      }
+    },
+    {
+      "phase": "rollback workers",
+      "two_clients": [
+        "ef0b6798d9633ca8",
+        "ef0b6798d9633ca8"
+      ],
+      "next_worker": "installed/waiting"
+    },
+    {
+      "phase": "rollback resumed",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d54253fb026b4a2ef125a18434a9e9a36adc20a46375fb846bc2bf7e85401e56",
+        "events": "14829b07dd8e03e5d83e042f5ee49788ecc1455015fdf9ad316bb5840a3d9587",
+        "responses": "b947ee9c3134ebeb1c38dc478ed1c48b962b81ef1fabe3ef88c5e4ca94d444b2"
+      }
+    },
+    {
+      "phase": "rollback cache",
+      "cache": {
+        "shell_assets_verified": 64,
+        "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+        "package": "MM-G01-L01-ADD-P001",
+        "release": "460c98b682110f7e",
+        "installed_release": "460c98b682110f7e",
+        "shell_caches": 2
+      }
+    },
+    {
+      "phase": "offline rollback reload",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d54253fb026b4a2ef125a18434a9e9a36adc20a46375fb846bc2bf7e85401e56",
+        "events": "14829b07dd8e03e5d83e042f5ee49788ecc1455015fdf9ad316bb5840a3d9587",
+        "responses": "b947ee9c3134ebeb1c38dc478ed1c48b962b81ef1fabe3ef88c5e4ca94d444b2"
+      }
+    },
+    {
+      "phase": "completed after rollback offline",
+      "items": 6,
+      "completion_events": 1,
+      "preserved_first_response": true
+    }
+  ],
+  "method": "Local HTTP subpath; actual distributions and workers; one Chromium context, two controlled tabs, IndexedDB and Cache Storage. No domain deployment.",
+  "started": "2026-11-28T10:40:09.437834+00:00",
+  "python": "3.12.14",
+  "engine": "Chromium 151.0.7922.34",
+  "status": "PASS",
+  "completed": "2026-11-28T10:40:25.912293+00:00",
+  "page_errors": []
+}

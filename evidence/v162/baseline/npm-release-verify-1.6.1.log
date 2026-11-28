@@ -1,0 +1,38 @@
+
+> kalibataku-mental-math@1.6.1 release:verify
+> python3 tools/project.py verify
+
++ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 VALIDASI_EKSTERNAL/periksa.py
+OK · 1.6.1 · a2f40449c4738fe6 · 45 berkas kit dan semua rujukan Markdown cocok.
++ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 tools/release_registers_v15.py --verify
+{
+ "verified": true,
+ "problems": [],
+ "label": "HOLD",
+ "counts": {
+  "PASS": 59,
+  "BLOCKED": 8,
+  "NOT_RUN": 4
+ },
+ "findings": {
+  "PG-01": "CLOSED_VERIFIED",
+  "PG-02": "CLOSED_VERIFIED",
+  "PG-03": "CLOSED_VERIFIED",
+  "PG-04": "CLOSED_VERIFIED",
+  "UX-01": "CLOSED_VERIFIED",
+  "UX-02": "CLOSED_VERIFIED",
+  "UX-03": "PARSIAL_KEYBOARD_FISIK_TERBUKA",
+  "UX-04": "CLOSED_VERIFIED",
+  "UX-05": "CLOSED_VERIFIED",
+  "UX-06": "CLOSED_VERIFIED",
+  "TEK-01": "CLOSED_VERIFIED",
+  "TEK-02": "CLOSED_VERIFIED",
+  "REL-01": "OPEN_EXTERNAL",
+  "REL-02": "OPEN_EXTERNAL",
+  "REL-03": "OPEN_EXTERNAL",
+  "DOC-01": "PARTIAL_ROSTER_READY_REVIEW_NOT_PERFORMED"
+ }
+}
+Verified inventory, distribution, bank sources, release evidence and QA binding
+Verified 7417 checksums / source fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41 / dist 9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.

@@ -1,0 +1,1 @@
+PASS: Original export restored without network; both snapshots, revisions and five events survived the upgrade.

@@ -1,0 +1,15 @@
+# command: python3 /home/claude/repro14/run_shipped_oracle.py /home/claude/cmdcopy
+# started: 2026-11-28T04:24:02Z
+# node v22.23.5 · Python 3.13.18
+{
+  "status": "PASS",
+  "method": "Re-executed shipped independent BigInt oracle (not newly written oracle) read-only on all shipped packages/slots; numeric answers, equivalent solution steps, bilingual presence, canonical fingerprint, exact module literal, package checksum.",
+  "levels": 60,
+  "packages": 4604,
+  "slots": 177640,
+  "steps": 389187,
+  "bilingual": 710560,
+  "elapsed_seconds": 12.61
+}
+# exit: 0
+# finished: 2026-11-28T04:24:14Z

@@ -1,0 +1,294 @@
+{
+  "suite": "data-ux",
+  "utc": "2026-11-28T09:04:56.610Z",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+  "checks": [
+    {
+      "id": "TC-132",
+      "description": "Version 1 → 2 preserves pending outbox; blocked upgrade gives explicit status",
+      "status": "PASS",
+      "observations": {
+        "database": "qa-kalibataku-c3b7a7a5-a592-4c7e-9cf1-d5e877ce0c2b",
+        "from": 1,
+        "to": 2,
+        "pending_retained": 1
+      }
+    },
+    {
+      "id": "TC-129",
+      "description": "Native IndexedDB rolls back snapshot + ledger + outbox when outbox write fails",
+      "status": "PASS",
+      "observations": {
+        "failed_write": "quota injected before outbox put",
+        "committed_retries": 1,
+        "local_pending": 0
+      }
+    },
+    {
+      "id": "TC-130",
+      "description": "Unavailable browser storage exposes temporary namespace and downloadable backup",
+      "status": "PASS",
+      "observations": {
+        "temporary": true
+      }
+    },
+    {
+      "id": "TC-131",
+      "description": "Concurrent browsing contexts, takeover, stale revision, crashed lease expires",
+      "status": "PASS",
+      "observations": {
+        "contexts": 2,
+        "expired_after_simulated_ms": 20000
+      }
+    },
+    {
+      "id": "TC-133",
+      "description": "Profile and attempts/ledger round trip through JSON, compare before atomic import",
+      "status": "PASS",
+      "observations": {
+        "events": 2,
+        "duplicates": 4,
+        "created": 4,
+        "target": "d444489b-2808-48a8-9282-cbd4f5fa3dd3",
+        "dates": [
+          "2026-11-28T09:04:56.878Z",
+          "2026-11-28T09:04:56.878Z"
+        ],
+        "summary_bytes": 550
+      }
+    },
+    {
+      "id": "TC-134",
+      "description": "Delete one local profile preserves other namespace",
+      "status": "PASS",
+      "observations": {
+        "retained_profiles": 1
+      }
+    },
+    {
+      "id": "TC-134",
+      "description": "Stale alias at startup and deletion in another tab recover without copying attempts",
+      "status": "PASS",
+      "observations": {
+        "active": "local-default",
+        "old_attempt_copied": false,
+        "fresh_session": "completed"
+      }
+    },
+    {
+      "id": "TC-133",
+      "description": "Profiles panel previews and restores an actual backup file to the named owner on a shared device",
+      "status": "PASS",
+      "observations": {
+        "source": "Archive owner",
+        "active_during_restore": "Active sibling",
+        "opened_only_after_explicit_choice": true,
+        "sessions": 1,
+        "ledger": 2,
+        "report_json_rejected": true,
+        "raw_session_rejected": true,
+        "deletion_review_includes_scope_and_counts": true
+      }
+    },
+    {
+      "id": "TC-179",
+      "description": "Foreground drain produces only correlated mock receipts and no Background Sync dependency",
+      "status": "PASS",
+      "observations": {
+        "sent": 1,
+        "state": "mock_accepted",
+        "last_mock_ack": "2026-11-28T09:04:57.994Z",
+        "grading": "unverified"
+      }
+    },
+    {
+      "id": "TC-176",
+      "description": "Select one pack; integrity failure and cancellation keep prior state, certified assets exist",
+      "status": "PASS",
+      "observations": {
+        "installed": "MM-G01-L01-ADD-P001",
+        "shell_assets": 64,
+        "bank_assets": 4,
+        "remaining_bytes": 17965,
+        "verified_transferred": 17965,
+        "capabilities": {
+          "practice": "installed-pack",
+          "teacher": "online",
+          "reports": "online",
+          "exports": "online"
+        }
+      }
+    },
+    {
+      "id": "TC-178",
+      "description": "Eviction invalidates offline-ready status and leaves persisted ledger intact",
+      "status": "PASS",
+      "observations": {
+        "events_retained": 2
+      }
+    },
+    {
+      "id": "AC-060",
+      "description": "Selected pack size, quota message, retry, verified practice and teacher/report capabilities on the offline screen",
+      "status": "PASS",
+      "observations": {
+        "expected": "Exact estimate, actionable full storage, no ready flag on failure; successful retry identifies supported features.",
+        "size_label": "Perkiraan unduhan tersisa, termasuk aplikasi dan dependensi: 893,5 KiB.",
+        "native_storage_manager": true,
+        "quota_recovery": true,
+        "final_state": "Profil dan data\nPaket offline\nPengiriman hasil\nPaket offline\n\nEvaluasi A · Penjumlahan — Pasangan bilangan sampai 5\n\nSiap untuk latihan offline.\n\nBuka latihan\nPaket di perangkat ini\nEvaluasi A · Penjumlahan — Pasangan bilangan sampai 5\n\nSiap untuk latihan · 12,3 KiB · v1.2.0\n\nBuka latihan\nHapus salinan offline\nPilih paket latihan\n\nMenghapus salinan offline hanya menghapus berkas paket. Riwayat jawaban tetap berada di profil.\n\nYang tersedia tanpa internet\n\nLatihan, tinjauan jawaban, dan riwayat lokal dapat dibuka setelah satu paket siap.\n\nMengunduh materi baru, membuka ruang guru, dan membuat laporan atau ekspor memerlukan koneksi.",
+        "decoded_bytes": 914962
+      }
+    },
+    {
+      "id": "AC-065",
+      "description": "Personal delivery panel identifies device-only scope and unverified academic status",
+      "status": "PASS",
+      "observations": {
+        "expected": "Local only without delivery claim",
+        "visible": "Profil dan data\nPaket offline\nPengiriman hasil\nStatus sinkronisasi\n\nLatihan pribadi · QA offline\n\n0 sesi tersimpan pada profil ini.\n\nHasil pribadi tersimpan di browser ini. Tidak ada pengiriman ke sekolah.\n\nPenilaian resmi: belum diverifikasi. Layanan LMS sekolah belum terhubung.\n\nBuka riwayat profil"
+      }
+    },
+    {
+      "id": "TC-176",
+      "description": "Launch a pinned assessment in a new application document while every source request returns HTTP 503",
+      "status": "PASS",
+      "observations": {
+        "pack": "MM-G01-L01-ADD-P003",
+        "attempt_mode": "assessment",
+        "loaded": 10,
+        "network_status": 503,
+        "controller": "http://127.0.0.1:42765/probe-offline-c30993b0-eb5e-43cd-a06b-3106bf8450ab/school/math/sw.js"
+      }
+    },
+    {
+      "id": "TC-177",
+      "description": "New worker waits throughout a live assessment; closing its client switches to the verified new shell",
+      "status": "PASS",
+      "observations": {
+        "old_release": "460c98b682110f7e",
+        "new_release": "d36cfe19fbb39d14",
+        "old_js_sha256": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b",
+        "new_js_sha256": "f0753ba7bb2663900a795a447b1891da1cfe2d0df8888e8a31b6c664d0ef28c7",
+        "items_retained": 10
+      }
+    },
+    {
+      "id": "TC-186",
+      "description": "Roll back to archived revision A, verify original JS bytes and retained local assessment from revision B",
+      "status": "PASS",
+      "observations": {
+        "restored_js_sha256": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b",
+        "restored_release": "460c98b682110f7e",
+        "local_attempt_preserved": true
+      }
+    },
+    {
+      "id": "AC-061",
+      "description": "Complete a cached assessment during HTTP 503, then open an unavailable teacher route and return to local work",
+      "status": "PASS",
+      "observations": {
+        "expected": "Saved answer and result at 503; unavailable report and uncached material offer retry/back to packs",
+        "correct": 1,
+        "items": 10,
+        "explicit_resume_takeover": true,
+        "teacher_fallback": "Bagian ini belum dapat dibuka.\n\nPeriksa koneksi atau buka paket yang sudah disimpan untuk penggunaan offline.\n\nCoba lagi\nPaket offline\nKembali ke ruang latihan",
+        "uncached_fallback": "Bagian ini belum dapat dibuka.\n\nPeriksa koneksi atau buka paket yang sudah disimpan untuk penggunaan offline.\n\nCoba lagi\nPaket offline\nKembali ke ruang latihan",
+        "return_route": "#/offline"
+      }
+    },
+    {
+      "id": "AC-062",
+      "description": "Remove an offline copy from the interface while retaining the completed session and event sequence",
+      "status": "PASS",
+      "observations": {
+        "expected": "Explanation visible, removed pack no longer ready, exact event ledger retained",
+        "visible_explanation": "Menghapus salinan offline hanya menghapus berkas paket. Riwayat jawaban tetap berada di profil.",
+        "events": 3,
+        "profile": "a4a87206-9d1a-455f-bdff-6fce0af30020"
+      }
+    },
+    {
+      "id": "AC-065",
+      "description": "Visible mock delivery, per-session reasons and explicit separation from official grading",
+      "status": "PASS",
+      "observations": {
+        "expected": [
+          "Demonstration data",
+          "Official grading: unverified",
+          "Last receipt:",
+          "Sign in to the school service",
+          "Access denied",
+          "conflicting results",
+          "rejection reason",
+          "Next retry:",
+          "Accepted by simulator"
+        ],
+        "visible": "Profile and data\nOffline packs\nResult delivery\nSync status\n\nDemonstration data · demo-qa-eb1211e0-8e50-4e39-bcd6-f63d520490cc\n\n7 sessions saved in this profile.\n\n6 sessions awaiting complete delivery · 1 accepted by simulator.\n\nLast receipt: 28 Nov 2026, 16:05\n\nOfficial grading: unverified. A school LMS has not been connected.\n\nTry sending to simulator\nDelivery by session\nIntroduction 001 · Addition — Number bonds to 5 · 28 Nov 2026, 16:05\n\nWaiting to retry 1\n\nCheck your connection. Next retry: 28 Nov 2026, 16:05\n\nTechnical details\nIntroduction 001 · Addition — Number bonds to 5 · 28 Nov 2026, 16:05\n\nWaiting to retry 1\n\nCheck your connection. Next retry: 28 Nov 2026, 17:05\n\nTechnical details\nIntroduction 001 · Addition — Number bonds to 5 · 28 Nov 2026, 16:05\n\nRejected 1\n\nKeep the original result. An administrator can check the rejection reason in the technical details.\n\nTechnical details\nIntroduction 001 · Addition — Number bonds to 5 · 28 Nov 2026, 16:05\n\nConflicting data 1\n\nKeep the local copy. Ask the administrator to compare the conflicting results.\n\nTechnical details\nIntroduction 001 · Addition — Number bonds to 5 · 28 Nov 2026, 16:05\n\nRejected 1\n\nAccess denied. Ask the school administrator to check your permissions.\n\nTechnical details\nIntroduction 001 · Addition — Number bonds to 5 · 28 Nov 2026, 16:05\n\nSign-in required 1\n\nSign in to the school service with the same identity.\n\nTechnical details\nIntroduction 001 · Addition — Number bonds to 5 · 28 Nov 2026, 16:05\n\nAccepted by simulator 1\n\nDelivery complete. Official grading requires school verification.\n\n1–7 / 7",
+        "scope": "demo-qa-eb1211e0-8e50-4e39-bcd6-f63d520490cc",
+        "live_lms": false
+      }
+    },
+    {
+      "id": "AC-066",
+      "description": "Retry after a simulated lost acknowledgement keeps one event, obtains a duplicate receipt and preserves other blocked statuses",
+      "status": "PASS",
+      "observations": {
+        "expected": "Same IDs and hashes, same simulator inbox, duplicate ACK, denied rows still blocked",
+        "events": 7,
+        "inbox_before": 2,
+        "inbox_after": 2,
+        "repeat_receipt": "duplicate",
+        "statuses": [
+          [
+            "conflict",
+            409,
+            "unverified"
+          ],
+          [
+            "retry_required",
+            429,
+            "unverified"
+          ],
+          [
+            "mock_accepted",
+            null,
+            "unverified"
+          ],
+          [
+            "rejected",
+            403,
+            "unverified"
+          ],
+          [
+            "rejected",
+            422,
+            "unverified"
+          ],
+          [
+            "auth_required",
+            401,
+            "unverified"
+          ],
+          [
+            "mock_accepted",
+            null,
+            "unverified"
+          ]
+        ],
+        "live_lms": false
+      }
+    }
+  ],
+  "runtime": {
+    "release": "460c98b682110f7e",
+    "bootstrap": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "runtime_after": {
+    "release": "460c98b682110f7e",
+    "bootstrap": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "finished_utc": "2026-11-28T09:05:07.936Z"
+}

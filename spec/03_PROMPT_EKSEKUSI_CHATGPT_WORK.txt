@@ -1,0 +1,164 @@
+PROMPT EKSEKUSI — KALIBATAKU MENTAL MATH
+Versi 1.0 · 25 November 2026
+
+Gunakan prompt ini dengan melampirkan seluruh ZIP arahan KALIBATAKU. Teks mulai dari TUJUAN sampai AKHIR PROMPT merupakan instruksi eksekusi yang dapat ditempel sekaligus. Pilih tingkat penalaran sangat tinggi yang tersedia di lingkungan kerja Anda; prompt ini tidak mengklaim mengubah pengaturan model atau menambah akses alat.
+
+TUJUAN
+
+Bangun dan selesaikan website statis KALIBATAKU Mental Math sesuai seluruh dokumen dalam ZIP ini. Hasil harus berupa aplikasi latihan yang dapat digunakan, dengan bank soal lengkap sesuai kurikulum, bilingual Indonesia–Inggris menyeluruh, tema terang/gelap/system, tampilan adaptif ponsel–tablet–desktop, dan lazy loading/lazy interaction yang tetap menjalankan semua fitur. Serahkan source, dist siap deploy, bank soal, factory, kontrak bridge, dokumentasi, serta bukti pengujian dalam satu ZIP rilis.
+
+Saya meminta pelaksanaan sampai selesai dalam lingkup statis yang ditetapkan; jangan hanya mengirim rencana, contoh halaman, skeleton, desain Figma, demo satu kelas, atau daftar pekerjaan yang harus saya kerjakan lagi. Jangan berhenti setelah satu checkpoint untuk menanyakan apakah perlu lanjut. Gunakan keputusan default dalam PRD, selesaikan pilihan implementasi rutin secara mandiri, dan komunikasikan progres ringkas selama bekerja. Hormati batas akses dan instruksi lingkungan; jangan mengakali approval atau memalsukan hasil ketika sesuatu memang belum dapat dijalankan.
+
+KONTEKS PRODUK YANG TIDAK BOLEH HILANG
+
+1. KALIBATAKU adalah modul Mental Math dari ekosistem Bank Soal yang lebih besar. Empat operatornya tambah, kurang, kali dan bagi; MIX menggabungkan empat operator itu. Siswa mengisi jawaban numerik, bukan pilihan ganda.
+2. Kurikulum: kelas 1–12, lima level setiap kelas, 300 slot kategori, 281 aktif dan 19 nonaktif. Kelas administratif berbeda dari kelas materi. Penempatan dan penguatan dapat berbeda per operasi.
+3. Tahap ini statis: HTML/CSS/JS terkompilasi, bank soal ESM modular, storage lokal, offline terpilih, analisis lokal, dan simulasi guru/admin yang fungsional. Server Bridge dipersiapkan dan diuji. LMS, login institusi, monitoring antarperangkat dan nilai resmi baru beroperasi ketika server nyata tersedia.
+4. Website statis tetap harus bekerja penuh dalam lingkup tersebut. Label “mock” tidak boleh dijadikan alasan membuat mesin latihan, evaluasi, penyimpanan atau ekspor berupa tombol kosong.
+5. Jangan menambahkan harga, pembayaran, API AI berbayar, login wajib atau backend untuk mengoperasikan latihan lokal. Jangan menambah aljabar, geometri, kalkulus, persentase sebagai topik baru, akar atau pangkat sebagai operator soal.
+
+BACA DAN AUDIT INPUT TERLEBIH DAHULU
+
+Ekstrak ZIP dengan pemeriksaan path yang aman. Baca 00_MULAI_DI_SINI.md dan semua dokumen bernomor. Baca sumber di 00_SUMBER/ untuk memahami jejak keputusan. Pakai dokumen ini sebagai satu paket:
+
+- 01_ARAHAN_UI_UX.md — 18 layar, visual, dua tema, bilingual, perangkat, aksesibilitas dan budget performa.
+- 02_PRD_MASTER.md — perilaku produk dan seluruh cakupan wajib.
+- 04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md — arsitektur, persistence, worker, offline, mock/remote dan kegagalan.
+- 05_BANK_SOAL_FACTORY.md — kelengkapan bank, domain, generator, pool, purpose, validasi dan distribusi.
+- 06_ACCEPTANCE_QA_DAN_RILIS.md — 90 kasus TC-100 sampai TC-189, evidence dan keputusan rilis.
+- 07_DEPLOY_OPERASIONAL.md — source/dist, build, GitHub/Cloudflare, update dan rollback.
+- 08_AUDIT_KURIKULUM_DAN_KEPUTUSAN.md — empat koreksi contoh dan tujuh kebutuhan spesifikasi tambahan.
+- 09_METRIK_DAN_LAPORAN.md — rumus, denominator, mastery, timing, report dan fixture.
+- 10_SUMBER_DAN_KETERLACAKAN.md — provenance, referensi dan batas klaim.
+- curriculum/KALIBATAKU_CURRICULUM_REGISTRY_v1_0_DRAFT2.json — registry efektif; aturan editorial masih harus dikompilasi menjadi constraints executable.
+- curriculum/KALIBATAKU_MASTER_CURRICULUM_v1_0_DRAFT2.md dan ERRATA_APPLIED.json.
+- planning/requirements.json, MATRIKS_PERSYARATAN.md, competency_plan.json dan package_plan.json.
+- schemas/core.schema.json, contoh kontrak di examples/, fixtures di qa/, dan token/microcopy di ui/.
+
+Urutan keputusan: instruksi pengguna terbaru; aturan matematika/rentang kurikulum efektif dan errata; PRD/perilaku serta dokumen metrik; bentuk data pada schema; factory; UX; acceptance dan operasi. Jika kontrak ilustratif di dokumen berbeda dari schema, satukan secara eksplisit lalu perbarui seluruh konsumen. Jangan menghilangkan fitur untuk mengatasi konflik. Tetapkan DECISIONS.md untuk keputusan implementasi baru dengan alasan, dampak dan versi. Dokumen sumber asli tetap utuh.
+
+Jalankan verifier sumber/hand-off yang disediakan sebagai pemeriksaan input. Hasilnya hanya membuktikan isi paket arahan, bukan kelulusan website. Jangan menyalin status verification paket ini ke RELEASE_STATUS aplikasi.
+
+AUDIT AKADEMIK YANG SUDAH DIKETAHUI
+
+Sumber lama mempunyai 281 kunci benar secara hitung tetapi empat contoh tidak sesuai aturan kompetensinya. Registry draft.2 telah memperbaikinya tanpa memperluas domain:
+- G02-L05 ADD: 199+42=241.
+- G11-L03 MIX: (144⁄175×245⁄216+1⁄3)×15=19.
+- G12-L01 DIV: 249950÷9998=25.
+- G12-L02 MIX: (1⁄64+0.015625)×3200÷10=10.
+
+Pecahan literal ⁄ adalah satu leaf, bukan tambahan operator biner. Jangan menghidupkan kembali contoh lama sebagai fixture valid. Aturan “friendly”, “near”, “complementary”, “related denominators”, jumlah affordance, “as MUL” dan “same as ADD” harus diubah menjadi resep finite dan predikat tegas. “Hasil bilangan bulat” saja tidak cukup untuk menyatakan komplemen pada dua integer. Prasyarat kandidat linear perlu ditambah dependensi lintas operasi dan diagnostik, tanpa siklus.
+
+URUTAN PELAKSANAAN INTERNAL
+
+A. Pahami seluruh sumber dan buat matriks traceability REQ-001–REQ-068 → modul → kasus uji → bukti. Isi awal NOT_STARTED/NOT_RUN, bukan PASS. Tentukan stack minimal dan versi yang kompatibel, buat lockfile. Default TypeScript+Vite untuk output statis; komponen tampilan boleh ringan selama memenuhi budget. Verifikasi dokumentasi resmi saat memilih konfigurasi versi.
+
+B. Bangun inti matematika dan model data dahulu: rational BigInt, AST whitelist, display metadata, parser jawaban, ID/version, snapshot attempt, event schema, ledger dan IndexedDB. Kembangkan fixture yang benar-benar membuktikan risiko: desimal, pecahan, negatif, precedence, duplikasi submit, invalid format dan recovery.
+
+C. Implementasikan seluruh resep/validator kurikulum. Ubah 281 aturan menjadi template executable dan parameter eksplisit; buat peta prasyarat, bentuk MIX, hint dan pembahasan bilingual. Periksa domain/hasil antara, bukan hanya jawaban akhir. Jalankan factory deterministik untuk seluruh rencana bank.
+
+D. Bangun cangkang UI serta alur lengkap siswa pada kedua bahasa dan tema. Hubungkan player ke bank sebenarnya dan storage, bukan array sampel tersembunyi. Implementasikan kelima mode, hasil, review, riwayat, penguasaan sementara, offline, backup/import dan penanganan error.
+
+E. Implementasikan workspace guru/admin simulasi dengan fixture yang dapat dijelaskan. Jawaban siswa demo yang baru dibuat harus memperbarui monitoring melalui layanan mock; dashboard tidak memakai angka hard-coded. Tambahkan penugasan lokal, catatan, filter dan drill-down.
+
+F. Implementasikan analytics dan semua format laporan. Gunakan satu ReportSnapshot agar angka layar dan ekspor sama. Uji PDF/DOCX secara visual dari berkas hasil render; uji XLSX/CSV/JSON/ZIP secara struktural dan numerik.
+
+G. Implementasikan mock dan remote adapter, outbox, retry, idempotency, partial ACK, version pinning dan error yang tercantum. Remote dinonaktifkan jika belum terkonfigurasi; tidak mengaku tersambung ke server.
+
+H. Audit seluruh aplikasi, bank dan dist melalui acceptance; perbaiki penyebab kegagalan, bukan hanya menurunkan assertion atau menghapus cakupan. Jalankan clean build ulang setelah perubahan material, dokumentasikan evidence, uji hosting statis, lalu susun ZIP rilis.
+
+Bagikan pekerjaan independen ke subagen bila tersedia dan berguna, dengan kepemilikan file jelas. Integrasikan dan review hasilnya; tugas yang didelegasikan tetap tanggung jawab pelaksana utama. Simpan pekerjaan lokal secara berkala untuk pemulihan, tetapi jangan menjadikan checkpoint internal alasan berhenti sebelum seluruh lingkup selesai.
+
+BANK SOAL WAJIB LENGKAP
+
+Target dasar 4.604 paket dan 177.640 slot berasal dari ceiling kurikulum, bukan bukti jumlah unik. Seluruh 281 sel aktif harus mempunyai isi nyata. Gunakan planning/package_plan.json sebagai daftar kerja, bukan manifest runtime; status “planned” tidak berarti file soal ada.
+
+Untuk setiap kompetensi, implementasikan seluruh keluarga aturan, pembatasan domain dan subtipe. Hitung pool kecil secara eksak; pool besar memakai konstruksi finite yang tervalidasi dan dilaporkan sebagai batas bawah jika tidak dienumerasi penuh. Jangan menurunkan target karena cepat selesai atau token. Bila pool memang kecil, gunakan pengulangan terencana lintas paket, kurangi panjang secara terukur jika perlu, catat deviasi, dan tetap sediakan semua kompetensi serta form evaluasi yang layak.
+
+Tidak ada duplikasi kanonik dalam satu paket. Pengulangan lintas paket ditandai; varian locale/pertukaran operand komutatif tidak dihitung sebagai unique evidence baru. Jangan membuat ribuan klon dari 281 contoh. Minimal dua form assessment dengan blueprint sebanding per kompetensi; overlap karena pool kecil harus tercatat dan tidak menggelembungkan mastery.
+
+Paket berupa modul JS data-only yang dapat di-lazy-load. Manifest bertingkat hanya metadata; jangan bundel seluruh bank pada initial load. Setiap paket mempunyai ID, versi, count, purpose, locale labels, template references dan hash. Setiap butir mempunyai kompetensi, AST/nilai exact, representasi tampilan, strategi, hint serta pembahasan ID/EN. Gagal matematika/constraint masuk quarantine, tidak ditampilkan sebagai paket siap.
+
+Hitung seluruh jawaban dan langkah dengan solver rasional lalu verifier independen; jangan test solver dengan memanggil solver yang sama sebagai oracle. Sediakan negative/boundary fixtures. Pemeriksaan benar-benar mencakup semua butir yang diproduksi, bukan sampel sepuluh soal. Bandingkan canonical hash dua clean generation dengan seed/configuration yang sama.
+
+KEHARUSAN UI/UX
+
+Gunakan arah Warm Engineering: hangat, tenang, profesional, tipografi nyaman. Primary action jelas, katalog tidak berupa ribuan kartu sekaligus, dan player berfokus pada satu soal. Implementasikan 18 layar dan state yang disyaratkan; tidak perlu semua berada pada navigasi utama. Bahasa awal Indonesia; tema awal mengikuti sistem, keduanya bisa diubah dan disimpan.
+
+Bilingual menyeluruh: navigation, instructions, feedback, errors, loading, empty state, catalog, strategies, analytics, sync dan reports. Nama siswa/catatan bebas tidak diterjemahkan otomatis. Teks otomatis yang mengeklaim kemajuan harus berdasarkan evidence. Semua komponen harus diuji terang dan gelap; print mempunyai tema kertas yang jelas.
+
+Gunakan input type=text, bukan type=number yang menghalangi pecahan. Dukung keyboard biasa, sentuh, minus, slash dan separator desimal locale. Penyebut positif; angka exact canonical. Input malformed tidak menambah salah; nilai valid yang keliru baru salah matematika. Tidak menerima formula, NaN, Infinity, grouping ribuan atau tebakan separator. Pecahan belum disederhanakan yang bernilai sama diterima.
+
+Saat locale berubah, nilai valid diformat tanpa pembulatan. Draft invalid/incomplete dipertahankan bersama draft_locale; keypad/validasi untuk draft tetap sesuai locale asal sampai valid atau dikosongkan. Jangan mereset timer, urutan, fokus atau jawaban saat mengganti bahasa/tema. Jangan memblokir copy/paste, zoom, browser accessibility atau inspect sebagai pengganti keamanan.
+
+Uji minimum 320px, ponsel umum, tablet, desktop, zoom 200%/reflow sesuai target, landscape dan keyboard virtual. Pemilihan browser/perangkat yang benar-benar diuji harus disebutkan; emulator bukan real-device pass. Target WCAG 2.2 AA diperiksa manual dan otomatis, bukan hanya skor satu alat.
+
+LAZY LOADING / LAZY INTERACTION
+
+Muat shell, locale aktif dan root manifest saja pada awal. Katalog kelas/level dimuat setelah diperlukan; player setelah mulai; paket yang dipilih setelah intent; analytics/chart saat dibuka; exporter spesifik saat diminta; worker untuk tugas berat. Tidak ada unduh seluruh bank secara otomatis. Prefetch dibatasi dan menghormati kondisi jaringan/data saver jika dapat dideteksi.
+
+Budget proyek: initial JS ≤150 KiB gzip, CSS ≤35 KiB, locale per bahasa ≤25 KiB, root manifest ≤20 KiB, shard katalog ≤50 KiB, player tambahan ≤90 KiB, paket ≤60 KiB gzip. Budget lanjutan mengikuti dokumen UX. Jika metadata membuat paket lebih besar, gunakan shared immutable templates/sharding yang benar; jangan memotong soal. Laporkan ukuran aktual, network trace dan profil interaksi.
+
+Setiap klik saat lazy loading memberi respons segera, skeleton stabil, retry jika gagal dan perlindungan terhadap respons load yang sudah usang. Pengguna tidak perlu klik dua kali karena handler baru diunduh setelah klik pertama. Submit jawaban dan next-item tidak menjalankan generasi besar atau download berat di jalur kritis.
+
+LIMA MODE, HASIL DAN MASTERY
+
+Practice: tanpa batas default; feedback langsung; hint/retry tersimpan. Speed: timer dimulai saat siap; deadline tetap berjalan ketika hidden; tidak memberi bonus waktu dari pindah tab. Assessment: kunci dan hasil belum terbuka sebelum final; revisi sebelum final sah; hasil final immutable. Draft terbaru invalid setelah nilai valid pernah tersimpan memblokir finalisasi sampai diperbaiki atau dipilih kosong; jangan menilai nilai lama yang tidak lagi terlihat. Adaptive: aturan nyata berdasar evidence, bukan acak; penempatan per kompetensi, jangan flapping satu jawaban. Recovery: kaitkan kesalahan asal dan variasi setara, jangan menimpa histori.
+
+Bedakan skor form, akurasi respons, completion, first response dan mastery. Form berisi 20 soal dengan 14 benar, 3 salah, 2 skip dan 1 blank harus menghasilkan skor 70%, akurasi 82,4%, ditanggapi 95%. N=0 adalah belum ada data. Dua form 9/10 dan 50/100 digabung menjadi 59/110 = 53,6%, bukan 70%. Perubahan 58→86 disebut 28 poin persentase.
+
+Mastery memakai kebijakan berversi: dua form setara selesai, jarak default 24 jam yang bisa dikonfigurasi, skor tiap form ≥80%, akurasi unique evidence ≥90%, minimal min(20,pool) dengan floor 8. Siklus evaluasi (assessment_cycle_id) berlaku maksimum 60 hari. Setelah targeted practice/recovery, tindakan retest eksplisit membuka siklus baru dengan dua pengerjaan dengan attempt/form_instance_id baru (boleh menggunakan form A/B yang tersedia; exposure dan overlap tetap dicatat); histori/exposure siklus lama dipertahankan, bukan memilih hanya jawaban benar. Bukti berasal dari respons FINAL pada form eligible pertama untuk fingerprint dalam siklus, termasuk revisi sah sebelum feedback; first-response accuracy terpisah. Skip, blank dan assigned-unseen dihitung tidak benar untuk evidence. Slice per kompetensi pada form kumulatif tidak boleh ditutupi skor total. Hint/retry/sesi belum selesai tidak memperbesar mastery. Kecepatan bukan gate mutlak. Label lokal provisional; jangan mengarang tinjauan guru atau pilot siswa.
+
+DATA LOKAL, OFFLINE DAN PRIVASI
+
+Jawaban, event dan snapshot ditulis atomik; outbox ditambahkan atomik hanya bila target mock/remote memerlukannya. Tampilkan tersimpan setelah commit. Data latihan pribadi, demo dan remote dipisahkan sejak namespace. Alias lokal bukan autentikasi aman; beri konteks perangkat bersama. Storage quota/diblokir mempunyai jalur sementara/ekspor yang jujur. Banyak tab memakai writer lock/lease dan resolusi konflik.
+
+Backup/import harus round-trip, validate schema/size/hash, preview konflik dan mutasi atomik. Data import tidak mengeksekusi HTML/JS. Profil lain tidak hilang ketika satu profil dihapus. Jangan deleteDatabase otomatis untuk mengatasi migrasi.
+
+Offline hanya menjanjikan paket dan mesin yang terpasang lengkap. Cache per pilihan, status siap setelah semua aset wajib tersedia, cancellation dan quota handling. Pin versi soal selama attempt; update SW tidak reload assessment aktif. Simpan ledger terpisah dari cache; cache eviction tidak menghapus hasil. Fallback sinkronisasi foreground wajib; jangan bergantung Background Sync di semua browser.
+
+TEACHER / ADMIN / REPORTS
+
+Gunakan simulasi end-to-end dengan sekurangnya dua kelas dan state bervariasi. Role demo tidak boleh menyamar sebagai otorisasi server. Monitoring mencakup kelas, siswa, kompetensi, sesi dan jawaban; filter period/module/mode/grade/level/source konsisten. Penugasan demo dapat dikerjakan oleh siswa demo dan hasilnya masuk dashboard mock. Catatan guru dan override memiliki jejak, tidak menghapus respons asli.
+
+Sediakan preview report ID/EN/bilingual serta unduh asli PDF, DOCX, XLSX, CSV, JSON dan ZIP batch. Satu ReportSnapshot mengendalikan seluruh format. PDF harus dapat diunduh sebagai file, bukan hanya label tombol yang membuka print dialog. DOCX/XLSX harus arsip format aslinya, bukan HTML yang diganti ekstensi. Buka/render/parse hasil untuk membuktikan isi, angka, pagination, simbol, encoding, filename aman dan kesesuaian filter. Batch menunjukkan progres, cancel dan kegagalan per file.
+
+Label laporan demo “SIMULASI / DEMONSTRATION DATA”; hasil latihan lokal “belum diverifikasi institusi”; resmi hanya setelah backend memberi status dan otorisasi yang sah. Jangan memasukkan data siswa nyata dalam source/fixture/ZIP. Tanpa analytics pihak ketiga atau API tersembunyi sebagai default.
+
+SERVER BRIDGE
+
+Implementasikan interface yang sama untuk local, mock dan remote. Local tidak mengantre ke server yang belum ada. Mock receipt selalu memiliki receipt_origin=mock dan grading_state=unverified. Hanya ACK accepted atau duplicate yang valid mengubah SyncState menjadi mock_accepted; respons gagal mengikuti state kegagalannya. Remote tanpa konfigurasi memberikan BRIDGE_NOT_CONFIGURED dan tidak fallback sukses. Otorisasi/identitas dari sesi server kelak, bukan klaim student_id dari browser. Kredensial rahasia tidak ada di dist/Vite env.
+
+Retry memakai event_id dan payload_hash sama. ID sama dengan payload berbeda adalah konflik. Batch ACK per event, jangan menghapus semua karena HTTP 200. Uji timeout setelah commit, partial ACK, malformed ACK, duplicate, sequence bolong, complete sebelum jawaban, 401,403,409,422,429,5xx, offline dan account switch. Server_accepted hanya penerimaan transport; bukan verified grading atau mastery. Pending lama tetap terikat asal akun/environment, tidak dikirim sebagai akun baru.
+
+Siapkan OpenAPI/API examples, capability negotiation, schema version, errors dan contract tests. Backend implementasi dan endpoint produksi tidak perlu dibangun pada lingkup ini. Penilaian resmi kelak memerlukan registry/solver tepercaya di server. Public JS answer keys tidak dapat dirahasiakan dengan anti-inspect; jangan menjanjikan anti-cheat 100%.
+
+VALIDASI DAN KEPUTUSAN RILIS
+
+Jalankan seluruh TC-100…TC-189 yang relevan pada build final dan isi bukti nyata. Tambahkan tes bila ada risiko konkret yang belum tercakup. Jangan menulis PASS untuk tes yang tidak dijalankan, mengubah expected result agar cocok bug, atau menghapus fitur untuk mengejar status GO.
+
+Sertakan audit matematika seluruh bank; rule coverage per 281 sel; count slots/unique/repeats/assessment overlap; bilingual parity dan semantic review; browser/viewport/theme/locale matrix; accessibility otomatis+manual; network/chunk/performance/memory; penyimpanan/offline/upgrade; bridge failure scenarios; validasi enam ekspor; import safety; lisensi/advisory dependency; clean build, base path dan static-host smoke test.
+
+Bedakan hasil lab dari Core Web Vitals lapangan, emulator dari perangkat nyata, matematika benar dari kesulitan terkalibrasi, ACK transport dari grading, full static release dari LMS aktif. Target performa proyek harus diuji sesuai kondisi yang dinyatakan, bukan klaim semua perangkat tanpa bukti.
+
+Jika ada blocker yang memang memerlukan akses, kredensial, server belum ada atau tindakan pengguna yang tidak terotorisasi, selesaikan seluruh pekerjaan lain terlebih dahulu, simpan hasil lengkap, dan laporkan blocker spesifik dengan bukti. Jangan meminta konfirmasi rutin, tetapi juga jangan melewati izin atau mengarang akses. Review guru/pilot yang belum terjadi ditulis NOT_PERFORMED, tidak dipalsukan. Tujuan kerja tetap menyelesaikan seluruh kriteria teknis statis yang dapat dikerjakan dalam lingkungan yang tersedia.
+
+KELUARAN AKHIR YANG WAJIB
+
+Satu ZIP bernama KALIBATAKU_STATIC_<versi>_SOURCE_DIST_BANK_EVIDENCE.zip dengan:
+
+1. MULAI_DI_SINI.md yang menjelaskan folder siap deploy, runtime/build, lokasi evidence dan status.
+2. Source aplikasi, package.json, lockfile, versi runtime, konfigurasi build, source maps policy dan factory.
+3. dist/ berisi index.html, assets, bank soal final, manifest, worker, service worker, font/icon dan header config yang benar.
+4. Semua resep dan validator kurikulum, registry efektif, errata, bank inventory/coverage/uniqueness/feasibility/deviations/validation/provenance.
+5. Tests serta hasil nyata, contract schemas dan fixtures, OpenAPI/API contract, mock/remote adapter docs.
+6. Screenshots/evidence visual yang relevan, contoh report semua format dari dataset sintetis, laporan performa/accessibility/browser.
+7. Panduan GitHub→Cloudflare dan direct dist deploy, update/rollback, backup/import, tambah paket, upgrade schema dan batas statis/LMS.
+8. RELEASE_STATUS.json dengan field canonical: static_application, bank_content, bridge_contract, live_lms, pedagogical_calibration, live_deployment. Tiap field berisi status, evidence, blockers dan batas klaim.
+9. SHA256SUMS dan inventaris file; ZIP diperiksa CRC, path aman, tidak ada node_modules, secrets, cache pribadi atau data siswa nyata.
+
+Hasil final chat harus menyebut tautan ZIP, cakupan dan jumlah AKTUAL bank, fitur yang selesai, pengujian penting yang benar-benar dijalankan, status keenam bidang readiness, dan cara deploy singkat. Jangan mengklaim live deployment jika hanya dist siap. Jangan menyebut 177.640 soal unik jika itu hanya slot. Jangan menyatakan kurikulum resmi, kalibrasi akademik atau server aktif tanpa bukti.
+
+Mulai sekarang: baca seluruh paket, jalankan audit input, lalu kerjakan implementasi sampai seluruh lingkup statis selesai dan diverifikasi.
+
+AKHIR PROMPT

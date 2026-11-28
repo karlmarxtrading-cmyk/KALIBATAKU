@@ -1,0 +1,39 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "bank-determinism",
+  "scope": "Second clean bank generation equals the published bank byte for byte",
+  "build": {
+    "offline_release": "6c43a824957f99ed",
+    "app_version": "1.6.0",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "started": "2026-11-28T15:49:40Z",
+  "finished": "2026-11-28T15:50:30Z",
+  "assertions": 2,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "factory-build",
+      "status": "PASS",
+      "expected": "Factory generation and its BigInt oracle succeed",
+      "actual": "{\"version\":\"1.2.0\",\"grades\":[{\"grade\":1,\"url\":\"bank/g01.json\"},{\"grade\":2,\"url\":\"bank/g02.json\"},{\"grade\":3,\"url\":\"bank/g03.json\"},{\"grade\":4,\"url\":\"bank/g04.json\"},{\"grade\":5,\"url\":\"bank/g05.json\"},{\"grade\":6,\"url\":\"bank/g06.json\"},{\"grade\":7,\"url\":\"bank/g07.json\"},{\"grade\":8,\"url\":\"bank/g08.json\"}"
+    },
+    {
+      "id": "byte-identity",
+      "status": "PASS",
+      "expected": "Every published bank file is reproduced byte for byte",
+      "actual": {
+        "files": 4677,
+        "tree_sha256": "6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43",
+        "byte_identical_except": [
+          "index.json"
+        ]
+      }
+    }
+  ]
+}

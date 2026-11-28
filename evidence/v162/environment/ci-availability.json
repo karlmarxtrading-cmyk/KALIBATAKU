@@ -1,0 +1,12 @@
+{
+  "checked_utc": "2026-11-28T18:38:55.087909+00:00",
+  "repo": "karlmarxtrading-cmyk/KALIBATAKU",
+  "branch": "main",
+  "requested_release": "1.6.2",
+  "observed_package_version": "1.0.0",
+  "repository_package_blob": "49a71d97fcd938977c7c00739958176764942bed",
+  "workflow_path": ".github/workflows/verify-native.yml",
+  "workflow_status_on_default_branch": 404,
+  "native_windows": "NOT_RUN",
+  "reason": "The target workflow is absent on the default branch. The available executor runs Linux. The local release has not been pushed or deployed."
+}

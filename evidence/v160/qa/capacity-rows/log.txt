@@ -1,0 +1,79 @@
+{
+  "offline_release": "6c43a824957f99ed",
+  "modules": {
+    "data/backup.js": {
+      "tested_source_sha256": "bf5489bf015ff821a4fb20adbcb557b98e4038113efe5fd4b077e23827d4081d",
+      "dist_matches": true
+    },
+    "data/backup-json-size.js": {
+      "tested_source_sha256": "21214ea648a09b89d0ddeeb5eb2a134eab36de88fb65adb8b666c8871806c8f7",
+      "dist_matches": true
+    },
+    "data/backup-reader.worker.js": {
+      "tested_source_sha256": "138d2ae9d000e1ed7710ff12dbb9817c6b607aa463f2105e95460737151b49c1",
+      "dist_matches": true
+    },
+    "data/panel-profile.js": {
+      "tested_source_sha256": "bdb0ff227bd232c30b572bb153d2daa7f2e5a22245566c978354a49303fc5778",
+      "dist_matches": true
+    },
+    "data/snapshot-check.js": {
+      "tested_source_sha256": "d7d7e99fbd9b670994a1fe14b73ad1e99184f6ee84aaef2076413c5a6cef400a",
+      "dist_matches": true
+    }
+  },
+  "command": "node tests/v15/backup-capacity.mjs rows",
+  "runtime": "v24.22.3",
+  "backend": "Node memory adapter, synthetic profiles",
+  "time": "2026-11-28T16:01:43.306Z",
+  "checks": [
+    {
+      "name": "100000 mixed rows accepted in JSON, previewed and restored",
+      "status": "PASS",
+      "observed": {
+        "rows": 100000,
+        "bytes": 7171283,
+        "format": "application/json",
+        "preview_sessions": 1,
+        "restored_additions": 100001,
+        "draft": null
+      }
+    },
+    {
+      "name": "100001 mixed rows refused as JSON and restored as ZIP",
+      "status": "PASS",
+      "observed": {
+        "rows": 100001,
+        "bytes": 795715,
+        "format": "application/zip",
+        "preview_sessions": 1,
+        "restored_additions": 100002,
+        "draft": null
+      }
+    },
+    {
+      "name": "100003 mixed rows, ongoing draft recovery ZIP",
+      "status": "PASS",
+      "observed": {
+        "rows": 100003,
+        "bytes": 795814,
+        "format": "application/zip",
+        "preview_sessions": 1,
+        "restored_additions": 100004,
+        "draft": "2/"
+      }
+    },
+    {
+      "name": "150000 mixed rows restored from a multipart archive",
+      "status": "PASS",
+      "observed": {
+        "rows": 150000,
+        "bytes": 1194108,
+        "format": "application/zip",
+        "preview_sessions": 1,
+        "restored_additions": 150001,
+        "draft": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "synthetic-journeys",
+  "status": "PASS",
+  "started": "2026-11-28T18:49:06.375411+00:00",
+  "finished": "2026-11-28T18:49:12.179860+00:00",
+  "runtime": {
+    "platform": "Linux",
+    "python": "3.12.14",
+    "browser": "Chromium",
+    "browser_version": "151.0.7922.34"
+  },
+  "build": {
+    "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fd4dbd2442531a9b6adf42b476a5a9732b6ca0d9ba6dab799303521bfe9c2848"
+  },
+  "scope": "Synthetic role tasks and Chromium engine observations in Linux; no physical device, human participant or speech trial.",
+  "assertions": 13,
+  "checks": [
+    {
+      "id": "named-local-profile",
+      "status": "PASS",
+      "expected": "New isolated named practice profile",
+      "actual": {
+        "profile": "42fc4084-d83d-4a88-a822-14a697654143"
+      }
+    },
+    {
+      "id": "one-action-start",
+      "status": "PASS",
+      "expected": "One home CTA opens initial question on named profile, without filters",
+      "actual": {
+        "activations": 1,
+        "routes": [
+          "/mission",
+          "/session/b6d213ac-2085-4957-b693-bc6a677bb21e"
+        ],
+        "question_count": 6
+      }
+    },
+    {
+      "id": "assisted-first-error",
+      "status": "PASS",
+      "expected": "Hint and first incorrect response recorded on item 1 with no advance",
+      "actual": {
+        "index": 0,
+        "item": {
+          "id": "b6d213ac-2085-4957-b693-bc6a677bb21e.1",
+          "key": {
+            "numerator": "4",
+            "denominator": "1"
+          },
+          "draft": "-999",
+          "hist": [
+            [
+              false,
+              false
+            ]
+          ],
+          "hint": true
+        }
+      }
+    },
+    {
+      "id": "disclosure-and-both-answers",
+      "status": "PASS",
+      "expected": "Student's error, answer key, and worked steps are available",
+      "actual": [
+        "Jawabanmu\n−999",
+        "Kunci jawaban\n4"
+      ]
+    },
+    {
+      "id": "assisted-revision",
+      "status": "PASS",
+      "expected": "First incorrect response survives correct revision after reveal",
+      "actual": {
+        "id": "b6d213ac-2085-4957-b693-bc6a677bb21e.1",
+        "key": {
+          "numerator": "4",
+          "denominator": "1"
+        },
+        "draft": "4",
+        "hist": [
+          [
+            false,
+            false
+          ],
+          [
+            true,
+            true
+          ]
+        ],
+        "hint": true
+      }
+    },
+    {
+      "id": "resume-feedback",
+      "status": "PASS",
+      "expected": "Reload restores the same attempt, occurrence order and revisions",
+      "actual": {
+        "attempt": "b6d213ac-2085-4957-b693-bc6a677bb21e",
+        "history": [
+          [
+            false,
+            false
+          ],
+          [
+            true,
+            true
+          ]
+        ]
+      }
+    },
+    {
+      "id": "error-heavy-completion",
+      "status": "PASS",
+      "expected": "Each response holds its index; one new Enter advances; completion exactly once",
+      "actual": {
+        "transitions": [
+          {
+            "item": 1,
+            "check_index": 1,
+            "response_delta": 1
+          },
+          {
+            "item": 2,
+            "check_index": 2,
+            "response_delta": 1
+          },
+          {
+            "item": 3,
+            "check_index": 3,
+            "response_delta": 1
+          },
+          {
+            "item": 4,
+            "check_index": 4,
+            "response_delta": 1
+          },
+          {
+            "item": 5,
+            "check_index": 5,
+            "response_delta": 1
+          }
+        ],
+        "completions": [
+          "5afb3ddf-c4a3-4a19-bae5-713ecb8468ae"
+        ],
+        "responses": 7
+      }
+    },
+    {
+      "id": "one-action-follow-on",
+      "status": "PASS",
+      "expected": "One action opens next distinct mission with no grade or inherited draft",
+      "actual": {
+        "activations": 1,
+        "attempt": "ec171d87-b7e3-42ef-970e-338d768a74fd",
+        "routes": [
+          "/mission",
+          "/session/b6d213ac-2085-4957-b693-bc6a677bb21e",
+          "/session/b6d213ac-2085-4957-b693-bc6a677bb21e",
+          "/results/b6d213ac-2085-4957-b693-bc6a677bb21e",
+          "/mission",
+          "/session/ec171d87-b7e3-42ef-970e-338d768a74fd"
+        ]
+      }
+    },
+    {
+      "id": "teacher-local-source",
+      "status": "PASS",
+      "expected": "Report for active practice profile distinguishes 1 completed and 1 ongoing mission",
+      "actual": {
+        "source": "local_practice",
+        "name": "QA Sintetis Melati",
+        "report_excerpt": "KALIBATAKU / MENTAL MATH\nLaporan pertemuan orang tua\n\nHasil latihan lokal · belum diverifikasi institusi\n\nQA Sintetis Melati\n\nSemua tanggal · Asia/Jakarta\n\nSesi selesai dalam periode ini: 1 · Berjalan: 1\n\nYang sudah terlihat\n\nPenjumlahan · kelas 1 · level 1 · Latihan — 2 dari 6 soal yang dijawab benar pada upaya pertama tanpa bantuan.\n\nFokus pendampingan\n\nPe"
+      }
+    },
+    {
+      "id": "teacher-bilingual",
+      "status": "PASS",
+      "expected": "The same teacher preview contains both languages after one report option change",
+      "actual": {
+        "languages": [
+          "id",
+          "en"
+        ],
+        "locale": "bilingual"
+      }
+    },
+    {
+      "id": "backup-preview",
+      "status": "PASS",
+      "expected": "New browser previews real backup with matching named profile before import",
+      "actual": {
+        "bytes": 6597,
+        "prior_profiles": [
+          "Profil utama"
+        ],
+        "target": "QA Sintetis Melati"
+      }
+    },
+    {
+      "id": "restore-ledgers",
+      "status": "PASS",
+      "expected": "Both attempts, order, keys, draft, first answers, assistance and event IDs match",
+      "actual": {
+        "restored_attempts": [
+          "b6d213ac-2085-4957-b693-bc6a677bb21e",
+          "ec171d87-b7e3-42ef-970e-338d768a74fd"
+        ],
+        "differences": [
+          {},
+          {}
+        ],
+        "response_events": 7,
+        "draft": "37/9"
+      }
+    },
+    {
+      "id": "offline-resume-after-restore",
+      "status": "PASS",
+      "expected": "One home action offline resumes restored draft with its frozen order",
+      "actual": {
+        "installations": [
+          {
+            "id": "MM-G01-L01-ADD-P001",
+            "state": "ready",
+            "cache": "kalibataku:/:ready-pack:f630b3dc6aa6b5a5:MM-G01-L01-ADD-P001@1.2.0:5d6dc331-35aa-40e6-b79e-d123a1cb6379"
+          },
+          {
+            "id": "MM-G01-L01-ADD-P002",
+            "state": "ready",
+            "cache": "kalibataku:/:ready-pack:f630b3dc6aa6b5a5:MM-G01-L01-ADD-P002@1.2.0:14b3e6e3-ed39-4a45-99b7-1409e7c85932"
+          }
+        ],
+        "uncached_request_rejected": true,
+        "server_refuses_connections": true,
+        "activations": 1,
+        "draft": "37/9"
+      }
+    }
+  ],
+  "errors": []
+}

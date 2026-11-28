@@ -1,0 +1,2 @@
+Old draft restored and scored from its original snapshot; new session uses the new revision. Eight locale/input combinations accepted.
+Snapshot upgrade, re-export and input-guide checks passed.

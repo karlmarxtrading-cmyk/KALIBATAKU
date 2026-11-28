@@ -1,0 +1,39 @@
+{
+  "offline_release": "460c98b682110f7e",
+  "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+  "verified_utc": "2026-11-28T09:04:23.719267+00:00",
+  "runtime": {
+    "node": "v24.22.3",
+    "python": "3.12.14"
+  },
+  "method": "Node ran byte-identical copies of both progression test scripts from a temporary project where src and dist both resolve to the final packaged dist. The occurrence verifier read the final dist directly. The sorted SHA-256 and relative-path tree hash was checked before and after all three executions.",
+  "runs": [
+    {
+      "test": "tests/journey/progression-bounds.mjs",
+      "test_sha256": "8100737d3e7697416c682ac36dc9adb6b9489b5d6b0c302381d84bc8f056d154",
+      "result": "evidence/v15/progression/all-nodes.json",
+      "result_sha256": "68d26a4f93e3f718c8057d3295db410394f5543f502faa363087c97dbeaadccc",
+      "log": "evidence/v15/progression/full-route.log",
+      "log_sha256": "2ef870c35793deeb8eeae78bbb95f549ec694d919c9f432be530f50778acb511",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/journey/progression-launch.mjs",
+      "test_sha256": "155b94da6b31c614e269a02385ef362b65b82e866030bebddb3653904954e1b7",
+      "result": "evidence/v15/progression/launch.json",
+      "result_sha256": "cb5fc409eaa3512f03f5bb02c04b0b4846ece0cce64a3cc711b22772b8e9e348",
+      "log": "evidence/v15/progression/launch.log",
+      "log_sha256": "9b99f7c028dcaee9c0277e6a0e76c8a4d7449da982b68a0c1e3f9110500dd1e3",
+      "exit_code": 0
+    },
+    {
+      "test": "tests/journey/verify-final-occurrences.py",
+      "test_sha256": "e97fff54cb56caec5f8067d73b7086974617d3e61fb9cfc1b290b267685626fd",
+      "result": "evidence/v15/release/occurrence-verification.json",
+      "result_sha256": "0156b20f45492ae7b3ed9a49390ba8ac051dba14027259d8e20e47fd52ec2026",
+      "log": "evidence/v15/release/occurrences.log",
+      "log_sha256": "df8b1d6f2df2056cfd6511e1e877cdf18fadaf9cf4d98b06ab8bcad4b520c86c",
+      "exit_code": 0
+    }
+  ]
+}

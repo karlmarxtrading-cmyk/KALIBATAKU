@@ -1,0 +1,508 @@
+{
+  "status": "PASS",
+  "release": "f630b3dc6aa6b5a5",
+  "tree": "dist",
+  "policy": "viewed-items-1.0.0",
+  "started": "2026-11-28T18:46:23.283Z",
+  "finished": "2026-11-28T18:46:23.501Z",
+  "runtime": "v24.22.3",
+  "cases": [
+    {
+      "name": "frozen allocation 0 independently counted",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "name": "frozen allocation 1 independently counted",
+      "expected": 7,
+      "actual": 7
+    },
+    {
+      "name": "frozen allocation 2 independently counted",
+      "expected": 10,
+      "actual": 10
+    },
+    {
+      "name": "early finish",
+      "expected": [
+        1,
+        0
+      ],
+      "actual": [
+        1,
+        0
+      ]
+    },
+    {
+      "name": "sparse fixed 1.5.0 seed 123",
+      "expected": [
+        10,
+        8,
+        10,
+        2,
+        false
+      ],
+      "actual": [
+        10,
+        8,
+        10,
+        2,
+        false
+      ]
+    },
+    {
+      "name": "still on addition",
+      "expected": "arithmetic.addition.g01.l01",
+      "actual": "arithmetic.addition.g01.l01"
+    },
+    {
+      "name": "actual teacher report matches map",
+      "expected": [
+        10,
+        2,
+        false,
+        "viewed-items-1.0.0"
+      ],
+      "actual": [
+        10,
+        2,
+        false,
+        "viewed-items-1.0.0"
+      ]
+    },
+    {
+      "name": "other profile",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "name": "old snapshot without flags uses first_seen_at/history",
+      "expected": [
+        10,
+        2,
+        false
+      ],
+      "actual": [
+        10,
+        2,
+        false
+      ]
+    },
+    {
+      "name": "index and blank alone supply no evidence",
+      "expected": [
+        0,
+        0,
+        false
+      ],
+      "actual": [
+        0,
+        0,
+        false
+      ]
+    },
+    {
+      "name": "explicit false overrides history",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "unseen never supplies exposure",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "history establishes legacy exposure",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "name": "invalid legacy timestamp has no weight",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "ongoing renders resumed snapshot",
+      "expected": "continue",
+      "actual": "continue"
+    },
+    {
+      "name": "ongoing reserves all refs but only 1 viewed",
+      "expected": [
+        6,
+        1,
+        0
+      ],
+      "actual": [
+        6,
+        1,
+        0
+      ]
+    },
+    {
+      "name": "reload preserves membership/order/seed/draft",
+      "expected": "[123,[{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":7,\"question_id\":\"arithmetic.addition.g01.l01.1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":8,\"question_id\":\"arithmetic.addition.g01.l01.00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":4,\"question_id\":\"arithmetic.addition.g01.l01.34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":0,\"question_id\":\"arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":6,\"question_id\":\"arithmetic.addition.g01.l01.4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":9,\"question_id\":\"arithmetic.addition.g01.l01.ac2cb7d42538dedcfd1f0ee96a91f70b4ba09ca999e20fb9964ac454e8b2577f\",\"question_revision\":\"1.2.0\"}],[\"\",\"\",\"\",\"\",\"\",\"\"]]",
+      "actual": "[123,[{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":7,\"question_id\":\"arithmetic.addition.g01.l01.1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":8,\"question_id\":\"arithmetic.addition.g01.l01.00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":4,\"question_id\":\"arithmetic.addition.g01.l01.34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":0,\"question_id\":\"arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":6,\"question_id\":\"arithmetic.addition.g01.l01.4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5\",\"question_revision\":\"1.2.0\"},{\"package_id\":\"MM-G01-L01-ADD-P001\",\"package_sha256\":\"1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5\",\"content_version\":\"1.2.0\",\"question_index\":9,\"question_id\":\"arithmetic.addition.g01.l01.ac2cb7d42538dedcfd1f0ee96a91f70b4ba09ca999e20fb9964ac454e8b2577f\",\"question_revision\":\"1.2.0\"}],[\"\",\"\",\"\",\"\",\"\",\"\"]]"
+    },
+    {
+      "name": "abandoned earns no readiness or variation credit",
+      "expected": [
+        0,
+        0
+      ],
+      "actual": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "wrong does not pass",
+      "expected": [
+        false,
+        0,
+        0
+      ],
+      "actual": [
+        false,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "hints does not pass",
+      "expected": [
+        false,
+        0,
+        0
+      ],
+      "actual": [
+        false,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "revised does not pass",
+      "expected": [
+        false,
+        0,
+        0
+      ],
+      "actual": [
+        false,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "revision after viewing key retains first answer",
+      "expected": [
+        8,
+        8
+      ],
+      "actual": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "new selector on same seeds counts observed",
+      "expected": 11,
+      "actual": 11
+    },
+    {
+      "name": "real coverage eventually advances",
+      "expected": [
+        true,
+        "arithmetic.subtraction.g01.l01"
+      ],
+      "actual": [
+        true,
+        "arithmetic.subtraction.g01.l01"
+      ]
+    },
+    {
+      "name": "JSON preview succeeds",
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "name": "JSON committed snapshot and event bytes",
+      "expected": "4f6be713e4af36b2a8a0ddd98a7afe5dc46ab5ec40dba6929dfee9b7d5565a67",
+      "actual": "4f6be713e4af36b2a8a0ddd98a7afe5dc46ab5ec40dba6929dfee9b7d5565a67"
+    },
+    {
+      "name": "JSON derived readiness after restore",
+      "expected": [
+        10,
+        2,
+        false
+      ],
+      "actual": [
+        10,
+        2,
+        false
+      ]
+    },
+    {
+      "name": "ZIP preview succeeds",
+      "expected": 3,
+      "actual": 3
+    },
+    {
+      "name": "ZIP committed snapshot and event bytes",
+      "expected": "4f6be713e4af36b2a8a0ddd98a7afe5dc46ab5ec40dba6929dfee9b7d5565a67",
+      "actual": "4f6be713e4af36b2a8a0ddd98a7afe5dc46ab5ec40dba6929dfee9b7d5565a67"
+    },
+    {
+      "name": "ZIP derived readiness after restore",
+      "expected": [
+        10,
+        2,
+        false
+      ],
+      "actual": [
+        10,
+        2,
+        false
+      ]
+    },
+    {
+      "name": "flags remain absent after legacy restore",
+      "expected": false,
+      "actual": false
+    },
+    {
+      "name": "legacy ledger preserved",
+      "expected": "95cab8befb856171947bffc106bd2cb883b42ad4bb5aa55439055245b13cd04f",
+      "actual": "95cab8befb856171947bffc106bd2cb883b42ad4bb5aa55439055245b13cd04f"
+    },
+    {
+      "name": "legacy restoration recomputes observation",
+      "expected": [
+        10,
+        2,
+        false
+      ],
+      "actual": [
+        10,
+        2,
+        false
+      ]
+    }
+  ],
+  "frozen": [
+    {
+      "items": [
+        {
+          "id": "arithmetic.addition.g01.l01.1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+          "seen": true,
+          "final_status": "blank",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd",
+          "seen": false,
+          "final_status": "unseen",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+          "seen": false,
+          "final_status": "unseen",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+          "seen": false,
+          "final_status": "unseen",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+          "seen": false,
+          "final_status": "unseen",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.ac2cb7d42538dedcfd1f0ee96a91f70b4ba09ca999e20fb9964ac454e8b2577f",
+          "seen": false,
+          "final_status": "unseen",
+          "responses": 0
+        }
+      ],
+      "observed": [
+        1,
+        0
+      ],
+      "map": [
+        1,
+        0,
+        false
+      ],
+      "next": {
+        "action": "reinforce",
+        "node_id": "arithmetic.addition.g01.l01",
+        "kind": "reinforcement",
+        "reason": "last_mission_below_60_percent_independent"
+      }
+    },
+    {
+      "items": [
+        {
+          "id": "arithmetic.addition.g01.l01.00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd",
+          "seen": true,
+          "final_status": "skipped",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+          "seen": true,
+          "final_status": "skipped",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+          "seen": true,
+          "final_status": "correct",
+          "responses": 1
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.ac2cb7d42538dedcfd1f0ee96a91f70b4ba09ca999e20fb9964ac454e8b2577f",
+          "seen": true,
+          "final_status": "correct",
+          "responses": 1
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.b7862ad65481846bf978c0a2b9ce03dd703787d8096009cbf79ff156f42df896",
+          "seen": true,
+          "final_status": "correct",
+          "responses": 1
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.ed7eb3d4fb83d65b61d5afcd650c57258656edd12ed4e8b018a1b809ab267b14",
+          "seen": true,
+          "final_status": "correct",
+          "responses": 1
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.ea1fed301fa17863f9912aa6b895a9301abb37e138b5843a13f1751d75f238ad",
+          "seen": true,
+          "final_status": "correct",
+          "responses": 1
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+          "seen": false,
+          "final_status": "unseen",
+          "responses": 0
+        }
+      ],
+      "observed": [
+        7,
+        5
+      ],
+      "map": [
+        7,
+        1,
+        false
+      ],
+      "next": {
+        "action": "variation",
+        "node_id": "arithmetic.addition.g01.l01",
+        "kind": "regular",
+        "reason": "expand_unique_coverage"
+      }
+    },
+    {
+      "items": [
+        {
+          "id": "arithmetic.addition.g01.l01.118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+          "seen": true,
+          "final_status": "skipped",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+          "seen": true,
+          "final_status": "skipped",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd",
+          "seen": true,
+          "final_status": "correct",
+          "responses": 1
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+          "seen": true,
+          "final_status": "correct",
+          "responses": 1
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+          "seen": true,
+          "final_status": "correct",
+          "responses": 1
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.ac2cb7d42538dedcfd1f0ee96a91f70b4ba09ca999e20fb9964ac454e8b2577f",
+          "seen": true,
+          "final_status": "correct",
+          "responses": 1
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.bf41acffebc5762fd65f7e8dae4d8dde40ac0844384514772d7165c88bbf274b",
+          "seen": false,
+          "final_status": "unseen",
+          "responses": 0
+        },
+        {
+          "id": "arithmetic.addition.g01.l01.ea1fed301fa17863f9912aa6b895a9301abb37e138b5843a13f1751d75f238ad",
+          "seen": false,
+          "final_status": "unseen",
+          "responses": 0
+        }
+      ],
+      "observed": [
+        10,
+        8
+      ],
+      "map": [
+        10,
+        2,
+        false
+      ],
+      "next": {
+        "action": "variation",
+        "node_id": "arithmetic.addition.g01.l01",
+        "kind": "regular",
+        "reason": "expand_unique_coverage"
+      }
+    }
+  ],
+  "current_selector_sparse": {
+    "actual": [
+      11,
+      8
+    ],
+    "reported": [
+      11,
+      2,
+      false
+    ],
+    "next": {
+      "action": "variation",
+      "node_id": "arithmetic.addition.g01.l01",
+      "kind": "regular",
+      "reason": "expand_unique_coverage"
+    }
+  },
+  "correction": [
+    12,
+    3,
+    true
+  ],
+  "ledger_sha256": "95cab8befb856171947bffc106bd2cb883b42ad4bb5aa55439055245b13cd04f"
+}

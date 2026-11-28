@@ -1,0 +1,224 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "update-161",
+  "scope": "Chromium, same loopback origin, two controlled tabs, IndexedDB and real service worker cache; local update and rollback",
+  "started": "2026-11-28T18:48:52.204248+00:00",
+  "finished": "2026-11-28T18:49:06.258977+00:00",
+  "build": {
+    "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fd4dbd2442531a9b6adf42b476a5a9732b6ca0d9ba6dab799303521bfe9c2848"
+  },
+  "status": "PASS",
+  "runtime": {
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14"
+  },
+  "assertions": 12,
+  "checks": [
+    {
+      "id": "baseline",
+      "expected": "All shell members, package bytes and ready marker match the installed release",
+      "actual": {
+        "phase": "baseline",
+        "snapshot": {
+          "frozen": "2f05143fdbb9f6bc6eb63c666082b9dfe2a1abbf03030f8db4a3abeefb63a73b",
+          "events": "693c7f63d14aaf5d2aa995b69e1195ba5a7c7100b81ca190cf538b87f596399e",
+          "responses": "5f96f52543a029ad2204cdb9079a04bb34adc0266dc24a85a6d55fa8858c68c2"
+        },
+        "draft": "37/9",
+        "cache": {
+          "shell_assets_verified": 71,
+          "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+          "package": "MM-G01-L01-ADD-P001",
+          "release": "a2f40449c4738fe6",
+          "installed_release": "a2f40449c4738fe6",
+          "shell_caches": 1
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "update-waiting-in-two-tabs",
+      "expected": "Same frozen questions/order, first response and events, with the saved draft 37/9",
+      "actual": {
+        "phase": "update waiting in two tabs",
+        "draft": "37/9",
+        "immutable_fields": {
+          "frozen": "2f05143fdbb9f6bc6eb63c666082b9dfe2a1abbf03030f8db4a3abeefb63a73b",
+          "events": "693c7f63d14aaf5d2aa995b69e1195ba5a7c7100b81ca190cf538b87f596399e",
+          "responses": "5f96f52543a029ad2204cdb9079a04bb34adc0266dc24a85a6d55fa8858c68c2"
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "update-workers",
+      "expected": "Two controlled tabs retain prior worker while the new worker waits",
+      "actual": {
+        "phase": "update workers",
+        "two_clients": [
+          "a2f40449c4738fe6",
+          "a2f40449c4738fe6"
+        ],
+        "next_worker": "installed/waiting"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "update-resumed",
+      "expected": "Same frozen questions/order, first response and events, with the saved draft 37/9",
+      "actual": {
+        "phase": "update resumed",
+        "draft": "37/9",
+        "immutable_fields": {
+          "frozen": "2f05143fdbb9f6bc6eb63c666082b9dfe2a1abbf03030f8db4a3abeefb63a73b",
+          "events": "693c7f63d14aaf5d2aa995b69e1195ba5a7c7100b81ca190cf538b87f596399e",
+          "responses": "5f96f52543a029ad2204cdb9079a04bb34adc0266dc24a85a6d55fa8858c68c2"
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "candidate-cache",
+      "expected": "All shell members, package bytes and ready marker match the installed release",
+      "actual": {
+        "phase": "candidate cache",
+        "cache": {
+          "shell_assets_verified": 71,
+          "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+          "package": "MM-G01-L01-ADD-P001",
+          "release": "f630b3dc6aa6b5a5",
+          "installed_release": "f630b3dc6aa6b5a5",
+          "shell_caches": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "offline-candidate-reload",
+      "expected": "Same frozen questions/order, first response and events, with the saved draft 37/9",
+      "actual": {
+        "phase": "offline candidate reload",
+        "draft": "37/9",
+        "immutable_fields": {
+          "frozen": "2f05143fdbb9f6bc6eb63c666082b9dfe2a1abbf03030f8db4a3abeefb63a73b",
+          "events": "693c7f63d14aaf5d2aa995b69e1195ba5a7c7100b81ca190cf538b87f596399e",
+          "responses": "5f96f52543a029ad2204cdb9079a04bb34adc0266dc24a85a6d55fa8858c68c2"
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "rollback-waiting-in-two-tabs",
+      "expected": "Same frozen questions/order, first response and events, with the saved draft 37/9",
+      "actual": {
+        "phase": "rollback waiting in two tabs",
+        "draft": "37/9",
+        "immutable_fields": {
+          "frozen": "2f05143fdbb9f6bc6eb63c666082b9dfe2a1abbf03030f8db4a3abeefb63a73b",
+          "events": "693c7f63d14aaf5d2aa995b69e1195ba5a7c7100b81ca190cf538b87f596399e",
+          "responses": "5f96f52543a029ad2204cdb9079a04bb34adc0266dc24a85a6d55fa8858c68c2"
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "rollback-workers",
+      "expected": "Two controlled tabs retain prior worker while the new worker waits",
+      "actual": {
+        "phase": "rollback workers",
+        "two_clients": [
+          "f630b3dc6aa6b5a5",
+          "f630b3dc6aa6b5a5"
+        ],
+        "next_worker": "installed/waiting"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "rollback-resumed",
+      "expected": "Same frozen questions/order, first response and events, with the saved draft 37/9",
+      "actual": {
+        "phase": "rollback resumed",
+        "draft": "37/9",
+        "immutable_fields": {
+          "frozen": "2f05143fdbb9f6bc6eb63c666082b9dfe2a1abbf03030f8db4a3abeefb63a73b",
+          "events": "693c7f63d14aaf5d2aa995b69e1195ba5a7c7100b81ca190cf538b87f596399e",
+          "responses": "5f96f52543a029ad2204cdb9079a04bb34adc0266dc24a85a6d55fa8858c68c2"
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "rollback-cache",
+      "expected": "All shell members, package bytes and ready marker match the installed release",
+      "actual": {
+        "phase": "rollback cache",
+        "cache": {
+          "shell_assets_verified": 71,
+          "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+          "package": "MM-G01-L01-ADD-P001",
+          "release": "a2f40449c4738fe6",
+          "installed_release": "a2f40449c4738fe6",
+          "shell_caches": 2
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "offline-rollback-reload",
+      "expected": "Same frozen questions/order, first response and events, with the saved draft 37/9",
+      "actual": {
+        "phase": "offline rollback reload",
+        "draft": "37/9",
+        "immutable_fields": {
+          "frozen": "2f05143fdbb9f6bc6eb63c666082b9dfe2a1abbf03030f8db4a3abeefb63a73b",
+          "events": "693c7f63d14aaf5d2aa995b69e1195ba5a7c7100b81ca190cf538b87f596399e",
+          "responses": "5f96f52543a029ad2204cdb9079a04bb34adc0266dc24a85a6d55fa8858c68c2"
+        }
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "completed-after-rollback-offline",
+      "expected": "The offline mission completes exactly once; its first response stays intact",
+      "actual": {
+        "phase": "completed after rollback offline",
+        "items": 6,
+        "completion_events": 1,
+        "preserved_first_response": true
+      },
+      "status": "PASS"
+    }
+  ],
+  "baseline": {
+    "method": "original-1.6.1-zip",
+    "archive_sha256": "37169d1c06edd8216acd3a263282004d893494c74d3dabc6dcb9376e9d7bf198",
+    "old": {
+      "release": "a2f40449c4738fe6",
+      "app": "1.6.1",
+      "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+      "manifest_sha256": "e727694bf28972166429be1a146293ce21fd8b3f00918c6249bfcb13c75e1f10",
+      "worker_sha256": "1fa5f6cc591447906ba7283e6e7a281332a78c973cad9e103fea99f5867d55cc",
+      "app_module_sha256": "43f5123f5b3c5d7e7775b844ccf905819a309530f5df569ae9c35487bcb9d128"
+    },
+    "new": {
+      "release": "f630b3dc6aa6b5a5",
+      "app": "1.6.2",
+      "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+      "manifest_sha256": "7b98464c9f9e069c1b4e4324b75cd281fed44e3e7ed797d64c21eae2b32a65ac",
+      "worker_sha256": "6421b5829710c8022a8e6f6482f3e780c673a2dfe79c0114616942b82350f1f8",
+      "app_module_sha256": "43f5123f5b3c5d7e7775b844ccf905819a309530f5df569ae9c35487bcb9d128"
+    },
+    "browser": "Chromium 151.0.7922.34",
+    "observed_utc": [
+      "2026-11-28T18:48:58.195080+00:00",
+      "2026-11-28T18:49:06.188127+00:00"
+    ],
+    "page_errors": [],
+    "probe_exit": 0
+  }
+}

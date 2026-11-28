@@ -1,0 +1,26 @@
+{
+  "policy_version": "mastery-local-v1",
+  "status": "design_policy_not_empirically_calibrated",
+  "minimum_completed_comparable_forms": 2,
+  "default_min_spacing_hours": 24,
+  "assessment_cycle_max_age_days": 60,
+  "minimum_form_score": 0.8,
+  "minimum_unique_evidence_accuracy": 0.9,
+  "required_unique_evidence": "min(20, verified_pool_size), floor 8; if pool<8 use review, not automatic mastery",
+  "speed_is_gate": false,
+  "outcome": "final response without feedback on first eligible occurrence of fingerprint within the assessment cycle",
+  "noncorrect_evidence_outcomes": [
+    "incorrect",
+    "skipped",
+    "blank",
+    "unseen"
+  ],
+  "new_cycle": "After targeted practice/recovery and an explicit retest action; prior cycles/history/exposure remain visible; at least two new attempts/form_instance_ids using available A/B forms with recorded overlap are required.",
+  "per_competency_slice": true,
+  "local_status": "mastered_provisional",
+  "official_status_requires_trusted_server": true,
+  "review_due_days": [
+    7,
+    30
+  ]
+}

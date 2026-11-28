@@ -1,0 +1,76 @@
+{
+  "runtime": "v24.22.3",
+  "scope": "Production dist modules, Node memory store, minimal DOM and Cache adapters; no browser, no physical-device claim",
+  "results": [
+    {
+      "name": "Catalogue-installed teaching pack without journey occurrence shard",
+      "expected": "REJECTED",
+      "installed_package": "MM-G01-L01-ADD-P001",
+      "form_id": null,
+      "dependencies": [
+        "bank/index.json",
+        "bank/g01.json",
+        "bank/g01/l01.json"
+      ],
+      "occurrence_dependency_present": false,
+      "listInstalled": [
+        "MM-G01-L01-ADD-P001"
+      ],
+      "map_status": "map-node is-open",
+      "offline_message": "Main tanpa internet Misi berikutnya untuk Penjumlahan · Pasangan bilangan sampai 5 sudah tersimpan di perangkat ini.  Kelola penyimpanan offline",
+      "download_buttons": [],
+      "actual": {
+        "status": "REJECTED",
+        "code": "NOT_INSTALLED",
+        "message": "JOURNEY_LOAD"
+      }
+    },
+    {
+      "name": "Only an assessment pack, even with the journey shard present",
+      "expected": "REJECTED",
+      "installed_package": "MM-G01-L01-ADD-P003",
+      "form_id": "MM-G01-L01-ADD-P003.A",
+      "dependencies": [
+        "bank/index.json",
+        "bank/g01.json",
+        "bank/g01/l01.json",
+        "journey/v1/occ/arithmetic.addition.g01.l01.json"
+      ],
+      "occurrence_dependency_present": true,
+      "listInstalled": [
+        "MM-G01-L01-ADD-P003"
+      ],
+      "map_status": "map-node is-open",
+      "offline_message": "Main tanpa internet Misi berikutnya untuk Penjumlahan · Pasangan bilangan sampai 5 sudah tersimpan di perangkat ini.  Kelola penyimpanan offline",
+      "download_buttons": [],
+      "actual": {
+        "status": "REJECTED",
+        "code": "NOT_INSTALLED",
+        "message": "NO_MATERIAL"
+      }
+    },
+    {
+      "name": "Positive control: teaching pack plus journey occurrence shard",
+      "expected": "CREATED",
+      "installed_package": "MM-G01-L01-ADD-P001",
+      "form_id": null,
+      "dependencies": [
+        "bank/index.json",
+        "bank/g01.json",
+        "bank/g01/l01.json",
+        "journey/v1/occ/arithmetic.addition.g01.l01.json"
+      ],
+      "occurrence_dependency_present": true,
+      "listInstalled": [
+        "MM-G01-L01-ADD-P001"
+      ],
+      "map_status": "map-node is-open",
+      "offline_message": "Main tanpa internet Misi berikutnya untuk Penjumlahan · Pasangan bilangan sampai 5 sudah tersimpan di perangkat ini.  Kelola penyimpanan offline",
+      "download_buttons": [],
+      "actual": {
+        "status": "CREATED",
+        "id": "bfdd8034-8de6-4326-91a0-074df0d24065"
+      }
+    }
+  ]
+}

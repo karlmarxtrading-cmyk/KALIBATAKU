@@ -1,0 +1,27 @@
+{
+  "inputs": [
+    {
+      "name": "KALIBATAKU_1.4.0_AUDIT_PRODUKSI_DAN_TEMUAN_20261128.zip",
+      "bytes": 1011362,
+      "sha256": "e65bd48f04f59724d04346893b732a3b188baa518d0dcfd0c237d82cd63b8a2a"
+    },
+    {
+      "name": "KALIBATAKU_1.4.0_LAPORAN_AUDIT_20261128.pdf",
+      "bytes": 119552,
+      "sha256": "2d43db56e0beff6f0f15d6f0d5c5be0aafda1881f4c085dd59f11c76b32f9c4f"
+    },
+    {
+      "name": "KALIBATAKU_ADVENTURE_SOURCE_DIST_BANK_EVIDENCE.zip",
+      "bytes": 113531136,
+      "sha256": "86b030e3196cbf2116ce37bad3a6b7bcb350eadee4d1931cff8ba7bcf094046d"
+    },
+    {
+      "name": "PROMPT_ASTRA_KALIBATAKU_1.4.0_PENUNTASAN_PRODUKSI_20261128.txt",
+      "bytes": 26580,
+      "sha256": "f36983f9980ede7d3e9406d434ce4d65dc2b926417659e8e6f53bca4798e22f9"
+    }
+  ],
+  "attached_hash": "86b030e3196cbf2116ce37bad3a6b7bcb350eadee4d1931cff8ba7bcf094046d",
+  "bank_members_exactly_equal": 4677,
+  "baseline_members": 6074
+}

@@ -1,0 +1,61 @@
+{
+  "decision": "PASS",
+  "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+  "offline_release": "ef0b6798d9633ca8",
+  "app_version": "1.5.1",
+  "bank_version": "1.2.0",
+  "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9",
+  "finished_utc": "2026-11-28T10:40:37.820420+00:00",
+  "method": "Packaged dist used directly in the engine and Firefox. Five actual reports were reopened. Firefox imported the same synthetic backup produced by the engine. The sorted dist tree hash was verified before and after. Source identity from the frozen release manifest.",
+  "counts": {
+    "engine": 33,
+    "export_formats": 5,
+    "firefox_cases": 3
+  },
+  "runtime": {
+    "node": "v24.22.3",
+    "browser": "Firefox 153.0",
+    "python": "3.12.14",
+    "playwright": "1.62.0"
+  },
+  "commands": [
+    "node tests/journey/viewed-coverage.mjs --dist evidence/v151/exposure",
+    "python3 tests/journey/inspect-report-readiness.py evidence/v151/exposure --sparse",
+    "python3 tests/journey/viewed-coverage-browser.py --fixture evidence/v151/exposure/sparse-profile.json --out evidence/v151/exposure/browser.json"
+  ],
+  "sha256": {
+    "evidence/v151/exposure/browser.json": "805da72e96c65ec2a69a9897b1897cc8e1ebf31714324f1548d2e2cb03138c08",
+    "evidence/v151/exposure/engine.json": "6fa8c60d5766f825a1186a7810ada7af1e6188801e2d5ab4b02e68206442e7a4",
+    "evidence/v151/exposure/final-browser.log": "cf025414d11798fa572934486b18ddc78c026e61b2b30a69429f18fdecff604e",
+    "evidence/v151/exposure/final-engine.log": "1b148b2b3fd57cb87737c37d56565ad0cb6da8a5372491cd474fbac525fe8f70",
+    "evidence/v151/exposure/final-formats.log": "dbae85cecd83ce18ca0cc7caec32dae944fe8e17e804b87ccad781b21767a348",
+    "evidence/v151/exposure/format-inspection.json": "c118c86827993f9223a7e2d3d61e92da155b783b9186df009fc5678659c4665c",
+    "evidence/v151/exposure/report.csv": "fc9ed862bc1416adf263605334b4f49d31eae9f8812abd7ff512dfafde573aae",
+    "evidence/v151/exposure/report.docx": "a63ac415c24eafe1d2878162467712e78aab023e9f8192d5d7b47e777c2b6780",
+    "evidence/v151/exposure/report.json": "db53469f931caad5ae1e9939a0912722cf0ec84f82eb978afa02e5c1d7c7f2ac",
+    "evidence/v151/exposure/report.pdf": "58145871fb7f4834361363e6a3daa9c3ae564c7603b3e679bcfab56eb65cdc11",
+    "evidence/v151/exposure/report.xlsx": "14ca2f5246009d3b225e72c486e7d123e6942e0d3c549e2c143fe58a2d12f4ea",
+    "evidence/v151/exposure/sparse-profile.json": "ecf8dc820d59eaaacc78cd76638069dd7020e7b79fe6ae53b8870e51b234a3be"
+  },
+  "before_replay": {
+    "build": {
+      "app_version": "1.5.0",
+      "bank_version": "1.2.0",
+      "product": "KALIBATAKU",
+      "offline_release": "460c98b682110f7e",
+      "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c"
+    },
+    "browser": "153.0",
+    "runtime": "v24.22.3",
+    "controls": "Identical audit probes re-run in a separate directory; original saved baseline result hashes verified.",
+    "early": {
+      "true_viewed": 1,
+      "reported": 6
+    },
+    "sparse": {
+      "true_viewed": 10,
+      "reported": 12,
+      "reported_ready": true
+    }
+  }
+}

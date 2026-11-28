@@ -1,0 +1,2 @@
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+webkit 26.5: 131/135; failed ['844x390-enter-home', '844x390-click-home', '844x390-touch-home', 'continuity-home']

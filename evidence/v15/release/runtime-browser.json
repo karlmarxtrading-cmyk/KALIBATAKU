@@ -1,0 +1,22 @@
+{
+  "chromium": {
+    "product": "Chrome for Testing Headless Shell",
+    "version": "151.0.7922.34",
+    "source": "https://storage.googleapis.com/chrome-for-testing-public/151.0.7922.34/linux64/chrome-headless-shell-linux64.zip"
+  },
+  "firefox": {
+    "product": "Playwright Firefox",
+    "version": "153.0",
+    "revision": 1538
+  },
+  "webkit": {
+    "product": "Playwright WebKit MiniBrowser",
+    "version": "26.5",
+    "revision": 2336,
+    "renderer": "Linux headless WPE"
+  },
+  "playwright_python": "1.62.0",
+  "physical_devices_tested": 0,
+  "word_target_tested": false,
+  "notes": "Chromium, Firefox and WebKit ran on Linux. WebKit used extracted Debian runtime dependencies. Initial distribution download failures appear in the environment logs; these are not browser test results."
+}

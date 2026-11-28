@@ -1,0 +1,435 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "audit-validator-25",
+  "scope": "Independent synthetic fixture probes of runner, binding writer and binding verifier; no human/device test claims",
+  "started": "2026-11-28T18:49:23Z",
+  "finished": "2026-11-28T18:49:24Z",
+  "build": {
+    "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fd4dbd2442531a9b6adf42b476a5a9732b6ca0d9ba6dab799303521bfe9c2848"
+  },
+  "status": "PASS",
+  "assertions": 25,
+  "checks": [
+    {
+      "id": "valid-control",
+      "status": "PASS",
+      "expected": "PASS",
+      "actual": {
+        "id": "valid-control",
+        "expected": "PASS",
+        "runner_status": "PASS",
+        "binding_status": "PASS",
+        "evaluated_assertions": 1,
+        "verifier_problems": [],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "old-audit-string-null",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "old-audit-string-null",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 0,
+        "verifier_problems": [
+          "auditor-independent: checks[0]: assertion must be an object with a nonempty string id",
+          "auditor-independent: checks[1]: assertion must be an object with a nonempty string id",
+          "auditor-independent: empty receipt: no evaluated assertions",
+          "auditor-independent: only 0 assertions, registry requires 1",
+          "auditor-independent: declared status PASS differs from rows (FAIL)",
+          "auditor-independent: assertion count does not match evaluated rows",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "pass-row-with-error",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "pass-row-with-error",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: checks[0]: PASS assertion contains errors",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "pass-row-with-errors",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "pass-row-with-errors",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: checks[0]: PASS assertion contains errors",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "both-row-containers",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "both-row-containers",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 2,
+        "verifier_problems": [
+          "auditor-independent: canonical assertion rows belong in checks",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "number-count",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "number-count",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: assertion count does not match evaluated rows",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "negative-count",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "negative-count",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: assertion count does not match evaluated rows",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "truthy-errors-object",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "truthy-errors-object",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: errors: expected an empty array",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "empty-errors-object",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "empty-errors-object",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: errors: expected an empty array",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "hidden-page-error",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "hidden-page-error",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: page_errors: expected an empty array",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "hidden-run-error",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "hidden-run-error",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: run_errors: expected an empty array",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "mixed-pass-blocked",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "mixed-pass-blocked",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 2,
+        "verifier_problems": [
+          "auditor-independent: declared status PASS differs from rows (BLOCKED_ENV)",
+          "auditor-independent: BLOCKED_ENV not permitted for this suite",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "wrong-runtime-type",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "wrong-runtime-type",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: runtime metadata must be an object",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "conflicting-release",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "conflicting-release",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: conflicting receipt build identity: release",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "conflicting-runtime-release",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "conflicting-runtime-release",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: conflicting receipt build identity: release",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "wrong-app-version",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "wrong-app-version",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: receipt build identity differs: app_version",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "wrong-bank-version",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "wrong-bank-version",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: receipt build identity differs: bank_version",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "wrong-dist-hash",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "wrong-dist-hash",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: receipt build identity differs: dist_tree_sha256",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "status-as-list",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "status-as-list",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: declared status ['PASS'] differs from rows (PASS)",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "whitespace-duplicate-ids",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "whitespace-duplicate-ids",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 1,
+        "verifier_problems": [
+          "auditor-independent: checks[1]: duplicate assertion id 'same'",
+          "auditor-independent: assertion count does not match evaluated rows",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "duplicate-json-field",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "duplicate-json-field",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 0,
+        "verifier_problems": [
+          "auditor-independent: receipt is not a JSON object",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "nonfinite-json",
+      "status": "PASS",
+      "expected": "FAIL",
+      "actual": {
+        "id": "nonfinite-json",
+        "expected": "FAIL",
+        "runner_status": "FAIL",
+        "binding_status": "FAIL",
+        "evaluated_assertions": 0,
+        "verifier_problems": [
+          "auditor-independent: receipt is not a JSON object",
+          "auditor-independent: suite status FAIL not accepted"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "duplicate-suite-result",
+      "status": "PASS",
+      "expected": "Reject incomplete or diagnostic binding",
+      "actual": {
+        "id": "duplicate-suite-result",
+        "binding_status": "FAIL",
+        "verifier_problems": [
+          "auditor-independent: duplicate suite result"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "missing-required-suite",
+      "status": "PASS",
+      "expected": "Reject incomplete or diagnostic binding",
+      "actual": {
+        "id": "missing-required-suite",
+        "binding_status": "FAIL",
+        "verifier_problems": [
+          "required suites missing from binding: ['not-run']"
+        ],
+        "test_status": "PASS"
+      }
+    },
+    {
+      "id": "diagnostic-not-release",
+      "status": "PASS",
+      "expected": "Reject incomplete or diagnostic binding",
+      "actual": {
+        "id": "diagnostic-not-release",
+        "binding_status": "PASS",
+        "verifier_problems": [
+          "diagnostic binding cannot certify a release"
+        ],
+        "test_status": "PASS"
+      }
+    }
+  ]
+}

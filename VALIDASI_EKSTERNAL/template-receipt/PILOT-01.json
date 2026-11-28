@@ -1,0 +1,423 @@
+{
+  "schema": "kalibataku-external-receipt/1",
+  "receipt_id": "PILOT-01-",
+  "criterion": "PILOT-01",
+  "phase": "WAJIB",
+  "template_only": true,
+  "test_only": false,
+  "action": "record",
+  "result": null,
+  "previous": [],
+  "change_reason": "",
+  "test_event_id": "",
+  "build": {
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "offline_release": "a2f40449c4738fe6",
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "protocol_reference": "",
+  "started_at_utc": "",
+  "finished_at_utc": "",
+  "operator": {
+    "actor_id": "",
+    "role": "pilot-moderator",
+    "statement": "",
+    "at_utc": ""
+  },
+  "reviewer": {
+    "actor_id": "",
+    "role": "reviewer",
+    "statement": "",
+    "at_utc": "",
+    "decision": null
+  },
+  "scenarios": [
+    {
+      "case_id": "s01",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s02",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s03",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s04",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s05",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s06",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s07",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s08",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s09",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s10",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s11",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    },
+    {
+      "case_id": "s12",
+      "environment": {
+        "mode": "observed-pilot",
+        "participant_role": "student",
+        "material_group": "early|middle|upper",
+        "device": "",
+        "app_version": ""
+      },
+      "checks": {
+        "choose_start": "",
+        "launch": "",
+        "wrong_answer_feedback": "",
+        "continue": "",
+        "reopen": ""
+      },
+      "measurements": {
+        "permission_confirmed": null,
+        "critical_data_failure": null,
+        "dead_end": null,
+        "elapsed_seconds": null,
+        "mistaps": null,
+        "moderator_notes": "",
+        "start_unassisted": null,
+        "continue_unassisted": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "pilot-log"
+      ]
+    }
+  ],
+  "artifacts": []
+}

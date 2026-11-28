@@ -1,0 +1,123 @@
+TUJUAN
+
+Kerjakan langsung implementasi peningkatan KALIBATAKU dari source 1.1.0 yang saya lampirkan. Wujudkan seluruh arahan yang relevan dalam ZIP audit menjadi aplikasi statis lengkap yang siap diterima menurut bukti pengujian. Hasil akhir wajib satu ZIP berisi source, dist siap hosting statis, bank lengkap, test, bukti aktual, status rilis dan petunjuk penggunaan. Saya meminta pekerjaan implementasi sampai tuntas, bukan hanya mengekstrak ZIP, menyalin prompt, membuat rencana, ringkasan audit, landing page atau mockup beberapa layar.
+
+Gunakan bahasa Indonesia untuk laporan kerja. Produk tetap bilingual Indonesia–Inggris, responsif untuk perangkat sasaran, mendukung tema terang/gelap/sistem, serta mengutamakan kemudahan siswa, guru, admin dan orang tua. Gunakan upaya analisis dan verifikasi yang tinggi untuk masalah nyata. Jangan menyatakan tes yang belum dijalankan sebagai PASS atau mengaku 100% siap ketika gate wajib masih terbuka.
+
+BAHAN DAN HIERARKI KEPUTUSAN
+
+1. ZIP baseline: KALIBATAKU_STATIC_1.1.0_UIUX_SOURCE_DIST_BANK_EVIDENCE.zip.
+   SHA-256: 23e5d826e00bf34c9f8b31e0acf938a133711c1d243623f2fc38274cef21841f.
+2. ZIP audit: KALIBATAKU_1.1.0_AUDIT_UIUX_MATH_FEEDBACK_20261126.zip.
+3. Baca 00_MULAI_DI_SINI, seluruh A, laporan dan register B, 48 kriteria FM, fixture matematika serta bukti yang relevan. Baca spec/source/test/keputusan dalam baseline dan aturan kerja repositori yang berlaku.
+4. Instruksi terbaru saya adalah kunci langsung sesudah OKE untuk mode belajar. Arahan lama S08/reveal bertahap untuk kunci harus diperbarui sesuai keputusan ini. Pertahankan bantuan bertahap untuk rincian metode bila berguna; informasi benar/salah, jawaban siswa dan kunci tidak tersembunyi setelah OKE sah.
+5. Sumber 1.1.0 memiliki 80 AC dan 47 closure historis. Matriks FM-001–FM-048 adalah tambahan untuk build baru; semua mulanya NOT_RUN. Simpan status baseline terpisah dari hasil build baru.
+
+MULAI DARI BASELINE YANG BENAR
+
+Validasi identitas ZIP, ekstrak dengan aman, inventarisasi file dan kerjakan salinan/cabang terisolasi yang menjaga sumber asli. Baca package.json serta alat proyek untuk memahami build. Jalankan pemeriksaan baseline yang tersedia dan simpan hasilnya. Jangan menghapus hasil sah hanya karena audit baru menambahkan kriteria.
+
+Pertahankan perbaikan 1.1.0 yang terbukti: draf sah ter-commit saat Lanjut/Selesai; reset laporan mempertahankan sumber/profil; penerima tugas dari detail siswa tetap benar; draf guru bertahan ketika bahasa berubah. Jadikan alur tersebut regresi wajib. Code review dan pemeriksaan baru harus dapat menemukan ulang perilaku, bukan menyalin status lulus lama.
+
+KONTRAK UI SISWA SETELAH OKE
+
+Pada Latihan, Adaptif dan Pemulihan:
+- Satu OKE pada input sah menampilkan, pada soal yang sama: Benar/Belum tepat, Jawabanmu, Kunci jawaban, dan satu cara singkat yang terverifikasi.
+- Informasi inti terlihat tanpa membuka Petunjuk terlebih dahulu. Pembahasan lengkap boleh memakai disclosure.
+- Hasil benar tetap memperlihatkan kunci. Respons ekuivalen seperti 21/12 terhadap 7/4 dijelaskan dengan Nilainya sama jika kebijakan soal menerimanya.
+- Tidak ada auto-next sesudah hasil. Aksi utama berubah menjadi Soal berikutnya; soal terakhir Tinjau hasil dengan kalimat akhir yang sesuai.
+- Sebelum diperiksa, hanya satu aksi utama OKE · Periksa jawaban. Enter dan sentuhan mengikuti transisi yang sama. Lewati tetap tindakan terpisah; finalisasi menjaga draf sah.
+- Input kosong, '-', '1/', denominator nol dan format invalid belum menjadi jawaban salah, tidak menambah submission sah atau membuka kunci. Pesan memperbaiki format mempertahankan draf. Contoh format dan pesan validasi sebelum submission menggunakan contoh netral, bukan kunci soal aktif atau nilai ekuivalennya.
+- Double-click, Enter berulang, composition, retry, navigasi cepat dan font terlambat tidak menggandakan respons atau melompati hasil.
+
+Evaluasi tetap menyimpan respons tanpa membocorkan benar/salah/kunci sebelum Kirim hasil akhir. Sebelum mulai jelaskan kebijakan tersebut. Setelah final, review berisi respons, kunci dan metode. Bila kegiatan ingin memakai kunci seketika, labeli sebagai latihan dengan umpan balik dan jelaskan arti pengukurannya. Aplikasi statis tidak menjanjikan kerahasiaan kunci dari pihak yang membaca berkas klien.
+
+Mode Kecepatan memakai feedback langsung tanpa auto-next dan mempertahankan tenggat sesi yang terus berjalan saat hasil dibaca. Jelaskan sebelum mulai; ketika waktu habis, finalisasi menjaga data sesuai aturan dan hasil/kunci tetap dapat dibaca setelahnya. Jangan menambahkan pause atau bonus waktu diam-diam. Versikan kebijakan feedback/waktu dan pisahkan perbandingan hasil lama/baru. Mode yang sengaja menghentikan jam selama membaca hasil harus menjadi mode/kebijakan berbeda dengan metrik terpisah.
+
+PENCATATAN RESPONS DAN KUNCI
+
+Bekukan respons sah pertama sebelum reveal. Simpan raw response, nilai rasional, first_correct, final_correct, urutan submission, bantuan sebelum respons, waktu/reason answer-key reveal dan feedback_policy_version sesuai schema yang dimigrasikan. Pertahankan teks mentah historis walau tampilan locale berubah. Revisi setelah melihat kunci tetap berguna untuk belajar tetapi tidak menjadi bukti respons mandiri pertama.
+
+Kasus 999→5 untuk 0+5 harus mempertahankan first_correct=false dan final_correct=true. Tampilan hasil, analytics, adaptive selection, detail guru, laporan dan event bridge harus memakai makna yang konsisten. Respons pertama yang sudah benar sebelum kunci terbuka tidak otomatis dilabeli berbantuan hanya karena reveal terjadi sesudahnya.
+
+Submission dan penyimpanan harus idempotent. Bedakan nilai matematika dari status simpan lokal/sinkronisasi/server. Jika simpan gagal, hasil dan input tetap ada, pengguna dapat retry tanpa event ganda, dan navigasi yang dapat kehilangan data ditangani dengan jelas. Migrasi database tidak mereset profil/sesi lama. Snapshot paket/versi/hash tetap membuat riwayat dapat dibaca sesudah bank diperbarui.
+
+MATEMATIKA TERSTRUKTUR DI SELURUH PRODUK
+
+Saat ini MathJax belum terpasang. Implementasikan typesetter yang benar-benar digunakan, dengan MathJax versi terkunci dan aset/font lokal yang dibundel. Dokumen A3 menyebut 4.1.3 sebagai kandidat yang terverifikasi saat audit; periksa dokumentasi resmi dan kompatibilitas pada saat implementasi, catat versi tepat beserta lisensi. Jangan mengandalkan URL latest yang berubah diam-diam.
+
+Sumber nilai adalah expression_ast dan aritmetika rasional eksak. Metadata display menyimpan maksud penyajian. Serializer aman berjalan berdasarkan schema/jenis operator yang diizinkan; jangan membentuk rumus dengan penggantian slash/kurung global atau menerima TeX/HTML mentah dari siswa/catatan/impor. Teks yang tidak sah diperlakukan sebagai teks aman. Validasi operand, denominator, operator tak dikenal dan struktur yang rusak secara eksplisit.
+
+Perhatikan contoh wajib:
+- 11/12 + 10/12 tetap menampilkan 10/12, walau operand kanonis AST adalah 5/6; kunci boleh 7/4.
+- 20.0 tetap mempertahankan satu tempat desimal sesuai metadata; ID menjadi 20,0.
+- Strategi 20,0 + 35,3 sebaiknya melanjutkan 50 + 5,3. Perubahan menjadi 53/10 harus disengaja dan diterangkan, bukan efek helper default.
+- Tanda minus, pecahan negatif dan grouping pengurangan/pembagian bertingkat tidak berubah makna. 12−(5−2) berbeda dari (12−5)−2; 24÷(6÷2) berbeda dari (24÷6)÷2.
+- Nilai besar tetap eksak, tidak melalui float yang menghilangkan presisi.
+- Kalimat EN dengan contoh -3 memakai integers, bukan whole numbers.
+
+Komponen presentasi bersama melayani soal, respons sah, kunci, petunjuk, cara singkat, semua langkah, tinjau akhir, review riwayat, detail bukti siswa dan laporan. Pecahan mempunyai struktur numerator/denominator; operator serta kurung jelas. Breakpoint menjaga operand/pecahan utuh dan boleh memecah di batas operator/grouping yang aman. Jangan memotong digit atau mengecilkan rumus secara ekstrem demi satu baris.
+
+Gunakan lifecycle Promise MathJax sesuai dokumentasi versi: tunggu kesiapan, typeset container relevan, clear sebelum node lama dibuang, dan cegah stale render sesudah pergantian route/bahasa/soal. Jangan typeset ulang seluruh halaman pada setiap ketikan atau tick timer. Mulai timer awal sesi setelah soal, input dan dependensi tampilan siap; selama sesi tenggat Kecepatan tetap mengikuti kebijakan eksplisit. Jika renderer/font gagal, tampilkan fallback linear yang terbaca dan retry tanpa menghapus input; labeli keadaan secara jujur.
+
+Self-host semua font/data font/worker/locale yang dibutuhkan. Ukur tambahan bobot MathJax; jangan menyembunyikannya dengan mengeluarkan dari laporan bundle. Uji jalur relatif/subfolder, CSP, request CDN yang tak sengaja, cache terikat versi dan offline setelah aset yang dijanjikan tersedia. Native MathML pada contoh HTML audit adalah ilustrasi; jangan mengaku contoh itu membuktikan integrasi MathJax aplikasi sudah lulus.
+
+Implementasikan struktur aksesibel serta ujaran ID/EN yang diuji. Jangan mengasumsikan speech bahasa Indonesia tersedia hanya karena UI diterjemahkan. Hindari pembacaan ganda dari aria-label, MathML dan live region. Pengguna keyboard/AT dapat membaca soal, mendengar status satu kali, membuka metode dan melanjutkan. Gate yang memerlukan pembaca layar nyata tetap terbuka bila tidak ada uji pendengar.
+
+UI/UX DI SELURUH PERAN
+
+Terapkan A1: navigasi sederhana, profil aktif jelas, lanjutkan sesi, materi menurut kelas/level/operasi, kombinasi kurikulum tidak aktif dengan alasan, input berlabel, progressive disclosure untuk pilihan lanjutan dan status kosong/gagal/offline yang bisa dipulihkan. Kelas materi bukan label kecerdasan siswa. Pertahankan riwayat dan konfigurasi saat perubahan bahasa/tema.
+
+Gunakan token tema semantik, fokus terlihat, reduced motion, status dengan teks/ikon, target produk kontrol utama minimal 48×48 CSS px dan jarak cukup. Ukuran tersebut adalah target kenyamanan produk, bukan penyebutan keliru ambang WCAG AA. Uji kedua tema, kedua bahasa, 320/360/390/768/1024/1440px sebagai target viewport, text resize 200%, zoom/reflow relevan, portrait/landscape, keyboard dan safe-area nyata. Catat viewport aktual dan mana yang hanya simulasi.
+
+Tampilan guru mempertahankan kelas/siswa/asal data saat menuju bukti, catatan, penugasan dan laporan. Draf catatan serta penerima tugas tidak hilang. Admin dapat memilih periode/sumber dan mengekspor dengan status yang dapat dibaca. Laporan keluarga menjelaskan yang sudah terlihat, fokus latihan, contoh bukti dan rencana, beserta jumlah data, bantuan dan keterbatasan kesimpulan. Hindari peringkat publik atau label psikologis yang tidak didukung data.
+
+BAHASA DAN DOKUMEN UNDUHAN
+
+Semua teks terlihat, galat, loading, aria label dan ringkasan memiliki ID/EN. Perbaiki istilah matematika dan konsistensi locale di player, detail guru dan report. Draf parsial serta raw response lama tetap terjaga. Teks guru/identitas tidak diterjemahkan otomatis.
+
+Tambahkan model blok matematika pada pipeline laporan. Memasang MathJax pada HTML tidak memperbaiki PDF/DOCX secara otomatis. PDF menjaga ekspresi tajam dan urutan baca sesuai kontrak; Word memakai OMML jika menjanjikan persamaan dapat diedit, atau jelaskan fallback yang memang dipilih. CSV/XLSX/JSON mengutamakan nilai eksak, provenance, struktur yang benar dan keamanan ekspor. Tinjau file hasil, tidak hanya tombol unduh. Print preview serta laporan HTML aksesibel tetap tersedia.
+
+BANK DAN KURIKULUM HARUS TETAP LENGKAP
+
+Baseline memuat 4.604 paket, 177.640 penempatan, 168.142 ekspresi kanonis unik, 60 kombinasi kelas–level, 281 kompetensi aktif dan 562 form evaluasi. Pertahankan identitas, AST, nilai/kunci, answer policy, dependency/curriculum mapping dan alasan 19 kompetensi tidak aktif. Jangan mengganti bank dengan sampel kecil atau mengklaim penempatan sebagai jumlah soal unik.
+
+Jika perbaikan penjelasan/metadata memang diperlukan, lakukan perubahan semantik secara terkontrol, naikkan versi sesuai makna dan buat perbandingan before/after serta snapshot migration. Nilai eksak/fingerprint tidak berubah tanpa alasan dan versi yang jelas. Jalankan ulang oracle semua kunci dan langkah setelah perubahan. 32 fixture QA dari audit bukan bank kurikulum baru. Review 394 keluarga template dan sampel editorial memerlukan reviewer nyata; jangan membuat persetujuan pendidik/bahasa yang tidak dilakukan.
+
+LAZY LOADING, DATA DAN BRIDGE
+
+Pertahankan pemuatan bank per paket, pemisahan modul siswa/guru/ekspor, worker untuk pekerjaan berat yang terbukti perlu, cancellation dan cache terikat versi. Klik pertama harus ditangani; loading tidak menuntut klik kedua. Keyboard, jawaban dan state siswa tetap responsif saat modul lain dimuat. Ukur cold/warm/offline serta dampak renderer pada perangkat sasaran. Angka p75 lapangan hanya berasal dari data lapangan nyata.
+
+Statis lokal dan bridge adalah dua lapisan yang jelas. Pertahankan label simulasi/lokal/pending/ACK/server-verified. Otorisasi institusi, ACL antar-kelas, identitas dan penilaian server harus diuji pada endpoint nyata untuk mengklaim LMS live. Bila lingkungan itu belum tersedia, selesaikan adapter, kontrak, mock/failure harness dan panduan integrasi; tandai live gate sebagai BLOCKED/DEFERRED_BY_SCOPE dengan kebutuhan spesifik. Siapkan semua pekerjaan yang dapat dilakukan tanpa mengarang server atau akses.
+
+PENGUJIAN DAN BUKTI YANG WAJIB
+
+1. Jalankan ulang perintah proyek yang sesuai (lihat package.json/tools/project.py): check/test/build/verify dan gate relevan. Simpan log serta exit status. Build final dibuat dari source final dan manifest/hash aktual.
+2. Gunakan 80 AC sumber dan 48 FM tambahan sebagai dua register berbeda. Perubahan schema/status harus mempertahankan histori. FM baru tidak mendapat PASS dari probe aritmetika lama.
+3. Uji regresi S01, TB-01, TB-02, TB-03 dan semua perubahan OKE pada browser. Probe mesin 33 kasus merupakan baseline tambahan, bukan pengganti UI.
+4. Uji 32 fixture matematika dan seluruh bank untuk nilai/struktur; uji renderer bersama dan buktikan setiap permukaan memakainya. Periksa pecahan, negatif, desimal, grouping, ekspresi panjang, locale, tema, font failure, stale render dan offline.
+5. Tutup AC-030,045,050,053,055,056,057,058,059,080 dengan bukti aktual sesuai kontrak. Perangkat fisik, IME asli, Safari/Firefox dan pembaca layar tidak dianggap lulus berdasarkan DOM clone atau Chrome desktop saja.
+6. Uji migrasi profil/sesi, autosave gagal, retry, timeout, double click, cepat pindah bahasa, offline-cache/update, sumber laporan, finalisasi atomik dan ekspor hasil nyata.
+7. Sebelum deployment PASS, jalankan smoke pada host final yang diizinkan: root/subfolder/deep link, MIME modul/font, cache, update service worker, file unduhan, offline dan rollback. Siapkan source/dist lengkap lebih dahulu; publikasi eksternal mengikuti otorisasi pemilik yang berlaku.
+8. Bukti memuat build/hash, tanggal, alat, OS/browser/perangkat/AT, langkah, expected, actual dan status. Bedakan bukti baru, bukti baseline, code review, simulasi, pengujian perangkat nyata dan kebutuhan yang belum diuji.
+9. Uji pengguna/editorial hanya memakai peserta/reviewer nyata. Jika belum tersedia, sediakan protokol dan bahan uji siap pakai, sebutkan blocker konkret dan pertahankan NOT_RUN. Kerjakan semua bagian lain sampai selesai; jangan berhenti hanya karena satu gate eksternal belum tersedia.
+
+HASIL AKHIR DALAM SATU ZIP
+
+Sertakan sekurang-kurangnya:
+- 00_MULAI_DI_SINI dengan cara menjalankan/hosting dan status faktual.
+- src lengkap, dist lengkap siap di-host melalui HTTP(S), bank lengkap, aset renderer/font lokal, dependensi dan lisensi.
+- migration, factory/config yang relevan, tests, fixtures dan dokumen deployment/pemulihan.
+- CHANGELOG yang menjelaskan OKE/kunci, matematika, data, bahasa, laporan dan perbaikan UX.
+- AUDIT_CLOSURE dengan baseline_status dan status_build_baru yang tidak ambigu, evidence refs dan sisa pekerjaan tiap temuan.
+- ACCEPTANCE_RESULTS untuk 80 AC serta register terpisah 48 FM, keduanya terikat build final.
+- RELEASE_STATUS per lingkup: static application, bank technical, bridge contract, live LMS, editorial/pedagogical, user validation dan deployment.
+- bukti/log aktual dan indeks HTML yang memudahkan pemilik memeriksa; manifest/file inventory/SHA256SUMS yang benar; ZIP lolos integritas.
+
+Gunakan nomor versi berikutnya sesuai perubahan dan aturan proyek, serta tuliskan versi itu konsisten. Paket hasil wajib berisi aplikasi lengkap, bukan patch tanpa sumber atau tautan ke mockup. Pastikan ekstraksi baru dapat dibangun dan dist dapat dijalankan dengan petunjuk yang diberikan. Simpan dan sediakan tautan unduhan ZIP final.
+
+PENUTUP PEKERJAAN
+
+Pada jawaban akhir, nyatakan yang benar-benar selesai, contoh perilaku OKE, renderer matematika yang benar-benar digunakan, jumlah bank yang dipertahankan, hasil uji dan gate yang tersisa. Jelaskan cara pemilik memeriksa sendiri jawaban salah/benar, pecahan, desimal, mode evaluasi, riwayat dan laporan. Jika masih HOLD, sebutkan alasan dan kebutuhan berikutnya dengan spesifik. Jangan meminta saya mengonfirmasi pekerjaan implementasi rutin yang sudah saya instruksikan. Lanjutkan sampai semua pekerjaan yang tersedia dalam lingkungan ini selesai dan hasilnya dapat ditinjau.
+
+AKHIR PROMPT

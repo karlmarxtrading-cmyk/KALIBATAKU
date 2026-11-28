@@ -1,0 +1,5 @@
+{
+  "schema": "kalibataku-technical-findings/1",
+  "baseline": "Audit 1.6.1, 13_HASIL_AUDIT.json. Temuan teknis baru yang terkonfirmasi dicatat di sini. Kegagalan regresi selalu dievaluasi secara terpisah dari daftar ini.",
+  "findings": []
+}

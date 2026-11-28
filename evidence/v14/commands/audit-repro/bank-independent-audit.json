@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "input_bank_version": "1.2.0",
+  "method": "Every package hash/bytes; independent Python Fraction evaluation of every question and all solution steps; independent canonical fingerprint; content identity by question_id; replay of shipped domain predicates per cell/fingerprint; all prerequisites checked for active targets and DAG. No student calibration or manual per-item editorial review claimed.",
+  "counts": {
+    "levels": 60,
+    "active_competencies": 281,
+    "packages": 4604,
+    "question_slots": 177640,
+    "equivalent_solution_steps": 389187,
+    "unique_cell_domain_checks": 173309,
+    "adjacent_structural_rank_descents": 86150,
+    "adjacent_pairs": 173036,
+    "packages_with_structural_rank_descents": 4604,
+    "introduction_packages": 681,
+    "introduction_packages_with_structural_rank_descents": 681,
+    "default_package_slots": 10010,
+    "default_first10_slots": 2810,
+    "default_package_hidden_tail_slots": 7200,
+    "default_first10_missing_template_families": 3,
+    "assessment_forms": 562,
+    "assessment_overlap_slots": 23,
+    "assessment_pairs_with_overlap": 4,
+    "inactive_competencies": 19,
+    "prerequisite_edges": 712,
+    "unique_canonical_items": 168142,
+    "unique_question_ids": 173309,
+    "distinct_authored_representations": 170289,
+    "representation_variants": 2147,
+    "intentional_repeated_slots": 9498,
+    "template_ids": 394,
+    "canonical_items_shared_across_competencies": 4128
+  },
+  "per_grade": [
+    {
+      "grade": 1,
+      "active_competencies": 11,
+      "packages": 44,
+      "question_slots": 440
+    },
+    {
+      "grade": 2,
+      "active_competencies": 20,
+      "packages": 160,
+      "question_slots": 3200
+    },
+    {
+      "grade": 3,
+      "active_competencies": 25,
+      "packages": 300,
+      "question_slots": 7500
+    },
+    {
+      "grade": 4,
+      "active_competencies": 25,
+      "packages": 300,
+      "question_slots": 7500
+    },
+    {
+      "grade": 5,
+      "active_competencies": 25,
+      "packages": 400,
+      "question_slots": 12000
+    },
+    {
+      "grade": 6,
+      "active_competencies": 25,
+      "packages": 400,
+      "question_slots": 12000
+    },
+    {
+      "grade": 7,
+      "active_competencies": 25,
+      "packages": 500,
+      "question_slots": 20000
+    },
+    {
+      "grade": 8,
+      "active_competencies": 25,
+      "packages": 500,
+      "question_slots": 20000
+    },
+    {
+      "grade": 9,
+      "active_competencies": 25,
+      "packages": 500,
+      "question_slots": 20000
+    },
+    {
+      "grade": 10,
+      "active_competencies": 25,
+      "packages": 500,
+      "question_slots": 25000
+    },
+    {
+      "grade": 11,
+      "active_competencies": 25,
+      "packages": 500,
+      "question_slots": 25000
+    },
+    {
+      "grade": 12,
+      "active_competencies": 25,
+      "packages": 500,
+      "question_slots": 25000
+    }
+  ],
+  "question_fields_counts": {
+    "question_id": 177640,
+    "question_revision": 177640,
+    "competency_id": 177640,
+    "template_id": 177640,
+    "template_version": 177640,
+    "fingerprint": 177640,
+    "fingerprint_policy": 177640,
+    "question_type": 177640,
+    "answer_policy": 177640,
+    "answer": 177640,
+    "expression_ast": 177640,
+    "neutral_expression": 177640,
+    "strategy_tags": 177640,
+    "hint": 177640,
+    "explanation": 177640,
+    "solution_steps": 177640
+  },
+  "strategy_tags_counts": {
+    "NB": 1972,
+    "DB": 646,
+    "INV": 5211,
+    "MT": 68,
+    "BR": 4516,
+    "OO": 35640,
+    "PO": 2113,
+    "DS": 22117,
+    "HD": 17880,
+    "HL": 1534,
+    "CO": 36597,
+    "DE": 8800,
+    "FR": 69142,
+    "EQ": 7902,
+    "SG": 3478
+  },
+  "elapsed_seconds": 22.08,
+  "source_of_structural_rank": "factory/build_bank.py:difficulty - uncalibrated tuple; descents prove absence of monotonically increasing generator rank, not empirical difficulty changes",
+  "default_path_behavior": "Without explicit package selection the app uses the first package in the cell, practice chooses first 10 questions and shuffle defaults false. Tail counts describe this default path only; full bank remains reachable using catalogue and session settings."
+}

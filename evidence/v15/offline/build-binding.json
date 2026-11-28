@@ -1,0 +1,153 @@
+{
+  "schema": "kalibataku-offline-evidence/1",
+  "refreshed_utc": "2026-11-28T09:20:04.069958+00:00",
+  "build": {
+    "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+    "offline_release": "460c98b682110f7e",
+    "app_version": "1.5.0",
+    "bank_version": "1.2.0"
+  },
+  "source": "evidence/v15/qa/binding.json",
+  "source_sha256": "dace2eae99d61b759249b42eba8c7635d04b3ac2f1e1a5d560bf2993650253b8",
+  "method": "Exact byte copies of the registered QA suite receipts and logs. Every assertion, suite exit, build ID and both SHA-256 values were checked against the canonical binding.",
+  "suites": [
+    {
+      "id": "journey-browser-chromium",
+      "status": "PASS",
+      "assertions": 41,
+      "engine": "chromium",
+      "engine_version": "151.0.7922.34",
+      "receipt": "evidence/v15/offline/chromium/journey-browser.json",
+      "receipt_sha256": "65ca9bb76f698bbb9963e10d2ded4748c0b2642141833002ab93cde328316bda",
+      "command_log": "evidence/v15/offline/chromium/journey.log",
+      "command_log_sha256": "2a3c298ae01e10342d7d787d9790a4c3ea424ddd6d847520c33f4caa6f841f31",
+      "qa_receipt": "evidence/v15/qa/journey-browser-chromium/journey-browser.json",
+      "qa_log": "evidence/v15/qa/journey-browser-chromium/log.txt",
+      "command": [
+        "{python}",
+        "tests/journey/browser_flow.py",
+        "--out",
+        "evidence/v15/browser"
+      ]
+    },
+    {
+      "id": "offline-capability-chromium",
+      "status": "PASS",
+      "assertions": 10,
+      "engine": "chromium",
+      "engine_version": "151.0.7922.34",
+      "receipt": "evidence/v15/offline/chromium/offline-capability-chromium.json",
+      "receipt_sha256": "734c1ab3a10e1fa93535c1e8bbab8ab20ea1174b5f5d14b791001395c237caba",
+      "command_log": "evidence/v15/offline/chromium/offline.log",
+      "command_log_sha256": "b2e93686f215796313b581149193bd0a0e4b1076835fb94c5f21543db9ba8281",
+      "qa_receipt": "evidence/v15/qa/offline-capability-chromium/offline-capability-chromium.json",
+      "qa_log": "evidence/v15/qa/offline-capability-chromium/log.txt",
+      "command": [
+        "{python}",
+        "tests/journey/offline_capability.py",
+        "--engine",
+        "chromium"
+      ]
+    },
+    {
+      "id": "journey-browser-firefox",
+      "status": "PASS",
+      "assertions": 41,
+      "engine": "firefox",
+      "engine_version": "153.0",
+      "receipt": "evidence/v15/offline/firefox/journey-browser-firefox.json",
+      "receipt_sha256": "53a738c2ef37082365ad9076c725fea91bccc5fa96a457dc0116f32bb1bd2486",
+      "command_log": "evidence/v15/offline/firefox/journey.log",
+      "command_log_sha256": "6303f83d67c6af735263365cdc09e250d711c003ea5ee6e891aecc122def4384",
+      "qa_receipt": "evidence/v15/qa/journey-browser-firefox/journey-browser-firefox.json",
+      "qa_log": "evidence/v15/qa/journey-browser-firefox/log.txt",
+      "command": [
+        "{python}",
+        "tests/journey/browser_flow.py",
+        "--engine",
+        "firefox",
+        "--out",
+        "evidence/v15/browser/firefox"
+      ]
+    },
+    {
+      "id": "offline-capability-firefox",
+      "status": "PASS",
+      "assertions": 10,
+      "engine": "firefox",
+      "engine_version": "153.0",
+      "receipt": "evidence/v15/offline/firefox/offline-capability-firefox.json",
+      "receipt_sha256": "2e1cdf5c455931833f63b04b67676d91b6f81b6c4a803d615066890c44b0faae",
+      "command_log": "evidence/v15/offline/firefox/offline.log",
+      "command_log_sha256": "a18cdd2df98aa6b7a99c2058b327e957ed961b05f0eb001d2ca52355881af6b7",
+      "qa_receipt": "evidence/v15/qa/offline-capability-firefox/offline-capability-firefox.json",
+      "qa_log": "evidence/v15/qa/offline-capability-firefox/log.txt",
+      "command": [
+        "{python}",
+        "tests/journey/offline_capability.py",
+        "--engine",
+        "firefox"
+      ]
+    },
+    {
+      "id": "journey-browser-webkit",
+      "status": "PASS",
+      "assertions": 41,
+      "engine": "webkit",
+      "engine_version": "26.5",
+      "receipt": "evidence/v15/offline/webkit/journey-browser-webkit.json",
+      "receipt_sha256": "a4698b085e2c361aae29971dc3e2c95163674a08f2005d500069b032adeb1e85",
+      "command_log": "evidence/v15/offline/webkit/journey.log",
+      "command_log_sha256": "6303f83d67c6af735263365cdc09e250d711c003ea5ee6e891aecc122def4384",
+      "qa_receipt": "evidence/v15/qa/journey-browser-webkit/journey-browser-webkit.json",
+      "qa_log": "evidence/v15/qa/journey-browser-webkit/log.txt",
+      "command": [
+        "{python}",
+        "tests/journey/browser_flow.py",
+        "--engine",
+        "webkit",
+        "--out",
+        "evidence/v15/browser/webkit"
+      ]
+    },
+    {
+      "id": "offline-capability-webkit",
+      "status": "PASS",
+      "assertions": 10,
+      "engine": "webkit",
+      "engine_version": "26.5",
+      "receipt": "evidence/v15/offline/webkit/offline-capability-webkit.json",
+      "receipt_sha256": "1d20571ae398335ae7599068b752ccffe0beb7900aab561f2be30b182e5e8b18",
+      "command_log": "evidence/v15/offline/webkit/offline.log",
+      "command_log_sha256": "a18cdd2df98aa6b7a99c2058b327e957ed961b05f0eb001d2ca52355881af6b7",
+      "qa_receipt": "evidence/v15/qa/offline-capability-webkit/offline-capability-webkit.json",
+      "qa_log": "evidence/v15/qa/offline-capability-webkit/log.txt",
+      "command": [
+        "{python}",
+        "tests/journey/offline_capability.py",
+        "--engine",
+        "webkit"
+      ]
+    },
+    {
+      "id": "map-native-zoom",
+      "status": "PASS",
+      "assertions": 1,
+      "engine": "firefox",
+      "engine_version": "153.0",
+      "receipt": "evidence/v15/offline/firefox/map-native-zoom.json",
+      "receipt_sha256": "5c7568371dcf72a1678a200ed7e70150643490d960dd60ab48bc65a458501491",
+      "command_log": "evidence/v15/offline/firefox/map-native-zoom.log",
+      "command_log_sha256": "88b52eb844ca59d9e9cc036886f63ecc3428ffab8c28998bcf73610d80f3ab13",
+      "qa_receipt": "evidence/v15/qa/map-native-zoom/map-native-zoom.json",
+      "qa_log": "evidence/v15/qa/map-native-zoom/log.txt",
+      "command": [
+        "{python}",
+        "tests/journey/map_native_zoom.py"
+      ]
+    }
+  ],
+  "tested_assertions": 154,
+  "status": "PASS",
+  "baseline": "evidence/v15/offline/baseline.json"
+}

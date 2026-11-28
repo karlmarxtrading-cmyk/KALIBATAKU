@@ -1,0 +1,48 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "bank-freeze-161",
+  "scope": "All frozen public bank bytes and generator pin",
+  "started": "2026-11-28T18:35:42.527818+00:00",
+  "finished": "2026-11-28T18:35:43.557749+00:00",
+  "build": {
+    "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "e8a434dfa2dd35d2f60547b988380149a76a245e7cced30bfa97e699a365506d"
+  },
+  "status": "FAIL",
+  "runtime": {
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14"
+  },
+  "assertions": 3,
+  "checks": [
+    {
+      "id": "historical-inventory",
+      "expected": "Authenticated 1.6.1 inventory",
+      "actual": {
+        "rows": 7416,
+        "sha256": "8a6b7a151e262b87b02fd76519cc1f2cdcaccebbb33c5ca254f4d8e9e2c3e46d"
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "file-set",
+      "expected": "Exact 4677 frozen paths, neither missing nor extra",
+      "actual": {
+        "count": 4677,
+        "missing": [],
+        "extra": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "execution-error",
+      "expected": "All test operations complete",
+      "actual": "Traceback (most recent call last):\n  File \"/workspace/scratch/94a2cb03b99b/k162/site/tests/v162/prior_161.py\", line 116, in run_receipt\n    exercise(check, meta)\n  File \"/workspace/scratch/94a2cb03b99b/k162/site/tests/v162/freeze_161.py\", line 29, in exercise\n    with original_archive() as z:\n         ^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py\", line 137, in __enter__\n    return next(self.gen)\n           ^^^^^^^^^^^^^^\n  File \"/workspace/scratch/94a2cb03b99b/k162/site/tests/v162/prior_161.py\", line 71, in original_archive\n    require(archive.is_file() and file_hash(archive) == ZIP_SHA,\n  File \"/workspace/scratch/94a2cb03b99b/k162/site/tests/v162/prior_161.py\", line 37, in require\n    raise ValueError(message)\nValueError: KALIBATAKU_BASELINE_161 must point to the original, digest-matching 1.6.1 ZIP\n",
+      "status": "FAIL"
+    }
+  ],
+  "baseline": {}
+}

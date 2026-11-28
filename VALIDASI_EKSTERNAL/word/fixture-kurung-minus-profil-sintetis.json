@@ -1,0 +1,565 @@
+{
+  "format": "kalibataku-profile-backup",
+  "schema_version": "1.0.0",
+  "release_id": "kalibataku-static-1",
+  "data_origin": "local_practice",
+  "exported_at": "2026-11-28T17:24:39.109Z",
+  "verification_status": "unverified",
+  "profile": {
+    "id": "298d43b5-c8ef-4b53-9b67-a9e17dd589d4",
+    "name": "Demo uji fixture-kurung-minus"
+  },
+  "records": {
+    "attempts": [
+      {
+        "id": "1e7b07f1-b514-4951-a1f4-26c69852defd",
+        "data": {
+          "attempt_id": "1e7b07f1-b514-4951-a1f4-26c69852defd",
+          "schema_version": "1.0.0",
+          "status": "completed",
+          "profile_id": "298d43b5-c8ef-4b53-9b67-a9e17dd589d4",
+          "data_origin": "local_practice",
+          "mode": "practice",
+          "package_id": "MM-G11-L03-MIX-P001",
+          "package_title": {
+            "id": "Pengenalan 001 · Operasi campuran — Faktor bertingkat dan pecahan silang",
+            "en": "Introduction 001 · Mixed Operations — Layered factors and cross-cancellation"
+          },
+          "grade": 11,
+          "level": 3,
+          "operation": "MIX",
+          "target_competency_id": "arithmetic.mixed.g11.l03",
+          "content_version": "1.2.0",
+          "curriculum_version": "1.0.0-draft.2",
+          "policy_version": "mastery-local-v1",
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "form_id": null,
+          "form_family_id": null,
+          "form_instance_id": null,
+          "assessment_cycle_id": null,
+          "assignment_id": null,
+          "pool_size": 20,
+          "order_seed": "211",
+          "index": 0,
+          "created_at": "2026-11-28T17:24:39.103Z",
+          "started_at": "2026-11-28T17:24:39.103Z",
+          "completed_at": "2026-11-28T17:24:39.106Z",
+          "duration_seconds": 0,
+          "deadline": null,
+          "ready": true,
+          "adaptive": null,
+          "flow_policy_version": "direct-result-v1",
+          "locale": "id",
+          "items": [
+            {
+              "question": {
+                "question_id": "arithmetic.mixed.g11.l03.a4883d0a996804209f85657569c3fd60b0d39cc6fff7a1ff9761700db97be1ca",
+                "question_revision": "1.2.0",
+                "competency_id": "arithmetic.mixed.g11.l03",
+                "template_id": "MM-TPL-G11-L03-MIX-CANCEL-COMBINE-TRANSFER",
+                "template_version": "1.2.0",
+                "fingerprint": "a4883d0a996804209f85657569c3fd60b0d39cc6fff7a1ff9761700db97be1ca",
+                "fingerprint_policy": "canonical-ast-v1",
+                "question_type": "numeric_essay",
+                "answer_policy": "exact_rational",
+                "answer": {
+                  "numerator": "14",
+                  "denominator": "3"
+                },
+                "expression_ast": {
+                  "kind": "binary",
+                  "operation": "DIV",
+                  "left": {
+                    "kind": "binary",
+                    "operation": "MUL",
+                    "left": {
+                      "kind": "binary",
+                      "operation": "ADD",
+                      "left": {
+                        "kind": "binary",
+                        "operation": "MUL",
+                        "left": {
+                          "kind": "rational",
+                          "numerator": "-25",
+                          "denominator": "24",
+                          "display": {
+                            "kind": "fraction",
+                            "numerator": "-25",
+                            "denominator": "24"
+                          }
+                        },
+                        "right": {
+                          "kind": "rational",
+                          "numerator": "2",
+                          "denominator": "5",
+                          "display": {
+                            "kind": "fraction",
+                            "numerator": "2",
+                            "denominator": "5"
+                          }
+                        }
+                      },
+                      "right": {
+                        "kind": "rational",
+                        "numerator": "1",
+                        "denominator": "1",
+                        "display": {
+                          "kind": "fraction",
+                          "numerator": "5",
+                          "denominator": "5"
+                        }
+                      }
+                    },
+                    "right": {
+                      "kind": "rational",
+                      "numerator": "16",
+                      "denominator": "1",
+                      "display": {
+                        "kind": "integer"
+                      }
+                    }
+                  },
+                  "right": {
+                    "kind": "rational",
+                    "numerator": "2",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  }
+                },
+                "neutral_expression": "((((−25⁄24) × (2⁄5)) + (5⁄5)) × 16) ÷ 2",
+                "strategy_tags": [
+                  "OO",
+                  "HD"
+                ],
+                "hint": {
+                  "id": "Sebelum mengalikan, lihat faktor 16. Bisakah kamu membaginya dengan 2?",
+                  "en": "Before multiplying, look at the factor 16. Can you divide it by 2?"
+                },
+                "explanation": {
+                  "id": "Bagi salah satu faktor terlebih dahulu agar perkaliannya lebih kecil.",
+                  "en": "Divide one factor first to make the multiplication smaller."
+                },
+                "solution_steps": [
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "binary",
+                      "operation": "MUL",
+                      "left": {
+                        "kind": "binary",
+                        "operation": "ADD",
+                        "left": {
+                          "kind": "binary",
+                          "operation": "MUL",
+                          "left": {
+                            "kind": "rational",
+                            "numerator": "-25",
+                            "denominator": "24"
+                          },
+                          "right": {
+                            "kind": "rational",
+                            "numerator": "2",
+                            "denominator": "5"
+                          }
+                        },
+                        "right": {
+                          "kind": "rational",
+                          "numerator": "1",
+                          "denominator": "1"
+                        }
+                      },
+                      "right": {
+                        "kind": "rational",
+                        "numerator": "8",
+                        "denominator": "1"
+                      }
+                    },
+                    "text": {
+                      "id": "Bagi faktor 16 dengan 2 untuk mendapat 8.",
+                      "en": "Divide the factor 16 by 2 to get 8."
+                    }
+                  },
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "binary",
+                      "operation": "MUL",
+                      "left": {
+                        "kind": "binary",
+                        "operation": "ADD",
+                        "left": {
+                          "kind": "rational",
+                          "numerator": "-5",
+                          "denominator": "12"
+                        },
+                        "right": {
+                          "kind": "rational",
+                          "numerator": "1",
+                          "denominator": "1"
+                        }
+                      },
+                      "right": {
+                        "kind": "rational",
+                        "numerator": "8",
+                        "denominator": "1"
+                      }
+                    },
+                    "text": {
+                      "id": "(−25⁄24) × (2⁄5) = −5⁄12.",
+                      "en": "(−25⁄24) × (2⁄5) = −5⁄12."
+                    }
+                  },
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "binary",
+                      "operation": "MUL",
+                      "left": {
+                        "kind": "rational",
+                        "numerator": "7",
+                        "denominator": "12"
+                      },
+                      "right": {
+                        "kind": "rational",
+                        "numerator": "8",
+                        "denominator": "1"
+                      }
+                    },
+                    "text": {
+                      "id": "(−5⁄12) + (5⁄5) = 7⁄12.",
+                      "en": "(−5⁄12) + (5⁄5) = 7⁄12."
+                    }
+                  },
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "rational",
+                      "numerator": "14",
+                      "denominator": "3"
+                    },
+                    "text": {
+                      "id": "(7⁄12) × 8 = 14⁄3.",
+                      "en": "(7⁄12) × 8 = 14⁄3."
+                    }
+                  }
+                ]
+              },
+              "question_instance_id": "1e7b07f1-b514-4951-a1f4-26c69852defd.1",
+              "seen": true,
+              "draft": "14/3",
+              "draft_locale": "id",
+              "dirty": false,
+              "history": [
+                {
+                  "question_instance_id": "1e7b07f1-b514-4951-a1f4-26c69852defd.1",
+                  "question_id": "arithmetic.mixed.g11.l03.a4883d0a996804209f85657569c3fd60b0d39cc6fff7a1ff9761700db97be1ca",
+                  "question_revision": "1.2.0",
+                  "competency_id": "arithmetic.mixed.g11.l03",
+                  "answer": {
+                    "numerator": "99",
+                    "denominator": "1"
+                  },
+                  "raw_answer": "99",
+                  "draft_locale": "id",
+                  "submission_kind": "first",
+                  "attempt_number": 1,
+                  "hint_used": false,
+                  "active_duration_ms": 0,
+                  "elapsed_duration_ms": 1,
+                  "timing_quality": "valid_client_estimate",
+                  "client_is_correct": false,
+                  "key_seen_before": false,
+                  "hint_before": false,
+                  "feedback_policy_version": "visible-key-v2",
+                  "first_correct": false,
+                  "key_revealed_at": "2026-11-28T17:24:39.104Z",
+                  "key_reveal_reason": "checked_response",
+                  "event_id": "4a29b32f-f996-433d-85f9-6199fb718985",
+                  "is_correct": false
+                },
+                {
+                  "question_instance_id": "1e7b07f1-b514-4951-a1f4-26c69852defd.1",
+                  "question_id": "arithmetic.mixed.g11.l03.a4883d0a996804209f85657569c3fd60b0d39cc6fff7a1ff9761700db97be1ca",
+                  "question_revision": "1.2.0",
+                  "competency_id": "arithmetic.mixed.g11.l03",
+                  "answer": {
+                    "numerator": "14",
+                    "denominator": "3"
+                  },
+                  "raw_answer": "14/3",
+                  "draft_locale": "id",
+                  "submission_kind": "retry",
+                  "attempt_number": 2,
+                  "hint_used": false,
+                  "active_duration_ms": 0,
+                  "elapsed_duration_ms": 2,
+                  "timing_quality": "valid_client_estimate",
+                  "client_is_correct": true,
+                  "key_seen_before": true,
+                  "hint_before": false,
+                  "feedback_policy_version": "visible-key-v2",
+                  "first_correct": false,
+                  "key_revealed_at": "2026-11-28T17:24:39.104Z",
+                  "key_reveal_reason": "checked_response",
+                  "event_id": "48e39c5f-5c20-4d22-802e-eb3fb23304fa",
+                  "is_correct": true
+                }
+              ],
+              "hint_used": false,
+              "feedback": true,
+              "final_status": "correct",
+              "active_ms": 0,
+              "timing_quality": "valid_client_estimate",
+              "first_seen_at": "2026-11-28T17:24:39.103Z",
+              "key_revealed_at": "2026-11-28T17:24:39.104Z",
+              "key_reveal_reason": "checked_response",
+              "first_correct": false,
+              "final_correct": true,
+              "last_event_id": "48e39c5f-5c20-4d22-802e-eb3fb23304fa"
+            }
+          ],
+          "_rev": 4,
+          "_seq": 4,
+          "_saved_at": "2026-11-28T17:24:39.107Z",
+          "finish_reason": "submitted",
+          "metrics": {
+            "N": 1,
+            "C": 1,
+            "W": 0,
+            "S": 0,
+            "B": 0,
+            "U": 0,
+            "score_percent": 100,
+            "accuracy_percent": 100,
+            "responded_percent": 100,
+            "first_response_count": 1,
+            "first_correct": 0,
+            "first_response_accuracy": 0,
+            "retries": 1,
+            "hints": 0
+          }
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": "fe4d8e3d-0000-4ba0-838b-fbd1f6de6de9",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "fe4d8e3d-0000-4ba0-838b-fbd1f6de6de9",
+          "event_type": "attempt.started",
+          "event_sequence": 1,
+          "attempt_id": "1e7b07f1-b514-4951-a1f4-26c69852defd",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "298d43b5-c8ef-4b53-9b67-a9e17dd589d4",
+            "server_subject_ref": null
+          },
+          "context": {
+            "feedback_policy_version": "visible-key-v2",
+            "timing_policy_version": "continuous-deadline-v2",
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G11-L03-MIX-P001",
+            "content_version": "1.2.0",
+            "material_grade": 11,
+            "level": 3,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-28T17:24:39.103Z",
+          "payload": {
+            "instances": [
+              {
+                "question_instance_id": "1e7b07f1-b514-4951-a1f4-26c69852defd.1",
+                "question_id": "arithmetic.mixed.g11.l03.a4883d0a996804209f85657569c3fd60b0d39cc6fff7a1ff9761700db97be1ca",
+                "question_revision": "1.2.0",
+                "competency_id": "arithmetic.mixed.g11.l03"
+              }
+            ],
+            "order_seed": "211",
+            "started_at_client": "2026-11-28T17:24:39.103Z"
+          },
+          "payload_hash": "34b68c5df05194e54cffcd931d67d83f116496dbbd1043647ce2bfde78bdac91"
+        }
+      },
+      {
+        "id": "4a29b32f-f996-433d-85f9-6199fb718985",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "4a29b32f-f996-433d-85f9-6199fb718985",
+          "event_type": "answer.submitted",
+          "event_sequence": 2,
+          "attempt_id": "1e7b07f1-b514-4951-a1f4-26c69852defd",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "298d43b5-c8ef-4b53-9b67-a9e17dd589d4",
+            "server_subject_ref": null
+          },
+          "context": {
+            "feedback_policy_version": "visible-key-v2",
+            "timing_policy_version": "continuous-deadline-v2",
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G11-L03-MIX-P001",
+            "content_version": "1.2.0",
+            "material_grade": 11,
+            "level": 3,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-28T17:24:39.104Z",
+          "payload": {
+            "question_instance_id": "1e7b07f1-b514-4951-a1f4-26c69852defd.1",
+            "question_id": "arithmetic.mixed.g11.l03.a4883d0a996804209f85657569c3fd60b0d39cc6fff7a1ff9761700db97be1ca",
+            "question_revision": "1.2.0",
+            "competency_id": "arithmetic.mixed.g11.l03",
+            "answer": {
+              "numerator": "99",
+              "denominator": "1"
+            },
+            "raw_answer": "99",
+            "draft_locale": "id",
+            "submission_kind": "first",
+            "attempt_number": 1,
+            "hint_used": false,
+            "active_duration_ms": 0,
+            "elapsed_duration_ms": 1,
+            "timing_quality": "valid_client_estimate",
+            "client_is_correct": false,
+            "key_seen_before": false,
+            "hint_before": false,
+            "feedback_policy_version": "visible-key-v2",
+            "first_correct": false,
+            "key_revealed_at": "2026-11-28T17:24:39.104Z",
+            "key_reveal_reason": "checked_response"
+          },
+          "payload_hash": "9238b50435b36c31fc49224f956ab2cfa71a139405948357050efb04b520fb2e"
+        }
+      },
+      {
+        "id": "48e39c5f-5c20-4d22-802e-eb3fb23304fa",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "48e39c5f-5c20-4d22-802e-eb3fb23304fa",
+          "event_type": "answer.submitted",
+          "event_sequence": 3,
+          "attempt_id": "1e7b07f1-b514-4951-a1f4-26c69852defd",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "298d43b5-c8ef-4b53-9b67-a9e17dd589d4",
+            "server_subject_ref": null
+          },
+          "context": {
+            "feedback_policy_version": "visible-key-v2",
+            "timing_policy_version": "continuous-deadline-v2",
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G11-L03-MIX-P001",
+            "content_version": "1.2.0",
+            "material_grade": 11,
+            "level": 3,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-28T17:24:39.105Z",
+          "payload": {
+            "question_instance_id": "1e7b07f1-b514-4951-a1f4-26c69852defd.1",
+            "question_id": "arithmetic.mixed.g11.l03.a4883d0a996804209f85657569c3fd60b0d39cc6fff7a1ff9761700db97be1ca",
+            "question_revision": "1.2.0",
+            "competency_id": "arithmetic.mixed.g11.l03",
+            "answer": {
+              "numerator": "14",
+              "denominator": "3"
+            },
+            "raw_answer": "14/3",
+            "draft_locale": "id",
+            "submission_kind": "retry",
+            "attempt_number": 2,
+            "hint_used": false,
+            "active_duration_ms": 0,
+            "elapsed_duration_ms": 2,
+            "timing_quality": "valid_client_estimate",
+            "client_is_correct": true,
+            "key_seen_before": true,
+            "hint_before": false,
+            "feedback_policy_version": "visible-key-v2",
+            "first_correct": false,
+            "key_revealed_at": "2026-11-28T17:24:39.104Z",
+            "key_reveal_reason": "checked_response"
+          },
+          "payload_hash": "fc981f09d103671985350197763532b1c996d86f707cbf597b2d55904d7f60b1"
+        }
+      },
+      {
+        "id": "76c33eb6-e534-4343-a625-ec0589032b60",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "76c33eb6-e534-4343-a625-ec0589032b60",
+          "event_type": "attempt.completed",
+          "event_sequence": 4,
+          "attempt_id": "1e7b07f1-b514-4951-a1f4-26c69852defd",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "298d43b5-c8ef-4b53-9b67-a9e17dd589d4",
+            "server_subject_ref": null
+          },
+          "context": {
+            "feedback_policy_version": "visible-key-v2",
+            "timing_policy_version": "continuous-deadline-v2",
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G11-L03-MIX-P001",
+            "content_version": "1.2.0",
+            "material_grade": 11,
+            "level": 3,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-28T17:24:39.106Z",
+          "payload": {
+            "expected_event_count": 4,
+            "final_responses": [
+              {
+                "question_instance_id": "1e7b07f1-b514-4951-a1f4-26c69852defd.1",
+                "response_event_id": "48e39c5f-5c20-4d22-802e-eb3fb23304fa",
+                "status": "answered"
+              }
+            ],
+            "completed_at_client": "2026-11-28T17:24:39.106Z"
+          },
+          "payload_hash": "6d274d3df753d9417d4a12c4a0ffdd695a3fcbf2b18134dbd0c2f316e97b0ee0"
+        }
+      }
+    ],
+    "records": []
+  },
+  "checksum": "4dbf1fd205900474e98004ede4ce178e1d4ab122fbddf53b1ede9b5d460cc1e8"
+}

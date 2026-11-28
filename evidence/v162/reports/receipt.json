@@ -1,0 +1,270 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "report-ledger",
+  "scope": "Synthetic events straddling Jakarta midnight; local structured formats, PDF and LibreOffice",
+  "build": {
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "started": "2026-11-28T18:48:48Z",
+  "finished": "2026-11-28T18:48:49Z",
+  "assertions": 18,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "fraction-ledger",
+      "status": "PASS",
+      "expected": "Two event bundles, four validated events in the included attempt; one excluded day",
+      "actual": {
+        "id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad",
+        "start": "2026-11-28T17:00:01.001Z",
+        "question": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+        "expression": "11/12 + 10/12",
+        "key": "7/4",
+        "first": "99",
+        "last": "21/12",
+        "excluded_id": "460487ec-dde9-4edb-83a0-05060eeb3e07"
+      }
+    },
+    {
+      "id": "fraction-json",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for json",
+      "actual": {
+        "counts": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "first": "99",
+        "last": "21/12",
+        "key": "7/4",
+        "included_id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad"
+      }
+    },
+    {
+      "id": "fraction-csv",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for csv",
+      "actual": [
+        "85e3bc62-4d74-4b71-a3e3-b995d5e71bad",
+        "11/12 + 10/12",
+        "7",
+        "4",
+        "99",
+        "21/12"
+      ]
+    },
+    {
+      "id": "fraction-xlsx",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for xlsx",
+      "actual": [
+        "85e3bc62-4d74-4b71-a3e3-b995d5e71bad",
+        "11/12 + 10/12",
+        "7",
+        "4",
+        "99",
+        "21/12"
+      ]
+    },
+    {
+      "id": "fraction-docx",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for docx",
+      "actual": [
+        "11/12+10/12",
+        "7/4",
+        "99",
+        "21/12"
+      ]
+    },
+    {
+      "id": "fraction-pdf",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for pdf",
+      "actual": {
+        "pages": [
+          {
+            "words": 220,
+            "raster_sha256": "7f957bacd600ca3de4d9e9058142cb4c60409ad9e43317df3d4d5f755283064a"
+          },
+          {
+            "words": 29,
+            "raster_sha256": "4607538a1792275ac6053301404d35aff884dea3e1d6bee7693c8c48cf8e441f"
+          }
+        ],
+        "projected_math": "Soal·1112+1012Kuncijawaban·74Jawabanpertama·99Jawabanterakhir·2112"
+      }
+    },
+    {
+      "id": "fraction-libreoffice",
+      "status": "PASS",
+      "expected": "PDF rendered from actual DOCX preserves labels, math, counts and layout",
+      "actual": {
+        "pages": [
+          {
+            "words": 241,
+            "raster_sha256": "7203b3e59a2670da0c5a24813f97c792de324f7b1478b750d188b70ceaeb942d"
+          }
+        ],
+        "projected_math": "Soal·1112+1012Kuncijawaban·74Jawabanpertama·99Jawabanterakhir·2112"
+      }
+    },
+    {
+      "id": "fraction-reject-key",
+      "status": "PASS",
+      "expected": "Mismatched reference answer is detected independently",
+      "actual": "rejected the controlled discrepancy"
+    },
+    {
+      "id": "fraction-reject-period",
+      "status": "PASS",
+      "expected": "The session on the excluded local day is rejected",
+      "actual": "rejected the controlled discrepancy"
+    },
+    {
+      "id": "grouped-ledger",
+      "status": "PASS",
+      "expected": "Two event bundles, four validated events in the included attempt; one excluded day",
+      "actual": {
+        "id": "7fb0c734-37a3-47ba-90db-ff1330f7e56f",
+        "start": "2026-11-28T17:00:01.001Z",
+        "question": "arithmetic.mixed.g11.l03.a4883d0a996804209f85657569c3fd60b0d39cc6fff7a1ff9761700db97be1ca",
+        "expression": "(−25/24 × (2/5) + 5/5) × 16 ÷ 2",
+        "key": "14/3",
+        "first": "99",
+        "last": "14/3",
+        "excluded_id": "52a49b40-d15f-4f3b-96c4-52179a0b67c3"
+      }
+    },
+    {
+      "id": "grouped-json",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for json",
+      "actual": {
+        "counts": [
+          1,
+          1,
+          1,
+          0,
+          1
+        ],
+        "first": "99",
+        "last": "14/3",
+        "key": "14/3",
+        "included_id": "7fb0c734-37a3-47ba-90db-ff1330f7e56f"
+      }
+    },
+    {
+      "id": "grouped-csv",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for csv",
+      "actual": [
+        "7fb0c734-37a3-47ba-90db-ff1330f7e56f",
+        "(−25/24 × (2/5) + 5/5) × 16 ÷ 2",
+        "14",
+        "3",
+        "99",
+        "14/3"
+      ]
+    },
+    {
+      "id": "grouped-xlsx",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for xlsx",
+      "actual": [
+        "7fb0c734-37a3-47ba-90db-ff1330f7e56f",
+        "(−25/24 × (2/5) + 5/5) × 16 ÷ 2",
+        "14",
+        "3",
+        "99",
+        "14/3"
+      ]
+    },
+    {
+      "id": "grouped-docx",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for docx",
+      "actual": [
+        "(−25/24×2/5+5/5)×16÷2",
+        "14/3",
+        "99",
+        "14/3"
+      ]
+    },
+    {
+      "id": "grouped-pdf",
+      "status": "PASS",
+      "expected": "Match included session and mathematics for pdf",
+      "actual": {
+        "pages": [
+          {
+            "words": 229,
+            "raster_sha256": "ee18fc9e1235f3a82dd712f24e15f89793238138be455c425dfd76d3392b365b"
+          },
+          {
+            "words": 29,
+            "raster_sha256": "4607538a1792275ac6053301404d35aff884dea3e1d6bee7693c8c48cf8e441f"
+          }
+        ],
+        "projected_math": "Soal·(−2524×25+55)×16÷2Kuncijawaban·143Jawabanpertama·99Jawabanterakhir·143"
+      }
+    },
+    {
+      "id": "grouped-libreoffice",
+      "status": "PASS",
+      "expected": "PDF rendered from actual DOCX preserves labels, math, counts and layout",
+      "actual": {
+        "pages": [
+          {
+            "words": 246,
+            "raster_sha256": "de26a7c720a413cb2aeafcb7f08fd6bb0c96341fbdfa3c73b073f6ad7dc6b41b"
+          }
+        ],
+        "projected_math": "Soal·(−2524×25+55)×16÷2Kuncijawaban·143Jawabanpertama·99Jawabanterakhir·143"
+      }
+    },
+    {
+      "id": "grouped-reject-key",
+      "status": "PASS",
+      "expected": "Mismatched reference answer is detected independently",
+      "actual": "rejected the controlled discrepancy"
+    },
+    {
+      "id": "grouped-reject-period",
+      "status": "PASS",
+      "expected": "The session on the excluded local day is rejected",
+      "actual": "rejected the controlled discrepancy"
+    }
+  ],
+  "formats": {
+    "fraction": {
+      "ledger.json": "35dbde9c27ab546f2bf7205748788b9b063f6fa6648bbcacd5f5ae258a11e4b3",
+      "rendered/report.pdf": "ea5a522b89b5a54fc2e80ce1cfbfc31c6a1f333a8c033c5d59c520548d110db0",
+      "report.csv": "04ea5e3a2bd5226c250d91e9659e91111ff30c13f9c5d4ffb59e6ee817dcd0bf",
+      "report.docx": "993f0ca83e3015d082e0dc3f7a621aa4ec1f8bbff8be2929af7368f2aeb0c26e",
+      "report.json": "d8ee74d7188f7e1b58645db2584344d1a5def45d6d2e41e8bd16aff10a1638c1",
+      "report.pdf": "8a9abd525d9aa873b2bde93ec8cb6186ab7f8640b410d188a294b9f983c06e77",
+      "report.xlsx": "a3cfcc8636dfcdb6a7a2ff24b059529405c7d3ea516c0d4c38c60a032563e6f3"
+    },
+    "grouped": {
+      "ledger.json": "6a068a2dbb6e2565ee6da5140400e84d56c6011aa894209593124367a511ec94",
+      "rendered/report.pdf": "fc4781a03b5744af495e78a73bce821b73b5f37c6d0ca9301925387a9e862966",
+      "report.csv": "335e4cadae0c5ea0d88bd8fbe9ac813c1a04ae3959966424f7ea98f1eea79669",
+      "report.docx": "11ee10498a4a8a38bd95b95508626a7378f5c823e352009e457160af3fd0ce8d",
+      "report.json": "293d5de3baf02578817cf884e938c21f0c09bb1b42c923df6fe4937822676352",
+      "report.pdf": "e8a7f9145a7ff0d83e852a8837afe5fec5f17e1db6ae4dee683e9b228eb9d550",
+      "report.xlsx": "619c1ca5de6151506c5f60cdbf6ac30717e2f5e8d3d14d869dcd54ce866f12f1"
+    }
+  },
+  "libreoffice": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5"
+}

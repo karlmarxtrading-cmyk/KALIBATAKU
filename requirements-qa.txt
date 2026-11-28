@@ -1,0 +1,10 @@
+# Python tooling used by npm run qa:production (tested versions). Install:
+#   python3 -m pip install -r requirements-qa.txt
+# plus a Chromium/Chrome binary in CHROMIUM_PATH, and LibreOffice (soffice) for DOCX rendering.
+playwright==1.62.0
+pymupdf==1.26.6
+openpyxl==3.1.5
+python-docx==1.2.0
+fonttools==4.61.1
+jsonschema==4.26.0
+reportlab==4.4.9

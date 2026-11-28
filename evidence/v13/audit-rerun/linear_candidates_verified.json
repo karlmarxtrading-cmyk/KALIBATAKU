@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "method": "Independent Python AST parser with exact Fraction values; multiplication/division have equal precedence and associate left-to-right.",
+  "candidate_sha256": "7ad5c38a8a2a50c120fb05759bb5ce418ac18271a1c8a1ddb7addc732f532366",
+  "candidate_rows": 9024,
+  "standard_plain_parse_value_mismatches": 0,
+  "by_slot": {},
+  "unique_affected_question_ids": 0,
+  "unparseable_candidates": 0,
+  "errors": [],
+  "examples": [],
+  "claim_boundary": "A mismatch concerns the standard interpretation of the emitted linear text, not the correctness of the stored AST or answer key. Candidate selection is performed by linear_fallback_scan.mjs."
+}

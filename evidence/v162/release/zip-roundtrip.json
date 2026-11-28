@@ -1,0 +1,78 @@
+{
+  "schema": "kalibataku-release-roundtrip/1",
+  "scope": "sealed-trial",
+  "status": "PASS",
+  "started_utc": "2026-11-28T18:53:28+00:00",
+  "finished_utc": "2026-11-28T18:53:49+00:00",
+  "runtime": {
+    "os": "Linux",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "node": "v24.22.3"
+  },
+  "build": {
+    "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fd4dbd2442531a9b6adf42b476a5a9732b6ca0d9ba6dab799303521bfe9c2848"
+  },
+  "build_after": {
+    "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fd4dbd2442531a9b6adf42b476a5a9732b6ca0d9ba6dab799303521bfe9c2848"
+  },
+  "binding_sha256": "9a3552d926a53ef90bb140d66230bf97d902c12e426278246e8059d6b89df3a9",
+  "registry_sha256": "13a9142e5ec30b759ca6cae92e04f73438a120abf468a993a27306a1f1975755",
+  "payload": {
+    "files": 7700,
+    "bytes": 539970364,
+    "sha256": "166115136d237820a077631f036f3d37f08fb42b8eb3edad15f8f17fe56eb845"
+  },
+  "extracted_payload": {
+    "files": 7700,
+    "bytes": 539970364,
+    "sha256": "166115136d237820a077631f036f3d37f08fb42b8eb3edad15f8f17fe56eb845"
+  },
+  "archive": {
+    "verified": "CRC-32 for every entry, original file SHA-256 and byte count, safe relative paths; no symbolic links",
+    "files": 7706,
+    "bytes": 132851507,
+    "sha256": "933e28f05e2b91649ecf581fc3625288e5595f7a3268b46af73c4c9ed2ee677c"
+  },
+  "dist_file_count": 5054,
+  "steps": [
+    {
+      "command": [
+        "python",
+        "tools/project.py",
+        "verify"
+      ],
+      "exit": 0,
+      "log": "evidence/v162/release/roundtrip-logs/1-verify.log",
+      "sha256": "d090f2e86a5437f42ff415e059cda7e20173425e0ae0e6bfe97102d4a244a49f"
+    },
+    {
+      "command": [
+        "python",
+        "tools/project.py",
+        "build"
+      ],
+      "exit": 0,
+      "log": "evidence/v162/release/roundtrip-logs/2-build.log",
+      "sha256": "3d5b73e3fb2932fd623b7794418825fbc74fd55d6f9e31415afa48f40791df6b"
+    },
+    {
+      "command": [
+        "python",
+        "tools/project.py",
+        "verify"
+      ],
+      "exit": 0,
+      "log": "evidence/v162/release/roundtrip-logs/3-verify.log",
+      "sha256": "1fef2fec098666bca8d6c13e14e7f57c441f5ae8a5530a89ba02503821bf7e37"
+    }
+  ]
+}

@@ -1,0 +1,901 @@
+{
+  "suite": "performance",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "created_utc": "2026-11-28T04:14:29.525Z",
+  "base": "http://127.0.0.1:38581/probe-performance-1795839269525/school/math/",
+  "checks": [
+    {
+      "id": "initial-1",
+      "status": "PASS",
+      "detail": "Initial requests 24"
+    },
+    {
+      "id": "same-origin-1",
+      "status": "PASS",
+      "detail": "No remote runtime requests"
+    },
+    {
+      "id": "initial-2",
+      "status": "PASS",
+      "detail": "Initial requests 24"
+    },
+    {
+      "id": "same-origin-2",
+      "status": "PASS",
+      "detail": "No remote runtime requests"
+    },
+    {
+      "id": "initial-3",
+      "status": "PASS",
+      "detail": "Initial requests 24"
+    },
+    {
+      "id": "same-origin-3",
+      "status": "PASS",
+      "detail": "No remote runtime requests"
+    },
+    {
+      "id": "lab-paint",
+      "status": "PASS",
+      "detail": {
+        "lcp": [
+          156,
+          196,
+          208
+        ],
+        "layout_shifts": [
+          0.05270669857660929,
+          0.05270669857660929,
+          0.05270669857660929
+        ]
+      }
+    }
+  ],
+  "runtime": {
+    "offline_release": "137cc1a9b76ed428",
+    "bootstrap_sha256": "c0f2a6f05c5005335a61c4f839af852715f5cd4ff4bc26cbb50768c028a21781",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "scope": "Laboratory localhost desktop engine, no CPU throttling, unshaped network, unique base path each run. No field data.",
+  "runs": [
+    {
+      "geometry": {
+        "innerWidth": 1024,
+        "viewport": 1024,
+        "height": 768,
+        "scroll": 1024,
+        "lang": "id",
+        "theme": "light",
+        "h1": [
+          "Petualangan"
+        ],
+        "overflowElements": [],
+        "domCount": 157,
+        "visibleControls": 18
+      },
+      "lcp_ms": 196,
+      "layout_shift_sum": 0.05270669857660929,
+      "shift_sources": [
+        {
+          "score": 0.05270669857660929,
+          "start": 131.70000000018626,
+          "nodes": [
+            [
+              "MAIN",
+              "main",
+              73,
+              132.640625
+            ]
+          ]
+        }
+      ],
+      "navigation_duration_ms": 65,
+      "request_count": 24,
+      "resources": [
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/core/appearance.js",
+          "type": "script",
+          "bytes": 1170,
+          "encoded": 870,
+          "decoded": 870,
+          "start": 19,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/assets/noto-Regular.woff",
+          "type": "link",
+          "bytes": 32936,
+          "encoded": 32636,
+          "decoded": 32636,
+          "start": 19,
+          "duration": 14,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/assets/base.css",
+          "type": "link",
+          "bytes": 39960,
+          "encoded": 39660,
+          "decoded": 39660,
+          "start": 19,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/assets/noto-Bold.woff",
+          "type": "link",
+          "bytes": 32536,
+          "encoded": 32236,
+          "decoded": 32236,
+          "start": 19,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/app.mjs",
+          "type": "script",
+          "bytes": 17470,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 19,
+          "duration": 14,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 574,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 19,
+          "duration": 24,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/core/dom.mjs",
+          "type": "script",
+          "bytes": 3824,
+          "encoded": 3524,
+          "decoded": 3524,
+          "start": 47,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/core/material.mjs",
+          "type": "script",
+          "bytes": 1486,
+          "encoded": 1186,
+          "decoded": 1186,
+          "start": 48,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/core/preferences.mjs",
+          "type": "script",
+          "bytes": 686,
+          "encoded": 386,
+          "decoded": 386,
+          "start": 49,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/locales/id.json",
+          "type": "fetch",
+          "bytes": 9775,
+          "encoded": 9475,
+          "decoded": 9475,
+          "start": 62,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 300,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 73,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/data/store.js",
+          "type": "script",
+          "bytes": 13828,
+          "encoded": 13528,
+          "decoded": 13528,
+          "start": 80,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/data/common.js",
+          "type": "script",
+          "bytes": 2030,
+          "encoded": 1730,
+          "decoded": 1730,
+          "start": 91,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/data/summary.js",
+          "type": "script",
+          "bytes": 3717,
+          "encoded": 3417,
+          "decoded": 3417,
+          "start": 91,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/data/db.js",
+          "type": "script",
+          "bytes": 5381,
+          "encoded": 5081,
+          "decoded": 5081,
+          "start": 91,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/data/validate.js",
+          "type": "script",
+          "bytes": 2826,
+          "encoded": 2526,
+          "decoded": 2526,
+          "start": 91,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/data/contract-defs.js",
+          "type": "script",
+          "bytes": 13555,
+          "encoded": 13255,
+          "decoded": 13255,
+          "start": 103,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/journey/ui.mjs",
+          "type": "script",
+          "bytes": 20406,
+          "encoded": 20106,
+          "decoded": 20106,
+          "start": 121,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 300,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 122,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/journey/journey.mjs",
+          "type": "script",
+          "bytes": 8623,
+          "encoded": 8323,
+          "decoded": 8323,
+          "start": 136,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/journey/model.mjs",
+          "type": "script",
+          "bytes": 13156,
+          "encoded": 12856,
+          "decoded": 12856,
+          "start": 136,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/core/bank.mjs",
+          "type": "script",
+          "bytes": 2906,
+          "encoded": 2606,
+          "decoded": 2606,
+          "start": 145,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/journey/v1/route.json",
+          "type": "fetch",
+          "bytes": 303722,
+          "encoded": 303422,
+          "decoded": 303422,
+          "start": 153,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839269558-0/school/math/data/offline.js",
+          "type": "script",
+          "bytes": 9303,
+          "encoded": 9003,
+          "decoded": 9003,
+          "start": 175,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "innerWidth": 1024,
+        "viewport": 1024,
+        "height": 768,
+        "scroll": 1024,
+        "lang": "id",
+        "theme": "light",
+        "h1": [
+          "Petualangan"
+        ],
+        "overflowElements": [],
+        "domCount": 157,
+        "visibleControls": 18
+      },
+      "lcp_ms": 208,
+      "layout_shift_sum": 0.05270669857660929,
+      "shift_sources": [
+        {
+          "score": 0.05270669857660929,
+          "start": 156.69999999925494,
+          "nodes": [
+            [
+              "MAIN",
+              "main",
+              73,
+              132.640625
+            ]
+          ]
+        }
+      ],
+      "navigation_duration_ms": 93,
+      "request_count": 24,
+      "resources": [
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/core/appearance.js",
+          "type": "script",
+          "bytes": 1170,
+          "encoded": 870,
+          "decoded": 870,
+          "start": 22,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/assets/noto-Regular.woff",
+          "type": "link",
+          "bytes": 32936,
+          "encoded": 32636,
+          "decoded": 32636,
+          "start": 23,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/assets/noto-Bold.woff",
+          "type": "link",
+          "bytes": 32536,
+          "encoded": 32236,
+          "decoded": 32236,
+          "start": 23,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/assets/base.css",
+          "type": "link",
+          "bytes": 39960,
+          "encoded": 39660,
+          "decoded": 39660,
+          "start": 23,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/app.mjs",
+          "type": "script",
+          "bytes": 17470,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 23,
+          "duration": 19,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 574,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 23,
+          "duration": 32,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/core/dom.mjs",
+          "type": "script",
+          "bytes": 3824,
+          "encoded": 3524,
+          "decoded": 3524,
+          "start": 60,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/core/material.mjs",
+          "type": "script",
+          "bytes": 1486,
+          "encoded": 1186,
+          "decoded": 1186,
+          "start": 60,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/core/preferences.mjs",
+          "type": "script",
+          "bytes": 686,
+          "encoded": 386,
+          "decoded": 386,
+          "start": 60,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/locales/id.json",
+          "type": "fetch",
+          "bytes": 9775,
+          "encoded": 9475,
+          "decoded": 9475,
+          "start": 91,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 300,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 96,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/data/store.js",
+          "type": "script",
+          "bytes": 13828,
+          "encoded": 13528,
+          "decoded": 13528,
+          "start": 104,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/data/common.js",
+          "type": "script",
+          "bytes": 2030,
+          "encoded": 1730,
+          "decoded": 1730,
+          "start": 111,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/data/summary.js",
+          "type": "script",
+          "bytes": 3717,
+          "encoded": 3417,
+          "decoded": 3417,
+          "start": 112,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/data/db.js",
+          "type": "script",
+          "bytes": 5381,
+          "encoded": 5081,
+          "decoded": 5081,
+          "start": 112,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/data/validate.js",
+          "type": "script",
+          "bytes": 2826,
+          "encoded": 2526,
+          "decoded": 2526,
+          "start": 112,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/data/contract-defs.js",
+          "type": "script",
+          "bytes": 13555,
+          "encoded": 13255,
+          "decoded": 13255,
+          "start": 127,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/journey/ui.mjs",
+          "type": "script",
+          "bytes": 20406,
+          "encoded": 20106,
+          "decoded": 20106,
+          "start": 142,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 300,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 142,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/journey/journey.mjs",
+          "type": "script",
+          "bytes": 8623,
+          "encoded": 8323,
+          "decoded": 8323,
+          "start": 148,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/journey/model.mjs",
+          "type": "script",
+          "bytes": 13156,
+          "encoded": 12856,
+          "decoded": 12856,
+          "start": 148,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/core/bank.mjs",
+          "type": "script",
+          "bytes": 2906,
+          "encoded": 2606,
+          "decoded": 2606,
+          "start": 159,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/journey/v1/route.json",
+          "type": "fetch",
+          "bytes": 303722,
+          "encoded": 303422,
+          "decoded": 303422,
+          "start": 170,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839270651-1/school/math/data/offline.js",
+          "type": "script",
+          "bytes": 9303,
+          "encoded": 9003,
+          "decoded": 9003,
+          "start": 192,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        }
+      ]
+    },
+    {
+      "geometry": {
+        "innerWidth": 1024,
+        "viewport": 1024,
+        "height": 768,
+        "scroll": 1024,
+        "lang": "id",
+        "theme": "light",
+        "h1": [
+          "Petualangan"
+        ],
+        "overflowElements": [],
+        "domCount": 157,
+        "visibleControls": 18
+      },
+      "lcp_ms": 156,
+      "layout_shift_sum": 0.05270669857660929,
+      "shift_sources": [
+        {
+          "score": 0.05270669857660929,
+          "start": 103.59999999962747,
+          "nodes": [
+            [
+              "MAIN",
+              "main",
+              73,
+              132.640625
+            ]
+          ]
+        }
+      ],
+      "navigation_duration_ms": 61,
+      "request_count": 24,
+      "resources": [
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/core/appearance.js",
+          "type": "script",
+          "bytes": 1170,
+          "encoded": 870,
+          "decoded": 870,
+          "start": 19,
+          "duration": 18,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/assets/noto-Regular.woff",
+          "type": "link",
+          "bytes": 32936,
+          "encoded": 32636,
+          "decoded": 32636,
+          "start": 20,
+          "duration": 17,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/assets/noto-Bold.woff",
+          "type": "link",
+          "bytes": 32536,
+          "encoded": 32236,
+          "decoded": 32236,
+          "start": 20,
+          "duration": 23,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/assets/base.css",
+          "type": "link",
+          "bytes": 39960,
+          "encoded": 39660,
+          "decoded": 39660,
+          "start": 21,
+          "duration": 18,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 574,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 22,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/app.mjs",
+          "type": "script",
+          "bytes": 17470,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 22,
+          "duration": 23,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/core/dom.mjs",
+          "type": "script",
+          "bytes": 3824,
+          "encoded": 3524,
+          "decoded": 3524,
+          "start": 50,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/core/material.mjs",
+          "type": "script",
+          "bytes": 1486,
+          "encoded": 1186,
+          "decoded": 1186,
+          "start": 50,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/core/preferences.mjs",
+          "type": "script",
+          "bytes": 686,
+          "encoded": 386,
+          "decoded": 386,
+          "start": 50,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/locales/id.json",
+          "type": "fetch",
+          "bytes": 9775,
+          "encoded": 9475,
+          "decoded": 9475,
+          "start": 59,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 300,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 66,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/data/store.js",
+          "type": "script",
+          "bytes": 13828,
+          "encoded": 13528,
+          "decoded": 13528,
+          "start": 70,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/data/common.js",
+          "type": "script",
+          "bytes": 2030,
+          "encoded": 1730,
+          "decoded": 1730,
+          "start": 79,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/data/validate.js",
+          "type": "script",
+          "bytes": 2826,
+          "encoded": 2526,
+          "decoded": 2526,
+          "start": 79,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/data/summary.js",
+          "type": "script",
+          "bytes": 3717,
+          "encoded": 3417,
+          "decoded": 3417,
+          "start": 79,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/data/db.js",
+          "type": "script",
+          "bytes": 5381,
+          "encoded": 5081,
+          "decoded": 5081,
+          "start": 79,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/data/contract-defs.js",
+          "type": "script",
+          "bytes": 13555,
+          "encoded": 13255,
+          "decoded": 13255,
+          "start": 88,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/journey/ui.mjs",
+          "type": "script",
+          "bytes": 20406,
+          "encoded": 20106,
+          "decoded": 20106,
+          "start": 99,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 300,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 100,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/journey/journey.mjs",
+          "type": "script",
+          "bytes": 8623,
+          "encoded": 8323,
+          "decoded": 8323,
+          "start": 110,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/journey/model.mjs",
+          "type": "script",
+          "bytes": 13156,
+          "encoded": 12856,
+          "decoded": 12856,
+          "start": 111,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/core/bank.mjs",
+          "type": "script",
+          "bytes": 2906,
+          "encoded": 2606,
+          "decoded": 2606,
+          "start": 120,
+          "duration": 2,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/journey/v1/route.json",
+          "type": "fetch",
+          "bytes": 303722,
+          "encoded": 303422,
+          "decoded": 303422,
+          "start": 124,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-cold-1795839271744-2/school/math/data/offline.js",
+          "type": "script",
+          "bytes": 9303,
+          "encoded": 9003,
+          "decoded": 9003,
+          "start": 148,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        }
+      ]
+    }
+  ],
+  "median_lcp_ms": 196,
+  "runtime_after": {
+    "offline_release": "137cc1a9b76ed428",
+    "bootstrap_sha256": "c0f2a6f05c5005335a61c4f839af852715f5cd4ff4bc26cbb50768c028a21781",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "finished_utc": "2026-11-28T04:14:32.807Z"
+}

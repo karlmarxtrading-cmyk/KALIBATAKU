@@ -1,0 +1,25 @@
+Lampirkan dua berkas berikut bersama teks di bawah:
+1. KALIBATAKU_1.6.1_KANDIDAT_HOLD.zip
+2. KALIBATAKU_1.6.1_AUDIT_DAN_MANDAT_OTOMATIS_20261129.zip
+
+SALIN MULAI DARI SINI
+
+Laksanakan penyempurnaan KALIBATAKU dari kandidat 1.6.1 sampai menghasilkan satu ZIP aplikasi statis siap deploy. Saya memberikan mandat kreatif untuk memperbaiki, meningkatkan, menguji dan menuntaskan produk. Pekerjaan ini tidak boleh menunggu human tester, perekrutan siswa/guru, atau penelaah perangkat/dokumen.
+
+Ekstrak ZIP kandidat dan ZIP audit yang saya lampirkan. Dalam folder AUDIT_KALIBATAKU_161, baca 00_MULAI_DI_SINI.txt, laporan audit, 03_ARAHAN_PENUNTASAN_TANPA_HUMAN_TESTER.txt, 05_PETA_GERBANG_HISTORIS.csv, 06_CHECKLIST_OTOMATIS.csv, serta 11_DRAF_PROFIL_RILIS_OTOMATIS.json.
+
+Kemudian jalankan SELURUH instruksi dalam 04_PROMPT_MASTER_ASTRA_PENUNTASAN.txt, dari MULAI PROMPT sampai AKHIR PROMPT. Jadikan mandat terbaru ini sebagai dasar penyesuaian persyaratan penerimaan proyek yang dahulu mewajibkan human tester. Otorisasi perubahan lingkup tersebut sudah saya berikan; tidak perlu ditanyakan kembali.
+
+Implementasikan kontrak rilis berbasis verifikasi otomatis dalam kode, schema, evaluator, register dan dokumentasi. Pertahankan status bukti historis; jangan mengubah pengujian yang belum dilakukan menjadi PASS. Tutup seluruh gerbang otomatis pengganti secara substantif, bukan hanya mengganti label HOLD. Daftar 23 gerbang paket dalam audit adalah rancangan pekerjaan; status NOT_RUN di sana mengacu pada build lanjutan, bukan klaim bahwa kandidat 1.6.1 gagal semuanya.
+
+Pertahankan seluruh 4.677 berkas bank soal lama byte demi byte serta progres siswa. Alur utama wajib: ketik jawaban -> Enter untuk memeriksa -> baca hasil dan pembahasan -> Enter baru untuk soal berikutnya yang terlihat dan siap dijawab. Satu penekanan satu tindakan, tanpa duplikasi, auto-next atau katalog wajib. Perbaikan Enter, visibilitas dan validator QA versi 1.6.1 yang sudah lulus harus tetap lulus.
+
+Gunakan otomatisasi browser, oracle matematika independen, pemeriksaan data, AI review yang dilabeli jujur, serta CI yang tersedia. Tidak perlu menunggu pilot manusia. Jangan mengklaim pengujian perangkat fisik, ujaran pembaca layar atau Microsoft Word jika bukti tersebut tidak ada; dokumentasikan lingkup dukungan secara tepat tanpa menghapus fitur utama.
+
+Selesaikan implementasi, pengujian, perbaikan regresi, dua build bersih identik, pengemasan dan pemeriksaan ulang ZIP sampai semua gerbang wajib paket lulus. Serahkan source, dist, bank frozen, bukti final, profil rilis, register, changelog, checksum dan panduan Git Bash/GitHub-Cloudflare/backup/restore/update/rollback dalam satu ZIP.
+
+Pisahkan ARTIFACT_READY (paket siap deploy) dari LIVE_PRODUCTION_VERIFIED (domain nyata sudah diperiksa). Domain yang belum tersedia tidak boleh menahan paket siap deploy. Jika deployment diminta dan akses serta otorisasi sudah ada, lanjutkan verifikasi domain secara otomatis. Jangan menyatakan telah dipublikasikan jika belum.
+
+Mulai eksekusi sekarang. Lanjutkan semua pekerjaan rutin tanpa meminta persetujuan berulang. Jangan berhenti pada rencana atau audit ulang. Simpan kemajuan dan serahkan tautan ZIP final yang benar-benar tersedia, beserta versi, SHA-256, hasil pengujian, keputusan paket dan status deployment terpisah.
+
+AKHIR TEKS SALIN

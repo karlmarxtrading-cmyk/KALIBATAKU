@@ -1,0 +1,1006 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_status": "requirements_specification",
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "title": "Cakupan empat operasi",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "ADD/SUB/MUL/DIV dan MIX saja; tidak ada materi luar cakupan",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-100",
+        "TC-109"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-002",
+      "title": "Essay numerik",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Jawaban diketik; tanpa pilihan ganda dan tanpa wajib uraian",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-120",
+        "TC-169"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-003",
+      "title": "Kurikulum 60 level",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "12 kelas ×5 level, metadata konsisten di seluruh katalog",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-100"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-004",
+      "title": "Cakupan bank 281 aktif",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "281/281 mempunyai template dan paket nyata sesuai rencana kelayakan",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-103",
+        "TC-115",
+        "TC-118"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-005",
+      "title": "19 slot nonaktif",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Tidak dibuat paket palsu; UI memberi alasan kategori belum aktif",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-100",
+        "TC-169"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-006",
+      "title": "Kelas administratif terpisah",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Material grade berbeda classroom/enrollment pada record dan report",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-101",
+        "TC-153"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-007",
+      "title": "Penempatan per kompetensi",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Prasyarat DAG dan diagnostik dapat direproduksi tanpa hard-lock keliru",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-102",
+        "TC-126"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-008",
+      "title": "Bilingual menyeluruh",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "ID/EN lengkap termasuk error, hint, laporan dan accessibility label",
+      "definition_file": "01_ARAHAN_UI_UX.md",
+      "test_cases": [
+        "TC-114",
+        "TC-121",
+        "TC-162"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-009",
+      "title": "Terang gelap system",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Token semantic, persist preference, print theme, seluruh states",
+      "definition_file": "01_ARAHAN_UI_UX.md",
+      "test_cases": [
+        "TC-162",
+        "TC-165"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-010",
+      "title": "Responsif lintas perangkat",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Viewport dan orientasi UX lulus tanpa kontrol terpotong",
+      "definition_file": "01_ARAHAN_UI_UX.md",
+      "test_cases": [
+        "TC-160",
+        "TC-161",
+        "TC-168"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-011",
+      "title": "Aksesibilitas",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Keyboard, pembaca layar, kontras, target sentuh dan timer accommodation",
+      "definition_file": "01_ARAHAN_UI_UX.md",
+      "test_cases": [
+        "TC-163",
+        "TC-164",
+        "TC-165",
+        "TC-166"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-012",
+      "title": "18 layar dan states",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Alur utama, kosong, loading, gagal, retry dan keputusan UI bekerja",
+      "definition_file": "01_ARAHAN_UI_UX.md",
+      "test_cases": [
+        "TC-167",
+        "TC-169"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-013",
+      "title": "Onboarding lokal",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Mulai tanpa login; alias opsional; lanjut sesi kembali berfungsi",
+      "definition_file": "01_ARAHAN_UI_UX.md",
+      "test_cases": [
+        "TC-134",
+        "TC-169"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-014",
+      "title": "Katalog lazy",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Root/shard/paket dimuat sesuai intent; filter tidak membuat eager bank",
+      "definition_file": "01_ARAHAN_UI_UX.md",
+      "test_cases": [
+        "TC-170",
+        "TC-171",
+        "TC-172"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-015",
+      "title": "Manifest konsisten",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "ID/path/hash/count setiap paket aktual resolve di dist",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-101",
+        "TC-115"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-016",
+      "title": "Setup sesi",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Mode, panjang, timer, randomisasi dan form instance dipin",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-113",
+        "TC-128"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-017",
+      "title": "Player utuh",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Input-submit-next-review-resume end-to-end tanpa dummy action",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-122",
+        "TC-128",
+        "TC-169"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-018",
+      "title": "Parser numeric locale",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Grammar ketat, wrong separator format error, equivalence exact",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-120",
+        "TC-121"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-019",
+      "title": "Penilaian rasional",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "BigInt/rational exact; 0 division/NaN/float authority tidak ada",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-104",
+        "TC-105",
+        "TC-107"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-020",
+      "title": "Practice",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Feedback/hint/retry nyata, kesempatan pertama tersimpan",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-123"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-021",
+      "title": "Speed",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Deadline berjalan saat hidden; timeout dan kualitas durasi benar",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-124",
+        "TC-150"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-022",
+      "title": "Assessment",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Revisi pra-feedback valid; final snapshot immutable dan idempotent",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-125"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-023",
+      "title": "Adaptive",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Aturan berbasis evidence/policy, tidak random atau satu jawaban flapping",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-126",
+        "TC-154"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-024",
+      "title": "Mistake Recovery",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Soal asal plus variasi setara; tidak menimpa histori",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-127"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-025",
+      "title": "Hint dan pembahasan",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "ID/EN bermakna; langkah matematis benar dan tag strategi tepat",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-108",
+        "TC-114"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-026",
+      "title": "Timer dan kualitas waktu",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Aktif vs elapsed, reload anomaly dan no-speed-gate tercatat",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-124",
+        "TC-150",
+        "TC-166"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-027",
+      "title": "Autosave/resume atomik",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Sesi, event, jawaban dan outbox relevan tidak terpisah saat gagal",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-128",
+        "TC-129",
+        "TC-131"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-028",
+      "title": "Riwayat dan progres",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Per profil, per versi dan per kompetensi; tidak menghapus histori",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-132",
+        "TC-134",
+        "TC-153"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-029",
+      "title": "Mastery dan retest cycle",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Dua form, unique evidence, denominator benar, cycle remediasi dan provisional",
+      "definition_file": "09_METRIK_DAN_LAPORAN.md",
+      "test_cases": [
+        "TC-148",
+        "TC-152"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-030",
+      "title": "Metrik konsisten",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Skor/akurasi/completion/pp/weighted aggregation sesuai fixture",
+      "definition_file": "09_METRIK_DAN_LAPORAN.md",
+      "test_cases": [
+        "TC-145",
+        "TC-146",
+        "TC-147",
+        "TC-149",
+        "TC-150",
+        "TC-151"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-031",
+      "title": "Analisis kesalahan",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Indikasi berbasis bukti, tanpa diagnosis atau klaim strategi aktual",
+      "definition_file": "09_METRIK_DAN_LAPORAN.md",
+      "test_cases": [
+        "TC-154"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-032",
+      "title": "Randomisasi deterministik",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Seed/order/fingerprint tetap setelah reload, locale atau tema",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-110",
+        "TC-116",
+        "TC-128"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-033",
+      "title": "Kenaikan level per cakupan",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Seluruh active competencies level diperlukan; target personal berbeda",
+      "definition_file": "09_METRIK_DAN_LAPORAN.md",
+      "test_cases": [
+        "TC-148",
+        "TC-152"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-034",
+      "title": "Factory seluruh bank",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Generator deterministik finite dengan parameter dan provenance",
+      "definition_file": "05_BANK_SOAL_FACTORY.md",
+      "test_cases": [
+        "TC-103",
+        "TC-116",
+        "TC-118"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-035",
+      "title": "Validator aturan executable",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Setiap rule family dan boundary punya predikat serta negative fixtures",
+      "definition_file": "05_BANK_SOAL_FACTORY.md",
+      "test_cases": [
+        "TC-103",
+        "TC-106",
+        "TC-109"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-036",
+      "title": "Pool dan repetisi",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Slots vs unique/repeats/form overlap dihitung; deviasi berbukti",
+      "definition_file": "05_BANK_SOAL_FACTORY.md",
+      "test_cases": [
+        "TC-110",
+        "TC-111",
+        "TC-112",
+        "TC-113",
+        "TC-118"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-037",
+      "title": "ID dan versioning",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Stable IDs, revisions, immutable manifests, migrasi histori",
+      "definition_file": "05_BANK_SOAL_FACTORY.md",
+      "test_cases": [
+        "TC-101",
+        "TC-128",
+        "TC-177",
+        "TC-186"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-038",
+      "title": "Bilingual konten",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Semua butir punya title/instruction/hint/solution yang dibutuhkan ID/EN",
+      "definition_file": "05_BANK_SOAL_FACTORY.md",
+      "test_cases": [
+        "TC-114"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-039",
+      "title": "Solusi independen",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Semua kunci dan langkah diverifikasi oracle berbeda dari generator",
+      "definition_file": "05_BANK_SOAL_FACTORY.md",
+      "test_cases": [
+        "TC-107",
+        "TC-108"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-040",
+      "title": "Offline terpilih",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Set installed valid; cached only; update aman dan fallback foreground",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-176",
+        "TC-177",
+        "TC-178",
+        "TC-179"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-041",
+      "title": "IndexedDB lokal",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Profil/attempt/ledger/source namespace dan transaksi benar",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-129",
+        "TC-131",
+        "TC-132",
+        "TC-134"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-042",
+      "title": "Backup dan restore",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Round-trip schema/hash, preview konflik, aman dan atomik",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-133",
+        "TC-184"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-043",
+      "title": "Quota dan kehilangan storage",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Mode sementara/ekspor jelas, tidak mengaku data tersimpan",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-130",
+        "TC-167",
+        "TC-178"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-044",
+      "title": "Monitoring guru simulasi",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Data dihitung; drill-down dan jawaban siswa demo memperbarui dashboard",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-117",
+        "TC-136",
+        "TC-153",
+        "TC-169"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-045",
+      "title": "Panel admin simulasi",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Cakupan katalog, filter, ekspor dan boundary role demo bekerja",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-117",
+        "TC-153",
+        "TC-159",
+        "TC-169"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-046",
+      "title": "Penugasan lokal mock",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Target/form/deadline/policy bisa dikerjakan pada siswa demo dan dimonitor",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-125",
+        "TC-136",
+        "TC-153"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-047",
+      "title": "Parents meeting report",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Struktur, evidence, rekomendasi, provenance dan preview lengkap",
+      "definition_file": "09_METRIK_DAN_LAPORAN.md",
+      "test_cases": [
+        "TC-153",
+        "TC-154",
+        "TC-155",
+        "TC-159"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-048",
+      "title": "Enam ekspor asli",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "PDF/DOCX/XLSX/CSV/JSON/ZIP valid; batch/cancel/failure bekerja",
+      "definition_file": "09_METRIK_DAN_LAPORAN.md",
+      "test_cases": [
+        "TC-155",
+        "TC-156",
+        "TC-157",
+        "TC-158"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-049",
+      "title": "Catatan dan override",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Author/time/revision/reason; respons asli dan nilai hitung tidak dihapus",
+      "definition_file": "09_METRIK_DAN_LAPORAN.md",
+      "test_cases": [
+        "TC-153",
+        "TC-159"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-050",
+      "title": "Academic event contract",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Envelope tipe, sequence, content/competency/provenance/version valid",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-101",
+        "TC-129",
+        "TC-144"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-051",
+      "title": "Mock adapter",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "ACK mock jelas, simulasi latency/errors dapat direproduksi",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-136",
+        "TC-138",
+        "TC-140"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-052",
+      "title": "Remote adapter fail closed",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Tanpa config/identity tidak kirim dan tidak fallback sukses",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-135",
+        "TC-141"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-053",
+      "title": "Sync idempotensi dan retry",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Partial ACK, same ID hash, ordering, error status, pending aman",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-137",
+        "TC-138",
+        "TC-139",
+        "TC-140",
+        "TC-142"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-054",
+      "title": "Identitas dan verifikasi",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Server menerima bukan otomatis grading; lintasakun terisolasi",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-141",
+        "TC-143",
+        "TC-144"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-055",
+      "title": "Keamanan statis",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "No secret/eval/untrusted import; XSS/CSV/CSP diuji; anti-inspect bukan kontrol",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-119",
+        "TC-156",
+        "TC-183",
+        "TC-184"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-056",
+      "title": "Minimasi data",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Alias opsional, no tracking pihak ketiga default, demo terpisah",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-117",
+        "TC-185"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-057",
+      "title": "Performa dan lazy interaction",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Budget gzip/network/interaksi/worker/memory dipenuhi dan dibuktikan",
+      "definition_file": "01_ARAHAN_UI_UX.md",
+      "test_cases": [
+        "TC-170",
+        "TC-171",
+        "TC-172",
+        "TC-173",
+        "TC-174",
+        "TC-175"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-058",
+      "title": "Dukungan browser teruji",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Versi/metode real/emulasi, keyboard dan offline fallback dinyatakan",
+      "definition_file": "01_ARAHAN_UI_UX.md",
+      "test_cases": [
+        "TC-160",
+        "TC-161",
+        "TC-163",
+        "TC-164",
+        "TC-179"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-059",
+      "title": "QA seluruh lingkup",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "TC-100..189 punya status dan evidence, tidak PASS fiktif",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-189"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-060",
+      "title": "Build reproduktif",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Clone bersih+lockfile+seed menghasilkan source/dist/bank konsisten",
+      "definition_file": "07_DEPLOY_OPERASIONAL.md",
+      "test_cases": [
+        "TC-116",
+        "TC-180"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-061",
+      "title": "Deploy hosting statis",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Root/subpath, deep link, MIME, headers, update dan rollback jelas",
+      "definition_file": "07_DEPLOY_OPERASIONAL.md",
+      "test_cases": [
+        "TC-181",
+        "TC-182",
+        "TC-183",
+        "TC-186"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-062",
+      "title": "Dokumentasi operasi",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "README, build/deploy/backup/tambah bank/recovery lengkap",
+      "definition_file": "07_DEPLOY_OPERASIONAL.md",
+      "test_cases": [
+        "TC-188"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-063",
+      "title": "Evidence dan hashes",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Seluruh laporan cocok build final; checksum dan ZIP CRC valid",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-188",
+        "TC-189"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-064",
+      "title": "Status rilis jujur",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Static, bank, bridge, LMS, pilot dan live deployment terpisah",
+      "definition_file": "02_PRD_MASTER.md",
+      "test_cases": [
+        "TC-189"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-065",
+      "title": "Privasi perangkat bersama",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Profil bukan akun aman; hapus terarah; tidak ada data anak di artefak",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-134",
+        "TC-185"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-066",
+      "title": "LMS masa depan",
+      "priority": "must",
+      "scope": "static_release_with_future_contracts",
+      "acceptance": "Kontrak API/otorisasi/grade trust terdefinisi; server nyata deferred by scope",
+      "definition_file": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "test_cases": [
+        "TC-135",
+        "TC-143",
+        "TC-144",
+        "TC-189"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-067",
+      "title": "Skala bank tanpa rombak",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Tambahkan paket lewat factory/manifest, initial tetap ringan",
+      "definition_file": "05_BANK_SOAL_FACTORY.md",
+      "test_cases": [
+        "TC-115",
+        "TC-170",
+        "TC-171",
+        "TC-175"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    },
+    {
+      "id": "REQ-068",
+      "title": "Lisensi dan dependensi",
+      "priority": "must",
+      "scope": "static_release",
+      "acceptance": "Provenance aset/font, lockfile/advisory dan lisensi tercatat",
+      "definition_file": "07_DEPLOY_OPERASIONAL.md",
+      "test_cases": [
+        "TC-187"
+      ],
+      "implementation_status": "specified_not_implemented",
+      "evidence": []
+    }
+  ]
+}

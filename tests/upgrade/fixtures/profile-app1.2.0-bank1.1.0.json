@@ -1,0 +1,1106 @@
+{
+ "format": "kalibataku-profile-backup",
+ "schema_version": "1.0.0",
+ "release_id": "kalibataku-static-1",
+ "data_origin": "local_practice",
+ "exported_at": "2026-11-26T10:26:36.211Z",
+ "verification_status": "unverified",
+ "profile": {
+  "id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+  "name": "Fixture 1.2.0"
+ },
+ "records": {
+  "attempts": [
+   {
+    "id": "3034d518-6486-4deb-abec-2566f3137aee",
+    "data": {
+     "attempt_id": "3034d518-6486-4deb-abec-2566f3137aee",
+     "schema_version": "1.0.0",
+     "status": "completed",
+     "profile_id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+     "data_origin": "local_practice",
+     "mode": "practice",
+     "package_id": "MM-G03-L05-DIV-P001",
+     "package_title": {
+      "id": "Pengenalan 001 · Pembagian — Integrasi operasi sampai ribuan",
+      "en": "Introduction 001 · Division — Integrated arithmetic to thousands"
+     },
+     "grade": 3,
+     "level": 5,
+     "operation": "DIV",
+     "target_competency_id": "arithmetic.division.g03.l05",
+     "content_version": "1.1.0",
+     "curriculum_version": "1.0.0-draft.2",
+     "policy_version": "mastery-local-v1",
+     "feedback_policy_version": "visible-key-v2",
+     "timing_policy_version": "continuous-deadline-v2",
+     "form_id": null,
+     "form_family_id": null,
+     "form_instance_id": null,
+     "assessment_cycle_id": null,
+     "assignment_id": null,
+     "pool_size": 20,
+     "order_seed": "34506721",
+     "index": 2,
+     "created_at": "2026-11-26T10:26:36.200Z",
+     "started_at": "2026-11-26T10:26:36.201Z",
+     "completed_at": "2026-11-26T10:26:36.209Z",
+     "duration_seconds": 0,
+     "deadline": null,
+     "ready": true,
+     "adaptive": null,
+     "locale": "id",
+     "items": [
+      {
+       "question": {
+        "question_id": "arithmetic.division.g03.l05.672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05",
+        "template_id": "MM-TPL-G03-L05-DIV-FACTOR",
+        "template_version": "1.1.0",
+        "fingerprint": "672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+        "fingerprint_policy": "canonical-ast-v1",
+        "question_type": "numeric_essay",
+        "answer_policy": "exact_rational",
+        "answer": {
+         "numerator": "98",
+         "denominator": "1"
+        },
+        "expression_ast": {
+         "kind": "binary",
+         "operation": "DIV",
+         "left": {
+          "kind": "rational",
+          "numerator": "392",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         },
+         "right": {
+          "kind": "rational",
+          "numerator": "4",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         }
+        },
+        "neutral_expression": "392 ÷ 4",
+        "strategy_tags": [
+         "HD"
+        ],
+        "hint": {
+         "id": "Pecah pembagi 4 menjadi 2 × 2.",
+         "en": "Split the divisor 4 into 2 × 2."
+        },
+        "explanation": {
+         "id": "Bagi 392 dengan 2 untuk memperoleh 196. Kemudian bagi dengan 2.",
+         "en": "Divide 392 by 2 to get 196. Then divide by 2."
+        },
+        "solution_steps": [
+         {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+           "kind": "binary",
+           "operation": "DIV",
+           "left": {
+            "kind": "rational",
+            "numerator": "196",
+            "denominator": "1"
+           },
+           "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1"
+           }
+          },
+          "text": {
+           "id": "Bagi 392 dengan 2 untuk memperoleh 196. Kemudian bagi dengan 2.",
+           "en": "Divide 392 by 2 to get 196. Then divide by 2."
+          }
+         },
+         {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+           "kind": "rational",
+           "numerator": "98",
+           "denominator": "1"
+          },
+          "text": {
+           "id": "Hasil akhirnya 98.",
+           "en": "The final value is 98."
+          }
+         }
+        ]
+       },
+       "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.1",
+       "seen": true,
+       "draft": "98",
+       "draft_locale": "id",
+       "dirty": false,
+       "history": [
+        {
+         "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.1",
+         "question_id": "arithmetic.division.g03.l05.672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+         "question_revision": "1.1.0",
+         "competency_id": "arithmetic.division.g03.l05",
+         "answer": {
+          "numerator": "98",
+          "denominator": "1"
+         },
+         "raw_answer": "98",
+         "draft_locale": "id",
+         "submission_kind": "first",
+         "attempt_number": 1,
+         "hint_used": false,
+         "active_duration_ms": 0,
+         "elapsed_duration_ms": 4,
+         "timing_quality": "valid_client_estimate",
+         "client_is_correct": true,
+         "key_seen_before": false,
+         "hint_before": false,
+         "feedback_policy_version": "visible-key-v2",
+         "first_correct": true,
+         "key_revealed_at": "2026-11-26T10:26:36.205Z",
+         "key_reveal_reason": "checked_response",
+         "event_id": "d3178deb-212e-433d-a69f-81f6a102fc99",
+         "is_correct": true
+        }
+       ],
+       "hint_used": false,
+       "feedback": true,
+       "final_status": "correct",
+       "active_ms": 0,
+       "timing_quality": "valid_client_estimate",
+       "first_seen_at": "2026-11-26T10:26:36.201Z",
+       "key_revealed_at": "2026-11-26T10:26:36.205Z",
+       "key_reveal_reason": "checked_response",
+       "first_correct": true,
+       "final_correct": true,
+       "last_event_id": "d3178deb-212e-433d-a69f-81f6a102fc99"
+      },
+      {
+       "question": {
+        "question_id": "arithmetic.division.g03.l05.2571e58f3aa36b9e8585b256e8e4db1a685d549d3b7d6a3b3cfc0e7f9941f98b",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05",
+        "template_id": "MM-TPL-G03-L05-DIV-FACTOR",
+        "template_version": "1.1.0",
+        "fingerprint": "2571e58f3aa36b9e8585b256e8e4db1a685d549d3b7d6a3b3cfc0e7f9941f98b",
+        "fingerprint_policy": "canonical-ast-v1",
+        "question_type": "numeric_essay",
+        "answer_policy": "exact_rational",
+        "answer": {
+         "numerator": "84",
+         "denominator": "1"
+        },
+        "expression_ast": {
+         "kind": "binary",
+         "operation": "DIV",
+         "left": {
+          "kind": "rational",
+          "numerator": "924",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         },
+         "right": {
+          "kind": "rational",
+          "numerator": "11",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         }
+        },
+        "neutral_expression": "924 ÷ 11",
+        "strategy_tags": [
+         "CO"
+        ],
+        "hint": {
+         "id": "Perkirakan hasil bagi dengan patokan 10. Periksa perkiraan dengan pembagi asli.",
+         "en": "Estimate the quotient using 10. Check the estimate against the original divisor."
+        },
+        "explanation": {
+         "id": "Perkiraan 92 memberi 92 × (11) = 1012. Sisanya −88. Bagi sisa itu dengan 11 untuk mengoreksi perkiraan.",
+         "en": "The estimate 92 gives 92 × (11) = 1012. The remainder is −88. Divide it by 11 to correct the estimate."
+        },
+        "solution_steps": [
+         {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+           "kind": "rational",
+           "numerator": "84",
+           "denominator": "1"
+          },
+          "text": {
+           "id": "Hasil akhirnya 84.",
+           "en": "The final value is 84."
+          }
+         }
+        ]
+       },
+       "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.2",
+       "seen": true,
+       "draft": "84",
+       "draft_locale": "id",
+       "dirty": false,
+       "history": [
+        {
+         "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.2",
+         "question_id": "arithmetic.division.g03.l05.2571e58f3aa36b9e8585b256e8e4db1a685d549d3b7d6a3b3cfc0e7f9941f98b",
+         "question_revision": "1.1.0",
+         "competency_id": "arithmetic.division.g03.l05",
+         "answer": {
+          "numerator": "84",
+          "denominator": "1"
+         },
+         "raw_answer": "84",
+         "draft_locale": "id",
+         "submission_kind": "first",
+         "attempt_number": 1,
+         "hint_used": false,
+         "active_duration_ms": 0,
+         "elapsed_duration_ms": 0,
+         "timing_quality": "valid_client_estimate",
+         "client_is_correct": true,
+         "key_seen_before": false,
+         "hint_before": false,
+         "feedback_policy_version": "visible-key-v2",
+         "first_correct": true,
+         "key_revealed_at": "2026-11-26T10:26:36.207Z",
+         "key_reveal_reason": "checked_response",
+         "event_id": "2ec6da30-7d29-4197-ae2e-5b5b9064840f",
+         "is_correct": true
+        }
+       ],
+       "hint_used": false,
+       "feedback": true,
+       "final_status": "correct",
+       "active_ms": 0,
+       "timing_quality": "valid_client_estimate",
+       "first_seen_at": "2026-11-26T10:26:36.207Z",
+       "key_revealed_at": "2026-11-26T10:26:36.207Z",
+       "key_reveal_reason": "checked_response",
+       "first_correct": true,
+       "final_correct": true,
+       "last_event_id": "2ec6da30-7d29-4197-ae2e-5b5b9064840f"
+      },
+      {
+       "question": {
+        "question_id": "arithmetic.division.g03.l05.59406611978e2f15d4633fc21d84646f383809f6661fca77ba4542bd016e728d",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05",
+        "template_id": "MM-TPL-G03-L05-DIV-FACTOR",
+        "template_version": "1.1.0",
+        "fingerprint": "59406611978e2f15d4633fc21d84646f383809f6661fca77ba4542bd016e728d",
+        "fingerprint_policy": "canonical-ast-v1",
+        "question_type": "numeric_essay",
+        "answer_policy": "exact_rational",
+        "answer": {
+         "numerator": "48",
+         "denominator": "1"
+        },
+        "expression_ast": {
+         "kind": "binary",
+         "operation": "DIV",
+         "left": {
+          "kind": "rational",
+          "numerator": "384",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         },
+         "right": {
+          "kind": "rational",
+          "numerator": "8",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         }
+        },
+        "neutral_expression": "384 ÷ 8",
+        "strategy_tags": [
+         "HD"
+        ],
+        "hint": {
+         "id": "Pecah pembagi 8 menjadi 2 × 4.",
+         "en": "Split the divisor 8 into 2 × 4."
+        },
+        "explanation": {
+         "id": "Bagi 384 dengan 2 untuk memperoleh 192. Kemudian bagi dengan 4.",
+         "en": "Divide 384 by 2 to get 192. Then divide by 4."
+        },
+        "solution_steps": [
+         {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+           "kind": "binary",
+           "operation": "DIV",
+           "left": {
+            "kind": "rational",
+            "numerator": "192",
+            "denominator": "1"
+           },
+           "right": {
+            "kind": "rational",
+            "numerator": "4",
+            "denominator": "1"
+           }
+          },
+          "text": {
+           "id": "Bagi 384 dengan 2 untuk memperoleh 192. Kemudian bagi dengan 4.",
+           "en": "Divide 384 by 2 to get 192. Then divide by 4."
+          }
+         },
+         {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+           "kind": "rational",
+           "numerator": "48",
+           "denominator": "1"
+          },
+          "text": {
+           "id": "Hasil akhirnya 48.",
+           "en": "The final value is 48."
+          }
+         }
+        ]
+       },
+       "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.3",
+       "seen": true,
+       "draft": "48",
+       "draft_locale": "id",
+       "dirty": false,
+       "history": [
+        {
+         "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.3",
+         "question_id": "arithmetic.division.g03.l05.59406611978e2f15d4633fc21d84646f383809f6661fca77ba4542bd016e728d",
+         "question_revision": "1.1.0",
+         "competency_id": "arithmetic.division.g03.l05",
+         "answer": {
+          "numerator": "48",
+          "denominator": "1"
+         },
+         "raw_answer": "48",
+         "draft_locale": "id",
+         "submission_kind": "first",
+         "attempt_number": 1,
+         "hint_used": false,
+         "active_duration_ms": 0,
+         "elapsed_duration_ms": 0,
+         "timing_quality": "valid_client_estimate",
+         "client_is_correct": true,
+         "key_seen_before": false,
+         "hint_before": false,
+         "feedback_policy_version": "visible-key-v2",
+         "first_correct": true,
+         "key_revealed_at": "2026-11-26T10:26:36.208Z",
+         "key_reveal_reason": "checked_response",
+         "event_id": "1c2bfc05-c00e-453f-8360-85bdd10cd891",
+         "is_correct": true
+        }
+       ],
+       "hint_used": false,
+       "feedback": true,
+       "final_status": "correct",
+       "active_ms": 0,
+       "timing_quality": "valid_client_estimate",
+       "first_seen_at": "2026-11-26T10:26:36.208Z",
+       "key_revealed_at": "2026-11-26T10:26:36.208Z",
+       "key_reveal_reason": "checked_response",
+       "first_correct": true,
+       "final_correct": true,
+       "last_event_id": "1c2bfc05-c00e-453f-8360-85bdd10cd891"
+      }
+     ],
+     "_rev": 5,
+     "_seq": 5,
+     "_saved_at": "2026-11-26T10:26:36.209Z",
+     "finish_reason": "submitted",
+     "metrics": {
+      "N": 3,
+      "C": 3,
+      "W": 0,
+      "S": 0,
+      "B": 0,
+      "U": 0,
+      "score_percent": 100,
+      "accuracy_percent": 100,
+      "responded_percent": 100,
+      "first_response_count": 3,
+      "first_correct": 3,
+      "first_response_accuracy": 100,
+      "retries": 0,
+      "hints": 0
+     }
+    }
+   },
+   {
+    "id": "84d125fd-8b96-49bd-8089-533d8388294b",
+    "data": {
+     "attempt_id": "84d125fd-8b96-49bd-8089-533d8388294b",
+     "schema_version": "1.0.0",
+     "status": "ongoing",
+     "profile_id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+     "data_origin": "local_practice",
+     "mode": "practice",
+     "package_id": "MM-G03-L05-DIV-P001",
+     "package_title": {
+      "id": "Pengenalan 001 · Pembagian — Integrasi operasi sampai ribuan",
+      "en": "Introduction 001 · Division — Integrated arithmetic to thousands"
+     },
+     "grade": 3,
+     "level": 5,
+     "operation": "DIV",
+     "target_competency_id": "arithmetic.division.g03.l05",
+     "content_version": "1.1.0",
+     "curriculum_version": "1.0.0-draft.2",
+     "policy_version": "mastery-local-v1",
+     "feedback_policy_version": "visible-key-v2",
+     "timing_policy_version": "continuous-deadline-v2",
+     "form_id": null,
+     "form_family_id": null,
+     "form_instance_id": null,
+     "assessment_cycle_id": null,
+     "assignment_id": null,
+     "pool_size": 20,
+     "order_seed": "150470593",
+     "index": 0,
+     "created_at": "2026-11-26T10:26:36.210Z",
+     "started_at": "2026-11-26T10:26:36.210Z",
+     "completed_at": null,
+     "duration_seconds": 0,
+     "deadline": null,
+     "ready": true,
+     "adaptive": null,
+     "locale": "en",
+     "items": [
+      {
+       "question": {
+        "question_id": "arithmetic.division.g03.l05.672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05",
+        "template_id": "MM-TPL-G03-L05-DIV-FACTOR",
+        "template_version": "1.1.0",
+        "fingerprint": "672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+        "fingerprint_policy": "canonical-ast-v1",
+        "question_type": "numeric_essay",
+        "answer_policy": "exact_rational",
+        "answer": {
+         "numerator": "98",
+         "denominator": "1"
+        },
+        "expression_ast": {
+         "kind": "binary",
+         "operation": "DIV",
+         "left": {
+          "kind": "rational",
+          "numerator": "392",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         },
+         "right": {
+          "kind": "rational",
+          "numerator": "4",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         }
+        },
+        "neutral_expression": "392 ÷ 4",
+        "strategy_tags": [
+         "HD"
+        ],
+        "hint": {
+         "id": "Pecah pembagi 4 menjadi 2 × 2.",
+         "en": "Split the divisor 4 into 2 × 2."
+        },
+        "explanation": {
+         "id": "Bagi 392 dengan 2 untuk memperoleh 196. Kemudian bagi dengan 2.",
+         "en": "Divide 392 by 2 to get 196. Then divide by 2."
+        },
+        "solution_steps": [
+         {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+           "kind": "binary",
+           "operation": "DIV",
+           "left": {
+            "kind": "rational",
+            "numerator": "196",
+            "denominator": "1"
+           },
+           "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1"
+           }
+          },
+          "text": {
+           "id": "Bagi 392 dengan 2 untuk memperoleh 196. Kemudian bagi dengan 2.",
+           "en": "Divide 392 by 2 to get 196. Then divide by 2."
+          }
+         },
+         {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+           "kind": "rational",
+           "numerator": "98",
+           "denominator": "1"
+          },
+          "text": {
+           "id": "Hasil akhirnya 98.",
+           "en": "The final value is 98."
+          }
+         }
+        ]
+       },
+       "question_instance_id": "84d125fd-8b96-49bd-8089-533d8388294b.1",
+       "seen": true,
+       "draft": "84",
+       "draft_locale": "en",
+       "dirty": true,
+       "history": [
+        {
+         "question_instance_id": "84d125fd-8b96-49bd-8089-533d8388294b.1",
+         "question_id": "arithmetic.division.g03.l05.672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+         "question_revision": "1.1.0",
+         "competency_id": "arithmetic.division.g03.l05",
+         "answer": {
+          "numerator": "8",
+          "denominator": "1"
+         },
+         "raw_answer": "8",
+         "draft_locale": "en",
+         "submission_kind": "first",
+         "attempt_number": 1,
+         "hint_used": false,
+         "active_duration_ms": 0,
+         "elapsed_duration_ms": 0,
+         "timing_quality": "valid_client_estimate",
+         "client_is_correct": false,
+         "key_seen_before": false,
+         "hint_before": false,
+         "feedback_policy_version": "visible-key-v2",
+         "first_correct": false,
+         "key_revealed_at": "2026-11-26T10:26:36.210Z",
+         "key_reveal_reason": "checked_response",
+         "event_id": "47e3dbf9-1e5f-401e-934a-5d4aa0adf779",
+         "is_correct": false
+        }
+       ],
+       "hint_used": false,
+       "feedback": false,
+       "final_status": "incorrect",
+       "active_ms": 0,
+       "timing_quality": "valid_client_estimate",
+       "first_seen_at": "2026-11-26T10:26:36.210Z",
+       "key_revealed_at": "2026-11-26T10:26:36.210Z",
+       "key_reveal_reason": "checked_response",
+       "first_correct": false,
+       "final_correct": false,
+       "last_event_id": "47e3dbf9-1e5f-401e-934a-5d4aa0adf779"
+      },
+      {
+       "question": {
+        "question_id": "arithmetic.division.g03.l05.2571e58f3aa36b9e8585b256e8e4db1a685d549d3b7d6a3b3cfc0e7f9941f98b",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05",
+        "template_id": "MM-TPL-G03-L05-DIV-FACTOR",
+        "template_version": "1.1.0",
+        "fingerprint": "2571e58f3aa36b9e8585b256e8e4db1a685d549d3b7d6a3b3cfc0e7f9941f98b",
+        "fingerprint_policy": "canonical-ast-v1",
+        "question_type": "numeric_essay",
+        "answer_policy": "exact_rational",
+        "answer": {
+         "numerator": "84",
+         "denominator": "1"
+        },
+        "expression_ast": {
+         "kind": "binary",
+         "operation": "DIV",
+         "left": {
+          "kind": "rational",
+          "numerator": "924",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         },
+         "right": {
+          "kind": "rational",
+          "numerator": "11",
+          "denominator": "1",
+          "display": {
+           "kind": "integer"
+          }
+         }
+        },
+        "neutral_expression": "924 ÷ 11",
+        "strategy_tags": [
+         "CO"
+        ],
+        "hint": {
+         "id": "Perkirakan hasil bagi dengan patokan 10. Periksa perkiraan dengan pembagi asli.",
+         "en": "Estimate the quotient using 10. Check the estimate against the original divisor."
+        },
+        "explanation": {
+         "id": "Perkiraan 92 memberi 92 × (11) = 1012. Sisanya −88. Bagi sisa itu dengan 11 untuk mengoreksi perkiraan.",
+         "en": "The estimate 92 gives 92 × (11) = 1012. The remainder is −88. Divide it by 11 to correct the estimate."
+        },
+        "solution_steps": [
+         {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+           "kind": "rational",
+           "numerator": "84",
+           "denominator": "1"
+          },
+          "text": {
+           "id": "Hasil akhirnya 84.",
+           "en": "The final value is 84."
+          }
+         }
+        ]
+       },
+       "question_instance_id": "84d125fd-8b96-49bd-8089-533d8388294b.2",
+       "seen": false,
+       "draft": "",
+       "draft_locale": "en",
+       "dirty": false,
+       "history": [],
+       "hint_used": false,
+       "feedback": false,
+       "final_status": "unseen",
+       "active_ms": 0,
+       "timing_quality": "valid_client_estimate"
+      }
+     ],
+     "_rev": 3,
+     "_seq": 2,
+     "_saved_at": "2026-11-26T10:26:36.211Z"
+    }
+   }
+  ],
+  "events": [
+   {
+    "id": "8259729f-a546-48f3-9a58-32185d494b74",
+    "data": {
+     "schema_version": "1.0.0",
+     "event_id": "8259729f-a546-48f3-9a58-32185d494b74",
+     "event_type": "attempt.started",
+     "event_sequence": 1,
+     "attempt_id": "3034d518-6486-4deb-abec-2566f3137aee",
+     "provenance": {
+      "data_origin": "local_practice",
+      "dataset_id": "device",
+      "local_profile_id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+      "server_subject_ref": null
+     },
+     "context": {
+      "feedback_policy_version": "visible-key-v2",
+      "timing_policy_version": "continuous-deadline-v2",
+      "module_id": "mental-math",
+      "curriculum_id": "kalibataku",
+      "curriculum_version": "1.0.0-draft.2",
+      "package_id": "MM-G03-L05-DIV-P001",
+      "content_version": "1.1.0",
+      "material_grade": 3,
+      "level": 5,
+      "mode": "practice",
+      "locale": "id",
+      "policy_version": "mastery-local-v1",
+      "assignment_id": null,
+      "form_id": null,
+      "assessment_cycle_id": null
+     },
+     "occurred_at_client": "2026-11-26T10:26:36.203Z",
+     "payload": {
+      "instances": [
+       {
+        "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.1",
+        "question_id": "arithmetic.division.g03.l05.672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05"
+       },
+       {
+        "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.2",
+        "question_id": "arithmetic.division.g03.l05.2571e58f3aa36b9e8585b256e8e4db1a685d549d3b7d6a3b3cfc0e7f9941f98b",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05"
+       },
+       {
+        "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.3",
+        "question_id": "arithmetic.division.g03.l05.59406611978e2f15d4633fc21d84646f383809f6661fca77ba4542bd016e728d",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05"
+       }
+      ],
+      "order_seed": "34506721",
+      "started_at_client": "2026-11-26T10:26:36.201Z"
+     },
+     "payload_hash": "20ad4a56a54812074f9b8e465f6b1352b93f9e17bba6bab10211d9969b6417c3"
+    }
+   },
+   {
+    "id": "d3178deb-212e-433d-a69f-81f6a102fc99",
+    "data": {
+     "schema_version": "1.0.0",
+     "event_id": "d3178deb-212e-433d-a69f-81f6a102fc99",
+     "event_type": "answer.submitted",
+     "event_sequence": 2,
+     "attempt_id": "3034d518-6486-4deb-abec-2566f3137aee",
+     "provenance": {
+      "data_origin": "local_practice",
+      "dataset_id": "device",
+      "local_profile_id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+      "server_subject_ref": null
+     },
+     "context": {
+      "feedback_policy_version": "visible-key-v2",
+      "timing_policy_version": "continuous-deadline-v2",
+      "module_id": "mental-math",
+      "curriculum_id": "kalibataku",
+      "curriculum_version": "1.0.0-draft.2",
+      "package_id": "MM-G03-L05-DIV-P001",
+      "content_version": "1.1.0",
+      "material_grade": 3,
+      "level": 5,
+      "mode": "practice",
+      "locale": "id",
+      "policy_version": "mastery-local-v1",
+      "assignment_id": null,
+      "form_id": null,
+      "assessment_cycle_id": null
+     },
+     "occurred_at_client": "2026-11-26T10:26:36.205Z",
+     "payload": {
+      "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.1",
+      "question_id": "arithmetic.division.g03.l05.672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+      "question_revision": "1.1.0",
+      "competency_id": "arithmetic.division.g03.l05",
+      "answer": {
+       "numerator": "98",
+       "denominator": "1"
+      },
+      "raw_answer": "98",
+      "draft_locale": "id",
+      "submission_kind": "first",
+      "attempt_number": 1,
+      "hint_used": false,
+      "active_duration_ms": 0,
+      "elapsed_duration_ms": 4,
+      "timing_quality": "valid_client_estimate",
+      "client_is_correct": true,
+      "key_seen_before": false,
+      "hint_before": false,
+      "feedback_policy_version": "visible-key-v2",
+      "first_correct": true,
+      "key_revealed_at": "2026-11-26T10:26:36.205Z",
+      "key_reveal_reason": "checked_response"
+     },
+     "payload_hash": "b29fd02b93786bc697f8f63dec189faf779a02dbc1a5a2e8d67d0072bbebb9e1"
+    }
+   },
+   {
+    "id": "2ec6da30-7d29-4197-ae2e-5b5b9064840f",
+    "data": {
+     "schema_version": "1.0.0",
+     "event_id": "2ec6da30-7d29-4197-ae2e-5b5b9064840f",
+     "event_type": "answer.submitted",
+     "event_sequence": 3,
+     "attempt_id": "3034d518-6486-4deb-abec-2566f3137aee",
+     "provenance": {
+      "data_origin": "local_practice",
+      "dataset_id": "device",
+      "local_profile_id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+      "server_subject_ref": null
+     },
+     "context": {
+      "feedback_policy_version": "visible-key-v2",
+      "timing_policy_version": "continuous-deadline-v2",
+      "module_id": "mental-math",
+      "curriculum_id": "kalibataku",
+      "curriculum_version": "1.0.0-draft.2",
+      "package_id": "MM-G03-L05-DIV-P001",
+      "content_version": "1.1.0",
+      "material_grade": 3,
+      "level": 5,
+      "mode": "practice",
+      "locale": "id",
+      "policy_version": "mastery-local-v1",
+      "assignment_id": null,
+      "form_id": null,
+      "assessment_cycle_id": null
+     },
+     "occurred_at_client": "2026-11-26T10:26:36.207Z",
+     "payload": {
+      "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.2",
+      "question_id": "arithmetic.division.g03.l05.2571e58f3aa36b9e8585b256e8e4db1a685d549d3b7d6a3b3cfc0e7f9941f98b",
+      "question_revision": "1.1.0",
+      "competency_id": "arithmetic.division.g03.l05",
+      "answer": {
+       "numerator": "84",
+       "denominator": "1"
+      },
+      "raw_answer": "84",
+      "draft_locale": "id",
+      "submission_kind": "first",
+      "attempt_number": 1,
+      "hint_used": false,
+      "active_duration_ms": 0,
+      "elapsed_duration_ms": 0,
+      "timing_quality": "valid_client_estimate",
+      "client_is_correct": true,
+      "key_seen_before": false,
+      "hint_before": false,
+      "feedback_policy_version": "visible-key-v2",
+      "first_correct": true,
+      "key_revealed_at": "2026-11-26T10:26:36.207Z",
+      "key_reveal_reason": "checked_response"
+     },
+     "payload_hash": "056d5704cf4f4318af04c99675f3319a69d61674208ece14f06763f0a59ec9db"
+    }
+   },
+   {
+    "id": "1c2bfc05-c00e-453f-8360-85bdd10cd891",
+    "data": {
+     "schema_version": "1.0.0",
+     "event_id": "1c2bfc05-c00e-453f-8360-85bdd10cd891",
+     "event_type": "answer.submitted",
+     "event_sequence": 4,
+     "attempt_id": "3034d518-6486-4deb-abec-2566f3137aee",
+     "provenance": {
+      "data_origin": "local_practice",
+      "dataset_id": "device",
+      "local_profile_id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+      "server_subject_ref": null
+     },
+     "context": {
+      "feedback_policy_version": "visible-key-v2",
+      "timing_policy_version": "continuous-deadline-v2",
+      "module_id": "mental-math",
+      "curriculum_id": "kalibataku",
+      "curriculum_version": "1.0.0-draft.2",
+      "package_id": "MM-G03-L05-DIV-P001",
+      "content_version": "1.1.0",
+      "material_grade": 3,
+      "level": 5,
+      "mode": "practice",
+      "locale": "id",
+      "policy_version": "mastery-local-v1",
+      "assignment_id": null,
+      "form_id": null,
+      "assessment_cycle_id": null
+     },
+     "occurred_at_client": "2026-11-26T10:26:36.208Z",
+     "payload": {
+      "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.3",
+      "question_id": "arithmetic.division.g03.l05.59406611978e2f15d4633fc21d84646f383809f6661fca77ba4542bd016e728d",
+      "question_revision": "1.1.0",
+      "competency_id": "arithmetic.division.g03.l05",
+      "answer": {
+       "numerator": "48",
+       "denominator": "1"
+      },
+      "raw_answer": "48",
+      "draft_locale": "id",
+      "submission_kind": "first",
+      "attempt_number": 1,
+      "hint_used": false,
+      "active_duration_ms": 0,
+      "elapsed_duration_ms": 0,
+      "timing_quality": "valid_client_estimate",
+      "client_is_correct": true,
+      "key_seen_before": false,
+      "hint_before": false,
+      "feedback_policy_version": "visible-key-v2",
+      "first_correct": true,
+      "key_revealed_at": "2026-11-26T10:26:36.208Z",
+      "key_reveal_reason": "checked_response"
+     },
+     "payload_hash": "4c2c83ef36d9a6cc1e814b1fcf4754235f869a3f09c50c7d361173554a4df6ce"
+    }
+   },
+   {
+    "id": "de8357a0-96a5-469e-8228-8382d2773cb0",
+    "data": {
+     "schema_version": "1.0.0",
+     "event_id": "de8357a0-96a5-469e-8228-8382d2773cb0",
+     "event_type": "attempt.completed",
+     "event_sequence": 5,
+     "attempt_id": "3034d518-6486-4deb-abec-2566f3137aee",
+     "provenance": {
+      "data_origin": "local_practice",
+      "dataset_id": "device",
+      "local_profile_id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+      "server_subject_ref": null
+     },
+     "context": {
+      "feedback_policy_version": "visible-key-v2",
+      "timing_policy_version": "continuous-deadline-v2",
+      "module_id": "mental-math",
+      "curriculum_id": "kalibataku",
+      "curriculum_version": "1.0.0-draft.2",
+      "package_id": "MM-G03-L05-DIV-P001",
+      "content_version": "1.1.0",
+      "material_grade": 3,
+      "level": 5,
+      "mode": "practice",
+      "locale": "id",
+      "policy_version": "mastery-local-v1",
+      "assignment_id": null,
+      "form_id": null,
+      "assessment_cycle_id": null
+     },
+     "occurred_at_client": "2026-11-26T10:26:36.209Z",
+     "payload": {
+      "expected_event_count": 5,
+      "final_responses": [
+       {
+        "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.1",
+        "response_event_id": "d3178deb-212e-433d-a69f-81f6a102fc99",
+        "status": "answered"
+       },
+       {
+        "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.2",
+        "response_event_id": "2ec6da30-7d29-4197-ae2e-5b5b9064840f",
+        "status": "answered"
+       },
+       {
+        "question_instance_id": "3034d518-6486-4deb-abec-2566f3137aee.3",
+        "response_event_id": "1c2bfc05-c00e-453f-8360-85bdd10cd891",
+        "status": "answered"
+       }
+      ],
+      "completed_at_client": "2026-11-26T10:26:36.209Z"
+     },
+     "payload_hash": "4d11fc8e1ec271b49904000174cbf3bd46814caa7ee773c90dcceb7646d49bc2"
+    }
+   },
+   {
+    "id": "fd41bfc8-2629-4294-9edf-05d018c7a536",
+    "data": {
+     "schema_version": "1.0.0",
+     "event_id": "fd41bfc8-2629-4294-9edf-05d018c7a536",
+     "event_type": "attempt.started",
+     "event_sequence": 1,
+     "attempt_id": "84d125fd-8b96-49bd-8089-533d8388294b",
+     "provenance": {
+      "data_origin": "local_practice",
+      "dataset_id": "device",
+      "local_profile_id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+      "server_subject_ref": null
+     },
+     "context": {
+      "feedback_policy_version": "visible-key-v2",
+      "timing_policy_version": "continuous-deadline-v2",
+      "module_id": "mental-math",
+      "curriculum_id": "kalibataku",
+      "curriculum_version": "1.0.0-draft.2",
+      "package_id": "MM-G03-L05-DIV-P001",
+      "content_version": "1.1.0",
+      "material_grade": 3,
+      "level": 5,
+      "mode": "practice",
+      "locale": "en",
+      "policy_version": "mastery-local-v1",
+      "assignment_id": null,
+      "form_id": null,
+      "assessment_cycle_id": null
+     },
+     "occurred_at_client": "2026-11-26T10:26:36.210Z",
+     "payload": {
+      "instances": [
+       {
+        "question_instance_id": "84d125fd-8b96-49bd-8089-533d8388294b.1",
+        "question_id": "arithmetic.division.g03.l05.672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05"
+       },
+       {
+        "question_instance_id": "84d125fd-8b96-49bd-8089-533d8388294b.2",
+        "question_id": "arithmetic.division.g03.l05.2571e58f3aa36b9e8585b256e8e4db1a685d549d3b7d6a3b3cfc0e7f9941f98b",
+        "question_revision": "1.1.0",
+        "competency_id": "arithmetic.division.g03.l05"
+       }
+      ],
+      "order_seed": "150470593",
+      "started_at_client": "2026-11-26T10:26:36.210Z"
+     },
+     "payload_hash": "2db431b9d8337e8a9707dd045bcc50d1472f1d70fecbfd85630c0e1edfcf3d5d"
+    }
+   },
+   {
+    "id": "47e3dbf9-1e5f-401e-934a-5d4aa0adf779",
+    "data": {
+     "schema_version": "1.0.0",
+     "event_id": "47e3dbf9-1e5f-401e-934a-5d4aa0adf779",
+     "event_type": "answer.submitted",
+     "event_sequence": 2,
+     "attempt_id": "84d125fd-8b96-49bd-8089-533d8388294b",
+     "provenance": {
+      "data_origin": "local_practice",
+      "dataset_id": "device",
+      "local_profile_id": "8ddb3366-8217-42a5-89e4-8ce7afa4fb02",
+      "server_subject_ref": null
+     },
+     "context": {
+      "feedback_policy_version": "visible-key-v2",
+      "timing_policy_version": "continuous-deadline-v2",
+      "module_id": "mental-math",
+      "curriculum_id": "kalibataku",
+      "curriculum_version": "1.0.0-draft.2",
+      "package_id": "MM-G03-L05-DIV-P001",
+      "content_version": "1.1.0",
+      "material_grade": 3,
+      "level": 5,
+      "mode": "practice",
+      "locale": "en",
+      "policy_version": "mastery-local-v1",
+      "assignment_id": null,
+      "form_id": null,
+      "assessment_cycle_id": null
+     },
+     "occurred_at_client": "2026-11-26T10:26:36.210Z",
+     "payload": {
+      "question_instance_id": "84d125fd-8b96-49bd-8089-533d8388294b.1",
+      "question_id": "arithmetic.division.g03.l05.672413e588e5f460a6eed6138522216678741c097e33ddcac8a48fa5bd751ed1",
+      "question_revision": "1.1.0",
+      "competency_id": "arithmetic.division.g03.l05",
+      "answer": {
+       "numerator": "8",
+       "denominator": "1"
+      },
+      "raw_answer": "8",
+      "draft_locale": "en",
+      "submission_kind": "first",
+      "attempt_number": 1,
+      "hint_used": false,
+      "active_duration_ms": 0,
+      "elapsed_duration_ms": 0,
+      "timing_quality": "valid_client_estimate",
+      "client_is_correct": false,
+      "key_seen_before": false,
+      "hint_before": false,
+      "feedback_policy_version": "visible-key-v2",
+      "first_correct": false,
+      "key_revealed_at": "2026-11-26T10:26:36.210Z",
+      "key_reveal_reason": "checked_response"
+     },
+     "payload_hash": "2b86f900be048c75df8fa20e65ba1e8d0c2479fca229c4b8f4e3730c8ec1b87e"
+    }
+   }
+  ],
+  "records": []
+ },
+ "checksum": "b1cb2d5759026c1bf1e1f4d7d2b6475cfc943b9ba51c41943fd5ff69f3d03c32"
+}

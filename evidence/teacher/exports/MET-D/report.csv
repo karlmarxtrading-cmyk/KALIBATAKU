@@ -1,0 +1,74 @@
+﻿"Summary","Siswa","Sumber","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Summary","Demo Éka, ""Arum""","SIMULASI / DEMONSTRATION DATA",1,1,0,0,0,0,100,100,100
+"Competencies","Kompetensi","Kelas","Level","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Competencies","arithmetic.multiplication.g03.l02",3,2,"Perkalian",1,1,0,0,0,0,100,100,100
+"Operations","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Operations","Penjumlahan",0,0,0,0,0,0,,,
+"Operations","Pengurangan",0,0,0,0,0,0,,,
+"Operations","Perkalian",1,1,0,0,0,0,100,100,100
+"Operations","Pembagian",0,0,0,0,0,0,,,
+"Operations","Campuran",0,0,0,0,0,0,,,
+"Sessions","ID","UTC","Paket","Mode","Status","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Sessions","e5897be1-234c-4ad6-bb4e-0b93bcc81129","2026-11-05T01:00:00.000Z","TEST-MUL","Latihan","Selesai",1,1,0,0,0,0,100,100,100
+"Dictionary","Ukuran","Definisi"
+"Dictionary","Skor paket","1 / 1"
+"Dictionary","Akurasi jawaban","1 / 1"
+"Dictionary","Soal ditanggapi","1 / 1"
+"Dictionary","Jawaban pertama benar","0 / 1"
+"Dictionary","Penyebut nol","Kosong = belum dievaluasi"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-04cd9c74-b7e1-49f6-a9fa-27a502c10701"
+"Metadata","data_origin","demo"
+"Metadata","verification_status","unverified"
+"Metadata","locale","id"
+"Metadata","period_start_utc","1969-12-31T17:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2099-12-31T17:00:00.000Z"
+"Metadata","display_timezone","Asia/Jakarta"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-25T12:05:00Z"
+"Metadata","assigned_count",1
+"Metadata","correct_count",1
+"Metadata","incorrect_count",0
+"Metadata","skipped_count",0
+"Metadata","blank_count",0
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",100
+"Metadata","valid_response_accuracy_percent",100
+"Metadata","responded_percent",100
+"Metadata","subject_id","demo-01"
+"Metadata","subject_alias","Demo Éka, ""Arum"""
+"Metadata","source","demo"
+"Metadata","classId",""
+"Metadata","studentId","demo-01"
+"Metadata","from",""
+"Metadata","to",""
+"Metadata","timezone","Asia/Jakarta"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions","1.0.0"
+"Metadata","change_pp",
+"Notes","Penulis","UTC","Revisi","Catatan","ID","Menggantikan","Status"
+"Math","Sumber","ID","Ekspresi","Pembilang kunci","Penyebut kunci","Respons pertama","Respons terakhir"
+"Math","demo","e5897be1-234c-4ad6-bb4e-0b93bcc81129","24 × 4","96","1","92","96"
+"Family","SIMULASI / DEMONSTRATION DATA"
+"Family","Demo Éka, ""Arum"""
+"Family","3A · Semua tanggal · Asia/Jakarta"
+"Family","Sesi selesai dalam periode ini: 1 · Berjalan: 0"
+"Family","Yang sudah terlihat"
+"Family","Belum ada jawaban benar mandiri pada respons pertama yang tercatat dalam periode ini."
+"Family","Fokus pendampingan"
+"Family","Perkalian · kelas 3 · level 2 · Latihan — 1 dari 1 respons pertama perlu diperbaiki."
+"Family","Contoh dari sesi 5 Nov 2026, 08.00 · Latihan"
+"Family","24 × 4"
+"Family","Jawaban pertama · 92 → 96 · menggunakan petunjuk"
+"Family","Belum diuji melalui evaluasi pada periode ini — Penjumlahan, Pengurangan, Perkalian, Pembagian, Campuran."
+"Family","Rencana latihan berikutnya"
+"Family","Kumpulkan lebih banyak jawaban pada satu materi dan mode sebelum menarik kesimpulan."
+"Family","Tanggal tinjauan · Belum ditetapkan bersama guru."
+"Contexts","Kelas","Level","Operasi","Mode","Respons pertama benar","Jumlah respons pertama","Dengan petunjuk","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Contexts",3,2,"Perkalian","Latihan",0,1,1,1,1,0,0,0,0,100,100,100

@@ -1,0 +1,81 @@
+{
+  "build": "47c1663e7ea2fa9c",
+  "commands": [
+    {
+      "command": "python3 tests/v12/browser.py chromium; keyboard; print-contrast",
+      "exit_code": 0,
+      "log": "run-chromium.log"
+    },
+    {
+      "command": "python3 tests/v12/browser.py firefox; browser.py --engine firefox --suites offline teacher data",
+      "exit_code": 0,
+      "log": "run-firefox.log"
+    },
+    {
+      "command": "python3 tests/v12/browser.py webkit; browser.py --engine webkit --suites offline teacher data",
+      "exit_code": 0,
+      "log": "run-webkit.log"
+    },
+    {
+      "command": "python3 tests/v12/extended.py player shell school data visual reflow",
+      "exit_code": 0,
+      "log": "run-ux.log"
+    },
+    {
+      "command": "python3 tests/v12/extended.py perf; python3 tests/perf/analyze.py",
+      "exit_code": 0,
+      "log": "run-perf.log"
+    },
+    {
+      "command": "python3 tests/integration/browser.py; python3 tests/integration/budgets.py",
+      "exit_code": 0,
+      "log": "run-full.log"
+    },
+    {
+      "command": "python3 tools/hosting-smoke.py; python3 tools/dist-review.py",
+      "exit_code": 0,
+      "log": "run-host.log"
+    },
+    {
+      "command": "npm test -- --record; inspect_exports.py; inspect_family.py",
+      "exit_code": 0,
+      "log": "run-component.log"
+    },
+    {
+      "command": "npm run check",
+      "exit_code": 0,
+      "log": "run-syntax.log"
+    },
+    {
+      "command": "npm run curriculum:check",
+      "exit_code": 0,
+      "log": "run-curriculum.log"
+    },
+    {
+      "command": "python3 tests/v12/roles-reflow.py",
+      "exit_code": 0,
+      "log": "run-roles.log"
+    },
+    {
+      "command": "python3 tools/clean-build.py",
+      "exit_code": 0,
+      "log": "run-clean.log"
+    },
+    {
+      "command": "npm run bank:verify",
+      "exit_code": 0,
+      "log": "bank-check.log"
+    },
+    {
+      "command": "node tests/v12/bank-and-model.mjs",
+      "exit_code": 0,
+      "log": "bank-model.log"
+    },
+    {
+      "command": "node tests/v12/feedback-and-export.mjs; python3 tests/v12/inspect-reports.py",
+      "exit_code": 0,
+      "log": "exact-exports.log"
+    }
+  ],
+  "result_scope": "Exit status is the command execution result. Acceptance verdicts including budget failures are in the AC and FM registers."
+}

@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-28T10:41:08.043393+00:00",
+  "scope": "Independent data check of school materials. Human review status remains determined by authenticated evidence.",
+  "build": {
+    "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+    "offline_release": "ef0b6798d9633ca8",
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9"
+  },
+  "school_kit_manifest_sha256": "678e78df7ed783e79054a9c9a514f123ee83ca76a19f3b6445a5f9dd34d8c2b9",
+  "school_kit_files_in_manifest_checked": 40,
+  "families": 394,
+  "sample_positions": {
+    "first_in_order": 394,
+    "median_item": 394,
+    "hardest_item": 394
+  },
+  "source_packages_opened": 1017,
+  "original_roster_sha256": "6c4882ebe75298891f4e357daa1fde869b6dab7cc9c8609ebc212704a57146c9",
+  "school_roster_sha256": "678115b54cec678763d7d35bcb673bc3faf7e218e61501e5aaafc9fb0f2a5d89",
+  "school_samples_sha256": "bb8a7da6afdeed823026dc17b8226c0902bf4a106df06974b2b89f2d43f39675",
+  "distinct_question_ids_within_template": {
+    "2": 2,
+    "3": 392
+  },
+  "fields_verified": [
+    "package_sha256",
+    "zero_based_index",
+    "question_id",
+    "question_revision",
+    "template_id",
+    "grade",
+    "level",
+    "purpose",
+    "expression",
+    "exact_answer",
+    "strategies",
+    "hint_id_en",
+    "explanation_id_en",
+    "worked_steps_id_en",
+    "baseline_position_reference"
+  ]
+}

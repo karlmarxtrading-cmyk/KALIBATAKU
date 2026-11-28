@@ -1,0 +1,140 @@
+{
+  "suite": "school-ux",
+  "utc": "2026-11-28T04:15:45.652Z",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "checks": [
+    {
+      "id": "TB-03",
+      "status": "PASS",
+      "expected": "Satu langkah, 24 × 4 = 96.",
+      "actual": "Satu langkah, 24 × 4 = 96."
+    },
+    {
+      "id": "note-type-dirty",
+      "status": "PASS",
+      "expected": [
+        "override",
+        true
+      ],
+      "actual": [
+        "override",
+        true
+      ]
+    },
+    {
+      "id": "revision-draft",
+      "status": "PASS",
+      "expected": [
+        "92771d93-5fcf-4c32-8e48-6ae6a8bbbfff",
+        "Uji catatan 2235733e revisi"
+      ],
+      "actual": [
+        "92771d93-5fcf-4c32-8e48-6ae6a8bbbfff",
+        "Uji catatan 2235733e revisi"
+      ]
+    },
+    {
+      "id": "revision-display",
+      "status": "PASS",
+      "expected": true,
+      "actual": true
+    },
+    {
+      "id": "TB-02",
+      "status": "PASS",
+      "expected": "demo-04",
+      "actual": "demo-04"
+    },
+    {
+      "id": "assignment-draft",
+      "status": "PASS",
+      "expected": [
+        "demo-04",
+        "5",
+        "3"
+      ],
+      "actual": [
+        "demo-04",
+        "5",
+        "3"
+      ]
+    },
+    {
+      "id": "recipient-on-disk",
+      "status": "PASS",
+      "expected": "demo-04",
+      "actual": "demo-04"
+    },
+    {
+      "id": "fresh-double-submit",
+      "status": "PASS",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "id": "TB-01",
+      "status": "PASS",
+      "expected": {
+        "person": "local-default",
+        "local": true
+      },
+      "actual": {
+        "person": "local-default",
+        "local": true
+      }
+    },
+    {
+      "id": "unapplied-filter",
+      "status": "PASS",
+      "expected": "MUL",
+      "actual": "MUL"
+    },
+    {
+      "id": "batch-format-scope",
+      "status": "PASS",
+      "expected": [
+        "zip",
+        "bilingual",
+        [
+          "demo-04"
+        ]
+      ],
+      "actual": [
+        "zip",
+        "bilingual",
+        [
+          "demo-04"
+        ]
+      ]
+    },
+    {
+      "id": "double-batch",
+      "status": "PASS",
+      "expected": [
+        1,
+        1
+      ],
+      "actual": [
+        1,
+        1
+      ]
+    },
+    {
+      "id": "roster-follow-up",
+      "status": "PASS",
+      "expected": true,
+      "actual": true
+    }
+  ],
+  "runtime": {
+    "release": "137cc1a9b76ed428",
+    "bootstrap": "c0f2a6f05c5005335a61c4f839af852715f5cd4ff4bc26cbb50768c028a21781",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "runtime_after": {
+    "release": "137cc1a9b76ed428",
+    "bootstrap": "c0f2a6f05c5005335a61c4f839af852715f5cd4ff4bc26cbb50768c028a21781",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "finished_utc": "2026-11-28T04:15:48.311Z"
+}

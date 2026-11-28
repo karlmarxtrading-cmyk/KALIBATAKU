@@ -1,0 +1,279 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:kalibataku:schema:release-status:1.2.0",
+  "title": "KALIBATAKU release readiness status",
+  "description": "A structural contract. Evidence must also be opened and checked against the actual build; this schema cannot prove a release passed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "artifact_status",
+    "release_id",
+    "readiness"
+  ],
+  "properties": {
+    "artifact_status": {
+      "enum": [
+        "template_not_release_verdict",
+        "release_verdict"
+      ]
+    },
+    "release_id": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "minLength": 1
+        }
+      ]
+    },
+    "readiness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "static_application",
+        "bank_content",
+        "bridge_contract",
+        "live_lms",
+        "pedagogical_calibration",
+        "live_deployment",
+        "user_validation"
+      ],
+      "properties": {
+        "static_application": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ReadinessEntry"
+            },
+            {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "NOT_IMPLEMENTED",
+                    "NOT_RUN",
+                    "FAIL",
+                    "PASS",
+                    "HOLD"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "bank_content": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ReadinessEntry"
+            },
+            {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "NOT_IMPLEMENTED",
+                    "INCOMPLETE",
+                    "FAIL",
+                    "PASS"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "bridge_contract": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ReadinessEntry"
+            },
+            {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "NOT_IMPLEMENTED",
+                    "NOT_RUN",
+                    "FAIL",
+                    "PASS"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "live_lms": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ReadinessEntry"
+            },
+            {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "DEFERRED_BY_SCOPE",
+                    "NOT_IMPLEMENTED",
+                    "NOT_RUN",
+                    "FAIL",
+                    "PASS"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "pedagogical_calibration": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ReadinessEntry"
+            },
+            {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "NOT_PERFORMED",
+                    "INTERNAL_REVIEW",
+                    "PILOTED"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "live_deployment": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ReadinessEntry"
+            },
+            {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "NOT_PERFORMED",
+                    "PREVIEW_PASS",
+                    "PRODUCTION_PASS"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "user_validation": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ReadinessEntry"
+            },
+            {
+              "properties": {
+                "status": {
+                  "enum": [
+                    "NOT_PERFORMED",
+                    "INTERNAL_REVIEW",
+                    "PILOTED"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "artifact_status": {
+            "const": "release_verdict"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "release_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "ReadinessEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "evidence",
+        "blockers",
+        "claim_boundary"
+      ],
+      "properties": {
+        "status": {
+          "type": "string"
+        },
+        "evidence": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "blockers": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "claim_boundary": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "PASS",
+                  "INTERNAL_REVIEW",
+                  "PILOTED",
+                  "PREVIEW_PASS",
+                  "PRODUCTION_PASS"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "evidence": {
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "PASS",
+                  "PREVIEW_PASS",
+                  "PRODUCTION_PASS"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "blockers": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

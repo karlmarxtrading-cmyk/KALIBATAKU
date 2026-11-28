@@ -1,0 +1,99 @@
+{
+  "schema": "kalibataku-external-receipt/1",
+  "receipt_id": "TEACH-03-",
+  "criterion": "TEACH-03",
+  "phase": "WAJIB",
+  "template_only": true,
+  "test_only": false,
+  "action": "record",
+  "result": null,
+  "previous": [],
+  "change_reason": "",
+  "test_event_id": "",
+  "build": {
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "offline_release": "a2f40449c4738fe6",
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "protocol_reference": "",
+  "started_at_utc": "",
+  "finished_at_utc": "",
+  "operator": {
+    "actor_id": "",
+    "role": "word-operator",
+    "statement": "",
+    "at_utc": ""
+  },
+  "reviewer": {
+    "actor_id": "",
+    "role": "reviewer",
+    "statement": "",
+    "at_utc": "",
+    "decision": null
+  },
+  "scenarios": [
+    {
+      "case_id": "supplied-fixture",
+      "environment": {
+        "mode": "visual-word-render",
+        "app": "Microsoft Word",
+        "platform": "Windows|macOS",
+        "model": "",
+        "os_version": "",
+        "app_version": ""
+      },
+      "checks": {
+        "opened_in_word": "",
+        "numerator": "",
+        "denominator": "",
+        "grouping": "",
+        "minus": "",
+        "all_equations_compared": ""
+      },
+      "measurements": {
+        "equations_checked": null,
+        "incorrect_equations": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "docx",
+        "word-render",
+        "comparison"
+      ]
+    },
+    {
+      "case_id": "new-export",
+      "environment": {
+        "mode": "visual-word-render",
+        "app": "Microsoft Word",
+        "platform": "Windows|macOS",
+        "model": "",
+        "os_version": "",
+        "app_version": ""
+      },
+      "checks": {
+        "opened_in_word": "",
+        "numerator": "",
+        "denominator": "",
+        "grouping": "",
+        "minus": "",
+        "all_equations_compared": ""
+      },
+      "measurements": {
+        "equations_checked": null,
+        "incorrect_equations": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "docx",
+        "word-render",
+        "comparison"
+      ]
+    }
+  ],
+  "artifacts": []
+}

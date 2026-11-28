@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_status": "design_reference_not_implemented",
+  "created_on": "2026-11-25",
+  "product": "KALIBATAKU",
+  "source_document": "../01_ARAHAN_UI_UX.md",
+  "source_sha256": "74a7a82d4de9225c466b22f0cd5ca5815a486fc6babcd8fb786f4197977b5d61",
+  "reference_type": "semantic_design_tokens",
+  "implementation_claim": false,
+  "color": {
+    "light": {
+      "canvas": "#F5F3ED",
+      "surface": "#FFFFFF",
+      "surfaceRaised": "#ECEEE9",
+      "text": "#162F2A",
+      "textMuted": "#53645E",
+      "borderDecorative": "#D7DED7",
+      "borderControl": "#75847D",
+      "primary": "#176B5B",
+      "onPrimary": "#FFFFFF",
+      "primaryHover": "#105849",
+      "successBg": "#E1F1E8",
+      "successText": "#0E5C49",
+      "warningBg": "#FFF0DB",
+      "warningText": "#995B16",
+      "errorBg": "#FCEBEF",
+      "errorText": "#A32F3D",
+      "infoBg": "#EAF2FA",
+      "infoText": "#245D89",
+      "focusRing": "#1F63B5"
+    },
+    "dark": {
+      "canvas": "#111B19",
+      "surface": "#192622",
+      "surfaceRaised": "#22332D",
+      "text": "#F2F4ED",
+      "textMuted": "#B1C0B7",
+      "borderDecorative": "#35483F",
+      "borderControl": "#71877B",
+      "primary": "#8ED4BA",
+      "onPrimary": "#10251E",
+      "primaryHover": "#A5E1CA",
+      "successBg": "#203A30",
+      "successText": "#A2E1C4",
+      "warningBg": "#382C1E",
+      "warningText": "#F1C77C",
+      "errorBg": "#42272E",
+      "errorText": "#FFB6BF",
+      "infoBg": "#203244",
+      "infoText": "#A8CFF0",
+      "focusRing": "#A5C9FF"
+    }
+  },
+  "color_roles": {
+    "canvas": "Latar aplikasi",
+    "surface": "Panel utama",
+    "surfaceRaised": "Kelompok input/menu terpilih",
+    "text": "Judul dan isi",
+    "textMuted": "Metadata yang tetap harus terbaca",
+    "borderDecorative": "Garis dekoratif pemisah",
+    "borderControl": "Batas input/tombol yang perlu dikenali",
+    "primary": "Aksi utama",
+    "onPrimary": "Teks pada aksi utama",
+    "primaryHover": "Hover aksi utama",
+    "successBg": "Benar/selesai dengan label",
+    "successText": "Benar/selesai dengan label",
+    "warningBg": "Perlu perhatian/penyimpanan tertunda",
+    "warningText": "Perlu perhatian/penyimpanan tertunda",
+    "errorBg": "Gagal/format tidak sah",
+    "errorText": "Gagal/format tidak sah",
+    "infoBg": "Informasi netral/simulasi",
+    "infoText": "Informasi netral/simulasi",
+    "focusRing": "Fokus keyboard"
+  },
+  "theme": {
+    "choices": [
+      "system",
+      "light",
+      "dark"
+    ],
+    "initial_preference": "system",
+    "persisted_choice_takes_priority": true,
+    "print_theme": "paper_light"
+  },
+  "locale": {
+    "choices": [
+      "id",
+      "en"
+    ],
+    "initial_locale": "id",
+    "persisted_choice_takes_priority": true,
+    "browser_language_overrides_initial_locale": false,
+    "draft_locale_preserved_until_valid": true
+  },
+  "typography": {
+    "font_family_preference": [
+      "Noto Sans",
+      "system-ui",
+      "sans-serif"
+    ],
+    "font_assets_included": false,
+    "delivery_rule": "Use a system font or lawfully distributed self-hosted files with licenses; font loading must not block answering.",
+    "size_ranges_px": {
+      "body": {
+        "desktop": [
+          17,
+          18
+        ],
+        "mobile": [
+          16,
+          18
+        ]
+      },
+      "label_metadata": {
+        "desktop": [
+          14,
+          16
+        ],
+        "mobile": [
+          14,
+          16
+        ]
+      },
+      "page_heading": {
+        "desktop": [
+          30,
+          36
+        ],
+        "mobile": [
+          26,
+          30
+        ]
+      },
+      "section_heading": {
+        "desktop": [
+          22,
+          26
+        ],
+        "mobile": [
+          20,
+          24
+        ]
+      },
+      "summary_number": {
+        "desktop": [
+          28,
+          36
+        ],
+        "mobile": [
+          24,
+          32
+        ]
+      },
+      "simple_expression": {
+        "desktop": [
+          48,
+          64
+        ],
+        "mobile": [
+          36,
+          48
+        ]
+      },
+      "long_expression": {
+        "desktop": [
+          32,
+          44
+        ],
+        "mobile": [
+          26,
+          34
+        ]
+      },
+      "answer_input": {
+        "desktop": [
+          28,
+          36
+        ],
+        "mobile": [
+          26,
+          32
+        ]
+      }
+    },
+    "body_line_height_range": [
+      1.5,
+      1.65
+    ],
+    "css_size_unit": "rem",
+    "text_measure_characters": [
+      60,
+      75
+    ],
+    "numbers": "tabular-nums",
+    "supports_text_resize_percent": 200
+  },
+  "spacing_px": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48
+  ],
+  "layout": {
+    "breakpoints_css_px": {
+      "compact_min": 320,
+      "medium_min": 600,
+      "wide_min": 900,
+      "large_min": 1200
+    },
+    "max_content_width_px": 1280,
+    "max_player_width_px": 760,
+    "max_admin_table_width_px": 1440,
+    "page_padding_px": {
+      "compact": 16,
+      "compact_320px_exception": 12,
+      "tablet": 24,
+      "desktop": 32
+    },
+    "radius_px": {
+      "control_range": [
+        10,
+        12
+      ],
+      "panel": 16
+    },
+    "table_row_min_px": 48,
+    "table_row_with_touch_control_min_px": 52,
+    "answer_input_min_height_px": 60
+  },
+  "interaction": {
+    "target_min_css_px": [
+      44,
+      44
+    ],
+    "primary_and_keypad_min_css_px": [
+      48,
+      48
+    ],
+    "preferred_target_gap_css_px": 8,
+    "focus_ring_width_range_px": [
+      2,
+      3
+    ],
+    "focus_offset_must_be_visible": true,
+    "transition_duration_range_ms": [
+      120,
+      180
+    ],
+    "honor_prefers_reduced_motion": true,
+    "sound_default": "off"
+  },
+  "verification_scope": "Values are handoff decisions extracted from the design document, not an implemented component library or an accessibility conformance certification."
+}

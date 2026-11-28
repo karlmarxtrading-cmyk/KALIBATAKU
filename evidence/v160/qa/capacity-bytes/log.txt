@@ -1,0 +1,74 @@
+{
+  "offline_release": "6c43a824957f99ed",
+  "modules": {
+    "data/backup.js": {
+      "tested_source_sha256": "bf5489bf015ff821a4fb20adbcb557b98e4038113efe5fd4b077e23827d4081d",
+      "dist_matches": true
+    },
+    "data/backup-json-size.js": {
+      "tested_source_sha256": "21214ea648a09b89d0ddeeb5eb2a134eab36de88fb65adb8b666c8871806c8f7",
+      "dist_matches": true
+    },
+    "data/backup-reader.worker.js": {
+      "tested_source_sha256": "138d2ae9d000e1ed7710ff12dbb9817c6b607aa463f2105e95460737151b49c1",
+      "dist_matches": true
+    },
+    "data/panel-profile.js": {
+      "tested_source_sha256": "bdb0ff227bd232c30b572bb153d2daa7f2e5a22245566c978354a49303fc5778",
+      "dist_matches": true
+    },
+    "data/snapshot-check.js": {
+      "tested_source_sha256": "d7d7e99fbd9b670994a1fe14b73ad1e99184f6ee84aaef2076413c5a6cef400a",
+      "dist_matches": true
+    }
+  },
+  "command": "node tests/v15/backup-capacity.mjs bytes",
+  "runtime": "v24.22.3",
+  "backend": "Node memory adapter, synthetic profiles",
+  "time": "2026-11-28T16:01:48.633Z",
+  "checks": [
+    {
+      "name": "52428800 UTF-8 bytes accepted in both directions",
+      "status": "PASS",
+      "observed": {
+        "rows": 272,
+        "bytes": 52428800,
+        "format": "application/json",
+        "preview_sessions": 1,
+        "restored_additions": 273,
+        "draft": null
+      }
+    },
+    {
+      "name": "draft envelope crosses UTF-8 byte limit, archive restores draft",
+      "status": "PASS",
+      "observed": {
+        "rows": 272,
+        "bytes": 64802,
+        "format": "application/zip",
+        "preview_sessions": 1,
+        "restored_additions": 273,
+        "draft": "3/",
+        "whole_file_serializations": 0
+      }
+    },
+    {
+      "name": "52428801 UTF-8 bytes refused by writer and serialized reader",
+      "status": "PASS",
+      "observed": {
+        "bytes": 52428801,
+        "code": "BACKUP_TOO_LARGE"
+      }
+    },
+    {
+      "name": "object reader rejects a logical >V8 max-string profile by capacity",
+      "status": "PASS",
+      "observed": {
+        "rows": 6000,
+        "value_characters": 576000000,
+        "engine_maximum_string_length": 536870888,
+        "code": "BACKUP_TOO_LARGE"
+      }
+    }
+  ]
+}

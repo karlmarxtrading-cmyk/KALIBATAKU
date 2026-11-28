@@ -1,0 +1,211 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "browser-v13-chromium",
+  "build": {
+    "offline_release": "83fef50a05e52452",
+    "app_version": "1.6.1"
+  },
+  "runtime": {
+    "engine": "chromium",
+    "version": "151.0.7922.34",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "assertions": 11,
+  "status": "PASS",
+  "errors": [],
+  "page_errors": [],
+  "checks": [
+    {
+      "id": "UX-001-VERSION",
+      "status": "PASS",
+      "expected": "Settings shows app version from build metadata, distinct bank version and build ID, also after an offline reload",
+      "actual": {
+        "app": "1.6.1",
+        "bank": "1.2.0",
+        "release": "83fef50a05e52452",
+        "offline_reload": "1.6.1",
+        "installed": [
+          "MM-G01-L01-ADD-P001"
+        ],
+        "offline_transport": "closed HTTP listener"
+      },
+      "seconds": 1.4
+    },
+    {
+      "id": "UX-002-TIMER",
+      "status": "PASS",
+      "expected": "Remaining time is spoken on request (button and Alt+T), not every second; hiding the timer keeps the deadline",
+      "actual": {
+        "on_request": "Sisa waktu 1 menit.",
+        "silent_6s": true,
+        "hidden_timer_deadline_running": true
+      },
+      "seconds": 7.4
+    },
+    {
+      "id": "UX-002-THRESHOLD",
+      "status": "PASS",
+      "expected": "A 30 s challenge announces the 10-second threshold once; nothing else is spoken",
+      "actual": [
+        "Sisa waktu 10 detik."
+      ],
+      "seconds": 20.8
+    },
+    {
+      "id": "UX-003-AUDIO",
+      "status": "PASS",
+      "expected": "Sound option and player use one resolver: native, prefixed-only and unavailable",
+      "actual": {
+        "native": {
+          "option": true,
+          "contexts": 1
+        },
+        "prefixed": {
+          "option": true,
+          "contexts": 1
+        },
+        "none": {
+          "option": false,
+          "contexts": 0
+        }
+      },
+      "seconds": 3.2
+    },
+    {
+      "id": "UX-004-SETUP",
+      "status": "PASS",
+      "expected": "Pace and options survive a material change; question count is re-validated for the new pack",
+      "actual": {
+        "pace_after_switch": "90",
+        "count_after_op_switch": "12",
+        "count_after_grade_switch": 10,
+        "pack_max": 10
+      },
+      "seconds": 0.4
+    },
+    {
+      "id": "UX-006-FEEDBACK",
+      "status": "PASS",
+      "expected": "Equivalent, incorrect and assisted-revision states; idea and steps separated; ledger intact; no overflow at 320/390",
+      "actual": {
+        "idea": "Dengan penyebut 12, pembilangnya 11 dan 10. Hitung 11 + (10) = 21, lalu sederhanakan \n21/12\n.",
+        "steps": 2,
+        "ledger": {
+          "first": true,
+          "final": false,
+          "h": [
+            [
+              "21/12",
+              false
+            ],
+            [
+              "999",
+              true
+            ]
+          ]
+        }
+      },
+      "seconds": 1.3
+    },
+    {
+      "id": "MATH-001-FALLBACK",
+      "status": "PASS",
+      "expected": "Blocked and slow (timeout) renderer show 21 ÷ (3/11) with grouping and grouped speech; retry restores SVG with the draft kept; offline after install renders SVG",
+      "actual": {
+        "blocked": {
+          "fallback_text": "21 ÷ (3/11)",
+          "spoken": "21 dibagi buka kurung 3 per 11 tutup kurung",
+          "recovered": "svg"
+        },
+        "timeout": {
+          "fallback_text": "21 ÷ (3/11)",
+          "spoken": "21 dibagi buka kurung 3 per 11 tutup kurung",
+          "recovered": "svg"
+        },
+        "offline_installed": {
+          "state": "svg",
+          "linear": "21 ÷ (3/11)",
+          "offline_transport": "closed HTTP listener"
+        }
+      },
+      "seconds": 10.0
+    },
+    {
+      "id": "TECH-01-BACKUP-UI",
+      "status": "PASS",
+      "expected": "ZIP backup downloaded from the profile page restores into empty storage; a quota failure writes nothing and shows no success",
+      "actual": {
+        "file": "KALIBATAKU-cadangan-6438b96d-f075-4b79-8afd-63129429b51d-2026-11-28.zip",
+        "bytes": 1005237,
+        "parts": 2,
+        "quota_failure_rows": 0,
+        "restored": [
+          40,
+          2080
+        ]
+      },
+      "seconds": 8.1
+    },
+    {
+      "id": "TECH-04-CACHE",
+      "status": "PASS",
+      "expected": "Real Cache Storage: older and partial shells and orphan packs removed; active, installed and one rollback kept; lock skips; IndexedDB unchanged",
+      "actual": {
+        "held": "install-in-progress",
+        "removed": [
+          "kalibataku:/school/math/:shell:aaaaaaaaaaaaaaaa",
+          "kalibataku:/school/math/:shell:cccccccccccccccc",
+          "kalibataku:/school/math/:ready-pack:83fef50a05e52452:ORPHAN@1:x"
+        ],
+        "names": [
+          "shell:83fef50a05e52452",
+          "ready-pack:83fef50a05e52452:MM-G01-L01-ADD-P001@1.2.0:ccddaeee-d729-4139-bf3f-8aa8151152e6",
+          "shell:bbbbbbbbbbbbbbbb"
+        ],
+        "before": [
+          1,
+          1
+        ],
+        "after": [
+          1,
+          1
+        ],
+        "ready": [
+          "MM-G01-L01-ADD-P001"
+        ],
+        "shell": "shell:83fef50a05e52452"
+      },
+      "seconds": 1.0
+    },
+    {
+      "id": "PREFS-RESET",
+      "status": "PASS",
+      "expected": "Restoring defaults resets exactly the seven browser preferences and keeps profiles",
+      "actual": {
+        "lang": "id",
+        "theme": "system",
+        "textSize": "regular",
+        "sound": false,
+        "reduceMotion": false,
+        "keypad": true,
+        "showTimer": true
+      },
+      "seconds": 0.3
+    },
+    {
+      "id": "REFLOW-1.3",
+      "status": "PASS",
+      "expected": "No horizontal overflow on home, settings, profiles and setup at 320–1440 px with standard and 138% text",
+      "actual": {
+        "samples": 48,
+        "max_overflow_px": 0,
+        "setup_opening_320_xlarge": {
+          "width": 320,
+          "placeholder_right": 274.84375
+        }
+      },
+      "seconds": 10.5
+    }
+  ],
+  "method": "Native engine, local HTTP, synthetic profiles, real controls. Viewport widths are emulated; no physical device or screen-reader listener."
+}

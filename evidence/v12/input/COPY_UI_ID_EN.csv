@@ -1,0 +1,38 @@
+﻿key,id,en,usage
+check,OKE · Periksa jawaban,OK · Check answer,Before valid submission
+your_answer,Jawabanmu,Your answer,Keep submitted raw response
+answer_key,Kunci jawaban,Correct answer,After valid learning-mode commit
+correct,Benar,Correct,Text plus status icon
+incorrect,Belum tepat,Not quite,Avoid shame
+equivalent,Nilainya sama.,These have the same value.,Valid equivalent fractions
+next,Soal berikutnya,Next question,Intentional action after feedback
+last,Tinjau hasil,Review results,Last question
+last_message,Soal terakhir selesai. Tinjau hasilmu.,Last question completed. Review your results.,Last state
+method,Lihat langkah lengkap,See all steps,Optional expanded explanation
+short_method,Salah satu cara menghitung,One way to calculate,No claim that only this strategy works
+missing,Isi jawabanmu terlebih dahulu.,Enter your answer first.,"No grading, no reveal"
+fraction_incomplete,"Lengkapi penyebut pecahanmu, misalnya 1/2.","Complete the denominator, for example 1/2.",Partial fraction
+zero_denominator,Penyebut tidak boleh nol. Periksa pecahanmu.,The denominator cannot be zero. Check your fraction.,Invalid input
+integer_help,Contoh bilangan bulat: 4 dan −3.,Examples of integers: 4 and −3.,Signed integer help
+decimal_help,"Contoh desimal: 0,5.",Example decimal: 0.5.,Locale-specific
+revision,Revisi setelah melihat kunci,Revision after seeing the answer,Do not label independent
+first,Jawaban pertama,First response,Frozen response
+final,Jawaban setelah belajar,Response after practice,Final learning state
+saved,Tersimpan di perangkat ini,Saved on this device,Local persistence only
+saving,Menyimpan jawaban…,Saving your answer…,Busy state
+save_failed,Jawaban belum tersimpan. Coba simpan lagi.,Your answer has not been saved. Try saving again.,Keep raw input and grade
+retry,Coba lagi,Try again,Clarify whether save retry or answer revision in context
+assessment,Kunci ditampilkan setelah hasil akhir dikirim.,Correct answers appear after final submission.,Before assessment starts
+save_next,Simpan & lanjut,Save & continue,Assessment only before final
+submit_final,Kirim hasil akhir,Submit final results,Finalization
+speed,Waktu terus berjalan saat kamu membaca hasil.,The timer continues while you read feedback.,Before Speed starts
+pending,Menunggu dikirim ke server,Waiting to send to the server,Bridge state
+ack,Diterima server; menunggu verifikasi,Received by the server; awaiting verification,ACK is not grading proof
+verified,Hasil terverifikasi server,Server-verified results,Only after actual verification
+simulation,Data simulasi,Demo data,Synthetic context
+local_report,Hasil latihan lokal · belum diverifikasi institusi,Local practice results · not institution-verified,Origin
+report_loading,Menyiapkan laporan…,Preparing your report…,First click handled
+draft,Draf belum disimpan,Unsaved draft,Teacher notes
+math_loading,Menyiapkan tampilan soal…,Preparing the question…,Before initial timer
+math_fallback,Tampilan matematika sederhana sementara,Temporary plain math display,"Renderer failure, keep usable"
+sparse,Data masih terbatas. Lanjutkan latihan sebelum menarik kesimpulan.,Data is limited. Continue practice before drawing conclusions.,Parent report

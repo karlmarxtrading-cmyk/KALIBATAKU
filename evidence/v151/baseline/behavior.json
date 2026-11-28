@@ -1,0 +1,529 @@
+{
+  "status": "PASS",
+  "tested_utc": "2026-11-28T10:40:08.348949+00:00",
+  "offline_release": "ef0b6798d9633ca8",
+  "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+  "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9",
+  "scope": "Product ES modules imported from dist, immutable source audit fixtures, Python zoneinfo and set/count oracles. CacheStorage is a test double backed by real packaged bytes. Browser and physical acceptance are tracked separately.",
+  "script_sha256": {
+    "behavior.mjs": "83913bb9132576daa841d99b4148ded8d0a54915fa8f204085fcab5739b73711",
+    "behavior.py": "19d2a91edf7ec2a97c6482086a9dbb0fd481fea530bcbef0f7a62db0a9e34f6f"
+  },
+  "audit_sha256": "e51a9e9baf6069a6c9de06acca2456c2bfb59f59151535772ea233e5d4011cfb",
+  "fixtures": {
+    "sparse_sha256": "3fa51d73509a748d4806b75ac6442e10433d6b2fe3da984625d6acf85bd51fd6",
+    "offset_backup_sha256": "2e4b824c6c2e94f11ee1d720efa53dbb2f332c48266bde98e91dd226577ff35d",
+    "completed_backup_sessions": 4
+  },
+  "sparse": [
+    {
+      "sessions": 1,
+      "items_in_session": 6,
+      "actually_observed_unique": 1,
+      "selector_frequency_sum": 1,
+      "next_node": "arithmetic.addition.g01.l01",
+      "ready": false
+    },
+    {
+      "sessions": 2,
+      "items_in_session": 8,
+      "actually_observed_unique": 7,
+      "selector_frequency_sum": 8,
+      "next_node": "arithmetic.addition.g01.l01",
+      "ready": false
+    },
+    {
+      "sessions": 3,
+      "items_in_session": 8,
+      "actually_observed_unique": 10,
+      "selector_frequency_sum": 14,
+      "next_node": "arithmetic.addition.g01.l01",
+      "ready": false
+    }
+  ],
+  "calendar": {
+    "cases": 16,
+    "input_timestamp_rows": 448,
+    "expectation": "Python zoneinfo calendar midnight inclusive to next midnight exclusive; descending epoch then ascending stable ID",
+    "results": [
+      {
+        "zone": "UTC",
+        "day": "1980-01-01",
+        "bounds": [
+          "1980-01-01T00:00:00.000Z",
+          "1980-01-02T00:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "UTC",
+        "day": "2000-02-29",
+        "bounds": [
+          "2000-02-29T00:00:00.000Z",
+          "2000-03-01T00:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "UTC",
+        "day": "2026-11-28",
+        "bounds": [
+          "2026-11-28T00:00:00.000Z",
+          "2026-11-29T00:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-0",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-1",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-2",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-3",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-0",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-1",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-2",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-3",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-0",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-1",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-2",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-3",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-0",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-1",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-2",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "UTC",
+        "day": "2038-01-19",
+        "bounds": [
+          "2038-01-19T00:00:00.000Z",
+          "2038-01-20T00:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Jakarta",
+        "day": "1980-01-01",
+        "bounds": [
+          "1979-12-31T17:00:00.000Z",
+          "1980-01-01T17:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Jakarta",
+        "day": "2000-02-29",
+        "bounds": [
+          "2000-02-28T17:00:00.000Z",
+          "2000-02-29T17:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Jakarta",
+        "day": "2026-11-28",
+        "bounds": [
+          "2026-11-27T17:00:00.000Z",
+          "2026-11-28T17:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-0",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-1",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-2",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-3",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-0",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-1",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-2",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-3",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-0",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-1",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-2",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-3",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-0",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-1",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-2",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Jakarta",
+        "day": "2038-01-19",
+        "bounds": [
+          "2038-01-18T17:00:00.000Z",
+          "2038-01-19T17:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Makassar",
+        "day": "1980-01-01",
+        "bounds": [
+          "1979-12-31T16:00:00.000Z",
+          "1980-01-01T16:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Makassar",
+        "day": "2000-02-29",
+        "bounds": [
+          "2000-02-28T16:00:00.000Z",
+          "2000-02-29T16:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Makassar",
+        "day": "2026-11-28",
+        "bounds": [
+          "2026-11-27T16:00:00.000Z",
+          "2026-11-28T16:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-0",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-1",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-2",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-3",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-0",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-1",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-2",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-3",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-0",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-1",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-2",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-3",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-0",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-1",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-2",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Makassar",
+        "day": "2038-01-19",
+        "bounds": [
+          "2038-01-18T16:00:00.000Z",
+          "2038-01-19T16:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Jayapura",
+        "day": "1980-01-01",
+        "bounds": [
+          "1979-12-31T15:00:00.000Z",
+          "1980-01-01T15:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Jayapura",
+        "day": "2000-02-29",
+        "bounds": [
+          "2000-02-28T15:00:00.000Z",
+          "2000-02-29T15:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Jayapura",
+        "day": "2026-11-28",
+        "bounds": [
+          "2026-11-27T15:00:00.000Z",
+          "2026-11-28T15:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-0",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-1",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-2",
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a-3",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-0",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-1",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-2",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f-3",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-0",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-1",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-2",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62-3",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-0",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-1",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-2",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      },
+      {
+        "zone": "Asia/Jayapura",
+        "day": "2038-01-19",
+        "bounds": [
+          "2038-01-18T15:00:00.000Z",
+          "2038-01-19T15:00:00.000Z"
+        ],
+        "selected": [
+          "b3-0",
+          "b3-1",
+          "b3-2",
+          "b3-3",
+          "b2-0",
+          "b2-1",
+          "b2-2",
+          "b2-3",
+          "b1-0",
+          "b1-1",
+          "b1-2",
+          "b1-3"
+        ]
+      }
+    ]
+  },
+  "offline": [
+    {
+      "case": "intact",
+      "state": "ready",
+      "reads": 77
+    },
+    {
+      "case": "absent",
+      "state": "absent",
+      "reads": 0
+    },
+    {
+      "case": "prior-release",
+      "state": "update",
+      "reads": 0
+    },
+    {
+      "case": "occurrence hash",
+      "state": "repair",
+      "reads": 76
+    },
+    {
+      "case": "package hash",
+      "state": "repair",
+      "reads": 77
+    },
+    {
+      "case": "package missing",
+      "state": "repair",
+      "reads": 77
+    },
+    {
+      "case": "grade catalog hash",
+      "state": "repair",
+      "reads": 73
+    },
+    {
+      "case": "level catalog missing",
+      "state": "repair",
+      "reads": 74
+    },
+    {
+      "case": "index missing",
+      "state": "repair",
+      "reads": 72
+    },
+    {
+      "case": "shell app hash",
+      "state": "repair",
+      "reads": 70
+    },
+    {
+      "case": "marker stale",
+      "state": "repair",
+      "reads": 71
+    },
+    {
+      "case": "repaired",
+      "state": "ready",
+      "reads": 77
+    }
+  ]
+}

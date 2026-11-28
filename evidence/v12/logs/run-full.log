@@ -1,0 +1,125 @@
+{
+  "browser": "158.0.8127.0",
+  "suites": [
+    "data",
+    "performance",
+    "layout",
+    "journeys",
+    "semantics",
+    "faults",
+    "teacher",
+    "offline"
+  ],
+  "failures": []
+}
+{
+  "groups": {
+    "package": {
+      "files": 4604,
+      "total_gzip_bytes": 32837928,
+      "max": {
+        "path": "bank/v1.1/g12/l03/MM-G12-L03-MIX-P010.mjs",
+        "bytes": 168319,
+        "gzip": 13645
+      }
+    },
+    "shard": {
+      "files": 72,
+      "total_gzip_bytes": 328600,
+      "max": {
+        "path": "bank/g10/l04.json",
+        "bytes": 47167,
+        "gzip": 6873
+      }
+    },
+    "root": {
+      "files": 1,
+      "total_gzip_bytes": 291,
+      "max": {
+        "path": "bank/index.json",
+        "bytes": 684,
+        "gzip": 291
+      }
+    },
+    "locale": {
+      "files": 2,
+      "total_gzip_bytes": 7156,
+      "max": {
+        "path": "locales/id.json",
+        "bytes": 9466,
+        "gzip": 3622
+      }
+    },
+    "player": {
+      "files": 10,
+      "total_gzip_bytes": 36296,
+      "max": {
+        "path": "player/session.mjs",
+        "bytes": 34511,
+        "gzip": 11243
+      }
+    },
+    "teacher": {
+      "files": 10,
+      "total_gzip_bytes": 31495,
+      "max": {
+        "path": "teacher/index.js",
+        "bytes": 23821,
+        "gzip": 8638
+      }
+    },
+    "font": {
+      "files": 3,
+      "total_gzip_bytes": 447041,
+      "max": {
+        "path": "teacher/font/DejaVuSans.ttf",
+        "bytes": 759720,
+        "gzip": 382186
+      }
+    },
+    "export": {
+      "files": 8,
+      "total_gzip_bytes": 7975,
+      "max": {
+        "path": "teacher/export/pdf.js",
+        "bytes": 6631,
+        "gzip": 2921
+      }
+    },
+    "mathjax_local": {
+      "files": 9,
+      "total_gzip_bytes": 791237,
+      "max": {
+        "path": "vendor/mathjax-4.1.3/mml-svg.js",
+        "bytes": 1702534,
+        "gzip": 571290
+      }
+    },
+    "math_model_view": {
+      "files": 2,
+      "total_gzip_bytes": 4209,
+      "max": {
+        "path": "math/view.mjs",
+        "bytes": 5254,
+        "gzip": 2238
+      }
+    }
+  },
+  "checks": [
+    "root:PASS",
+    "package:PASS",
+    "shard:PASS",
+    "locale:PASS",
+    "player:PASS",
+    "teacher:PASS",
+    "initial-js:PASS",
+    "initial-css:PASS",
+    "initial-font:PASS",
+    "initial-js:PASS",
+    "initial-css:PASS",
+    "initial-font:PASS",
+    "initial-js:PASS",
+    "initial-css:PASS",
+    "initial-font:PASS"
+  ]
+}

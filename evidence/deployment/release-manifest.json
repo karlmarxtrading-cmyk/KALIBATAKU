@@ -1,0 +1,49 @@
+{
+  "release_id": "kalibataku-static-1.2.0",
+  "verified_utc": "2026-11-25T22:41:29.700002+00:00",
+  "source_tree_sha256": "4eccf8753d51b2df7a15382a00951c86f02bbc8371264d978ce55c01964adc82",
+  "source_hash_scope": "src, factory, tools, docs/contracts, spec, package/lock and offline build script, sorted paths",
+  "dist_tree_sha256": "08cac7c52d13761fffb67a2b45fd082fd3fc0c86883b6e02b912315cf7994314",
+  "dist_file_count": 4758,
+  "dist_bytes": 356599203,
+  "runtime": {
+    "node": "v24.22.3",
+    "npm": "11.19.1",
+    "python": "3.12.14",
+    "test_tools_installed": {
+      "jsonschema": "4.26.0",
+      "playwright": "1.62.0",
+      "PyMuPDF": "1.26.6",
+      "python-docx": "1.2.0",
+      "openpyxl": "3.1.5",
+      "fonttools": "4.61.1"
+    },
+    "lockfile_npm_dependencies": 0,
+    "vendored_runtime": {
+      "mathjax": "4.1.3",
+      "fonts": "MathJax-NewCM 4.1.3 embedded SVG glyphs",
+      "hashes": "tools/mathjax-files.json"
+    },
+    "local_fonts": [
+      {
+        "file": "src/assets/noto-Bold.woff",
+        "sha256": "79d2a89310420cd7f3efbf09efef998403e6f6a5b503a8f878ea80d3d5acd267",
+        "license": "src/assets/FONT-LICENSE.txt"
+      },
+      {
+        "file": "src/assets/noto-Regular.woff",
+        "sha256": "675d26770d39bf713c944360741eada3e8c173b501a5bd0c60a2fc4754abc033",
+        "license": "src/assets/FONT-LICENSE.txt"
+      },
+      {
+        "file": "src/teacher/font/DejaVuSans.ttf",
+        "sha256": "57f73e11f51999432bf7ab22ce55b6f945d5eca1bf824404cfa9ec2e3718c84e",
+        "license": "src/teacher/font/LICENSE.txt"
+      }
+    ]
+  },
+  "curriculum": "1.0.0-draft.2",
+  "bank": "1.1.0",
+  "mastery_policy": "mastery-local-v1",
+  "offline_manifest_release": "47c1663e7ea2fa9c"
+}

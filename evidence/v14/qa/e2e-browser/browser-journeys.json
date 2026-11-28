@@ -1,0 +1,3724 @@
+{
+  "suite": "journeys",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "created_utc": "2026-11-28T04:15:06.613Z",
+  "base": "http://127.0.0.1:38581/probe-journeys-1795839306613/school/math/",
+  "checks": [
+    {
+      "id": "reduced-motion",
+      "status": "PASS",
+      "detail": "Reduced-motion setting applied"
+    },
+    {
+      "id": "player-practice",
+      "status": "PASS",
+      "detail": "0 + 5"
+    },
+    {
+      "id": "player-200",
+      "status": "PASS",
+      "detail": {
+        "geometry": {
+          "innerWidth": 1024,
+          "viewport": 1024,
+          "height": 768,
+          "scroll": 1024,
+          "lang": "id",
+          "theme": "light",
+          "h1": [
+            "Penjumlahan"
+          ],
+          "overflowElements": [],
+          "domCount": 114,
+          "visibleControls": 15
+        }
+      }
+    },
+    {
+      "id": "keypad-middle-selection",
+      "status": "PASS",
+      "detail": [
+        {
+          "label": "Tanda minus",
+          "value": "1-8",
+          "caret": 2,
+          "focused": true,
+          "expected": "1-8"
+        },
+        {
+          "label": "Garis pecahan",
+          "value": "1/8",
+          "caret": 2,
+          "focused": true,
+          "expected": "1/8"
+        },
+        {
+          "label": "Pemisah desimal",
+          "value": "1,8",
+          "caret": 2,
+          "focused": true,
+          "expected": "1,8"
+        }
+      ]
+    },
+    {
+      "id": "short-viewport-keypad",
+      "status": "PASS",
+      "detail": {
+        "actual": "-/,",
+        "height": 430,
+        "width": 390,
+        "input": {
+          "top": 186.921875,
+          "bottom": 242.921875,
+          "width": 323.25
+        },
+        "submit": {
+          "top": 186.921875,
+          "bottom": 242.921875,
+          "width": 323.25
+        },
+        "tap_sizes": [
+          [
+            48,
+            48
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "live_window": [
+          1024,
+          768
+        ],
+        "device": "Exact 390 × 430 CSS viewport using snapshot of the controls exercised in live Chromium; physical IME not measured"
+      }
+    },
+    {
+      "id": "untimed-practice",
+      "status": "PASS",
+      "detail": "No deadline display on practice"
+    },
+    {
+      "id": "locale-dirty",
+      "status": "PASS",
+      "detail": "ID draft and keypad at EN"
+    },
+    {
+      "id": "bad-input",
+      "status": "PASS",
+      "detail": "Penyebut harus lebih besar dari nol."
+    },
+    {
+      "id": "valid-wrong",
+      "status": "PASS",
+      "detail": "Wrong feedback"
+    },
+    {
+      "id": "resume-order",
+      "status": "PASS",
+      "detail": "Same problem and unfinished draft"
+    },
+    {
+      "id": "review-practice",
+      "status": "PASS",
+      "detail": "Review displays"
+    },
+    {
+      "id": "player-recovery",
+      "status": "PASS",
+      "detail": "0 + 4"
+    },
+    {
+      "id": "next-network-recovery",
+      "status": "PASS",
+      "detail": "No fresh pack during item response"
+    },
+    {
+      "id": "review-recovery",
+      "status": "PASS",
+      "detail": "Review displays"
+    },
+    {
+      "id": "player-assessment",
+      "status": "PASS",
+      "detail": "55 − (−42)"
+    },
+    {
+      "id": "assessment-hidden",
+      "status": "PASS",
+      "detail": "No feedback or hint control"
+    },
+    {
+      "id": "dirty-block",
+      "status": "PASS",
+      "detail": "State remains editable"
+    },
+    {
+      "id": "next-network-assessment",
+      "status": "PASS",
+      "detail": "No fresh pack during item response"
+    },
+    {
+      "id": "review-assessment",
+      "status": "PASS",
+      "detail": "Review displays"
+    },
+    {
+      "id": "player-speed",
+      "status": "PASS",
+      "detail": "520,4 ÷ 10"
+    },
+    {
+      "id": "hidden-timer",
+      "status": "PASS",
+      "detail": "Hidden timer preference in speed mode; fixed deadline tested by domain suite"
+    },
+    {
+      "id": "next-network-speed",
+      "status": "PASS",
+      "detail": "No fresh pack during item response"
+    },
+    {
+      "id": "review-speed",
+      "status": "PASS",
+      "detail": "Review displays"
+    },
+    {
+      "id": "player-adaptive",
+      "status": "PASS",
+      "detail": "(57/64 + 1,53125) × 448 ÷ 10 − 25"
+    },
+    {
+      "id": "next-network-adaptive",
+      "status": "PASS",
+      "detail": "No fresh pack during item response"
+    },
+    {
+      "id": "review-adaptive",
+      "status": "PASS",
+      "detail": "Review displays"
+    }
+  ],
+  "runtime": {
+    "offline_release": "137cc1a9b76ed428",
+    "bootstrap_sha256": "c0f2a6f05c5005335a61c4f839af852715f5cd4ff4bc26cbb50768c028a21781",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "journeys": [
+    {
+      "mode": "practice",
+      "grade": 1,
+      "level": 1,
+      "op": "ADD",
+      "attempt": "f7423f84-3039-456d-b2ef-7f8cc466d181",
+      "expression": "0 + 5",
+      "spoken": "0 tambah 5",
+      "loaded": [
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/appearance.js",
+          "type": "script",
+          "bytes": 1170,
+          "encoded": 870,
+          "decoded": 870,
+          "start": 13,
+          "duration": 22,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Regular.woff",
+          "type": "link",
+          "bytes": 32936,
+          "encoded": 32636,
+          "decoded": 32636,
+          "start": 15,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Bold.woff",
+          "type": "link",
+          "bytes": 32536,
+          "encoded": 32236,
+          "decoded": 32236,
+          "start": 15,
+          "duration": 22,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/base.css",
+          "type": "link",
+          "bytes": 39960,
+          "encoded": 39660,
+          "decoded": 39660,
+          "start": 15,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/app.mjs",
+          "type": "script",
+          "bytes": 17470,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 15,
+          "duration": 19,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 574,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 15,
+          "duration": 36,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/dom.mjs",
+          "type": "script",
+          "bytes": 3824,
+          "encoded": 3524,
+          "decoded": 3524,
+          "start": 39,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/preferences.mjs",
+          "type": "script",
+          "bytes": 686,
+          "encoded": 386,
+          "decoded": 386,
+          "start": 39,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/material.mjs",
+          "type": "script",
+          "bytes": 1486,
+          "encoded": 1186,
+          "decoded": 1186,
+          "start": 39,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/locales/id.json",
+          "type": "fetch",
+          "bytes": 9775,
+          "encoded": 9475,
+          "decoded": 9475,
+          "start": 56,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 300,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 66,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/store.js",
+          "type": "script",
+          "bytes": 13828,
+          "encoded": 13528,
+          "decoded": 13528,
+          "start": 67,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/common.js",
+          "type": "script",
+          "bytes": 2030,
+          "encoded": 1730,
+          "decoded": 1730,
+          "start": 77,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/db.js",
+          "type": "script",
+          "bytes": 5381,
+          "encoded": 5081,
+          "decoded": 5081,
+          "start": 77,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/summary.js",
+          "type": "script",
+          "bytes": 3717,
+          "encoded": 3417,
+          "decoded": 3417,
+          "start": 77,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/validate.js",
+          "type": "script",
+          "bytes": 2826,
+          "encoded": 2526,
+          "decoded": 2526,
+          "start": 77,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/contract-defs.js",
+          "type": "script",
+          "bytes": 13555,
+          "encoded": 13255,
+          "decoded": 13255,
+          "start": 86,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/journey/ui.mjs",
+          "type": "script",
+          "bytes": 20406,
+          "encoded": 20106,
+          "decoded": 20106,
+          "start": 97,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 300,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 98,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/journey/journey.mjs",
+          "type": "script",
+          "bytes": 8623,
+          "encoded": 8323,
+          "decoded": 8323,
+          "start": 103,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/journey/model.mjs",
+          "type": "script",
+          "bytes": 13156,
+          "encoded": 12856,
+          "decoded": 12856,
+          "start": 103,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/bank.mjs",
+          "type": "script",
+          "bytes": 2906,
+          "encoded": 2606,
+          "decoded": 2606,
+          "start": 112,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/journey/v1/route.json",
+          "type": "fetch",
+          "bytes": 303722,
+          "encoded": 303422,
+          "decoded": 303422,
+          "start": 119,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/offline.js",
+          "type": "script",
+          "bytes": 9303,
+          "encoded": 9003,
+          "decoded": 9003,
+          "start": 136,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/panels.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5632,
+          "decoded": 5632,
+          "start": 312,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 312,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 318,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/panel-profile.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 10307,
+          "decoded": 10307,
+          "start": 330,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/backup.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 18838,
+          "decoded": 18838,
+          "start": 339,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 531,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 568,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/settings.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 8836,
+          "decoded": 8836,
+          "start": 572,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 573,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/audio.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 310,
+          "decoded": 310,
+          "start": 585,
+          "duration": 15,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/build-info.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 70,
+          "decoded": 70,
+          "start": 604,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/offline-assets.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 15090,
+          "decoded": 15090,
+          "start": 613,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 786,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/catalog.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 20320,
+          "decoded": 20320,
+          "start": 796,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 797,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/index.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 684,
+          "decoded": 684,
+          "start": 812,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 552,
+          "decoded": 552,
+          "start": 818,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01/l01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 4893,
+          "decoded": 4893,
+          "start": 823,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/start.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 8425,
+          "decoded": 8425,
+          "start": 829,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/analytics.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 9283,
+          "decoded": 9283,
+          "start": 834,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/engine.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 10528,
+          "decoded": 10528,
+          "start": 835,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/math.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4397,
+          "decoded": 4397,
+          "start": 835,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/package-data.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1565,
+          "decoded": 1565,
+          "start": 835,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 12520,
+          "decoded": 12520,
+          "start": 853,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/player.css",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 13963,
+          "decoded": 13963,
+          "start": 1087,
+          "duration": 15,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2734,
+          "decoded": 2734,
+          "start": 1092,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1094,
+          "duration": 15,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/base.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5929,
+          "decoded": 5929,
+          "start": 1112,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4483,
+          "decoded": 4483,
+          "start": 1117,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/model.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5319,
+          "decoded": 5319,
+          "start": 1119,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/session.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 39655,
+          "decoded": 39655,
+          "start": 1129,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/learning/input-guide.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2238,
+          "decoded": 2238,
+          "start": 1135,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/typeset.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5481,
+          "decoded": 5481,
+          "start": 1144,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/glyphs.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5284,
+          "decoded": 5284,
+          "start": 1149,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        }
+      ],
+      "inputType": "text",
+      "t": {
+        "headings": [
+          [
+            "H1",
+            "Penjumlahan"
+          ]
+        ],
+        "emptyNames": [],
+        "duplicateIds": [],
+        "skip": true,
+        "viewport": "width=device-width,initial-scale=1",
+        "missingLabelRefs": [],
+        "landmarks": [
+          "main",
+          "header",
+          "footer"
+        ],
+        "tiny": [],
+        "live": [
+          [
+            "status",
+            "polite",
+            ""
+          ],
+          [
+            "status",
+            "polite",
+            ""
+          ]
+        ]
+      },
+      "narrow": {
+        "innerWidth": 1024,
+        "viewport": 1024,
+        "height": 768,
+        "scroll": 1024,
+        "lang": "id",
+        "theme": "light",
+        "h1": [
+          "Penjumlahan"
+        ],
+        "overflowElements": [],
+        "domCount": 114,
+        "visibleControls": 15
+      },
+      "results": "Hasil sesi\n\nQA journey 9a855d10 · Kelas 1 · Level 1 · Penjumlahan · Latihan · 28 Nov 2026, 11.15\n\n0 dari 10 soal benar\n\nTinjau jawaban yang masih perlu dilatih.\n\nBenar pada jawaban pertama · 0 / 2\n\nSoal direvisi setelah melihat kunci · 0\n\n0 benar · 2 salah · 0 dilewati · 0 kosong · 8 belum dilihat\n\nHasil latihan lokal · belum diverifikasi institusi\n\nTinjau soal yang perlu dilatih\nTinjau jawaban\nLihat progres\nRiwayat latihan\nLatih ulang kesalahan\nDetail untuk orang tua dan guru",
+      "review": [
+        "Tinjauan jawaban"
+      ]
+    },
+    {
+      "mode": "recovery",
+      "grade": 1,
+      "level": 1,
+      "op": "ADD",
+      "attempt": "47f6de2a-a31f-47ae-90fd-713aa8860191",
+      "expression": "0 + 4",
+      "spoken": "0 tambah 4",
+      "loaded": [
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/appearance.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 870,
+          "decoded": 870,
+          "start": 27,
+          "duration": 29,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Regular.woff",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 32636,
+          "decoded": 32636,
+          "start": 28,
+          "duration": 28,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Bold.woff",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 32236,
+          "decoded": 32236,
+          "start": 28,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/base.css",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 39660,
+          "decoded": 39660,
+          "start": 29,
+          "duration": 20,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/app.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 30,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 31,
+          "duration": 30,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/app.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 61,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/dom.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 3524,
+          "decoded": 3524,
+          "start": 69,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/material.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1186,
+          "decoded": 1186,
+          "start": 71,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/preferences.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 386,
+          "decoded": 386,
+          "start": 73,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/locales/id.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 9475,
+          "decoded": 9475,
+          "start": 85,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 93,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/store.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 13528,
+          "decoded": 13528,
+          "start": 96,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/common.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1730,
+          "decoded": 1730,
+          "start": 104,
+          "duration": 32,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/db.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5081,
+          "decoded": 5081,
+          "start": 104,
+          "duration": 40,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/validate.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2526,
+          "decoded": 2526,
+          "start": 105,
+          "duration": 43,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/summary.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 3417,
+          "decoded": 3417,
+          "start": 105,
+          "duration": 43,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/contract-defs.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 13255,
+          "decoded": 13255,
+          "start": 150,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/player.css",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 13963,
+          "decoded": 13963,
+          "start": 159,
+          "duration": 35,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2734,
+          "decoded": 2734,
+          "start": 159,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 159,
+          "duration": 35,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/base.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5929,
+          "decoded": 5929,
+          "start": 181,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/start.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 8425,
+          "decoded": 8425,
+          "start": 181,
+          "duration": 18,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4483,
+          "decoded": 4483,
+          "start": 200,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/model.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5319,
+          "decoded": 5319,
+          "start": 201,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/analytics.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 9283,
+          "decoded": 9283,
+          "start": 213,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/engine.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 10528,
+          "decoded": 10528,
+          "start": 213,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/math.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4397,
+          "decoded": 4397,
+          "start": 214,
+          "duration": 19,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/bank.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2606,
+          "decoded": 2606,
+          "start": 214,
+          "duration": 20,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/package-data.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1565,
+          "decoded": 1565,
+          "start": 214,
+          "duration": 22,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/session.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 39655,
+          "decoded": 39655,
+          "start": 238,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/learning/input-guide.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2238,
+          "decoded": 2238,
+          "start": 244,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/audio.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 310,
+          "decoded": 310,
+          "start": 244,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/typeset.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5481,
+          "decoded": 5481,
+          "start": 256,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/glyphs.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5284,
+          "decoded": 5284,
+          "start": 263,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/offline.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 9003,
+          "decoded": 9003,
+          "start": 263,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/records.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 23218,
+          "decoded": 23218,
+          "start": 353,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 364,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 389,
+          "duration": 25,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 394,
+          "duration": 25,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 573,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/catalog.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 20320,
+          "decoded": 20320,
+          "start": 577,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 577,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/index.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 684,
+          "decoded": 684,
+          "start": 593,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 552,
+          "decoded": 552,
+          "start": 597,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01/l01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 4893,
+          "decoded": 4893,
+          "start": 603,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 12520,
+          "decoded": 12520,
+          "start": 613,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 837,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 841,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        }
+      ],
+      "inputType": "text",
+      "t": {
+        "headings": [
+          [
+            "H1",
+            "Penjumlahan"
+          ]
+        ],
+        "emptyNames": [],
+        "duplicateIds": [],
+        "skip": true,
+        "viewport": "width=device-width,initial-scale=1",
+        "missingLabelRefs": [],
+        "landmarks": [
+          "main",
+          "header",
+          "footer"
+        ],
+        "tiny": [],
+        "live": [
+          [
+            "status",
+            "polite",
+            ""
+          ],
+          [
+            "status",
+            "polite",
+            ""
+          ]
+        ]
+      },
+      "results": "Hasil sesi\n\nQA journey 9a855d10 · Kelas 1 · Level 1 · Penjumlahan · Perbaikan kesalahan · 28 Nov 2026, 11.15\n\n0 dari 2 soal benar\n\nTinjau jawaban yang masih perlu dilatih.\n\nBenar pada jawaban pertama · 0 / 1\n\nSoal direvisi setelah melihat kunci · 0\n\n0 benar · 1 salah · 0 dilewati · 0 kosong · 1 belum dilihat\n\nHasil latihan lokal · belum diverifikasi institusi\n\nTinjau soal yang perlu dilatih\nTinjau jawaban\nLihat progres\nRiwayat latihan\nLatih ulang kesalahan\nDetail untuk orang tua dan guru",
+      "review": [
+        "Tinjauan jawaban"
+      ]
+    },
+    {
+      "mode": "assessment",
+      "grade": 7,
+      "level": 2,
+      "op": "SUB",
+      "attempt": "95e26fc1-cc89-472d-b1a8-818f2fd9a671",
+      "expression": "55 − (−42)",
+      "spoken": "55 minus buka kurung minus 42 tutup kurung",
+      "loaded": [
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/appearance.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 870,
+          "decoded": 870,
+          "start": 27,
+          "duration": 29,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Regular.woff",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 32636,
+          "decoded": 32636,
+          "start": 28,
+          "duration": 28,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Bold.woff",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 32236,
+          "decoded": 32236,
+          "start": 28,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/base.css",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 39660,
+          "decoded": 39660,
+          "start": 29,
+          "duration": 20,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/app.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 30,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 31,
+          "duration": 30,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/app.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 61,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/dom.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 3524,
+          "decoded": 3524,
+          "start": 69,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/material.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1186,
+          "decoded": 1186,
+          "start": 71,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/preferences.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 386,
+          "decoded": 386,
+          "start": 73,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/locales/id.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 9475,
+          "decoded": 9475,
+          "start": 85,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 93,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/store.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 13528,
+          "decoded": 13528,
+          "start": 96,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/common.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1730,
+          "decoded": 1730,
+          "start": 104,
+          "duration": 32,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/db.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5081,
+          "decoded": 5081,
+          "start": 104,
+          "duration": 40,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/validate.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2526,
+          "decoded": 2526,
+          "start": 105,
+          "duration": 43,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/summary.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 3417,
+          "decoded": 3417,
+          "start": 105,
+          "duration": 43,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/contract-defs.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 13255,
+          "decoded": 13255,
+          "start": 150,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/player.css",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 13963,
+          "decoded": 13963,
+          "start": 159,
+          "duration": 35,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2734,
+          "decoded": 2734,
+          "start": 159,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 159,
+          "duration": 35,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/base.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5929,
+          "decoded": 5929,
+          "start": 181,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/start.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 8425,
+          "decoded": 8425,
+          "start": 181,
+          "duration": 18,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4483,
+          "decoded": 4483,
+          "start": 200,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/model.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5319,
+          "decoded": 5319,
+          "start": 201,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/analytics.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 9283,
+          "decoded": 9283,
+          "start": 213,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/engine.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 10528,
+          "decoded": 10528,
+          "start": 213,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/math.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4397,
+          "decoded": 4397,
+          "start": 214,
+          "duration": 19,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/bank.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2606,
+          "decoded": 2606,
+          "start": 214,
+          "duration": 20,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/package-data.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1565,
+          "decoded": 1565,
+          "start": 214,
+          "duration": 22,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/session.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 39655,
+          "decoded": 39655,
+          "start": 238,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/learning/input-guide.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2238,
+          "decoded": 2238,
+          "start": 244,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/audio.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 310,
+          "decoded": 310,
+          "start": 244,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/typeset.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5481,
+          "decoded": 5481,
+          "start": 256,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/glyphs.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5284,
+          "decoded": 5284,
+          "start": 263,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/offline.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 9003,
+          "decoded": 9003,
+          "start": 263,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/records.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 23218,
+          "decoded": 23218,
+          "start": 353,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 364,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 389,
+          "duration": 25,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 394,
+          "duration": 25,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 573,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/catalog.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 20320,
+          "decoded": 20320,
+          "start": 577,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 577,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/index.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 684,
+          "decoded": 684,
+          "start": 593,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 552,
+          "decoded": 552,
+          "start": 597,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01/l01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 4893,
+          "decoded": 4893,
+          "start": 603,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 12520,
+          "decoded": 12520,
+          "start": 613,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 837,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 841,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 968,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 994,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 997,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1179,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1179,
+          "duration": 28,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g07.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 664,
+          "decoded": 664,
+          "start": 1180,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g07/l02.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 44171,
+          "decoded": 44171,
+          "start": 1207,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g07/l02/MM-G07-L02-SUB-P019.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 70792,
+          "decoded": 70792,
+          "start": 1221,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1427,
+          "duration": 22,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1436,
+          "duration": 17,
+          "origin": "http://127.0.0.1:38581"
+        }
+      ],
+      "inputType": "text",
+      "t": {
+        "headings": [
+          [
+            "H1",
+            "Pengurangan"
+          ]
+        ],
+        "emptyNames": [],
+        "duplicateIds": [],
+        "skip": true,
+        "viewport": "width=device-width,initial-scale=1",
+        "missingLabelRefs": [],
+        "landmarks": [
+          "main",
+          "header",
+          "footer"
+        ],
+        "tiny": [],
+        "live": [
+          [
+            "status",
+            "polite",
+            ""
+          ],
+          [
+            "status",
+            "polite",
+            ""
+          ]
+        ]
+      },
+      "results": "Hasil sesi\n\nQA journey 9a855d10 · Kelas 7 · Level 2 · Pengurangan · Evaluasi · 28 Nov 2026, 11.15\n\n0 dari 40 soal benar\n\nTinjau jawaban yang masih perlu dilatih.\n\nBenar pada jawaban pertama · 0 / 1\n\nSoal direvisi setelah melihat kunci · 0\n\n0 benar · 1 salah · 0 dilewati · 1 kosong · 38 belum dilihat\n\nHasil latihan lokal · belum diverifikasi institusi\n\nTinjau soal yang perlu dilatih\nTinjau jawaban\nLihat progres\nRiwayat latihan\nLatih ulang kesalahan\nDetail untuk orang tua dan guru",
+      "review": [
+        "Tinjauan jawaban"
+      ]
+    },
+    {
+      "mode": "speed",
+      "grade": 6,
+      "level": 2,
+      "op": "DIV",
+      "attempt": "2a378155-5b03-4378-bb41-f787eb666f5d",
+      "expression": "520,4 ÷ 10",
+      "spoken": "520 koma 4 dibagi 10",
+      "loaded": [
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/appearance.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 870,
+          "decoded": 870,
+          "start": 27,
+          "duration": 29,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Regular.woff",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 32636,
+          "decoded": 32636,
+          "start": 28,
+          "duration": 28,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Bold.woff",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 32236,
+          "decoded": 32236,
+          "start": 28,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/base.css",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 39660,
+          "decoded": 39660,
+          "start": 29,
+          "duration": 20,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/app.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 30,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 31,
+          "duration": 30,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/app.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 61,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/dom.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 3524,
+          "decoded": 3524,
+          "start": 69,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/material.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1186,
+          "decoded": 1186,
+          "start": 71,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/preferences.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 386,
+          "decoded": 386,
+          "start": 73,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/locales/id.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 9475,
+          "decoded": 9475,
+          "start": 85,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 93,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/store.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 13528,
+          "decoded": 13528,
+          "start": 96,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/common.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1730,
+          "decoded": 1730,
+          "start": 104,
+          "duration": 32,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/db.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5081,
+          "decoded": 5081,
+          "start": 104,
+          "duration": 40,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/validate.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2526,
+          "decoded": 2526,
+          "start": 105,
+          "duration": 43,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/summary.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 3417,
+          "decoded": 3417,
+          "start": 105,
+          "duration": 43,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/contract-defs.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 13255,
+          "decoded": 13255,
+          "start": 150,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/player.css",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 13963,
+          "decoded": 13963,
+          "start": 159,
+          "duration": 35,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2734,
+          "decoded": 2734,
+          "start": 159,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 159,
+          "duration": 35,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/base.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5929,
+          "decoded": 5929,
+          "start": 181,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/start.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 8425,
+          "decoded": 8425,
+          "start": 181,
+          "duration": 18,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4483,
+          "decoded": 4483,
+          "start": 200,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/model.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5319,
+          "decoded": 5319,
+          "start": 201,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/analytics.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 9283,
+          "decoded": 9283,
+          "start": 213,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/engine.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 10528,
+          "decoded": 10528,
+          "start": 213,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/math.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4397,
+          "decoded": 4397,
+          "start": 214,
+          "duration": 19,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/bank.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2606,
+          "decoded": 2606,
+          "start": 214,
+          "duration": 20,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/package-data.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1565,
+          "decoded": 1565,
+          "start": 214,
+          "duration": 22,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/session.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 39655,
+          "decoded": 39655,
+          "start": 238,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/learning/input-guide.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2238,
+          "decoded": 2238,
+          "start": 244,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/audio.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 310,
+          "decoded": 310,
+          "start": 244,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/typeset.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5481,
+          "decoded": 5481,
+          "start": 256,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/glyphs.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5284,
+          "decoded": 5284,
+          "start": 263,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/offline.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 9003,
+          "decoded": 9003,
+          "start": 263,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/records.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 23218,
+          "decoded": 23218,
+          "start": 353,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 364,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 389,
+          "duration": 25,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 394,
+          "duration": 25,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 573,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/catalog.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 20320,
+          "decoded": 20320,
+          "start": 577,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 577,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/index.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 684,
+          "decoded": 684,
+          "start": 593,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 552,
+          "decoded": 552,
+          "start": 597,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01/l01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 4893,
+          "decoded": 4893,
+          "start": 603,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 12520,
+          "decoded": 12520,
+          "start": 613,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 837,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 841,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 968,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 994,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 997,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1179,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1179,
+          "duration": 28,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g07.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 664,
+          "decoded": 664,
+          "start": 1180,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g07/l02.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 44171,
+          "decoded": 44171,
+          "start": 1207,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g07/l02/MM-G07-L02-SUB-P019.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 70792,
+          "decoded": 70792,
+          "start": 1221,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1427,
+          "duration": 22,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1436,
+          "duration": 17,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1842,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1848,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1911,
+          "duration": 14,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1914,
+          "duration": 14,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/settings.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 8836,
+          "decoded": 8836,
+          "start": 2097,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2099,
+          "duration": 15,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/build-info.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 70,
+          "decoded": 70,
+          "start": 2113,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/offline-assets.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 15090,
+          "decoded": 15090,
+          "start": 2125,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2275,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2277,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g06.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 644,
+          "decoded": 644,
+          "start": 2277,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g06/l02.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 37794,
+          "decoded": 37794,
+          "start": 2294,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g06/l02/MM-G06-L02-DIV-P001.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 49171,
+          "decoded": 49171,
+          "start": 2305,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2528,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2547,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        }
+      ],
+      "inputType": "text",
+      "t": {
+        "headings": [
+          [
+            "H1",
+            "Pembagian"
+          ]
+        ],
+        "emptyNames": [],
+        "duplicateIds": [],
+        "skip": true,
+        "viewport": "width=device-width,initial-scale=1",
+        "missingLabelRefs": [],
+        "landmarks": [
+          "main",
+          "header",
+          "footer"
+        ],
+        "tiny": [],
+        "live": [
+          [
+            "status",
+            "polite",
+            ""
+          ],
+          [
+            "status",
+            "polite",
+            ""
+          ]
+        ]
+      },
+      "results": "Hasil sesi\n\nQA journey 9a855d10 · Kelas 6 · Level 2 · Pembagian · Tantangan waktu · 28 Nov 2026, 11.15\n\n0 dari 10 soal benar\n\nTinjau jawaban yang masih perlu dilatih.\n\nBenar pada jawaban pertama · 0 / 1\n\nSoal direvisi setelah melihat kunci · 0\n\n0 benar · 1 salah · 0 dilewati · 0 kosong · 9 belum dilihat\n\nHasil latihan lokal · belum diverifikasi institusi\n\nTinjau soal yang perlu dilatih\nTinjau jawaban\nLihat progres\nRiwayat latihan\nLatih ulang kesalahan\nDetail untuk orang tua dan guru",
+      "review": [
+        "Tinjauan jawaban"
+      ]
+    },
+    {
+      "mode": "adaptive",
+      "grade": 12,
+      "level": 2,
+      "op": "MIX",
+      "attempt": "b68fc75f-e3a0-4ca2-a1d2-3f1c23fc9215",
+      "expression": "(57/64 + 1,53125) × 448 ÷ 10 − 25",
+      "spoken": "buka kurung 57 per 64 tambah 1 koma 53125 tutup kurung kali 448 dibagi 10 minus 25",
+      "loaded": [
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/appearance.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 870,
+          "decoded": 870,
+          "start": 27,
+          "duration": 29,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Regular.woff",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 32636,
+          "decoded": 32636,
+          "start": 28,
+          "duration": 28,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/noto-Bold.woff",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 32236,
+          "decoded": 32236,
+          "start": 28,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/base.css",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 39660,
+          "decoded": 39660,
+          "start": 29,
+          "duration": 20,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/app.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 30,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 31,
+          "duration": 30,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/app.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 17170,
+          "decoded": 17170,
+          "start": 61,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/dom.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 3524,
+          "decoded": 3524,
+          "start": 69,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/material.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1186,
+          "decoded": 1186,
+          "start": 71,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/preferences.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 386,
+          "decoded": 386,
+          "start": 73,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/locales/id.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 9475,
+          "decoded": 9475,
+          "start": 85,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 93,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/store.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 13528,
+          "decoded": 13528,
+          "start": 96,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/common.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1730,
+          "decoded": 1730,
+          "start": 104,
+          "duration": 32,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/db.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5081,
+          "decoded": 5081,
+          "start": 104,
+          "duration": 40,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/validate.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2526,
+          "decoded": 2526,
+          "start": 105,
+          "duration": 43,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/summary.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 3417,
+          "decoded": 3417,
+          "start": 105,
+          "duration": 43,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/contract-defs.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 13255,
+          "decoded": 13255,
+          "start": 150,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/player.css",
+          "type": "link",
+          "bytes": 0,
+          "encoded": 13963,
+          "decoded": 13963,
+          "start": 159,
+          "duration": 35,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2734,
+          "decoded": 2734,
+          "start": 159,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 159,
+          "duration": 35,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/base.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5929,
+          "decoded": 5929,
+          "start": 181,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/start.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 8425,
+          "decoded": 8425,
+          "start": 181,
+          "duration": 18,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/view.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4483,
+          "decoded": 4483,
+          "start": 200,
+          "duration": 21,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/model.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5319,
+          "decoded": 5319,
+          "start": 201,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/analytics.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 9283,
+          "decoded": 9283,
+          "start": 213,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/engine.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 10528,
+          "decoded": 10528,
+          "start": 213,
+          "duration": 16,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/math.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 4397,
+          "decoded": 4397,
+          "start": 214,
+          "duration": 19,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/bank.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2606,
+          "decoded": 2606,
+          "start": 214,
+          "duration": 20,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/package-data.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 1565,
+          "decoded": 1565,
+          "start": 214,
+          "duration": 22,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/session.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 39655,
+          "decoded": 39655,
+          "start": 238,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/learning/input-guide.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 2238,
+          "decoded": 2238,
+          "start": 244,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/audio.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 310,
+          "decoded": 310,
+          "start": 244,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/typeset.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5481,
+          "decoded": 5481,
+          "start": 256,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/math/glyphs.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 5284,
+          "decoded": 5284,
+          "start": 263,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/data/offline.js",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 9003,
+          "decoded": 9003,
+          "start": 263,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/player/records.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 23218,
+          "decoded": 23218,
+          "start": 353,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 364,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 389,
+          "duration": 25,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 394,
+          "duration": 25,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 573,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/catalog.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 20320,
+          "decoded": 20320,
+          "start": 577,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 577,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/index.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 684,
+          "decoded": 684,
+          "start": 593,
+          "duration": 3,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 552,
+          "decoded": 552,
+          "start": 597,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g01/l01.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 4893,
+          "decoded": 4893,
+          "start": 603,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 12520,
+          "decoded": 12520,
+          "start": 613,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 837,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 841,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 968,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 994,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 997,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1179,
+          "duration": 11,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1179,
+          "duration": 28,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g07.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 664,
+          "decoded": 664,
+          "start": 1180,
+          "duration": 26,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g07/l02.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 44171,
+          "decoded": 44171,
+          "start": 1207,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g07/l02/MM-G07-L02-SUB-P019.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 70792,
+          "decoded": 70792,
+          "start": 1221,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1427,
+          "duration": 22,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1436,
+          "duration": 17,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1842,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1848,
+          "duration": 8,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1911,
+          "duration": 14,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 1914,
+          "duration": 14,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/core/settings.mjs",
+          "type": "script",
+          "bytes": 0,
+          "encoded": 8836,
+          "decoded": 8836,
+          "start": 2097,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2099,
+          "duration": 15,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/build-info.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 70,
+          "decoded": 70,
+          "start": 2113,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/offline-assets.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 15090,
+          "decoded": 15090,
+          "start": 2125,
+          "duration": 10,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2275,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2277,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g06.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 644,
+          "decoded": 644,
+          "start": 2277,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g06/l02.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 37794,
+          "decoded": 37794,
+          "start": 2294,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g06/l02/MM-G06-L02-DIV-P001.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 49171,
+          "decoded": 49171,
+          "start": 2305,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2528,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2547,
+          "duration": 5,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2694,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2706,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2727,
+          "duration": 19,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2756,
+          "duration": 6,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2912,
+          "duration": 13,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 2913,
+          "duration": 14,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g12.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 694,
+          "decoded": 694,
+          "start": 2915,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/g12/l02.json",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 45837,
+          "decoded": 45837,
+          "start": 2935,
+          "duration": 4,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/bank/v1.2/g12/l02/MM-G12-L02-MIX-P001.mjs",
+          "type": "fetch",
+          "bytes": 0,
+          "encoded": 136992,
+          "decoded": 136992,
+          "start": 2946,
+          "duration": 9,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "img",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 3172,
+          "duration": 12,
+          "origin": "http://127.0.0.1:38581"
+        },
+        {
+          "path": "/probe-journeys-1795839306613/school/math/assets/mark.svg",
+          "type": "other",
+          "bytes": 0,
+          "encoded": 274,
+          "decoded": 274,
+          "start": 3194,
+          "duration": 7,
+          "origin": "http://127.0.0.1:38581"
+        }
+      ],
+      "inputType": "text",
+      "t": {
+        "headings": [
+          [
+            "H1",
+            "Operasi campuran"
+          ]
+        ],
+        "emptyNames": [],
+        "duplicateIds": [],
+        "skip": true,
+        "viewport": "width=device-width,initial-scale=1",
+        "missingLabelRefs": [],
+        "landmarks": [
+          "main",
+          "header",
+          "footer"
+        ],
+        "tiny": [],
+        "live": [
+          [
+            "status",
+            "polite",
+            ""
+          ],
+          [
+            "status",
+            "polite",
+            ""
+          ]
+        ]
+      },
+      "results": "Hasil sesi\n\nQA journey 9a855d10 · Kelas 12 · Level 2 · Operasi campuran · Latihan adaptif · 28 Nov 2026, 11.15\n\n0 dari 10 soal benar\n\nTinjau jawaban yang masih perlu dilatih.\n\nBenar pada jawaban pertama · 0 / 1\n\nSoal direvisi setelah melihat kunci · 0\n\n0 benar · 1 salah · 0 dilewati · 0 kosong · 9 belum dilihat\n\nHasil latihan lokal · belum diverifikasi institusi\n\nTinjau soal yang perlu dilatih\nTinjau jawaban\nLihat progres\nRiwayat latihan\nLatih ulang kesalahan\nDetail untuk orang tua dan guru",
+      "review": [
+        "Tinjauan jawaban"
+      ]
+    }
+  ],
+  "runtime_after": {
+    "offline_release": "137cc1a9b76ed428",
+    "bootstrap_sha256": "c0f2a6f05c5005335a61c4f839af852715f5cd4ff4bc26cbb50768c028a21781",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "finished_utc": "2026-11-28T04:15:13.557Z"
+}

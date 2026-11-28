@@ -1,0 +1,78 @@
+{
+  "offline_release": "460c98b682110f7e",
+  "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+  "runs": [
+    {
+      "command": "npm run check",
+      "expected": "All executable assertions pass; exit 0",
+      "actual_exit": 0,
+      "status": "PASS",
+      "started": "2026-11-28T09:03:44.485091+00:00",
+      "finished": "2026-11-28T09:04:10.130434+00:00",
+      "seconds": 25.645,
+      "log": "evidence/v15/release/check.log",
+      "log_sha256": "20c5af62849cf39483d5be00964d856bb05960a580afadd8daeb38315aec53e2",
+      "build": "460c98b682110f7e"
+    },
+    {
+      "command": "npm test",
+      "expected": "All executable assertions pass; exit 0",
+      "actual_exit": 0,
+      "status": "PASS",
+      "started": "2026-11-28T09:04:10.131132+00:00",
+      "finished": "2026-11-28T09:04:22.137777+00:00",
+      "seconds": 12.007,
+      "log": "evidence/v15/release/test.log",
+      "log_sha256": "5d6515aa3084f145f7e15811a6e3eccd657b3fe06a09b5085b23e1124ab7ecdc",
+      "build": "460c98b682110f7e"
+    },
+    {
+      "command": "npm run curriculum:check",
+      "expected": "All executable assertions pass; exit 0",
+      "actual_exit": 0,
+      "status": "PASS",
+      "started": "2026-11-28T09:04:22.139579+00:00",
+      "finished": "2026-11-28T09:04:23.723300+00:00",
+      "seconds": 1.584,
+      "log": "evidence/v15/release/curriculum.log",
+      "log_sha256": "25c80729ae83486ed25979afe6e6446b356084db01daecc7f75147653dda8891",
+      "build": "460c98b682110f7e"
+    },
+    {
+      "command": "python3 tools/build-journey.py --check",
+      "expected": "All executable assertions pass; exit 0",
+      "actual_exit": 0,
+      "status": "PASS",
+      "started": "2026-11-28T09:04:23.724089+00:00",
+      "finished": "2026-11-28T09:04:43.411092+00:00",
+      "seconds": 19.687,
+      "log": "evidence/v15/release/sidecar.log",
+      "log_sha256": "c1924fa41765ccd289ac913d41119f598a096511ea5e2f9eb01ec5b08ba98c0b",
+      "build": "460c98b682110f7e"
+    },
+    {
+      "command": "python3 tools/build-restore-index.py --check",
+      "expected": "All executable assertions pass; exit 0",
+      "actual_exit": 0,
+      "status": "PASS",
+      "started": "2026-11-28T09:04:43.413826+00:00",
+      "finished": "2026-11-28T09:04:43.514636+00:00",
+      "seconds": 0.101,
+      "log": "evidence/v15/release/restore-index.log",
+      "log_sha256": "b9c55a261b0936c45c482e17dd45eea8cd8226e9912732b0c13884d0cfbdd15b",
+      "build": "460c98b682110f7e"
+    },
+    {
+      "command": "python3 tools/bank-preservation.py --write-after",
+      "expected": "All executable assertions pass; exit 0",
+      "actual_exit": 0,
+      "status": "PASS",
+      "started": "2026-11-28T09:04:43.515137+00:00",
+      "finished": "2026-11-28T09:04:45.951536+00:00",
+      "seconds": 2.436,
+      "log": "evidence/v15/release/bank-identity.log",
+      "log_sha256": "4c654affdadd748f728be001d1a8a2f67a821aa1e5f9dc4ab594efa799af5e80",
+      "build": "460c98b682110f7e"
+    }
+  ]
+}

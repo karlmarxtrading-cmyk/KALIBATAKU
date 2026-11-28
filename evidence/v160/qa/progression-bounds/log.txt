@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "full_route": {
+    "nodes": 281,
+    "checkpoint_missions": 60,
+    "practice_missions": 843,
+    "submitted_answers": 6782,
+    "final_action": {
+      "action": "review",
+      "node_id": "arithmetic.addition.g01.l01",
+      "kind": "review",
+      "reason": "all_open_nodes_ready"
+    },
+    "max_observed": 3,
+    "max_bound_after_intro": 8,
+    "max_seed_independent_bound": 8
+  },
+  "kindCounts": {
+    "intro": 3372,
+    "regular": 3372,
+    "reinforcement": 3372,
+    "checkpoint": 3372,
+    "review": 3372
+  }
+}

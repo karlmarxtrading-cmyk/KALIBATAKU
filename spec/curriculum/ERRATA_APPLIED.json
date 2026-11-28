@@ -1,0 +1,257 @@
+{
+  "schema_version": "1.0.0",
+  "source_version": "1.0.0-draft.1",
+  "effective_version": "1.0.0-draft.2",
+  "patches": [
+    {
+      "issue_id": "AC-001",
+      "competency_id": "arithmetic.addition.g02.l05",
+      "before": {
+        "expression": "198+42",
+        "ast": {
+          "kind": "binary",
+          "operation": "ADD",
+          "left": {
+            "kind": "rational",
+            "numerator": "198",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "42",
+            "denominator": "1"
+          }
+        },
+        "answer": {
+          "numerator": "240",
+          "denominator": "1"
+        },
+        "display_answer": "240"
+      },
+      "after": {
+        "expression": "199+42",
+        "ast": {
+          "kind": "binary",
+          "operation": "ADD",
+          "left": {
+            "kind": "rational",
+            "numerator": "199",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "42",
+            "denominator": "1"
+          }
+        },
+        "answer": {
+          "numerator": "241",
+          "denominator": "1"
+        },
+        "display_answer": "241"
+      },
+      "rule_changed": false
+    },
+    {
+      "issue_id": "AC-002",
+      "competency_id": "arithmetic.mixed.g11.l03",
+      "before": {
+        "expression": "144⁄175×245⁄216+1⁄3",
+        "ast": {
+          "kind": "binary",
+          "operation": "ADD",
+          "left": {
+            "kind": "binary",
+            "operation": "MUL",
+            "left": {
+              "kind": "rational",
+              "numerator": "144",
+              "denominator": "175"
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "245",
+              "denominator": "216"
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "3"
+          }
+        },
+        "answer": {
+          "numerator": "19",
+          "denominator": "15"
+        },
+        "display_answer": "19/15"
+      },
+      "after": {
+        "expression": "(144⁄175×245⁄216+1⁄3)×15",
+        "ast": {
+          "kind": "binary",
+          "operation": "MUL",
+          "left": {
+            "kind": "binary",
+            "operation": "ADD",
+            "left": {
+              "kind": "binary",
+              "operation": "MUL",
+              "left": {
+                "kind": "rational",
+                "numerator": "144",
+                "denominator": "175"
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "245",
+                "denominator": "216"
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "3"
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "15",
+            "denominator": "1"
+          }
+        },
+        "answer": {
+          "numerator": "19",
+          "denominator": "1"
+        },
+        "display_answer": "19"
+      },
+      "rule_changed": false
+    },
+    {
+      "issue_id": "AC-003",
+      "competency_id": "arithmetic.division.g12.l01",
+      "before": {
+        "expression": "249950÷25",
+        "ast": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "rational",
+            "numerator": "249950",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "25",
+            "denominator": "1"
+          }
+        },
+        "answer": {
+          "numerator": "9998",
+          "denominator": "1"
+        },
+        "display_answer": "9998"
+      },
+      "after": {
+        "expression": "249950÷9998",
+        "ast": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "rational",
+            "numerator": "249950",
+            "denominator": "1"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "9998",
+            "denominator": "1"
+          }
+        },
+        "answer": {
+          "numerator": "25",
+          "denominator": "1"
+        },
+        "display_answer": "25"
+      },
+      "rule_changed": false
+    },
+    {
+      "issue_id": "AC-004",
+      "competency_id": "arithmetic.mixed.g12.l02",
+      "before": {
+        "expression": "(1⁄64+0.015625)×3200",
+        "ast": {
+          "kind": "binary",
+          "operation": "MUL",
+          "left": {
+            "kind": "binary",
+            "operation": "ADD",
+            "left": {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "64"
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "64"
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "3200",
+            "denominator": "1"
+          }
+        },
+        "answer": {
+          "numerator": "100",
+          "denominator": "1"
+        },
+        "display_answer": "100"
+      },
+      "after": {
+        "expression": "(1⁄64+0.015625)×3200÷10",
+        "ast": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "binary",
+            "operation": "MUL",
+            "left": {
+              "kind": "binary",
+              "operation": "ADD",
+              "left": {
+                "kind": "rational",
+                "numerator": "1",
+                "denominator": "64"
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "1",
+                "denominator": "64"
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "3200",
+              "denominator": "1"
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "10",
+            "denominator": "1"
+          }
+        },
+        "answer": {
+          "numerator": "10",
+          "denominator": "1"
+        },
+        "display_answer": "10"
+      },
+      "rule_changed": false
+    }
+  ]
+}

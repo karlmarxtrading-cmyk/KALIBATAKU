@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "release": "ef0b6798d9633ca8",
+  "node": "v24.22.3",
+  "comparison": "Fixed expected 4 sessions, 32 items, 3 missions. Fresh JSON and ZIP imports. All window and ordering expectations are independent.",
+  "checks": 351,
+  "groups": [
+    {
+      "name": "z",
+      "checks": 70,
+      "zone_order": [
+        "UTC",
+        "Asia/Jakarta",
+        "Asia/Makassar",
+        "Asia/Jayapura"
+      ]
+    },
+    {
+      "name": "plus07",
+      "checks": 71,
+      "zone_order": [
+        "UTC",
+        "Asia/Jakarta",
+        "Asia/Makassar",
+        "Asia/Jayapura"
+      ]
+    },
+    {
+      "name": "plus08",
+      "checks": 70,
+      "zone_order": [
+        "UTC",
+        "Asia/Jakarta",
+        "Asia/Makassar",
+        "Asia/Jayapura"
+      ]
+    },
+    {
+      "name": "minus05",
+      "checks": 70,
+      "zone_order": [
+        "UTC",
+        "Asia/Jakarta",
+        "Asia/Makassar",
+        "Asia/Jayapura"
+      ]
+    },
+    {
+      "name": "mixed",
+      "checks": 70,
+      "zone_order": [
+        "UTC",
+        "Asia/Jakarta",
+        "Asia/Makassar",
+        "Asia/Jayapura"
+      ]
+    }
+  ]
+}

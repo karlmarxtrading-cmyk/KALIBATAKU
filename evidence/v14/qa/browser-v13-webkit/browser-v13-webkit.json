@@ -1,0 +1,26 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "browser-v13-webkit",
+  "build": {
+    "offline_release": "137cc1a9b76ed428",
+    "app_version": "1.4.0"
+  },
+  "runtime": {
+    "engine": "webkit",
+    "version": null,
+    "os": "Linux-6.18.44-fc-v880-x86_64-with-glibc2.39"
+  },
+  "assertions": 1,
+  "status": "BLOCKED_ENV",
+  "errors": [],
+  "page_errors": [],
+  "checks": [
+    {
+      "id": "ENGINE",
+      "status": "BLOCKED_ENV",
+      "expected": "webkit available",
+      "actual": "BrowserType.launch: Executable doesn't exist at /opt/pw-browsers/webkit-2359/pw_run.sh"
+    }
+  ],
+  "method": "Native engine, local HTTP, synthetic profiles, real controls. Viewport widths are emulated; no physical device or screen-reader listener."
+}

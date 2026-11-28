@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "environment": "Node v24.22.3; response fixture + physical bank bytes",
+  "input": {
+    "package_id": "MM-G01-L01-ADD-P001",
+    "content_version": "1.1.0",
+    "sha256": "52833cb65325cf3b139b6b83ac77f1317af470a9b9803661efaccc73c177f5ec",
+    "bytes": 12520
+  },
+  "checks": [
+    "503 rejected",
+    "truncated response rejected",
+    "equal-length modified response rejected",
+    "invalid package body rejected",
+    "original accepted",
+    "second read used verified bytes",
+    "aborted plan rejected"
+  ]
+}

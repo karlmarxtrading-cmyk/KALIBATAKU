@@ -1,0 +1,607 @@
+{
+  "schema": "kalibataku-automatic-decision/1",
+  "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+  "offline_release": "f630b3dc6aa6b5a5",
+  "app_version": "1.6.2",
+  "bank_version": "1.2.0",
+  "source_tree_sha256": "fd4dbd2442531a9b6adf42b476a5a9732b6ca0d9ba6dab799303521bfe9c2848",
+  "profile": "KALIBATAKU_STATIC_AUTO_V1",
+  "profile_version": "1.0.0",
+  "profile_sha256": "eeb88b43e3018fce41b045ee05dc1fbb417c7f5aa8d242b910c9edbbabb8571b",
+  "mapping_sha256": "39a01b931507e42ef482b9f543392f782427ac32878e73e48c2cbb19bd92fecd",
+  "history_index_sha256": "65365105d49e49afca44e39a4f367a5585fd83731f2a611ff5c589b0fdf3b32f",
+  "findings_sha256": "c70aa44db83166436505ba6b4cf5e210d91b57d3b4155e34d5918eea187aeef8",
+  "registry_sha256": "13a9142e5ec30b759ca6cae92e04f73438a120abf468a993a27306a1f1975755",
+  "binding_sha256": "9a3552d926a53ef90bb140d66230bf97d902c12e426278246e8059d6b89df3a9",
+  "runtime": {
+    "node": "v24.22.3",
+    "python": "3.12.14",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "chromium": "Google Chrome for Testing 151.0.7922.34",
+    "playwright": "1.62.0"
+  },
+  "tested_utc": "2026-11-28T18:52:46Z",
+  "suite_count": 106,
+  "assertions": 2905,
+  "artifact_status": "ARTIFACT_READY",
+  "local_hosting": "PASS",
+  "provider_preview": "NOT_DEPLOYED",
+  "deployment_status": "NOT_DEPLOYED",
+  "gates": [
+    {
+      "id": "AUTO-01",
+      "name": "Integritas dan freeze bank",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Tidak ada berkas bank lama yang berubah, hilang, atau ditambahkan ke direktori bank frozen; artefak sumber dan bukti terikat pada identitas yang benar.",
+      "suites": [
+        "bank-freeze-161",
+        "bank-preservation",
+        "bank-occurrence-identity",
+        "bank-determinism"
+      ],
+      "status": "PASS",
+      "observed": "bank-freeze-161=9, bank-preservation=1, bank-occurrence-identity=1, bank-determinism=2",
+      "evidence": [
+        "evidence/v162/qa/bank-freeze-161/log.txt",
+        "evidence/v162/qa/bank-freeze-161/receipt.json",
+        "evidence/v162/qa/bank-preservation/log.txt",
+        "evidence/v162/qa/bank-occurrence-identity/log.txt",
+        "evidence/v162/qa/bank-determinism/log.txt",
+        "evidence/v162/qa/bank-determinism/bank-determinism.json"
+      ]
+    },
+    {
+      "id": "AUTO-02",
+      "name": "Kebenaran matematika seluruh bank",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Tidak ada kesalahan; fixture jawaban atau solusi rusak terdeteksi; ID dan fingerprint tetap.",
+      "suites": [
+        "bank-verify",
+        "bank-audit-distribution",
+        "v12-bank-model",
+        "family-oracle"
+      ],
+      "status": "PASS",
+      "observed": "bank-verify=1, bank-audit-distribution=12, v12-bank-model=32, family-oracle=401",
+      "evidence": [
+        "evidence/v162/qa/bank-verify/log.txt",
+        "evidence/v162/qa/bank-audit-distribution/log.txt",
+        "evidence/v162/qa/v12-bank-model/log.txt",
+        "evidence/v162/qa/v12-bank-model/bank-model.json",
+        "evidence/v162/qa/family-oracle/log.txt",
+        "evidence/v162/qa/family-oracle/family-oracle.json"
+      ]
+    },
+    {
+      "id": "AUTO-03",
+      "name": "Cakupan 394 keluarga dan telaah AI",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Seluruh keluarga tercakup dalam bukti; tidak ada temuan kebenaran terverifikasi yang belum diselesaikan; tidak ada nama penelaah manusia fiktif.",
+      "suites": [
+        "family-oracle",
+        "review-roster",
+        "bank-domain-prose"
+      ],
+      "status": "PASS",
+      "observed": "family-oracle=401, review-roster=1, bank-domain-prose=9",
+      "evidence": [
+        "evidence/v162/qa/family-oracle/log.txt",
+        "evidence/v162/qa/family-oracle/family-oracle.json",
+        "evidence/v162/qa/review-roster/log.txt",
+        "evidence/v162/qa/bank-domain-prose/log.txt",
+        "evidence/v162/qa/bank-domain-prose/bank-domain-prose.json"
+      ]
+    },
+    {
+      "id": "AUTO-04",
+      "name": "Progresi dan review terjadwal",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Tidak ada kebuntuan atau penundaan kemajuan tanpa batas dalam matriks yang ditetapkan; kontrak kesiapan dan denominator target konsisten.",
+      "suites": [
+        "progression-bounds",
+        "learning-policy-160",
+        "journey-next-practice-probe",
+        "progression-launch",
+        "journey-model",
+        "scheduled-learning"
+      ],
+      "status": "PASS",
+      "observed": "progression-bounds=1, learning-policy-160=5, journey-next-practice-probe=1, progression-launch=1, journey-model=34, scheduled-learning=5",
+      "evidence": [
+        "evidence/v162/qa/progression-bounds/log.txt",
+        "evidence/v162/qa/learning-policy-160/log.txt",
+        "evidence/v162/qa/journey-next-practice-probe/log.txt",
+        "evidence/v162/qa/progression-launch/log.txt",
+        "evidence/v162/qa/journey-model/log.txt",
+        "evidence/v162/qa/journey-model/journey-model.json",
+        "evidence/v162/qa/scheduled-learning/log.txt",
+        "evidence/v162/qa/scheduled-learning/scheduled-learning.json"
+      ]
+    },
+    {
+      "id": "AUTO-05",
+      "name": "Migrasi dan kesiapan historis",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Data historis tidak direset dan kesiapan tidak diturunkan oleh kebijakan baru; nilai konsisten untuk ledger yang sama.",
+      "suites": [
+        "semantic-restore",
+        "format-readiness",
+        "upgrade-restore-v1.0",
+        "viewed-coverage",
+        "viewed-exports"
+      ],
+      "status": "PASS",
+      "observed": "semantic-restore=1, format-readiness=1, upgrade-restore-v1.0=1, viewed-coverage=33, viewed-exports=1",
+      "evidence": [
+        "evidence/v162/qa/semantic-restore/log.txt",
+        "evidence/v162/qa/format-readiness/log.txt",
+        "evidence/v162/qa/upgrade-restore-v1.0/log.txt",
+        "evidence/v162/qa/viewed-coverage/log.txt",
+        "evidence/v162/qa/viewed-coverage/engine.json",
+        "evidence/v162/qa/viewed-exports/log.txt"
+      ]
+    },
+    {
+      "id": "AUTO-06",
+      "name": "Kontrak Enter dan finalisasi",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Satu penekanan baru menghasilkan satu tindakan; tidak ada duplikasi, soal terlewati, atau perpindahan otomatis; finalisasi terjadi sekali.",
+      "suites": [
+        "enter-cycles-chromium",
+        "enter-cycles-firefox",
+        "enter-cycles-webkit",
+        "compose-commit",
+        "route-faults",
+        "player-ledger"
+      ],
+      "status": "PASS",
+      "observed": "enter-cycles-chromium=6, enter-cycles-firefox=6, enter-cycles-webkit=6, compose-commit=39, route-faults=3, player-ledger=1",
+      "evidence": [
+        "evidence/v162/qa/enter-cycles-chromium/log.txt",
+        "evidence/v162/qa/enter-cycles-firefox/log.txt",
+        "evidence/v162/qa/enter-cycles-webkit/log.txt",
+        "evidence/v162/qa/compose-commit/log.txt",
+        "evidence/v162/qa/compose-commit/receipt.json",
+        "evidence/v162/qa/route-faults/log.txt",
+        "evidence/v162/qa/player-ledger/log.txt"
+      ]
+    },
+    {
+      "id": "AUTO-07",
+      "name": "Visibilitas dan input responsif",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Ekspresi, input, dan aksi terbaca serta dapat dijangkau; seluruh kasus baseline terlihat tanpa gulir manual; tersedia reflow untuk ruang layar ekstrem.",
+      "suites": [
+        "next-viewport-chromium",
+        "next-viewport-firefox",
+        "next-viewport-webkit",
+        "map-native-zoom"
+      ],
+      "status": "PASS",
+      "observed": "next-viewport-chromium=145, next-viewport-firefox=150, next-viewport-webkit=145, map-native-zoom=1",
+      "evidence": [
+        "evidence/v162/qa/next-viewport-chromium/log.txt",
+        "evidence/v162/qa/next-viewport-chromium/chromium.json",
+        "evidence/v162/qa/next-viewport-firefox/log.txt",
+        "evidence/v162/qa/next-viewport-firefox/firefox.json",
+        "evidence/v162/qa/next-viewport-webkit/log.txt",
+        "evidence/v162/qa/next-viewport-webkit/webkit.json",
+        "evidence/v162/qa/map-native-zoom/log.txt",
+        "evidence/v162/qa/map-native-zoom/map-native-zoom.json"
+      ]
+    },
+    {
+      "id": "AUTO-08",
+      "name": "Tugas siswa dan guru sintetis",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Katalog/filter tidak diwajibkan; tidak ada alur buntu; persona sintetis diberi label jelas; pilot nyata tidak diklaim.",
+      "suites": [
+        "synthetic-journeys",
+        "journey-browser-chromium",
+        "journey-browser-firefox",
+        "journey-browser-webkit",
+        "catalog-context",
+        "start-intent",
+        "teacher-ux-evidence"
+      ],
+      "status": "PASS",
+      "observed": "synthetic-journeys=13, journey-browser-chromium=41, journey-browser-firefox=41, journey-browser-webkit=41, catalog-context=4, start-intent=22, teacher-ux-evidence=1",
+      "evidence": [
+        "evidence/v162/qa/synthetic-journeys/log.txt",
+        "evidence/v162/qa/synthetic-journeys/synthetic-journeys.json",
+        "evidence/v162/qa/journey-browser-chromium/log.txt",
+        "evidence/v162/qa/journey-browser-chromium/journey-browser.json",
+        "evidence/v162/qa/journey-browser-firefox/log.txt",
+        "evidence/v162/qa/journey-browser-firefox/journey-browser-firefox.json",
+        "evidence/v162/qa/journey-browser-webkit/log.txt",
+        "evidence/v162/qa/journey-browser-webkit/journey-browser-webkit.json",
+        "evidence/v162/qa/catalog-context/log.txt",
+        "evidence/v162/qa/start-intent/log.txt",
+        "evidence/v162/qa/teacher-ux-evidence/log.txt"
+      ]
+    },
+    {
+      "id": "AUTO-09",
+      "name": "Aksesibilitas otomatis",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Tidak ada pelanggaran yang dapat direproduksi dalam cakupan otomatis; tidak ada klaim ujaran pembaca layar atau kepatuhan WCAG penuh tanpa bukti.",
+      "suites": [
+        "semantic-access",
+        "v12-keyboard",
+        "v12-print-contrast",
+        "v12-roles-reflow",
+        "math-linear-roundtrip"
+      ],
+      "status": "PASS",
+      "observed": "semantic-access=24, v12-keyboard=15, v12-print-contrast=2, v12-roles-reflow=240, math-linear-roundtrip=26",
+      "evidence": [
+        "evidence/v162/qa/semantic-access/log.txt",
+        "evidence/v162/qa/semantic-access/semantic-access.json",
+        "evidence/v162/qa/v12-keyboard/log.txt",
+        "evidence/v162/qa/v12-keyboard/keyboard.json",
+        "evidence/v162/qa/v12-print-contrast/log.txt",
+        "evidence/v162/qa/v12-print-contrast/print-contrast.json",
+        "evidence/v162/qa/v12-roles-reflow/log.txt",
+        "evidence/v162/qa/v12-roles-reflow/roles-reflow.json",
+        "evidence/v162/qa/math-linear-roundtrip/log.txt",
+        "evidence/v162/qa/math-linear-roundtrip/math-linear-roundtrip.json"
+      ]
+    },
+    {
+      "id": "AUTO-10",
+      "name": "Ekspor guru",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Isi, angka, dan persamaan konsisten; PDF terbaca; DOCX dipertahankan dengan batas kompatibilitas Microsoft Word yang jelas.",
+      "suites": [
+        "report-ledger",
+        "teacher-exports",
+        "documents-reopened",
+        "format-readiness",
+        "journey-exports-reopened",
+        "time-offset-exports",
+        "math-exports"
+      ],
+      "status": "PASS",
+      "observed": "report-ledger=18, teacher-exports=1, documents-reopened=7, format-readiness=1, journey-exports-reopened=1, time-offset-exports=1, math-exports=14",
+      "evidence": [
+        "evidence/v162/qa/report-ledger/log.txt",
+        "evidence/v162/qa/report-ledger/receipt.json",
+        "evidence/v162/qa/teacher-exports/log.txt",
+        "evidence/v162/qa/documents-reopened/log.txt",
+        "evidence/v162/qa/documents-reopened/documents-reopened.json",
+        "evidence/v162/qa/format-readiness/log.txt",
+        "evidence/v162/qa/journey-exports-reopened/log.txt",
+        "evidence/v162/qa/time-offset-exports/log.txt",
+        "evidence/v162/qa/math-exports/log.txt",
+        "evidence/v162/qa/math-exports/math-exports.json"
+      ]
+    },
+    {
+      "id": "AUTO-11",
+      "name": "Penyimpanan dan pemulihan",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Tidak ada kehilangan data atau penulisan parsial; data yang tidak sah ditolak sebelum commit; cadangan yang sah dapat dipulihkan.",
+      "suites": [
+        "data-contract",
+        "data-archive-edges",
+        "data-large-backup",
+        "capacity-browser",
+        "capacity-rows",
+        "capacity-bytes",
+        "capacity-beyond-string",
+        "semantic-restore",
+        "route-faults"
+      ],
+      "status": "PASS",
+      "observed": "data-contract=1, data-archive-edges=10, data-large-backup=17, capacity-browser=1, capacity-rows=4, capacity-bytes=4, capacity-beyond-string=1, semantic-restore=1, route-faults=3",
+      "evidence": [
+        "evidence/v162/qa/data-contract/log.txt",
+        "evidence/v162/qa/data-archive-edges/log.txt",
+        "evidence/v162/qa/data-archive-edges/data-archive-edges.json",
+        "evidence/v162/qa/data-large-backup/log.txt",
+        "evidence/v162/qa/data-large-backup/data-large-backup.json",
+        "evidence/v162/qa/capacity-browser/log.txt",
+        "evidence/v162/qa/capacity-rows/log.txt",
+        "evidence/v162/qa/capacity-bytes/log.txt",
+        "evidence/v162/qa/capacity-beyond-string/log.txt",
+        "evidence/v162/qa/semantic-restore/log.txt",
+        "evidence/v162/qa/route-faults/log.txt"
+      ]
+    },
+    {
+      "id": "AUTO-12",
+      "name": "Offline dan pemulihan cache",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Sepuluh skenario atau cakupan penerusnya lulus; status siap offline hanya diberikan jika aset yang benar tersedia.",
+      "suites": [
+        "offline-capability-chromium",
+        "offline-capability-firefox",
+        "offline-capability-webkit",
+        "offline-legacy-repeat-firefox",
+        "catalog-offline-v151-chromium",
+        "catalog-offline-v151-firefox",
+        "catalog-offline-v151-webkit"
+      ],
+      "status": "PASS",
+      "observed": "offline-capability-chromium=10, offline-capability-firefox=10, offline-capability-webkit=10, offline-legacy-repeat-firefox=6, catalog-offline-v151-chromium=11, catalog-offline-v151-firefox=11, catalog-offline-v151-webkit=11",
+      "evidence": [
+        "evidence/v162/qa/offline-capability-chromium/log.txt",
+        "evidence/v162/qa/offline-capability-chromium/offline-capability-chromium.json",
+        "evidence/v162/qa/offline-capability-firefox/log.txt",
+        "evidence/v162/qa/offline-capability-firefox/offline-capability-firefox.json",
+        "evidence/v162/qa/offline-capability-webkit/log.txt",
+        "evidence/v162/qa/offline-capability-webkit/offline-capability-webkit.json",
+        "evidence/v162/qa/offline-legacy-repeat-firefox/log.txt",
+        "evidence/v162/qa/offline-legacy-repeat-firefox/firefox.json",
+        "evidence/v162/qa/catalog-offline-v151-chromium/log.txt",
+        "evidence/v162/qa/catalog-offline-v151-chromium/catalog-offline-v151-chromium.json",
+        "evidence/v162/qa/catalog-offline-v151-firefox/log.txt",
+        "evidence/v162/qa/catalog-offline-v151-firefox/catalog-offline-v151-firefox.json",
+        "evidence/v162/qa/catalog-offline-v151-webkit/log.txt",
+        "evidence/v162/qa/catalog-offline-v151-webkit/catalog-offline-v151-webkit.json"
+      ]
+    },
+    {
+      "id": "AUTO-13",
+      "name": "Pembaruan dan rollback lokal",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Data dan urutan soal tetap; penyelesaian offline menghasilkan satu finalisasi; tidak ada pageerror.",
+      "suites": [
+        "update-161",
+        "data-cache-policy"
+      ],
+      "status": "PASS",
+      "observed": "update-161=12, data-cache-policy=10",
+      "evidence": [
+        "evidence/v162/qa/update-161/log.txt",
+        "evidence/v162/qa/update-161/receipt.json",
+        "evidence/v162/qa/data-cache-policy/log.txt",
+        "evidence/v162/qa/data-cache-policy/data-cache-policy.json"
+      ]
+    },
+    {
+      "id": "AUTO-14",
+      "name": "Validator bukti QA",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Bukti dengan bentuk salah, ID duplikat, jumlah/status tidak konsisten, build/hash salah, atau keterikatan diagnostik yang keliru ditolak; bukti sah diterima.",
+      "suites": [
+        "qa-receipt-shape",
+        "qa-fault-injection",
+        "audit-validator-25"
+      ],
+      "status": "PASS",
+      "observed": "qa-receipt-shape=39, qa-fault-injection=20, audit-validator-25=25",
+      "evidence": [
+        "evidence/v162/qa/qa-receipt-shape/log.txt",
+        "evidence/v162/qa/qa-fault-injection/log.txt",
+        "evidence/v162/qa/qa-fault-injection/qa-fault-injection.json",
+        "evidence/v162/qa/audit-validator-25/log.txt",
+        "evidence/v162/qa/audit-validator-25/audit-validator-25.json"
+      ]
+    },
+    {
+      "id": "AUTO-15",
+      "name": "Evaluator profil rilis",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "ARTIFACT_READY hanya diberikan ketika seluruh gerbang otomatis wajib PASS; pengecualian tidak menyamarkan cacat teknis.",
+      "suites": [
+        "auto-release-policy"
+      ],
+      "status": "PASS",
+      "observed": "auto-release-policy=46",
+      "evidence": [
+        "evidence/v162/qa/auto-release-policy/log.txt"
+      ]
+    },
+    {
+      "id": "AUTO-16",
+      "name": "Riwayat dan kejujuran klaim",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Status BLOCKED/NOT_RUN historis tidak diubah menjadi PASS tanpa bukti; status domain tidak berasal dari localhost; tidak ada bukti manusia fiktif.",
+      "suites": [
+        "auto-release-policy",
+        "register-policy"
+      ],
+      "status": "PASS",
+      "observed": "auto-release-policy=46, register-policy=1",
+      "evidence": [
+        "evidence/v162/qa/auto-release-policy/log.txt",
+        "evidence/v162/qa/register-policy/log.txt"
+      ]
+    },
+    {
+      "id": "AUTO-17",
+      "name": "Matriks runtime dan browser",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Seluruh suite teknis yang berlaku PASS pada build final; BLOCKED_ENV tidak dinyatakan PASS.",
+      "suites": [
+        "browser-v13-chromium",
+        "browser-v13-firefox",
+        "browser-v13-webkit",
+        "compile-check"
+      ],
+      "status": "PASS",
+      "observed": "browser-v13-chromium=11, browser-v13-firefox=11, browser-v13-webkit=11, compile-check=146",
+      "evidence": [
+        "evidence/v162/qa/browser-v13-chromium/log.txt",
+        "evidence/v162/qa/browser-v13-chromium/browser-v13-chromium.json",
+        "evidence/v162/qa/browser-v13-firefox/log.txt",
+        "evidence/v162/qa/browser-v13-firefox/browser-v13-firefox.json",
+        "evidence/v162/qa/browser-v13-webkit/log.txt",
+        "evidence/v162/qa/browser-v13-webkit/browser-v13-webkit.json",
+        "evidence/v162/qa/compile-check/log.txt"
+      ]
+    },
+    {
+      "id": "AUTO-18",
+      "name": "Build kanonis yang dapat direproduksi",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Distribusi dari kedua build identik byte demi byte; bank tetap; pengguna Windows dapat mengunggah dist tanpa membangun secara lokal.",
+      "suites": [
+        "clean-build-twice",
+        "portable-path-order",
+        "bank-freeze-161"
+      ],
+      "status": "PASS",
+      "observed": "clean-build-twice=2, portable-path-order=6, bank-freeze-161=9",
+      "evidence": [
+        "evidence/v162/qa/clean-build-twice/log.txt",
+        "evidence/v162/qa/clean-build-twice/clean-build.json",
+        "evidence/v162/qa/portable-path-order/log.txt",
+        "evidence/v162/qa/bank-freeze-161/log.txt",
+        "evidence/v162/qa/bank-freeze-161/receipt.json"
+      ]
+    },
+    {
+      "id": "AUTO-19",
+      "name": "Hosting lokal dan konfigurasi",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Seluruh perilaku lokal sesuai kontrak; preview provider/domain hanya diberi hasil lulus jika URL aktual telah diuji.",
+      "suites": [
+        "hosting-static",
+        "hosting-smoke"
+      ],
+      "status": "PASS",
+      "observed": "hosting-static=8, hosting-smoke=1",
+      "evidence": [
+        "evidence/v162/qa/hosting-static/log.txt",
+        "evidence/v162/qa/hosting-static/hosting-static.json",
+        "evidence/v162/qa/hosting-smoke/log.txt"
+      ]
+    },
+    {
+      "id": "AUTO-20",
+      "name": "Keamanan fungsi statis",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Kasus negatif terdeteksi; konten impor tidak dieksekusi sebagai kode; dist tidak memuat kredensial, data pribadi, atau berkas bukti audit.",
+      "suites": [
+        "hosting-static",
+        "data-archive-edges",
+        "data-ux-contract",
+        "browser-v13-chromium",
+        "static-data-boundaries"
+      ],
+      "status": "PASS",
+      "observed": "hosting-static=8, data-archive-edges=10, data-ux-contract=7, browser-v13-chromium=11, static-data-boundaries=6",
+      "evidence": [
+        "evidence/v162/qa/hosting-static/log.txt",
+        "evidence/v162/qa/hosting-static/hosting-static.json",
+        "evidence/v162/qa/data-archive-edges/log.txt",
+        "evidence/v162/qa/data-archive-edges/data-archive-edges.json",
+        "evidence/v162/qa/data-ux-contract/log.txt",
+        "evidence/v162/qa/browser-v13-chromium/log.txt",
+        "evidence/v162/qa/browser-v13-chromium/browser-v13-chromium.json",
+        "evidence/v162/qa/static-data-boundaries/log.txt",
+        "evidence/v162/qa/static-data-boundaries/static-data-boundaries.json"
+      ]
+    },
+    {
+      "id": "AUTO-21",
+      "name": "Performa laboratorium",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Anggaran proyek lulus tanpa merusak UI atau aksesibilitas; hasil lab tidak dinyatakan sebagai p75 lapangan.",
+      "suites": [
+        "performance-budgets",
+        "journey-perf-lab"
+      ],
+      "status": "PASS",
+      "observed": "performance-budgets=27, journey-perf-lab=5",
+      "evidence": [
+        "evidence/v162/qa/performance-budgets/log.txt",
+        "evidence/v162/qa/performance-budgets/performance-budgets.json",
+        "evidence/v162/qa/journey-perf-lab/log.txt",
+        "evidence/v162/qa/journey-perf-lab/journey-perf-lab.json"
+      ]
+    },
+    {
+      "id": "AUTO-22",
+      "name": "ZIP final dan binding",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Source, bank, dist, profil, pengujian, dan bukti konsisten pada arsip unduhan; tidak ada ketergantungan hash yang melingkar.",
+      "suites": [
+        "clean-build-twice",
+        "auto-release-policy"
+      ],
+      "status": "PASS",
+      "observed": "clean-build-twice=2, auto-release-policy=46, putaran ZIP verify/build/verify lulus.",
+      "evidence": [
+        "evidence/v162/qa/clean-build-twice/log.txt",
+        "evidence/v162/qa/clean-build-twice/clean-build.json",
+        "evidence/v162/qa/auto-release-policy/log.txt",
+        "evidence/v162/release/zip-roundtrip.json"
+      ]
+    },
+    {
+      "id": "AUTO-23",
+      "name": "Panduan dan status pengguna",
+      "phase": "PACKAGE",
+      "applicability": "REQUIRED",
+      "expected": "Klaim sesuai bukti; panduan penggunaan dist prabuild jelas; langkah mulai singkat dan dapat dijalankan.",
+      "suites": [
+        "package-docs"
+      ],
+      "status": "PASS",
+      "observed": "package-docs=7",
+      "evidence": [
+        "evidence/v162/qa/package-docs/log.txt",
+        "evidence/v162/qa/package-docs/package-docs.json"
+      ]
+    },
+    {
+      "id": "AUTO-24",
+      "name": "Verifikasi domain tujuan",
+      "phase": "DEPLOYMENT",
+      "applicability": "DEPLOYMENT_ONLY",
+      "expected": "LIVE_PRODUCTION_VERIFIED hanya diberikan dari bukti target aktual; jika akses belum tersedia, status PENDING_ACCESS dicatat terpisah.",
+      "suites": [],
+      "status": "NOT_RUN",
+      "observed": "URL tujuan dan bukti deployment aktual belum tersedia.",
+      "evidence": []
+    },
+    {
+      "id": "AUTO-25",
+      "name": "Build Windows native",
+      "phase": "OPTIONAL_COMPATIBILITY",
+      "applicability": "OPTIONAL_COMPATIBILITY",
+      "expected": "Gunakan hasil Windows native aktual; emulasi tidak disamakan dengan Windows asli. Jika lingkungan native belum tersedia, gunakan build kanonis Linux dan dist prabuild serta catat batas dukungan.",
+      "suites": [],
+      "status": "NOT_RUN",
+      "observed": "Tidak ada hasil build Windows native untuk versi ini.",
+      "evidence": []
+    },
+    {
+      "id": "AUTO-26",
+      "name": "p75 lapangan dan masukan pengguna",
+      "phase": "POST_RELEASE",
+      "applicability": "POST_RELEASE",
+      "expected": "Gunakan data nyata; jika data belum cukup, catat status=NOT_RUN dan reason=INSUFFICIENT_DATA. Data sintetis tidak dinamai data lapangan.",
+      "suites": [],
+      "status": "NOT_RUN",
+      "observed": "INSUFFICIENT_DATA. Belum ada pengukuran lapangan p75.",
+      "evidence": []
+    }
+  ],
+  "issues": []
+}

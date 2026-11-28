@@ -1,0 +1,2451 @@
+{
+  "suite": "semantics",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+  "created_utc": "2026-11-28T09:03:59.061Z",
+  "base": "http://127.0.0.1:34579/probe-semantics-1795856639061/school/math/",
+  "checks": [
+    {
+      "id": "actual-text-contrast/id/",
+      "status": "PASS",
+      "detail": {
+        "measured": 37,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Petualangan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/curriculum",
+      "status": "PASS",
+      "detail": {
+        "measured": 66,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/curriculum",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/curriculum",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Peta kurikulum"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "measured": 66,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Peta kurikulum"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "measured": 39,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Katalog paket"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "measured": 27,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Siapkan latihan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/history",
+      "status": "PASS",
+      "detail": {
+        "measured": 24,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/history",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/history",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Riwayat latihan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/progress",
+      "status": "PASS",
+      "detail": {
+        "measured": 33,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/progress",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/progress",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Progres belajarmu"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/start",
+      "status": "PASS",
+      "detail": {
+        "measured": 27,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/start",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/start",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Siapkan latihan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/profiles",
+      "status": "PASS",
+      "detail": {
+        "measured": 33,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/profiles",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/profiles",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Profil dan data"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/offline",
+      "status": "PASS",
+      "detail": {
+        "measured": 26,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/offline",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/offline",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Paket offline"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/settings",
+      "status": "PASS",
+      "detail": {
+        "measured": 59,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/settings",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/settings",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Pengaturan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "measured": 51,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/demo/teacher",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Monitoring kelas"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/demo/assignments",
+      "status": "PASS",
+      "detail": {
+        "measured": 31,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/demo/assignments",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/demo/assignments",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Penugasan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/demo/admin",
+      "status": "PASS",
+      "detail": {
+        "measured": 59,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/demo/admin",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/demo/admin",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Administrasi"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/id/reports",
+      "status": "PASS",
+      "detail": {
+        "measured": 15,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/id/reports",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/id/reports",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Laporan"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/",
+      "status": "PASS",
+      "detail": {
+        "measured": 37,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Adventure"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/curriculum",
+      "status": "PASS",
+      "detail": {
+        "measured": 66,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/curriculum",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/curriculum",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Curriculum map"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "measured": 66,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Curriculum map"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "measured": 39,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Pack catalogue"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "measured": 27,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Set up your practice"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/history",
+      "status": "PASS",
+      "detail": {
+        "measured": 24,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/history",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/history",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Practice history"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/progress",
+      "status": "PASS",
+      "detail": {
+        "measured": 33,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/progress",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/progress",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Your learning progress"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/start",
+      "status": "PASS",
+      "detail": {
+        "measured": 27,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/start",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/start",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Set up your practice"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/profiles",
+      "status": "PASS",
+      "detail": {
+        "measured": 33,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/profiles",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/profiles",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Profiles and data"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/offline",
+      "status": "PASS",
+      "detail": {
+        "measured": 26,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/offline",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/offline",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Offline packs"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/settings",
+      "status": "PASS",
+      "detail": {
+        "measured": 59,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/settings",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/settings",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Settings"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "measured": 51,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/demo/teacher",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Class monitoring"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/demo/assignments",
+      "status": "PASS",
+      "detail": {
+        "measured": 31,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/demo/assignments",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/demo/assignments",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Assignments"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/demo/admin",
+      "status": "PASS",
+      "detail": {
+        "measured": 59,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/demo/admin",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/demo/admin",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Administration"
+          ]
+        ]
+      }
+    },
+    {
+      "id": "actual-text-contrast/en/reports",
+      "status": "PASS",
+      "detail": {
+        "measured": 15,
+        "violations": []
+      }
+    },
+    {
+      "id": "rendered-text/en/reports",
+      "status": "PASS",
+      "detail": "DOM text serialization"
+    },
+    {
+      "id": "semantics/en/reports",
+      "status": "PASS",
+      "detail": {
+        "unnamed": [],
+        "duplicate": [],
+        "missing": [],
+        "headings": [
+          [
+            "H1",
+            "Reports"
+          ]
+        ]
+      }
+    }
+  ],
+  "runtime": {
+    "offline_release": "460c98b682110f7e",
+    "bootstrap_sha256": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "pages": [
+    {
+      "page": "",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Petualangan"
+        ],
+        [
+          "H2",
+          "Mulai petualangan berhitung"
+        ],
+        [
+          "H2",
+          "Jejakmu"
+        ],
+        [
+          "H2",
+          "Lainnya"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 37,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "curriculum",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Peta kurikulum"
+        ],
+        [
+          "H2",
+          "Pilih kelas materi"
+        ],
+        [
+          "H2",
+          "Kelas materi 1 · Level pembelajaran"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 5"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 10"
+        ],
+        [
+          "H3",
+          "Belasan tanpa melewati puluhan"
+        ],
+        [
+          "H3",
+          "Melewati batas sepuluh"
+        ],
+        [
+          "H3",
+          "Puluhan dan satuan"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "curriculum?grade=1",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Peta kurikulum"
+        ],
+        [
+          "H2",
+          "Pilih kelas materi"
+        ],
+        [
+          "H2",
+          "Kelas materi 1 · Level pembelajaran"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 5"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 10"
+        ],
+        [
+          "H3",
+          "Belasan tanpa melewati puluhan"
+        ],
+        [
+          "H3",
+          "Melewati batas sepuluh"
+        ],
+        [
+          "H3",
+          "Puluhan dan satuan"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Katalog paket"
+        ],
+        [
+          "H2",
+          "Filter paket"
+        ],
+        [
+          "H2",
+          "Penjumlahan — Pasangan bilangan sampai 5"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          null,
+          "polite",
+          "Paket 1–4 dari 4"
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 39,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Siapkan latihan"
+        ],
+        [
+          "H2",
+          "Penjumlahan — Pasangan bilangan sampai 5"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          "Latih satu soal demi satu soal dengan petunjuk dan umpan balik langsung."
+        ],
+        [
+          null,
+          "polite",
+          "10 soal · Tanpa batas waktu"
+        ],
+        [
+          null,
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "history",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Riwayat latihan"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 24,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "progress",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Progres belajarmu"
+        ],
+        [
+          "H2",
+          "Langkah berikutnya · Penjumlahan"
+        ],
+        [
+          "H2",
+          "Kelas 1 · Level 1"
+        ],
+        [
+          "H3",
+          "Penjumlahan"
+        ],
+        [
+          "H3",
+          "Pengurangan"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "start",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Siapkan latihan"
+        ],
+        [
+          "H2",
+          "Penjumlahan — Pasangan bilangan sampai 5"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          "Latih satu soal demi satu soal dengan petunjuk dan umpan balik langsung."
+        ],
+        [
+          null,
+          "polite",
+          "10 soal · Tanpa batas waktu"
+        ],
+        [
+          null,
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "profiles",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Profil dan data"
+        ],
+        [
+          "H2",
+          "Profil utama"
+        ],
+        [
+          "H2",
+          "Cadangan dan pemulihan"
+        ],
+        [
+          "H2",
+          "Hapus data profil"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          null,
+          ""
+        ],
+        [
+          null,
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "offline",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Paket offline"
+        ],
+        [
+          "H2",
+          "Paket di perangkat ini"
+        ],
+        [
+          "H2",
+          "Yang tersedia tanpa internet"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 26,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "settings",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Pengaturan"
+        ],
+        [
+          "H2",
+          "Tampilan"
+        ],
+        [
+          "H2",
+          "Kontrol latihan"
+        ],
+        [
+          "H2",
+          "Data perangkat"
+        ],
+        [
+          "H2",
+          "Aturan evaluasi lokal"
+        ],
+        [
+          "H2",
+          "Bantuan"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [
+        [
+          "input Kurangi gerakan checkbox",
+          19,
+          19
+        ],
+        [
+          "input Suara umpan balik checkbox",
+          19,
+          19
+        ],
+        [
+          "input Tampilkan tombol untuk simbol jawaban checkbox",
+          19,
+          19
+        ],
+        [
+          "input Tampilkan waktu selama latihan checkbox",
+          19,
+          19
+        ]
+      ],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Monitoring kelas"
+        ],
+        [
+          "H2",
+          "Siswa dan tindak lanjut"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 51,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "demo/assignments",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Penugasan"
+        ],
+        [
+          "H2",
+          "Buat tugas simulasi"
+        ],
+        [
+          "H2",
+          "Tugas pada perangkat ini"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          null,
+          "polite",
+          "Demo 01 · 3A — Penjumlahan — Pasangan bilangan sampai 5 — Pengenalan 001 · Penju"
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 31,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "demo/admin",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Administrasi"
+        ],
+        [
+          "H2",
+          "Pengiriman sesi simulasi"
+        ],
+        [
+          "H2",
+          "Cakupan bank soal"
+        ],
+        [
+          "H2",
+          "Rekap kelas"
+        ],
+        [
+          "H2",
+          "Jejak tindakan simulasi"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "reports",
+      "lang": "id",
+      "theme": "light",
+      "headings": [
+        [
+          "H1",
+          "Laporan"
+        ],
+        [
+          "H2",
+          "Pilih sumber laporan"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 15,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Adventure"
+        ],
+        [
+          "H2",
+          "Start your counting adventure"
+        ],
+        [
+          "H2",
+          "Your trail"
+        ],
+        [
+          "H2",
+          "More"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 37,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "curriculum",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Curriculum map"
+        ],
+        [
+          "H2",
+          "Choose a material grade"
+        ],
+        [
+          "H2",
+          "Material grade 1 · Learning levels"
+        ],
+        [
+          "H3",
+          "Number bonds to 5"
+        ],
+        [
+          "H3",
+          "Number bonds to 10"
+        ],
+        [
+          "H3",
+          "Teens without crossing ten"
+        ],
+        [
+          "H3",
+          "Bridging ten"
+        ],
+        [
+          "H3",
+          "Tens and ones"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "curriculum?grade=1",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Curriculum map"
+        ],
+        [
+          "H2",
+          "Choose a material grade"
+        ],
+        [
+          "H2",
+          "Material grade 1 · Learning levels"
+        ],
+        [
+          "H3",
+          "Number bonds to 5"
+        ],
+        [
+          "H3",
+          "Number bonds to 10"
+        ],
+        [
+          "H3",
+          "Teens without crossing ten"
+        ],
+        [
+          "H3",
+          "Bridging ten"
+        ],
+        [
+          "H3",
+          "Tens and ones"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Pack catalogue"
+        ],
+        [
+          "H2",
+          "Pack filters"
+        ],
+        [
+          "H2",
+          "Addition — Number bonds to 5"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          null,
+          "polite",
+          "Packages 1–4 of 4"
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 39,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Set up your practice"
+        ],
+        [
+          "H2",
+          "Addition — Number bonds to 5"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          "Work one question at a time with hints and immediate feedback."
+        ],
+        [
+          null,
+          "polite",
+          "10 questions · No time limit"
+        ],
+        [
+          null,
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "history",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Practice history"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 24,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "progress",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Your learning progress"
+        ],
+        [
+          "H2",
+          "Your next step · Addition"
+        ],
+        [
+          "H2",
+          "Grade 1 · Level 1"
+        ],
+        [
+          "H3",
+          "Addition"
+        ],
+        [
+          "H3",
+          "Subtraction"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "start",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Set up your practice"
+        ],
+        [
+          "H2",
+          "Addition — Number bonds to 5"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          "Work one question at a time with hints and immediate feedback."
+        ],
+        [
+          null,
+          "polite",
+          "10 questions · No time limit"
+        ],
+        [
+          null,
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "profiles",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Profiles and data"
+        ],
+        [
+          "H2",
+          "Main profile"
+        ],
+        [
+          "H2",
+          "Backup and restore"
+        ],
+        [
+          "H2",
+          "Delete profile data"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          null,
+          ""
+        ],
+        [
+          null,
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "offline",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Offline packs"
+        ],
+        [
+          "H2",
+          "Packs on this device"
+        ],
+        [
+          "H2",
+          "What works offline"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 26,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "settings",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Settings"
+        ],
+        [
+          "H2",
+          "Display"
+        ],
+        [
+          "H2",
+          "Practice controls"
+        ],
+        [
+          "H2",
+          "Device data"
+        ],
+        [
+          "H2",
+          "Local assessment policy"
+        ],
+        [
+          "H2",
+          "Help"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [
+        [
+          "input Reduce motion checkbox",
+          19,
+          19
+        ],
+        [
+          "input Feedback sounds checkbox",
+          19,
+          19
+        ],
+        [
+          "input Show on-screen answer symbol buttons checkbox",
+          19,
+          19
+        ],
+        [
+          "input Show time during practice checkbox",
+          19,
+          19
+        ]
+      ],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "demo/teacher",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Class monitoring"
+        ],
+        [
+          "H2",
+          "Learners and follow-up"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 51,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "demo/assignments",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Assignments"
+        ],
+        [
+          "H2",
+          "Create a demo assignment"
+        ],
+        [
+          "H2",
+          "Assignments on this device"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          null,
+          "polite",
+          "Demo 01 · 3A — Addition — Number bonds to 5 — Introduction 001 · Addition — Numb"
+        ],
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 31,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "demo/admin",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Administration"
+        ],
+        [
+          "H2",
+          "Demo session delivery"
+        ],
+        [
+          "H2",
+          "Question bank coverage"
+        ],
+        [
+          "H2",
+          "Class summaries"
+        ],
+        [
+          "H2",
+          "Demo action log"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    },
+    {
+      "page": "reports",
+      "lang": "en",
+      "theme": "dark",
+      "headings": [
+        [
+          "H1",
+          "Reports"
+        ],
+        [
+          "H2",
+          "Choose a report source"
+        ]
+      ],
+      "emptyNames": [],
+      "duplicateIds": [],
+      "skip": true,
+      "viewport": "width=device-width,initial-scale=1",
+      "missingLabelRefs": [],
+      "landmarks": [
+        "main",
+        "header",
+        "footer"
+      ],
+      "tiny": [],
+      "live": [
+        [
+          "status",
+          "polite",
+          ""
+        ]
+      ],
+      "contrast": {
+        "measured": 15,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "leaked": false
+    }
+  ],
+  "runtime_after": {
+    "offline_release": "460c98b682110f7e",
+    "bootstrap_sha256": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "finished_utc": "2026-11-28T09:04:08.221Z"
+}

@@ -1,0 +1,26 @@
+{
+  "offline_release": "460c98b682110f7e",
+  "file": "fixture-word-pecahan.docx",
+  "sha256": "23337195a5fc59438836e1209cb04a50ac5bcbe20e1346a0a2e3a59a7ddbdb26",
+  "fixture_source": "tests/v12/feedback-and-export.mjs, engine and complete report writers loaded from final dist",
+  "observed_omml_fractions": [
+    [
+      "11",
+      "12"
+    ],
+    [
+      "10",
+      "12"
+    ],
+    [
+      "7",
+      "4"
+    ],
+    [
+      "21",
+      "12"
+    ]
+  ],
+  "required_in_word": "Open this DOCX in the target Microsoft Word installation. Check the equation 11/12 + 10/12, answer 7/4, first response 99, revised response 21/12. Record actual Word version, OS and visual results.",
+  "target_word_render": "BLOCKED_EXTERNAL"
+}

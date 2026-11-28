@@ -1,0 +1,351 @@
+{
+  "schema": "kalibataku-external-receipt/1",
+  "receipt_id": "UX-09-",
+  "criterion": "UX-09",
+  "phase": "WAJIB",
+  "template_only": true,
+  "test_only": false,
+  "action": "record",
+  "result": null,
+  "previous": [],
+  "change_reason": "",
+  "test_event_id": "",
+  "build": {
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "offline_release": "a2f40449c4738fe6",
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "protocol_reference": "",
+  "started_at_utc": "",
+  "finished_at_utc": "",
+  "operator": {
+    "actor_id": "",
+    "role": "device-operator",
+    "statement": "",
+    "at_utc": ""
+  },
+  "reviewer": {
+    "actor_id": "",
+    "role": "reviewer",
+    "statement": "",
+    "at_utc": "",
+    "decision": null
+  },
+  "scenarios": [
+    {
+      "case_id": "android-id-portrait",
+      "environment": {
+        "mode": "physical",
+        "platform": "Android",
+        "app": "Chrome",
+        "model": "",
+        "os_version": "",
+        "app_version": "",
+        "keyboard": "",
+        "locale": "id",
+        "orientation": "portrait"
+      },
+      "checks": {
+        "keyboard_open": "",
+        "fraction": "",
+        "decimal": "",
+        "input_visible": "",
+        "oke_visible": "",
+        "feedback": "",
+        "next_visible": "",
+        "post_next_expression_visible": "",
+        "post_next_input_visible": "",
+        "post_next_input_ready": "",
+        "post_next_action_reachable": "",
+        "rotation_safe_area": "",
+        "signed_fraction_and_minus": "",
+        "draft": "",
+        "double_tap_final": ""
+      },
+      "measurements": {
+        "final_commits": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "device-recording"
+      ]
+    },
+    {
+      "case_id": "android-id-landscape",
+      "environment": {
+        "mode": "physical",
+        "platform": "Android",
+        "app": "Chrome",
+        "model": "",
+        "os_version": "",
+        "app_version": "",
+        "keyboard": "",
+        "locale": "id",
+        "orientation": "landscape"
+      },
+      "checks": {
+        "keyboard_open": "",
+        "fraction": "",
+        "decimal": "",
+        "input_visible": "",
+        "oke_visible": "",
+        "feedback": "",
+        "next_visible": "",
+        "post_next_expression_visible": "",
+        "post_next_input_visible": "",
+        "post_next_input_ready": "",
+        "post_next_action_reachable": "",
+        "rotation_safe_area": "",
+        "signed_fraction_and_minus": "",
+        "draft": "",
+        "double_tap_final": ""
+      },
+      "measurements": {
+        "final_commits": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "device-recording"
+      ]
+    },
+    {
+      "case_id": "android-en-portrait",
+      "environment": {
+        "mode": "physical",
+        "platform": "Android",
+        "app": "Chrome",
+        "model": "",
+        "os_version": "",
+        "app_version": "",
+        "keyboard": "",
+        "locale": "en",
+        "orientation": "portrait"
+      },
+      "checks": {
+        "keyboard_open": "",
+        "fraction": "",
+        "decimal": "",
+        "input_visible": "",
+        "oke_visible": "",
+        "feedback": "",
+        "next_visible": "",
+        "post_next_expression_visible": "",
+        "post_next_input_visible": "",
+        "post_next_input_ready": "",
+        "post_next_action_reachable": "",
+        "rotation_safe_area": "",
+        "signed_fraction_and_minus": "",
+        "draft": "",
+        "double_tap_final": ""
+      },
+      "measurements": {
+        "final_commits": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "device-recording"
+      ]
+    },
+    {
+      "case_id": "android-en-landscape",
+      "environment": {
+        "mode": "physical",
+        "platform": "Android",
+        "app": "Chrome",
+        "model": "",
+        "os_version": "",
+        "app_version": "",
+        "keyboard": "",
+        "locale": "en",
+        "orientation": "landscape"
+      },
+      "checks": {
+        "keyboard_open": "",
+        "fraction": "",
+        "decimal": "",
+        "input_visible": "",
+        "oke_visible": "",
+        "feedback": "",
+        "next_visible": "",
+        "post_next_expression_visible": "",
+        "post_next_input_visible": "",
+        "post_next_input_ready": "",
+        "post_next_action_reachable": "",
+        "rotation_safe_area": "",
+        "signed_fraction_and_minus": "",
+        "draft": "",
+        "double_tap_final": ""
+      },
+      "measurements": {
+        "final_commits": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "device-recording"
+      ]
+    },
+    {
+      "case_id": "ios-id-portrait",
+      "environment": {
+        "mode": "physical",
+        "platform": "iOS",
+        "app": "Safari",
+        "model": "",
+        "os_version": "",
+        "app_version": "",
+        "keyboard": "",
+        "locale": "id",
+        "orientation": "portrait"
+      },
+      "checks": {
+        "keyboard_open": "",
+        "fraction": "",
+        "decimal": "",
+        "input_visible": "",
+        "oke_visible": "",
+        "feedback": "",
+        "next_visible": "",
+        "post_next_expression_visible": "",
+        "post_next_input_visible": "",
+        "post_next_input_ready": "",
+        "post_next_action_reachable": "",
+        "rotation_safe_area": "",
+        "signed_fraction_and_minus": "",
+        "draft": "",
+        "double_tap_final": ""
+      },
+      "measurements": {
+        "final_commits": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "device-recording"
+      ]
+    },
+    {
+      "case_id": "ios-id-landscape",
+      "environment": {
+        "mode": "physical",
+        "platform": "iOS",
+        "app": "Safari",
+        "model": "",
+        "os_version": "",
+        "app_version": "",
+        "keyboard": "",
+        "locale": "id",
+        "orientation": "landscape"
+      },
+      "checks": {
+        "keyboard_open": "",
+        "fraction": "",
+        "decimal": "",
+        "input_visible": "",
+        "oke_visible": "",
+        "feedback": "",
+        "next_visible": "",
+        "post_next_expression_visible": "",
+        "post_next_input_visible": "",
+        "post_next_input_ready": "",
+        "post_next_action_reachable": "",
+        "rotation_safe_area": "",
+        "signed_fraction_and_minus": "",
+        "draft": "",
+        "double_tap_final": ""
+      },
+      "measurements": {
+        "final_commits": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "device-recording"
+      ]
+    },
+    {
+      "case_id": "ios-en-portrait",
+      "environment": {
+        "mode": "physical",
+        "platform": "iOS",
+        "app": "Safari",
+        "model": "",
+        "os_version": "",
+        "app_version": "",
+        "keyboard": "",
+        "locale": "en",
+        "orientation": "portrait"
+      },
+      "checks": {
+        "keyboard_open": "",
+        "fraction": "",
+        "decimal": "",
+        "input_visible": "",
+        "oke_visible": "",
+        "feedback": "",
+        "next_visible": "",
+        "post_next_expression_visible": "",
+        "post_next_input_visible": "",
+        "post_next_input_ready": "",
+        "post_next_action_reachable": "",
+        "rotation_safe_area": "",
+        "signed_fraction_and_minus": "",
+        "draft": "",
+        "double_tap_final": ""
+      },
+      "measurements": {
+        "final_commits": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "device-recording"
+      ]
+    },
+    {
+      "case_id": "ios-en-landscape",
+      "environment": {
+        "mode": "physical",
+        "platform": "iOS",
+        "app": "Safari",
+        "model": "",
+        "os_version": "",
+        "app_version": "",
+        "keyboard": "",
+        "locale": "en",
+        "orientation": "landscape"
+      },
+      "checks": {
+        "keyboard_open": "",
+        "fraction": "",
+        "decimal": "",
+        "input_visible": "",
+        "oke_visible": "",
+        "feedback": "",
+        "next_visible": "",
+        "post_next_expression_visible": "",
+        "post_next_input_visible": "",
+        "post_next_input_ready": "",
+        "post_next_action_reachable": "",
+        "rotation_safe_area": "",
+        "signed_fraction_and_minus": "",
+        "draft": "",
+        "double_tap_final": ""
+      },
+      "measurements": {
+        "final_commits": null
+      },
+      "artifact_ids": [],
+      "result": null,
+      "required_artifact_kinds": [
+        "device-recording"
+      ]
+    }
+  ],
+  "artifacts": []
+}

@@ -1,0 +1,8 @@
+node_modules/
+__pycache__/
+*.pyc
+.build-*/
+.playwright/
+.DS_Store
+.venv/
+.env*

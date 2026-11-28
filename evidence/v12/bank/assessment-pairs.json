@@ -1,0 +1,2812 @@
+[
+  {
+    "competency_id": "arithmetic.addition.g01.l01",
+    "form_a": "MM-G01-L01-ADD-P003",
+    "form_b": "MM-G01-L01-ADD-P004",
+    "count_each": 10,
+    "overlap": 8,
+    "unique_across_forms": 12,
+    "pool_size": 12,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g01.l02",
+    "form_a": "MM-G01-L02-ADD-P003",
+    "form_b": "MM-G01-L02-ADD-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 36,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g01.l03",
+    "form_a": "MM-G01-L03-ADD-P003",
+    "form_b": "MM-G01-L03-ADD-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 55,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g01.l04",
+    "form_a": "MM-G01-L04-ADD-P003",
+    "form_b": "MM-G01-L04-ADD-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 25,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g01.l05",
+    "form_a": "MM-G01-L05-ADD-P003",
+    "form_b": "MM-G01-L05-ADD-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 115,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g02.l01",
+    "form_a": "MM-G02-L01-ADD-P007",
+    "form_b": "MM-G02-L01-ADD-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g02.l02",
+    "form_a": "MM-G02-L02-ADD-P007",
+    "form_b": "MM-G02-L02-ADD-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g02.l03",
+    "form_a": "MM-G02-L03-ADD-P007",
+    "form_b": "MM-G02-L03-ADD-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g02.l04",
+    "form_a": "MM-G02-L04-ADD-P007",
+    "form_b": "MM-G02-L04-ADD-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g02.l05",
+    "form_a": "MM-G02-L05-ADD-P007",
+    "form_b": "MM-G02-L05-ADD-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g03.l01",
+    "form_a": "MM-G03-L01-ADD-P011",
+    "form_b": "MM-G03-L01-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g03.l02",
+    "form_a": "MM-G03-L02-ADD-P011",
+    "form_b": "MM-G03-L02-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g03.l03",
+    "form_a": "MM-G03-L03-ADD-P011",
+    "form_b": "MM-G03-L03-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g03.l04",
+    "form_a": "MM-G03-L04-ADD-P011",
+    "form_b": "MM-G03-L04-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g03.l05",
+    "form_a": "MM-G03-L05-ADD-P011",
+    "form_b": "MM-G03-L05-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g04.l01",
+    "form_a": "MM-G04-L01-ADD-P011",
+    "form_b": "MM-G04-L01-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g04.l02",
+    "form_a": "MM-G04-L02-ADD-P011",
+    "form_b": "MM-G04-L02-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g04.l03",
+    "form_a": "MM-G04-L03-ADD-P011",
+    "form_b": "MM-G04-L03-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g04.l04",
+    "form_a": "MM-G04-L04-ADD-P011",
+    "form_b": "MM-G04-L04-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g04.l05",
+    "form_a": "MM-G04-L05-ADD-P011",
+    "form_b": "MM-G04-L05-ADD-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g05.l01",
+    "form_a": "MM-G05-L01-ADD-P015",
+    "form_b": "MM-G05-L01-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g05.l02",
+    "form_a": "MM-G05-L02-ADD-P015",
+    "form_b": "MM-G05-L02-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g05.l03",
+    "form_a": "MM-G05-L03-ADD-P015",
+    "form_b": "MM-G05-L03-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 181,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g05.l04",
+    "form_a": "MM-G05-L04-ADD-P015",
+    "form_b": "MM-G05-L04-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 181,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g05.l05",
+    "form_a": "MM-G05-L05-ADD-P015",
+    "form_b": "MM-G05-L05-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g06.l01",
+    "form_a": "MM-G06-L01-ADD-P015",
+    "form_b": "MM-G06-L01-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g06.l02",
+    "form_a": "MM-G06-L02-ADD-P015",
+    "form_b": "MM-G06-L02-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g06.l03",
+    "form_a": "MM-G06-L03-ADD-P015",
+    "form_b": "MM-G06-L03-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g06.l04",
+    "form_a": "MM-G06-L04-ADD-P015",
+    "form_b": "MM-G06-L04-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g06.l05",
+    "form_a": "MM-G06-L05-ADD-P015",
+    "form_b": "MM-G06-L05-ADD-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 15
+  },
+  {
+    "competency_id": "arithmetic.addition.g07.l01",
+    "form_a": "MM-G07-L01-ADD-P019",
+    "form_b": "MM-G07-L01-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g07.l02",
+    "form_a": "MM-G07-L02-ADD-P019",
+    "form_b": "MM-G07-L02-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g07.l03",
+    "form_a": "MM-G07-L03-ADD-P019",
+    "form_b": "MM-G07-L03-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g07.l04",
+    "form_a": "MM-G07-L04-ADD-P019",
+    "form_b": "MM-G07-L04-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 19
+  },
+  {
+    "competency_id": "arithmetic.addition.g07.l05",
+    "form_a": "MM-G07-L05-ADD-P019",
+    "form_b": "MM-G07-L05-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 24
+  },
+  {
+    "competency_id": "arithmetic.addition.g08.l01",
+    "form_a": "MM-G08-L01-ADD-P019",
+    "form_b": "MM-G08-L01-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g08.l02",
+    "form_a": "MM-G08-L02-ADD-P019",
+    "form_b": "MM-G08-L02-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g08.l03",
+    "form_a": "MM-G08-L03-ADD-P019",
+    "form_b": "MM-G08-L03-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g08.l04",
+    "form_a": "MM-G08-L04-ADD-P019",
+    "form_b": "MM-G08-L04-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g08.l05",
+    "form_a": "MM-G08-L05-ADD-P019",
+    "form_b": "MM-G08-L05-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 26
+  },
+  {
+    "competency_id": "arithmetic.addition.g09.l01",
+    "form_a": "MM-G09-L01-ADD-P019",
+    "form_b": "MM-G09-L01-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g09.l02",
+    "form_a": "MM-G09-L02-ADD-P019",
+    "form_b": "MM-G09-L02-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g09.l03",
+    "form_a": "MM-G09-L03-ADD-P019",
+    "form_b": "MM-G09-L03-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g09.l04",
+    "form_a": "MM-G09-L04-ADD-P019",
+    "form_b": "MM-G09-L04-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g09.l05",
+    "form_a": "MM-G09-L05-ADD-P019",
+    "form_b": "MM-G09-L05-ADD-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 11
+  },
+  {
+    "competency_id": "arithmetic.addition.g10.l01",
+    "form_a": "MM-G10-L01-ADD-P019",
+    "form_b": "MM-G10-L01-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g10.l02",
+    "form_a": "MM-G10-L02-ADD-P019",
+    "form_b": "MM-G10-L02-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g10.l03",
+    "form_a": "MM-G10-L03-ADD-P019",
+    "form_b": "MM-G10-L03-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g10.l04",
+    "form_a": "MM-G10-L04-ADD-P019",
+    "form_b": "MM-G10-L04-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g10.l05",
+    "form_a": "MM-G10-L05-ADD-P019",
+    "form_b": "MM-G10-L05-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 13
+  },
+  {
+    "competency_id": "arithmetic.addition.g11.l01",
+    "form_a": "MM-G11-L01-ADD-P019",
+    "form_b": "MM-G11-L01-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.addition.g11.l02",
+    "form_a": "MM-G11-L02-ADD-P019",
+    "form_b": "MM-G11-L02-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g11.l03",
+    "form_a": "MM-G11-L03-ADD-P019",
+    "form_b": "MM-G11-L03-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g11.l04",
+    "form_a": "MM-G11-L04-ADD-P019",
+    "form_b": "MM-G11-L04-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g11.l05",
+    "form_a": "MM-G11-L05-ADD-P019",
+    "form_b": "MM-G11-L05-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 12
+  },
+  {
+    "competency_id": "arithmetic.addition.g12.l01",
+    "form_a": "MM-G12-L01-ADD-P019",
+    "form_b": "MM-G12-L01-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.addition.g12.l02",
+    "form_a": "MM-G12-L02-ADD-P019",
+    "form_b": "MM-G12-L02-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.addition.g12.l03",
+    "form_a": "MM-G12-L03-ADD-P019",
+    "form_b": "MM-G12-L03-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.addition.g12.l04",
+    "form_a": "MM-G12-L04-ADD-P019",
+    "form_b": "MM-G12-L04-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.addition.g12.l05",
+    "form_a": "MM-G12-L05-ADD-P019",
+    "form_b": "MM-G12-L05-ADD-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 13
+  },
+  {
+    "competency_id": "arithmetic.division.g02.l04",
+    "form_a": "MM-G02-L04-DIV-P007",
+    "form_b": "MM-G02-L04-DIV-P008",
+    "count_each": 20,
+    "overlap": 1,
+    "unique_across_forms": 39,
+    "pool_size": 39,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g02.l05",
+    "form_a": "MM-G02-L05-DIV-P007",
+    "form_b": "MM-G02-L05-DIV-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 55,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g03.l01",
+    "form_a": "MM-G03-L01-DIV-P011",
+    "form_b": "MM-G03-L01-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 110,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g03.l02",
+    "form_a": "MM-G03-L02-DIV-P011",
+    "form_b": "MM-G03-L02-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 232,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g03.l03",
+    "form_a": "MM-G03-L03-DIV-P011",
+    "form_b": "MM-G03-L03-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 81,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g03.l04",
+    "form_a": "MM-G03-L04-DIV-P011",
+    "form_b": "MM-G03-L04-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 569,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g03.l05",
+    "form_a": "MM-G03-L05-DIV-P011",
+    "form_b": "MM-G03-L05-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 675,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g04.l01",
+    "form_a": "MM-G04-L01-DIV-P011",
+    "form_b": "MM-G04-L01-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 1998,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g04.l02",
+    "form_a": "MM-G04-L02-DIV-P011",
+    "form_b": "MM-G04-L02-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 360,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g04.l03",
+    "form_a": "MM-G04-L03-DIV-P011",
+    "form_b": "MM-G04-L03-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 400,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g04.l04",
+    "form_a": "MM-G04-L04-DIV-P011",
+    "form_b": "MM-G04-L04-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 270,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g04.l05",
+    "form_a": "MM-G04-L05-DIV-P011",
+    "form_b": "MM-G04-L05-DIV-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 2159,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g05.l01",
+    "form_a": "MM-G05-L01-DIV-P015",
+    "form_b": "MM-G05-L01-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.division.g05.l02",
+    "form_a": "MM-G05-L02-DIV-P015",
+    "form_b": "MM-G05-L02-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.division.g05.l03",
+    "form_a": "MM-G05-L03-DIV-P015",
+    "form_b": "MM-G05-L03-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 192,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g05.l04",
+    "form_a": "MM-G05-L04-DIV-P015",
+    "form_b": "MM-G05-L04-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 1219,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g05.l05",
+    "form_a": "MM-G05-L05-DIV-P015",
+    "form_b": "MM-G05-L05-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 1272,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.division.g06.l01",
+    "form_a": "MM-G06-L01-DIV-P015",
+    "form_b": "MM-G06-L01-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g06.l02",
+    "form_a": "MM-G06-L02-DIV-P015",
+    "form_b": "MM-G06-L02-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.division.g06.l03",
+    "form_a": "MM-G06-L03-DIV-P015",
+    "form_b": "MM-G06-L03-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 17600,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.division.g06.l04",
+    "form_a": "MM-G06-L04-DIV-P015",
+    "form_b": "MM-G06-L04-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g06.l05",
+    "form_a": "MM-G06-L05-DIV-P015",
+    "form_b": "MM-G06-L05-DIV-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 15
+  },
+  {
+    "competency_id": "arithmetic.division.g07.l01",
+    "form_a": "MM-G07-L01-DIV-P019",
+    "form_b": "MM-G07-L01-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 310,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g07.l02",
+    "form_a": "MM-G07-L02-DIV-P019",
+    "form_b": "MM-G07-L02-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 894,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g07.l03",
+    "form_a": "MM-G07-L03-DIV-P019",
+    "form_b": "MM-G07-L03-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 894,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g07.l04",
+    "form_a": "MM-G07-L04-DIV-P019",
+    "form_b": "MM-G07-L04-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 9
+  },
+  {
+    "competency_id": "arithmetic.division.g07.l05",
+    "form_a": "MM-G07-L05-DIV-P019",
+    "form_b": "MM-G07-L05-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 22
+  },
+  {
+    "competency_id": "arithmetic.division.g08.l01",
+    "form_a": "MM-G08-L01-DIV-P019",
+    "form_b": "MM-G08-L01-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g08.l02",
+    "form_a": "MM-G08-L02-DIV-P019",
+    "form_b": "MM-G08-L02-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 9
+  },
+  {
+    "competency_id": "arithmetic.division.g08.l03",
+    "form_a": "MM-G08-L03-DIV-P019",
+    "form_b": "MM-G08-L03-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g08.l04",
+    "form_a": "MM-G08-L04-DIV-P019",
+    "form_b": "MM-G08-L04-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 9
+  },
+  {
+    "competency_id": "arithmetic.division.g08.l05",
+    "form_a": "MM-G08-L05-DIV-P019",
+    "form_b": "MM-G08-L05-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 18
+  },
+  {
+    "competency_id": "arithmetic.division.g09.l01",
+    "form_a": "MM-G09-L01-DIV-P019",
+    "form_b": "MM-G09-L01-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g09.l02",
+    "form_a": "MM-G09-L02-DIV-P019",
+    "form_b": "MM-G09-L02-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g09.l03",
+    "form_a": "MM-G09-L03-DIV-P019",
+    "form_b": "MM-G09-L03-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g09.l04",
+    "form_a": "MM-G09-L04-DIV-P019",
+    "form_b": "MM-G09-L04-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.division.g09.l05",
+    "form_a": "MM-G09-L05-DIV-P019",
+    "form_b": "MM-G09-L05-DIV-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 26
+  },
+  {
+    "competency_id": "arithmetic.division.g10.l01",
+    "form_a": "MM-G10-L01-DIV-P019",
+    "form_b": "MM-G10-L01-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g10.l02",
+    "form_a": "MM-G10-L02-DIV-P019",
+    "form_b": "MM-G10-L02-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g10.l03",
+    "form_a": "MM-G10-L03-DIV-P019",
+    "form_b": "MM-G10-L03-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g10.l04",
+    "form_a": "MM-G10-L04-DIV-P019",
+    "form_b": "MM-G10-L04-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.division.g10.l05",
+    "form_a": "MM-G10-L05-DIV-P019",
+    "form_b": "MM-G10-L05-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 27
+  },
+  {
+    "competency_id": "arithmetic.division.g11.l01",
+    "form_a": "MM-G11-L01-DIV-P019",
+    "form_b": "MM-G11-L01-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.division.g11.l02",
+    "form_a": "MM-G11-L02-DIV-P019",
+    "form_b": "MM-G11-L02-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g11.l03",
+    "form_a": "MM-G11-L03-DIV-P019",
+    "form_b": "MM-G11-L03-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g11.l04",
+    "form_a": "MM-G11-L04-DIV-P019",
+    "form_b": "MM-G11-L04-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 11
+  },
+  {
+    "competency_id": "arithmetic.division.g11.l05",
+    "form_a": "MM-G11-L05-DIV-P019",
+    "form_b": "MM-G11-L05-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 27
+  },
+  {
+    "competency_id": "arithmetic.division.g12.l01",
+    "form_a": "MM-G12-L01-DIV-P019",
+    "form_b": "MM-G12-L01-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g12.l02",
+    "form_a": "MM-G12-L02-DIV-P019",
+    "form_b": "MM-G12-L02-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 7
+  },
+  {
+    "competency_id": "arithmetic.division.g12.l03",
+    "form_a": "MM-G12-L03-DIV-P019",
+    "form_b": "MM-G12-L03-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.division.g12.l04",
+    "form_a": "MM-G12-L04-DIV-P019",
+    "form_b": "MM-G12-L04-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 27
+  },
+  {
+    "competency_id": "arithmetic.division.g12.l05",
+    "form_a": "MM-G12-L05-DIV-P019",
+    "form_b": "MM-G12-L05-DIV-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 27
+  },
+  {
+    "competency_id": "arithmetic.mixed.g01.l05",
+    "form_a": "MM-G01-L05-MIX-P003",
+    "form_b": "MM-G01-L05-MIX-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 405,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.mixed.g02.l01",
+    "form_a": "MM-G02-L01-MIX-P007",
+    "form_b": "MM-G02-L01-MIX-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.mixed.g02.l02",
+    "form_a": "MM-G02-L02-MIX-P007",
+    "form_b": "MM-G02-L02-MIX-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g02.l03",
+    "form_a": "MM-G02-L03-MIX-P007",
+    "form_b": "MM-G02-L03-MIX-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g02.l04",
+    "form_a": "MM-G02-L04-MIX-P007",
+    "form_b": "MM-G02-L04-MIX-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g02.l05",
+    "form_a": "MM-G02-L05-MIX-P007",
+    "form_b": "MM-G02-L05-MIX-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.mixed.g03.l01",
+    "form_a": "MM-G03-L01-MIX-P011",
+    "form_b": "MM-G03-L01-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g03.l02",
+    "form_a": "MM-G03-L02-MIX-P011",
+    "form_b": "MM-G03-L02-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.mixed.g03.l03",
+    "form_a": "MM-G03-L03-MIX-P011",
+    "form_b": "MM-G03-L03-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g03.l04",
+    "form_a": "MM-G03-L04-MIX-P011",
+    "form_b": "MM-G03-L04-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g03.l05",
+    "form_a": "MM-G03-L05-MIX-P011",
+    "form_b": "MM-G03-L05-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g04.l01",
+    "form_a": "MM-G04-L01-MIX-P011",
+    "form_b": "MM-G04-L01-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g04.l02",
+    "form_a": "MM-G04-L02-MIX-P011",
+    "form_b": "MM-G04-L02-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g04.l03",
+    "form_a": "MM-G04-L03-MIX-P011",
+    "form_b": "MM-G04-L03-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g04.l04",
+    "form_a": "MM-G04-L04-MIX-P011",
+    "form_b": "MM-G04-L04-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g04.l05",
+    "form_a": "MM-G04-L05-MIX-P011",
+    "form_b": "MM-G04-L05-MIX-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 7
+  },
+  {
+    "competency_id": "arithmetic.mixed.g05.l01",
+    "form_a": "MM-G05-L01-MIX-P015",
+    "form_b": "MM-G05-L01-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.mixed.g05.l02",
+    "form_a": "MM-G05-L02-MIX-P015",
+    "form_b": "MM-G05-L02-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 7
+  },
+  {
+    "competency_id": "arithmetic.mixed.g05.l03",
+    "form_a": "MM-G05-L03-MIX-P015",
+    "form_b": "MM-G05-L03-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g05.l04",
+    "form_a": "MM-G05-L04-MIX-P015",
+    "form_b": "MM-G05-L04-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g05.l05",
+    "form_a": "MM-G05-L05-MIX-P015",
+    "form_b": "MM-G05-L05-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g06.l01",
+    "form_a": "MM-G06-L01-MIX-P015",
+    "form_b": "MM-G06-L01-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g06.l02",
+    "form_a": "MM-G06-L02-MIX-P015",
+    "form_b": "MM-G06-L02-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 11
+  },
+  {
+    "competency_id": "arithmetic.mixed.g06.l03",
+    "form_a": "MM-G06-L03-MIX-P015",
+    "form_b": "MM-G06-L03-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g06.l04",
+    "form_a": "MM-G06-L04-MIX-P015",
+    "form_b": "MM-G06-L04-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g06.l05",
+    "form_a": "MM-G06-L05-MIX-P015",
+    "form_b": "MM-G06-L05-MIX-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g07.l01",
+    "form_a": "MM-G07-L01-MIX-P019",
+    "form_b": "MM-G07-L01-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g07.l02",
+    "form_a": "MM-G07-L02-MIX-P019",
+    "form_b": "MM-G07-L02-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g07.l03",
+    "form_a": "MM-G07-L03-MIX-P019",
+    "form_b": "MM-G07-L03-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g07.l04",
+    "form_a": "MM-G07-L04-MIX-P019",
+    "form_b": "MM-G07-L04-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.mixed.g07.l05",
+    "form_a": "MM-G07-L05-MIX-P019",
+    "form_b": "MM-G07-L05-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g08.l01",
+    "form_a": "MM-G08-L01-MIX-P019",
+    "form_b": "MM-G08-L01-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g08.l02",
+    "form_a": "MM-G08-L02-MIX-P019",
+    "form_b": "MM-G08-L02-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.mixed.g08.l03",
+    "form_a": "MM-G08-L03-MIX-P019",
+    "form_b": "MM-G08-L03-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g08.l04",
+    "form_a": "MM-G08-L04-MIX-P019",
+    "form_b": "MM-G08-L04-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.mixed.g08.l05",
+    "form_a": "MM-G08-L05-MIX-P019",
+    "form_b": "MM-G08-L05-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g09.l01",
+    "form_a": "MM-G09-L01-MIX-P019",
+    "form_b": "MM-G09-L01-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g09.l02",
+    "form_a": "MM-G09-L02-MIX-P019",
+    "form_b": "MM-G09-L02-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g09.l03",
+    "form_a": "MM-G09-L03-MIX-P019",
+    "form_b": "MM-G09-L03-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g09.l04",
+    "form_a": "MM-G09-L04-MIX-P019",
+    "form_b": "MM-G09-L04-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 9
+  },
+  {
+    "competency_id": "arithmetic.mixed.g09.l05",
+    "form_a": "MM-G09-L05-MIX-P019",
+    "form_b": "MM-G09-L05-MIX-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g10.l01",
+    "form_a": "MM-G10-L01-MIX-P019",
+    "form_b": "MM-G10-L01-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g10.l02",
+    "form_a": "MM-G10-L02-MIX-P019",
+    "form_b": "MM-G10-L02-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g10.l03",
+    "form_a": "MM-G10-L03-MIX-P019",
+    "form_b": "MM-G10-L03-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g10.l04",
+    "form_a": "MM-G10-L04-MIX-P019",
+    "form_b": "MM-G10-L04-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 17
+  },
+  {
+    "competency_id": "arithmetic.mixed.g10.l05",
+    "form_a": "MM-G10-L05-MIX-P019",
+    "form_b": "MM-G10-L05-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g11.l01",
+    "form_a": "MM-G11-L01-MIX-P019",
+    "form_b": "MM-G11-L01-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.mixed.g11.l02",
+    "form_a": "MM-G11-L02-MIX-P019",
+    "form_b": "MM-G11-L02-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 9
+  },
+  {
+    "competency_id": "arithmetic.mixed.g11.l03",
+    "form_a": "MM-G11-L03-MIX-P019",
+    "form_b": "MM-G11-L03-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g11.l04",
+    "form_a": "MM-G11-L04-MIX-P019",
+    "form_b": "MM-G11-L04-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.mixed.g11.l05",
+    "form_a": "MM-G11-L05-MIX-P019",
+    "form_b": "MM-G11-L05-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g12.l01",
+    "form_a": "MM-G12-L01-MIX-P019",
+    "form_b": "MM-G12-L01-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 9
+  },
+  {
+    "competency_id": "arithmetic.mixed.g12.l02",
+    "form_a": "MM-G12-L02-MIX-P019",
+    "form_b": "MM-G12-L02-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.mixed.g12.l03",
+    "form_a": "MM-G12-L03-MIX-P019",
+    "form_b": "MM-G12-L03-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.mixed.g12.l04",
+    "form_a": "MM-G12-L04-MIX-P019",
+    "form_b": "MM-G12-L04-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.mixed.g12.l05",
+    "form_a": "MM-G12-L05-MIX-P019",
+    "form_b": "MM-G12-L05-MIX-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g02.l03",
+    "form_a": "MM-G02-L03-MUL-P007",
+    "form_b": "MM-G02-L03-MUL-P008",
+    "count_each": 20,
+    "overlap": 10,
+    "unique_across_forms": 30,
+    "pool_size": 30,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g02.l04",
+    "form_a": "MM-G02-L04-MUL-P007",
+    "form_b": "MM-G02-L04-MUL-P008",
+    "count_each": 20,
+    "overlap": 4,
+    "unique_across_forms": 36,
+    "pool_size": 36,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g02.l05",
+    "form_a": "MM-G02-L05-MUL-P007",
+    "form_b": "MM-G02-L05-MUL-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 45,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g03.l01",
+    "form_a": "MM-G03-L01-MUL-P011",
+    "form_b": "MM-G03-L01-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 66,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g03.l02",
+    "form_a": "MM-G03-L02-MUL-P011",
+    "form_b": "MM-G03-L02-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 224,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g03.l03",
+    "form_a": "MM-G03-L03-MUL-P011",
+    "form_b": "MM-G03-L03-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 99,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g03.l04",
+    "form_a": "MM-G03-L04-MUL-P011",
+    "form_b": "MM-G03-L04-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 569,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g03.l05",
+    "form_a": "MM-G03-L05-MUL-P011",
+    "form_b": "MM-G03-L05-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 672,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g04.l01",
+    "form_a": "MM-G04-L01-MUL-P011",
+    "form_b": "MM-G04-L01-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 1979,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g04.l02",
+    "form_a": "MM-G04-L02-MUL-P011",
+    "form_b": "MM-G04-L02-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 354,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g04.l03",
+    "form_a": "MM-G04-L03-MUL-P011",
+    "form_b": "MM-G04-L03-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 398,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g04.l04",
+    "form_a": "MM-G04-L04-MUL-P011",
+    "form_b": "MM-G04-L04-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 269,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g04.l05",
+    "form_a": "MM-G04-L05-MUL-P011",
+    "form_b": "MM-G04-L05-MUL-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 2123,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g05.l01",
+    "form_a": "MM-G05-L01-MUL-P015",
+    "form_b": "MM-G05-L01-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g05.l02",
+    "form_a": "MM-G05-L02-MUL-P015",
+    "form_b": "MM-G05-L02-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g05.l03",
+    "form_a": "MM-G05-L03-MUL-P015",
+    "form_b": "MM-G05-L03-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 216,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g05.l04",
+    "form_a": "MM-G05-L04-MUL-P015",
+    "form_b": "MM-G05-L04-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 433,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g05.l05",
+    "form_a": "MM-G05-L05-MUL-P015",
+    "form_b": "MM-G05-L05-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 640,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g06.l01",
+    "form_a": "MM-G06-L01-MUL-P015",
+    "form_b": "MM-G06-L01-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g06.l02",
+    "form_a": "MM-G06-L02-MUL-P015",
+    "form_b": "MM-G06-L02-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g06.l03",
+    "form_a": "MM-G06-L03-MUL-P015",
+    "form_b": "MM-G06-L03-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 3600,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g06.l04",
+    "form_a": "MM-G06-L04-MUL-P015",
+    "form_b": "MM-G06-L04-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g06.l05",
+    "form_a": "MM-G06-L05-MUL-P015",
+    "form_b": "MM-G06-L05-MUL-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 13
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g07.l01",
+    "form_a": "MM-G07-L01-MUL-P019",
+    "form_b": "MM-G07-L01-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 165,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g07.l02",
+    "form_a": "MM-G07-L02-MUL-P019",
+    "form_b": "MM-G07-L02-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 882,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g07.l03",
+    "form_a": "MM-G07-L03-MUL-P019",
+    "form_b": "MM-G07-L03-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 882,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g07.l04",
+    "form_a": "MM-G07-L04-MUL-P019",
+    "form_b": "MM-G07-L04-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g07.l05",
+    "form_a": "MM-G07-L05-MUL-P019",
+    "form_b": "MM-G07-L05-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 16
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g08.l01",
+    "form_a": "MM-G08-L01-MUL-P019",
+    "form_b": "MM-G08-L01-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g08.l02",
+    "form_a": "MM-G08-L02-MUL-P019",
+    "form_b": "MM-G08-L02-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g08.l03",
+    "form_a": "MM-G08-L03-MUL-P019",
+    "form_b": "MM-G08-L03-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g08.l04",
+    "form_a": "MM-G08-L04-MUL-P019",
+    "form_b": "MM-G08-L04-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g08.l05",
+    "form_a": "MM-G08-L05-MUL-P019",
+    "form_b": "MM-G08-L05-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 20
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g09.l01",
+    "form_a": "MM-G09-L01-MUL-P019",
+    "form_b": "MM-G09-L01-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g09.l02",
+    "form_a": "MM-G09-L02-MUL-P019",
+    "form_b": "MM-G09-L02-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g09.l03",
+    "form_a": "MM-G09-L03-MUL-P019",
+    "form_b": "MM-G09-L03-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g09.l04",
+    "form_a": "MM-G09-L04-MUL-P019",
+    "form_b": "MM-G09-L04-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g09.l05",
+    "form_a": "MM-G09-L05-MUL-P019",
+    "form_b": "MM-G09-L05-MUL-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 20
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g10.l01",
+    "form_a": "MM-G10-L01-MUL-P019",
+    "form_b": "MM-G10-L01-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g10.l02",
+    "form_a": "MM-G10-L02-MUL-P019",
+    "form_b": "MM-G10-L02-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g10.l03",
+    "form_a": "MM-G10-L03-MUL-P019",
+    "form_b": "MM-G10-L03-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g10.l04",
+    "form_a": "MM-G10-L04-MUL-P019",
+    "form_b": "MM-G10-L04-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g10.l05",
+    "form_a": "MM-G10-L05-MUL-P019",
+    "form_b": "MM-G10-L05-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 20
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g11.l01",
+    "form_a": "MM-G11-L01-MUL-P019",
+    "form_b": "MM-G11-L01-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 5
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g11.l02",
+    "form_a": "MM-G11-L02-MUL-P019",
+    "form_b": "MM-G11-L02-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g11.l03",
+    "form_a": "MM-G11-L03-MUL-P019",
+    "form_b": "MM-G11-L03-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g11.l04",
+    "form_a": "MM-G11-L04-MUL-P019",
+    "form_b": "MM-G11-L04-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 17
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g11.l05",
+    "form_a": "MM-G11-L05-MUL-P019",
+    "form_b": "MM-G11-L05-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 17
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g12.l01",
+    "form_a": "MM-G12-L01-MUL-P019",
+    "form_b": "MM-G12-L01-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g12.l02",
+    "form_a": "MM-G12-L02-MUL-P019",
+    "form_b": "MM-G12-L02-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 10
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g12.l03",
+    "form_a": "MM-G12-L03-MUL-P019",
+    "form_b": "MM-G12-L03-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g12.l04",
+    "form_a": "MM-G12-L04-MUL-P019",
+    "form_b": "MM-G12-L04-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.multiplication.g12.l05",
+    "form_a": "MM-G12-L05-MUL-P019",
+    "form_b": "MM-G12-L05-MUL-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 21
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g01.l01",
+    "form_a": "MM-G01-L01-SUB-P003",
+    "form_b": "MM-G01-L01-SUB-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 21,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g01.l02",
+    "form_a": "MM-G01-L02-SUB-P003",
+    "form_b": "MM-G01-L02-SUB-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 66,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g01.l03",
+    "form_a": "MM-G01-L03-SUB-P003",
+    "form_b": "MM-G01-L03-SUB-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 55,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g01.l04",
+    "form_a": "MM-G01-L04-SUB-P003",
+    "form_b": "MM-G01-L04-SUB-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 45,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g01.l05",
+    "form_a": "MM-G01-L05-SUB-P003",
+    "form_b": "MM-G01-L05-SUB-P004",
+    "count_each": 10,
+    "overlap": 0,
+    "unique_across_forms": 20,
+    "pool_size": 955,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g02.l01",
+    "form_a": "MM-G02-L01-SUB-P007",
+    "form_b": "MM-G02-L01-SUB-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g02.l02",
+    "form_a": "MM-G02-L02-SUB-P007",
+    "form_b": "MM-G02-L02-SUB-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g02.l03",
+    "form_a": "MM-G02-L03-SUB-P007",
+    "form_b": "MM-G02-L03-SUB-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g02.l04",
+    "form_a": "MM-G02-L04-SUB-P007",
+    "form_b": "MM-G02-L04-SUB-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g02.l05",
+    "form_a": "MM-G02-L05-SUB-P007",
+    "form_b": "MM-G02-L05-SUB-P008",
+    "count_each": 20,
+    "overlap": 0,
+    "unique_across_forms": 40,
+    "pool_size": 180,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g03.l01",
+    "form_a": "MM-G03-L01-SUB-P011",
+    "form_b": "MM-G03-L01-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g03.l02",
+    "form_a": "MM-G03-L02-SUB-P011",
+    "form_b": "MM-G03-L02-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g03.l03",
+    "form_a": "MM-G03-L03-SUB-P011",
+    "form_b": "MM-G03-L03-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g03.l04",
+    "form_a": "MM-G03-L04-SUB-P011",
+    "form_b": "MM-G03-L04-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g03.l05",
+    "form_a": "MM-G03-L05-SUB-P011",
+    "form_b": "MM-G03-L05-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g04.l01",
+    "form_a": "MM-G04-L01-SUB-P011",
+    "form_b": "MM-G04-L01-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g04.l02",
+    "form_a": "MM-G04-L02-SUB-P011",
+    "form_b": "MM-G04-L02-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g04.l03",
+    "form_a": "MM-G04-L03-SUB-P011",
+    "form_b": "MM-G04-L03-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g04.l04",
+    "form_a": "MM-G04-L04-SUB-P011",
+    "form_b": "MM-G04-L04-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g04.l05",
+    "form_a": "MM-G04-L05-SUB-P011",
+    "form_b": "MM-G04-L05-SUB-P012",
+    "count_each": 25,
+    "overlap": 0,
+    "unique_across_forms": 50,
+    "pool_size": 325,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g05.l01",
+    "form_a": "MM-G05-L01-SUB-P015",
+    "form_b": "MM-G05-L01-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g05.l02",
+    "form_a": "MM-G05-L02-SUB-P015",
+    "form_b": "MM-G05-L02-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g05.l03",
+    "form_a": "MM-G05-L03-SUB-P015",
+    "form_b": "MM-G05-L03-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 649,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g05.l04",
+    "form_a": "MM-G05-L04-SUB-P015",
+    "form_b": "MM-G05-L04-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 181,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g05.l05",
+    "form_a": "MM-G05-L05-SUB-P015",
+    "form_b": "MM-G05-L05-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g06.l01",
+    "form_a": "MM-G06-L01-SUB-P015",
+    "form_b": "MM-G06-L01-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g06.l02",
+    "form_a": "MM-G06-L02-SUB-P015",
+    "form_b": "MM-G06-L02-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g06.l03",
+    "form_a": "MM-G06-L03-SUB-P015",
+    "form_b": "MM-G06-L03-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g06.l04",
+    "form_a": "MM-G06-L04-SUB-P015",
+    "form_b": "MM-G06-L04-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g06.l05",
+    "form_a": "MM-G06-L05-SUB-P015",
+    "form_b": "MM-G06-L05-SUB-P016",
+    "count_each": 30,
+    "overlap": 0,
+    "unique_across_forms": 60,
+    "pool_size": 510,
+    "matched_strata": 16
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g07.l01",
+    "form_a": "MM-G07-L01-SUB-P019",
+    "form_b": "MM-G07-L01-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g07.l02",
+    "form_a": "MM-G07-L02-SUB-P019",
+    "form_b": "MM-G07-L02-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g07.l03",
+    "form_a": "MM-G07-L03-SUB-P019",
+    "form_b": "MM-G07-L03-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g07.l04",
+    "form_a": "MM-G07-L04-SUB-P019",
+    "form_b": "MM-G07-L04-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 19
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g07.l05",
+    "form_a": "MM-G07-L05-SUB-P019",
+    "form_b": "MM-G07-L05-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 26
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g08.l01",
+    "form_a": "MM-G08-L01-SUB-P019",
+    "form_b": "MM-G08-L01-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g08.l02",
+    "form_a": "MM-G08-L02-SUB-P019",
+    "form_b": "MM-G08-L02-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g08.l03",
+    "form_a": "MM-G08-L03-SUB-P019",
+    "form_b": "MM-G08-L03-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g08.l04",
+    "form_a": "MM-G08-L04-SUB-P019",
+    "form_b": "MM-G08-L04-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g08.l05",
+    "form_a": "MM-G08-L05-SUB-P019",
+    "form_b": "MM-G08-L05-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 26
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g09.l01",
+    "form_a": "MM-G09-L01-SUB-P019",
+    "form_b": "MM-G09-L01-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g09.l02",
+    "form_a": "MM-G09-L02-SUB-P019",
+    "form_b": "MM-G09-L02-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g09.l03",
+    "form_a": "MM-G09-L03-SUB-P019",
+    "form_b": "MM-G09-L03-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g09.l04",
+    "form_a": "MM-G09-L04-SUB-P019",
+    "form_b": "MM-G09-L04-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g09.l05",
+    "form_a": "MM-G09-L05-SUB-P019",
+    "form_b": "MM-G09-L05-SUB-P020",
+    "count_each": 40,
+    "overlap": 0,
+    "unique_across_forms": 80,
+    "pool_size": 840,
+    "matched_strata": 11
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g10.l01",
+    "form_a": "MM-G10-L01-SUB-P019",
+    "form_b": "MM-G10-L01-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g10.l02",
+    "form_a": "MM-G10-L02-SUB-P019",
+    "form_b": "MM-G10-L02-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g10.l03",
+    "form_a": "MM-G10-L03-SUB-P019",
+    "form_b": "MM-G10-L03-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g10.l04",
+    "form_a": "MM-G10-L04-SUB-P019",
+    "form_b": "MM-G10-L04-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g10.l05",
+    "form_a": "MM-G10-L05-SUB-P019",
+    "form_b": "MM-G10-L05-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 12
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g11.l01",
+    "form_a": "MM-G11-L01-SUB-P019",
+    "form_b": "MM-G11-L01-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g11.l02",
+    "form_a": "MM-G11-L02-SUB-P019",
+    "form_b": "MM-G11-L02-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g11.l03",
+    "form_a": "MM-G11-L03-SUB-P019",
+    "form_b": "MM-G11-L03-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g11.l04",
+    "form_a": "MM-G11-L04-SUB-P019",
+    "form_b": "MM-G11-L04-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g11.l05",
+    "form_a": "MM-G11-L05-SUB-P019",
+    "form_b": "MM-G11-L05-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 12
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g12.l01",
+    "form_a": "MM-G12-L01-SUB-P019",
+    "form_b": "MM-G12-L01-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 4
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g12.l02",
+    "form_a": "MM-G12-L02-SUB-P019",
+    "form_b": "MM-G12-L02-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 8
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g12.l03",
+    "form_a": "MM-G12-L03-SUB-P019",
+    "form_b": "MM-G12-L03-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 6
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g12.l04",
+    "form_a": "MM-G12-L04-SUB-P019",
+    "form_b": "MM-G12-L04-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 3
+  },
+  {
+    "competency_id": "arithmetic.subtraction.g12.l05",
+    "form_a": "MM-G12-L05-SUB-P019",
+    "form_b": "MM-G12-L05-SUB-P020",
+    "count_each": 50,
+    "overlap": 0,
+    "unique_across_forms": 100,
+    "pool_size": 1050,
+    "matched_strata": 13
+  }
+]

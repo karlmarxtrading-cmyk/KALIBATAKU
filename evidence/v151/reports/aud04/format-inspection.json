@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "command": "python3 tests/journey/inspect-report-readiness.py [output-dir]",
+  "runtime": "3.12.14",
+  "scope": "decoded JSON, CSV, XLSX cells, DOCX cells and PDF text blocks",
+  "expected": {
+    "passes": 2,
+    "passing_target": 2,
+    "unique": 12,
+    "coverage_target": 12,
+    "strategies": 2,
+    "strategy_target": 2,
+    "ready": true
+  },
+  "checks": [
+    {
+      "file": "report.json",
+      "sha256": "d41ef21c4aecbce4e4df756b4a607d036765803ae6714f332be0816d987a5774",
+      "actual": {
+        "passes": 2,
+        "passing_target": 2,
+        "unique": 12,
+        "coverage_target": 12,
+        "strategies": 2,
+        "strategy_target": 2,
+        "ready": true
+      }
+    },
+    {
+      "file": "report.csv",
+      "sha256": "7c98d7c83f7bd975a04d629be55eee941bfbb296249cb3d789ed9fe20e564cc0",
+      "actual": {
+        "passes": 2,
+        "passing_target": 2,
+        "unique": 12,
+        "coverage_target": 12,
+        "strategies": 2,
+        "strategy_target": 2,
+        "ready": true
+      }
+    },
+    {
+      "file": "report.xlsx",
+      "sha256": "35bfdc99cbeeb94817c9fad6826e38aef20e2ca0dd61febca901cd7799a484f7",
+      "actual": {
+        "passes": 2,
+        "passing_target": 2,
+        "unique": 12,
+        "coverage_target": 12,
+        "strategies": 2,
+        "strategy_target": 2,
+        "ready": true
+      }
+    },
+    {
+      "file": "report.docx",
+      "sha256": "c79a49d018fe21641dfd9e6445b6ab4103fdb4605054e01afe4f805e4256bdb6",
+      "actual": {
+        "passes": 2,
+        "passing_target": 2,
+        "unique": 12,
+        "coverage_target": 12,
+        "strategies": 2,
+        "strategy_target": 2,
+        "ready": true
+      }
+    },
+    {
+      "file": "report.pdf",
+      "sha256": "5b0300253c956b17058e9db949be63cd8ec65c25ef244574f655e44922742903",
+      "actual": {
+        "passes": 2,
+        "passing_target": 2,
+        "unique": 12,
+        "coverage_target": 12,
+        "strategies": 2,
+        "strategy_target": 2,
+        "ready": true
+      }
+    }
+  ],
+  "word_render": "Requires Microsoft Word on the target installation."
+}

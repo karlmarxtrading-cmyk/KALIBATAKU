@@ -1,0 +1,96 @@
+{
+  "runner": "node v24.22.3",
+  "layer": "domain/production modules plus actual G01-L01 form and normative fixtures; browser evidence in integration suite",
+  "cases": [
+    {
+      "test_id": "TC-120",
+      "status": "PASS",
+      "observed": "46 normative parser cases including exact rational values and each error code; invalid input creates no response; cross-checked precedence, zero divisor and unknown AST operation."
+    },
+    {
+      "test_id": "TC-121",
+      "status": "PASS",
+      "observed": "An invalid ID draft retains comma validation across EN switch; completing it reformats exactly, including 1/64. Timer, index and item instances stay pinned."
+    },
+    {
+      "test_id": "TC-122",
+      "status": "PASS",
+      "observed": "Repeated submit and Enter with the same clean value produces exactly one response command and one history row; repeated finalization returns no command."
+    },
+    {
+      "test_id": "TC-123",
+      "status": "PASS",
+      "observed": "MET-D: 92 then hinted 96 recorded as first incorrect and retry correct; no deadline and no mastery evidence."
+    },
+    {
+      "test_id": "TC-124",
+      "status": "PASS",
+      "observed": "Fixed speed deadline starts at ready with 2s, survives hidden elapsed wall time and clamps to zero even after backward wall clock via monotonic anchor. Timeout scores skipped, blank and unseen separately."
+    },
+    {
+      "test_id": "TC-125",
+      "status": "PASS",
+      "observed": "MET-G/H: assessment suppresses per-response correctness in event/feedback, takes revision into final, invalid/empty dirty draft blocks completion until explicitly blank. Final results immutable."
+    },
+    {
+      "test_id": "TC-126",
+      "status": "PASS",
+      "observed": "Two comparable assessments drive hold, vary, prerequisite or assess; one answer never changes placement."
+    },
+    {
+      "test_id": "TC-127",
+      "status": "PASS",
+      "observed": "Wrong original and a distinct same-template question linked to its instance; correct variation closes queue with original missed response retained."
+    },
+    {
+      "test_id": "TC-128",
+      "status": "PASS",
+      "observed": "Serialized and restored shuffled snapshot retains pinned IDs, AST, key, version, package, elapsed deadline and index on locale change."
+    },
+    {
+      "test_id": "TC-145",
+      "status": "PASS",
+      "observed": "6 correct, 2 incorrect, 2 skip gives 60% form score, 75% accuracy; MET-A/B agree with pinned fixtures."
+    },
+    {
+      "test_id": "TC-146",
+      "status": "PASS",
+      "observed": "MET-A/B response percentages 95% and 50%; unseen stays in assigned denominator and outside response count."
+    },
+    {
+      "test_id": "TC-147",
+      "status": "PASS",
+      "observed": "Zero denominator produces null for form/accuracy/completion/first response. Empty assessment history yields not_started, not 0% mastery."
+    },
+    {
+      "test_id": "TC-148",
+      "status": "PASS",
+      "observed": "MET-I: 10/12 first cycle fails; new A/B cycle after explicit targeted practice with 12/12 succeeds, no prior exposure removed. Blank/skip/unseen as noncorrect unique evidence. Spacing, assistance, time-to-live, distinct forms, sample floor and per-slice gates tested."
+    },
+    {
+      "test_id": "TC-149",
+      "status": "PASS",
+      "observed": "Comparable form change 58→86 = +28 percentage points. Different content/level/family or absent data suppress comparison."
+    },
+    {
+      "test_id": "TC-150",
+      "status": "PASS",
+      "observed": "Sample count, discarded timing quality, mean of middle two and nearest-rank P90; summaries suppressed below ten first correct unassisted responses."
+    },
+    {
+      "test_id": "TC-151",
+      "status": "PASS",
+      "observed": "MET-C: row-weighted response accuracy is 59/110 = 53.6%; form score also uses total assigned."
+    },
+    {
+      "test_id": "TC-152",
+      "status": "PASS",
+      "observed": "Mastered ADD does not cover an untested DIV or MIX; inactive rows excluded from level denominator."
+    },
+    {
+      "test_id": "TC-154",
+      "status": "PASS",
+      "observed": "Recommendations reference the two exact comparable attempt IDs and scores, return collect for absent evidence; no inferred strategy/personality."
+    }
+  ]
+}

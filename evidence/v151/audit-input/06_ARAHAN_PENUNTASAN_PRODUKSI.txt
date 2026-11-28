@@ -1,0 +1,199 @@
+KALIBATAKU 1.5.0 — ARAHAN PENUNTASAN PRODUKSI
+28 November 2026 · Keputusan audit HOLD
+
+PENUTUPAN AUD15-01
+
+Perbaiki definisi “sudah dilihat” pada satu tempat
+
+Tetapkan dan dokumentasikan kontrak exposure. Minimum yang konsisten dengan UI saat ini: hanya item yang benar-benar ditandai seen=true boleh menambah unique_seen. Jangan menyamakan seluruh item yang dialokasikan dalam sesi completed dengan seluruh item yang telah dilihat. Kebijakan berbasis “sudah dijawab” boleh dipilih hanya bila dijelaskan sebagai perubahan produk tersendiri; audit ini tidak memaksakan ambang baru itu.
+
+Gunakan agregasi yang sama untuk selector variasi, cakupan peta, kesiapan, ringkasan hasil, dan semua laporan guru. Tinjau penghitungan strategi yang dicoba agar strategi dari item yang belum dilihat tidak ikut dianggap dipraktikkan. Pertahankan pembedaan jawaban pertama mandiri, bantuan, dan revisi setelah melihat kunci. Cakupan, akurasi dan strategi adalah ukuran berbeda.
+
+Untuk data lama tanpa penanda seen yang eksplisit, terapkan aturan kompatibilitas yang konservatif berdasarkan bukti yang tersedia, misalnya first_seen_at atau riwayat respons. Posisi sesi tidak membuktikan bahwa semua item sebelumnya dilihat. Dokumentasikan hasil yang tidak dapat diketahui. Jangan menulis ulang event, jawaban, nilai, atau hash ledger lama hanya untuk membuat angka baru cocok. Jika kebijakan turunan berubah, beri versi yang jelas dan uji pemulihan antarversi.
+
+Kasus regresi: Intro diakhiri pada soal pertama | Hasil wajib: 1 item dilihat, 0 dijawab, 5 unseen; cakupan tidak boleh 6.
+
+Kasus regresi: Tiga misi probe seed tetap | Hasil wajib: 10 dilihat dan 8 dijawab tidak boleh dianggap memenuhi syarat 12 dilihat.
+
+Kasus regresi: Skip, blank, unseen, revisi, hint | Hasil wajib: Masing-masing mempunyai semantik eksplisit; bantuan tidak menjadi respons mandiri.
+
+Kasus regresi: Riwayat campuran dan data lama | Hasil wajib: Kontrak kompatibilitas jelas; restore tidak menghilangkan data atau mengubah event.
+
+Kasus regresi: Peta dan lima ekspor | Hasil wajib: Angka serta kesiapan berasal dari agregasi yang sama dan benar.
+
+Kasus regresi: Jalur semua benar | Hasil wajib: Seluruh 281 kompetensi tetap dapat dicapai; perbaikan tidak membuat jalur baru buntu.
+
+Probe audit adalah alat diagnosis: exit code 0 dapat berarti reproduksi selesai dan cacat berhasil diamati. Ubah kasusnya menjadi assertion regresi dengan hasil yang benar; jangan menutup temuan hanya karena perintah probe selesai tanpa error.
+
+Ikat hasil sebelum perbaikan ke kandidat asli beserta hash-nya, dan hasil sesudah ke kandidat rilis akhir beserta hash-nya. Gunakan fixture/probe yang sama atau dokumentasikan perubahan kontraknya. Sertakan keadaan item, exposure independen, rekomendasi berikutnya, dan pembacaan ulang ekspor. Kembalikan PROG-06 ke PASS setelah kontrak “unique count jujur” benar-benar dipenuhi. [E07]
+
+
+PENUTUPAN AUD15-02
+
+Bangun satu hasil pemeriksaan kesiapan paket yang membedakan belum dipasang, sedang diperiksa, perlu perbaikan, perlu pembaruan, dan siap terverifikasi. Hasilnya harus mempertimbangkan versi, hash byte yang diharapkan, dependensi dan metadata yang diperlukan. Peta boleh menambahkan kecocokan paket terhadap misi yang direkomendasikan, tetapi tidak boleh mengubah paket rusak menjadi “siap”.
+
+Gunakan hasil tersebut pada baris katalog, daftar perangkat, detail pengelolaan, dan tombol mulai. Keberadaan URL atau catatan instalasi tidak cukup untuk label siap. Pertahankan pemeriksaan integritas pada peluncuran agar perubahan cache setelah render tetap ditangani. Bila verifikasi belum selesai, tampilkan status memeriksa yang jelas dan tindakan yang sesuai.
+
+Batasi biaya pemeriksaan pada paket terpilih atau baris yang sedang ditampilkan. Pemeriksaan shell yang sama dapat digunakan bersama dalam satu siklus, dengan invalidasi ketika versi/install/repair/delete berubah. Jangan mengunduh atau melakukan hashing seluruh 4.604 paket saat membuka beranda. Jangan menurunkan validasi byte untuk mempercepat indikator.
+
+Kondisi: Paket dan dependensi sehat | Hasil yang harus konsisten: Semua layar mengakui siap; misi dapat dimulai, dilanjutkan, dan diselesaikan tanpa jaringan.
+
+Kondisi: Byte paket atau shard berubah | Hasil yang harus konsisten: Semua label relevan meminta perbaikan; launcher menolak; data jawaban tetap ada.
+
+Kondisi: Shell/dependensi hilang | Hasil yang harus konsisten: Alasan jelas, tindakan perbaikan tepat, tidak ada label siap palsu.
+
+Kondisi: Versi lama / instalasi legacy | Hasil yang harus konsisten: Pembaruan/ketidaklengkapan dibedakan dari terkunci prasyarat.
+
+Kondisi: Hanya paket evaluasi dipasang | Hasil yang harus konsisten: Tidak menjanjikan misi pengajaran yang memerlukan paket lain.
+
+Kondisi: Perbaiki, putus jaringan, reload | Hasil yang harus konsisten: Label dan kemampuan nyata sepakat; misi sungguhan berjalan.
+
+Kondisi: Sesi aktif dari snapshot | Hasil yang harus konsisten: Lanjutkan tetap bekerja sesuai kontrak, tanpa merusak data sesi karena status katalog.
+
+Tambahkan pemeriksaan teks status dan keadaan tombol yang benar-benar dilihat pengguna. Tes kemampuan internal saja sudah lulus pada kandidat tetapi tidak menangkap kontradiksi antar layar.
+
+Tutup AUD15-02 setelah hasil UI, paket yang diverifikasi, dan peluncuran offline cocok pada build final. Hasil tersebut merupakan perluasan cakupan regresi, bukan alasan mengganti arti OFF-04 lama. Register 70 kriteria dan register temuan baru harus tetap dapat dibaca secara terpisah.
+
+
+PENUTUPAN AUD15-03
+
+Ubah perbandingan dan pengurutan timestamp menjadi nilai epoch yang hingga. Gunakan batas hari awal inklusif dan akhir eksklusif yang dibentuk dari zona waktu pilihan. Urutan yang memiliki waktu sama dapat memakai attempt_id sebagai pemecah seri deterministik. Tinjau pemilihan catatan dan jalur lain yang mengasumsikan semua waktu berupa string UTC; jangan menyatakan cacat tambahan sebelum direproduksi.
+
+Perbaikan berada pada pembacaan/komparasi. Tidak perlu menulis ulang waktu tersimpan, payload event, hash ledger, atau identitas sesi historis. Pertahankan kompatibilitas cadangan lama, isolasi profil, semantik respons pertama, revisi, hint dan draf. Representasi ISO berbeda tetap boleh diterima bila kontraknya sah.
+
+Kelompok uji: Representasi ekuivalen | Syarat penutupan: Z, +07:00, +08:00, dan offset negatif memilih serta mengurutkan sesi yang sama.
+
+Kelompok uji: Zona pilihan aplikasi | Syarat penutupan: UTC, Asia/Jakarta, Asia/Makassar, Asia/Jayapura memenuhi kontrak hari yang sama.
+
+Kelompok uji: Batas waktu | Syarat penutupan: Start−1ms, start, start+1ms, end−1ms, end, end+1ms diuji; akhir tetap eksklusif.
+
+Kelompok uji: Fixture audit | Syarat penutupan: 4 sesi, 32 soal, 3 misi dalam periode untuk kedua cadangan yang ekuivalen.
+
+Kelompok uji: Pratinjau dan ekspor | Syarat penutupan: JSON/CSV/XLSX/DOCX/PDF dibuka ulang dan dibandingkan nilainya, bukan hanya keberadaan berkas.
+
+Kelompok uji: Keutuhan pemulihan | Syarat penutupan: Payload/hash, draf, profil dan rekaman historis tetap sama.
+
+Kelompok uji: Regresi lama | Syarat penutupan: AUD-04/05/06 tetap lulus; kesiapan kumulatif dan aktivitas periode tetap dibedakan dengan benar.
+
+Kandidat menggunakan empat zona tetap tersebut; audit tidak menuntut dukungan zona global atau aturan daylight saving yang belum menjadi fitur produk. Bila cakupan zona diperluas nanti, kontrak kalender dan uji batasnya perlu diperluas secara sengaja.
+
+AUD-04 lama tetap ditutup untuk kasus ketidakselarasan peta dan laporan pada fixture asal. AUD15-03 adalah kasus tambahan pada pemilihan periode. Bedakan penutupan skenario lama dari klaim bahwa seluruh kemungkinan laporan telah benar.
+
+Bukti sebelum/sesudah berada pada modul distribusi, karena itulah berkas yang disajikan kepada pengguna. Bangun dist dari sumber yang diperbaiki, ulangi ekspor, lalu ikat receipt ke hash build final. Kembalikan TEACH-02 ke PASS hanya setelah isi aktual seluruh format memenuhi hasil yang diharapkan. [E08]
+
+
+SEBELAS GERBANG EKSTERNAL: KONTEN DAN PERANGKAT
+
+Kriteria: BANK-07 · BLOCKED | Sumber daya: Guru matematika SD/SMP/SMA dan penelaah ID/EN | Hasil minimum yang direkam: 394 keluarga memperoleh keputusan; contoh pertama/median/tersulit ditelaah, catatan dan retest terkait build dicatat.
+
+Kriteria: UX-09 · BLOCKED | Sumber daya: Android dan iOS fisik dengan keyboard sistem | Hasil minimum yang direkam: Potret/lanskap, input pecahan, feedback, Lanjut, draf dan ketukan ganda dapat digunakan saat keyboard terbuka.
+
+Kriteria: DEVICE-02 · BLOCKED | Sumber daya: Android Chrome, Gboard + satu IME lain | Hasil minimum yang direkam: Caret, komposisi IME, desimal, orientasi, target sentuh, backup/restore, offline, dan resume lulus.
+
+Kriteria: DEVICE-03 · BLOCKED | Sumber daya: iPhone/iPad Safari fisik | Hasil minimum yang direkam: Kasus perangkat yang sama dengan versi OS/browser dan safe area aktual dicatat.
+
+Kriteria: A11Y-04 · BLOCKED | Sumber daya: NVDA; VoiceOver; TalkBack pada kombinasi yang ditetapkan | Hasil minimum yang direkam: Ujaran formula/feedback/peta/error benar dan berurutan, fokus serta aksi dapat dioperasikan.
+
+Satu sesi perangkat dapat menyediakan bukti untuk beberapa kriteria, tetapi setiap skenario harus memiliki hasil tersendiri. Misalnya Android yang sama dapat mencakup DEVICE-02, bagian UX-09, dan TalkBack; pengujian tanpa TalkBack aktif tidak boleh dianggap mencakup A11Y-04. Catat model, OS, browser, keyboard, bahasa, orientasi, waktu, identitas penguji dan build. [E11]
+
+Review BANK-07 dapat dipersiapkan otomatis: susun contoh yang dirender, daftar fitur/band, alasan urutan, konteks kelas dan formulir. Keputusan reviewer tetap berasal dari orang yang benar-benar menelaah. Gunakan status setuju/perbaiki_urutan/perbaiki_isi/tolak sesuai protokol. AI boleh menemukan kandidat masalah dan membantu penjelasan, tetapi tidak mengisi nama/keputusan guru yang tidak melakukan review.
+
+Jika review meminta perubahan urutan, perbaiki metadata perjalanan, beri versi, dan jalankan ulang keterjangkauan serta perbandingan bank. Jika meminta perubahan isi, pertahankan versi bank lama dan ajukan perubahan konten yang dapat ditinjau. Jangan menghapus keluarga yang sulit ditinjau hanya agar roster selesai.
+
+MATRIX_11_GATE_EKSTERNAL.csv dan template bukti pada folder 11_VALIDASI_EKSTERNAL/ adalah alat kerja yang belum dijalankan. Formulir kosong tidak memenuhi gerbang apa pun.
+
+
+SEBELAS GERBANG EKSTERNAL: GURU, PILOT DAN DOMAIN
+
+Kriteria: TEACH-03 | Status asal: BLOCKED | Hasil minimum yang diminta: DOCX pecahan dibuka di Microsoft Word yang dipakai sasaran; pembilang/penyebut, minus dan kurung dibandingkan dengan rujukan.
+
+Kriteria: PILOT-01 | Status asal: NOT_RUN | Hasil minimum yang diminta: 12 siswa dari tiga kelompok; setidaknya 11/12 mulai dan lanjut tanpa bantuan filter.
+
+Kriteria: PILOT-02 | Status asal: NOT_RUN | Hasil minimum yang diminta: 3/3 guru membedakan respons mandiri, bantuan/revisi dan kesiapan; dapat menentukan tindak lanjut.
+
+Kriteria: PILOT-03 | Status asal: NOT_RUN | Hasil minimum yang diminta: Kebingungan dan kegagalan dicatat, diperbaiki dan diuji ulang; nol kegagalan data kritis atau jalan buntu.
+
+Kriteria: REL-02 | Status asal: BLOCKED | Hasil minimum yang diminta: Domain akhir menyajikan build/hash, rute, HTTPS, MIME, 404 dan header yang benar.
+
+Kriteria: REL-03 | Status asal: BLOCKED | Hasil minimum yang diminta: Update dan rollback nyata dengan tab aktif; riwayat, draf dan paket offline tetap dapat digunakan.
+
+Pilot bukan sekadar meminta pendapat “suka/tidak”. Siswa melakukan tugas nyata: memilih titik mulai, memulai, membuat jawaban salah dan membaca feedback, melanjutkan/penguatan, menutup browser dan kembali. Guru menafsirkan hasil yang membedakan mandiri dan revisi setelah kunci. Rekam bantuan moderator, salah ketuk, kebingungan, waktu, dampak dan hasil uji ulang. Gunakan alias peserta dan ringkasan anonim sesuai protokol sumber. [E11]
+
+Word harus menjalankan renderer target. Parsing ZIP/XML, membaca OMML, atau membuka PDF tidak menggantikannya. Fixture pecahan kandidat dan ekspor baru pada build final dapat digunakan sebagai bahan. Catat versi Word dan sistem operasi; bila sekolah memakai aplikasi tambahan, catat hasilnya terpisah. [E11]
+
+PERF-03 tetap sesudah pilot
+
+Satu kriteria tambahan berada pada fase SETELAH_PILOT, bukan bagian 70 wajib awal. Protokol menetapkan p75 LCP ≤2,5 detik, INP ≤200 milidetik, CLS ≤0,1 dari penggunaan nyata. Angka lab tidak boleh ditulis sebagai angka lapangan. Setelah pilot/deployment, catat sumber data, rentang waktu, ukuran sampel dan keterbatasannya; jangan menambah layanan pihak ketiga tanpa otorisasi. [E11]
+
+Tidak ada jadwal pasti atau durasi selesai yang dapat dijamin tanpa ketersediaan reviewer, peserta, perangkat dan akses domain. Ketergantungan itu tidak menghalangi penyelesaian seluruh perbaikan kode, paket kandidat dan alat validasi terlebih dahulu.
+
+
+ALUR PENERIMAAN PERLU DAPAT MEMBACA BUKTI EKSTERNAL
+
+tools/release_registers_v15.py:75–77 menyalin external.state beserta alasan. tests/qa/register-policy.py:18–19 justru membatasi status eksternal ke BLOCKED atau NOT_RUN; UX-09 juga dipatok BLOCKED pada baris 14. Jadi kandidat sengaja mempertahankan HOLD, dan belum menyediakan jalur teruji untuk menutup gerbang setelah bukti manusia/perangkat tersedia. Ini pekerjaan penuntasan workflow, bukan cacat fungsional keempat atau bukti manipulasi keamanan. [E12]
+
+Kontrak bukti yang perlu diterapkan
+
+Sediakan receipt eksternal yang mengikat ID kriteria, versi aplikasi/bank, hash build final, waktu pelaksanaan, pelaksana/peran, perangkat/aplikasi/versi, skenario, expected/actual, hasil, lokasi bukti dan SHA-256, penelaah, serta retest. Untuk domain, tambah URL dan identitas deployment/rollback. Untuk manusia, pakai referensi bukti dan persetujuan yang benar-benar diberikan; template yang belum diisi tetap NOT_RUN.
+
+Loader memvalidasi struktur, kriteria, identitas build, kelengkapan skenario dan kecocokan digest artefak sebelum menurunkan status register. Build yang berbeda harus menuntut retest area terdampak atau analisis keberlakuan yang disetujui penelaah, bukan menerima receipt lama secara diam-diam. Hasil FAIL tidak boleh tertimpa PASS tanpa bukti perbaikan/retest yang terlacak.
+
+Kasus uji workflow: Tidak ada receipt / formulir kosong | Keputusan yang benar: BLOCKED atau NOT_RUN dengan kebutuhan nyata.
+
+Kasus uji workflow: PASS tanpa bukti atau tanpa pelaksana | Keputusan yang benar: Tolak sebagai bukti tidak lengkap.
+
+Kasus uji workflow: ID kriteria/build/digest tidak cocok | Keputusan yang benar: Tolak, jelaskan alasan dan minta pembaruan bukti.
+
+Kasus uji workflow: Hasil gagal atau skenario belum lengkap | Keputusan yang benar: FAIL/terbuka; jangan menutup dengan ringkasan hijau.
+
+Kasus uji workflow: Bukti sah, lengkap, sesuai build | Keputusan yang benar: PASS menurut kontrak; tampilkan referensi verifikasi.
+
+Kasus uji workflow: PERF-03 belum dijalankan | Keputusan yang benar: Tetap SETELAH_PILOT; jangan ubah fase untuk memperindah jumlah.
+
+Mengganti external.state menjadi PASS saja tidak merupakan penutupan. Policy test saat ini memang akan menolak jalur itu. Ubah evaluator dan policy tests secara eksplisit agar bukti aktual dapat diterima sambil menjaga default yang jujur.
+
+
+URUTAN PEKERJAAN MENUJU PENERIMAAN PRODUKSI
+
+Urutan / pemilik: 1 · Implementer + reviewer | Pekerjaan konkret: Verifikasi input, salinan kerja, jalankan tiga probe sebelum patch; tetapkan semantik exposure. | Bukti keluar: Baseline hash, FAIL teramati, kontrak perbaikan.
+
+Urutan / pemilik: 2 · Implementer progresi | Pekerjaan konkret: Tutup AUD15-01; samakan exposure/readiness/report; dukung data historis. | Bukti keluar: Regresi sparse completion + seluruh 281 simpul tetap tercapai.
+
+Urutan / pemilik: 3 · Implementer data/offline | Pekerjaan konkret: Tutup AUD15-03 dan AUD15-02; bangun ulang dist. | Bukti keluar: Offset/5 format benar; label/aksi offline konsisten.
+
+Urutan / pemilik: 4 · Release engineer | Pekerjaan konkret: Tambahkan validasi receipt eksternal dan policy tests. | Bukti keluar: Bukti sah diterima; kosong/usang/salah-build ditolak.
+
+Urutan / pemilik: 5 · QA | Pekerjaan konkret: Ulangi baseline 72 suite dan kasus baru pada lingkungan tersedia; selesaikan kegagalan. | Bukti keluar: Log/receipt/hash per suite; batas lingkungan eksplisit.
+
+Urutan / pemilik: 6 · Reviewer + pengguna | Pekerjaan konkret: Review bank, perangkat, ujaran, Word, pilot; perbaiki lalu retest. | Bukti keluar: Sebelas gerbang eksternal memiliki keputusan aktual.
+
+Urutan / pemilik: 7 · Operator domain | Pekerjaan konkret: Deploy hanya dist, verifikasi host, lakukan update/rollback sesuai otorisasi. | Bukti keluar: REL-02/03 terikat deployment dan build final.
+
+Urutan / pemilik: 8 · Release engineer | Pekerjaan konkret: Dua build bersih, seal ZIP, ekstrak ulang, verifikasi/build/verifikasi. | Bukti keluar: Paket lengkap, SHA-256 dan keputusan GO/HOLD yang konsisten.
+
+Pekerjaan kode, fixture, dokumen operator, materi review, dan kandidat validasi dapat diselesaikan sebelum meminta perangkat atau peserta. Tiga jalur implementasi dapat berjalan paralel setelah kontrak disepakati, dengan satu pemilik integrasi untuk mencegah perbedaan model data dan bukti. Jangan mengulang audit tanpa menghasilkan perubahan serta hasil uji yang konkret.
+
+Setiap temuan baru memiliki expected/actual, lokasi kode, rencana perbaikan, uji penutupan dan bukti. Dilarang meloloskan rilis dengan mengurangi ambang, menghapus tes gagal, memindahkan wajib ke setelah pilot, menulis PASS manual, atau memakai fixture sintetis sebagai hasil manusia. Perubahan produk yang sah harus dijelaskan dan ditinjau, bukan disembunyikan di register.
+
+Kandidat hasil perbaikan lokal masih boleh berstatus HOLD bila sumber daya eksternal belum tersedia. Dalam keadaan itu, semua pekerjaan yang dapat diselesaikan sudah harus konkret: source/dist final, tes, formulir siap, daftar kebutuhan spesifik, langkah operator, dan kemampuan melanjutkan setelah bukti diberikan. Status jujur adalah bagian dari kesiapan operasi.
+
+
+DEFINISI SELESAI DAN CARA MEMAKAI PROMPT
+
+GO hanya bila 70 kriteria wajib PASS dengan bukti yang sesuai, AUD15-01/02/03 ditutup, tidak ada cacat penghalang rilis yang belum diselesaikan, dan domain tujuan menjalankan build final yang telah divalidasi. PERF-03 tetap dituntaskan pada fase yang disepakati setelah pilot.
+
+- Bank 1.2.0 berisi 4.677 berkas tetap utuh; seluruh referensi soal, AST, kunci, hint dan langkah tersedia. Perubahan konten memerlukan versi serta keputusan tersendiri.
+- Respons pertama, bantuan, revisi, draf, profil, riwayat dan kompatibilitas cadangan terjaga. Patch tidak menghapus data untuk menghindari migrasi atau uji.
+- Regresi baru membuktikan hasil benar; semua baseline yang masih berlaku lulus. Jumlah assertions akhir mengikuti tes nyata, tidak dipaksa tetap 1.586.
+- Konsistensi peta, hasil, readiness dan lima ekspor terbukti. Keseragaman label offline dibuktikan pada kondisi sehat dan rusak.
+- Validasi eksternal memiliki pelaksana, skenario, hasil aktual, artefak dan build. Bukti lama yang tidak berlaku tidak diwariskan tanpa alasan yang ditinjau.
+- Kandidat bersih dapat dibangun dua kali dengan hasil identik, diekstrak ulang dan diverifikasi. Operator memperoleh panduan deploy, backup, update dan rollback yang bisa dijalankan.
+
+Cara menyerahkan pekerjaan ke ChatGPT Work
+
+Sertakan dua ZIP: kandidat 1.5.0 yang diaudit dan paket audit ini. Pada antarmuka pilih Astra serta tingkat penalaran Sangat Tinggi jika opsi itu tersedia. Buka 07_PROMPT_ASTRA_PRODUCTION_READY.txt, salin seluruh isinya sebagai instruksi, dan biarkan alat bekerja atas sumber. Menuliskan nama model di dalam prompt tidak mengganti pengaturan model pada antarmuka.
+
+Prompt memerintahkan implementasi sampai kandidat dan bukti selesai, termasuk menjalankan regresi sebelum/sesudah, mempertahankan bank, menyiapkan validasi, memperbarui register, membangun dan mengemas. Bila akses manusia/perangkat/domain belum ada, agen harus menyelesaikan semua pekerjaan lokal terlebih dahulu, lalu menjelaskan kebutuhan yang benar-benar tersisa. Tidak ada instruksi prompt yang dapat menggantikan peserta nyata atau akses domain yang belum diberikan.
+
+Jangan mengunggah paket audit sebagai website. Berkas HTML dalam paket ini adalah pembaca laporan; aplikasi tetap berasal dari dist/ kandidat yang kelak diperbaiki. Paket audit tidak berisi rilis aplikasi pengganti.
+

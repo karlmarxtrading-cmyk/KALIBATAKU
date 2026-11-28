@@ -1,0 +1,7 @@
+Pending draft rescue validates and restores the original owner with the exact event ledger PASS
+Raw session and report JSON rejected with actionable distinct types PASS
+Index migration, filtered paging, isolated delete and concurrent change guard across 5000 sessions PASS
+First start moves chrono index without duplicating a preflight attempt PASS
+Transfer plan counts remaining shell, selected shard and pack once PASS
+Session delivery tracks last correlated ACK, queued events, denied access and scoped retry time separately PASS
+Service worker excludes incomplete pack caches and falls back only to a complete shell revision during interruption PASS

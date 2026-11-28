@@ -1,0 +1,101 @@
+PASS absent BANK-07
+PASS absent UX-09
+PASS absent DEVICE-02
+PASS absent DEVICE-03
+PASS absent A11Y-04
+PASS absent TEACH-03
+PASS absent PILOT-01
+PASS absent PILOT-02
+PASS absent PILOT-03
+PASS absent REL-02
+PASS absent REL-03
+PASS absent PERF-03
+PASS complete signed synthetic BANK-07
+PASS test fixture excluded by release API BANK-07
+PASS complete signed synthetic UX-09
+PASS test fixture excluded by release API UX-09
+PASS complete signed synthetic DEVICE-02
+PASS test fixture excluded by release API DEVICE-02
+PASS complete signed synthetic DEVICE-03
+PASS test fixture excluded by release API DEVICE-03
+PASS complete signed synthetic A11Y-04
+PASS test fixture excluded by release API A11Y-04
+PASS complete signed synthetic TEACH-03
+PASS test fixture excluded by release API TEACH-03
+PASS complete signed synthetic PILOT-01
+PASS test fixture excluded by release API PILOT-01
+PASS complete signed synthetic PILOT-02
+PASS test fixture excluded by release API PILOT-02
+PASS complete signed synthetic PILOT-03
+PASS test fixture excluded by release API PILOT-03
+PASS complete signed synthetic REL-02
+PASS test fixture excluded by release API REL-02
+PASS complete signed synthetic REL-03
+PASS test fixture excluded by release API REL-03
+PASS complete signed synthetic PERF-03
+PASS test fixture excluded by release API PERF-03
+PASS partial BANK-07
+PASS partial UX-09
+PASS partial DEVICE-02
+PASS partial A11Y-04
+PASS partial TEACH-03
+PASS partial PILOT-01
+PASS partial PILOT-02
+PASS partial REL-03
+PASS other candidate app_version
+PASS other candidate bank_version
+PASS other candidate offline_release
+PASS other candidate dist_tree_sha256
+PASS other candidate source_tree_sha256
+PASS template rejected
+PASS missing attestation rejected
+PASS unreviewed PASS rejected
+PASS substituted signer rejected
+PASS outside role rejected
+PASS chronology rejected
+PASS wrong phase rejected
+PASS observations required
+PASS actual device required
+PASS physical emulator string rejected
+PASS double finalization fails
+PASS partial failure visible
+PASS missing artifact
+PASS changed artifact digest
+PASS path traversal refused
+PASS symlink refused
+PASS both keyboards required
+PASS mistap threshold
+PASS wrong exemplar
+PASS review requests correction
+PASS DOM cannot attest speech
+PASS unknown screen reader rejected
+PASS Word school version required
+PASS text cannot substitute for rendered Word evidence
+PASS both Word controls required
+PASS pilot denominator deduplicated
+PASS pilot all three material groups
+PASS pilot critical data loss fails
+PASS 11 of 12 accepted
+PASS 10 of 12 fails
+PASS all three teachers required
+PASS actual pilot events required
+PASS retest evidence required
+PASS localhost refused
+PASS wrong deployment refused
+PASS wrong served hash refused
+PASS same device not counted twice
+PASS wrong rollback hash refused
+PASS field p75 exceeds budget
+PASS different authorized deployment refused
+PASS lab cannot attest field
+PASS actual post-pilot window
+PASS signature binds exact bytes
+PASS conflicting overlapping receipts detected
+PASS complementary real configurations aggregate
+PASS root failure retained
+PASS signed revocation withdraws evidence
+PASS documented fresh retest supersedes revocation
+PASS predecessor bytes bound
+PASS pilot review depends on actual teacher cohort
+PASS field gate depends on pilot closure
+PASS update requires actual target validation

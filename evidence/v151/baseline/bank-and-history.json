@@ -1,0 +1,19 @@
+{
+  "checked_utc": "2026-11-28T10:40:12.121337+00:00",
+  "status": "PASS",
+  "baseline_zip_sha256": "e61b032a091bda4e0867c15c3001e802bf808372f6dcee7ada073daefa21f534",
+  "bank_files": 4677,
+  "bank_tree_sha256": "6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43",
+  "bank_changes": 0,
+  "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+  "source_app_version": "1.5.1",
+  "offline_release": "ef0b6798d9633ca8",
+  "source_files": 613,
+  "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9",
+  "historical_evidence": {
+    "original_evidence_files": 704,
+    "unchanged": 704,
+    "changed": [],
+    "missing": []
+  }
+}

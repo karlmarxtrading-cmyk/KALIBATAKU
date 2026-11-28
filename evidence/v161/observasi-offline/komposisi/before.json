@@ -1,0 +1,1526 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "firefox-trusted-compose-enter-investigation",
+  "started": "2026-11-28T17:22:18.532348+00:00",
+  "build": {
+    "offline_release": "83fef50a05e52452",
+    "enter_sha256": "fdde766386834707b3fa67f446388506fa0dfe333b7d4f46808ca68363439f68"
+  },
+  "checks": [
+    {
+      "id": "native-sequence-1",
+      "status": "FAIL",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 0,
+          "feedback": false,
+          "draft": ""
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 0,
+          "feedback": false,
+          "draft": "1"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 1501,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "",
+            "target": "kp-answer",
+            "value": ""
+          },
+          {
+            "type": "beforeinput",
+            "ms": 1501,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "1",
+            "target": "kp-answer",
+            "value": ""
+          },
+          {
+            "type": "compositionend",
+            "ms": 1502,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "1",
+            "target": "kp-answer",
+            "value": "1"
+          },
+          {
+            "type": "input",
+            "ms": 1503,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "1",
+            "target": "kp-answer",
+            "value": "1"
+          },
+          {
+            "type": "keydown",
+            "ms": 1504,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "1"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 1504,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "target": "kp-answer",
+            "value": "1"
+          },
+          {
+            "type": "click",
+            "ms": 1504,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": null,
+            "target": "BUTTON",
+            "value": "1"
+          },
+          {
+            "type": "keyup",
+            "ms": 1507,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-2",
+      "status": "FAIL",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 1,
+          "feedback": true,
+          "draft": "1"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 1,
+          "feedback": false,
+          "draft": "2"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 3249,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "1",
+            "target": "kp-answer",
+            "value": "1"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 3250,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "2",
+            "target": "kp-answer",
+            "value": "1"
+          },
+          {
+            "type": "compositionend",
+            "ms": 3250,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "2",
+            "target": "kp-answer",
+            "value": "2"
+          },
+          {
+            "type": "input",
+            "ms": 3250,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "2",
+            "target": "kp-answer",
+            "value": "2"
+          },
+          {
+            "type": "keydown",
+            "ms": 3251,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "2"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 3251,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "target": "kp-answer",
+            "value": "2"
+          },
+          {
+            "type": "click",
+            "ms": 3251,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": null,
+            "target": "BUTTON",
+            "value": "2"
+          },
+          {
+            "type": "keyup",
+            "ms": 3252,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "2"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-3",
+      "status": "FAIL",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 2,
+          "feedback": true,
+          "draft": "2"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 2,
+          "feedback": false,
+          "draft": "3"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 5205,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "2",
+            "target": "kp-answer",
+            "value": "2"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 5205,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "3",
+            "target": "kp-answer",
+            "value": "2"
+          },
+          {
+            "type": "compositionend",
+            "ms": 5205,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "3",
+            "target": "kp-answer",
+            "value": "3"
+          },
+          {
+            "type": "input",
+            "ms": 5206,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "3",
+            "target": "kp-answer",
+            "value": "3"
+          },
+          {
+            "type": "keydown",
+            "ms": 5207,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "3"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 5207,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "target": "kp-answer",
+            "value": "3"
+          },
+          {
+            "type": "click",
+            "ms": 5207,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": null,
+            "target": "BUTTON",
+            "value": "3"
+          },
+          {
+            "type": "keyup",
+            "ms": 5209,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-4",
+      "status": "FAIL",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 3,
+          "feedback": true,
+          "draft": "3"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 3,
+          "feedback": false,
+          "draft": "4"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 6947,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "3",
+            "target": "kp-answer",
+            "value": "3"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 6947,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "4",
+            "target": "kp-answer",
+            "value": "3"
+          },
+          {
+            "type": "compositionend",
+            "ms": 6947,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "4",
+            "target": "kp-answer",
+            "value": "4"
+          },
+          {
+            "type": "input",
+            "ms": 6947,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "4",
+            "target": "kp-answer",
+            "value": "4"
+          },
+          {
+            "type": "keydown",
+            "ms": 6949,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "4"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 6949,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "target": "kp-answer",
+            "value": "4"
+          },
+          {
+            "type": "click",
+            "ms": 6949,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": null,
+            "target": "BUTTON",
+            "value": "4"
+          },
+          {
+            "type": "keyup",
+            "ms": 6950,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "4"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-5",
+      "status": "PASS",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 4,
+          "feedback": true,
+          "draft": "4"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 5,
+          "feedback": true,
+          "draft": "5"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 8678,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "4",
+            "target": "kp-answer",
+            "value": "4"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 8678,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "5",
+            "target": "kp-answer",
+            "value": "4"
+          },
+          {
+            "type": "compositionend",
+            "ms": 8679,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "5",
+            "target": "kp-answer",
+            "value": "5"
+          },
+          {
+            "type": "input",
+            "ms": 8679,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "5",
+            "target": "kp-answer",
+            "value": "5"
+          },
+          {
+            "type": "keydown",
+            "ms": 8679,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "5"
+          },
+          {
+            "type": "keyup",
+            "ms": 8684,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "BODY",
+            "value": "5"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-6",
+      "status": "FAIL",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 5,
+          "feedback": true,
+          "draft": "5"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 5,
+          "feedback": false,
+          "draft": "6"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 9043,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "5",
+            "target": "kp-answer",
+            "value": "5"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 9043,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "6",
+            "target": "kp-answer",
+            "value": "5"
+          },
+          {
+            "type": "compositionend",
+            "ms": 9043,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "6",
+            "target": "kp-answer",
+            "value": "6"
+          },
+          {
+            "type": "input",
+            "ms": 9044,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "6",
+            "target": "kp-answer",
+            "value": "6"
+          },
+          {
+            "type": "keydown",
+            "ms": 9045,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "6"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 9045,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "target": "kp-answer",
+            "value": "6"
+          },
+          {
+            "type": "click",
+            "ms": 9045,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": null,
+            "target": "BUTTON",
+            "value": "6"
+          },
+          {
+            "type": "keyup",
+            "ms": 9047,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "6"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-7",
+      "status": "FAIL",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 6,
+          "feedback": true,
+          "draft": "6"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 6,
+          "feedback": false,
+          "draft": "7"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 10767,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "6",
+            "target": "kp-answer",
+            "value": "6"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 10767,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "7",
+            "target": "kp-answer",
+            "value": "6"
+          },
+          {
+            "type": "compositionend",
+            "ms": 10767,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "7",
+            "target": "kp-answer",
+            "value": "7"
+          },
+          {
+            "type": "input",
+            "ms": 10768,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "7",
+            "target": "kp-answer",
+            "value": "7"
+          },
+          {
+            "type": "keydown",
+            "ms": 10768,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "7"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 10769,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "target": "kp-answer",
+            "value": "7"
+          },
+          {
+            "type": "click",
+            "ms": 10769,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": null,
+            "target": "BUTTON",
+            "value": "7"
+          },
+          {
+            "type": "keyup",
+            "ms": 10770,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "7"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-8",
+      "status": "PASS",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 7,
+          "feedback": true,
+          "draft": "7"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 8,
+          "feedback": true,
+          "draft": "8"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 12504,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "7",
+            "target": "kp-answer",
+            "value": "7"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 12504,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "8",
+            "target": "kp-answer",
+            "value": "7"
+          },
+          {
+            "type": "compositionend",
+            "ms": 12504,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "8",
+            "target": "kp-answer",
+            "value": "8"
+          },
+          {
+            "type": "input",
+            "ms": 12505,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "8",
+            "target": "kp-answer",
+            "value": "8"
+          },
+          {
+            "type": "keydown",
+            "ms": 12506,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "8"
+          },
+          {
+            "type": "keyup",
+            "ms": 12511,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "BODY",
+            "value": "8"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-9",
+      "status": "FAIL",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 8,
+          "feedback": true,
+          "draft": "8"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 8,
+          "feedback": false,
+          "draft": "9"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 12814,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "8",
+            "target": "kp-answer",
+            "value": "8"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 12814,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "9",
+            "target": "kp-answer",
+            "value": "8"
+          },
+          {
+            "type": "compositionend",
+            "ms": 12814,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "9",
+            "target": "kp-answer",
+            "value": "9"
+          },
+          {
+            "type": "input",
+            "ms": 12814,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "9",
+            "target": "kp-answer",
+            "value": "9"
+          },
+          {
+            "type": "keydown",
+            "ms": 12815,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "9"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 12815,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "target": "kp-answer",
+            "value": "9"
+          },
+          {
+            "type": "click",
+            "ms": 12815,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": null,
+            "target": "BUTTON",
+            "value": "9"
+          },
+          {
+            "type": "keyup",
+            "ms": 12816,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "9"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-10",
+      "status": "PASS",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 9,
+          "feedback": true,
+          "draft": "9"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 10,
+          "feedback": true,
+          "draft": "10"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 14746,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "9",
+            "target": "kp-answer",
+            "value": "9"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 14746,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "10",
+            "target": "kp-answer",
+            "value": "9"
+          },
+          {
+            "type": "compositionend",
+            "ms": 14746,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "10",
+            "target": "kp-answer",
+            "value": "10"
+          },
+          {
+            "type": "input",
+            "ms": 14746,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "10",
+            "target": "kp-answer",
+            "value": "10"
+          },
+          {
+            "type": "keydown",
+            "ms": 14747,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "10"
+          },
+          {
+            "type": "keyup",
+            "ms": 14751,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "BODY",
+            "value": "10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-11",
+      "status": "PASS",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 10,
+          "feedback": true,
+          "draft": "10"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 11,
+          "feedback": true,
+          "draft": "11"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 15057,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "10",
+            "target": "kp-answer",
+            "value": "10"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 15058,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "11",
+            "target": "kp-answer",
+            "value": "10"
+          },
+          {
+            "type": "compositionend",
+            "ms": 15058,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "11",
+            "target": "kp-answer",
+            "value": "11"
+          },
+          {
+            "type": "input",
+            "ms": 15058,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "11",
+            "target": "kp-answer",
+            "value": "11"
+          },
+          {
+            "type": "keydown",
+            "ms": 15059,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "11"
+          },
+          {
+            "type": "keyup",
+            "ms": 15061,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "11"
+          }
+        ]
+      }
+    },
+    {
+      "id": "native-sequence-12",
+      "status": "FAIL",
+      "expected": "The distinct Enter after a committed insertion grades the active item once.",
+      "actual": {
+        "prior": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 11,
+          "feedback": true,
+          "draft": "11"
+        },
+        "after": {
+          "id": "06e26f44-6a62-4acb-b857-78a46194cc0e",
+          "index": 0,
+          "answers": 11,
+          "feedback": false,
+          "draft": "12"
+        },
+        "trusted_events": [
+          {
+            "type": "compositionstart",
+            "ms": 15372,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "11",
+            "target": "kp-answer",
+            "value": "11"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 15372,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": true,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "12",
+            "target": "kp-answer",
+            "value": "11"
+          },
+          {
+            "type": "compositionend",
+            "ms": 15373,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": "12",
+            "target": "kp-answer",
+            "value": "12"
+          },
+          {
+            "type": "input",
+            "ms": 15373,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertCompositionText",
+            "data": "12",
+            "target": "kp-answer",
+            "value": "12"
+          },
+          {
+            "type": "keydown",
+            "ms": 15373,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "12"
+          },
+          {
+            "type": "beforeinput",
+            "ms": 15374,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": false,
+            "repeat": null,
+            "inputType": "insertLineBreak",
+            "data": null,
+            "target": "kp-answer",
+            "value": "12"
+          },
+          {
+            "type": "click",
+            "ms": 15374,
+            "trusted": true,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "isComposing": null,
+            "repeat": null,
+            "inputType": null,
+            "data": null,
+            "target": "BUTTON",
+            "value": "12"
+          },
+          {
+            "type": "keyup",
+            "ms": 15374,
+            "trusted": true,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "isComposing": false,
+            "repeat": false,
+            "inputType": null,
+            "data": null,
+            "target": "kp-answer",
+            "value": "12"
+          }
+        ]
+      }
+    }
+  ],
+  "runtime": {
+    "engine": "firefox",
+    "version": "153.0"
+  },
+  "finished": "2026-11-28T17:22:37.798585+00:00",
+  "assertions": 12,
+  "status": "FAIL"
+}

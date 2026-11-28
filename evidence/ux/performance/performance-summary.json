@@ -1,0 +1,448 @@
+{
+  "release": "47c1663e7ea2fa9c",
+  "analyzed_dist_release": "47c1663e7ea2fa9c",
+  "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.8127.0 Safari/537.36",
+  "profile": "Managed preview; no artificial network throttling",
+  "cpu": "Unthrottled",
+  "dist_tree_sha256": "08cac7c52d13761fffb67a2b45fd082fd3fc0c86883b6e02b912315cf7994314",
+  "release_after": "47c1663e7ea2fa9c",
+  "build_bootstrap": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736",
+  "run_errors": [],
+  "volumes": {
+    "primary": 1200,
+    "other": 41,
+    "items_per_session": 10,
+    "batch_reports": 100,
+    "sessions_per_report": 12
+  },
+  "bank_package_count": 4604,
+  "nav_runs": 5,
+  "scale_runs": 5,
+  "budgets": [
+    {
+      "group": "initial js run 1",
+      "limit_kib": 150,
+      "method": "sum",
+      "count": 13,
+      "gzip_bytes": 25502,
+      "status": "PASS"
+    },
+    {
+      "group": "initial css run 1",
+      "limit_kib": 35,
+      "method": "sum",
+      "count": 1,
+      "gzip_bytes": 8293,
+      "status": "PASS"
+    },
+    {
+      "group": "initial font run 1",
+      "limit_kib": 100,
+      "method": "sum",
+      "count": 2,
+      "gzip_bytes": 64855,
+      "status": "PASS"
+    },
+    {
+      "group": "initial js run 2",
+      "limit_kib": 150,
+      "method": "sum",
+      "count": 13,
+      "gzip_bytes": 25502,
+      "status": "PASS"
+    },
+    {
+      "group": "initial css run 2",
+      "limit_kib": 35,
+      "method": "sum",
+      "count": 1,
+      "gzip_bytes": 8293,
+      "status": "PASS"
+    },
+    {
+      "group": "initial font run 2",
+      "limit_kib": 100,
+      "method": "sum",
+      "count": 2,
+      "gzip_bytes": 64855,
+      "status": "PASS"
+    },
+    {
+      "group": "initial js run 3",
+      "limit_kib": 150,
+      "method": "sum",
+      "count": 13,
+      "gzip_bytes": 25502,
+      "status": "PASS"
+    },
+    {
+      "group": "initial css run 3",
+      "limit_kib": 35,
+      "method": "sum",
+      "count": 1,
+      "gzip_bytes": 8293,
+      "status": "PASS"
+    },
+    {
+      "group": "initial font run 3",
+      "limit_kib": 100,
+      "method": "sum",
+      "count": 2,
+      "gzip_bytes": 64855,
+      "status": "PASS"
+    },
+    {
+      "group": "initial js run 4",
+      "limit_kib": 150,
+      "method": "sum",
+      "count": 13,
+      "gzip_bytes": 25502,
+      "status": "PASS"
+    },
+    {
+      "group": "initial css run 4",
+      "limit_kib": 35,
+      "method": "sum",
+      "count": 1,
+      "gzip_bytes": 8293,
+      "status": "PASS"
+    },
+    {
+      "group": "initial font run 4",
+      "limit_kib": 100,
+      "method": "sum",
+      "count": 2,
+      "gzip_bytes": 64855,
+      "status": "PASS"
+    },
+    {
+      "group": "initial js run 5",
+      "limit_kib": 150,
+      "method": "sum",
+      "count": 13,
+      "gzip_bytes": 25502,
+      "status": "PASS"
+    },
+    {
+      "group": "initial css run 5",
+      "limit_kib": 35,
+      "method": "sum",
+      "count": 1,
+      "gzip_bytes": 8293,
+      "status": "PASS"
+    },
+    {
+      "group": "initial font run 5",
+      "limit_kib": 100,
+      "method": "sum",
+      "count": 2,
+      "gzip_bytes": 64855,
+      "status": "PASS"
+    },
+    {
+      "group": "locale",
+      "limit_kib": 25,
+      "method": "maximum per file",
+      "count": 2,
+      "gzip_bytes": 3622,
+      "status": "PASS"
+    },
+    {
+      "group": "bank index",
+      "limit_kib": 20,
+      "method": "sum",
+      "count": 1,
+      "gzip_bytes": 291,
+      "status": "PASS"
+    },
+    {
+      "group": "bank shard",
+      "limit_kib": 50,
+      "method": "maximum per file",
+      "count": 72,
+      "gzip_bytes": 6873,
+      "status": "PASS"
+    },
+    {
+      "group": "bank package",
+      "limit_kib": 60,
+      "method": "maximum per file",
+      "count": 4604,
+      "gzip_bytes": 13645,
+      "status": "PASS"
+    },
+    {
+      "group": "additional student player + shared static dependencies",
+      "limit_kib": 90,
+      "method": "sum",
+      "count": 14,
+      "gzip_bytes": 42244,
+      "status": "PASS"
+    },
+    {
+      "group": "student player including observed MathJax, original AC-068",
+      "limit_kib": 90,
+      "method": "sum",
+      "count": 15,
+      "gzip_bytes": 613534,
+      "status": "FAIL"
+    },
+    {
+      "group": "student player including observed MathJax, release 1.2 budget",
+      "limit_kib": 640,
+      "method": "sum",
+      "count": 15,
+      "gzip_bytes": 613534,
+      "status": "PASS"
+    },
+    {
+      "group": "additional teacher workspace (conservative full workspace)",
+      "limit_kib": 150,
+      "method": "sum",
+      "count": 17,
+      "gzip_bytes": 49461,
+      "status": "PASS"
+    },
+    {
+      "group": "additional admin workspace (conservative full workspace)",
+      "limit_kib": 150,
+      "method": "sum",
+      "count": 17,
+      "gzip_bytes": 49461,
+      "status": "PASS"
+    }
+  ],
+  "home_lcp_ms": {
+    "n": 5,
+    "min": 204,
+    "median": 216,
+    "max": 280
+  },
+  "home_cls": {
+    "n": 5,
+    "min": 0,
+    "median": 0,
+    "max": 0
+  },
+  "warm_lcp_ms": {
+    "n": 5,
+    "min": 216,
+    "median": 272,
+    "max": 316
+  },
+  "warm_cls": {
+    "n": 5,
+    "min": 0,
+    "median": 0,
+    "max": 0
+  },
+  "paint_opportunity_ms": {
+    "catalog": {
+      "n": 5,
+      "min": 12.5,
+      "median": 19.899999998509884,
+      "max": 29.199999999254942
+    },
+    "launch": {
+      "n": 5,
+      "min": 17.5,
+      "median": 20.599999997764826,
+      "max": 22.100000001490116
+    },
+    "submit": {
+      "n": 5,
+      "min": 15.399999998509884,
+      "median": 16.399999998509884,
+      "max": 30.400000002235174
+    },
+    "next": {
+      "n": 5,
+      "min": 18.099999997764826,
+      "median": 21.400000002235174,
+      "max": 32.30000000074506
+    },
+    "preview": {
+      "n": 5,
+      "min": 27,
+      "median": 29.600000001490116,
+      "max": 38.100000001490116
+    }
+  },
+  "visual_feedback_dom_ms": {
+    "catalog": {
+      "n": 5,
+      "min": 1.300000000745058,
+      "median": 1.5,
+      "max": 6.899999998509884
+    },
+    "launch": {
+      "n": 5,
+      "min": 0.6999999992549419,
+      "median": 0.6999999992549419,
+      "max": 2.199999999254942
+    },
+    "submit": {
+      "n": 5,
+      "min": 1.5999999977648258,
+      "median": 1.6000000014901161,
+      "max": 1.9000000022351742
+    },
+    "next": {
+      "n": 5,
+      "min": 0.19999999925494194,
+      "median": 0.5,
+      "max": 0.5
+    },
+    "preview": {
+      "n": 5,
+      "min": 0.3999999985098839,
+      "median": 0.5,
+      "max": 2.899999998509884
+    }
+  },
+  "complete_ms": {
+    "catalog": {
+      "n": 5,
+      "min": 83.10000000149012,
+      "median": 86.60000000149012,
+      "max": 146.69999999925494
+    },
+    "launch": {
+      "n": 5,
+      "min": 691,
+      "median": 870.0999999977648,
+      "max": 1304
+    },
+    "submit": {
+      "n": 5,
+      "min": 22.100000001490116,
+      "median": 32.100000001490116,
+      "max": 49.69999999925494
+    },
+    "next": {
+      "n": 5,
+      "min": 24.399999998509884,
+      "median": 28,
+      "max": 45.5
+    },
+    "preview": {
+      "n": 5,
+      "min": 20.800000000745058,
+      "median": 29.699999999254942,
+      "max": 33.100000001490116
+    }
+  },
+  "large_history": {
+    "page_ms": {
+      "n": 5,
+      "min": 48.5,
+      "median": 85.80000000074506,
+      "max": 145.19999999925494
+    },
+    "filtered_ms": {
+      "n": 5,
+      "min": 132.5,
+      "median": 148.5,
+      "max": 300
+    },
+    "history_dom": {
+      "n": 5,
+      "min": 87,
+      "median": 87,
+      "max": 87
+    },
+    "history_articles": {
+      "n": 5,
+      "min": 10,
+      "median": 10,
+      "max": 10
+    },
+    "filtered_next_ms": {
+      "n": 5,
+      "min": 130.10000000149012,
+      "median": 144.5,
+      "max": 373.3999999985099
+    },
+    "preview_worker_ms": {
+      "n": 5,
+      "min": 42.5,
+      "median": 48,
+      "max": 66.40000000223517
+    },
+    "progress_worker_ms": {
+      "n": 5,
+      "min": 239,
+      "median": 302.80000000074506,
+      "max": 429.29999999701977
+    },
+    "heap_after": {
+      "n": 5,
+      "min": 56800000,
+      "median": 56800000,
+      "max": 56800000
+    }
+  },
+  "worker_batch": {
+    "zip_bytes": {
+      "n": 5,
+      "min": 40151792,
+      "median": 40151792,
+      "max": 40151792
+    },
+    "elapsed_ms": {
+      "n": 5,
+      "min": 4040.5,
+      "median": 4795.89999999851,
+      "max": 5149.5
+    },
+    "longest_tick_gap_ms": {
+      "n": 5,
+      "min": 29,
+      "median": 35.69999999925494,
+      "max": 107.90000000223517
+    },
+    "emitted": {
+      "n": 5,
+      "min": 100,
+      "median": 100,
+      "max": 100
+    },
+    "ticks": {
+      "n": 5,
+      "min": 161,
+      "median": 188,
+      "max": 205
+    }
+  },
+  "synthetic_input_during_batch_ms": {
+    "n": 10,
+    "min": 0,
+    "median": 0.10000000149011612,
+    "max": 0.19999999925494194
+  },
+  "cancel_after_three": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "scale_long_tasks_ms": {
+    "n": 1,
+    "min": 260,
+    "median": 260,
+    "max": 260
+  },
+  "home_retrieved_locked_data": [],
+  "field_p75": {
+    "status": "NOT_RUN",
+    "reason": "No production RUM cohort or field deployment."
+  },
+  "heap_note": "performance.memory values, if available, describe browser-exposed JS heap. They do not cover all worker or IndexedDB memory. No forced GC or memory ceiling measured.",
+  "checks": {
+    "AC-068": "FAIL",
+    "AC-069": "PASS",
+    "AC-070": "NOT_RUN",
+    "AC-071": "PASS"
+  }
+}

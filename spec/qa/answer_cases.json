@@ -1,0 +1,415 @@
+{
+  "artifact_status": "normative_fixtures_not_app_test_results",
+  "policy": "locale-strict-rational-v1",
+  "max_input_characters": 80,
+  "cases": [
+    {
+      "case_id": "ANS-001",
+      "locale": "id",
+      "input": "96",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "96",
+        "denominator": "1"
+      }
+    },
+    {
+      "case_id": "ANS-002",
+      "locale": "en",
+      "input": "96",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "96",
+        "denominator": "1"
+      }
+    },
+    {
+      "case_id": "ANS-003",
+      "locale": "id",
+      "input": "1,25",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "5",
+        "denominator": "4"
+      }
+    },
+    {
+      "case_id": "ANS-004",
+      "locale": "en",
+      "input": "1.25",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "5",
+        "denominator": "4"
+      }
+    },
+    {
+      "case_id": "ANS-005",
+      "locale": "id",
+      "input": "0,5",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "1",
+        "denominator": "2"
+      }
+    },
+    {
+      "case_id": "ANS-006",
+      "locale": "en",
+      "input": "0.500",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "1",
+        "denominator": "2"
+      }
+    },
+    {
+      "case_id": "ANS-007",
+      "locale": "id",
+      "input": "2/4",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "1",
+        "denominator": "2"
+      }
+    },
+    {
+      "case_id": "ANS-008",
+      "locale": "en",
+      "input": "2/4",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "1",
+        "denominator": "2"
+      }
+    },
+    {
+      "case_id": "ANS-009",
+      "locale": "id",
+      "input": "−3/4",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "-3",
+        "denominator": "4"
+      }
+    },
+    {
+      "case_id": "ANS-010",
+      "locale": "en",
+      "input": "-3/4",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "-3",
+        "denominator": "4"
+      }
+    },
+    {
+      "case_id": "ANS-011",
+      "locale": "id",
+      "input": " -6 / 8 ",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "-3",
+        "denominator": "4"
+      }
+    },
+    {
+      "case_id": "ANS-012",
+      "locale": "en",
+      "input": "-0",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    },
+    {
+      "case_id": "ANS-013",
+      "locale": "id",
+      "input": "-0,00",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    },
+    {
+      "case_id": "ANS-014",
+      "locale": "en",
+      "input": "+4",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "4",
+        "denominator": "1"
+      }
+    },
+    {
+      "case_id": "ANS-015",
+      "locale": "id",
+      "input": "0006",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "6",
+        "denominator": "1"
+      }
+    },
+    {
+      "case_id": "ANS-016",
+      "locale": "en",
+      "input": "0.015625",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "1",
+        "denominator": "64"
+      }
+    },
+    {
+      "case_id": "ANS-017",
+      "locale": "id",
+      "input": "0,015625",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "1",
+        "denominator": "64"
+      }
+    },
+    {
+      "case_id": "ANS-018",
+      "locale": "en",
+      "input": "999999.984375",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "63999999",
+        "denominator": "64"
+      }
+    },
+    {
+      "case_id": "ANS-019",
+      "locale": "id",
+      "input": "1,250",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "5",
+        "denominator": "4"
+      }
+    },
+    {
+      "case_id": "ANS-020",
+      "locale": "en",
+      "input": "1.250",
+      "expected_status": "valid",
+      "expected_canonical": {
+        "numerator": "5",
+        "denominator": "4"
+      }
+    },
+    {
+      "case_id": "ANS-021",
+      "locale": "id",
+      "input": "1.25",
+      "expected_status": "format_error",
+      "expected_error": "WRONG_DECIMAL_SEPARATOR",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-022",
+      "locale": "en",
+      "input": "1,25",
+      "expected_status": "format_error",
+      "expected_error": "WRONG_DECIMAL_SEPARATOR",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-023",
+      "locale": "id",
+      "input": "1.250",
+      "expected_status": "format_error",
+      "expected_error": "WRONG_DECIMAL_SEPARATOR",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-024",
+      "locale": "en",
+      "input": "1,250",
+      "expected_status": "format_error",
+      "expected_error": "WRONG_DECIMAL_SEPARATOR",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-025",
+      "locale": "id",
+      "input": "",
+      "expected_status": "format_error",
+      "expected_error": "EMPTY",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-026",
+      "locale": "en",
+      "input": "   ",
+      "expected_status": "format_error",
+      "expected_error": "EMPTY",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-027",
+      "locale": "id",
+      "input": "-",
+      "expected_status": "format_error",
+      "expected_error": "INCOMPLETE",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-028",
+      "locale": "id",
+      "input": "1,",
+      "expected_status": "format_error",
+      "expected_error": "INCOMPLETE",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-029",
+      "locale": "en",
+      "input": "1.",
+      "expected_status": "format_error",
+      "expected_error": "INCOMPLETE",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-030",
+      "locale": "en",
+      "input": "1/",
+      "expected_status": "format_error",
+      "expected_error": "INCOMPLETE",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-031",
+      "locale": "id",
+      "input": "1/0",
+      "expected_status": "format_error",
+      "expected_error": "ZERO_DENOMINATOR",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-032",
+      "locale": "en",
+      "input": "1/-2",
+      "expected_status": "format_error",
+      "expected_error": "DENOMINATOR_MUST_BE_POSITIVE",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-033",
+      "locale": "en",
+      "input": "1+2",
+      "expected_status": "format_error",
+      "expected_error": "FORMULA_NOT_ALLOWED",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-034",
+      "locale": "en",
+      "input": "2×3",
+      "expected_status": "format_error",
+      "expected_error": "FORMULA_NOT_ALLOWED",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-035",
+      "locale": "en",
+      "input": "1e3",
+      "expected_status": "format_error",
+      "expected_error": "SCIENTIFIC_NOTATION_NOT_ALLOWED",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-036",
+      "locale": "en",
+      "input": "NaN",
+      "expected_status": "format_error",
+      "expected_error": "INVALID_NUMBER",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-037",
+      "locale": "en",
+      "input": "Infinity",
+      "expected_status": "format_error",
+      "expected_error": "INVALID_NUMBER",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-038",
+      "locale": "id",
+      "input": "1 250",
+      "expected_status": "format_error",
+      "expected_error": "GROUPING_NOT_ALLOWED",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-039",
+      "locale": "en",
+      "input": "1.2.3",
+      "expected_status": "format_error",
+      "expected_error": "INVALID_NUMBER",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-040",
+      "locale": "id",
+      "input": "1,2,3",
+      "expected_status": "format_error",
+      "expected_error": "INVALID_NUMBER",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-041",
+      "locale": "en",
+      "input": "1/2/3",
+      "expected_status": "format_error",
+      "expected_error": "INVALID_FRACTION",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-042",
+      "locale": "id",
+      "input": "1,2/3",
+      "expected_status": "format_error",
+      "expected_error": "INVALID_FRACTION",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-043",
+      "locale": "en",
+      "input": "--2",
+      "expected_status": "format_error",
+      "expected_error": "INVALID_NUMBER",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-044",
+      "locale": "en",
+      "input": "0x10",
+      "expected_status": "format_error",
+      "expected_error": "INVALID_NUMBER",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-045",
+      "locale": "en",
+      "input": "<script>1</script>",
+      "expected_status": "format_error",
+      "expected_error": "INVALID_NUMBER",
+      "counts_as_wrong_before_finalization": false
+    },
+    {
+      "case_id": "ANS-046",
+      "locale": "en",
+      "input": "111111111111111111111111111111111111111111111111111111111111111111111111111111111",
+      "expected_status": "format_error",
+      "expected_error": "INPUT_TOO_LONG",
+      "counts_as_wrong_before_finalization": false
+    }
+  ]
+}

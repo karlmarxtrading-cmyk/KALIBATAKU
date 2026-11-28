@@ -1,0 +1,204 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "catalog-offline-v151-firefox",
+  "scope": "Catalogue, package management/detail, launcher, mission eligibility and bounded verification under true origin loss",
+  "build": {
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "a2f40449c4738fe6"
+  },
+  "engine": "firefox",
+  "version": "153.0",
+  "started": "2026-11-28T17:27:56.886486+00:00",
+  "finished": "2026-11-28T17:29:05.170699+00:00",
+  "assertions": 11,
+  "status": "PASS",
+  "checks": [
+    {
+      "id": "healthy",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P001",
+        "first_worker_activation": {
+          "claims": 1,
+          "retained": true
+        },
+        "mutation": null,
+        "catalog_and_device_and_detail": "ready",
+        "initial_map": "ready",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": false,
+        "repaired_then_reloaded": false,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "missing_package",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P001",
+        "first_worker_activation": null,
+        "mutation": "/bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+        "catalog_and_device_and_detail": "repair",
+        "initial_map": "repair",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": false,
+        "repaired_then_reloaded": true,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "corrupt_package",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P001",
+        "first_worker_activation": null,
+        "mutation": "/bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+        "catalog_and_device_and_detail": "repair",
+        "initial_map": "repair",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": false,
+        "repaired_then_reloaded": true,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "corrupt_shard",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P001",
+        "first_worker_activation": null,
+        "mutation": "/journey/v1/occ/arithmetic.addition.g01.l01.json",
+        "catalog_and_device_and_detail": "repair",
+        "initial_map": "repair",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": false,
+        "repaired_then_reloaded": true,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "corrupt_shell",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P001",
+        "first_worker_activation": null,
+        "mutation": "/player/engine.mjs",
+        "catalog_and_device_and_detail": "repair",
+        "initial_map": "repair",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": false,
+        "repaired_then_reloaded": true,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "stale_version",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P001",
+        "first_worker_activation": null,
+        "mutation": "stale_version",
+        "catalog_and_device_and_detail": "update",
+        "initial_map": "repair",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": false,
+        "repaired_then_reloaded": true,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "stale_release",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P001",
+        "first_worker_activation": null,
+        "mutation": "stale_release",
+        "catalog_and_device_and_detail": "update",
+        "initial_map": "repair",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": false,
+        "repaired_then_reloaded": true,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "legacy_dependency",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P001",
+        "first_worker_activation": null,
+        "mutation": "/journey/v1/occ/arithmetic.addition.g01.l01.json",
+        "catalog_and_device_and_detail": "repair",
+        "initial_map": "repair",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": false,
+        "repaired_then_reloaded": true,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "assessment",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P003",
+        "first_worker_activation": null,
+        "mutation": null,
+        "catalog_and_device_and_detail": "ready",
+        "initial_map": "repair",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": false,
+        "repaired_then_reloaded": false,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "change_after_preview",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "id": "MM-G01-L01-ADD-P001",
+        "first_worker_activation": null,
+        "mutation": "/bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+        "catalog_and_device_and_detail": "repair",
+        "initial_map": "ready",
+        "new_offline_document": true,
+        "started_after_verified": true,
+        "invalidations_before_launch": true,
+        "repaired_then_reloaded": true,
+        "page_errors": []
+      },
+      "status": "PASS"
+    },
+    {
+      "id": "scoped_invalidation",
+      "expected": "Rendered catalogue, stored-pack list, detail and launch agree with verified material; only eligible teaching packs enable missions.",
+      "actual": {
+        "cross_tab_remove_install": true,
+        "checking_visible": true,
+        "filtered_pack_reads": 1,
+        "unfiltered_pack_reads": 2,
+        "shell_reads_per_cycle": 1
+      },
+      "status": "PASS"
+    }
+  ]
+}

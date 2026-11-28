@@ -1,0 +1,52 @@
+{
+  "os": "Linux",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "runtime": {
+    "node": "v24.22.3",
+    "python": "3.12.14",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "chromium": "Google Chrome for Testing 151.0.7922.34",
+    "playwright": "1.62.0"
+  },
+  "sys_platform": "linux",
+  "os_name": "posix",
+  "git_bash_environment": null,
+  "finished_utc": "2026-11-28T17:38:18+00:00",
+  "checkout_has_space": true,
+  "build": {
+    "dist_tree_sha256": "0892340c375361c57d6212d4c8bbe0379872d0d2ab9860944c5938f6f7266cea",
+    "offline_release": "a2f40449c4738fe6",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "after": {
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "offline_release": "a2f40449c4738fe6",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "logs": [
+    {
+      "step": "tests/v160/path_order.py",
+      "exit": 0,
+      "sha256": "e67d43a317c2a4a29c30d13d99d412c09ef0077b30547f955f4f8cd0b984c0b1"
+    },
+    {
+      "step": "tools/project.py verify",
+      "exit": 0,
+      "sha256": "832f12aa61ea8a18bdef4e22ba359489b3a3e3f22cdd875380f81294b572373f"
+    },
+    {
+      "step": "tools/project.py build",
+      "exit": 0,
+      "sha256": "cf1edb4c90fe01be6114fbea57bce64f93ec7bfee1a178129ccaf365310b7333"
+    },
+    {
+      "step": "tools/project.py verify",
+      "exit": 0,
+      "sha256": "832f12aa61ea8a18bdef4e22ba359489b3a3e3f22cdd875380f81294b572373f"
+    }
+  ]
+}

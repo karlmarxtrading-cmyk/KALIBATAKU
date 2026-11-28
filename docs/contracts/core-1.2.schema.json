@@ -1,0 +1,1386 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:kalibataku:contract:1.0.0",
+  "title": "KALIBATAKU design handoff contracts",
+  "description": "Structural contracts only. Mathematical rules, identities, authorization, fingerprints and score consistency require semantic validation. No production implementation is certified.",
+  "$defs": {
+    "I18nText": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "en": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "en"
+      ],
+      "additionalProperties": false
+    },
+    "Rational": {
+      "type": "object",
+      "properties": {
+        "numerator": {
+          "type": "string",
+          "pattern": "^(0|-?[1-9][0-9]*)$",
+          "maxLength": 80
+        },
+        "denominator": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]*$",
+          "maxLength": 80
+        }
+      },
+      "required": [
+        "numerator",
+        "denominator"
+      ],
+      "additionalProperties": false,
+      "description": "Semantic validator also enforces gcd=1 and zero=0/1; JSON Schema cannot enforce these arithmetic relations."
+    },
+    "Display": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "integer"
+            }
+          },
+          "required": [
+            "kind"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "decimal"
+            },
+            "decimal_places": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 8
+            }
+          },
+          "required": [
+            "kind",
+            "decimal_places"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "fraction"
+            },
+            "numerator": {
+              "type": "string",
+              "pattern": "^(0|-?[1-9][0-9]*)$",
+              "maxLength": 80
+            },
+            "denominator": {
+              "type": "string",
+              "pattern": "^[1-9][0-9]*$",
+              "maxLength": 80
+            }
+          },
+          "required": [
+            "kind",
+            "numerator",
+            "denominator"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "AstNode": {
+      "oneOf": [
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "rational"
+            },
+            "numerator": {
+              "type": "string",
+              "pattern": "^(0|-?[1-9][0-9]*)$",
+              "maxLength": 80
+            },
+            "denominator": {
+              "type": "string",
+              "pattern": "^[1-9][0-9]*$",
+              "maxLength": 80
+            },
+            "display": {
+              "$ref": "#/$defs/Display"
+            }
+          },
+          "required": [
+            "kind",
+            "numerator",
+            "denominator"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "properties": {
+            "kind": {
+              "const": "binary"
+            },
+            "operation": {
+              "type": "string",
+              "enum": [
+                "ADD",
+                "SUB",
+                "MUL",
+                "DIV"
+              ]
+            },
+            "left": {
+              "$ref": "#/$defs/AstNode"
+            },
+            "right": {
+              "$ref": "#/$defs/AstNode"
+            }
+          },
+          "required": [
+            "kind",
+            "operation",
+            "left",
+            "right"
+          ],
+          "additionalProperties": false
+        }
+      ],
+      "description": "Whitelist AST; semantic validator limits nodes/depth, checks division and every intermediate, and proves display equals canonical value."
+    },
+    "Question": {
+      "type": "object",
+      "properties": {
+        "question_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "question_revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "competency_id": {
+          "type": "string",
+          "pattern": "^arithmetic\\.(addition|subtraction|multiplication|division|mixed)\\.g(0[1-9]|1[0-2])\\.l0[1-5]$"
+        },
+        "template_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "template_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "fingerprint": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "fingerprint_policy": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "strategy_tags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "NB",
+              "MT",
+              "PV",
+              "CO",
+              "BR",
+              "DB",
+              "HL",
+              "DE",
+              "DS",
+              "PO",
+              "INV",
+              "HD",
+              "FR",
+              "EQ",
+              "SG",
+              "OO"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "question_type": {
+          "const": "numeric_essay"
+        },
+        "expression_ast": {
+          "$ref": "#/$defs/AstNode"
+        },
+        "neutral_expression": {
+          "type": "string",
+          "minLength": 1
+        },
+        "answer": {
+          "$ref": "#/$defs/Rational"
+        },
+        "answer_policy": {
+          "const": "exact_rational"
+        },
+        "hint": {
+          "$ref": "#/$defs/I18nText"
+        },
+        "explanation": {
+          "$ref": "#/$defs/I18nText"
+        },
+        "solution_steps": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "kind": {
+                "const": "equivalent_expression"
+              },
+              "expression_ast": {
+                "$ref": "#/$defs/AstNode"
+              },
+              "text": {
+                "$ref": "#/$defs/I18nText"
+              }
+            },
+            "required": [
+              "kind",
+              "expression_ast",
+              "text"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        }
+      },
+      "required": [
+        "question_id",
+        "question_revision",
+        "competency_id",
+        "template_id",
+        "template_version",
+        "fingerprint",
+        "fingerprint_policy",
+        "strategy_tags",
+        "question_type",
+        "expression_ast",
+        "neutral_expression",
+        "answer",
+        "answer_policy",
+        "hint",
+        "explanation",
+        "solution_steps"
+      ],
+      "additionalProperties": false
+    },
+    "Package": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "artifact_status": {
+          "type": "string",
+          "enum": [
+            "contract_example_not_production",
+            "validated_content"
+          ]
+        },
+        "module_id": {
+          "const": "mental-math"
+        },
+        "curriculum_id": {
+          "const": "kalibataku"
+        },
+        "curriculum_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "package_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "grade": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "operation": {
+          "type": "string",
+          "enum": [
+            "ADD",
+            "SUB",
+            "MUL",
+            "DIV",
+            "MIX"
+          ]
+        },
+        "target_competency_id": {
+          "type": "string",
+          "pattern": "^arithmetic\\.(addition|subtraction|multiplication|division|mixed)\\.g(0[1-9]|1[0-2])\\.l0[1-5]$"
+        },
+        "purpose": {
+          "type": "string",
+          "enum": [
+            "introduce",
+            "consolidate",
+            "transfer",
+            "review",
+            "assessment",
+            "diagnostic"
+          ]
+        },
+        "title": {
+          "$ref": "#/$defs/I18nText"
+        },
+        "instructions": {
+          "$ref": "#/$defs/I18nText"
+        },
+        "question_count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200
+        },
+        "form_family_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "form_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "questions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Question"
+          },
+          "minItems": 1,
+          "maxItems": 200
+        }
+      },
+      "required": [
+        "schema_version",
+        "artifact_status",
+        "module_id",
+        "curriculum_id",
+        "curriculum_version",
+        "package_id",
+        "content_version",
+        "grade",
+        "level",
+        "operation",
+        "target_competency_id",
+        "purpose",
+        "title",
+        "instructions",
+        "question_count",
+        "form_family_id",
+        "form_id",
+        "questions"
+      ],
+      "additionalProperties": false,
+      "description": "question_count must equal len(questions); no within-package duplicate canonical fingerprint; target/questions/ranges enforced semantically."
+    },
+    "Provenance": {
+      "type": "object",
+      "properties": {
+        "data_origin": {
+          "type": "string",
+          "enum": [
+            "local_practice",
+            "demo",
+            "lms_client"
+          ]
+        },
+        "dataset_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "local_profile_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "server_subject_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "data_origin",
+        "dataset_id",
+        "local_profile_id",
+        "server_subject_ref"
+      ],
+      "additionalProperties": false
+    },
+    "AttemptContext": {
+      "type": "object",
+      "properties": {
+        "module_id": {
+          "const": "mental-math"
+        },
+        "curriculum_id": {
+          "const": "kalibataku"
+        },
+        "curriculum_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "package_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "content_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "material_grade": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 12
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "practice",
+            "speed",
+            "assessment",
+            "adaptive",
+            "recovery"
+          ]
+        },
+        "locale": {
+          "type": "string",
+          "enum": [
+            "id",
+            "en"
+          ]
+        },
+        "policy_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "assignment_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "form_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "assessment_cycle_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "feedback_policy_version": {
+          "type": "string",
+          "maxLength": 64
+        },
+        "timing_policy_version": {
+          "type": "string",
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "module_id",
+        "curriculum_id",
+        "curriculum_version",
+        "package_id",
+        "content_version",
+        "material_grade",
+        "level",
+        "mode",
+        "locale",
+        "policy_version",
+        "assignment_id",
+        "form_id",
+        "assessment_cycle_id"
+      ],
+      "additionalProperties": false
+    },
+    "QuestionInstance": {
+      "type": "object",
+      "properties": {
+        "question_instance_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "question_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "question_revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "competency_id": {
+          "type": "string",
+          "pattern": "^arithmetic\\.(addition|subtraction|multiplication|division|mixed)\\.g(0[1-9]|1[0-2])\\.l0[1-5]$"
+        }
+      },
+      "required": [
+        "question_instance_id",
+        "question_id",
+        "question_revision",
+        "competency_id"
+      ],
+      "additionalProperties": false
+    },
+    "StartedPayload": {
+      "type": "object",
+      "properties": {
+        "instances": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/QuestionInstance"
+          },
+          "minItems": 1,
+          "maxItems": 200
+        },
+        "order_seed": {
+          "type": "string",
+          "minLength": 1
+        },
+        "started_at_client": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "instances",
+        "order_seed",
+        "started_at_client"
+      ],
+      "additionalProperties": false
+    },
+    "AnswerPayload": {
+      "type": "object",
+      "properties": {
+        "question_instance_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "question_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "question_revision": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "competency_id": {
+          "type": "string",
+          "pattern": "^arithmetic\\.(addition|subtraction|multiplication|division|mixed)\\.g(0[1-9]|1[0-2])\\.l0[1-5]$"
+        },
+        "answer": {
+          "$ref": "#/$defs/Rational"
+        },
+        "raw_answer": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "draft_locale": {
+          "type": "string",
+          "enum": [
+            "id",
+            "en"
+          ]
+        },
+        "submission_kind": {
+          "type": "string",
+          "enum": [
+            "first",
+            "revision",
+            "retry"
+          ]
+        },
+        "attempt_number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "hint_used": {
+          "type": "boolean"
+        },
+        "active_duration_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "elapsed_duration_ms": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "timing_quality": {
+          "type": "string",
+          "enum": [
+            "valid_client_estimate",
+            "resumed_estimate",
+            "interrupted",
+            "clock_anomaly",
+            "unavailable"
+          ]
+        },
+        "client_is_correct": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "key_seen_before": {
+          "type": "boolean"
+        },
+        "hint_before": {
+          "type": "boolean"
+        },
+        "first_correct": {
+          "anyOf": [
+            {
+              "type": "boolean"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "key_revealed_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "key_reveal_reason": {
+          "enum": [
+            "checked_response"
+          ]
+        },
+        "feedback_policy_version": {
+          "type": "string",
+          "maxLength": 64
+        }
+      },
+      "required": [
+        "question_instance_id",
+        "question_id",
+        "question_revision",
+        "competency_id",
+        "answer",
+        "raw_answer",
+        "draft_locale",
+        "submission_kind",
+        "attempt_number",
+        "hint_used",
+        "active_duration_ms",
+        "elapsed_duration_ms",
+        "timing_quality",
+        "client_is_correct"
+      ],
+      "additionalProperties": false
+    },
+    "SkippedPayload": {
+      "type": "object",
+      "properties": {
+        "question_instance_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "question_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "competency_id": {
+          "type": "string",
+          "pattern": "^arithmetic\\.(addition|subtraction|multiplication|division|mixed)\\.g(0[1-9]|1[0-2])\\.l0[1-5]$"
+        },
+        "reason": {
+          "type": "string",
+          "enum": [
+            "user_skip",
+            "time_expired"
+          ]
+        }
+      },
+      "required": [
+        "question_instance_id",
+        "question_id",
+        "competency_id",
+        "reason"
+      ],
+      "additionalProperties": false
+    },
+    "FinalResponse": {
+      "type": "object",
+      "properties": {
+        "question_instance_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "response_event_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 160,
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "answered",
+            "skipped",
+            "blank",
+            "unseen"
+          ]
+        }
+      },
+      "required": [
+        "question_instance_id",
+        "response_event_id",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "CompletedPayload": {
+      "type": "object",
+      "properties": {
+        "expected_event_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "final_responses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/FinalResponse"
+          },
+          "minItems": 1,
+          "maxItems": 200
+        },
+        "completed_at_client": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "expected_event_count",
+        "final_responses",
+        "completed_at_client"
+      ],
+      "additionalProperties": false
+    },
+    "AbandonedPayload": {
+      "type": "object",
+      "properties": {
+        "reason": {
+          "type": "string",
+          "enum": [
+            "user_ended",
+            "unrecoverable_version",
+            "replaced_by_new_attempt"
+          ]
+        },
+        "ended_at_client": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "reason",
+        "ended_at_client"
+      ],
+      "additionalProperties": false
+    },
+    "Event": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "event_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "event_type": {
+          "type": "string",
+          "enum": [
+            "attempt.started",
+            "answer.submitted",
+            "question.skipped",
+            "attempt.completed",
+            "attempt.abandoned"
+          ]
+        },
+        "event_sequence": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "attempt_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "provenance": {
+          "$ref": "#/$defs/Provenance"
+        },
+        "context": {
+          "$ref": "#/$defs/AttemptContext"
+        },
+        "occurred_at_client": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "payload": {
+          "type": "object"
+        },
+        "payload_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "schema_version",
+        "event_id",
+        "event_type",
+        "event_sequence",
+        "attempt_id",
+        "provenance",
+        "context",
+        "occurred_at_client",
+        "payload",
+        "payload_hash"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "event_type": {
+                "const": "attempt.started"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/StartedPayload"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "event_type": {
+                "const": "answer.submitted"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/AnswerPayload"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "event_type": {
+                "const": "question.skipped"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/SkippedPayload"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "event_type": {
+                "const": "attempt.completed"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/CompletedPayload"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "event_type": {
+                "const": "attempt.abandoned"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "payload": {
+                "$ref": "#/$defs/AbandonedPayload"
+              }
+            }
+          }
+        }
+      ],
+      "description": "Hash is SHA-256 of documented canonical envelope excluding payload_hash; server authorization never derives authority from this payload."
+    },
+    "BatchReceipt": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "receipt_origin": {
+          "type": "string",
+          "enum": [
+            "mock",
+            "server"
+          ]
+        },
+        "batch_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "received_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "attempt_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "receipts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "event_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+              },
+              "payload_hash": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "transport_result": {
+                "type": "string",
+                "enum": [
+                  "accepted",
+                  "duplicate",
+                  "rejected",
+                  "retry_required",
+                  "conflict"
+                ]
+              },
+              "grading_state": {
+                "type": "string",
+                "enum": [
+                  "unverified",
+                  "queued",
+                  "verified",
+                  "rejected"
+                ]
+              },
+              "error_code": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "event_id",
+              "payload_hash",
+              "transport_result",
+              "grading_state",
+              "error_code"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1
+        },
+        "missing_sequences": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "schema_version",
+        "receipt_origin",
+        "batch_id",
+        "received_at",
+        "attempt_id",
+        "receipts",
+        "missing_sequences"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "receipt_origin": {
+                "const": "mock"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "receipts": {
+                "items": {
+                  "properties": {
+                    "grading_state": {
+                      "const": "unverified"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "SyncState": {
+      "type": "string",
+      "enum": [
+        "saved_local",
+        "pending_sync",
+        "sending",
+        "mock_accepted",
+        "server_accepted",
+        "retry_required",
+        "auth_required",
+        "rejected",
+        "conflict"
+      ]
+    },
+    "ReportSnapshot": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "report_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 160,
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+        },
+        "data_origin": {
+          "type": "string",
+          "enum": [
+            "local_practice",
+            "demo",
+            "lms_client"
+          ]
+        },
+        "verification_status": {
+          "type": "string",
+          "enum": [
+            "unverified",
+            "server_verified"
+          ]
+        },
+        "locale": {
+          "type": "string",
+          "enum": [
+            "id",
+            "en",
+            "bilingual"
+          ]
+        },
+        "period_start_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "period_end_exclusive_utc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "display_timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "policy_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "assigned_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "correct_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "incorrect_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "skipped_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "blank_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unseen_count": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "form_score_percent": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "valid_response_accuracy_percent": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "responded_percent": {
+          "anyOf": [
+            {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "report_id",
+        "data_origin",
+        "verification_status",
+        "locale",
+        "period_start_utc",
+        "period_end_exclusive_utc",
+        "display_timezone",
+        "policy_version",
+        "created_at",
+        "assigned_count",
+        "correct_count",
+        "incorrect_count",
+        "skipped_count",
+        "blank_count",
+        "unseen_count",
+        "form_score_percent",
+        "valid_response_accuracy_percent",
+        "responded_percent"
+      ],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "data_origin": {
+                "enum": [
+                  "local_practice",
+                  "demo"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "verification_status": {
+                "const": "unverified"
+              }
+            }
+          }
+        }
+      ],
+      "description": "Minimal reporting contract fixture; production adds scoped identities, competency rows, notes and metadata with a versioned extension. Counts/formulas must be semantically validated."
+    }
+  }
+}

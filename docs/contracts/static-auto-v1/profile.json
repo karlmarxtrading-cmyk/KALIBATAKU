@@ -1,0 +1,424 @@
+{
+  "schema": "kalibataku-static-profile/1",
+  "profile_id": "KALIBATAKU_STATIC_AUTO_V1",
+  "version": "1.0.0",
+  "effective_date": "2026-11-29",
+  "app_version": "1.6.2",
+  "authorization": "Pemilik produk menetapkan verifikasi otomatis pada 29 November 2026 dan mengesahkan penggantian persyaratan yang bergantung pada peserta atau penelaah manusia.",
+  "scope": "Aplikasi petualangan latihan berhitung ID/EN, statis dan local-first, dengan dashboard serta ekspor guru.",
+  "supported": {
+    "build": "Linux, Node 24, Python 3.12",
+    "browsers": [
+      "Chromium",
+      "Firefox",
+      "WebKit"
+    ],
+    "mobile": "Viewport efektif, sentuhan dan IME otomatis pada mesin desktop",
+    "deployment_directory": "dist"
+  },
+  "claim_limits": [
+    "Telaah AI dan oracle aritmetika menilai cakupan yang tercatat. Efektivitas belajar empiris belum diukur.",
+    "Uji perangkat fisik dan ujaran NVDA, VoiceOver serta TalkBack belum dilakukan.",
+    "DOCX diperiksa melalui struktur dan renderer tersedia. Kompatibilitas Microsoft Word native belum diamati.",
+    "Pembangunan Windows native bergantung pada bukti sistem itu. Distribusi prabuild tersedia.",
+    "Performa laboratorium dan p75 pengguna merupakan pengukuran berbeda."
+  ],
+  "source_candidate": {
+    "version": "1.6.1",
+    "archive_sha256": "37169d1c06edd8216acd3a263282004d893494c74d3dabc6dcb9376e9d7bf198"
+  },
+  "rules": {
+    "package": "Seluruh 23 gate PACKAGE wajib PASS dan binding produksi lengkap terverifikasi. Temuan teknis kritis atau tinggi yang masih terbuka menahan rilis.",
+    "deployment": "Memerlukan URL HTTPS tujuan aktual dan pemeriksaan terpisah, termasuk update, rollback, penyimpanan dan kesamaan build.",
+    "staging": "Ketiadaan bukti pengemasan menghasilkan HOLD sampai putaran ZIP sepadan terverifikasi."
+  },
+  "cannot_waive": [
+    "bank_integrity",
+    "math_correctness",
+    "data_loss",
+    "answer_visibility",
+    "single_enter_action",
+    "offline_and_update_correctness",
+    "valid_qa_evidence",
+    "required_final_build_tests"
+  ],
+  "gates": [
+    {
+      "id": "AUTO-01",
+      "name": "Integritas dan freeze bank",
+      "phase": "PACKAGE",
+      "method": "Verifikasi baseline, inventaris, SHA-256, dan pin bank; bandingkan seluruh 4.677 berkas bank.",
+      "expected": "Tidak ada berkas bank lama yang berubah, hilang, atau ditambahkan ke direktori bank frozen; artefak sumber dan bukti terikat pada identitas yang benar.",
+      "historical_refs": "AC:BANK-01; AC:BANK-02; AC:REL-01; AC:REL-04; AC:REL-05",
+      "suites": [
+        "bank-freeze-161",
+        "bank-preservation",
+        "bank-occurrence-identity",
+        "bank-determinism"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-02",
+      "name": "Kebenaran matematika seluruh bank",
+      "phase": "PACKAGE",
+      "method": "Oracle aritmetika independen memeriksa 4.604 paket, 177.640 penempatan soal, AST, kunci, domain, dan 389.187 langkah solusi yang tercakup.",
+      "expected": "Tidak ada kesalahan; fixture jawaban atau solusi rusak terdeteksi; ID dan fingerprint tetap.",
+      "historical_refs": "AC:BANK-01; AC:BANK-02; AC:BANK-06; AC:BANK-07 (pengganti cakupan otomatis, bukan bukti telaah guru)",
+      "suites": [
+        "bank-verify",
+        "bank-audit-distribution",
+        "v12-bank-model",
+        "family-oracle"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-03",
+      "name": "Cakupan 394 keluarga dan telaah AI",
+      "phase": "PACKAGE",
+      "method": "Bangun roster keluarga dari bank aktual; periksa domain, strategi, teks ID/EN, pemetaan angka ke AST, dan kasus batas. Telaah silang oleh AI diberi label sesuai jenis buktinya.",
+      "expected": "Seluruh keluarga tercakup dalam bukti; tidak ada temuan kebenaran terverifikasi yang belum diselesaikan; tidak ada nama penelaah manusia fiktif.",
+      "historical_refs": "AC:BANK-07; REDESIGN:PED-05; REDESIGN:PED-07; REDESIGN:REL-03",
+      "suites": [
+        "family-oracle",
+        "review-roster",
+        "bank-domain-prose"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-04",
+      "name": "Progresi dan review terjadwal",
+      "phase": "PACKAGE",
+      "method": "Periksa graf 281 kompetensi, 16.860 rencana, batas lompatan, jam terkontrol, review terjadwal, dan riwayat dengan banyak kesalahan.",
+      "expected": "Tidak ada kebuntuan atau penundaan kemajuan tanpa batas dalam matriks yang ditetapkan; kontrak kesiapan dan denominator target konsisten.",
+      "historical_refs": "AC:PROG-01; AC:PROG-02; AC:PROG-03; AC:PROG-04; AC:PROG-05; AC:PROG-06; AC:PROG-07; AC:PROG-08; AC:PROG-09; AC:PROG-10; AC:PROG-11; AC:PROG-12; REDESIGN:PED-05; REDESIGN:PED-06; REDESIGN:PED-07",
+      "suites": [
+        "progression-bounds",
+        "learning-policy-160",
+        "journey-next-practice-probe",
+        "progression-launch",
+        "journey-model",
+        "scheduled-learning"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-05",
+      "name": "Migrasi dan kesiapan historis",
+      "phase": "PACKAGE",
+      "method": "Periksa sesi aktif, snapshot, draf, seed, respons pertama, petunjuk/revisi, dan XP; bandingkan peta dengan seluruh format laporan.",
+      "expected": "Data historis tidak direset dan kesiapan tidak diturunkan oleh kebijakan baru; nilai konsisten untuk ledger yang sama.",
+      "historical_refs": "AC:DATA-06; AC:TEACH-01; AC:TEACH-02",
+      "suites": [
+        "semantic-restore",
+        "format-readiness",
+        "upgrade-restore-v1.0",
+        "viewed-coverage",
+        "viewed-exports"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-06",
+      "name": "Kontrak Enter dan finalisasi",
+      "phase": "PACKAGE",
+      "method": "Uji Enter/Numpad Enter, repeat, modifier, IME, submit native, klik bersamaan dengan Enter, keadaan sibuk, retry, revisi, akhir misi, dan misi berikutnya.",
+      "expected": "Satu penekanan baru menghasilkan satu tindakan; tidak ada duplikasi, soal terlewati, atau perpindahan otomatis; finalisasi terjadi sekali.",
+      "historical_refs": "AUD160-01; OBS160-01; AC:UX-08; AC:UX-09; REDESIGN:E01; REDESIGN:E02; REDESIGN:E03; REDESIGN:E09; REDESIGN:E10",
+      "suites": [
+        "enter-cycles-chromium",
+        "enter-cycles-firefox",
+        "enter-cycles-webkit",
+        "compose-commit",
+        "route-faults",
+        "player-ledger"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-07",
+      "name": "Visibilitas dan input responsif",
+      "phase": "PACKAGE",
+      "method": "Uji tiga viewport baseline dengan kombinasi jawaban benar/salah dan Enter/klik; sentuhan, zoom, orientasi, viewport tereduksi, render matematika/font terlambat, rumus panjang, serta tumpang tindih elemen pada tiga engine.",
+      "expected": "Ekspresi, input, dan aksi terbaca serta dapat dijangkau; seluruh kasus baseline terlihat tanpa gulir manual; tersedia reflow untuk ruang layar ekstrem.",
+      "historical_refs": "AUD160-01; OBS160-02; AC:UX-09; AC:DEVICE-02; AC:DEVICE-03; REDESIGN:UI-03; REDESIGN:E10",
+      "suites": [
+        "next-viewport-chromium",
+        "next-viewport-firefox",
+        "next-viewport-webkit",
+        "map-native-zoom"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-08",
+      "name": "Tugas siswa dan guru sintetis",
+      "phase": "PACKAGE",
+      "method": "Jalankan tugas mulai, resume, jawaban salah, bantuan, revisi, hasil, misi berikutnya, profil, laporan, offline, dan restore; ukur tindakan wajib serta keadaan aplikasi.",
+      "expected": "Katalog/filter tidak diwajibkan; tidak ada alur buntu; persona sintetis diberi label jelas; pilot nyata tidak diklaim.",
+      "historical_refs": "AC:PILOT-01; AC:PILOT-02; AC:PILOT-03; REDESIGN:NAV-01; REDESIGN:REL-05; REDESIGN:PED-05; REDESIGN:PED-06",
+      "suites": [
+        "synthetic-journeys",
+        "journey-browser-chromium",
+        "journey-browser-firefox",
+        "journey-browser-webkit",
+        "catalog-context",
+        "start-intent",
+        "teacher-ux-evidence"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-09",
+      "name": "Aksesibilitas otomatis",
+      "phase": "PACKAGE",
+      "method": "Periksa accessibility tree/DOM, nama-peran-keadaan kontrol, fokus, penggunaan keyboard tanpa pointer, live region, matematika linear, kontras, reflow, dan reduced motion; gunakan kasus negatif terkontrol.",
+      "expected": "Tidak ada pelanggaran yang dapat direproduksi dalam cakupan otomatis; tidak ada klaim ujaran pembaca layar atau kepatuhan WCAG penuh tanpa bukti.",
+      "historical_refs": "AC:A11Y-01; AC:A11Y-02; AC:A11Y-03; AC:A11Y-04; AC:A11Y-05; REDESIGN:UI-06",
+      "suites": [
+        "semantic-access",
+        "v12-keyboard",
+        "v12-print-contrast",
+        "v12-roles-reflow",
+        "math-linear-roundtrip"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-10",
+      "name": "Ekspor guru",
+      "phase": "PACKAGE",
+      "method": "Bandingkan JSON, CSV, XLSX, DOCX, dan PDF dengan ledger; periksa schema/OMML, render PDF, tanda minus, pecahan, tanda kurung, dan batas periode.",
+      "expected": "Isi, angka, dan persamaan konsisten; PDF terbaca; DOCX dipertahankan dengan batas kompatibilitas Microsoft Word yang jelas.",
+      "historical_refs": "AC:TEACH-01; AC:TEACH-02; AC:TEACH-03; AC:TEACH-04; REDESIGN:REL-04",
+      "suites": [
+        "report-ledger",
+        "teacher-exports",
+        "documents-reopened",
+        "format-readiness",
+        "journey-exports-reopened",
+        "time-offset-exports",
+        "math-exports"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-11",
+      "name": "Penyimpanan dan pemulihan",
+      "phase": "PACKAGE",
+      "method": "Uji cadangan lama dan besar, metadata bertentangan, commit atomik, kuota, isolasi profil, dua tab, kegagalan penyimpanan, dan retry.",
+      "expected": "Tidak ada kehilangan data atau penulisan parsial; data yang tidak sah ditolak sebelum commit; cadangan yang sah dapat dipulihkan.",
+      "historical_refs": "AC:DATA-01; AC:DATA-02; AC:DATA-03; AC:DATA-04; AC:DATA-05; AC:DATA-06; AC:DATA-07; AC:DATA-08; AC:DATA-09; AC:DATA-10; AC:DATA-11",
+      "suites": [
+        "data-contract",
+        "data-archive-edges",
+        "data-large-backup",
+        "capacity-browser",
+        "capacity-rows",
+        "capacity-bytes",
+        "capacity-beyond-string",
+        "semantic-restore",
+        "route-faults"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-12",
+      "name": "Offline dan pemulihan cache",
+      "phase": "PACKAGE",
+      "method": "Uji peta, katalog, sesi lama, evaluasi, cache kedaluwarsa, shard/paket/shell rusak, pemulihan bootstrap, dan reflow.",
+      "expected": "Sepuluh skenario atau cakupan penerusnya lulus; status siap offline hanya diberikan jika aset yang benar tersedia.",
+      "historical_refs": "AC:OFF-01; AC:OFF-02; AC:OFF-03; AC:OFF-04",
+      "suites": [
+        "offline-capability-chromium",
+        "offline-capability-firefox",
+        "offline-capability-webkit",
+        "offline-legacy-repeat-firefox",
+        "catalog-offline-v151-chromium",
+        "catalog-offline-v151-firefox",
+        "catalog-offline-v151-webkit"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-13",
+      "name": "Pembaruan dan rollback lokal",
+      "phase": "PACKAGE",
+      "method": "Uji pada origin yang sama: dua tab, snapshot, draf 37/9, respons pertama, cache/offline, serta versi sebelum dan sesudah pembaruan.",
+      "expected": "Data dan urutan soal tetap; penyelesaian offline menghasilkan satu finalisasi; tidak ada pageerror.",
+      "historical_refs": "AC:OFF-03; AC:REL-03 (cakupan lokal); REDESIGN:REL-06 (cakupan lokal); REDESIGN:R01",
+      "suites": [
+        "update-161",
+        "data-cache-policy"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-14",
+      "name": "Validator bukti QA",
+      "phase": "PACKAGE",
+      "method": "Jalankan 39 kasus regresi dan probe independen pada seluruh jalur parsing, pelaksanaan suite, binding, serta agregasi; sertakan kontrol positif.",
+      "expected": "Bukti dengan bentuk salah, ID duplikat, jumlah/status tidak konsisten, build/hash salah, atau keterikatan diagnostik yang keliru ditolak; bukti sah diterima.",
+      "historical_refs": "AUD160-02; AC:REL-04; AC:REL-05",
+      "suites": [
+        "qa-receipt-shape",
+        "qa-fault-injection",
+        "audit-validator-25"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-15",
+      "name": "Evaluator profil rilis",
+      "phase": "PACKAGE",
+      "method": "Implementasikan profile_id/hash, pemetaan, pemisahan status bukti dari applicability, serta evaluator bersama; uji kegagalan, bukti hilang, profil tidak dikenal, dan pengecualian tidak sah.",
+      "expected": "ARTIFACT_READY hanya diberikan ketika seluruh gerbang otomatis wajib PASS; pengecualian tidak menyamarkan cacat teknis.",
+      "historical_refs": "AC:REL-04; REDESIGN:REL-07; register aktif profil baru; seluruh alat penentuan status rilis",
+      "suites": [
+        "auto-release-policy"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-16",
+      "name": "Riwayat dan kejujuran klaim",
+      "phase": "PACKAGE",
+      "method": "Pertahankan snapshot register 1.6.1; petakan 27 baris historis; bedakan bukti AI, emulasi, lokal, native, dan domain; hitung irisan serta fase secara benar.",
+      "expected": "Status BLOCKED/NOT_RUN historis tidak diubah menjadi PASS tanpa bukti; status domain tidak berasal dari localhost; tidak ada bukti manusia fiktif.",
+      "historical_refs": "OBS161-01; AC:REL-04; REDESIGN:REL-07; seluruh gerbang yang diganti dalam mapping",
+      "suites": [
+        "auto-release-policy",
+        "register-policy"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-17",
+      "name": "Matriks runtime dan browser",
+      "phase": "PACKAGE",
+      "method": "Jalankan QA pada tiga engine di lingkungan yang didukung; kunci atau catat dependensi/runtime; pisahkan fixture dari data pengguna.",
+      "expected": "Seluruh suite teknis yang berlaku PASS pada build final; BLOCKED_ENV tidak dinyatakan PASS.",
+      "historical_refs": "AC:DEVICE-01; tests/qa/suites.json",
+      "suites": [
+        "browser-v13-chromium",
+        "browser-v13-firefox",
+        "browser-v13-webkit",
+        "compile-check"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-18",
+      "name": "Build kanonis yang dapat direproduksi",
+      "phase": "PACKAGE",
+      "method": "Buat dua build bersih pada Linux/CI yang diuji; periksa hash source, dist, dan profil serta lockfile; sertakan dist prabuild di dalam paket.",
+      "expected": "Distribusi dari kedua build identik byte demi byte; bank tetap; pengguna Windows dapat mengunggah dist tanpa membangun secara lokal.",
+      "historical_refs": "AC:REL-01; REDESIGN:REL-01; REDESIGN:R02",
+      "suites": [
+        "clean-build-twice",
+        "portable-path-order",
+        "bank-freeze-161"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-19",
+      "name": "Hosting lokal dan konfigurasi",
+      "phase": "PACKAGE",
+      "method": "Uji fixture HTTP untuk root/subpath, 404, MIME, header, CSP, aset, service worker, dan versi; jika fixture TLS ditambahkan, catat buktinya secara terpisah.",
+      "expected": "Seluruh perilaku lokal sesuai kontrak; preview provider/domain hanya diberi hasil lulus jika URL aktual telah diuji.",
+      "historical_refs": "AC:REL-02 (cakupan lokal); OBS161-01",
+      "suites": [
+        "hosting-static",
+        "hosting-smoke"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-20",
+      "name": "Keamanan fungsi statis",
+      "phase": "PACKAGE",
+      "method": "Periksa batas input/impor, sanitasi data yang tidak tepercaya, fixture XSS, ekspor, cache, dan header dalam lingkup aplikasi.",
+      "expected": "Kasus negatif terdeteksi; konten impor tidak dieksekusi sebagai kode; dist tidak memuat kredensial, data pribadi, atau berkas bukti audit.",
+      "historical_refs": "AC:DATA-01; AC:DATA-02; AC:DATA-03; AC:DATA-04; AC:DATA-05; AC:DATA-06; AC:DATA-07; AC:DATA-08; AC:DATA-09; AC:DATA-10; AC:DATA-11; konfigurasi hosting",
+      "suites": [
+        "hosting-static",
+        "data-archive-edges",
+        "data-ux-contract",
+        "browser-v13-chromium",
+        "static-data-boundaries"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-21",
+      "name": "Performa laboratorium",
+      "phase": "PACKAGE",
+      "method": "Ukur anggaran ukuran bundel, render, input, pemulihan cadangan besar, dan latensi dengan kondisi CPU/jaringan yang dicatat; sertakan keadaan cold, warm, dan offline.",
+      "expected": "Anggaran proyek lulus tanpa merusak UI atau aksesibilitas; hasil lab tidak dinyatakan sebagai p75 lapangan.",
+      "historical_refs": "AC:PERF-01; AC:PERF-02",
+      "suites": [
+        "performance-budgets",
+        "journey-perf-lab"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-22",
+      "name": "ZIP final dan binding",
+      "phase": "PACKAGE",
+      "method": "Segel paket, ekstrak ke direktori bersih, jalankan verify/build/verify, lalu periksa manifest per berkas, hash ZIP, dan isi dist yang akan dipublikasikan.",
+      "expected": "Source, bank, dist, profil, pengujian, dan bukti konsisten pada arsip unduhan; tidak ada ketergantungan hash yang melingkar.",
+      "historical_refs": "AC:REL-04; AC:REL-05; tools/release_pack.py",
+      "suites": [
+        "clean-build-twice",
+        "auto-release-policy"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-23",
+      "name": "Panduan dan status pengguna",
+      "phase": "PACKAGE",
+      "method": "Perbarui panduan mulai, ID/EN, siswa/guru, Git Bash, GitHub ke Cloudflare Pages, backup/restore, update/rollback, serta matriks dukungan.",
+      "expected": "Klaim sesuai bukti; panduan penggunaan dist prabuild jelas; langkah mulai singkat dan dapat dijalankan.",
+      "historical_refs": "Seluruh kontrak dukungan dan panduan penggunaan",
+      "suites": [
+        "package-docs"
+      ],
+      "applicability": "REQUIRED"
+    },
+    {
+      "id": "AUTO-24",
+      "name": "Verifikasi domain tujuan",
+      "phase": "DEPLOYMENT",
+      "method": "Jika diotorisasi, uji URL aktual: HTTPS, MIME, header, aset, hash, offline, serta pembaruan dan rollback dengan data yang dipertahankan.",
+      "expected": "LIVE_PRODUCTION_VERIFIED hanya diberikan dari bukti target aktual; jika akses belum tersedia, status PENDING_ACCESS dicatat terpisah.",
+      "historical_refs": "AC:REL-02; AC:REL-03; REDESIGN:REL-06",
+      "suites": [],
+      "applicability": "DEPLOYMENT_ONLY"
+    },
+    {
+      "id": "AUTO-25",
+      "name": "Build Windows native",
+      "phase": "OPTIONAL_COMPATIBILITY",
+      "method": "Jalankan workflow Windows otomatis jika akses tersedia dan dukungan build Windows dijanjikan.",
+      "expected": "Gunakan hasil Windows native aktual; emulasi tidak disamakan dengan Windows asli. Jika lingkungan native belum tersedia, gunakan build kanonis Linux dan dist prabuild serta catat batas dukungan.",
+      "historical_refs": "REDESIGN:REL-01; REDESIGN:R02; EXT160-02",
+      "suites": [],
+      "applicability": "OPTIONAL_COMPATIBILITY"
+    },
+    {
+      "id": "AUTO-26",
+      "name": "p75 lapangan dan masukan pengguna",
+      "phase": "POST_RELEASE",
+      "method": "Ukur setelah penggunaan nyata pada domain dengan pengumpulan data yang sah; pilot dan review bersifat opsional tanpa perekrutan wajib.",
+      "expected": "Gunakan data nyata; jika data belum cukup, catat status=NOT_RUN dan reason=INSUFFICIENT_DATA. Data sintetis tidak dinamai data lapangan.",
+      "historical_refs": "AC:PERF-03; REDESIGN:POST-01",
+      "suites": [],
+      "applicability": "POST_RELEASE"
+    }
+  ]
+}

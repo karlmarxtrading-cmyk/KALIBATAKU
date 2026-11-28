@@ -1,0 +1,2157 @@
+{
+  "evidence_type": "independent baseline reproduction, native Firefox 153 / Playwright, localhost serving original frozen dist",
+  "at_utc": "2026-11-28T10:39:35.716256+00:00",
+  "build": {
+    "dist_tree_sha256": "a2a34a4ad857bb771f8077068e01d55a204efa075b8bf4d5bd3187caf8aaad90",
+    "offline_release": "319ea44060dbbc58",
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "21eac25ef2c2fc9690237474db1e783d673e805fb3a47c2e059c7f13fad10b1c"
+  },
+  "route": "#/session/new?grade=3&level=1&op=ADD&pack=MM-G03-L01-ADD-P001&count=12&mode=practice",
+  "viewport": [
+    1100,
+    860
+  ],
+  "locale": "id-ID",
+  "command": "python -B setup-pointer-probe.py --dist BASELINE/dist --output BASELINE.json",
+  "expected": "Native click on Atur latihan opens disclosure; planning_pace is visible to select 90",
+  "fields": [
+    "performance_ms",
+    "event",
+    "target",
+    "form_instance",
+    "summary_center_y_px",
+    "scroll_y_px",
+    "advanced_open",
+    "launch_disabled",
+    "plan_text"
+  ],
+  "runs": [
+    {
+      "visible": true,
+      "history": [
+        [
+          497,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          509,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          560,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          596,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          609,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          626,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          694,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          704,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          705,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          706,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          708,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 0
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          208,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          218,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          269,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          279,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          285,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          301,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          337,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          348,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          348,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          350,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          351,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 1
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          219,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          229,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          246,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          281,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          291,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          292,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          293,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          765,
+          0,
+          true,
+          true,
+          ""
+        ],
+        [
+          295,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          true,
+          true,
+          ""
+        ],
+        [
+          313,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          329,
+          "controller",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 2
+    },
+    {
+      "visible": false,
+      "history": [
+        [
+          213,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          218,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          239,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          257,
+          "pointerup",
+          "DIV.actions launch-actions[Mulai 12 soal]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          258,
+          "click",
+          "FORM.sheet setup[Penjumlahan — Fakta pe]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          268,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          281,
+          "controller",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          285,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          302,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 3
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          242,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          254,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          321,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          370,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          390,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          402,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          402,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          404,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          404,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          409,
+          "controller",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 4
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          175,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          183,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          201,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          234,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          236,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          247,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          248,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          250,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          250,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          265,
+          "controller",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 5
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          179,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          194,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          243,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          260,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          295,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          305,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          305,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          306,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          308,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 6
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          270,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          283,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          332,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          355,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          407,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          415,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          419,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          419,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          424,
+          "controller",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          432,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          true,
+          true,
+          ""
+        ],
+        [
+          449,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 7
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          310,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          321,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          355,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          375,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          440,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          451,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          451,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          453,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          455,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 8
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          222,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          236,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          285,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          292,
+          "controller",
+          "BODY.[\n  Langsung ke isi\n  K]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          300,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          318,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          355,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          364,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          365,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          366,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          367,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "normal",
+      "i": 9
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          175,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          187,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          236,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          289,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          299,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          299,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          300,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          302,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 0
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          174,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          186,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          221,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          255,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          265,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          265,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          266,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          269,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 1
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          176,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          187,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          236,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          288,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          298,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          298,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          300,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          303,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 2
+    },
+    {
+      "visible": false,
+      "history": [
+        [
+          202,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          214,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          249,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          263,
+          "pointerup",
+          "DIV.actions launch-actions[Mulai 12 soal]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          263,
+          "click",
+          "FORM.sheet setup[Penjumlahan — Fakta pe]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          264,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 3
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          206,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          217,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          268,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          273,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          284,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          284,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          287,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          287,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 4
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          210,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          221,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          272,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          324,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          337,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          337,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          339,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          339,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 5
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          189,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          203,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          253,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          306,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          321,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          321,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          323,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          325,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 6
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          192,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          204,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          240,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          289,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          299,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          299,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          301,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          302,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 7
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          265,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          279,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          312,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          347,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          355,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          355,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          357,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          358,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 8
+    },
+    {
+      "visible": true,
+      "history": [
+        [
+          166,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          172,
+          "frame",
+          null,
+          1,
+          739,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          193,
+          "frame",
+          null,
+          1,
+          765,
+          0,
+          false,
+          true,
+          ""
+        ],
+        [
+          225,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          274,
+          "pointerdown",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          286,
+          "pointerup",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          286,
+          "click",
+          "SUMMARY.[Atur latihan]",
+          1,
+          832,
+          0,
+          false,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          288,
+          "toggle",
+          "DETAILS.[Atur latihanAcak uruta]",
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ],
+        [
+          289,
+          "frame",
+          null,
+          1,
+          832,
+          0,
+          true,
+          false,
+          "12 soal · Tanpa batas waktu"
+        ]
+      ],
+      "phase": "no-worker",
+      "i": 9
+    }
+  ],
+  "observed_failures": {
+    "normal": 1,
+    "no-worker": 1
+  },
+  "mechanism": "Pointer down on the option summary, then package description + plan appear and move its center from 765 to 832 CSS px. Pointer up hits launch-actions; click is delivered to their common parent (FORM) and the disclosure stays closed. Same form instance. Reproduced with service workers blocked."
+}

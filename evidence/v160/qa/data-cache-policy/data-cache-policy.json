@@ -1,0 +1,112 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "TECH-04-cache-policy",
+  "scope": "Retention decisions for shells, packs, rollback, installs and locks",
+  "build": {
+    "offline_release": "6c43a824957f99ed",
+    "app_version": "1.6.0",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "node": "v24.22.3",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "started": "2026-11-28T15:51:04.400Z",
+  "finished": "2026-11-28T15:51:04.402Z",
+  "assertions": 10,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "repeated-updates",
+      "status": "PASS",
+      "expected": "After updates A→B→C only C and one rollback (B) remain",
+      "actual": {
+        "kalibataku:/school/math/:shell:aaaa": "remove:older-release",
+        "kalibataku:/school/math/:shell:bbbb": "rollback",
+        "kalibataku:/school/math/:shell:cccc": "active-release"
+      }
+    },
+    {
+      "id": "cancelled-download",
+      "status": "PASS",
+      "expected": "A partial shell of an older release is removed; a partial current shell is kept for resume",
+      "actual": {
+        "kalibataku:/school/math/:shell:aaaa": "remove:partial-download",
+        "kalibataku:/school/math/:shell:cccc": "active-release"
+      }
+    },
+    {
+      "id": "offline-install-protected",
+      "status": "PASS",
+      "expected": "A shell and pack used by an offline install survive even when older",
+      "actual": {
+        "kalibataku:/school/math/:shell:aaaa": "used-by-offline-install",
+        "kalibataku:/school/math/:shell:bbbb": "rollback",
+        "kalibataku:/school/math/:shell:cccc": "active-release",
+        "kalibataku:/school/math/:ready-pack:aaaa:MM-1@1.2.0:u1": "used-by-offline-install"
+      }
+    },
+    {
+      "id": "remove-last-pack",
+      "status": "PASS",
+      "expected": "After the last pack is removed its old shell becomes collectable; rollback still kept",
+      "actual": {
+        "kalibataku:/school/math/:shell:aaaa": "remove:older-release",
+        "kalibataku:/school/math/:shell:bbbb": "rollback",
+        "kalibataku:/school/math/:shell:cccc": "active-release"
+      }
+    },
+    {
+      "id": "orphan-packs",
+      "status": "PASS",
+      "expected": "Pack caches without an install record (crash or cancel) are removed",
+      "actual": {
+        "kalibataku:/school/math/:shell:cccc": "active-release",
+        "kalibataku:/school/math/:ready-pack:cccc:A@1:u": "remove:orphan-pack",
+        "kalibataku:/school/math/:ready-pack:bbbb:B@1:v": "remove:partial-pack"
+      }
+    },
+    {
+      "id": "install-in-progress",
+      "status": "PASS",
+      "expected": "While another tab installs (lock held) nothing is removed",
+      "actual": "install-in-progress"
+    },
+    {
+      "id": "records-unreadable",
+      "status": "PASS",
+      "expected": "If install records cannot be read nothing is removed",
+      "actual": "install-records-unavailable"
+    },
+    {
+      "id": "other-scopes-untouched",
+      "status": "PASS",
+      "expected": "Caches of another base path or other apps are never considered",
+      "actual": [
+        "kalibataku:/school/math/:shell:cccc"
+      ]
+    },
+    {
+      "id": "legacy-pack-referenced",
+      "status": "PASS",
+      "expected": "A v1.0 pack cache referenced by an install record is kept",
+      "actual": {
+        "kalibataku:/school/math/:shell:aaaa": "used-by-offline-install",
+        "kalibataku:/school/math/:shell:cccc": "active-release",
+        "kalibataku:/school/math/:pack:MM-1@1.0.0": "used-by-offline-install"
+      }
+    },
+    {
+      "id": "two-releases-active",
+      "status": "PASS",
+      "expected": "During an update the waiting release does not collect; the active worker (old release) keeps its own shell",
+      "actual": {
+        "kalibataku:/school/math/:shell:aaaa": "remove:older-release",
+        "kalibataku:/school/math/:shell:bbbb": "active-release",
+        "kalibataku:/school/math/:shell:cccc": "rollback"
+      }
+    }
+  ]
+}

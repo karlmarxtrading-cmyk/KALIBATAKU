@@ -1,0 +1,675 @@
+{
+  "method": "gzip level 6, mtime 0. Network resource bytes and local gzip bytes are distinct.",
+  "groups": {
+    "package": {
+      "files": 4604,
+      "total_gzip_bytes": 32837928,
+      "max": {
+        "path": "bank/v1.1/g12/l03/MM-G12-L03-MIX-P010.mjs",
+        "bytes": 168319,
+        "gzip": 13645
+      }
+    },
+    "shard": {
+      "files": 72,
+      "total_gzip_bytes": 328600,
+      "max": {
+        "path": "bank/g10/l04.json",
+        "bytes": 47167,
+        "gzip": 6873
+      }
+    },
+    "root": {
+      "files": 1,
+      "total_gzip_bytes": 291,
+      "max": {
+        "path": "bank/index.json",
+        "bytes": 684,
+        "gzip": 291
+      }
+    },
+    "locale": {
+      "files": 2,
+      "total_gzip_bytes": 7156,
+      "max": {
+        "path": "locales/id.json",
+        "bytes": 9466,
+        "gzip": 3622
+      }
+    },
+    "player": {
+      "files": 10,
+      "total_gzip_bytes": 36296,
+      "max": {
+        "path": "player/session.mjs",
+        "bytes": 34511,
+        "gzip": 11243
+      }
+    },
+    "teacher": {
+      "files": 10,
+      "total_gzip_bytes": 31495,
+      "max": {
+        "path": "teacher/index.js",
+        "bytes": 23821,
+        "gzip": 8638
+      }
+    },
+    "font": {
+      "files": 3,
+      "total_gzip_bytes": 447041,
+      "max": {
+        "path": "teacher/font/DejaVuSans.ttf",
+        "bytes": 759720,
+        "gzip": 382186
+      }
+    },
+    "export": {
+      "files": 8,
+      "total_gzip_bytes": 7975,
+      "max": {
+        "path": "teacher/export/pdf.js",
+        "bytes": 6631,
+        "gzip": 2921
+      }
+    },
+    "mathjax_local": {
+      "files": 9,
+      "total_gzip_bytes": 791237,
+      "max": {
+        "path": "vendor/mathjax-4.1.3/mml-svg.js",
+        "bytes": 1702534,
+        "gzip": 571290
+      }
+    },
+    "math_model_view": {
+      "files": 2,
+      "total_gzip_bytes": 4209,
+      "max": {
+        "path": "math/view.mjs",
+        "bytes": 5254,
+        "gzip": 2238
+      }
+    }
+  },
+  "assets": [
+    {
+      "path": "404.html",
+      "bytes": 3155,
+      "gzip": 1570
+    },
+    {
+      "path": "app.mjs",
+      "bytes": 16462,
+      "gzip": 5642
+    },
+    {
+      "path": "sw.js",
+      "bytes": 3946,
+      "gzip": 1590
+    },
+    {
+      "path": "index.html",
+      "bytes": 2828,
+      "gzip": 1017
+    },
+    {
+      "path": "manifest.webmanifest",
+      "bytes": 279,
+      "gzip": 211
+    },
+    {
+      "path": "_headers",
+      "bytes": 670,
+      "gzip": 391
+    },
+    {
+      "path": "offline-assets.json",
+      "bytes": 14676,
+      "gzip": 6424
+    },
+    {
+      "path": "data/bridge.js",
+      "bytes": 12157,
+      "gzip": 3912
+    },
+    {
+      "path": "data/contract-defs.js",
+      "bytes": 13255,
+      "gzip": 2487
+    },
+    {
+      "path": "data/validate.js",
+      "bytes": 2526,
+      "gzip": 999
+    },
+    {
+      "path": "data/summary.js",
+      "bytes": 3417,
+      "gzip": 1326
+    },
+    {
+      "path": "data/panel-offline.js",
+      "bytes": 5137,
+      "gzip": 2270
+    },
+    {
+      "path": "data/panel-profile.js",
+      "bytes": 7818,
+      "gzip": 3072
+    },
+    {
+      "path": "data/panels.js",
+      "bytes": 4846,
+      "gzip": 2366
+    },
+    {
+      "path": "data/sync.js",
+      "bytes": 6685,
+      "gzip": 2470
+    },
+    {
+      "path": "data/snapshot-check.js",
+      "bytes": 5160,
+      "gzip": 1803
+    },
+    {
+      "path": "data/db.js",
+      "bytes": 5081,
+      "gzip": 1845
+    },
+    {
+      "path": "data/store.js",
+      "bytes": 13528,
+      "gzip": 3986
+    },
+    {
+      "path": "data/panel-sync.js",
+      "bytes": 5572,
+      "gzip": 2377
+    },
+    {
+      "path": "data/backup-reader.worker.js",
+      "bytes": 199,
+      "gzip": 155
+    },
+    {
+      "path": "data/common.js",
+      "bytes": 1730,
+      "gzip": 811
+    },
+    {
+      "path": "data/offline.js",
+      "bytes": 8004,
+      "gzip": 2852
+    },
+    {
+      "path": "data/backup.js",
+      "bytes": 9827,
+      "gzip": 3440
+    },
+    {
+      "path": "math/view.mjs",
+      "bytes": 5254,
+      "gzip": 2238
+    },
+    {
+      "path": "math/model.mjs",
+      "bytes": 4635,
+      "gzip": 1971
+    },
+    {
+      "path": "core/material.mjs",
+      "bytes": 1186,
+      "gzip": 583
+    },
+    {
+      "path": "core/package-data.mjs",
+      "bytes": 1565,
+      "gzip": 776
+    },
+    {
+      "path": "core/catalog.mjs",
+      "bytes": 19911,
+      "gzip": 7028
+    },
+    {
+      "path": "core/home.mjs",
+      "bytes": 4642,
+      "gzip": 1777
+    },
+    {
+      "path": "core/bank.mjs",
+      "bytes": 2606,
+      "gzip": 1030
+    },
+    {
+      "path": "core/settings.mjs",
+      "bytes": 2576,
+      "gzip": 1074
+    },
+    {
+      "path": "core/appearance.js",
+      "bytes": 870,
+      "gzip": 480
+    },
+    {
+      "path": "core/dom.mjs",
+      "bytes": 3524,
+      "gzip": 1684
+    },
+    {
+      "path": "assets/noto-Regular.woff",
+      "bytes": 32636,
+      "gzip": 32614
+    },
+    {
+      "path": "assets/noto-Bold.woff",
+      "bytes": 32236,
+      "gzip": 32241
+    },
+    {
+      "path": "assets/FONT-LICENSE.txt",
+      "bytes": 5208,
+      "gzip": 2244
+    },
+    {
+      "path": "assets/base.css",
+      "bytes": 32397,
+      "gzip": 8293
+    },
+    {
+      "path": "assets/mark.svg",
+      "bytes": 274,
+      "gzip": 214
+    },
+    {
+      "path": "learning/input-guide.mjs",
+      "bytes": 2238,
+      "gzip": 963
+    },
+    {
+      "path": "teacher/report.js",
+      "bytes": 8979,
+      "gzip": 3738
+    },
+    {
+      "path": "teacher/demo.js",
+      "bytes": 8553,
+      "gzip": 3387
+    },
+    {
+      "path": "teacher/document.js",
+      "bytes": 13753,
+      "gzip": 4962
+    },
+    {
+      "path": "teacher/index.js",
+      "bytes": 23821,
+      "gzip": 8638
+    },
+    {
+      "path": "teacher/drafts.js",
+      "bytes": 846,
+      "gzip": 452
+    },
+    {
+      "path": "teacher/assignments.js",
+      "bytes": 7021,
+      "gzip": 2844
+    },
+    {
+      "path": "teacher/ui.js",
+      "bytes": 1810,
+      "gzip": 887
+    },
+    {
+      "path": "teacher/report-work.js",
+      "bytes": 195,
+      "gzip": 148
+    },
+    {
+      "path": "teacher/teacher.css",
+      "bytes": 5043,
+      "gzip": 1606
+    },
+    {
+      "path": "teacher/reports-view.js",
+      "bytes": 12914,
+      "gzip": 4833
+    },
+    {
+      "path": "locales/id.json",
+      "bytes": 9466,
+      "gzip": 3622
+    },
+    {
+      "path": "locales/en.json",
+      "bytes": 9327,
+      "gzip": 3534
+    },
+    {
+      "path": "player/engine.mjs",
+      "bytes": 9947,
+      "gzip": 3397
+    },
+    {
+      "path": "player/base.mjs",
+      "bytes": 5132,
+      "gzip": 2499
+    },
+    {
+      "path": "player/session.mjs",
+      "bytes": 34511,
+      "gzip": 11243
+    },
+    {
+      "path": "player/view.mjs",
+      "bytes": 2728,
+      "gzip": 1146
+    },
+    {
+      "path": "player/start.mjs",
+      "bytes": 7587,
+      "gzip": 2659
+    },
+    {
+      "path": "player/math.mjs",
+      "bytes": 4397,
+      "gzip": 1768
+    },
+    {
+      "path": "player/player.css",
+      "bytes": 6293,
+      "gzip": 1948
+    },
+    {
+      "path": "player/analytics.mjs",
+      "bytes": 9283,
+      "gzip": 3108
+    },
+    {
+      "path": "player/progress-worker.mjs",
+      "bytes": 591,
+      "gzip": 385
+    },
+    {
+      "path": "player/records.mjs",
+      "bytes": 22703,
+      "gzip": 8143
+    },
+    {
+      "path": "vendor/mathjax-4.1.3/NOTICE.txt",
+      "bytes": 405,
+      "gzip": 285
+    },
+    {
+      "path": "vendor/mathjax-4.1.3/mml-svg.js",
+      "bytes": 1702534,
+      "gzip": 571290
+    },
+    {
+      "path": "vendor/mathjax-4.1.3/package-info.json",
+      "bytes": 2435,
+      "gzip": 875
+    },
+    {
+      "path": "vendor/mathjax-4.1.3/LICENSE",
+      "bytes": 11358,
+      "gzip": 3967
+    },
+    {
+      "path": "vendor/mathjax-4.1.3/sre/speech-worker.js",
+      "bytes": 425256,
+      "gzip": 125322
+    },
+    {
+      "path": "vendor/mathjax-4.1.3/newcm/package-info.json",
+      "bytes": 5005,
+      "gzip": 1331
+    },
+    {
+      "path": "vendor/mathjax-4.1.3/sre/mathmaps/base.json",
+      "bytes": 217157,
+      "gzip": 25122
+    },
+    {
+      "path": "vendor/mathjax-4.1.3/sre/mathmaps/nemeth.json",
+      "bytes": 227472,
+      "gzip": 19392
+    },
+    {
+      "path": "vendor/mathjax-4.1.3/sre/mathmaps/en.json",
+      "bytes": 364204,
+      "gzip": 43653
+    },
+    {
+      "path": "teacher/font/LICENSE.txt",
+      "bytes": 2734,
+      "gzip": 1413
+    },
+    {
+      "path": "teacher/font/metrics.json",
+      "bytes": 106948,
+      "gzip": 34619
+    },
+    {
+      "path": "teacher/font/DejaVuSans.ttf",
+      "bytes": 759720,
+      "gzip": 382186
+    },
+    {
+      "path": "teacher/export/xlsx.js",
+      "bytes": 1576,
+      "gzip": 746
+    },
+    {
+      "path": "teacher/export/office.js",
+      "bytes": 1027,
+      "gzip": 455
+    },
+    {
+      "path": "teacher/export/zip.js",
+      "bytes": 1442,
+      "gzip": 721
+    },
+    {
+      "path": "teacher/export/index.js",
+      "bytes": 1992,
+      "gzip": 970
+    },
+    {
+      "path": "teacher/export/docx.js",
+      "bytes": 3556,
+      "gzip": 1496
+    },
+    {
+      "path": "teacher/export/work.js",
+      "bytes": 573,
+      "gzip": 329
+    },
+    {
+      "path": "teacher/export/csv.js",
+      "bytes": 512,
+      "gzip": 337
+    },
+    {
+      "path": "teacher/export/pdf.js",
+      "bytes": 6631,
+      "gzip": 2921
+    }
+  ],
+  "checks": [
+    {
+      "name": "root",
+      "limit_kib": 20,
+      "measured_files": 1,
+      "violations": [],
+      "status": "PASS"
+    },
+    {
+      "name": "package",
+      "limit_kib": 60,
+      "measured_files": 4604,
+      "violations": [],
+      "status": "PASS"
+    },
+    {
+      "name": "shard",
+      "limit_kib": 50,
+      "measured_files": 72,
+      "violations": [],
+      "status": "PASS"
+    },
+    {
+      "name": "locale",
+      "limit_kib": 25,
+      "measured_files": 2,
+      "violations": [],
+      "status": "PASS"
+    },
+    {
+      "name": "player",
+      "limit_kib": 90,
+      "bound": "sum of all applicable modules",
+      "bytes": 36296,
+      "status": "PASS"
+    },
+    {
+      "name": "teacher",
+      "limit_kib": 150,
+      "bound": "sum of all applicable modules",
+      "bytes": 31495,
+      "status": "PASS"
+    },
+    {
+      "name": "initial-js",
+      "run": 1,
+      "limit_kib": 150,
+      "gzip_bytes": 25502,
+      "paths": [
+        "app.mjs",
+        "core/appearance.js",
+        "core/bank.mjs",
+        "core/dom.mjs",
+        "core/home.mjs",
+        "core/material.mjs",
+        "data/common.js",
+        "data/contract-defs.js",
+        "data/db.js",
+        "data/offline.js",
+        "data/store.js",
+        "data/summary.js",
+        "data/validate.js"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "initial-css",
+      "run": 1,
+      "limit_kib": 35,
+      "gzip_bytes": 8293,
+      "paths": [
+        "assets/base.css"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "initial-font",
+      "run": 1,
+      "limit_kib": 100,
+      "gzip_bytes": 64855,
+      "paths": [
+        "assets/noto-Bold.woff",
+        "assets/noto-Regular.woff"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "initial-js",
+      "run": 2,
+      "limit_kib": 150,
+      "gzip_bytes": 25502,
+      "paths": [
+        "app.mjs",
+        "core/appearance.js",
+        "core/bank.mjs",
+        "core/dom.mjs",
+        "core/home.mjs",
+        "core/material.mjs",
+        "data/common.js",
+        "data/contract-defs.js",
+        "data/db.js",
+        "data/offline.js",
+        "data/store.js",
+        "data/summary.js",
+        "data/validate.js"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "initial-css",
+      "run": 2,
+      "limit_kib": 35,
+      "gzip_bytes": 8293,
+      "paths": [
+        "assets/base.css"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "initial-font",
+      "run": 2,
+      "limit_kib": 100,
+      "gzip_bytes": 64855,
+      "paths": [
+        "assets/noto-Bold.woff",
+        "assets/noto-Regular.woff"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "initial-js",
+      "run": 3,
+      "limit_kib": 150,
+      "gzip_bytes": 25502,
+      "paths": [
+        "app.mjs",
+        "core/appearance.js",
+        "core/bank.mjs",
+        "core/dom.mjs",
+        "core/home.mjs",
+        "core/material.mjs",
+        "data/common.js",
+        "data/contract-defs.js",
+        "data/db.js",
+        "data/offline.js",
+        "data/store.js",
+        "data/summary.js",
+        "data/validate.js"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "initial-css",
+      "run": 3,
+      "limit_kib": 35,
+      "gzip_bytes": 8293,
+      "paths": [
+        "assets/base.css"
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "initial-font",
+      "run": 3,
+      "limit_kib": 100,
+      "gzip_bytes": 64855,
+      "paths": [
+        "assets/noto-Bold.woff",
+        "assets/noto-Regular.woff"
+      ],
+      "status": "PASS"
+    }
+  ]
+}

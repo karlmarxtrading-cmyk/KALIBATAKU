@@ -1,0 +1,246 @@
+{
+  "algorithm": "SHA-256",
+  "scope": "All package files except this manifest; does not certify the future website.",
+  "files": [
+    {
+      "path": "00_MULAI_DI_SINI.md",
+      "bytes": 6286,
+      "sha256": "939705b8c84b89dd0b0eb79eb7e6641738bde05decf8aacb51b8edf0ed798ca4"
+    },
+    {
+      "path": "00_SUMBER/BRIEF_PENGGUNA_20261125.md",
+      "bytes": 40183,
+      "sha256": "e9cc272e2eaeee8a061b5ae6cbc92f689b9c62663e8ebda854281fd7a45a83e1"
+    },
+    {
+      "path": "00_SUMBER/KALIBATAKU_CURRICULUM_REGISTRY_v1.json",
+      "bytes": 395578,
+      "sha256": "3f4df37542b5a7570e405483001810013365f6641bb8ebb0c24359d94ff01012"
+    },
+    {
+      "path": "00_SUMBER/KALIBATAKU_MASTER_CURRICULUM_v1.md",
+      "bytes": 88085,
+      "sha256": "fc71cd6bed169bdf5fd284f1bd1242fbfbf36d2ca3d85f51151007d920a6296c"
+    },
+    {
+      "path": "01_ARAHAN_UI_UX.md",
+      "bytes": 52735,
+      "sha256": "74a7a82d4de9225c466b22f0cd5ca5815a486fc6babcd8fb786f4197977b5d61"
+    },
+    {
+      "path": "02_PRD_MASTER.md",
+      "bytes": 32701,
+      "sha256": "3bb64cbb04d39cc4f5b46541b3e72f075c6573c4561e0a00c0cb975270a4e398"
+    },
+    {
+      "path": "03_PROMPT_EKSEKUSI_CHATGPT_WORK.txt",
+      "bytes": 22589,
+      "sha256": "ca78dbc31e721a3a50355b7e5d36bf81a02851d58f672bd1e68ce6ce4f0cf9d5"
+    },
+    {
+      "path": "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+      "bytes": 33219,
+      "sha256": "7c08ca76ddf104410fe457a105836f398f2e32551b193531ff3cd4abac397d28"
+    },
+    {
+      "path": "05_BANK_SOAL_FACTORY.md",
+      "bytes": 16831,
+      "sha256": "4c7c961185675740139290cf42ae052e8f6a12ced2ead795b0118c90a86a3f40"
+    },
+    {
+      "path": "06_ACCEPTANCE_QA_DAN_RILIS.md",
+      "bytes": 30089,
+      "sha256": "f68fab097c4ecf0c3ada7462c2282d95465cb059ca3809c47b56a5f3c55435f7"
+    },
+    {
+      "path": "07_DEPLOY_OPERASIONAL.md",
+      "bytes": 12177,
+      "sha256": "c467db598dcf3b6e6533bb5c45f97ebb9d69e989cd7a345c5234bdf71e128f5d"
+    },
+    {
+      "path": "08_AUDIT_KURIKULUM_DAN_KEPUTUSAN.md",
+      "bytes": 15164,
+      "sha256": "461dc53ab293cef2fa5574870f4946bd182f7b45b90ebaedcb49dfd40f53cf62"
+    },
+    {
+      "path": "09_METRIK_DAN_LAPORAN.md",
+      "bytes": 14982,
+      "sha256": "3df4836289b216cc0d528bd8a37091ed2f8f7dd51699344f9456b53eae0ae8f7"
+    },
+    {
+      "path": "10_SUMBER_DAN_KETERLACAKAN.md",
+      "bytes": 8420,
+      "sha256": "c4d3f278fd6e43125a56acdf90eb2c678bd37d4e1ab90296fc3192067b825d6f"
+    },
+    {
+      "path": "curriculum/ERRATA_APPLIED.json",
+      "bytes": 6384,
+      "sha256": "4a4fdf25b5c6008cd266e40145df9ed2c1e8a755e85ff0a10a4cdf4ce79bd7b5"
+    },
+    {
+      "path": "curriculum/KALIBATAKU_CURRICULUM_REGISTRY_v1_0_DRAFT2.json",
+      "bytes": 396836,
+      "sha256": "e12014971bded91fc35a52260a0c54c4ef5c546c78fad573f79c826fffb0c37e"
+    },
+    {
+      "path": "curriculum/KALIBATAKU_MASTER_CURRICULUM_v1_0_DRAFT2.md",
+      "bytes": 88325,
+      "sha256": "44ebfcdb516ffd78e582ce52acf2875312031baaf1e84f5733c02b56c1bd81d6"
+    },
+    {
+      "path": "curriculum/academic_findings.json",
+      "bytes": 12020,
+      "sha256": "4cafcc51d1bf8a8cca4c905b6801b1cb037e3f29861fe0fa14ed1d30642c9856"
+    },
+    {
+      "path": "examples/ANSWER_EVENT_EXAMPLE.json",
+      "bytes": 1445,
+      "sha256": "702a4e3337e01121114ffe13f59fc1746f30e193efc69922fc37505c2b5f220e"
+    },
+    {
+      "path": "examples/MOCK_ACK_EXAMPLE.json",
+      "bytes": 460,
+      "sha256": "67fa92616891790b98a94fecead8ad79cb096223c98e23cf80a60ce8df7fe688"
+    },
+    {
+      "path": "examples/PACKAGE_CONTRACT_EXAMPLE.json",
+      "bytes": 3767,
+      "sha256": "efd2e19beb4f0f2109ca5ccc42cc2b88d73645ed6f1f3654d8f4b8a2c1ee9698"
+    },
+    {
+      "path": "examples/PACKAGE_CONTRACT_EXAMPLE.mjs",
+      "bytes": 3865,
+      "sha256": "258a783b7c64443c2cc92abfe1d33a9bc7f5fa6de07aadec37040110307b5520"
+    },
+    {
+      "path": "examples/REPORT_SNAPSHOT_EXAMPLE.json",
+      "bytes": 614,
+      "sha256": "4d55fc28ca95c2690b01a622f70d3f9b3cd17d83a10e837f3cf0b6aee7a4bb58"
+    },
+    {
+      "path": "planning/MATRIKS_PERSYARATAN.md",
+      "bytes": 8666,
+      "sha256": "0ba76b51fbdf8d0c39958b8aaafb93464f656be307aabffe3558e0360d51c515"
+    },
+    {
+      "path": "planning/competency_plan.json",
+      "bytes": 490082,
+      "sha256": "4d281464a05b68edcf422d74623ab4fabf2c5c511694ed0d17e4275a626ca04e"
+    },
+    {
+      "path": "planning/decision_log.json",
+      "bytes": 12563,
+      "sha256": "86aa18369bfb5e787a2c3dac9d0271079d3d2013fec7e4356e1968f825c86595"
+    },
+    {
+      "path": "planning/mastery_policy.json",
+      "bytes": 1049,
+      "sha256": "8d4c470364cb50bb069c410e0d8cf5d65114568b148de9bb8c676b12b74cc4a9"
+    },
+    {
+      "path": "planning/package_plan.json",
+      "bytes": 1424868,
+      "sha256": "733f4c57a71614fda35e2acda78665773b9dd0a5fec3be5e30bff30167ace2bb"
+    },
+    {
+      "path": "planning/requirements.json",
+      "bytes": 29499,
+      "sha256": "26b227a15ce53bc7291462fec4c174770015d093f11f55778d74e2033f5dfd91"
+    },
+    {
+      "path": "planning/source_provenance.json",
+      "bytes": 1223,
+      "sha256": "4d8b69a993b87594c56c9a830c70cc381e8f8c1359617b1371875c395045b20d"
+    },
+    {
+      "path": "qa/BUKTI_PEMERIKSAAN_PAKET.md",
+      "bytes": 4262,
+      "sha256": "6aab8ce4181a1f103c500e69dd01f508159202fbe079735690a11323b85525d0"
+    },
+    {
+      "path": "qa/HANDOFF_VERIFICATION.json",
+      "bytes": 5300,
+      "sha256": "0290f98c430613d6632cb7af6962b1ddcfe96693a7e10b5f164eac161a364245"
+    },
+    {
+      "path": "qa/RELEASE_STATUS.template.json",
+      "bytes": 1280,
+      "sha256": "11000fbe3f7e4350ea54a890e93388e11c457d2026f37682c8845437961becab"
+    },
+    {
+      "path": "qa/SOURCE_VERIFICATION_DRAFT2.json",
+      "bytes": 1998,
+      "sha256": "63766ff278b6f4fc22dcea61dc9cf7afb7ac11fb59a51f6f794d4e28eed1eb1c"
+    },
+    {
+      "path": "qa/SOURCE_VERIFICATION_ORIGINAL.json",
+      "bytes": 2885,
+      "sha256": "300a6417c24ee38bbf72f3bfe73b8255c68a86e85b511de2e79046aead308858"
+    },
+    {
+      "path": "qa/analytics_cases.json",
+      "bytes": 2463,
+      "sha256": "6e2c2daf2f62a41403647554bef321982062542e5cef5d5fdb985ff0f38bd36a"
+    },
+    {
+      "path": "qa/answer_cases.json",
+      "bytes": 10264,
+      "sha256": "cdb5c771301e509afd4c94b6b1114f5b786975a339de9b32a71fe37ffb0e9244"
+    },
+    {
+      "path": "qa/release_test_matrix.template.json",
+      "bytes": 22632,
+      "sha256": "b42594dbd2b553d5f00b9a08a47770a7b4b46368058c2498fdaa8929c792536a"
+    },
+    {
+      "path": "qa/requirements.txt",
+      "bytes": 19,
+      "sha256": "756cc9e506ae4ee1a6f6c0507088b5cfc0dc8ba350fb2d2d46f1ffa72033adb6"
+    },
+    {
+      "path": "qa/source_audit_verifier.py",
+      "bytes": 19786,
+      "sha256": "1536d5fd259a5e8b7bdbb9361aab560a78c0ba194c0c8c4fd27adbee4648993b"
+    },
+    {
+      "path": "qa/verify_handoff.py",
+      "bytes": 14683,
+      "sha256": "0639f1682e5989ebae6b3e03a0701da7a458db5ef2d87c205f5bf2a30d540fd1"
+    },
+    {
+      "path": "schemas/BRIDGE_API_CONTRACT.md",
+      "bytes": 7404,
+      "sha256": "8170bb706ffdcc37e8ba74733f3eee178fbb8f6e347b968fa734b849fda37978"
+    },
+    {
+      "path": "schemas/README.md",
+      "bytes": 8424,
+      "sha256": "2ea2977df9af7ffa85cfcf299f8f13a7397cfa1fe5fe2562e47efa79a22b0428"
+    },
+    {
+      "path": "schemas/core.schema.json",
+      "bytes": 32550,
+      "sha256": "c7eea5286ad8c08ac0de6c3e5e1157635f02489ceea1e2584973470310ea2743"
+    },
+    {
+      "path": "schemas/release-status.schema.json",
+      "bytes": 5762,
+      "sha256": "ba20816b9f666691e4e8ad90ea794643f29eaf35923d65ab5c6801606223f4ea"
+    },
+    {
+      "path": "ui/CONTRAST_REPORT.json",
+      "bytes": 8031,
+      "sha256": "ddd2d5cd42b5099ee0c7faff8d9ab0cfa5842c914a6ecada3a8362034712b446"
+    },
+    {
+      "path": "ui/MICROCOPY_ID_EN.json",
+      "bytes": 4871,
+      "sha256": "68668c235a3f43c812ff14387356432fdfd3b6377e60112017823313aeae449a"
+    },
+    {
+      "path": "ui/design-tokens.json",
+      "bytes": 5877,
+      "sha256": "da37784bb2707ada406905419633bc1ff98fb6d16a203f93db75da13da1d8b1a"
+    }
+  ]
+}

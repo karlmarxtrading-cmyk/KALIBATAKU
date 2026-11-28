@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "observed_utc": "2026-11-28T17:11:30.328832+00:00",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "python": "3.12.14",
+  "baseline_sha256": "94620186f0c6f6d530531db2d8f083ef0d3356a0603d7bdd23eff98ec707714d",
+  "app_version": "1.6.1",
+  "offline_release": "83fef50a05e52452",
+  "dist_tree_sha256": "00e3ce3b4dc1fc76cc60b2dd48b51543970d342cbdd7b06c36cecf4fc3255147",
+  "generator_and_bank_pin": {
+    "algorithm": "sha256-of-sorted-sha256-path-lines-v1",
+    "source": "a3a1b7d30d5594d13a295410e82e8f02ddc744bdd97178b8142465402bad997e",
+    "bank": "6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43",
+    "file_count": 4677
+  },
+  "identical_scope_counts": {
+    "factory/": 7,
+    "spec/curriculum/": 4,
+    "spec/planning/": 7,
+    "src/journey/v1/": 282,
+    "dist/journey/v1/": 282
+  },
+  "bank_changes": {
+    "added": 0,
+    "removed": 0,
+    "modified": 0
+  },
+  "baseline_and_combined": {
+    "files": 4677,
+    "packages": 4604,
+    "placements": 177640,
+    "unique_fingerprints": 168142,
+    "active_competencies": 281,
+    "stages": 60,
+    "prerequisites": 712,
+    "families": 394,
+    "formal_packages": 562,
+    "teaching_packages": 4042
+  },
+  "additional": {
+    "packages": 0,
+    "placements": 0,
+    "unique_fingerprints": 0
+  },
+  "package_uses": {
+    "mission_intro": 681,
+    "mission_core": 1601,
+    "assessment_form_reserved": 562,
+    "mission_apply": 870,
+    "mission_review": 890
+  },
+  "mapping_files": [
+    "evidence/v160/audit-input/all_4604_packages_mapping.csv",
+    "evidence/v160/audit-input/all_281_active_competencies.csv",
+    "evidence/v160/audit-input/all_60_stages.csv"
+  ]
+}

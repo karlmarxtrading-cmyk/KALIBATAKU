@@ -1,0 +1,41 @@
+{
+  "baseline": {
+    "files": 4677,
+    "packages": 4604,
+    "placements": 177640,
+    "unique_fingerprints": 168142,
+    "active_competencies": 281,
+    "stages": 60,
+    "prerequisites": 712,
+    "families": 394,
+    "formal_packages": 562,
+    "teaching_packages": 4042
+  },
+  "additional": {
+    "files": 0,
+    "packages": 0,
+    "placements": 0,
+    "unique_fingerprints": 0,
+    "active_competencies": 0,
+    "stages": 0,
+    "prerequisites": 0,
+    "families": 0,
+    "formal_packages": 0,
+    "teaching_packages": 0
+  },
+  "combined_equals_baseline": true,
+  "source_zip_sha256": "03e0dd651667c7f9c1a81db027d45bdd7534fdf2c8ef8815ca20d85ae4211b52",
+  "combined": {
+    "files": 4677,
+    "packages": 4604,
+    "placements": 177640,
+    "unique_fingerprints": 168142,
+    "active_competencies": 281,
+    "stages": 60,
+    "prerequisites": 712,
+    "families": 394,
+    "formal_packages": 562,
+    "teaching_packages": 4042
+  },
+  "method": "Semua modul paket diurai sebagai JSON setelah pemeriksaan SHA-256; fingerprint lengkap dan template_id dikelompokkan. Pembandingan bank mencakup indeks dan manifest."
+}

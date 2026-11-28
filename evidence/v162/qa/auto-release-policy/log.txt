@@ -1,0 +1,46 @@
+PASS 26 unique gates in the authorized contract
+PASS 23 package gates required independently of post-release access
+PASS all 27 historical non-PASS rows preserved
+PASS prior execution is archived under its own version and hash
+PASS historical evidence relabeled PASS
+PASS required historical row missing
+PASS duplicate cross-register identity
+PASS scope waiver without a replacement
+PASS unknown replacement cannot authorize release
+PASS dropped regression suite
+PASS duplicate registry identity
+PASS optionalized registered test
+PASS weakened original assertion threshold
+PASS altered original command
+PASS unknown profile ID
+PASS attempt to waive correctness
+PASS modified immutable snapshot
+PASS open technical finding blocks package
+PASS missing human field and domain results do not hold a complete package
+PASS local hosting PASS leaves deployment and provider preview untested
+PASS verified custom domain does not certify a provider preview
+PASS verified provider URL only qualifies after artifact and domain checks
+PASS one unresolved issue prevents readiness
+PASS mandatory gate FAIL prevents readiness
+PASS mandatory gate BLOCKED prevents readiness
+PASS mandatory gate BLOCKED_ENV prevents readiness
+PASS mandatory gate NOT_RUN prevents readiness
+PASS absent gate prevents readiness
+PASS duplicate gate prevents readiness
+PASS deleted required applicability prevents readiness
+PASS untested replacement gate stays NOT_RUN
+PASS attempted PASS with invalid binding fails
+PASS environment block remains visible
+PASS malformed gate suites schema
+PASS fixture production binding rechecks policy, registry, timestamp and actual command log
+PASS diagnostic binding refused
+PASS unrecognized profile in receipt refused
+PASS modified profile hash refused
+PASS modified mapping hash refused
+PASS modified registry hash refused
+PASS modified history hash refused
+PASS missing overall run time refused
+PASS missing suite time refused
+PASS contradictory PASS with recorded errors refused
+PASS stale build identity refused
+PASS post-run mutation of proof refused

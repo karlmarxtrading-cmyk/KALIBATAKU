@@ -1,0 +1,5430 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "next-viewport-chromium",
+  "started": "2026-11-28T18:47:03.376159+00:00",
+  "build": {
+    "offline_release": "f630b3dc6aa6b5a5"
+  },
+  "runtime": {
+    "engine": "chromium",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "python": "3.12.14",
+    "version": "151.0.7922.34"
+  },
+  "scope": "Actual desktop engine. Browser touch input and CSS viewport do not certify physical keyboards or devices.",
+  "checks": [
+    {
+      "id": "320x568-enter-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "start": {
+            "left": 30,
+            "top": 463.703125,
+            "right": 227.578125,
+            "bottom": 511.703125,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-enter-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 244.53125,
+            "right": 124.1875,
+            "bottom": 270.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 293.296875,
+            "right": 279.8125,
+            "bottom": 346.703125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 393.875,
+            "right": 291.8125,
+            "bottom": 441.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-enter-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "2 + 3"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "2 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id",
+        "screenshot": {
+          "file": "chromium-320x568-enter-next.png",
+          "sha256": "aeb402330c17a96fb17f31d65846500f16c43dbecba13d67b2540274522a9152"
+        }
+      }
+    },
+    {
+      "id": "320x568-enter-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "73198a33-ccbd-41c0-8449-ff44e93d3f6d",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd",
+        "completions": 0
+      }
+    },
+    {
+      "id": "320x568-enter-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-enter-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "73198a33-ccbd-41c0-8449-ff44e93d3f6d",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "320x568-enter-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-enter-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "73198a33-ccbd-41c0-8449-ff44e93d3f6d",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+        "completions": 0
+      }
+    },
+    {
+      "id": "320x568-click-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "start": {
+            "left": 30,
+            "top": 463.703125,
+            "right": 227.578125,
+            "bottom": 511.703125,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-click-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 244.53125,
+            "right": 124.1875,
+            "bottom": 270.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 293.296875,
+            "right": 279.8125,
+            "bottom": 346.703125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 393.875,
+            "right": 291.8125,
+            "bottom": 441.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-click-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "2 + 3"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "2 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-click-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "ea25b67c-da5c-4543-bf6c-4d908a06be7f",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd",
+        "completions": 0
+      }
+    },
+    {
+      "id": "320x568-click-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-click-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "ea25b67c-da5c-4543-bf6c-4d908a06be7f",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "320x568-click-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-click-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "ea25b67c-da5c-4543-bf6c-4d908a06be7f",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+        "completions": 0
+      }
+    },
+    {
+      "id": "320x568-touch-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "start": {
+            "left": 30,
+            "top": 463.703125,
+            "right": 227.578125,
+            "bottom": 511.703125,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-touch-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 244.53125,
+            "right": 124.1875,
+            "bottom": 270.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 293.296875,
+            "right": 279.8125,
+            "bottom": 346.703125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 393.875,
+            "right": 291.8125,
+            "bottom": 441.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-touch-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "2 + 3"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "2 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-touch-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "82e12c79-3888-4c8e-9793-40728835c537",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd",
+        "completions": 0
+      }
+    },
+    {
+      "id": "320x568-touch-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-touch-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "82e12c79-3888-4c8e-9793-40728835c537",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "320x568-touch-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 3"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "320x568-touch-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "82e12c79-3888-4c8e-9793-40728835c537",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+        "completions": 0
+      }
+    },
+    {
+      "id": "390x844-enter-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "start": {
+            "left": 55.5625,
+            "top": 519.90625,
+            "right": 253.140625,
+            "bottom": 567.90625,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-enter-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 245.03125,
+            "right": 125.0625,
+            "bottom": 270.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 318.21875,
+            "right": 348.9375,
+            "bottom": 371.625,
+            "visible": true,
+            "hit": true,
+            "text": "1 + 1"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 431.609375,
+            "right": 360.9375,
+            "bottom": 487.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "1 + 1",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-enter-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          57
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 188.03125,
+            "right": 125.0625,
+            "bottom": 213.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 261.21875,
+            "right": 348.9375,
+            "bottom": 314.625,
+            "visible": true,
+            "hit": true,
+            "text": "2 + 3"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 374.609375,
+            "right": 360.9375,
+            "bottom": 430.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "2 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-enter-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "a1de348c-9b68-4a2b-bd6b-53e9ab629bf9",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd",
+        "completions": 0
+      }
+    },
+    {
+      "id": "390x844-enter-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          87
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 158.03125,
+            "right": 125.0625,
+            "bottom": 183.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 231.21875,
+            "right": 348.9375,
+            "bottom": 284.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 344.609375,
+            "right": 360.9375,
+            "bottom": 400.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-enter-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "a1de348c-9b68-4a2b-bd6b-53e9ab629bf9",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "390x844-enter-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          196
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 49.03125,
+            "right": 125.0625,
+            "bottom": 74.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 122.21875,
+            "right": 348.9375,
+            "bottom": 175.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 235.609375,
+            "right": 360.9375,
+            "bottom": 291.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-enter-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "a1de348c-9b68-4a2b-bd6b-53e9ab629bf9",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+        "completions": 0
+      }
+    },
+    {
+      "id": "390x844-click-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "start": {
+            "left": 55.5625,
+            "top": 519.90625,
+            "right": 253.140625,
+            "bottom": 567.90625,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-click-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 245.03125,
+            "right": 125.0625,
+            "bottom": 270.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 318.21875,
+            "right": 348.9375,
+            "bottom": 371.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 431.609375,
+            "right": 360.9375,
+            "bottom": 487.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-click-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          118
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 127.03125,
+            "right": 125.0625,
+            "bottom": 152.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 200.21875,
+            "right": 348.9375,
+            "bottom": 253.625,
+            "visible": true,
+            "hit": true,
+            "text": "1 + 1"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 313.609375,
+            "right": 360.9375,
+            "bottom": 369.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "1 + 1",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-click-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "4d0bf552-849a-48c5-9b2a-70b26e10edb2",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+        "completions": 0
+      }
+    },
+    {
+      "id": "390x844-click-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          118
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 127.03125,
+            "right": 125.0625,
+            "bottom": 152.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 200.21875,
+            "right": 348.9375,
+            "bottom": 253.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 313.609375,
+            "right": 360.9375,
+            "bottom": 369.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-click-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "4d0bf552-849a-48c5-9b2a-70b26e10edb2",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "390x844-click-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          196
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 49.03125,
+            "right": 125.0625,
+            "bottom": 74.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 122.21875,
+            "right": 348.9375,
+            "bottom": 175.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 3"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 235.609375,
+            "right": 360.9375,
+            "bottom": 291.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-click-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "4d0bf552-849a-48c5-9b2a-70b26e10edb2",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+        "completions": 0
+      }
+    },
+    {
+      "id": "390x844-touch-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "start": {
+            "left": 55.5625,
+            "top": 519.90625,
+            "right": 253.140625,
+            "bottom": 567.90625,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-touch-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 245.03125,
+            "right": 125.0625,
+            "bottom": 270.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 318.21875,
+            "right": 348.9375,
+            "bottom": 371.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 431.609375,
+            "right": 360.9375,
+            "bottom": 487.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-touch-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          118
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 127.03125,
+            "right": 125.0625,
+            "bottom": 152.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 200.21875,
+            "right": 348.9375,
+            "bottom": 253.625,
+            "visible": true,
+            "hit": true,
+            "text": "2 + 3"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 313.609375,
+            "right": 360.9375,
+            "bottom": 369.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "2 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-touch-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "94a369b8-bf20-459f-be2c-4ca77e2b4e17",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd",
+        "completions": 0
+      }
+    },
+    {
+      "id": "390x844-touch-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          118
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 127.03125,
+            "right": 125.0625,
+            "bottom": 152.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 200.21875,
+            "right": 348.9375,
+            "bottom": 253.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 313.609375,
+            "right": 360.9375,
+            "bottom": 369.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-touch-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "94a369b8-bf20-459f-be2c-4ca77e2b4e17",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "390x844-touch-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          196
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 49.03125,
+            "right": 125.0625,
+            "bottom": 74.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 122.21875,
+            "right": 348.9375,
+            "bottom": 175.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 235.609375,
+            "right": 360.9375,
+            "bottom": 291.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "390x844-touch-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "94a369b8-bf20-459f-be2c-4ca77e2b4e17",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+        "completions": 0
+      }
+    },
+    {
+      "id": "844x390-enter-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "start": {
+            "left": 55.4375,
+            "top": 330.71875,
+            "right": 253.015625,
+            "bottom": 378.71875,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-enter-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          135
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 153.0625,
+            "right": 159.4375,
+            "bottom": 178.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 201.828125,
+            "right": 756.5625,
+            "bottom": 288.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 335.8125,
+            "right": 609.5625,
+            "bottom": 383.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-enter-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "1 + 1"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "1 + 1",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id",
+        "screenshot": {
+          "file": "chromium-844x390-enter-next.png",
+          "sha256": "6763ddc252314b8eb50195c782bacf2c3c510aa41c125fe7b7851353155b6229"
+        }
+      }
+    },
+    {
+      "id": "844x390-enter-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "f8f0cf8a-061e-4071-a4ac-1de8b009f1ec",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+        "completions": 0
+      }
+    },
+    {
+      "id": "844x390-enter-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-enter-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "f8f0cf8a-061e-4071-a4ac-1de8b009f1ec",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "844x390-enter-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 3"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-enter-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "f8f0cf8a-061e-4071-a4ac-1de8b009f1ec",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+        "completions": 0
+      }
+    },
+    {
+      "id": "844x390-click-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "start": {
+            "left": 55.4375,
+            "top": 330.71875,
+            "right": 253.015625,
+            "bottom": 378.71875,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-click-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          135
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 153.0625,
+            "right": 159.4375,
+            "bottom": 178.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 201.828125,
+            "right": 756.5625,
+            "bottom": 288.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 335.8125,
+            "right": 609.5625,
+            "bottom": 383.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-click-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "1 + 1"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "1 + 1",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-click-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "9ee5188b-f4c8-47ae-94aa-a18a88d16b80",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+        "completions": 0
+      }
+    },
+    {
+      "id": "844x390-click-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-click-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "9ee5188b-f4c8-47ae-94aa-a18a88d16b80",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "844x390-click-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-click-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "9ee5188b-f4c8-47ae-94aa-a18a88d16b80",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+        "completions": 0
+      }
+    },
+    {
+      "id": "844x390-touch-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "start": {
+            "left": 55.4375,
+            "top": 330.71875,
+            "right": 253.015625,
+            "bottom": 378.71875,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-touch-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          135
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 153.0625,
+            "right": 159.4375,
+            "bottom": 178.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 201.828125,
+            "right": 756.5625,
+            "bottom": 288.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 335.8125,
+            "right": 609.5625,
+            "bottom": 383.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-touch-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-touch-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "599fb6b5-5c90-4eeb-b72b-dee768a5f5b7",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+        "completions": 0
+      }
+    },
+    {
+      "id": "844x390-touch-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-touch-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "599fb6b5-5c90-4eeb-b72b-dee768a5f5b7",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "844x390-touch-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 3"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "844x390-touch-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "599fb6b5-5c90-4eeb-b72b-dee768a5f5b7",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+        "completions": 0
+      }
+    },
+    {
+      "id": "1280x800-enter-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "start": {
+            "left": 170.546875,
+            "top": 522.28125,
+            "right": 368.125,
+            "bottom": 570.28125,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-enter-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 331.421875,
+            "right": 359.390625,
+            "bottom": 357.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 414.203125,
+            "right": 992.609375,
+            "bottom": 501.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 570.59375,
+            "right": 845.609375,
+            "bottom": 626.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-enter-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          102
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 229.421875,
+            "right": 359.390625,
+            "bottom": 255.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 312.203125,
+            "right": 992.609375,
+            "bottom": 399.015625,
+            "visible": true,
+            "hit": true,
+            "text": "1 + 1"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 468.59375,
+            "right": 845.609375,
+            "bottom": 524.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "1 + 1",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-enter-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "23e73ae7-0982-4ed1-8950-01a9c917bf80",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+        "completions": 0
+      }
+    },
+    {
+      "id": "1280x800-enter-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          102
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 229.421875,
+            "right": 359.390625,
+            "bottom": 255.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 312.203125,
+            "right": 992.609375,
+            "bottom": 399.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 468.59375,
+            "right": 845.609375,
+            "bottom": 524.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-enter-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "23e73ae7-0982-4ed1-8950-01a9c917bf80",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "1280x800-enter-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          156
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 175.421875,
+            "right": 359.390625,
+            "bottom": 201.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 258.203125,
+            "right": 992.609375,
+            "bottom": 345.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 3"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 414.59375,
+            "right": 845.609375,
+            "bottom": 470.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-enter-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "23e73ae7-0982-4ed1-8950-01a9c917bf80",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+        "completions": 0
+      }
+    },
+    {
+      "id": "1280x800-click-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "start": {
+            "left": 170.546875,
+            "top": 522.28125,
+            "right": 368.125,
+            "bottom": 570.28125,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-click-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 331.421875,
+            "right": 359.390625,
+            "bottom": 357.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 414.203125,
+            "right": 992.609375,
+            "bottom": 501.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 570.59375,
+            "right": 845.609375,
+            "bottom": 626.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-click-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          102
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 229.421875,
+            "right": 359.390625,
+            "bottom": 255.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 312.203125,
+            "right": 992.609375,
+            "bottom": 399.015625,
+            "visible": true,
+            "hit": true,
+            "text": "1 + 1"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 468.59375,
+            "right": 845.609375,
+            "bottom": 524.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "1 + 1",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-click-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "5439042f-8cac-401c-b2a2-1dc05dd64d4a",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+        "completions": 0
+      }
+    },
+    {
+      "id": "1280x800-click-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          102
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 229.421875,
+            "right": 359.390625,
+            "bottom": 255.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 312.203125,
+            "right": 992.609375,
+            "bottom": 399.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 468.59375,
+            "right": 845.609375,
+            "bottom": 524.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-click-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "5439042f-8cac-401c-b2a2-1dc05dd64d4a",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "1280x800-click-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          156
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 175.421875,
+            "right": 359.390625,
+            "bottom": 201.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 258.203125,
+            "right": 992.609375,
+            "bottom": 345.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 414.59375,
+            "right": 845.609375,
+            "bottom": 470.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-click-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "5439042f-8cac-401c-b2a2-1dc05dd64d4a",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+        "completions": 0
+      }
+    },
+    {
+      "id": "1280x800-touch-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "start": {
+            "left": 170.546875,
+            "top": 522.28125,
+            "right": 368.125,
+            "bottom": 570.28125,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-touch-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 331.421875,
+            "right": 359.390625,
+            "bottom": 357.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 414.203125,
+            "right": 992.609375,
+            "bottom": 501.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 570.59375,
+            "right": 845.609375,
+            "bottom": 626.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-touch-correct-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          102
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 229.421875,
+            "right": 359.390625,
+            "bottom": 255.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 312.203125,
+            "right": 992.609375,
+            "bottom": 399.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 468.59375,
+            "right": 845.609375,
+            "bottom": 524.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-touch-correct-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "3d2fbba1-cb40-4720-932d-0f001f35d2f0",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+        "completions": 0
+      }
+    },
+    {
+      "id": "1280x800-touch-incorrect-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          102
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 229.421875,
+            "right": 359.390625,
+            "bottom": 255.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 3 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 312.203125,
+            "right": 992.609375,
+            "bottom": 399.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 5"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 468.59375,
+            "right": 845.609375,
+            "bottom": 524.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 5",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-touch-incorrect-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "3d2fbba1-cb40-4720-932d-0f001f35d2f0",
+        "indices": [
+          1,
+          1,
+          2
+        ],
+        "grade_events": [
+          1,
+          2,
+          2
+        ],
+        "typed": "7",
+        "next_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "completions": 0
+      }
+    },
+    {
+      "id": "1280x800-touch-equivalent-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 1280,
+          "height": 800,
+          "scale": 1
+        },
+        "layout": [
+          1280,
+          800
+        ],
+        "scroll": [
+          0,
+          156
+        ],
+        "documentWidth": 1280,
+        "rects": {
+          "position": {
+            "left": 263.390625,
+            "top": 175.421875,
+            "right": 359.390625,
+            "bottom": 201.015625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 4 dari 6"
+          },
+          "expression": {
+            "left": 287.390625,
+            "top": 258.203125,
+            "right": 992.609375,
+            "bottom": 345.015625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 3"
+          },
+          "input": {
+            "left": 263.390625,
+            "top": 414.59375,
+            "right": 845.609375,
+            "bottom": 470.59375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "1280x800-touch-equivalent-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "3d2fbba1-cb40-4720-932d-0f001f35d2f0",
+        "indices": [
+          2,
+          2,
+          3
+        ],
+        "grade_events": [
+          2,
+          3,
+          3
+        ],
+        "typed": "7",
+        "next_fingerprint": "4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+        "completions": 0
+      }
+    },
+    {
+      "id": "modifiers-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "start": {
+            "left": 55.5625,
+            "top": 519.90625,
+            "right": 253.140625,
+            "bottom": 567.90625,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "modifiers-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 245.03125,
+            "right": 125.0625,
+            "bottom": 270.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 318.21875,
+            "right": 348.9375,
+            "bottom": 371.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 431.609375,
+            "right": 360.9375,
+            "bottom": 487.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "modifier-input-Shift",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0
+        ],
+        "sameRoute": true,
+        "control": "#kp-answer"
+      }
+    },
+    {
+      "id": "modifier-input-Control",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0
+        ],
+        "sameRoute": true,
+        "control": "#kp-answer"
+      }
+    },
+    {
+      "id": "modifier-input-Alt",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0
+        ],
+        "sameRoute": true,
+        "control": "#kp-answer"
+      }
+    },
+    {
+      "id": "modifier-input-Meta",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0
+        ],
+        "sameRoute": true,
+        "control": "#kp-answer"
+      }
+    },
+    {
+      "id": "modifier-check-Shift",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0
+        ],
+        "sameRoute": true,
+        "control": "[data-submit]"
+      }
+    },
+    {
+      "id": "modifier-check-Control",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0
+        ],
+        "sameRoute": true,
+        "control": "[data-submit]"
+      }
+    },
+    {
+      "id": "modifier-check-Alt",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0
+        ],
+        "sameRoute": true,
+        "control": "[data-submit]"
+      }
+    },
+    {
+      "id": "modifier-check-Meta",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0
+        ],
+        "sameRoute": true,
+        "control": "[data-submit]"
+      }
+    },
+    {
+      "id": "modifier-feedback-Shift",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          1
+        ],
+        "after": [
+          0,
+          1
+        ],
+        "sameRoute": true,
+        "control": "[data-answer-feedback]"
+      }
+    },
+    {
+      "id": "modifier-feedback-Control",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          1
+        ],
+        "after": [
+          0,
+          1
+        ],
+        "sameRoute": true,
+        "control": "[data-answer-feedback]"
+      }
+    },
+    {
+      "id": "modifier-feedback-Alt",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          1
+        ],
+        "after": [
+          0,
+          1
+        ],
+        "sameRoute": true,
+        "control": "[data-answer-feedback]"
+      }
+    },
+    {
+      "id": "modifier-feedback-Meta",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          1
+        ],
+        "after": [
+          0,
+          1
+        ],
+        "sameRoute": true,
+        "control": "[data-answer-feedback]"
+      }
+    },
+    {
+      "id": "modifier-next-Shift",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          1
+        ],
+        "after": [
+          0,
+          1
+        ],
+        "sameRoute": true,
+        "control": "[data-part=next]"
+      }
+    },
+    {
+      "id": "modifier-next-Control",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          1
+        ],
+        "after": [
+          0,
+          1
+        ],
+        "sameRoute": true,
+        "control": "[data-part=next]"
+      }
+    },
+    {
+      "id": "modifier-next-Alt",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          1
+        ],
+        "after": [
+          0,
+          1
+        ],
+        "sameRoute": true,
+        "control": "[data-part=next]"
+      }
+    },
+    {
+      "id": "modifier-next-Meta",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          0,
+          1
+        ],
+        "after": [
+          0,
+          1
+        ],
+        "sameRoute": true,
+        "control": "[data-part=next]"
+      }
+    },
+    {
+      "id": "secondary-enter",
+      "status": "PASS",
+      "expected": "Native Enter expands solution steps without advancing the attempt",
+      "actual": {
+        "open": true
+      }
+    },
+    {
+      "id": "continuity-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "start": {
+            "left": 55.4375,
+            "top": 330.71875,
+            "right": 253.015625,
+            "bottom": 378.71875,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "continuity-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          135
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 153.0625,
+            "right": 159.4375,
+            "bottom": 178.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 201.828125,
+            "right": 756.5625,
+            "bottom": 288.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 335.8125,
+            "right": 609.5625,
+            "bottom": 383.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "revision-viewport",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "resume-feedback-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          282
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 6.0625,
+            "right": 159.4375,
+            "bottom": 31.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 54.828125,
+            "right": 756.5625,
+            "bottom": 141.640625,
+            "visible": true,
+            "hit": true,
+            "text": "1 + 1"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 188.8125,
+            "right": 609.5625,
+            "bottom": 236.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "1 + 1",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "revision-resume-ledger",
+      "status": "PASS",
+      "expected": "Reload retains one wrong first submission and one assisted revision",
+      "actual": {
+        "id": "77904071-982d-4205-afbc-ea3615ea4a37",
+        "index": 0,
+        "count": 6,
+        "status": "ongoing",
+        "fp": "34b3e31268e1cb4cb8a885db97e4331a0f6e7460addeef84fea05ba632d32fb1",
+        "key": {
+          "numerator": "2",
+          "denominator": "1"
+        },
+        "raw": "2",
+        "history": [
+          {
+            "correct": false,
+            "assisted": false
+          },
+          {
+            "correct": true,
+            "assisted": true
+          }
+        ],
+        "grades": 2,
+        "completions": 0
+      }
+    },
+    {
+      "id": "resume-draft-viewport",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          135
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 153.0625,
+            "right": 159.4375,
+            "bottom": 178.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 201.828125,
+            "right": 756.5625,
+            "bottom": 288.640625,
+            "visible": true,
+            "hit": true,
+            "text": "1 + 1"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 335.8125,
+            "right": 609.5625,
+            "bottom": 383.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "1 + 1",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "modifier-result-heading-Shift",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          5,
+          7
+        ],
+        "after": [
+          5,
+          7
+        ],
+        "sameRoute": true,
+        "control": "main h1"
+      }
+    },
+    {
+      "id": "modifier-result-heading-Control",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          5,
+          7
+        ],
+        "after": [
+          5,
+          7
+        ],
+        "sameRoute": true,
+        "control": "main h1"
+      }
+    },
+    {
+      "id": "modifier-result-heading-Alt",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          5,
+          7
+        ],
+        "after": [
+          5,
+          7
+        ],
+        "sameRoute": true,
+        "control": "main h1"
+      }
+    },
+    {
+      "id": "modifier-result-heading-Meta",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          5,
+          7
+        ],
+        "after": [
+          5,
+          7
+        ],
+        "sameRoute": true,
+        "control": "main h1"
+      }
+    },
+    {
+      "id": "modifier-result-cta-Shift",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          5,
+          7
+        ],
+        "after": [
+          5,
+          7
+        ],
+        "sameRoute": true,
+        "control": "[data-part=next-mission]"
+      }
+    },
+    {
+      "id": "modifier-result-cta-Control",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          5,
+          7
+        ],
+        "after": [
+          5,
+          7
+        ],
+        "sameRoute": true,
+        "control": "[data-part=next-mission]"
+      }
+    },
+    {
+      "id": "modifier-result-cta-Alt",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          5,
+          7
+        ],
+        "after": [
+          5,
+          7
+        ],
+        "sameRoute": true,
+        "control": "[data-part=next-mission]"
+      }
+    },
+    {
+      "id": "modifier-result-cta-Meta",
+      "status": "PASS",
+      "expected": "Modified Enter on the command target leaves the attempt and route unchanged",
+      "actual": {
+        "before": [
+          5,
+          7
+        ],
+        "after": [
+          5,
+          7
+        ],
+        "sameRoute": true,
+        "control": "[data-part=next-mission]"
+      }
+    },
+    {
+      "id": "next-mission-viewport",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          135
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 153.0625,
+            "right": 159.4375,
+            "bottom": 178.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 8"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 201.828125,
+            "right": 756.5625,
+            "bottom": 288.640625,
+            "visible": true,
+            "hit": true,
+            "text": "2 + 3"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 335.8125,
+            "right": 609.5625,
+            "bottom": 383.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "2 + 3",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "between-mission-ledger",
+      "status": "PASS",
+      "expected": "One finalization and one new unanswered attempt",
+      "actual": {
+        "attempts": 2,
+        "completion_events": 1,
+        "new_id": "180a4110-2c27-4cf4-b89f-e7ade1afd6f9",
+        "grades": 0
+      }
+    },
+    {
+      "id": "long-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 244.53125,
+            "right": 124.1875,
+            "bottom": 270.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 3"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 293.296875,
+            "right": 279.8125,
+            "bottom": 444.4375,
+            "visible": true,
+            "hit": true,
+            "text": "((99 × 200 + 200) ÷ 25 − 8) × 0,125 + 1/8"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 491.609375,
+            "right": 291.8125,
+            "bottom": 539.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "((99 × 200 + 200) ÷ 25 − 8) × 0,125 + 1/8",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "long-fraction-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 3"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 249.625,
+            "visible": true,
+            "hit": true,
+            "text": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 296.796875,
+            "right": 291.8125,
+            "bottom": 344.796875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "long-fraction-ledger",
+      "status": "PASS",
+      "expected": "One grade at the original index, one advance, and typed input reaches the new unanswered item",
+      "actual": {
+        "id": "4af74c5a-404d-4295-928a-3597a828e1c6",
+        "indices": [
+          0,
+          0,
+          1
+        ],
+        "grade_events": [
+          0,
+          1,
+          1
+        ],
+        "typed": "7",
+        "next_fingerprint": "5a3b536a82a6db89e2a158bad2cc95cc0fea388449d6a2832d96b61ebc768dc3",
+        "completions": 0
+      }
+    },
+    {
+      "id": "long-real-content",
+      "status": "PASS",
+      "expected": "The selected real-bank second question contains a multi-operation expression",
+      "actual": {
+        "package_id": "MM-G12-L05-MIX-P001",
+        "math": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8",
+        "fingerprint": "5a3b536a82a6db89e2a158bad2cc95cc0fea388449d6a2832d96b61ebc768dc3"
+      }
+    },
+    {
+      "id": "change-home",
+      "status": "PASS",
+      "expected": "Fresh learner can see and activate the primary action without manually scrolling",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "start": {
+            "left": 55.5625,
+            "top": 519.90625,
+            "right": 253.140625,
+            "bottom": 567.90625,
+            "visible": true,
+            "hit": true,
+            "text": "Mulai dari dasar"
+          }
+        },
+        "math": null,
+        "linear": null,
+        "editable": false,
+        "focus": "",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "change-initial",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 245.03125,
+            "right": 125.0625,
+            "bottom": 270.625,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 1 dari 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 318.21875,
+            "right": 348.9375,
+            "bottom": 371.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 431.609375,
+            "right": 360.9375,
+            "bottom": 487.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "english-focus",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 844,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 245.03125,
+            "right": 149.0625,
+            "bottom": 270.625,
+            "visible": true,
+            "hit": true,
+            "text": "Question 1 of 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 318.21875,
+            "right": 348.9375,
+            "bottom": 371.625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 431.609375,
+            "right": 360.9375,
+            "bottom": 487.609375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "portrait-to-landscape",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 844,
+          "height": 390,
+          "scale": 1
+        },
+        "layout": [
+          844,
+          390
+        ],
+        "scroll": [
+          0,
+          135
+        ],
+        "documentWidth": 844,
+        "rects": {
+          "position": {
+            "left": 63.4375,
+            "top": 153.0625,
+            "right": 183.4375,
+            "bottom": 178.65625,
+            "visible": true,
+            "hit": true,
+            "text": "Question 1 of 6"
+          },
+          "expression": {
+            "left": 87.4375,
+            "top": 201.828125,
+            "right": 756.5625,
+            "bottom": 288.640625,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 63.4375,
+            "top": 335.8125,
+            "right": 620.5625,
+            "bottom": 383.8125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "reduced-height-input",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 370,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          370
+        ],
+        "scroll": [
+          0,
+          135
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 110.03125,
+            "right": 149.0625,
+            "bottom": 135.625,
+            "visible": true,
+            "hit": true,
+            "text": "Question 1 of 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 158.796875,
+            "right": 348.9375,
+            "bottom": 212.203125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 4"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 259.375,
+            "right": 360.9375,
+            "bottom": 307.375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 4",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "keep-reading",
+      "status": "PASS",
+      "expected": "The displayed solution step retains its reading position and the summary retains focus",
+      "actual": {
+        "beforeStepTop": 158.03125,
+        "afterStep": {
+          "left": 50.25,
+          "top": 158.03125,
+          "right": 344.75,
+          "bottom": 211.21875,
+          "visible": true,
+          "hit": true,
+          "text": "4"
+        }
+      }
+    },
+    {
+      "id": "english-dark-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 390,
+          "height": 370,
+          "scale": 1
+        },
+        "layout": [
+          390,
+          370
+        ],
+        "scroll": [
+          0,
+          239
+        ],
+        "documentWidth": 390,
+        "rects": {
+          "position": {
+            "left": 29.0625,
+            "top": 6.03125,
+            "right": 149.0625,
+            "bottom": 31.625,
+            "visible": true,
+            "hit": true,
+            "text": "Question 2 of 6"
+          },
+          "expression": {
+            "left": 41.0625,
+            "top": 54.796875,
+            "right": 348.9375,
+            "bottom": 108.203125,
+            "visible": true,
+            "hit": true,
+            "text": "0 + 2"
+          },
+          "input": {
+            "left": 29.0625,
+            "top": 155.375,
+            "right": 360.9375,
+            "bottom": 203.375,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "0 + 2",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "en"
+      }
+    },
+    {
+      "id": "english-dark-symbol-ledger",
+      "status": "PASS",
+      "expected": "English dark view and tap-accessible fraction/minus keys produce one submission",
+      "actual": {
+        "grade_events": 1,
+        "index": 1,
+        "entered": "-1/2"
+      }
+    },
+    {
+      "id": "late-typeset-font-next",
+      "status": "PASS",
+      "expected": "Position, rendered expression and focused editable field are in the unobstructed visual viewport",
+      "actual": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 6"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 108.703125,
+            "visible": true,
+            "hit": true,
+            "text": "1 + 1"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 155.875,
+            "right": 291.8125,
+            "bottom": 203.875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "1 + 1",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      }
+    },
+    {
+      "id": "late-assets-observed",
+      "status": "PASS",
+      "expected": "Render the next question after controlled typesetter and font release",
+      "actual": {
+        "assetsObserved": [
+          "font",
+          "typesetter"
+        ],
+        "pendingLinear": "0 + 4",
+        "timeout": false
+      }
+    }
+  ],
+  "assertions": 145,
+  "finished": "2026-11-28T18:47:23.949752+00:00",
+  "status": "PASS"
+}

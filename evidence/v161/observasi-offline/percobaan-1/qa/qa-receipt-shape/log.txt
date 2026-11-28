@@ -1,0 +1,39 @@
+PASS audit-original · validator/runner/binding=FAIL · evaluated=0
+PASS null-row · validator/runner/binding=FAIL · evaluated=0
+PASS string-row · validator/runner/binding=FAIL · evaluated=0
+PASS number-row · validator/runner/binding=FAIL · evaluated=0
+PASS nested-array · validator/runner/binding=FAIL · evaluated=0
+PASS missing-fields · validator/runner/binding=FAIL · evaluated=0
+PASS empty-id · validator/runner/binding=FAIL · evaluated=0
+PASS wrong-id-type · validator/runner/binding=FAIL · evaluated=0
+PASS missing-status · validator/runner/binding=FAIL · evaluated=0
+PASS unknown-status · validator/runner/binding=FAIL · evaluated=0
+PASS duplicate-id · validator/runner/binding=FAIL · evaluated=1
+PASS empty-array · validator/runner/binding=FAIL · evaluated=0
+PASS wrong-container · validator/runner/binding=FAIL · evaluated=0
+PASS count-mismatch · validator/runner/binding=FAIL · evaluated=1
+PASS boolean-count · validator/runner/binding=FAIL · evaluated=1
+PASS aggregate-conflict · validator/runner/binding=FAIL · evaluated=1
+PASS blocked-as-pass · validator/runner/binding=FAIL · evaluated=1
+PASS declared-blocked-rows-pass · validator/runner/binding=FAIL · evaluated=1
+PASS unknown-schema · validator/runner/binding=FAIL · evaluated=1
+PASS wrong-build · validator/runner/binding=FAIL · evaluated=1
+PASS conflicting-build · validator/runner/binding=FAIL · evaluated=1
+PASS wrong-producer · validator/runner/binding=FAIL · evaluated=1
+PASS missing-producer · validator/runner/binding=FAIL · evaluated=1
+PASS recorded-error · validator/runner/binding=FAIL · evaluated=1
+PASS blocked-forbidden · validator/runner/binding=FAIL · evaluated=1
+PASS blocked-permitted · validator/runner/binding=BLOCKED_ENV · evaluated=1
+PASS legacy-valid · legacy runner/binding=PASS
+PASS legacy-duplicate · legacy runner/binding=FAIL
+PASS legacy-blocked-conflict · legacy runner/binding=FAIL
+PASS legacy-explicit-block · legacy runner/binding=BLOCKED_ENV
+PASS measurement-control · measured observation runner/binding=PASS
+PASS measurement-invalid · measured observation runner/binding=FAIL
+PASS measurement-mismatch · measured observation runner/binding=FAIL
+PASS blocked-exit-without-block · runner/binding rejected
+PASS positive-real-receipt · cache policy producer · 10 assertions
+PASS wrong-hash · binding writer and independent verifier rejected
+PASS recorded-status · binding writer and independent verifier rejected
+PASS wrong-archive-path · binding writer and independent verifier rejected
+PASS malformed-binding-row · binding writer and independent verifier rejected

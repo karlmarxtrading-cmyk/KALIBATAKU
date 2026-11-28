@@ -1,0 +1,65 @@
+{
+  "build": {
+    "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fd4dbd2442531a9b6adf42b476a5a9732b6ca0d9ba6dab799303521bfe9c2848"
+  },
+  "policy": {
+    "profile_id": "KALIBATAKU_STATIC_AUTO_V1",
+    "profile_sha256": "eeb88b43e3018fce41b045ee05dc1fbb417c7f5aa8d242b910c9edbbabb8571b",
+    "mapping_sha256": "39a01b931507e42ef482b9f543392f782427ac32878e73e48c2cbb19bd92fecd",
+    "history_index_sha256": "65365105d49e49afca44e39a4f367a5585fd83731f2a611ff5c589b0fdf3b32f",
+    "findings_sha256": "c70aa44db83166436505ba6b4cf5e210d91b57d3b4155e34d5918eea187aeef8"
+  },
+  "runs": [
+    {
+      "command": [
+        "npm",
+        "run",
+        "check"
+      ],
+      "started": "2026-11-28T18:39:49.823173+00:00",
+      "finished": "2026-11-28T18:39:59.105327+00:00",
+      "exit_code": 0,
+      "log": "check.log",
+      "sha256": "072ef7ff372e2188d65e8661ace5b3b056e025e3d7053441e4d1e905b3c5ac47"
+    },
+    {
+      "command": [
+        "npm",
+        "test"
+      ],
+      "started": "2026-11-28T18:39:59.105623+00:00",
+      "finished": "2026-11-28T18:40:03.504350+00:00",
+      "exit_code": 0,
+      "log": "test.log",
+      "sha256": "a47454d2a292d94c529be6334fd78df666d361610c8c80a7a896b50a18129d09"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "curriculum:check"
+      ],
+      "started": "2026-11-28T18:40:03.504577+00:00",
+      "finished": "2026-11-28T18:40:04.384814+00:00",
+      "exit_code": 0,
+      "log": "curriculum.log",
+      "sha256": "de4b58b97808432f3cbee8cac6ae88c6dfbafab47eb1d55e90950fd08b5a4be8"
+    },
+    {
+      "command": [
+        "npm",
+        "run",
+        "bank:verify"
+      ],
+      "started": "2026-11-28T18:40:04.385455+00:00",
+      "finished": "2026-11-28T18:40:36.647690+00:00",
+      "exit_code": 0,
+      "log": "bank.log",
+      "sha256": "96e68785783ad6165a269b030b2029d1f3796c464553f609fc91bbc3cf5b6944"
+    }
+  ]
+}

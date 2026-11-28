@@ -1,0 +1,154 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "KALIBATAKU release status 1.4",
+ "type": "object",
+ "required": [
+  "artifact_status",
+  "schema",
+  "release_id",
+  "app_version",
+  "bank_version",
+  "dist_tree_sha256",
+  "offline_release",
+  "qa_binding",
+  "qa_binding_verified",
+  "release_label",
+  "label_mapping",
+  "criteria_counts",
+  "readiness"
+ ],
+ "properties": {
+  "artifact_status": {
+   "const": "release_verdict"
+  },
+  "release_id": {
+   "type": "string",
+   "pattern": "^kalibataku-static-\\d+\\.\\d+\\.\\d+$"
+  },
+  "app_version": {
+   "type": "string"
+  },
+  "bank_version": {
+   "type": "string"
+  },
+  "dist_tree_sha256": {
+   "type": "string",
+   "pattern": "^[a-f0-9]{64}$"
+  },
+  "offline_release": {
+   "type": "string",
+   "pattern": "^[a-f0-9]{16}$"
+  },
+  "qa_binding": {
+   "type": "string"
+  },
+  "readiness": {
+   "type": "object",
+   "required": [
+    "static_application",
+    "adventure_journey",
+    "ui_ux",
+    "backup_archive",
+    "offline",
+    "teacher_reports",
+    "browsers_devices_assistive",
+    "content_review",
+    "pedagogy_pilot",
+    "performance_lab",
+    "field_performance",
+    "live_deployment"
+   ],
+   "additionalProperties": {
+    "type": "object",
+    "required": [
+     "status",
+     "label",
+     "criteria",
+     "evidence",
+     "claim_boundary",
+     "blockers"
+    ],
+    "properties": {
+     "status": {
+      "enum": [
+       "PASS",
+       "HOLD",
+       "FAIL",
+       "NOT_PERFORMED",
+       "NOT_RUN",
+       "DEFERRED_BY_SCOPE",
+       "PREVIEW_PASS",
+       "TECHNICAL_PASS_USABILITY_NOT_VALIDATED"
+      ]
+     },
+     "evidence": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "claim_boundary": {
+      "type": "string",
+      "minLength": 10
+     },
+     "blockers": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     },
+     "label": {
+      "enum": [
+       "GO",
+       "READY_FOR_VALIDATION",
+       "HOLD"
+      ]
+     },
+     "criteria": {
+      "type": "array",
+      "items": {
+       "type": "string",
+       "pattern": "^AC:"
+      }
+     }
+    },
+    "additionalProperties": false
+   }
+  },
+  "schema": {
+   "const": "release-status-1.4"
+  },
+  "qa_binding_verified": {
+   "type": "boolean"
+  },
+  "release_label": {
+   "enum": [
+    "GO",
+    "READY_FOR_VALIDATION",
+    "HOLD"
+   ]
+  },
+  "label_mapping": {
+   "type": "object",
+   "required": [
+    "GO",
+    "READY_FOR_VALIDATION",
+    "HOLD"
+   ]
+  },
+  "criteria_counts": {
+   "type": "object",
+   "additionalProperties": {
+    "type": "integer"
+   }
+  },
+  "automated_wajib_all_pass": {
+   "type": "boolean"
+  },
+  "generated_utc": {
+   "type": "string"
+  }
+ },
+ "additionalProperties": false,
+ "description": "Versioned successor of release-status-1.3. The readiness status enum is unchanged. Added: release_label (GO / READY_FOR_VALIDATION / HOLD) and a per-scope label, both mapped onto the unchanged status enum by tools/release_registers_v14.py; readiness keys follow the 1.4 scopes."
+}

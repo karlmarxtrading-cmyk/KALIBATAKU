@@ -1,0 +1,216 @@
+BACA CARA REPRODUKSI
+KALIBATAKU 1.4.0 — audit 28 November 2026
+
+1. TUJUAN DAN BATAS
+
+Folder ini berisi probe untuk mengulang pengamatan audit. Probe bukan patch,
+bukan installer aplikasi, dan bukan sertifikat bahwa website lulus produksi.
+Menjalankannya menghasilkan file bukti baru di folder 08_REPRODUKSI; tidak
+memperbaiki aplikasi.
+
+07_BUKTI menyimpan bukti audit yang sudah dicatat. Hasil pengulangan di
+08_REPRODUKSI harus diperlakukan sebagai eksekusi baru. Jangan mengganti bukti
+asli secara diam-diam. Timestamp, UUID profil/attempt, ukuran ZIP terkompresi,
+dan atribut lingkungan dapat berbeda antar-eksekusi; bandingkan kondisi
+perilaku dan field hasil yang relevan.
+
+Paket audit ini tidak menyertakan source aplikasi, dist, bank soal, screenshot,
+atau salinan kerja pengujian. Siapkan sendiri ZIP KALIBATAKU 1.4.0 yang diaudit,
+lalu ekstrak. SOURCE_ROOT harus menunjuk direktori absolut yang langsung
+memuat package.json, src/, dist/, tests/, tools/, dan direktori bank lengkap
+di dist/bank/. Jangan arahkan SOURCE_ROOT ke direktori paket audit ini.
+
+Semua probe JavaScript di folder ini berjalan di Node. Tidak ada probe yang
+membuka browser, membaca data profil browser sungguhan, atau memakai perangkat
+fisik. Probe offline menggunakan adapter DOM dan Cache di memori; itu bukan
+pengujian Chrome/Firefox/WebKit. Pengujian browser dan perangkat tetap terpisah.
+
+2. PERSIAPAN
+
+Gunakan Node yang mendukung API aplikasi. Runtime audit fresh memakai Node
+v24.22.3 dan Python 3.12.14. Aplikasi menyatakan Node >=22. Tidak perlu
+menginstal dependency npm untuk probe Node di sini.
+
+Dua script Python:
+- verify-occurrences.py hanya memakai pustaka standar Python.
+- inspect_formats.py memerlukan Pillow dan pypdf selain pustaka standar.
+  Bila belum tersedia, instal pada environment Python pilihan Anda:
+  python3 -m pip install Pillow pypdf
+
+Perintah berikut memakai shell Bash, misalnya Linux, macOS, atau Git Bash.
+Ganti kedua path contoh dengan lokasi absolut Anda. Hindari memindahkan hanya
+inspect_formats.py: ia membaca inventaris di folder 07_BUKTI yang bertetangga.
+
+  cd "/lokasi/absolut/KALIBATAKU_1.4.0_AUDIT_20261128/08_REPRODUKSI"
+  SOURCE_ROOT="/lokasi/absolut/KALIBATAKU_ADVENTURE"
+
+SOURCE_ROOT adalah variabel path source aplikasi. Seluruh command di bawah
+memberikan argumen tersebut secara eksplisit. Jalankan satu per satu; beberapa
+probe membaca semua sidecar/bank atau membentuk fixture record besar di memori.
+
+3. PERINTAH DAN HASIL
+
+A. Progresi, perubahan titik mulai, bentuk misi lintas seed, simulasi perjalanan
+
+  node ./probe-progression.mjs "$SOURCE_ROOT"
+
+Output: progression-probe.json, di folder script ini.
+
+Menggunakan model, route, dan sidecar produksi dengan snapshot sintetis minimal.
+Tidak mengklaim seluruh snapshot model sebagai hasil transaksi browser/engine.
+Baca:
+- start_point: pilihan awal tanpa riwayat dibanding setelah misi selesai;
+- shape_survey: bentuk/peran/band misi pada seed yang berbeda;
+- perfect_journey: perjalanan sintetis, jumlah node siap dan alasan tertahan.
+
+Exit 0 berarti script selesai menghasilkan pengamatan. Ia dapat selesai
+dengan exit 0 sambil mendokumentasikan masalah progresi.
+
+B. Kasus engine nyata untuk titik mulai dan strategi yang tidak terjangkau
+
+  node ./probe-engine-cases.mjs "$SOURCE_ROOT"
+
+Output: engine-cases.json, di folder script ini.
+
+Menggunakan engine, selector, dan soal bank asli dengan profil sintetis.
+Tidak membuat klaim tentang storage/UI browser. Baca start_point_change dan
+strategy_deadlock, termasuk strategi yang tersedia sebelum readiness serta
+missions[].ready. Exit 0 tidak berarti deadlock tidak ada.
+
+C. Konsistensi seluruh occurrence sidecar terhadap bank
+
+  python3 ./verify-occurrences.py "$SOURCE_ROOT"
+
+Output: occurrence-verification.json, di folder script ini.
+
+Membaca seluruh occurrence, hash paket, identitas soal, graph prasyarat, dan
+pool strategi. Ini pemeriksaan metadata yang cukup luas; bukan telaah manusia
+atas kesesuaian pedagogis setiap soal dan bukan pengulangan oracle matematika.
+
+Baca identity_hash_shape_errors dan unreachable_strategy_nodes secara terpisah.
+Pemetaan identitas dapat benar walau terdapat strategi yang tidak terjangkau.
+Script dapat exit 0 ketika daftar masalah di JSON tidak kosong.
+
+D. Label kesiapan offline dibanding kemampuan memulai misi
+
+  node ./probe-offline-readiness.mjs "$SOURCE_ROOT"
+
+Output: offline-readiness-probe.json, di folder script ini.
+
+Menggunakan modul dist produksi serta adapter storage, DOM, fetch, dan Cache
+di memori. Dua kasus negatif:
+- paket pengajaran tersimpan tanpa occurrence sidecar journey;
+- hanya paket evaluasi tersimpan, walau occurrence sidecar ada.
+Kontrol positif: paket pengajaran dan occurrence sidecar sama-sama ada.
+
+Bandingkan offline_message dengan actual.status/code. Exit 0 pada kondisi
+temuan berarti kontradiksi label dan kemampuan berhasil direproduksi beserta
+kontrolnya; bukan berarti fitur offline website lulus. Jika perilaku aplikasi
+berubah, exit nonzero dapat berarti ekspektasi probe historis tidak lagi cocok.
+
+E. Kontrak pemulihan journey dan batas JSON legacy/recovery
+
+  node ./probe-contract-boundaries.mjs "$SOURCE_ROOT"
+
+Output: contract-boundaries.json, di folder script ini.
+
+Menggunakan fungsi produksi dan adapter database memori. Profil dibuat dan
+dihapus hanya dalam proses Node ini. Probe:
+- membentuk misi sah dengan soal dan event asli;
+- mengubah hanya metadata journey, menghitung ulang checksum, lalu menguji
+  reader, preview, commit JSON/ZIP dan konsumsi hasil restore;
+- membentuk 100.001 generic records kecil untuk batas JSON legacy;
+- menguji kontrol ZIP dan recovery dengan satu attempt/event tambahan.
+
+Ini tidak mengambil data pengguna nyata. Kasus metadata impor dengan checksum
+yang dihitung ulang menguji validasi semantik; ia bukan bukti serangan remote
+atau korupsi misi normal. Kasus JSON membedakan format legacy dari ZIP standar.
+
+Exit 0 dapat berarti celah sudah berhasil direproduksi. Baca accepted,
+json_restore_additions, zip_restore_additions, next_mission, teacher_ready,
+readError, serta kasus recovery-row-limit. Bila validator diperbaiki sehingga
+menolak data rusak, probe historis ini dapat berhenti nonzero; gunakan tes
+regresi yang mengharapkan penolakan untuk memastikan perbaikan.
+
+F. Peta siswa dibanding laporan guru yang benar-benar diekspor
+
+  node ./journey_report_consistency.mjs "$SOURCE_ROOT"
+
+Output: journey-report-consistency-rerun.json, di folder script ini.
+
+Menggunakan empat snapshot valid dari engine, storage, dan validator produksi:
+latihan non-journey P002 (question_count:10), lalu intro dan dua misi regular
+dengan hanya P001 tersedia. Semua jawaban pertama benar. Pipeline guru:
+buildSnapshot -> encode(JSON) -> JSON.parse.
+
+Baca student_state.ready/coverage, teacher_report, exported_teacher_ready,
+export_parse_success, dan exported_mismatch. Pada artefak yang diaudit:
+peta ready=true dengan cakupan 12; laporan ekspor ready=false dengan cakupan 10.
+Seluruh empat sesi ada dalam laporan.
+
+Exit 0 berarti mismatch tersebut berhasil direproduksi. Exit 2 berarti salah
+satu mismatch tidak lagi terlihat; itu bukan otomatis kegagalan aplikasi.
+Kasus ini adalah riwayat normal valid, berbeda dari mutasi metadata pada probe E.
+
+G. Inventaris, hash, dan struktur format file
+
+  python3 ./inspect_formats.py "$SOURCE_ROOT"
+
+Output: format-inspection-rerun.json, di folder script ini.
+
+Input inventaris tetap:
+../07_BUKTI/inventaris/FILE_INVENTORY_6074.csv
+
+Script membaca berkas yang tercantum dalam inventaris, membandingkan jumlah
+byte/SHA-256, lalu memeriksa format yang sesuai: JSON, CSV, Python, SVG, image,
+PDF, ZIP/OOXML, gzip, teks, dan hash binary font. Dependency eksternal hanya
+Pillow dan pypdf. Inventaris ini milik artefak KALIBATAKU 1.4.0 yang diaudit;
+source yang sudah diperbaiki wajar menghasilkan mismatch hash terhadapnya.
+
+Baca issues dan formats, bukan exit code saja. Script ini tidak mendeteksi
+semua berkas tambahan yang tidak tercantum dalam inventaris, tidak menjalankan
+UI, dan tidak menggantikan review visual/editorial setiap dokumen/soal.
+
+4. MENAFSIRKAN BUKTI DAN EXIT CODE
+
+Probe reproduksi cacat berbeda dari suite acceptance produk. Tidak semua
+script mengembalikan nonzero ketika menemukan masalah; beberapa memang
+dirancang selesai dengan exit 0 setelah menunjukkan masalah. Sebaliknya,
+perbaikan yang benar dapat membuat probe historis berhenti karena kondisi
+yang hendak direproduksi sudah hilang.
+
+Untuk menutup temuan:
+- baca hasil dan pastikan kondisi negatif yang ditargetkan tidak lagi terjadi;
+- tambahkan tes regresi resmi dengan ekspektasi perilaku yang sudah benar;
+- pertahankan kontrol positif dan kompatibilitas snapshot/backup lama;
+- bangun ulang artefak final dan perbarui bukti yang terikat build;
+- lakukan validasi browser, perangkat, aksesibilitas, pengguna, serta domain
+  aktual melalui protokol aplikasi.
+
+Folder ini tidak membuktikan validasi terakhir tersebut. Jalankan suite
+browser yang ada di source aplikasi dengan dependency dan protokolnya; jangan
+menganggap adapter DOM Node sebagai pengganti browser nyata.
+
+5. ASAL BERKAS DI 07_BUKTI
+
+inventaris/
+- FILE_INVENTORY_6074.csv: inventaris artefak 1.4.0 yang diaudit.
+
+baseline/
+- FILE_INVENTORY_5336.csv: baseline inventaris dari paket audit 1.3.0, untuk
+  provenance perbandingan. Ini bukan salinan lengkap source 1.3.0.
+
+inventaris/, progression/, ux/, technical/
+- Bukti audit baru serta laporan tiap bidang dalam report.txt.
+- Log/receipt fresh dipisahkan dari status dan binding bawaan.
+- technical/dist_before.json adalah daftar hash sebelum rebuild, bukan source.
+
+paket_asli/
+- Salinan status/register, criteria, QA binding 1.4 yang dirujuk RELEASE_STATUS,
+  protokol eksternal, dan kontrak journey dari paket asli.
+- Status PASS dalam dokumen bawaan adalah klaim/bukti paket asal, bukan status
+  baru setelah temuan audit ini. Release asal tetap menyatakan HOLD.
+
+Tidak ada screenshot, image, source aplikasi, atau folder work yang dikemas
+di kedua folder pendukung ini.
+

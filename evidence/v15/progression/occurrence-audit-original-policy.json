@@ -1,0 +1,46 @@
+{
+  "method": "Independent row-by-row comparison of every sidecar occurrence against the immutable public bank, plus graph and reachable strategy pool checks. No browser or human pedagogical validation claim.",
+  "active_nodes": 281,
+  "inactive_nodes": 19,
+  "packages": 4604,
+  "placements": 177640,
+  "prerequisite_edges": 712,
+  "fingerprint16_collision_count": 0,
+  "identity_hash_shape_errors": [],
+  "band_placements": {
+    "2": 59179,
+    "1": 59344,
+    "3": 59117
+  },
+  "unreachable_strategy_nodes": [
+    {
+      "node": "arithmetic.multiplication.g12.l01",
+      "required_count": 2,
+      "reachable_before_ready": [
+        "DS"
+      ],
+      "teaching_strategies": [
+        "DS",
+        "PO"
+      ],
+      "source_strategy_counts": {
+        "mission_intro": {
+          "DS": 150
+        },
+        "mission_core": {
+          "DS": 350
+        },
+        "mission_apply": {
+          "DS": 200
+        },
+        "mission_review": {
+          "DS": 199,
+          "PO": 1
+        },
+        "assessment_form_reserved": {
+          "DS": 100
+        }
+      }
+    }
+  ]
+}

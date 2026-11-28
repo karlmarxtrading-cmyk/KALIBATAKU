@@ -1,0 +1,77 @@
+﻿"Summary","Siswa","Sumber","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Summary","Fixture pecahan","Hasil latihan lokal · belum diverifikasi institusi",1,1,0,0,0,0,100,100,100
+"Competencies","Kompetensi","Kelas","Level","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Competencies","arithmetic.addition.g05.l03",5,3,"Penjumlahan",1,1,0,0,0,0,100,100,100
+"Operations","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Operations","Penjumlahan",1,1,0,0,0,0,100,100,100
+"Operations","Pengurangan",0,0,0,0,0,0,,,
+"Operations","Perkalian",0,0,0,0,0,0,,,
+"Operations","Pembagian",0,0,0,0,0,0,,,
+"Operations","Campuran",0,0,0,0,0,0,,,
+"Sessions","ID","UTC","Paket","Mode","Status","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Sessions","2ccfebf9-0050-4511-84be-fe56501b9de8","2026-11-25T22:42:49.618Z","MM-G05-L03-ADD-P001","Latihan","Selesai",1,1,0,0,0,0,100,100,100
+"Dictionary","Ukuran","Definisi"
+"Dictionary","Skor paket","1 / 1"
+"Dictionary","Akurasi jawaban","1 / 1"
+"Dictionary","Soal ditanggapi","1 / 1"
+"Dictionary","Jawaban pertama benar","0 / 1"
+"Dictionary","Penyebut nol","Kosong = belum dievaluasi"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-f34e44c1-d63a-4bf3-9ee2-a2dbb02d416e"
+"Metadata","data_origin","local_practice"
+"Metadata","verification_status","unverified"
+"Metadata","locale","id"
+"Metadata","period_start_utc","1969-12-31T17:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2099-12-31T17:00:00.000Z"
+"Metadata","display_timezone","Asia/Jakarta"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-25T22:42:49.636Z"
+"Metadata","assigned_count",1
+"Metadata","correct_count",1
+"Metadata","incorrect_count",0
+"Metadata","skipped_count",0
+"Metadata","blank_count",0
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",100
+"Metadata","valid_response_accuracy_percent",100
+"Metadata","responded_percent",100
+"Metadata","subject_id","28d2cd79-4698-4ad6-b546-67a501f2004d"
+"Metadata","subject_alias","Fixture pecahan"
+"Metadata","source","local_practice"
+"Metadata","classId",""
+"Metadata","studentId","28d2cd79-4698-4ad6-b546-67a501f2004d"
+"Metadata","from",""
+"Metadata","to",""
+"Metadata","timezone","Asia/Jakarta"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions","1.1.0"
+"Metadata","change_pp",
+"Notes","Penulis","UTC","Revisi","Catatan","ID","Menggantikan","Status"
+"Math","Sumber","ID","Ekspresi","Pembilang kunci","Penyebut kunci","Respons pertama","Respons terakhir"
+"Math","local_practice","2ccfebf9-0050-4511-84be-fe56501b9de8","11/12 + 10/12","7","4","99","21/12"
+"Family","Hasil latihan lokal · belum diverifikasi institusi"
+"Family","Fixture pecahan"
+"Family","Semua tanggal · Asia/Jakarta"
+"Family","Sesi selesai dalam periode ini: 1 · Berjalan: 0"
+"Family","Yang sudah terlihat"
+"Family","Belum ada jawaban benar mandiri pada respons pertama yang tercatat dalam periode ini."
+"Family","Fokus pendampingan"
+"Family","Penjumlahan · kelas 5 · level 3 · Latihan — 1 dari 1 respons pertama perlu diperbaiki."
+"Family","Contoh dari sesi 26 Nov 2026, 05.42 · Latihan"
+"Family","Soal · 11/12 + 10/12"
+"Family","Kunci jawaban · 7/4"
+"Family","Jawaban pertama · 99"
+"Family","Jawaban terakhir · 21/12"
+"Family","Revisi setelah melihat kunci."
+"Family","Belum diuji melalui evaluasi pada periode ini — Penjumlahan, Pengurangan, Perkalian, Pembagian, Campuran."
+"Family","Rencana latihan berikutnya"
+"Family","Periksa penyebut bersama."
+"Family","Tanggal tinjauan · 2026-12-01"
+"Contexts","Kelas","Level","Operasi","Mode","Respons pertama benar","Jumlah respons pertama","Dengan petunjuk","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Contexts",5,3,"Penjumlahan","Latihan",0,1,0,1,1,0,0,0,0,100,100,100

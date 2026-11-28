@@ -1,0 +1,33 @@
+# command: node tests/journey/probe-next-practice.mjs /home/claude/adv/evidence/v14/commands/probe-next-practice.json
+# started: 2026-11-28T04:23:37Z
+# node v22.23.5 · Python 3.13.18
+{
+ "catalogue_overlap": 0,
+ "same_order": false,
+ "journey": {
+  "missions": [
+   {
+    "kind": "intro",
+    "package_id": "MM-G03-L01-ADD-P002",
+    "n": 6,
+    "review": 0
+   },
+   {
+    "kind": "regular",
+    "package_id": "MM-G03-L01-ADD-P003",
+    "n": 8,
+    "review": 0
+   },
+   {
+    "kind": "regular",
+    "package_id": "MM-G03-L01-ADD-P006",
+    "n": 8,
+    "review": 0
+   }
+  ],
+  "total": 22,
+  "unique": 22
+ }
+}
+# exit: 0
+# finished: 2026-11-28T04:23:38Z

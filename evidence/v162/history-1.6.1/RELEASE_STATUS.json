@@ -1,0 +1,366 @@
+{
+  "artifact_status": "release_verdict",
+  "schema": "release-status-1.6.1",
+  "release_id": "kalibataku-static-1.6.1",
+  "app_version": "1.6.1",
+  "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41",
+  "audit_1_5": {
+    "AUD15-01": "DITUTUP",
+    "AUD15-02": "DITUTUP",
+    "AUD15-03": "DITUTUP"
+  },
+  "audit_1_6": {
+    "AUD160-01": "BLOCKED",
+    "AUD160-02": "PASS",
+    "OBS160-01": "PASS",
+    "OBS160-02": "PASS",
+    "DOC160-01": "PASS",
+    "EXT160-01": "BLOCKED",
+    "EXT160-02": "BLOCKED",
+    "OBS160-03": "PASS"
+  },
+  "redesign_phase_counts": {
+    "WAJIB": {
+      "PASS": 40,
+      "FAIL": 0,
+      "BLOCKED": 11,
+      "NOT_RUN": 3
+    },
+    "SETELAH_PILOT": {
+      "PASS": 0,
+      "FAIL": 0,
+      "BLOCKED": 0,
+      "NOT_RUN": 1
+    }
+  },
+  "phase_counts": {
+    "WAJIB": {
+      "PASS": 59,
+      "FAIL": 0,
+      "BLOCKED": 8,
+      "NOT_RUN": 3
+    },
+    "SETELAH_PILOT": {
+      "PASS": 0,
+      "FAIL": 0,
+      "BLOCKED": 0,
+      "NOT_RUN": 1
+    }
+  },
+  "bank_version": "1.2.0",
+  "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+  "offline_release": "a2f40449c4738fe6",
+  "qa_binding": "evidence/v161/qa/binding.json",
+  "qa_binding_verified": true,
+  "release_label": "HOLD",
+  "label_mapping": {
+    "GO": "All mandatory baseline and redesign criteria, audit closures and registered suites passed on this build",
+    "READY_FOR_VALIDATION": "automated gates of the scope PASS; external validation (people, devices, assistive technology, domain) not yet performed",
+    "HOLD": "at least one WAJIB gate not met (FAIL, BLOCKED or NOT_RUN)"
+  },
+  "criteria_counts": {
+    "PASS": 59,
+    "BLOCKED": 8,
+    "NOT_RUN": 4
+  },
+  "automated_wajib_all_pass": true,
+  "readiness": {
+    "static_application": {
+      "status": "PASS",
+      "label": "GO",
+      "criteria": [
+        "AC:BANK-01",
+        "AC:BANK-02",
+        "AC:BANK-06",
+        "AC:REL-01",
+        "AC:REL-04",
+        "AC:REL-05",
+        "AC:DATA-01",
+        "AC:DATA-02",
+        "AC:DATA-03",
+        "AC:DATA-04",
+        "AC:DATA-05",
+        "AC:DATA-10",
+        "AC:DATA-11"
+      ],
+      "evidence": [
+        "evidence/v161/qa/bank-determinism/bank-determinism.json",
+        "evidence/v161/qa/bank-determinism/log.txt",
+        "evidence/v161/qa/bank-domain-prose/bank-domain-prose.json",
+        "evidence/v161/qa/bank-domain-prose/log.txt",
+        "evidence/v161/qa/bank-occurrence-identity/log.txt",
+        "evidence/v161/qa/bank-preservation/log.txt",
+        "evidence/v161/qa/bank-snapshot-upgrade/log.txt",
+        "evidence/v161/qa/bank-verify/log.txt",
+        "evidence/v161/qa/binding.json",
+        "evidence/v161/qa/clean-build-twice/clean-build.json",
+        "evidence/v161/qa/clean-build-twice/log.txt",
+        "evidence/v161/qa/data-contract/log.txt"
+      ],
+      "claim_boundary": "AC:BANK-01=PASS; AC:BANK-02=PASS; AC:BANK-06=PASS; AC:REL-01=PASS; AC:REL-04=PASS; AC:REL-05=PASS; AC:DATA-01=PASS; AC:DATA-02=PASS; AC:DATA-03=PASS; AC:DATA-04=PASS; AC:DATA-05=PASS; AC:DATA-10=PASS; AC:DATA-11=PASS",
+      "blockers": []
+    },
+    "adventure_journey": {
+      "status": "PASS",
+      "label": "GO",
+      "criteria": [
+        "AC:BANK-03",
+        "AC:BANK-04",
+        "AC:BANK-05",
+        "AC:PROG-01",
+        "AC:PROG-02",
+        "AC:PROG-03",
+        "AC:PROG-04",
+        "AC:PROG-05",
+        "AC:PROG-06",
+        "AC:PROG-07",
+        "AC:PROG-08",
+        "AC:PROG-09",
+        "AC:PROG-10",
+        "AC:PROG-11",
+        "AC:PROG-12",
+        "AC:DATA-06"
+      ],
+      "evidence": [
+        "evidence/v161/qa/curriculum/log.txt",
+        "evidence/v161/qa/intent-browser-chromium/log.txt",
+        "evidence/v161/qa/journey-browser-chromium/journey-browser.json",
+        "evidence/v161/qa/journey-browser-chromium/log.txt",
+        "evidence/v161/qa/journey-model/journey-model.json",
+        "evidence/v161/qa/journey-model/log.txt",
+        "evidence/v161/qa/journey-next-practice-probe/log.txt",
+        "evidence/v161/qa/journey-sidecar/log.txt",
+        "evidence/v161/qa/progression-bounds/log.txt",
+        "evidence/v161/qa/progression-launch/log.txt",
+        "evidence/v161/qa/restore-index/log.txt",
+        "evidence/v161/qa/restore-worker/log.txt"
+      ],
+      "claim_boundary": "AC:BANK-03=PASS; AC:BANK-04=PASS; AC:BANK-05=PASS; AC:PROG-01=PASS; AC:PROG-02=PASS; AC:PROG-03=PASS; AC:PROG-04=PASS; AC:PROG-05=PASS; AC:PROG-06=PASS; AC:PROG-07=PASS; AC:PROG-08=PASS; AC:PROG-09=PASS; AC:PROG-10=PASS; AC:PROG-11=PASS; AC:PROG-12=PASS; AC:DATA-06=PASS",
+      "blockers": []
+    },
+    "ui_ux": {
+      "status": "TECHNICAL_PASS_USABILITY_NOT_VALIDATED",
+      "label": "READY_FOR_VALIDATION",
+      "criteria": [
+        "AC:UX-01",
+        "AC:UX-02",
+        "AC:UX-03",
+        "AC:UX-04",
+        "AC:UX-05",
+        "AC:UX-06",
+        "AC:UX-07",
+        "AC:UX-08",
+        "AC:UX-09",
+        "AC:UX-10",
+        "AC:UX-11",
+        "AC:UX-12",
+        "AC:UX-13",
+        "AC:UX-14",
+        "AC:A11Y-01",
+        "AC:A11Y-02",
+        "AC:A11Y-03",
+        "AC:A11Y-05"
+      ],
+      "evidence": [
+        "evidence/v161/qa/e2e-browser/browser-data.json",
+        "evidence/v161/qa/e2e-browser/browser-faults.json",
+        "evidence/v161/qa/e2e-browser/browser-journeys.json",
+        "evidence/v161/qa/e2e-browser/browser-layout.json",
+        "evidence/v161/qa/e2e-browser/browser-offline.json",
+        "evidence/v161/qa/e2e-browser/browser-performance.json",
+        "evidence/v161/qa/e2e-browser/browser-semantics.json",
+        "evidence/v161/qa/e2e-browser/browser-teacher.json",
+        "evidence/v161/qa/e2e-browser/log.txt",
+        "evidence/v161/qa/journey-browser-chromium/journey-browser.json",
+        "evidence/v161/qa/journey-browser-chromium/log.txt",
+        "evidence/v161/qa/journey-model/journey-model.json"
+      ],
+      "claim_boundary": "AC:UX-01=PASS; AC:UX-02=PASS; AC:UX-03=PASS; AC:UX-04=PASS; AC:UX-05=PASS; AC:UX-06=PASS; AC:UX-07=PASS; AC:UX-08=PASS; AC:UX-09=BLOCKED; AC:UX-10=PASS; AC:UX-11=PASS; AC:UX-12=PASS; AC:UX-13=PASS; AC:UX-14=PASS; AC:A11Y-01=PASS; AC:A11Y-02=PASS; AC:A11Y-03=PASS; AC:A11Y-05=PASS",
+      "blockers": [
+        "AC:UX-09: Belum ada hasil Android dan iOS fisik dengan keyboard sistem terbuka pada portrait dan landscape. Lihat docs/PROTOKOL_EKSTERNAL_1.5.md; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      ]
+    },
+    "backup_archive": {
+      "status": "PASS",
+      "label": "GO",
+      "criteria": [
+        "AC:DATA-07",
+        "AC:DATA-08",
+        "AC:DATA-09"
+      ],
+      "evidence": [
+        "evidence/v161/qa/capacity-beyond-string/log.txt",
+        "evidence/v161/qa/capacity-browser/log.txt",
+        "evidence/v161/qa/capacity-bytes/log.txt",
+        "evidence/v161/qa/capacity-rows/log.txt",
+        "evidence/v161/qa/data-archive-edges/data-archive-edges.json",
+        "evidence/v161/qa/data-archive-edges/log.txt"
+      ],
+      "claim_boundary": "AC:DATA-07=PASS; AC:DATA-08=PASS; AC:DATA-09=PASS",
+      "blockers": []
+    },
+    "offline": {
+      "status": "PASS",
+      "label": "GO",
+      "criteria": [
+        "AC:OFF-01",
+        "AC:OFF-02",
+        "AC:OFF-03",
+        "AC:OFF-04"
+      ],
+      "evidence": [
+        "evidence/v161/qa/catalog-offline-v151-chromium/catalog-offline-v151-chromium.json",
+        "evidence/v161/qa/catalog-offline-v151-chromium/log.txt",
+        "evidence/v161/qa/catalog-offline-v151-firefox/catalog-offline-v151-firefox.json",
+        "evidence/v161/qa/catalog-offline-v151-firefox/log.txt",
+        "evidence/v161/qa/catalog-offline-v151-webkit/catalog-offline-v151-webkit.json",
+        "evidence/v161/qa/catalog-offline-v151-webkit/log.txt",
+        "evidence/v161/qa/data-cache-policy/data-cache-policy.json",
+        "evidence/v161/qa/data-cache-policy/log.txt",
+        "evidence/v161/qa/journey-browser-chromium/journey-browser.json",
+        "evidence/v161/qa/journey-browser-chromium/log.txt",
+        "evidence/v161/qa/journey-model/journey-model.json",
+        "evidence/v161/qa/journey-model/log.txt"
+      ],
+      "claim_boundary": "AC:OFF-01=PASS; AC:OFF-02=PASS; AC:OFF-03=PASS; AC:OFF-04=PASS",
+      "blockers": []
+    },
+    "teacher_reports": {
+      "status": "TECHNICAL_PASS_USABILITY_NOT_VALIDATED",
+      "label": "READY_FOR_VALIDATION",
+      "criteria": [
+        "AC:TEACH-01",
+        "AC:TEACH-02",
+        "AC:TEACH-03",
+        "AC:TEACH-04"
+      ],
+      "evidence": [
+        "evidence/v161/qa/documents-reopened/documents-reopened.json",
+        "evidence/v161/qa/documents-reopened/log.txt",
+        "evidence/v161/qa/format-readiness/log.txt",
+        "evidence/v161/qa/journey-exports-reopened/log.txt",
+        "evidence/v161/qa/journey-model/journey-model.json",
+        "evidence/v161/qa/journey-model/log.txt",
+        "evidence/v161/qa/period-readiness/log.txt",
+        "evidence/v161/qa/teacher-exports/log.txt",
+        "evidence/v161/qa/time-offset-engine/log.txt",
+        "evidence/v161/qa/time-offset-exports/log.txt",
+        "evidence/v161/qa/v12-feedback-export/log.txt",
+        "evidence/v161/qa/viewed-exports/log.txt"
+      ],
+      "claim_boundary": "AC:TEACH-01=PASS; AC:TEACH-02=PASS; AC:TEACH-03=BLOCKED; AC:TEACH-04=PASS",
+      "blockers": [
+        "AC:TEACH-03: Penelaah belum merender dan memeriksa persamaan di Microsoft Word pada perangkat sasaran; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      ]
+    },
+    "browsers_devices_assistive": {
+      "status": "TECHNICAL_PASS_USABILITY_NOT_VALIDATED",
+      "label": "READY_FOR_VALIDATION",
+      "criteria": [
+        "AC:DEVICE-01",
+        "AC:DEVICE-02",
+        "AC:DEVICE-03",
+        "AC:A11Y-04"
+      ],
+      "evidence": [
+        "evidence/v161/qa/browser-v13-chromium/browser-v13-chromium.json",
+        "evidence/v161/qa/browser-v13-chromium/log.txt",
+        "evidence/v161/qa/browser-v13-firefox/browser-v13-firefox.json",
+        "evidence/v161/qa/browser-v13-firefox/log.txt",
+        "evidence/v161/qa/browser-v13-webkit/browser-v13-webkit.json",
+        "evidence/v161/qa/browser-v13-webkit/log.txt",
+        "evidence/v161/qa/journey-browser-chromium/journey-browser.json",
+        "evidence/v161/qa/journey-browser-chromium/log.txt",
+        "evidence/v161/qa/journey-browser-firefox/journey-browser-firefox.json",
+        "evidence/v161/qa/journey-browser-firefox/log.txt",
+        "evidence/v161/qa/journey-browser-webkit/journey-browser-webkit.json",
+        "evidence/v161/qa/journey-browser-webkit/log.txt"
+      ],
+      "claim_boundary": "AC:DEVICE-01=PASS; AC:DEVICE-02=BLOCKED; AC:DEVICE-03=BLOCKED; AC:A11Y-04=BLOCKED",
+      "blockers": [
+        "AC:DEVICE-02: Tidak ada Android fisik. Emulasi viewport bukan bukti perangkat. Protokol siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md.",
+        "AC:DEVICE-03: Tidak ada iPhone/iPad fisik. Protokol siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md.",
+        "AC:A11Y-04: Ujaran NVDA/VoiceOver/TalkBack belum direkam; inspeksi DOM otomatis bukan bukti ujaran. Protokol siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      ]
+    },
+    "content_review": {
+      "status": "HOLD",
+      "label": "HOLD",
+      "criteria": [
+        "AC:BANK-07"
+      ],
+      "evidence": [
+        "REGISTER_AC_FINAL.csv"
+      ],
+      "claim_boundary": "AC:BANK-07=BLOCKED",
+      "blockers": [
+        "AC:BANK-07: Butuh penelaah manusia. Roster 394 template siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      ]
+    },
+    "pedagogy_pilot": {
+      "status": "NOT_PERFORMED",
+      "label": "HOLD",
+      "criteria": [
+        "AC:PILOT-01",
+        "AC:PILOT-02",
+        "AC:PILOT-03"
+      ],
+      "evidence": [
+        "REGISTER_AC_FINAL.csv"
+      ],
+      "claim_boundary": "AC:PILOT-01=NOT_RUN; AC:PILOT-02=NOT_RUN; AC:PILOT-03=NOT_RUN",
+      "blockers": [
+        "AC:PILOT-01: Belum ada peserta/izin pilot. Protokol dan formulir siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md.",
+        "AC:PILOT-02: Belum ada guru peserta pilot; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md.",
+        "AC:PILOT-03: Bergantung pada PILOT-01/02; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      ]
+    },
+    "performance_lab": {
+      "status": "PASS",
+      "label": "GO",
+      "criteria": [
+        "AC:PERF-01",
+        "AC:PERF-02"
+      ],
+      "evidence": [
+        "evidence/v161/qa/journey-perf-lab/journey-perf-lab.json",
+        "evidence/v161/qa/journey-perf-lab/log.txt",
+        "evidence/v161/qa/performance-budgets/log.txt",
+        "evidence/v161/qa/performance-budgets/performance-budgets.json"
+      ],
+      "claim_boundary": "AC:PERF-01=PASS; AC:PERF-02=PASS",
+      "blockers": []
+    },
+    "field_performance": {
+      "status": "NOT_RUN",
+      "label": "HOLD",
+      "criteria": [
+        "AC:PERF-03"
+      ],
+      "evidence": [
+        "REGISTER_AC_FINAL.csv"
+      ],
+      "claim_boundary": "AC:PERF-03=NOT_RUN",
+      "blockers": [
+        "AC:PERF-03: Fase SETELAH_PILOT: butuh data lapangan p75 setelah pilot dan deployment; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      ]
+    },
+    "live_deployment": {
+      "status": "PREVIEW_PASS",
+      "label": "HOLD",
+      "criteria": [
+        "AC:REL-02",
+        "AC:REL-03"
+      ],
+      "evidence": [
+        "REGISTER_AC_FINAL.csv"
+      ],
+      "claim_boundary": "AC:REL-02=BLOCKED; AC:REL-03=BLOCKED",
+      "blockers": [
+        "AC:REL-02: Tidak ada akses akun Cloudflare/domain; tidak ada klaim deployment. Panduan + perintah verifikasi siap (docs/DEPLOY.md); lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md.",
+        "AC:REL-03: Update/rollback nyata memerlukan domain. Rollback lokal/kompatibilitas data dijelaskan; belum dijalankan di Pages; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      ]
+    }
+  },
+  "generated_utc": "2026-11-28T17:40:21+00:00"
+}

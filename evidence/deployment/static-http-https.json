@@ -1,0 +1,723 @@
+{
+  "status": "PASS",
+  "scope": "Local network fixture with configured Pages headers; public hosting untested",
+  "cases": [
+    {
+      "protocol": "http",
+      "prefix": "/",
+      "responses": [
+        {
+          "path": "",
+          "status": 200,
+          "mime": "text/html",
+          "bytes": 2828,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "3c21902f99d7de28711ba2cff1a0a9a19bf769ccdd4a76bcb6ade9f61b761bf1"
+        },
+        {
+          "path": "./core/appearance.js",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 870,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "3f0019730917ba688edcc31efac589462af59cfdab2ae53e24b489ed90bc180d"
+        },
+        {
+          "path": "./assets/mark.svg",
+          "status": 200,
+          "mime": "image/svg+xml",
+          "bytes": 274,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "4f0bcf58b340dc9b68b50c4de7a14e043aafd03f2bca5e1990ec650a64cff68e"
+        },
+        {
+          "path": "./manifest.webmanifest",
+          "status": 200,
+          "mime": "application/manifest+json",
+          "bytes": 279,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "8887482fd5601e5e4ea9fa021d4125815da6fc7c479b3dbba8fd6d7d89ea845e"
+        },
+        {
+          "path": "./assets/noto-Regular.woff",
+          "status": 200,
+          "mime": "font/woff",
+          "bytes": 32636,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "675d26770d39bf713c944360741eada3e8c173b501a5bd0c60a2fc4754abc033"
+        },
+        {
+          "path": "./assets/noto-Bold.woff",
+          "status": 200,
+          "mime": "font/woff",
+          "bytes": 32236,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "79d2a89310420cd7f3efbf09efef998403e6f6a5b503a8f878ea80d3d5acd267"
+        },
+        {
+          "path": "./assets/base.css",
+          "status": 200,
+          "mime": "text/css",
+          "bytes": 32397,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "b17eb968512c392bed98107e00046e881565cf0abab570c775243b0aa00b3e84"
+        },
+        {
+          "path": "./app.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 16462,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736"
+        },
+        {
+          "path": "sw.js",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 3946,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "d4c5d431855702d4a247861a234df62240c6719032a41eb06db0fef373a3b42e"
+        },
+        {
+          "path": "bank/index.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 684,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "538b91acb48e7845cbcb663f3ddd42473a412f8fb279c98264e67a63613306cd"
+        },
+        {
+          "path": "offline-assets.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 14676,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "af7d30516923ed325b46ad5beeceeb82a0a748ea825b2f229d311b2344ff8e14"
+        },
+        {
+          "path": "bank/g01.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 552,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "c8444d6fd45824a58772535c4b3407fc7d32d06c1d4bab03776cb09cecc184ca"
+        },
+        {
+          "path": "bank/g01/l01.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 4893,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "87e8e807104425ca45f7a14a2ea3cdaa1b53cbb4d338f68cbc9f6625f18bcd95"
+        },
+        {
+          "path": "bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 12520,
+          "cache": "public, max-age=31536000, immutable",
+          "sha256": "52833cb65325cf3b139b6b83ac77f1317af470a9b9803661efaccc73c177f5ec"
+        },
+        {
+          "path": "bank/g12.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 694,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "052867113ebc9f03d9750efb72256b0dce6af5eb860c61367140cd0bfb9c6569"
+        },
+        {
+          "path": "bank/g12/l05.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 46046,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "eee7f0f0dedf7ded7dc2ca6e1df2203e710a900299da8cec282385e041858d0c"
+        },
+        {
+          "path": "bank/v1.1/g12/l05/MM-G12-L05-ADD-P020.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 105181,
+          "cache": "public, max-age=31536000, immutable",
+          "sha256": "7c47309068bfa8be74abc6c63c7174b2f0263ebf6660d1d89ebe2cb09f803564"
+        },
+        {
+          "path": "missing/deep/path",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "missing/deep/path",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        },
+        {
+          "path": "missing.json",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "missing.json",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        },
+        {
+          "path": "_headers",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "_headers",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        }
+      ],
+      "verified_offline_assets": 54
+    },
+    {
+      "protocol": "http",
+      "prefix": "/sekolah/matematika/",
+      "responses": [
+        {
+          "path": "",
+          "status": 200,
+          "mime": "text/html",
+          "bytes": 2828,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "3c21902f99d7de28711ba2cff1a0a9a19bf769ccdd4a76bcb6ade9f61b761bf1"
+        },
+        {
+          "path": "./core/appearance.js",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 870,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "3f0019730917ba688edcc31efac589462af59cfdab2ae53e24b489ed90bc180d"
+        },
+        {
+          "path": "./assets/mark.svg",
+          "status": 200,
+          "mime": "image/svg+xml",
+          "bytes": 274,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "4f0bcf58b340dc9b68b50c4de7a14e043aafd03f2bca5e1990ec650a64cff68e"
+        },
+        {
+          "path": "./manifest.webmanifest",
+          "status": 200,
+          "mime": "application/manifest+json",
+          "bytes": 279,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "8887482fd5601e5e4ea9fa021d4125815da6fc7c479b3dbba8fd6d7d89ea845e"
+        },
+        {
+          "path": "./assets/noto-Regular.woff",
+          "status": 200,
+          "mime": "font/woff",
+          "bytes": 32636,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "675d26770d39bf713c944360741eada3e8c173b501a5bd0c60a2fc4754abc033"
+        },
+        {
+          "path": "./assets/noto-Bold.woff",
+          "status": 200,
+          "mime": "font/woff",
+          "bytes": 32236,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "79d2a89310420cd7f3efbf09efef998403e6f6a5b503a8f878ea80d3d5acd267"
+        },
+        {
+          "path": "./assets/base.css",
+          "status": 200,
+          "mime": "text/css",
+          "bytes": 32397,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "b17eb968512c392bed98107e00046e881565cf0abab570c775243b0aa00b3e84"
+        },
+        {
+          "path": "./app.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 16462,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736"
+        },
+        {
+          "path": "sw.js",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 3946,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "d4c5d431855702d4a247861a234df62240c6719032a41eb06db0fef373a3b42e"
+        },
+        {
+          "path": "bank/index.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 684,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "538b91acb48e7845cbcb663f3ddd42473a412f8fb279c98264e67a63613306cd"
+        },
+        {
+          "path": "offline-assets.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 14676,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "af7d30516923ed325b46ad5beeceeb82a0a748ea825b2f229d311b2344ff8e14"
+        },
+        {
+          "path": "bank/g01.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 552,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "c8444d6fd45824a58772535c4b3407fc7d32d06c1d4bab03776cb09cecc184ca"
+        },
+        {
+          "path": "bank/g01/l01.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 4893,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "87e8e807104425ca45f7a14a2ea3cdaa1b53cbb4d338f68cbc9f6625f18bcd95"
+        },
+        {
+          "path": "bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 12520,
+          "cache": "public, max-age=31536000, immutable",
+          "sha256": "52833cb65325cf3b139b6b83ac77f1317af470a9b9803661efaccc73c177f5ec"
+        },
+        {
+          "path": "bank/g12.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 694,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "052867113ebc9f03d9750efb72256b0dce6af5eb860c61367140cd0bfb9c6569"
+        },
+        {
+          "path": "bank/g12/l05.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 46046,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "eee7f0f0dedf7ded7dc2ca6e1df2203e710a900299da8cec282385e041858d0c"
+        },
+        {
+          "path": "bank/v1.1/g12/l05/MM-G12-L05-ADD-P020.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 105181,
+          "cache": "public, max-age=31536000, immutable",
+          "sha256": "7c47309068bfa8be74abc6c63c7174b2f0263ebf6660d1d89ebe2cb09f803564"
+        },
+        {
+          "path": "missing/deep/path",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "missing/deep/path",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        },
+        {
+          "path": "missing.json",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "missing.json",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        },
+        {
+          "path": "_headers",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "_headers",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        }
+      ],
+      "verified_offline_assets": 54
+    },
+    {
+      "protocol": "https",
+      "prefix": "/",
+      "responses": [
+        {
+          "path": "",
+          "status": 200,
+          "mime": "text/html",
+          "bytes": 2828,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "3c21902f99d7de28711ba2cff1a0a9a19bf769ccdd4a76bcb6ade9f61b761bf1"
+        },
+        {
+          "path": "./core/appearance.js",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 870,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "3f0019730917ba688edcc31efac589462af59cfdab2ae53e24b489ed90bc180d"
+        },
+        {
+          "path": "./assets/mark.svg",
+          "status": 200,
+          "mime": "image/svg+xml",
+          "bytes": 274,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "4f0bcf58b340dc9b68b50c4de7a14e043aafd03f2bca5e1990ec650a64cff68e"
+        },
+        {
+          "path": "./manifest.webmanifest",
+          "status": 200,
+          "mime": "application/manifest+json",
+          "bytes": 279,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "8887482fd5601e5e4ea9fa021d4125815da6fc7c479b3dbba8fd6d7d89ea845e"
+        },
+        {
+          "path": "./assets/noto-Regular.woff",
+          "status": 200,
+          "mime": "font/woff",
+          "bytes": 32636,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "675d26770d39bf713c944360741eada3e8c173b501a5bd0c60a2fc4754abc033"
+        },
+        {
+          "path": "./assets/noto-Bold.woff",
+          "status": 200,
+          "mime": "font/woff",
+          "bytes": 32236,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "79d2a89310420cd7f3efbf09efef998403e6f6a5b503a8f878ea80d3d5acd267"
+        },
+        {
+          "path": "./assets/base.css",
+          "status": 200,
+          "mime": "text/css",
+          "bytes": 32397,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "b17eb968512c392bed98107e00046e881565cf0abab570c775243b0aa00b3e84"
+        },
+        {
+          "path": "./app.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 16462,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736"
+        },
+        {
+          "path": "sw.js",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 3946,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "d4c5d431855702d4a247861a234df62240c6719032a41eb06db0fef373a3b42e"
+        },
+        {
+          "path": "bank/index.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 684,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "538b91acb48e7845cbcb663f3ddd42473a412f8fb279c98264e67a63613306cd"
+        },
+        {
+          "path": "offline-assets.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 14676,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "af7d30516923ed325b46ad5beeceeb82a0a748ea825b2f229d311b2344ff8e14"
+        },
+        {
+          "path": "bank/g01.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 552,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "c8444d6fd45824a58772535c4b3407fc7d32d06c1d4bab03776cb09cecc184ca"
+        },
+        {
+          "path": "bank/g01/l01.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 4893,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "87e8e807104425ca45f7a14a2ea3cdaa1b53cbb4d338f68cbc9f6625f18bcd95"
+        },
+        {
+          "path": "bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 12520,
+          "cache": "public, max-age=31536000, immutable",
+          "sha256": "52833cb65325cf3b139b6b83ac77f1317af470a9b9803661efaccc73c177f5ec"
+        },
+        {
+          "path": "bank/g12.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 694,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "052867113ebc9f03d9750efb72256b0dce6af5eb860c61367140cd0bfb9c6569"
+        },
+        {
+          "path": "bank/g12/l05.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 46046,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "eee7f0f0dedf7ded7dc2ca6e1df2203e710a900299da8cec282385e041858d0c"
+        },
+        {
+          "path": "bank/v1.1/g12/l05/MM-G12-L05-ADD-P020.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 105181,
+          "cache": "public, max-age=31536000, immutable",
+          "sha256": "7c47309068bfa8be74abc6c63c7174b2f0263ebf6660d1d89ebe2cb09f803564"
+        },
+        {
+          "path": "missing/deep/path",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "missing/deep/path",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        },
+        {
+          "path": "missing.json",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "missing.json",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        },
+        {
+          "path": "_headers",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "_headers",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        }
+      ],
+      "verified_offline_assets": 54
+    },
+    {
+      "protocol": "https",
+      "prefix": "/sekolah/matematika/",
+      "responses": [
+        {
+          "path": "",
+          "status": 200,
+          "mime": "text/html",
+          "bytes": 2828,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "3c21902f99d7de28711ba2cff1a0a9a19bf769ccdd4a76bcb6ade9f61b761bf1"
+        },
+        {
+          "path": "./core/appearance.js",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 870,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "3f0019730917ba688edcc31efac589462af59cfdab2ae53e24b489ed90bc180d"
+        },
+        {
+          "path": "./assets/mark.svg",
+          "status": 200,
+          "mime": "image/svg+xml",
+          "bytes": 274,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "4f0bcf58b340dc9b68b50c4de7a14e043aafd03f2bca5e1990ec650a64cff68e"
+        },
+        {
+          "path": "./manifest.webmanifest",
+          "status": 200,
+          "mime": "application/manifest+json",
+          "bytes": 279,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "8887482fd5601e5e4ea9fa021d4125815da6fc7c479b3dbba8fd6d7d89ea845e"
+        },
+        {
+          "path": "./assets/noto-Regular.woff",
+          "status": 200,
+          "mime": "font/woff",
+          "bytes": 32636,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "675d26770d39bf713c944360741eada3e8c173b501a5bd0c60a2fc4754abc033"
+        },
+        {
+          "path": "./assets/noto-Bold.woff",
+          "status": 200,
+          "mime": "font/woff",
+          "bytes": 32236,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "79d2a89310420cd7f3efbf09efef998403e6f6a5b503a8f878ea80d3d5acd267"
+        },
+        {
+          "path": "./assets/base.css",
+          "status": 200,
+          "mime": "text/css",
+          "bytes": 32397,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "b17eb968512c392bed98107e00046e881565cf0abab570c775243b0aa00b3e84"
+        },
+        {
+          "path": "./app.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 16462,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736"
+        },
+        {
+          "path": "sw.js",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 3946,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "d4c5d431855702d4a247861a234df62240c6719032a41eb06db0fef373a3b42e"
+        },
+        {
+          "path": "bank/index.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 684,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "538b91acb48e7845cbcb663f3ddd42473a412f8fb279c98264e67a63613306cd"
+        },
+        {
+          "path": "offline-assets.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 14676,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "af7d30516923ed325b46ad5beeceeb82a0a748ea825b2f229d311b2344ff8e14"
+        },
+        {
+          "path": "bank/g01.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 552,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "c8444d6fd45824a58772535c4b3407fc7d32d06c1d4bab03776cb09cecc184ca"
+        },
+        {
+          "path": "bank/g01/l01.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 4893,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "87e8e807104425ca45f7a14a2ea3cdaa1b53cbb4d338f68cbc9f6625f18bcd95"
+        },
+        {
+          "path": "bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 12520,
+          "cache": "public, max-age=31536000, immutable",
+          "sha256": "52833cb65325cf3b139b6b83ac77f1317af470a9b9803661efaccc73c177f5ec"
+        },
+        {
+          "path": "bank/g12.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 694,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "052867113ebc9f03d9750efb72256b0dce6af5eb860c61367140cd0bfb9c6569"
+        },
+        {
+          "path": "bank/g12/l05.json",
+          "status": 200,
+          "mime": "application/json",
+          "bytes": 46046,
+          "cache": "public, max-age=0, must-revalidate",
+          "sha256": "eee7f0f0dedf7ded7dc2ca6e1df2203e710a900299da8cec282385e041858d0c"
+        },
+        {
+          "path": "bank/v1.1/g12/l05/MM-G12-L05-ADD-P020.mjs",
+          "status": 200,
+          "mime": "text/javascript",
+          "bytes": 105181,
+          "cache": "public, max-age=31536000, immutable",
+          "sha256": "7c47309068bfa8be74abc6c63c7174b2f0263ebf6660d1d89ebe2cb09f803564"
+        },
+        {
+          "path": "missing/deep/path",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "missing/deep/path",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        },
+        {
+          "path": "missing.json",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "missing.json",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        },
+        {
+          "path": "_headers",
+          "method": "GET",
+          "status": 404,
+          "body": "branded-404"
+        },
+        {
+          "path": "_headers",
+          "method": "HEAD",
+          "status": 404,
+          "body": "empty-head"
+        }
+      ],
+      "verified_offline_assets": 54
+    }
+  ],
+  "certificate_check": "Verified against one-run local self-signed trust anchor; no private key retained"
+}

@@ -1,0 +1,68 @@
+# command: node /home/claude/repro14/probe-progression.mjs /home/claude/cmdcopy
+# started: 2026-11-28T04:23:38Z
+# node v22.23.5 · Python 3.13.18
+{
+  "runtime": "v22.23.5",
+  "scope": "Independent Node probe, temporary in-memory store; no browser or user study",
+  "actual_completed_attempt": {
+    "package_id": "MM-G03-L01-ADD-P001",
+    "grade": 3,
+    "level": 1,
+    "mode": "practice",
+    "questions": 10,
+    "correct": 10,
+    "score_percent": 100,
+    "question_ids": [
+      "arithmetic.addition.g03.l01.1d53bdb236f067f5d323e064b3f2e9358281ca9dc8c702d40ad1bcf09d5dac38",
+      "arithmetic.addition.g03.l01.5a8d7ed5d4a0212715b622eda76883840f27bd97ffd6056fbe71948cf29db618",
+      "arithmetic.addition.g03.l01.5fec57c76d0ae821ebe95bda3afcfda10f0b0cc27a589f484cb7f637850f3a01",
+      "arithmetic.addition.g03.l01.7f4a0f6a06626a4f941addc222014ab4dcc7b399c15c771370f7f34967f521b7",
+      "arithmetic.addition.g03.l01.cd09113fd0f9a92d97792663391dbd10309559bb3855fe3470e3b201de0e1014",
+      "arithmetic.addition.g03.l01.4aa41db176b25c7ba127d37f2ed0e65667422db529aabffdeff91b9f17eb9cd1",
+      "arithmetic.addition.g03.l01.6fd637df4b352bdbc0302333a8f678ee083866776245310036c799d7b4ee8a01",
+      "arithmetic.addition.g03.l01.4731e5fbb7346ac6aab61b2a041d84718311042fa059c01c481eced4ed14957e",
+      "arithmetic.addition.g03.l01.f26cd8874a82778e2eef1037b564da85a7e885c4f7f8e00de14168fba1e4fe8f",
+      "arithmetic.addition.g03.l01.e719693f7824584b5305d447226617518b053e8edcf802b011793b50d012f8ce"
+    ]
+  },
+  "next_default_practice": {
+    "package_id": "MM-G03-L01-ADD-P001",
+    "grade": 3,
+    "level": 1,
+    "question_ids": [
+      "arithmetic.addition.g03.l01.1d53bdb236f067f5d323e064b3f2e9358281ca9dc8c702d40ad1bcf09d5dac38",
+      "arithmetic.addition.g03.l01.5a8d7ed5d4a0212715b622eda76883840f27bd97ffd6056fbe71948cf29db618",
+      "arithmetic.addition.g03.l01.5fec57c76d0ae821ebe95bda3afcfda10f0b0cc27a589f484cb7f637850f3a01",
+      "arithmetic.addition.g03.l01.7f4a0f6a06626a4f941addc222014ab4dcc7b399c15c771370f7f34967f521b7",
+      "arithmetic.addition.g03.l01.cd09113fd0f9a92d97792663391dbd10309559bb3855fe3470e3b201de0e1014",
+      "arithmetic.addition.g03.l01.4aa41db176b25c7ba127d37f2ed0e65667422db529aabffdeff91b9f17eb9cd1",
+      "arithmetic.addition.g03.l01.6fd637df4b352bdbc0302333a8f678ee083866776245310036c799d7b4ee8a01",
+      "arithmetic.addition.g03.l01.4731e5fbb7346ac6aab61b2a041d84718311042fa059c01c481eced4ed14957e",
+      "arithmetic.addition.g03.l01.f26cd8874a82778e2eef1037b564da85a7e885c4f7f8e00de14168fba1e4fe8f",
+      "arithmetic.addition.g03.l01.e719693f7824584b5305d447226617518b053e8edcf802b011793b50d012f8ce"
+    ],
+    "same_package": true,
+    "same_question_order": true
+  },
+  "adaptive_after_perfect_practice": {
+    "decision": "collect",
+    "target": "arithmetic.addition.g03.l01",
+    "forms": 0,
+    "evidence": []
+  },
+  "next_adaptive_plan": {
+    "decision": "collect",
+    "package_id": "MM-G03-L01-ADD-P002",
+    "grade": 3,
+    "level": 1
+  },
+  "source_hashes": {
+    "src/core/bank.mjs": "cf68ec767e3545aece97ce7e1487c788f47472a20543f7cc24e4bd652f5e95f4",
+    "src/core/material.mjs": "c4ed6e756992cf1196bb4467892ee9f5e257b74591541e2c86a8adde7823dfd4",
+    "src/player/start.mjs": "d98206874407da5c8c9cb1573eb252349975155c0bb299ef5709c8ef1f2b5018",
+    "src/player/engine.mjs": "59fe986f98f6c54b68c75650adcb2f96c0e987c79d6ee038d4382e26754b8044",
+    "src/player/analytics.mjs": "7ff3d29d8cc024f89da957ae97a3a92770897f7104375a4498b099465bbfee57"
+  }
+}
+# exit: 0
+# finished: 2026-11-28T04:23:38Z

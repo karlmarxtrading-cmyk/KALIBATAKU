@@ -1,0 +1,209 @@
+{
+  "offline_release": "83fef50a05e52452",
+  "browsers": {
+    "chromium": {
+      "status": "PASS",
+      "metrics": {
+        "clientWidth": 240,
+        "scrollWidth": 240,
+        "clientHeight": 194,
+        "scrollHeight": 194,
+        "tabIndex": -1,
+        "cssFont": "32px",
+        "overflowX": "auto",
+        "svgRuns": 7,
+        "name": "buka kurung buka kurung 99 kali 355 tambah 355 tutup kurung dibagi 10 minus 38 tutup kurung kali 0 koma 125 tambah 1 per 8",
+        "linear": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8"
+      },
+      "geometry": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.1875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 3"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 249.625,
+            "visible": true,
+            "hit": true,
+            "text": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 296.796875,
+            "right": 291.8125,
+            "bottom": 344.796875,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      },
+      "version": "151.0.7922.34"
+    },
+    "firefox": {
+      "status": "PASS",
+      "metrics": {
+        "clientWidth": 240,
+        "scrollWidth": 240,
+        "clientHeight": 195,
+        "scrollHeight": 195,
+        "tabIndex": -1,
+        "cssFont": "32px",
+        "overflowX": "auto",
+        "svgRuns": 7,
+        "name": "buka kurung buka kurung 99 kali 355 tambah 355 tutup kurung dibagi 10 minus 38 tutup kurung kali 0 koma 125 tambah 1 per 8",
+        "linear": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8"
+      },
+      "geometry": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.199996948242188,
+            "top": 6.600006103515625,
+            "right": 124.21665954589844,
+            "bottom": 32.19999694824219,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 3"
+          },
+          "expression": {
+            "left": 40.19999694824219,
+            "top": 55.399993896484375,
+            "right": 279.8000030517578,
+            "bottom": 250,
+            "visible": true,
+            "hit": true,
+            "text": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8"
+          },
+          "input": {
+            "left": 28.199996948242188,
+            "top": 297.20001220703125,
+            "right": 291.8000030517578,
+            "bottom": 345.20001220703125,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      },
+      "version": "153.0"
+    },
+    "webkit": {
+      "status": "PASS",
+      "metrics": {
+        "clientWidth": 240,
+        "scrollWidth": 240,
+        "clientHeight": 195,
+        "scrollHeight": 195,
+        "tabIndex": -1,
+        "cssFont": "32px",
+        "overflowX": "auto",
+        "svgRuns": 7,
+        "name": "buka kurung buka kurung 99 kali 355 tambah 355 tutup kurung dibagi 10 minus 38 tutup kurung kali 0 koma 125 tambah 1 per 8",
+        "linear": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8"
+      },
+      "geometry": {
+        "viewport": {
+          "left": 0,
+          "top": 0,
+          "width": 320,
+          "height": 568,
+          "scale": 1
+        },
+        "layout": [
+          320,
+          568
+        ],
+        "scroll": [
+          0,
+          238
+        ],
+        "documentWidth": 320,
+        "rects": {
+          "position": {
+            "left": 28.1875,
+            "top": 6.53125,
+            "right": 124.171875,
+            "bottom": 32.125,
+            "visible": true,
+            "hit": true,
+            "text": "Soal 2 dari 3"
+          },
+          "expression": {
+            "left": 40.1875,
+            "top": 55.296875,
+            "right": 279.8125,
+            "bottom": 249.828125,
+            "visible": true,
+            "hit": true,
+            "text": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8"
+          },
+          "input": {
+            "left": 28.1875,
+            "top": 297,
+            "right": 291.8125,
+            "bottom": 345,
+            "visible": true,
+            "hit": true,
+            "text": ""
+          }
+        },
+        "math": "svg",
+        "linear": "((99 × 355 + 355) ÷ 10 − 38) × 0,125 + 1/8",
+        "editable": true,
+        "focus": "kp-answer",
+        "lang": "id"
+      },
+      "version": "26.5"
+    }
+  }
+}

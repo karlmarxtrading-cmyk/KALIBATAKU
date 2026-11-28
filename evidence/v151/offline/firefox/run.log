@@ -1,0 +1,12 @@
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+healthy PASS
+missing_package PASS
+corrupt_package PASS
+corrupt_shard PASS
+corrupt_shell PASS
+stale_version PASS
+stale_release PASS
+legacy_dependency PASS
+assessment PASS
+change_after_preview PASS
+scoped_invalidation PASS

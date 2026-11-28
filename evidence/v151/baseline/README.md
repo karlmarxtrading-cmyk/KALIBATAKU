@@ -1,0 +1,15 @@
+# Pemeriksaan independen berkas rilis
+
+Pemeriksaan ini membaca ZIP sumber utuh dan isi katalog, termasuk setiap modul paket serta jumlah soal aktual. Kode produksi tidak dipakai sebagai oracle hash. Paket baseline tetap tersimpan di luar direktori kandidat 1.5.1. Tiga tahap tersedia melalui Python 3.12.
+
+1. `baseline --candidate <zip-1.5.0> --audit <zip-audit> --out <evidence/v151/baseline>` mengesahkan CRC dan nama portabel, mencocokkan seluruh entri FILE_INVENTORY dan SHA256SUMS, membaca 4.604 modul bank dan membandingkan identitas acuan dari audit. Manifest riwayat mencatat 704 bukti dalam sumber awal.
+2. `preseal --candidate <zip-1.5.0> --source <akar-1.5.1> --out <evidence/v151/baseline>` menghitung manifest setiap berkas bank langsung dari direktori publikasi, membandingkannya dengan ZIP 1.5.0 dan mendata perbedaan arsip bukti lama. Catatan runtime mencakup Node/npm, versi Python, dependensi QA terpasang dan kebijakan aset statis. Pemeriksaan ini tidak memerlukan akses publik.
+3. `final --candidate <zip-1.5.0> --source <akar-yang-sudah-disegel> --zip <zip-kandidat> --out <direktori-di-luar-paket>` melakukan validasi pada byte ZIP yang benar-benar akan dikirim. Folder ekstraksi baru dibuat per proses. Seluruh byte dicocokkan dengan direktori yang disegel, kedua indeks arsip dan baseline bank. Perintah release:verify, build dan release:verify dijalankan pada salinan ini, disertai perbandingan isi direktori sebelum/sesudah. Digest ZIP final dan verifikasi pascapengemasan berada di luar ZIP untuk menghindari referensi checksum ke dirinya sendiri.
+
+Jalankan setiap bentuk perintah di atas dengan `python3 release_artifacts.py`. Hash pohon mengikuti susunan komponen jalur POSIX yang dipakai proyek. Untuk memakai berkas bank-before.sha256 dan bank-after.sha256 secara langsung, jalankan sha256sum --check dengan direktori kerja dist/bank/.
+
+Verifikasi lokal tidak mengubah register domain, perangkat fisik, pilot, Word dan review guru. Ke-11 gerbang eksternal memerlukan pelaksanaan sesuai protokol. Operator deployment memublikasikan hanya dist/ setelah memperoleh otorisasi. Manifest per berkas dan identitas offline dapat dipakai untuk memeriksa hasil promosi serta rollback.
+
+Uji perilaku independen dapat diulang dengan `python3 behavior.py --source <akar-kandidat> --audit <zip-audit> --out <hasil.json>`. Modul distribusi dijalankan lewat Node. Python menghitung fingerprint unik dan batas waktu sipil dengan zoneinfo; empat zona diuji pada empat tanggal, dengan empat representasi offset. Untuk memeriksa keputusan offline, pengganti CacheStorage menyediakan byte riil dari distribusi, termasuk perubahan byte tunggal. Hasil pengujian antarmuka tiga mesin browser berada pada bukti QA tersendiri.
+
+Kecocokan bahan guru dapat diperiksa dengan `python3 school_kit.py --source <akar-kandidat> --out <hasil.json>` setelah tahap preseal. Pemeriksaan ini mencocokkan 1.182 posisi contoh, metadata, kunci eksak, teks soal, petunjuk dan langkah dwibahasa dengan modul paket beku dan roster acuan.

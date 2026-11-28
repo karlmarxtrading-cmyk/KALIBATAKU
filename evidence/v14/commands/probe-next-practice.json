@@ -1,0 +1,63 @@
+{
+  "runtime": "v22.23.5",
+  "scope": "Node, in-memory store, built dist; no browser",
+  "catalogue_next_practice": {
+    "package_id": "MM-G03-L01-ADD-P001",
+    "first": [
+      "arithmetic.addition.g03.l01.1d53bdb236f067f5d323e064b3f2e9358281ca9dc8c702d40ad1bcf09d5dac38",
+      "arithmetic.addition.g03.l01.5a8d7ed5d4a0212715b622eda76883840f27bd97ffd6056fbe71948cf29db618",
+      "arithmetic.addition.g03.l01.5fec57c76d0ae821ebe95bda3afcfda10f0b0cc27a589f484cb7f637850f3a01",
+      "arithmetic.addition.g03.l01.7f4a0f6a06626a4f941addc222014ab4dcc7b399c15c771370f7f34967f521b7",
+      "arithmetic.addition.g03.l01.cd09113fd0f9a92d97792663391dbd10309559bb3855fe3470e3b201de0e1014",
+      "arithmetic.addition.g03.l01.4aa41db176b25c7ba127d37f2ed0e65667422db529aabffdeff91b9f17eb9cd1",
+      "arithmetic.addition.g03.l01.6fd637df4b352bdbc0302333a8f678ee083866776245310036c799d7b4ee8a01",
+      "arithmetic.addition.g03.l01.4731e5fbb7346ac6aab61b2a041d84718311042fa059c01c481eced4ed14957e",
+      "arithmetic.addition.g03.l01.f26cd8874a82778e2eef1037b564da85a7e885c4f7f8e00de14168fba1e4fe8f",
+      "arithmetic.addition.g03.l01.e719693f7824584b5305d447226617518b053e8edcf802b011793b50d012f8ce"
+    ],
+    "second": [
+      "arithmetic.addition.g03.l01.bdce1e7e09bad2fd45ea4c1d8a9d79e258087fa7b1440ec30674712192a9b0f2",
+      "arithmetic.addition.g03.l01.6380b691346da8544ac788fefc3690029b4a8675d37bd5e5543a5baecd271b33",
+      "arithmetic.addition.g03.l01.9ed5d5b9d79d73e71cfdfe4ee8f33a02d7d004a7ab0d1033575a14af52b854d8",
+      "arithmetic.addition.g03.l01.172383e3246cc1679686031bfa2492c80167cfc512ad0c46209746441b697dc4",
+      "arithmetic.addition.g03.l01.33c17b937b2e83038e7d2d687bc4704107e24e311c982af56a1023547ab73bdb",
+      "arithmetic.addition.g03.l01.68b79325e1e658bf43b688e6bcd20dc38c2a9fc2ce61ff14ddca6535e2b3e35f",
+      "arithmetic.addition.g03.l01.4afce88f6dd14d29364d5db1b34b1d364a64fb3179e65cf4f191b505d013b73a",
+      "arithmetic.addition.g03.l01.7f33496408e0d911c8c7c2237eeaadf483bbf97fdb202e933070e35db8ee79e5",
+      "arithmetic.addition.g03.l01.2c8f6898dce29dd9e4d27533fc377a90f7ac3a5652020f405a1e5cc89812f863",
+      "arithmetic.addition.g03.l01.53c016baf7fa5f65945d3d08627f39bb1ea0821777c10f9281d22bf4b716bd7f"
+    ],
+    "overlap": 0,
+    "same_question_order": false
+  },
+  "journey_three_missions": {
+    "missions": [
+      {
+        "kind": "intro",
+        "package_id": "MM-G03-L01-ADD-P002",
+        "n": 6,
+        "review": 0
+      },
+      {
+        "kind": "regular",
+        "package_id": "MM-G03-L01-ADD-P003",
+        "n": 8,
+        "review": 0
+      },
+      {
+        "kind": "regular",
+        "package_id": "MM-G03-L01-ADD-P006",
+        "n": 8,
+        "review": 0
+      }
+    ],
+    "total": 22,
+    "unique": 22
+  },
+  "next_after": {
+    "action": "advance",
+    "node_id": "arithmetic.subtraction.g03.l01",
+    "kind": "intro",
+    "reason": "ready_to_advance"
+  }
+}

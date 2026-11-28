@@ -1,0 +1,23 @@
+{
+  "started": "2026-11-28T10:35:03.639518+00:00",
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "firefox-map-native-zoom",
+  "scope": "Native per-host desktop Firefox full zoom, isolated test profile on localhost",
+  "checks": [
+    {
+      "id": "native-map-400pct",
+      "expected": "With the same 1280-px window, native 4x zoom yields a 320 CSS-px viewport; the map fits and keyboard activation starts a real mission.",
+      "status": "FAIL",
+      "actual": "Traceback (most recent call last):\n  File \"/workspace/scratch/94a2cb03b99b/next/shipping-qa-work/kalibataku-qa-ktuzdhhv/tests/journey/map_native_zoom.py\", line 64, in main\n    normal, version = measure(pw,profile,server.url,1)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/94a2cb03b99b/next/shipping-qa-work/kalibataku-qa-ktuzdhhv/tests/journey/map_native_zoom.py\", line 47, in measure\n    assert action.evaluate(\"el=>el===document.activeElement\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+    }
+  ],
+  "status": "FAIL",
+  "assertions": 1,
+  "finished": "2026-11-28T10:35:08.174805+00:00",
+  "build": {
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "319ea44060dbbc58"
+  }
+}

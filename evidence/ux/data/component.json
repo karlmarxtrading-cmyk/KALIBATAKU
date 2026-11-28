@@ -1,0 +1,96 @@
+{
+  "environment": "v24.22.3",
+  "results": [
+    {
+      "name": "Pending draft rescue validates and restores the original owner with the exact event ledger",
+      "status": "PASS",
+      "observations": {
+        "format": "kalibataku-profile-backup",
+        "version": "1.0.0",
+        "draft": "2/",
+        "events": 1,
+        "preview_writes": 0,
+        "duplicate_additions": 0,
+        "other_profile_modified": false
+      }
+    },
+    {
+      "name": "Raw session and report JSON rejected with actionable distinct types",
+      "status": "PASS",
+      "observations": {
+        "session": "SESSION_COPY",
+        "parent_report": "REPORT_FILE"
+      }
+    },
+    {
+      "name": "Index migration, filtered paging, isolated delete and concurrent change guard across 5000 sessions",
+      "status": "PASS",
+      "observations": {
+        "backend": "temporary memory, Node",
+        "synthetic_sessions": 5000,
+        "backfill_ms": 615.05,
+        "filtered_page_ms": 42.14,
+        "page_size": 10,
+        "page_bytes": 4973,
+        "fields": [
+          "attempt_id",
+          "grade",
+          "level",
+          "operation",
+          "mode",
+          "status",
+          "started_at",
+          "completed_at",
+          "index",
+          "package_id",
+          "package_title",
+          "content_version",
+          "target_competency_id",
+          "metrics",
+          "assignment_id",
+          "last_saved_at",
+          "item_count"
+        ],
+        "tagged_as_device_performance": false
+      }
+    },
+    {
+      "name": "First start moves chrono index without duplicating a preflight attempt",
+      "status": "PASS",
+      "observations": {
+        "rows": 1,
+        "changed_start_time": true
+      }
+    },
+    {
+      "name": "Transfer plan counts remaining shell, selected shard and pack once",
+      "status": "PASS",
+      "observations": {
+        "decoded_cold_bytes": 490,
+        "decoded_warm_bytes": 340,
+        "already_cached": 150
+      }
+    },
+    {
+      "name": "Session delivery tracks last correlated ACK, queued events, denied access and scoped retry time separately",
+      "status": "PASS",
+      "observations": {
+        "sessions": 3,
+        "first_session_received": "1/2",
+        "forbidden": true,
+        "grading_escalated": false
+      }
+    },
+    {
+      "name": "Service worker excludes incomplete pack caches and falls back only to a complete shell revision during interruption",
+      "status": "PASS",
+      "observations": {
+        "runtime": "Node VM with Cache Storage and HTTP 503 fixtures",
+        "uncommitted_pack_served": false,
+        "shell_during_interruption": "previous validated revision",
+        "verified_pack_served": true,
+        "uncached_teacher_http": 503
+      }
+    }
+  ]
+}

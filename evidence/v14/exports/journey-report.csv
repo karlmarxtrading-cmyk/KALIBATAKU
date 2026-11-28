@@ -1,0 +1,95 @@
+﻿"Summary","Siswa","Sumber","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Summary","Journey test","Hasil latihan lokal · belum diverifikasi institusi",48,42,6,0,0,0,87.5,87.5,100
+"Competencies","Kompetensi","Kelas","Level","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Competencies","arithmetic.addition.g03.l01",3,1,"Penjumlahan",22,22,0,0,0,0,100,100,100
+"Competencies","arithmetic.addition.g06.l01",6,1,"Penjumlahan",0,0,0,0,0,0,,,
+"Competencies","arithmetic.addition.g04.l01",4,1,"Penjumlahan",6,0,6,0,0,0,0,0,100
+"Competencies","arithmetic.subtraction.g03.l01",3,1,"Pengurangan",6,6,0,0,0,0,100,100,100
+"Competencies","arithmetic.addition.g05.l01",5,1,"Penjumlahan",14,14,0,0,0,0,100,100,100
+"Operations","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Operations","Penjumlahan",42,36,6,0,0,0,85.71428571428571,85.71428571428571,100
+"Operations","Pengurangan",6,6,0,0,0,0,100,100,100
+"Operations","Perkalian",0,0,0,0,0,0,,,
+"Operations","Pembagian",0,0,0,0,0,0,,,
+"Operations","Campuran",0,0,0,0,0,0,,,
+"Sessions","ID","UTC","Paket","Mode","Status","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Sessions","298b465a-453f-47c6-85bb-cdddad2f886f","2026-11-28T08:07:52.000Z","MM-G03-L01-ADD-P001","Latihan","Berjalan",0,0,0,0,0,0,,,
+"Sessions","45f69a12-1fe8-4e8c-8edf-59255f1d2c03","2026-11-28T08:07:32.000Z","MM-G06-L01-ADD-P001","Latihan","Berjalan",0,0,0,0,0,0,,,
+"Sessions","2e6b0619-5e45-4879-a51d-0cc8c0b871e8","2026-11-28T08:06:36.000Z","MM-G04-L01-ADD-P001","Latihan","Selesai",6,0,6,0,0,0,0,0,100
+"Sessions","0475ae70-a706-457f-bd65-22d7eb107353","2026-11-28T08:05:36.000Z","MM-G03-L01-SUB-P002","Latihan","Selesai",6,6,0,0,0,0,100,100,100
+"Sessions","a33481e4-41bb-49f5-b9cd-28fe2af78929","2026-11-28T08:04:24.000Z","MM-G05-L01-ADD-P005","Latihan","Selesai",8,8,0,0,0,0,100,100,100
+"Sessions","bc0ec621-8f15-423e-9607-3764f115a98b","2026-11-28T08:03:28.000Z","MM-G05-L01-ADD-P002","Latihan","Selesai",6,6,0,0,0,0,100,100,100
+"Sessions","0dad6982-9deb-4fc6-b38f-49a375b8ffcc","2026-11-28T08:02:16.000Z","MM-G03-L01-ADD-P005","Latihan","Selesai",8,8,0,0,0,0,100,100,100
+"Sessions","558f1b98-988f-4fd0-bbde-5054d48ebd1d","2026-11-28T08:01:04.000Z","MM-G03-L01-ADD-P003","Latihan","Selesai",8,8,0,0,0,0,100,100,100
+"Sessions","be2ef57c-0322-4b0b-853f-6481fa8061f2","2026-11-28T08:00:08.000Z","MM-G03-L01-ADD-P001","Latihan","Selesai",6,6,0,0,0,0,100,100,100
+"Dictionary","Ukuran","Definisi"
+"Dictionary","Skor paket","42 / 48"
+"Dictionary","Akurasi jawaban","42 / 48"
+"Dictionary","Soal ditanggapi","48 / 48"
+"Dictionary","Jawaban pertama benar","41 / 48"
+"Dictionary","Penyebut nol","Kosong = belum dievaluasi"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-58e62ec7-1e61-4857-b564-b9840ae7b0cd"
+"Metadata","data_origin","local_practice"
+"Metadata","verification_status","unverified"
+"Metadata","locale","id"
+"Metadata","period_start_utc","1969-12-31T17:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2099-12-31T17:00:00.000Z"
+"Metadata","display_timezone","Asia/Jakarta"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-28T08:07:52.000Z"
+"Metadata","assigned_count",48
+"Metadata","correct_count",42
+"Metadata","incorrect_count",6
+"Metadata","skipped_count",0
+"Metadata","blank_count",0
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",87.5
+"Metadata","valid_response_accuracy_percent",87.5
+"Metadata","responded_percent",100
+"Metadata","subject_id","b98265ed-151c-4845-9190-5ceeef26852a"
+"Metadata","subject_alias","Journey test"
+"Metadata","source","local_practice"
+"Metadata","classId",""
+"Metadata","studentId","b98265ed-151c-4845-9190-5ceeef26852a"
+"Metadata","from",""
+"Metadata","to",""
+"Metadata","timezone","Asia/Jakarta"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions","1.2.0"
+"Metadata","change_pp",
+"Notes","Penulis","UTC","Revisi","Catatan","ID","Menggantikan","Status"
+"Math","Sumber","ID","Ekspresi","Pembilang kunci","Penyebut kunci","Respons pertama","Respons terakhir"
+"Math","local_practice","2e6b0619-5e45-4879-a51d-0cc8c0b871e8","4095 + 5900","9995","1","9996","9996"
+"Family","Hasil latihan lokal · belum diverifikasi institusi"
+"Family","Journey test"
+"Family","Semua tanggal · Asia/Jakarta"
+"Family","Sesi selesai dalam periode ini: 7 · Berjalan: 2"
+"Family","Yang sudah terlihat"
+"Family","Penjumlahan · kelas 3 · level 1 · Latihan — 22 dari 22 soal yang dijawab benar pada upaya pertama tanpa bantuan."
+"Family","Fokus pendampingan"
+"Family","Penjumlahan · kelas 4 · level 1 · Latihan — 6 dari 6 respons pertama perlu diperbaiki."
+"Family","Contoh dari sesi 28 Nov 2026, 15.06 · Latihan"
+"Family","Soal · 4095 + 5900"
+"Family","Kunci jawaban · 9995"
+"Family","Jawaban pertama · 9996"
+"Family","Belum diuji melalui evaluasi pada periode ini — Penjumlahan, Pengurangan, Perkalian, Pembagian, Campuran."
+"Family","Rencana latihan berikutnya"
+"Family","Bahas satu contoh penjumlahan · kelas 5 · level 1 · Latihan bersama, lalu minta siswa mencoba satu soal sejenis sendiri (14 dari 14 respons pertama benar)."
+"Family","Tanggal tinjauan · Belum ditetapkan bersama guru."
+"Journey","Kompetensi","Kelas","Level","Operasi","Misi","Misi target lulus","Soal unik","Target cakupan","Respons pertama mandiri","Respons pertama","Dengan bantuan","Revisi setelah kunci","Siap lanjut (kebijakan produk)","XP (bukan nilai)"
+"Journey","arithmetic.addition.g04.l01",4,1,"Penjumlahan",1,0,6,12,0,6,0,0,0,5
+"Journey","arithmetic.subtraction.g03.l01",3,1,"Pengurangan",1,0,6,12,4,6,2,1,0,45
+"Journey","arithmetic.addition.g05.l01",5,1,"Penjumlahan",2,1,14,12,14,14,0,0,0,150
+"Journey","arithmetic.addition.g03.l01",3,1,"Penjumlahan",3,2,22,12,22,22,0,0,1,235
+"Contexts","Kelas","Level","Operasi","Mode","Respons pertama benar","Jumlah respons pertama","Dengan petunjuk","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Contexts",4,1,"Penjumlahan","Latihan",0,6,0,6,0,6,0,0,0,0,0,100
+"Contexts",3,1,"Pengurangan","Latihan",5,6,1,6,6,0,0,0,0,100,100,100
+"Contexts",5,1,"Penjumlahan","Latihan",14,14,0,14,14,0,0,0,0,100,100,100
+"Contexts",3,1,"Penjumlahan","Latihan",22,22,0,22,22,0,0,0,0,100,100,100

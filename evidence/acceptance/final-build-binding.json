@@ -1,0 +1,152 @@
+{
+  "status": "PASS",
+  "offline_release": "47c1663e7ea2fa9c",
+  "dist_tree_sha256": "08cac7c52d13761fffb67a2b45fd082fd3fc0c86883b6e02b912315cf7994314",
+  "observed_assertions": 775,
+  "receipts": {
+    "evidence/acceptance/browser-data.json": {
+      "sha256": "36d7b3414f9e7a86ba370b6084f72437a02323923f2b9c45bdfa5b136f840f3e",
+      "checks": 11,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/acceptance/browser-faults.json": {
+      "sha256": "b82293d843b0445836d2ecda2b869e06d6f4458b2ddfc875b851ad08d524ea63",
+      "checks": 3,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/acceptance/browser-journeys.json": {
+      "sha256": "f1baea566532238d3e6a36f96cee9c50df3a007cfab5842f20a7a32eb173b07b",
+      "checks": 26,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/acceptance/browser-layout.json": {
+      "sha256": "d1b021432ae2046267f7223f780a364992ab4673135eea2f8f9bbcd2affd36d9",
+      "checks": 105,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/acceptance/browser-offline.json": {
+      "sha256": "2e13c57e803633cf62f8f62502498ac9de9ea0f8ae5f88973a90d5b0b9bf67f5",
+      "checks": 7,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/acceptance/browser-performance.json": {
+      "sha256": "311372306dfee42aa2a54e692cdcd91722e9b4cef26c78b6113fac6b030b0891",
+      "checks": 7,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/acceptance/browser-semantics.json": {
+      "sha256": "b22550a53b5459018661f6eab298c8d6909413b7631e28301fd68927643eecd3",
+      "checks": 90,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/acceptance/browser-teacher.json": {
+      "sha256": "5d0a1e8df8867ff21c9b9692c8bdbae50bad007ffcb2169602f9cf1466029fec",
+      "checks": 13,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/ux/acceptance/browser-data-ux.json": {
+      "sha256": "0d8ac2f0dbd80f0eb33a46d956b6666d03bb46650385fd4ce843dcf4f47360b9",
+      "checks": 20,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/ux/acceptance/browser-perf-ux.json": {
+      "sha256": "50f18769b1be8bc2ca3cdf719459e36241224e0580cc0f6a8fd37ecbf8d89b90",
+      "checks": 0,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/ux/acceptance/browser-player-ux.json": {
+      "sha256": "d1da0603598ed2c9e95a1bcf8dd0ac8de9309ac7e21a07f7848c67cbd59a6a52",
+      "checks": 25,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/ux/acceptance/browser-reflow-ux.json": {
+      "sha256": "066b36fafaddfcec75a95e386ad2e516f15cd893d0139c9d3a03633db48ff37d",
+      "checks": 144,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/ux/acceptance/browser-school-ux.json": {
+      "sha256": "5ca75109bea1081ddfb5de990850d553b487bfec973919c78b357211aa70125c",
+      "checks": 13,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/ux/acceptance/browser-shell-ux.json": {
+      "sha256": "46613eac3ba0769a196fc66c93f98864b48b40e829e7265259840ea5cd649773",
+      "checks": 15,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/ux/acceptance/browser-visual-ux.json": {
+      "sha256": "14f87fdeaf8c7d30c080b21627413ab8a8542a1c8545df007c963bd111b49730",
+      "checks": 192,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/v12/browser-chromium.json": {
+      "sha256": "8b3cf2c113c72a6192da3b5681c2b2d03bb92d596fb4b8b23aa9d5b04ddac323",
+      "checks": 14,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/v12/browser-firefox.json": {
+      "sha256": "aac258dae7bf8c9599ddf5c006f02b573463646ab779f41d23ba2c9ed222a802",
+      "checks": 14,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/v12/browser-webkit.json": {
+      "sha256": "42b3d2e7d1a27529a20d991d846e56a464a23648ccf6e628a84e511306a2ffc7",
+      "checks": 14,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/v12/cross/firefox/browser-data.json": {
+      "sha256": "e781f8e9f7ecb78e41b9bbbd9e22d0b1e58d5a6cfab2465fd4a5136acd5ca6b2",
+      "checks": 11,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/v12/cross/firefox/browser-offline.json": {
+      "sha256": "0595b4534553509d80defc9b6f4ca2332584c9bdc696208178c8b36301ac762b",
+      "checks": 7,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/v12/cross/firefox/browser-teacher.json": {
+      "sha256": "df63a3ae1cb84d53bd730a40b47776636c64ae9a54dc6435b09124579c1c0a1e",
+      "checks": 13,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/v12/cross/webkit/browser-data.json": {
+      "sha256": "dabcbf77430de69358243b4887010468b80ec35c9f95199232a3fd58e646abe4",
+      "checks": 11,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/v12/cross/webkit/browser-offline.json": {
+      "sha256": "9d42af8a5cfbda42b124b939308cbd64f027329bf24aebb6e49c43c2292d679c",
+      "checks": 7,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    },
+    "evidence/v12/cross/webkit/browser-teacher.json": {
+      "sha256": "f7b10247473e3a9f01a889693cf3728be42528370d79f445129232d77f0ca3fa",
+      "checks": 13,
+      "failures": [],
+      "build": "47c1663e7ea2fa9c"
+    }
+  }
+}

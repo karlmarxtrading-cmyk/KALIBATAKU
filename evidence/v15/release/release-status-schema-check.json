@@ -1,0 +1,12 @@
+{
+  "scope": "release-status-1.5.schema.json in source, final dist unaffected",
+  "offline_release": "460c98b682110f7e",
+  "checks": {
+    "valid_current_phase_counts": "PASS",
+    "missing_phase_rejected": "PASS",
+    "invalid_state_rejected": "PASS",
+    "negative_count_rejected": "PASS",
+    "missing_state_rejected": "PASS",
+    "unknown_top_level_rejected": "PASS"
+  }
+}

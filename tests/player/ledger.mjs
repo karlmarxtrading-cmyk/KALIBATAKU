@@ -1,0 +1,58 @@
+// Cross the real bank, player, schema validator, ledger and mock bridge boundaries.
+// Node uses the store's explicit temporary engine; IndexedDB browser tests run separately.
+import assert from 'node:assert/strict';
+import {readFileSync,writeFileSync} from 'node:fs';
+import {activeScope,saveAttempt,getAttempt,listEvents,selectScope} from '../../src/data/store.js';
+import {exportBackup,previewBackup} from '../../src/data/backup.js';
+import {adapterFor,listOutbox,syncPending} from '../../src/data/sync.js';
+import {start} from '../../src/player/start.mjs';
+import {begin,visit,editDraft,submit,clearResponse,finish} from '../../src/player/engine.mjs';
+
+const root=new URL('../../dist/',import.meta.url);
+globalThis.document={baseURI:root.href};
+globalThis.location=new URL(root.href);
+globalThis.fetch=async u=>new Response(readFileSync(new URL(u)),{status:200});
+const scope=activeScope(),opts={grade:1,level:1,operation:'ADD',mode:'assessment'};
+const ctx={lang:'en',signal:new AbortController().signal};
+const first=await start(ctx,opts);
+const a=await getAttempt(first,scope);
+await saveAttempt(a,begin(a),scope);
+visit(a,0);editDraft(a,0,'999');await saveAttempt(a,submit(a,0),scope);
+editDraft(a,0,a.items[0].question.answer.numerator);await saveAttempt(a,submit(a,0),scope);
+visit(a,1);await saveAttempt(a,clearResponse(a,1,true),scope);
+visit(a,2);await saveAttempt(a,clearResponse(a,2),scope);
+await saveAttempt(a,finish(a),scope);
+assert.deepEqual([a.metrics.N,a.metrics.C,a.metrics.W,a.metrics.S,a.metrics.B,a.metrics.U],[10,1,0,1,1,7]);
+assert.equal((await listOutbox(scope)).length,0);
+const ledger=await listEvents(first,scope);
+assert.equal(ledger.at(-1).payload.expected_event_count,ledger.length);
+assert.equal(ledger.at(-1).payload.final_responses[0].response_event_id,ledger[2].event_id);
+assert.deepEqual(ledger.map(e=>e.event_sequence),[1,2,3,4,5]);
+assert.ok(ledger.every(e=>e.provenance.data_origin==='local_practice'));
+const backup=await exportBackup(scope);
+const preview=await previewBackup(backup);
+assert.equal(preview.conflicts.length,0);assert.equal(preview.additions,0);
+const idB=await start(ctx,opts),b=await getAttempt(idB,scope);
+assert.notEqual(b.form_id,a.form_id);assert.equal(b.assessment_cycle_id,a.assessment_cycle_id);
+
+const simulation={origin:'demo',environment:'demo',profileId:'synthetic-student'};
+selectScope(simulation);
+const assignment={...opts,mode:'practice',assignment_id:'QA-assignment',question_count:2};
+const id=await start(ctx,assignment);
+assert.equal(id,await start(ctx,assignment));
+const demo=await getAttempt(id,simulation);
+await saveAttempt(demo,begin(demo),simulation);
+editDraft(demo,0,demo.items[0].question.answer.numerator);
+await saveAttempt(demo,submit(demo,0),simulation);visit(demo,1);
+await saveAttempt(demo,clearResponse(demo,1,true),simulation);
+await saveAttempt(demo,finish(demo),simulation);
+const sync=await syncPending(simulation),box=await listOutbox(simulation);
+assert.equal(sync.sent,4);assert.equal(sync.state,'mock_accepted');assert.equal(box.length,4);
+assert.ok(box.every(x=>x.grading_state==='unverified'&&x.state==='mock_accepted'));
+const mon=await adapterFor(simulation).getProgress();
+assert.equal(mon.items[0].attempt_id,id);
+assert.equal(mon.items[0].assignment_id,'QA-assignment');
+assert.ok(!(await getAttempt(id,scope)));assert.equal((await listOutbox(scope)).length,0);
+const report={runtime:process.version,storage:'explicit temporary adapter in Node; native IndexedDB tested by browser suites',actual_form_A:a.form_id,actual_form_B:b.form_id,local_ledger_event_count:ledger.length,local_aggregate:{N:a.metrics.N,C:a.metrics.C,W:a.metrics.W,S:a.metrics.S,B:a.metrics.B,U:a.metrics.U},local_backup_duplicates:preview.duplicates,local_outbox:0,demo_outbox:box.length,demo_accepted:sync.sent,mock_grading:box[0].grading_state,assignment_preserved:true,other_profile_cannot_read:true,status:'PASS'};
+writeFileSync(new URL('../../evidence/player/ledger.json',import.meta.url),JSON.stringify(report,null,2)+'\n');
+console.log(report);

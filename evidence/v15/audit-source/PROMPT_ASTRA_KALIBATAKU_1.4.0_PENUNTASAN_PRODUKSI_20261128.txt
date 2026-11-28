@@ -1,0 +1,258 @@
+MULAI PROMPT
+
+PENUNTASAN KALIBATAKU MENUJU PRODUKSI
+Untuk ChatGPT Work dengan Astra dan penalaran Sangat Tinggi
+Dasar pekerjaan: source KALIBATAKU 1.4.0 dan audit 28 November 2026.
+
+1. MANDAT DAN HASIL YANG SAYA MINTA
+
+Kerjakan implementasi, perbaikan, pengujian, pengemasan, dan verifikasi KALIBATAKU sampai seluruh persyaratan produksi yang disepakati benar-benar terpenuhi. Target saya adalah website selesai dan siap produksi dengan bukti yang dapat diperiksa.
+
+Saya meminta tindakan pada source aplikasi. Lanjutkan dari pekerjaan yang sudah ada; pertahankan perbaikan yang benar, selesaikan cacat yang tersisa, dan temukan regresi yang berkaitan. Jangan menutup pekerjaan dengan rencana, audit ulang saja, mockup, daftar saran, atau janji akan melanjutkan.
+
+Tujuan produk tetap:
+- Mental math kalibataku dengan tingkat kesulitan bertahap dan alasan perkembangan yang jelas.
+- Navigasi siswa berbentuk petualangan yang mudah dimulai dan dilanjutkan.
+- Sesi latihan terasa seperti permainan yang fokus: soal, jawaban, OKE, feedback, Lanjut.
+- Seluruh bank, kunci, hint, langkah, representasi matematika dan fungsi evaluasi dipertahankan.
+- Bilingual ID/EN, tema terang/gelap, responsif, aksesibilitas, offline, backup/restore, serta laporan guru tetap berfungsi.
+
+Hasil akhir utama adalah satu ZIP lengkap yang memuat source, dist siap dipublikasikan, bank utuh, pengujian, bukti aktual, register penerimaan, dan panduan GitHub menuju Cloudflare Pages. Gunakan status rilis yang sesuai bukti. Nama berkas atau banyaknya tes tidak boleh dipakai untuk mengesankan pekerjaan selesai ketika gate wajib masih terbuka.
+
+2. INPUT WAJIB DAN CARA MEMULAI
+
+Gunakan berkas berikut dari lampiran atau berkas yang sudah tersedia dalam sesi:
+
+A. Source aplikasi:
+KALIBATAKU_ADVENTURE_SOURCE_DIST_BANK_EVIDENCE.zip
+SHA-256: 86b030e3196cbf2116ce37bad3a6b7bcb350eadee4d1931cff8ba7bcf094046d
+Aplikasi 1.4.0; bank 1.2.0; baseline 6.074 berkas.
+
+B. Paket audit terbaru:
+KALIBATAKU_1.4.0_AUDIT_PRODUKSI_DAN_TEMUAN_20261128.zip
+
+C. Laporan utama:
+KALIBATAKU_1.4.0_LAPORAN_AUDIT_20261128.pdf
+Laporan 17 halaman; salinannya juga tersedia dalam paket audit.
+
+Kode implementasi berada pada ZIP source A. Pastikan source, dist dan bank lengkap tersedia sebelum mengedit. Gunakan kembali salinan atau akses berkas yang sudah diberikan. Jika belum terlihat, cari berkas yang sudah diotorisasi melalui kemampuan yang tersedia. Jika source benar-benar tidak tersedia, sebutkan nama berkas yang diperlukan; jangan merekonstruksi aplikasi dari laporan atau berpura-pura telah mengeditnya.
+
+Ekstrak secara aman, simpan baseline tanpa perubahan, dan kerjakan salinan terisolasi. Catat identitas input, versi, inventaris dan hash. Jika hash berbeda karena pengguna memberi revisi lebih baru, selidiki dan dokumentasikan perbedaannya; jangan menimpa revisi tersebut dengan baseline lama.
+
+Baca seluruh dokumen inti berikut dalam paket audit:
+- 00_BUKA_LAPORAN.html dan 01_LAPORAN_AUDIT.pdf.
+- 02_TEMUAN_BARU_DAN_PRIORITAS.csv.
+- 03_REVIEW_71_KRITERIA.csv.
+- 04_STATUS_16_TEMUAN_LAMA.csv.
+- 05_ARAHAN_PERBAIKAN_DAN_RILIS.txt.
+- 06_RINGKASAN_AUDIT.json.
+- Bukti relevan di 07_BUKTI dan petunjuk serta probe di 08_REPRODUKSI.
+
+Baca pula package.json, kontrak journey/data/ekspor, spesifikasi kurikulum, register, keputusan desain, konfigurasi rilis, serta protokol eksternal dalam source. Gunakan instruksi proyek yang berlaku. Jika persyaratan bertentangan, catat dan selesaikan konflik secara eksplisit tanpa menurunkan tujuan pengguna atau melewati batas izin.
+
+3. CARA KERJA: TERUSKAN PEKERJAAN SAMPAI TUNTAS
+
+Saya mengizinkan perubahan source lokal, refactor yang diperlukan, perbaikan UI/UX, metadata petualangan, validator, pengujian dan dokumentasi dalam lingkup ini. Ambil keputusan implementasi rutin secara mandiri. Tidak perlu meminta persetujuan ulang untuk rencana, pergantian tahap, atau perbaikan lokal yang sudah saya minta.
+
+Jangan membuat jeda percakapan untuk menanyakan apakah perlu melanjutkan. Tetap berikan pembaruan kemajuan yang ringkas. Simpan progres, keputusan, perintah yang telah dijalankan, hasil, blocker dan tindakan berikutnya secara berkala dalam berkas agar pekerjaan dapat dilanjutkan tanpa mengulang tahap yang sudah selesai.
+
+Jika delegasi tersedia, bagi pekerjaan independen antara progresi, offline/UI, data/laporan dan verifikasi. Gunakan penanggung jawab integrasi serta tinjauan silang; jangan membiarkan beberapa agen menimpa file yang sama tanpa koordinasi.
+
+Ketiadaan perangkat fisik, Word, peserta pilot atau domain tidak boleh menghentikan pekerjaan kode yang dapat diselesaikan. Selesaikan seluruh pekerjaan independen, siapkan kandidat konkret beserta bukti, lalu ajukan hanya kebutuhan eksternal yang masih benar-benar diperlukan. Jangan menggunakan ketiadaan akses sebagai alasan untuk berhenti setelah perencanaan.
+
+Gunakan otorisasi yang sudah ada untuk tindakan eksternal. Bila publikasi, perubahan DNS, biaya, tindakan destruktif, atau akses baru masih membutuhkan persetujuan, siapkan hasil yang dapat ditinjau terlebih dahulu dan mintalah persetujuan spesifik pada tahap yang tepat. Jangan menghubungi peserta atau pihak lain tanpa izin. Patuhi batas akses dan jangan mengklaim kemampuan atau pengujian yang tidak tersedia.
+
+4. KONTRAK YANG HARUS DIPERTAHANKAN
+
+- Semua 4.677 berkas bank lama tetap byte-identik terhadap baseline. Semua 4.604 paket dan 177.640 penempatan soal tetap tersedia; 281 kompetensi aktif dan 19 nonaktif dipertahankan sesuai kontrak.
+- Jangan mengubah AST, kunci, hint, langkah, ID, revisi, terjemahan atau versi konten bank untuk menutup masalah alur. Metadata sidecar dan kebijakan petualangan boleh diperbaiki serta diberi versi baru. Jika ditemukan cacat konten yang benar-benar membutuhkan perubahan bank, sajikan kasusnya sebagai keputusan tersendiri; jangan mengeditnya diam-diam.
+- Jangan menghapus node sulit, mengurangi target strategi tanpa dasar, menganggap semua node siap, membocorkan materi assessment formal, atau mengunduh seluruh bank untuk membuat tes lulus.
+- Satu attempt tetap mengikuti kontrak provenance yang didukung. Pertahankan aturan satu paket per attempt yang ada; perubahan kontrak lebih luas harus mempunyai kebutuhan, migrasi, kompatibilitas dan pengujian yang lengkap.
+- Pertahankan riwayat dan snapshot lama. Jangan mengubah jawaban, first response, bantuan, revisi, waktu atau hasil historis secara diam-diam ketika kebijakan baru diperkenalkan. Snapshot ongoing tidak boleh diacak ulang atau diganti.
+- Selesai, siap lanjut menurut kebijakan produk, penguasaan formal dan XP tetap berbeda. Revisi setelah melihat kunci tidak menjadi jawaban pertama mandiri.
+- Identitas profil lokal, data demo dan integrasi server dibedakan. Jangan menambah backend, akun wajib, biaya, leaderboard publik atau layanan pihak ketiga tanpa kebutuhan dan otorisasi yang sesuai.
+
+5. TUTUP AUD-01: KEBUNTUAN PROGRESI G12L1MUL
+
+Fakta baseline: arithmetic.multiplication.g12.l01 membutuhkan DS dan PO. Sebanyak 700 penempatan yang tersedia pada intro/core/apply sebelum ready hanya berisi DS. Satu-satunya PO dalam teaching pool berada pada review: MM-G12-L01-MUL-P017, indeks 16. Jalur normal membutuhkan ready sebelum menawarkan jenis misi yang dapat memilih PO. Reproduksi 38/38 jawaban pertama benar mandiri tetap menghasilkan strategi 1/2 dan ready=false.
+
+Perbaiki akar ketergantungan melingkar. Selector dan resolver harus mengetahui kebutuhan strategi/cakupan yang belum terpenuhi serta menyediakan bahan yang sah untuk memenuhinya. Jika review dipakai sebagai penguatan sebelum ready, tetapkan transisi, alasan dan batasnya secara eksplisit. Jangan mengandalkan peluang acak tanpa batas untuk strategi langka.
+
+Syarat penutupan:
+- Kasus G12L1MUL mencapai kesiapan melalui jalur default dengan engine dan bank asli; pengguna tidak perlu keluar ke katalog manual.
+- Semua 281 node diperiksa secara struktural dan semantik: syarat kesiapan benar-benar dapat dicapai dari materi yang dapat dipilih pada saat dibutuhkan.
+- Tetapkan batas kemajuan yang beralasan dari kebijakan dan pool; simulasikan permainan sempurna untuk menguji batas tersebut. Tidak cukup membuktikan bahwa strategi ada di suatu file atau bahwa beberapa seed kebetulan berhasil.
+- Pool kecil, overlap, review, strategi langka, node awal/akhir dan prasyarat memiliki perilaku yang jujur; materi evaluasi formal tetap terpisah.
+- UI menunjukkan syarat yang masih kurang dan arah berikutnya secara mudah dipahami.
+
+Mulai dari src/journey/model.mjs, tools/build-journey.py, src/journey/ui.mjs, route dan occurrence terkait. Gunakan probe-engine-cases.mjs dan verify-occurrences.py sebagai bukti baseline; tambahkan regresi penerimaan yang mengharapkan perilaku benar.
+
+6. TUTUP AUD-02: KESIAPAN OFFLINE YANG KELIRU
+
+Fakta baseline: paket teaching P001 yang dipasang melalui katalog tanpa occurrence shard ditandai siap tetapi gagal JOURNEY_LOAD; assessment-only P003 dengan shard juga ditandai siap tetapi gagal NO_MATERIAL. Kontrol teaching package yang eligible beserta shard berhasil.
+
+Buat satu kontrak kemampuan offline yang dipakai peta, tindakan unduh/perbaikan dan pembuat misi. Pemeriksaan harus mencakup dependensi yang diperlukan, versi/hash yang sesuai serta paket eligible bagi jenis misi. Bedakan terkunci prasyarat, belum diunduh, instalasi tidak lengkap dan siap dimainkan.
+
+Syarat penutupan:
+- Catalogue-only tanpa shard dan assessment-only tidak diberi klaim siap teaching mission.
+- Dependensi hilang atau tidak sesuai versi menghasilkan status serta tindakan pemulihan yang tepat.
+- Instalasi yang lengkap tetap dikenali siap; jangan menyelesaikan bug dengan selalu menyatakan offline tidak tersedia.
+- Pengguna dapat memperbaiki instalasi katalog lama ketika online tanpa kehilangan progres.
+- Uji kedua pintu instalasi, katalog dan peta, pada browser context baru: reload, putus jaringan, mulai, jawab, feedback, resume dan finalisasi.
+- Snapshot ongoing yang sudah lengkap tetap dapat dilanjutkan sesuai kontraknya meskipun paket untuk misi baru membutuhkan perbaikan.
+- Tidak ada prefetch seluruh bank atau hilangnya paket yang masih diperlukan sesi aktif.
+
+Mulai dari src/journey/ui.mjs, src/journey/journey.mjs, src/data/offline.js dan kebijakan cache/service worker. Probe-offline-readiness.mjs adalah bukti fungsi Node; lengkapi dengan pengujian browser sebenarnya.
+
+7. TUTUP AUD-03: PILIHAN TITIK MULAI DIABAIKAN
+
+Fakta baseline: profil kosong dengan S-G05-L01 memilih intro G5L1ADD. Setelah intro G1L1ADD completed dengan 0/6, pilihan yang sama tetap diarahkan ke reinforcement G1L1ADD.
+
+Hormati intent titik mulai terbaru pada rekomendasi berikutnya. Definisikan kapan intent berlaku atau dianggap telah dipakai. Gunakan identitas/revisi intent yang stabil; jangan bergantung hanya pada jam perangkat yang bisa berubah atau memiliki timestamp sama.
+
+Uji profil kosong, intro completed, misi gagal/not-ready, node ready, sesi ongoing, reload setelah perubahan, dan isolasi profil. Pilihan baru harus bertahan dengan benar. Riwayat tidak boleh dihapus, skor lama tidak berubah dan sesi aktif tidak diam-diam ditimpa. Jika ada sesi aktif, jelaskan tindakan melanjutkan sesi dan kapan titik mulai baru digunakan.
+
+Mulai dari nextMission, penyimpanan start point dan alur UI pemilih tahap. Regresi harus mempunyai riwayat nyata; tes dengan attempts kosong saja tidak menutup kasus ini.
+
+8. TUTUP AUD-04: PETA DAN LAPORAN BERBEDA KESIAPAN
+
+Fakta baseline: latihan non-journey P002 diikuti intro dan dua regular P001 menghasilkan empat snapshot normal valid. Peta menghitung cakupan 12/12, passing 2, ready=true; JSON guru menghitung cakupan 10/12 dan ready=false. Peta sudah maju ke pengurangan.
+
+Gunakan perhitungan kesiapan bersama dengan scope, kebijakan dan batas waktu yang eksplisit. Pertahankan kontribusi latihan non-journey yang memang sah menurut kebijakan. Jangan membuat kedua sisi sama-sama false atau menghapus riwayat untuk menyembunyikan perbedaan.
+
+Syarat penutupan:
+- Fixture audit menghasilkan coverage 12, passing 2 dan ready=true pada peta serta JSON aktual melalui buildSnapshot -> encode -> parse.
+- Uji journey-only, campuran latihan, bantuan, revisi setelah kunci, laporan berperiode, batas as-of dan snapshot dengan versi kebijakan lama.
+- Pisahkan metrik aktivitas periode dari kesiapan kumulatif. Kesiapan pada akhir periode memakai riwayat relevan sampai batas waktu tersebut, bukan hanya sesi yang terlihat dalam filter daftar.
+- Jika kebijakan terkini dan hasil historis sama-sama ditampilkan, beri semantik serta label yang jelas; jangan menghitung ulang hasil lama secara diam-diam.
+- Periksa nilai yang sama pada PDF, DOCX, XLSX, CSV dan JSON. Membuka file saja belum membuktikan isinya benar. Render rumus di Word tetap membutuhkan bukti aplikasi sasaran.
+
+Mulai dari src/journey/model.mjs, src/journey/report.mjs, src/teacher/report.js dan jalur ekspor. Gunakan journey_report_consistency.mjs sebagai fixture baseline.
+
+9. TUTUP AUD-05: VALIDASI RESTORE JOURNEY
+
+Fakta baseline: reader, preview dan commit JSON/ZIP menerima empat mutasi metadata dengan checksum valid: node G12L5 untuk soal G3L1, referensi paket/indeks mustahil, aturan readiness negatif, dan selected_occurrence_refs kosong untuk delapan item. Hasil restore memengaruhi rekomendasi dan laporan.
+
+Tambahkan validator journey berversi yang dipakai kedua format. Periksa keterkaitan node/kompetensi/kelas/level, jenis misi, peran/band, domain readiness, jumlah dan kesamaan referensi selected dengan item, serta package/content/question/revision sesuai kontrak.
+
+Syarat penutupan:
+- Empat mutasi audit ditolak sebelum commit parsial pada JSON maupun ZIP; preview dan pesan kesalahan sesuai.
+- Snapshot dan backup valid tetap roundtrip, termasuk data 1.3 tanpa journey.
+- Versi journey yang tidak dikenal tidak dianggap otomatis valid untuk kesiapan atau rekomendasi. Tetapkan kebijakan aman yang jelas tanpa membuang arsip pengguna.
+- Bedakan validasi konsistensi internal yang dapat dilakukan offline dari pembuktian provenance terhadap manifest/paket tepercaya ketika tersedia.
+- Jangan mewajibkan internet atau seluruh bank terpasang untuk sekadar memulihkan backup valid. Jika provenance historis belum dapat diverifikasi, nyatakan statusnya dan atur pemakaiannya secara eksplisit; jangan melewati pemeriksaan semantik.
+- Buktikan atomisitas, isolasi profil dan tidak berubahnya data lama ketika import ditolak.
+
+Mulai dari src/data/snapshot-check.js dan src/data/backup.js. Gunakan probe-contract-boundaries.mjs, negative tests serta kontrol valid. Checksum saja tidak membuktikan metadata konsisten.
+
+10. TUTUP AUD-06: BATAS JSON DAN FALLBACK RECOVERY
+
+Fakta baseline: 100.001 record kecil dapat diekspor menjadi JSON 7.967.175 byte, tetapi readBackup menolaknya. ZIP data yang sama berhasil. Recovery 100.003 record gagal tanpa menghasilkan fallback ZIP.
+
+Selaraskan batas writer-reader pada format yang sama, mencakup jumlah record dan ukuran byte. JSON dan ZIP boleh mempunyai kapasitas berbeda sesuai kontrak. Pastikan pemeriksaan dilakukan sebelum UI mengklaim cadangan siap; recovery harus beralih ke ZIP ketika salah satu batas JSON tidak mencukupi.
+
+Uji tepat 100.000 dan 100.001 record, batas byte termasuk UTF-8, campuran attempts/events/records, serta recovery draft/ongoing pada kasus 100.003 record. Verifikasi output yang diunduh melalui preview dan restore, bukan hanya pembuatan Blob.
+
+Pertahankan kontrol ZIP data yang sama, regresi 150.000 record dan guard STORED sebelum body dibaca. Jangan menghapus format JSON, menurunkan kapasitas ZIP, menangkap semua error sebagai sukses, atau menaikkan konstanta tanpa pembuktian kapasitas untuk menutupi masalah.
+
+11. TUTUP AUD-07 DAN SELARASKAN SELURUH REGISTER
+
+Koreksi UX-09 menjadi BLOCKED sampai bukti ponsel fisik tersedia. Tes Tab/fokus desktop tetap berguna pada cakupannya; itu bukan pengganti keyboard virtual Android/iOS. Pisahkan koreksi register yang bisa dilakukan sekarang dari penutupan uji perangkat yang membutuhkan pelaksanaan nyata.
+
+Penutupan UX-09 memerlukan portrait/landscape dengan keyboard sistem terbuka, Input/OKE/feedback/Lanjut tetap dapat digunakan, draft dan final commit benar, serta identitas perangkat/OS/browser/build tercatat. REL-04 tidak boleh PASS ketika status register tidak sesuai bukti.
+
+Pertahankan seluruh 71 baris, persyaratan, metode dan fase asli dalam jejak audit. Buat register hasil baru yang menautkan AUD-ID, perubahan, regresi, bukti dan hash build. Jangan menurunkan atau menghapus syarat untuk menaikkan jumlah PASS. Bedakan namespace AC:* dari TEMUAN:*.
+
+Dasar koreksi minimum audit:
+- FAIL_TERBUKTI: AC:PROG-05, PROG-10, DATA-06, DATA-08, OFF-04, TEACH-02, REL-04.
+- BLOCKED: AC:UX-09 sampai pengujian fisiknya benar-benar dilakukan.
+- Perlu penutupan cakupan: PROG-01, PROG-03, OFF-01, A11Y-02.
+
+Untuk PROG-01, buktikan kemajuan permainan selain graf tanpa siklus. Untuk PROG-03, definisikan bucket setara dan fallback yang sah, periksa seluruh node/jenis misi, serta catat alasan variasi; jangan menyebut band heuristik sebagai kesulitan empiris. Untuk OFF-01, uji semua pintu instalasi yang didukung. Untuk A11Y-02, masukkan peta baru dalam pengujian teks besar/zoom yang sesuai.
+
+PASS_PAKET_TIDAK_DISANGGAH pada audit berarti belum ditemukan counterexample dalam cakupannya, bukan sertifikasi ulang yang boleh disalin begitu saja ke build baru.
+
+12. TUNTASKAN PENGALAMAN PRODUK
+
+Saya memberi keleluasaan memperbaiki UI/UX sampai layak digunakan siswa dan guru, dengan tetap menjaga kontrak di atas. Selesaikan keluhan nyata: terlalu banyak keputusan awal, urutan terasa acak, sesi rumit, dan arah berikutnya tidak jelas.
+
+Pastikan:
+- Pengguna lama mempunyai aksi utama untuk melanjutkan sesi atau misi yang tepat; pengguna baru dapat mulai dasar dengan sedikit tindakan.
+- Peta memiliki alternatif daftar yang setara; status terbuka, terkunci prasyarat, belum diunduh, selesai dan siap lanjut jelas.
+- Setiap state pemain mempunyai satu tindakan utama yang sesuai. Sesudah OKE, jawaban siswa dan kunci terlihat; penjelasan asli tetap dapat dibuka.
+- Practice berakhir melalui satu final commit yang benar, lalu ringkasan dan tindakan berikutnya. Evaluasi formal tetap mematuhi aturan pembukaan kunci dan form A/B.
+- Input pecahan/desimal, IME, Enter/klik ganda, bahasa, tema, rotasi, jeda dan reload tidak merusak jawaban, fokus, urutan atau hasil.
+- Penguatan menunjukkan kebutuhan yang spesifik; kesalahan tidak menghabiskan kesempatan belajar. Timer/nyawa tidak mengunci materi wajib; reward tidak menyamar sebagai nilai akademik.
+- Kontrol siswa fokus; fungsi guru/ekspor dapat ditemukan pada pintu yang tepat.
+- Loading, empty, error, offline, gagal simpan dan pemulihan mempunyai tindakan yang jelas.
+
+Pertahankan pemuatan sesuai kebutuhan. Jangan mengganti pekerjaan ini dengan penambahan animasi, ornamen game atau fitur besar yang tidak menyelesaikan masalah navigasi dan belajar.
+
+13. PENGUJIAN, BUKTI DAN INTEGRASI
+
+Reproduksi baseline dari salinan kerja; simpan probe dan hasil historis tanpa menimpanya. Penting: beberapa probe audit keluar dengan kode 0 ketika berhasil menunjukkan bug. Setelah bug hilang, probe tersebut dapat keluar nonzero. Karena itu jangan menggunakan aturan “semua probe exit 0” sebagai penerimaan produk.
+
+Tambahkan regresi resmi dengan ekspektasi benar dari kontrak dan fixture. Untuk cacat fungsi, tunjukkan kasus yang gagal pada baseline lalu lulus pada perbaikan, beserta kontrol positif. Jangan membuat fungsi produksi menjadi oracle tunggal bagi dirinya sendiri, mengembalikan konstanta sebagai tes batas, atau menganggap keberadaan field/file sebagai bukti semantik.
+
+Periksa script serta dependensi proyek dan jalankan pipeline yang sesuai, termasuk:
+- npm run check
+- npm test
+- npm run curriculum:check
+- npm run build
+- npm run qa:production
+- npm run release:verify
+- Suite browser, ekspor, archive/cache, provenance, migrasi dan regresi baru yang relevan.
+
+Ikuti urutan ketergantungan pipeline; regenerasi metadata, manifest, register dan binding melalui proses yang benar. Catat runtime aktual. Baseline audit memakai Node v24.22.3/Python 3.12.14; gunakan lingkungan yang kompatibel dengan kontrak proyek, bukan mengarang hasil dari lingkungan lain.
+
+Verifikasi dua clean build sesuai kriteria reproducibility. Pastikan dist yang dikemas sama dengan dist yang diuji. Konfirmasi bank tetap identik dan semua occurrence tetap valid. Jalankan regresi backup lama, restore atomik, isolasi profil, dua tab, double finalization, draft, update/offline dan snapshot historis yang terkena perubahan.
+
+Untuk tiap bukti, catat command/metode, waktu, runtime/perangkat, expected, actual, status, log atau artefak, serta build hash. Bedakan bukti Node, browser, emulasi, perangkat fisik, review manusia dan field measurement. Receipt lama boleh disimpan sebagai sejarah; jangan dipromosikan menjadi hasil baru tanpa dasar.
+
+Lakukan tinjauan akhir terhadap correctness, data, UI/aksesibilitas, aset/dependensi, CSP/headers, ekspor, cache dan operasi sesuai arsitektur aplikasi. Perbaiki temuan baru yang memengaruhi gate. Setelah risiko konkret dan gate terpenuhi, lanjutkan ke pengemasan; jangan mengulang tes tanpa tujuan.
+
+14. SELESAIKAN VALIDASI EKSTERNAL YANG DIPERLUKAN
+
+Jalankan yang benar-benar tersedia dan diotorisasi. Jika lingkungan mengizinkan pemasangan dependency/browser yang diperlukan, lakukan secara wajar; jangan menyebut BLOCKED sebelum memeriksa kemampuan yang relevan. Jika tetap terhalang, catat penyebab aktual dan lanjutkan pekerjaan independen.
+
+Persyaratan terbuka dari audit:
+- BANK-07: review manusia atas 394 template pada urutan baru, lengkap dengan penelaah, kasus batas, keputusan dan tindak lanjut.
+- DEVICE-01: Chromium, Firefox dan WebKit pada build akhir; DEVICE-02/03: Android dan iPhone/iPad fisik.
+- A11Y-04: ujaran aktual NVDA, VoiceOver dan TalkBack untuk rumus, status, feedback dan error ID/EN.
+- TEACH-03: persamaan DOCX terlihat benar di Microsoft Word sasaran.
+- PILOT-01/02/03: 12 siswa dan 3 guru, hasil tugas nyata, perbaikan dan retest. Target yang disepakati: minimal 11/12 siswa mulai dan lanjut tanpa arahan filter, 3/3 guru membedakan respons mandiri/revisi, tanpa kegagalan kritis.
+- REL-02/03: domain akhir menyajikan artefak yang benar serta update/rollback nyata dengan data dan tab lintas versi.
+- PERF-03: data p75 lapangan pada fase SETELAH_PILOT sesuai target register.
+
+Analisis AI boleh menyiapkan bahan review, protokol, fixture, formulir dan interpretasi. Jangan mengisi nama reviewer manusia, mensimulasikan peserta sebagai orang nyata, menganggap viewport sebagai perangkat fisik, XML DOCX sebagai render Word, DOM sebagai ujaran pembaca layar, atau metrik lab sebagai data lapangan.
+
+Ketika izin dan akses domain tersedia, gunakan kandidat yang telah terverifikasi untuk memeriksa HTTPS, route, 404, MIME, headers, subpath, versi/hash, cache/offline, update dan rollback. Ikuti target repo/domain yang diberikan; jangan memilih target publik sendiri. Publikasikan hanya isi yang memang dimaksudkan sebagai website. Bukti, fixture, backup dan data pribadi tidak ikut menjadi aset publik.
+
+15. ATURAN GO, HASIL AKHIR DAN CARA MELAPOR
+
+Seluruh 70 kriteria WAJIB harus memiliki bukti yang sesuai sebelum GO produksi. Tidak boleh ada cacat penerimaan wajib atau temuan kritis baru yang belum ditutup. Semua 16 temuan lama dan AUD-01 sampai AUD-07 harus mempunyai keputusan yang dapat ditelusuri; koreksi pencatatan tidak otomatis berarti uji perangkat selesai.
+
+PERF-03 tetap fase SETELAH_PILOT. Laporkan sesuai fase dan data sebenarnya. Jangan memindahkannya menjadi gate pra-pilot secara diam-diam, tetapi jangan mengklaim seluruh 71 kriteria atau “100% semua fase terverifikasi” ketika data lapangan belum tersedia. Jelaskan cakupan GO yang dapat dibuktikan.
+
+Jika semua pekerjaan yang dapat dikerjakan sudah selesai tetapi bukti eksternal masih kurang, serahkan kandidat lengkap, hasil implementasi dan bukti aktual dengan status HOLD yang tepat. Nyatakan secara terpisah kesiapan kode, penerimaan produk dan verifikasi deployment. Berikan satu daftar kebutuhan eksternal yang spesifik: gate, kebutuhan, pihak/perangkat/akses, prosedur siap jalan dan lokasi pencatatan. Pertahankan hasil sehingga penutupan berikutnya tidak mengulang perbaikan yang sudah terverifikasi.
+
+Paket akhir wajib mencakup:
+- Source lengkap, dist, bank utuh, metadata journey, konfigurasi, tools dan tests.
+- 00_MULAI_DI_SINI.html atau .txt yang menjelaskan versi, status, cara menjalankan, menguji dan mempublikasikan.
+- CHANGELOG dan keputusan desain/migrasi yang memengaruhi perilaku atau kompatibilitas.
+- REGISTER_AC_FINAL.csv untuk seluruh 71 kriteria, dengan metode, lingkungan, actual result, evidence dan build hash.
+- REGISTER_PENUTUPAN_AUD.csv: AUD-ID -> akar masalah -> file perubahan -> regresi -> hasil -> bukti -> status.
+- Peninjauan 16 temuan lama dengan namespace yang tidak tercampur.
+- RELEASE_STATUS.json, manifest SHA-256, inventaris source/dist/bank dan identitas offline release.
+- Bukti baru yang terikat build final, hasil sebelum/sesudah, log dan petunjuk reproduksi.
+- Panduan GitHub -> Cloudflare Pages, publish directory dist, build command dan runtime aktual, verifikasi domain, backup, restore, update, rollback serta known limitations.
+
+Tetapkan versi aplikasi dan kebijakan berdasarkan perubahan; jangan mengubah versi bank tanpa otorisasi konten. Gunakan nama ZIP yang jujur terhadap status. Jangan memakai label FINAL_PRODUCTION_READY apabila gate wajib masih tertahan.
+
+Periksa ZIP akhir dari ekstraksi bersih: source/build berjalan, manifest benar, bukti ditemukan, link panduan valid dan direktori publikasi jelas. Hindari cache kerja, dependency unduhan yang tidak perlu, kredensial, data peserta asli dan backup pribadi. Simpan hasil akhir sebagai berkas yang dapat saya unduh, bukan hanya path sementara atau klaim telah membuat ZIP.
+
+Jawaban akhir harus memuat tautan ZIP, versi dan keputusan rilis; tabel penutupan AUD-01 sampai AUD-07; jumlah/status seluruh kriteria sesuai fase; bukti bank tetap utuh dan build dapat direproduksi; hasil pengujian aktual; serta kebutuhan eksternal yang tersisa jika ada. Jelaskan perubahan yang benar-benar dibuat. Jangan menyatakan sesuatu sudah diuji, dipublikasikan atau selesai tanpa bukti.
+
+Mulai sekarang: baca input, reproduksi kasus yang diperlukan, implementasikan perbaikan, integrasikan, uji, perbaiki regresi, bangun ulang, selesaikan validasi yang tersedia, dan serahkan paket lengkap. Teruskan seluruh pekerjaan yang dapat diselesaikan sampai tuntas tanpa meminta persetujuan tahap demi tahap.
+
+AKHIR PROMPT

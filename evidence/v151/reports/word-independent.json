@@ -1,0 +1,57 @@
+{
+  "file_level": "PASS",
+  "target_word_render": "NOT_RUN",
+  "release": "ef0b6798d9633ca8",
+  "reader": "Python 3.12.14 zipfile and ElementTree",
+  "method": "Verified six file hashes, inspected native OMML numerator/denominator order and expression tokens for two synthetic DOCX files.",
+  "documents": [
+    {
+      "file": "fixture-pecahan.docx",
+      "sha256": "2a8cd8bc1b78eae98bc61959038a069bd72eeae2286209c56601f9361f13c5bf",
+      "equations": [
+        [
+          "11/12",
+          "+",
+          "10/12"
+        ],
+        [
+          "7/4"
+        ],
+        [
+          "99"
+        ],
+        [
+          "21/12"
+        ]
+      ]
+    },
+    {
+      "file": "fixture-kurung-minus.docx",
+      "sha256": "c7ec693615803679c1045a0799ca4a93644504aebc6067c7d03002c94694903f",
+      "equations": [
+        [
+          "(",
+          "−25/24",
+          "×",
+          "2/5",
+          "+",
+          "5/5",
+          ")",
+          "×",
+          "16",
+          "÷",
+          "2"
+        ],
+        [
+          "14/3"
+        ],
+        [
+          "99"
+        ],
+        [
+          "14/3"
+        ]
+      ]
+    }
+  ]
+}

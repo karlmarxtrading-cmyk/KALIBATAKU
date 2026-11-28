@@ -1,0 +1,292 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kalibataku-mental-math@1.5.0 test
+> python3 tools/project.py test
+
++ node tests/player/run.mjs --evidence
+TC-120 PASS
+TC-121 PASS
+TC-122 PASS
+TC-123 PASS
+TC-124 PASS
+TC-125 PASS
+TC-126 PASS
+TC-127 PASS
+TC-128 PASS
+TC-145 PASS
+TC-146 PASS
+TC-147 PASS
+TC-148 PASS
+TC-149 PASS
+TC-150 PASS
+TC-151 PASS
+TC-152 PASS
+TC-154 PASS
++ node tests/player/ledger.mjs
+{
+  runtime: 'v24.22.3',
+  storage: 'explicit temporary adapter in Node; native IndexedDB tested by browser suites',
+  actual_form_A: 'MM-G01-L01-ADD-P003.A',
+  actual_form_B: 'MM-G01-L01-ADD-P004.B',
+  local_ledger_event_count: 5,
+  local_aggregate: { N: 10, C: 1, W: 0, S: 1, B: 1, U: 7 },
+  local_backup_duplicates: 7,
+  local_outbox: 0,
+  demo_outbox: 4,
+  demo_accepted: 4,
+  mock_grading: 'unverified',
+  assignment_preserved: true,
+  other_profile_cannot_read: true,
+  status: 'PASS'
+}
++ node tests/data/contract.mjs
+20/20
++ node tests/teacher/exports.mjs
+Teacher report and batch assertions passed.
++ node tests/ui/catalog-and-tokens.mjs --evidence
+{
+  "scope": "Static catalogue routing, locale resources, real stylesheet token checks. Browser accessibility observations are separate.",
+  "checks": [
+    {
+      "name": "catalogue resolves every pack and active competency from a nested path",
+      "status": "PASS",
+      "grades": 12,
+      "levels": 60,
+      "active": 281,
+      "disabled": 19,
+      "packages": 4604,
+      "slots": 177640,
+      "distinct_metadata_requests": 73,
+      "question_packs_imported": 0
+    },
+    {
+      "name": "invalid grade, level, pack and external paths do not open new resources",
+      "status": "PASS",
+      "invalid_selections": 5,
+      "invalid_paths": 5
+    },
+    {
+      "name": "separately loadable shell locale dictionaries have matching labels and sizes",
+      "status": "PASS",
+      "matching_keys": 197,
+      "direct_call_keys": 104,
+      "gzip_id": 3596,
+      "gzip_en": 3497
+    },
+    {
+      "name": "theme and custom illustration token contrast from actual stylesheet",
+      "status": "PASS",
+      "pairs": 30,
+      "measured": {
+        "light": {
+          "text/surface": 14.88,
+          "textMuted/canvas": 6.05,
+          "onPrimary/primary": 7.89,
+          "successText/successBg": 5.95,
+          "warningText/warningBg": 6.08,
+          "errorText/errorBg": 5.93,
+          "infoText/infoBg": 7.47,
+          "borderControl/canvas": 3.88,
+          "focusRing/surface": 6.79,
+          "hero-soft/hero": 8.5,
+          "hero-text/hero": 11.45,
+          "ink/amber": 7.31,
+          "tile-a-ink/tile-a": 6.22,
+          "tile-b-ink/tile-b": 5.1,
+          "tile-c-ink/tile-c": 5.69
+        },
+        "dark": {
+          "text/surface": 13.58,
+          "textMuted/canvas": 9.91,
+          "onPrimary/primary": 9.04,
+          "successText/successBg": 7.68,
+          "warningText/warningBg": 9.02,
+          "errorText/errorBg": 7.95,
+          "infoText/infoBg": 8.36,
+          "borderControl/canvas": 5.65,
+          "focusRing/surface": 9.12,
+          "hero-soft/hero": 8.5,
+          "hero-text/hero": 11.45,
+          "ink/amber": 7.31,
+          "tile-a-ink/tile-a": 7.3,
+          "tile-b-ink/tile-b": 7.51,
+          "tile-c-ink/tile-c": 7.88
+        }
+      }
+    }
+  ]
+}
++ node tests/upgrade/restore.mjs
+PASS: Original export restored without network; both snapshots, revisions and five events survived the upgrade.
++ node tests/player/ux-domain.mjs
+18 player domain/ledger scenarios passed
++ node tests/bank/snapshot_upgrade.mjs
+Old draft restored and scored from its original snapshot; new session uses the new revision. Eight locale/input combinations accepted.
+Snapshot upgrade, re-export and input-guide checks passed.
++ node tests/upgrade/verified-package.mjs
+PASS package integrity and abort checks: MM-G01-L01-ADD-P001
++ node tests/data/ux-contract.mjs
+Pending draft rescue validates and restores the original owner with the exact event ledger PASS
+Raw session and report JSON rejected with actionable distinct types PASS
+Index migration, filtered paging, isolated delete and concurrent change guard across 5000 sessions PASS
+First start moves chrono index without duplicating a preflight attempt PASS
+Transfer plan counts remaining shell, selected shard and pack once PASS
+Session delivery tracks last correlated ACK, queued events, denied access and scoped retry time separately PASS
+Service worker excludes incomplete pack caches and falls back only to a complete shell revision during interruption PASS
++ node tests/ui/session-plan.mjs --evidence
+{
+  "status": "PASS",
+  "binding": {
+    "release": "460c98b682110f7e",
+    "files": {
+      "player/start.mjs": "8b6bd71d950e6b646dfa6dcea72d908916a7b66074f03f7981b0ee894d48785c",
+      "core/catalog.mjs": "c95762c234dca7245612ab15b8ff76a2f160fb9882f4872833a732ac9192a3ca",
+      "core/material.mjs": "c4ed6e756992cf1196bb4467892ee9f5e257b74591541e2c86a8adde7823dfd4",
+      "core/home.mjs": "354cf9eb9c8eac6bd19519095969c1497fd27056214ed93065e1243efcb59271",
+      "core/package-data.mjs": "5be0038636376840128302b2d2085a9ece01f1a45c908cf96899b062736934cb",
+      "bank/index.json": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+    }
+  },
+  "runtime": "v24.22.3",
+  "storage": "Node temporary store",
+  "test": "tests/ui/session-plan.mjs",
+  "modes": {
+    "practice": 3,
+    "recovery": 1,
+    "speed": 1,
+    "adaptive": 1,
+    "assessment": 2
+  },
+  "cases": [
+    {
+      "mode": "practice",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.2.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 2,
+      "attempt_count": 2,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "practice",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.2.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 1,
+      "attempt_count": 1,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "practice",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.2.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 1,
+      "attempt_count": 1,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "recovery",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.2.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 2,
+      "attempt_count": 2,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "speed",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.2.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 2,
+      "attempt_count": 2,
+      "duration": 120,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "adaptive",
+      "purpose": "consolidate",
+      "form_id": null,
+      "version": "1.2.0",
+      "package": "MM-G01-L01-ADD-P002",
+      "displayed_count": 2,
+      "attempt_count": 2,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "assessment",
+      "purpose": "assessment",
+      "form_id": "MM-G01-L01-ADD-P003.A",
+      "version": "1.2.0",
+      "package": "MM-G01-L01-ADD-P003",
+      "displayed_count": 10,
+      "attempt_count": 10,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "assessment",
+      "purpose": "assessment",
+      "form_id": "MM-G01-L01-ADD-P004.B",
+      "version": "1.2.0",
+      "package": "MM-G01-L01-ADD-P004",
+      "displayed_count": 10,
+      "attempt_count": 10,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    }
+  ],
+  "similar_items": [
+    {
+      "source_final_status": "incorrect",
+      "source_question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+      "variant_question_id": "arithmetic.addition.g01.l01.e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+      "source_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+      "variant_fingerprint": "e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+      "template": "MM-TPL-G01-L01-ADD-BASE",
+      "scope_owner": true
+    },
+    {
+      "source_final_status": "correct",
+      "source_question_id": "arithmetic.addition.g01.l01.118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+      "variant_question_id": "arithmetic.addition.g01.l01.e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+      "source_fingerprint": "118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+      "variant_fingerprint": "e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+      "template": "MM-TPL-G01-L01-ADD-BASE",
+      "scope_owner": true
+    }
+  ],
+  "scope_and_preferences": [
+    "legacy unowned study grade ignored",
+    "per-profile topic isolation",
+    "removal clears last topic",
+    "switching profile blocks a prepared session"
+  ],
+  "bounds": [
+    "count exceeds pool rejected",
+    "empty recovery rejected",
+    "ID/EN pluralization"
+  ],
+  "limitations": "Tests run the exported resolver and commit, not physical input, actual assistive technology or a user study."
+}
++ node tests/teacher/ux-evidence.mjs
+12 teacher domain checks passed.

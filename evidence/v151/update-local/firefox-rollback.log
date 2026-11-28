@@ -1,0 +1,2 @@
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.
+PASS local update and rollback, 12 observations 460c98b682110f7e ef0b6798d9633ca8

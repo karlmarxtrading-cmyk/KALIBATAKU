@@ -1,0 +1,104 @@
+{
+  "started": "2026-11-28T09:09:46.590697+00:00",
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "firefox-map-native-zoom",
+  "scope": "Native per-host desktop Firefox full zoom, isolated test profile on localhost",
+  "checks": [
+    {
+      "id": "native-map-400pct",
+      "expected": "With the same 1280-px window, native 4x zoom yields a 320 CSS-px viewport; the map fits and keyboard activation starts a real mission.",
+      "status": "PASS",
+      "actual": {
+        "before": {
+          "css_viewport": 1280,
+          "scroll_width": 1280,
+          "root_px": 16,
+          "actions": [
+            {
+              "name": "Arti status",
+              "left": 86.55000305175781,
+              "right": 1193.4500274658203
+            },
+            {
+              "name": "Simpan misi untuk offline",
+              "left": 113.14999389648438,
+              "right": 352.1666717529297
+            },
+            {
+              "name": "Kelola penyimpanan offline",
+              "left": 352.16668701171875,
+              "right": 550.3166809082031
+            },
+            {
+              "name": "Mainkan · Penjumlahan · Pasangan bilangan sampai 5",
+              "left": 129.9499969482422,
+              "right": 229.39999389648438
+            },
+            {
+              "name": "Tampilkan semua 60 tahap",
+              "left": 85.75,
+              "right": 329.3500061035156
+            },
+            {
+              "name": "Ubah titik mulai",
+              "left": 338.95001220703125,
+              "right": 455.9666748046875
+            }
+          ]
+        },
+        "after": {
+          "css_viewport": 320,
+          "scroll_width": 320,
+          "root_px": 16,
+          "actions": [
+            {
+              "name": "Arti status",
+              "left": 16.800003051757812,
+              "right": 303.1999969482422
+            },
+            {
+              "name": "Simpan misi untuk offline",
+              "left": 33,
+              "right": 272.01666259765625
+            },
+            {
+              "name": "Kelola penyimpanan offline",
+              "left": 33,
+              "right": 217.78334045410156
+            },
+            {
+              "name": "Mainkan · Penjumlahan · Pasangan bilangan sampai 5",
+              "left": 52.19999694824219,
+              "right": 151.64999389648438
+            },
+            {
+              "name": "Tampilkan semua 60 tahap",
+              "left": 16,
+              "right": 259.6000061035156
+            },
+            {
+              "name": "Ubah titik mulai",
+              "left": 16,
+              "right": 125.14999389648438
+            }
+          ],
+          "used_map_action_to_start_mission": true
+        },
+        "site_full_zoom": 4.0
+      }
+    }
+  ],
+  "runtime": {
+    "browser": "firefox",
+    "version": "153.0"
+  },
+  "status": "PASS",
+  "assertions": 1,
+  "finished": "2026-11-28T09:09:54.681899+00:00",
+  "build": {
+    "app_version": "1.5.0",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "460c98b682110f7e"
+  }
+}

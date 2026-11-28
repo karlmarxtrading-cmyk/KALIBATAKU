@@ -1,0 +1,8 @@
+# Catatan pemeriksaan mandiri — 28 November 2026
+
+ZIP kandidat awal memiliki SHA-256 `e61b032a091bda4e0867c15c3001e802bf808372f6dcee7ada073daefa21f534`. SHA-256 ZIP audit adalah `e51a9e9baf6069a6c9de06acca2456c2bfb59f59151535772ea233e5d4011cfb`. Identitas ini mengacu pada dua masukan asli. Rincian indeks, arsip dan daftar digest tersimpan di direktori yang sama.
+
+- Baseline. Seluruh 6.372 entri kandidat dan 139 entri audit dapat dibaca hingga verifikasi CRC. Isi 4.604 modul paket menghasilkan 177.640 penempatan soal. Katalog berisi 281 simpul aktif, 19 nonaktif, dan 394 keluarga template unik. Manifest bank mencatat 4.677 berkas dan 351.242.395 byte.
+- Pengembangan. Fixture historis berasal langsung dari ZIP audit. Evaluasi 1, 7 dan 10 fingerprint unik menggabungkan catatan dilihat per soal. Oracle kalender Python membandingkan 448 representasi timestamp dengan modul produksi. Uji CacheStorage lokal menggunakan isi paket nyata; hasil pada browser dan perangkat berada pada pemeriksaan masing-masing.
+- Sebelum penyegelan. `bank-and-history.json` memuat selisih per berkas dibandingkan dengan baseline, serta identitas distribusi pada waktu pemeriksaan. `runtime-and-deploy.json` mencantumkan runtime yang digunakan, paket QA terpasang dan ruang lingkup publikasi.
+- Sesudah penyegelan. Pemeriksa membuka ZIP akhir pada direktori baru, mencocokkan nama, digest dan inventaris, kemudian membangun ulang produk. Pemeriksaan HTTP memakai server lokal pada akar dan subjalur. Receipt disimpan di luar ZIP agar digest ZIP akhir dapat dicatat. Verifikasi operator domain, retest perangkat dan pilot memerlukan rekaman lapangan dari pihak yang berwenang.

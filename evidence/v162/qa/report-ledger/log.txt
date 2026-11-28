@@ -1,0 +1,21 @@
+fraction-ledger PASS
+fraction-json PASS
+fraction-csv PASS
+fraction-xlsx PASS
+fraction-docx PASS
+fraction-pdf PASS
+convert /tmp/kalibataku-ledger-hnbo5lm2/fraction/report.docx as a Writer document -> /tmp/kalibataku-ledger-hnbo5lm2/fraction/rendered/report.pdf using filter : writer_pdf_Export
+fraction-libreoffice PASS
+fraction-reject-key PASS
+fraction-reject-period PASS
+grouped-ledger PASS
+grouped-json PASS
+grouped-csv PASS
+grouped-xlsx PASS
+grouped-docx PASS
+grouped-pdf PASS
+convert /tmp/kalibataku-ledger-hnbo5lm2/grouped/report.docx as a Writer document -> /tmp/kalibataku-ledger-hnbo5lm2/grouped/rendered/report.pdf using filter : writer_pdf_Export
+grouped-libreoffice PASS
+grouped-reject-key PASS
+grouped-reject-period PASS
+report-ledger: PASS · 18 assertions · 0 failed []

@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": [
+    "schema",
+    "app_version",
+    "profile",
+    "profile_version",
+    "offline_release",
+    "bank_version",
+    "source_tree_sha256",
+    "dist_tree_sha256",
+    "profile_sha256",
+    "registry_sha256",
+    "mapping_sha256",
+    "history_index_sha256",
+    "findings_sha256",
+    "artifact_status",
+    "deployment_status",
+    "binding_sha256",
+    "tested_utc",
+    "runtime",
+    "suite_count",
+    "assertions",
+    "gates",
+    "issues",
+    "local_hosting",
+    "provider_preview"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "minLength": 1
+    },
+    "app_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "profile": {
+      "type": "string",
+      "minLength": 1
+    },
+    "profile_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "offline_release": {
+      "type": "string",
+      "minLength": 1
+    },
+    "bank_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_tree_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "dist_tree_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "profile_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "registry_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "mapping_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "history_index_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "findings_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "artifact_status": {
+      "enum": [
+        "ARTIFACT_READY",
+        "HOLD"
+      ]
+    },
+    "deployment_status": {
+      "enum": [
+        "NOT_DEPLOYED",
+        "PENDING_ACCESS",
+        "LIVE_PRODUCTION_VERIFIED"
+      ]
+    },
+    "binding_sha256": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "tested_utc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "runtime": {
+      "type": "object"
+    },
+    "suite_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "assertions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "phase",
+          "applicability",
+          "status",
+          "expected",
+          "observed",
+          "evidence",
+          "suites"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "phase": {
+            "enum": [
+              "PACKAGE",
+              "DEPLOYMENT",
+              "OPTIONAL_COMPATIBILITY",
+              "POST_RELEASE"
+            ]
+          },
+          "applicability": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "PASS",
+              "FAIL",
+              "BLOCKED",
+              "NOT_RUN"
+            ]
+          },
+          "expected": {
+            "type": "string",
+            "minLength": 1
+          },
+          "observed": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "suites": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "additionalProperties": false
+      },
+      "minItems": 26,
+      "maxItems": 26
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "local_hosting": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "BLOCKED",
+        "NOT_RUN"
+      ]
+    },
+    "provider_preview": {
+      "enum": [
+        "PASS",
+        "PENDING_ACCESS",
+        "NOT_DEPLOYED"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

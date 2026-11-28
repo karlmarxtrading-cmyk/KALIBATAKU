@@ -1,0 +1,305 @@
+{
+  "artifact_status": "handoff_design_decisions_not_empirical_validation",
+  "version": "1.0.0",
+  "created_on": "2026-11-25",
+  "change_policy": "New implementation decisions must preserve source history, explain impacts and update every affected contract, consumer and acceptance case.",
+  "decisions": [
+    {
+      "decision_id": "DEC-001",
+      "category": "SCOPE",
+      "decision": "Paket saat ini adalah spesifikasi dan prompt eksekusi, sedangkan website dan bank massal dihasilkan pada pelaksanaan berikutnya.",
+      "rationale": "Permintaan terbaru menyebut empat jenis arahan/dokumen; mencegah dokumen dianggap aplikasi siap dijalankan.",
+      "references": [
+        "00_MULAI_DI_SINI.md",
+        "03_PROMPT_EKSEKUSI_CHATGPT_WORK.txt"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-002",
+      "category": "SCOPE",
+      "decision": "Seluruh kelas 1–12, lima level per kelas, 281 kategori kompetensi aktif dan 19 nonaktif dipertahankan.",
+      "rationale": "Menjaga cakupan kurikulum sumber dan identitas kompetensi.",
+      "references": [
+        "02_PRD_MASTER.md",
+        "planning/competency_plan.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-003",
+      "category": "CURRICULUM",
+      "decision": "Gunakan registry 1.0.0-draft.2 dengan hanya empat koreksi contoh terdokumentasi; sumber asli tetap utuh.",
+      "rationale": "Seluruh kunci asli benar secara hitung; empat contoh tidak memenuhi aturan level.",
+      "references": [
+        "08_AUDIT_KURIKULUM_DAN_KEPUTUSAN.md",
+        "curriculum/ERRATA_APPLIED.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-004",
+      "category": "BANK",
+      "decision": "Rencana kapasitas 4.604 paket/177.640 slot bukan jumlah soal unik atau bank yang sudah dihasilkan.",
+      "rationale": "Pool kecil memerlukan pengulangan lintas paket dan ukuran unik yang dilaporkan terpisah.",
+      "references": [
+        "05_BANK_SOAL_FACTORY.md",
+        "planning/package_plan.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-005",
+      "category": "BANK",
+      "decision": "Tidak ada duplikasi kanonik dalam satu paket; pengulangan lintas paket dan overlap form dilaporkan.",
+      "rationale": "Melindungi pengukuran jumlah butir unik dan evidence mastery dari inflasi.",
+      "references": [
+        "05_BANK_SOAL_FACTORY.md",
+        "09_METRIK_DAN_LAPORAN.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-006",
+      "category": "BANK",
+      "decision": "Deviasi kapasitas hanya sah bila dibuktikan oleh pool/domain, bukan keterbatasan waktu pelaksana.",
+      "rationale": "Target lengkap perlu dapat diaudit tanpa meminta butir matematika yang tidak mungkin tersedia.",
+      "references": [
+        "05_BANK_SOAL_FACTORY.md",
+        "06_ACCEPTANCE_QA_DAN_RILIS.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-007",
+      "category": "MATH",
+      "decision": "Simpan nilai rational eksak dengan BigInt/string, AST whitelist dan representasi tampilan terpisah.",
+      "rationale": "Mencegah galat floating-point dan penghitungan operator pecahan literal sebagai operator MIX.",
+      "references": [
+        "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+        "schemas/core.schema.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-008",
+      "category": "MATH",
+      "decision": "Semua solution_steps versi kontrak pertama berupa equivalent_expression atas keseluruhan ekspresi.",
+      "rationale": "Memungkinkan seluruh langkah diverifikasi mempunyai nilai yang sama tanpa tafsir component step yang ambigu.",
+      "references": [
+        "05_BANK_SOAL_FACTORY.md",
+        "schemas/README.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-009",
+      "category": "INPUT",
+      "decision": "Gunakan type=text; separator locale ketat; denominator positif; tidak ada grouping/formula; format error bukan jawaban salah.",
+      "rationale": "Pecahan, bilangan negatif dan desimal dua bahasa memerlukan grammar yang tegas.",
+      "references": [
+        "02_PRD_MASTER.md",
+        "qa/answer_cases.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-010",
+      "category": "INPUT",
+      "decision": "Draft assessment terbaru yang invalid memblokir finalisasi hingga diperbaiki atau secara eksplisit dikosongkan.",
+      "rationale": "Jawaban yang dinilai harus sesuai keadaan yang ditampilkan, bukan nilai valid lama yang tidak terlihat.",
+      "references": [
+        "09_METRIK_DAN_LAPORAN.md",
+        "qa/analytics_cases.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-011",
+      "category": "UX",
+      "decision": "Bahasa awal Indonesia, tema awal system; preferensi tersimpan mengalahkan default.",
+      "rationale": "Memberikan awal yang konsisten dengan pengguna sasaran dan menjaga kendali pengguna.",
+      "references": [
+        "01_ARAHAN_UI_UX.md",
+        "ui/design-tokens.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-012",
+      "category": "UX",
+      "decision": "Alih bahasa mempertahankan state; draft invalid tetap mempunyai draft_locale sampai sah atau kosong.",
+      "rationale": "Mencegah perubahan arti desimal, jawaban dan timer pada pergantian bahasa.",
+      "references": [
+        "01_ARAHAN_UI_UX.md",
+        "02_PRD_MASTER.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-013",
+      "category": "UX",
+      "decision": "Nama dan catatan bebas tidak diterjemahkan otomatis; semua teks sistem dan report template bilingual.",
+      "rationale": "Mempertahankan makna data pengguna sekaligus melengkapi lokalisasi produk.",
+      "references": [
+        "01_ARAHAN_UI_UX.md",
+        "09_METRIK_DAN_LAPORAN.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-014",
+      "category": "PERFORMANCE",
+      "decision": "Lazy-load konten/mesin berat berdasarkan kebutuhan; commit jawaban tetap langsung dan tidak didebounce.",
+      "rationale": "Mengurangi biaya awal tanpa kehilangan klik pertama, jawaban atau kemajuan.",
+      "references": [
+        "01_ARAHAN_UI_UX.md",
+        "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-015",
+      "category": "MODES",
+      "decision": "Lima mode tetap Practice, Speed, Assessment, Adaptive dan Recovery; diagnostik adalah tujuan assessment.",
+      "rationale": "Mencegah duplikasi mode yang tidak mempunyai perilaku jelas.",
+      "references": [
+        "02_PRD_MASTER.md",
+        "03_PROMPT_EKSEKUSI_CHATGPT_WORK.txt"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-016",
+      "category": "TIMING",
+      "decision": "Deadline Speed terus berjalan saat hidden; pilihan tanpa batas berpindah ke Practice dengan materi sama.",
+      "rationale": "Menghindari bonus waktu dari perpindahan tab dan tetap memberi jalur latihan tanpa batas.",
+      "references": [
+        "01_ARAHAN_UI_UX.md",
+        "09_METRIK_DAN_LAPORAN.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-017",
+      "category": "MASTERY",
+      "decision": "Mastery memakai siklus maksimum 60 hari dan jarak default 24 jam yang dapat dikonfigurasi serta dicatat versinya.",
+      "rationale": "Kebijakan produk internal yang eksplisit; bukan norma usia atau hasil pilot.",
+      "references": [
+        "planning/mastery_policy.json",
+        "09_METRIK_DAN_LAPORAN.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-018",
+      "category": "MASTERY",
+      "decision": "Evidence memakai respons final tanpa feedback pada kemunculan eligible pertama fingerprint dalam siklus; skip/blank/unseen tidak benar.",
+      "rationale": "Membedakan revisi assessment sah dari retry dan menjaga denominator utuh.",
+      "references": [
+        "09_METRIK_DAN_LAPORAN.md",
+        "qa/analytics_cases.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-019",
+      "category": "MASTERY",
+      "decision": "Setelah penguatan tercatat dan retest eksplisit, buka siklus baru dengan dua attempt/form instance baru; form A/B boleh dipakai kembali.",
+      "rationale": "Kesalahan lama tidak mengunci perbaikan selamanya; histori, exposure dan overlap tetap terlihat.",
+      "references": [
+        "02_PRD_MASTER.md",
+        "planning/mastery_policy.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-020",
+      "category": "MASTERY",
+      "decision": "Periksa mastery per kompetensi; seluruh level hanya dikuasai bila seluruh kompetensi aktif memenuhi syarat.",
+      "rationale": "Skor tinggi pada operasi lain atau target individual tidak boleh menutupi kompetensi belum dikuasai.",
+      "references": [
+        "09_METRIK_DAN_LAPORAN.md",
+        "06_ACCEPTANCE_QA_DAN_RILIS.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-021",
+      "category": "DATA",
+      "decision": "Canonical data_origin: local_practice, demo atau lms_client; nama adapter terpisah dari provenance.",
+      "rationale": "Mencegah data simulasi atau data dari klien berubah menjadi rekam resmi hanya karena transportnya berbeda.",
+      "references": [
+        "schemas/core.schema.json",
+        "schemas/README.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-022",
+      "category": "DATA",
+      "decision": "Local adapter tidak membuat outbox server; mock/remote membuat outbox atomik bersama event dan snapshot.",
+      "rationale": "Tidak ada status pending palsu ketika server belum dikonfigurasi.",
+      "references": [
+        "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md",
+        "schemas/BRIDGE_API_CONTRACT.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-023",
+      "category": "BRIDGE",
+      "decision": "Satu attempt per batch; partial ACK per event; ID/hash sama saat retry; receipt transport terpisah dari grading.",
+      "rationale": "Mengatasi kehilangan respons jaringan, duplikasi dan identitas attempt tanpa menghapus event yang belum diterima.",
+      "references": [
+        "schemas/BRIDGE_API_CONTRACT.md",
+        "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-024",
+      "category": "BRIDGE",
+      "decision": "Remote tidak terkonfigurasi gagal secara eksplisit; mock selalu unverified; otoritas resmi tetap di server.",
+      "rationale": "Menyiapkan migrasi LMS tanpa mengarang bahwa monitoring lintas perangkat sudah hidup.",
+      "references": [
+        "02_PRD_MASTER.md",
+        "04_ARSITEKTUR_STATIC_DAN_BRIDGE_LMS.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-025",
+      "category": "REPORT",
+      "decision": "PDF, DOCX, XLSX, CSV, JSON dan ZIP batch wajib berupa berkas asli dari ReportSnapshot yang sama.",
+      "rationale": "Laporan parents meeting dan audit harus konsisten dengan dashboard serta dapat diperiksa isinya.",
+      "references": [
+        "09_METRIK_DAN_LAPORAN.md",
+        "06_ACCEPTANCE_QA_DAN_RILIS.md"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-026",
+      "category": "RELEASE",
+      "decision": "Pisahkan enam status readiness; LMS live ditunda menurut scope, pilot dan deployment tidak diklaim tanpa bukti.",
+      "rationale": "Dokumen, kontrak dan hasil lab tidak dapat menggantikan aplikasi, server, perangkat nyata atau pilot.",
+      "references": [
+        "06_ACCEPTANCE_QA_DAN_RILIS.md",
+        "schemas/release-status.schema.json"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    },
+    {
+      "decision_id": "DEC-027",
+      "category": "OPERATIONS",
+      "decision": "Output aplikasi kelak memuat source, dist, factory, bank aktual, evidence, lockfile dan checksum.",
+      "rationale": "Pengguna dapat membangun ulang, memeriksa, menambah konten dan melakukan deploy tanpa kehilangan sumber.",
+      "references": [
+        "07_DEPLOY_OPERASIONAL.md",
+        "03_PROMPT_EKSEKUSI_CHATGPT_WORK.txt"
+      ],
+      "status": "ADOPTED_FOR_HANDOFF"
+    }
+  ]
+}

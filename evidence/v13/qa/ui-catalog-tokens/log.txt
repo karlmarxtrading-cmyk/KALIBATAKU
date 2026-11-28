@@ -1,0 +1,72 @@
+{
+  "scope": "Static catalogue routing, locale resources, real stylesheet token checks. Browser accessibility observations are separate.",
+  "checks": [
+    {
+      "name": "catalogue resolves every pack and active competency from a nested path",
+      "status": "PASS",
+      "grades": 12,
+      "levels": 60,
+      "active": 281,
+      "disabled": 19,
+      "packages": 4604,
+      "slots": 177640,
+      "distinct_metadata_requests": 73,
+      "question_packs_imported": 0
+    },
+    {
+      "name": "invalid grade, level, pack and external paths do not open new resources",
+      "status": "PASS",
+      "invalid_selections": 5,
+      "invalid_paths": 5
+    },
+    {
+      "name": "separately loadable shell locale dictionaries have matching labels and sizes",
+      "status": "PASS",
+      "matching_keys": 197,
+      "direct_call_keys": 103,
+      "gzip_id": 3596,
+      "gzip_en": 3497
+    },
+    {
+      "name": "theme and custom illustration token contrast from actual stylesheet",
+      "status": "PASS",
+      "pairs": 30,
+      "measured": {
+        "light": {
+          "text/surface": 14.88,
+          "textMuted/canvas": 6.05,
+          "onPrimary/primary": 7.89,
+          "successText/successBg": 5.95,
+          "warningText/warningBg": 6.08,
+          "errorText/errorBg": 5.93,
+          "infoText/infoBg": 7.47,
+          "borderControl/canvas": 3.88,
+          "focusRing/surface": 6.79,
+          "hero-soft/hero": 8.5,
+          "hero-text/hero": 11.45,
+          "ink/amber": 7.31,
+          "tile-a-ink/tile-a": 6.22,
+          "tile-b-ink/tile-b": 5.1,
+          "tile-c-ink/tile-c": 5.69
+        },
+        "dark": {
+          "text/surface": 13.58,
+          "textMuted/canvas": 9.91,
+          "onPrimary/primary": 9.04,
+          "successText/successBg": 7.68,
+          "warningText/warningBg": 9.02,
+          "errorText/errorBg": 7.95,
+          "infoText/infoBg": 8.36,
+          "borderControl/canvas": 5.65,
+          "focusRing/surface": 9.12,
+          "hero-soft/hero": 8.5,
+          "hero-text/hero": 11.45,
+          "ink/amber": 7.31,
+          "tile-a-ink/tile-a": 7.3,
+          "tile-b-ink/tile-b": 7.51,
+          "tile-c-ink/tile-c": 7.88
+        }
+      }
+    }
+  ]
+}

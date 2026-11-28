@@ -1,0 +1,133 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "documents-reopened",
+  "scope": "Report files re-read by independent parsers and renderers",
+  "build": {
+    "offline_release": "ef0b6798d9633ca8",
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "started": "2026-11-28T10:43:05Z",
+  "finished": "2026-11-28T10:43:06Z",
+  "assertions": 7,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "docx-omml",
+      "status": "PASS",
+      "expected": "DOCX holds editable OMML fractions 11/12, 10/12 and key 7/4",
+      "actual": [
+        [
+          "11",
+          "12"
+        ],
+        [
+          "10",
+          "12"
+        ],
+        [
+          "7",
+          "4"
+        ],
+        [
+          "21",
+          "12"
+        ]
+      ]
+    },
+    {
+      "id": "xlsx-reopen",
+      "status": "PASS",
+      "expected": "XLSX re-opens; Math sheet has key 7/4 and responses 99 → 21/12; Family keeps the expression",
+      "actual": {
+        "sheets": [
+          "Summary",
+          "Competencies",
+          "Operations",
+          "Sessions",
+          "Dictionary",
+          "Metadata",
+          "Notes",
+          "Math",
+          "Family",
+          "Journey",
+          "Contexts"
+        ],
+        "math_row": [
+          "local_practice",
+          "c10511b8-21d6-4b6d-87b2-44f4e87d4f5c",
+          "11/12 + 10/12",
+          "7",
+          "4",
+          "99",
+          "21/12"
+        ]
+      }
+    },
+    {
+      "id": "csv-reopen",
+      "status": "PASS",
+      "expected": "CSV parses and keeps the expression and raw response",
+      "actual": {
+        "rows": 88
+      }
+    },
+    {
+      "id": "json-reopen",
+      "status": "PASS",
+      "expected": "JSON parses with exact key and the after-key flag",
+      "actual": {
+        "keys": [
+          "activeNotes",
+          "appendix",
+          "change_pp",
+          "competencies",
+          "completed",
+          "content_versions",
+          "contexts",
+          "core",
+          "counts",
+          "filters",
+          "firstDifficulty",
+          "journey"
+        ]
+      }
+    },
+    {
+      "id": "pdf-vector-text",
+      "status": "PASS",
+      "expected": "Vector PDF text holds the labels and every number; no word leaves the page",
+      "actual": {
+        "pages": 2,
+        "words": 236
+      }
+    },
+    {
+      "id": "docx-render-layout",
+      "status": "PASS",
+      "expected": "LibreOffice renders the DOCX; prose and labels stay on the page",
+      "actual": {
+        "pages": 1,
+        "renderer": "LibreOfficeDev 26.8.0.0.alpha0 2c87e51eeaa2b413ff4ae097b2705eea1995d8e5"
+      }
+    },
+    {
+      "id": "docx-render-equations",
+      "status": "PASS",
+      "expected": "Equation text visible after rendering",
+      "actual": "present"
+    }
+  ],
+  "sha256": {
+    "pecahan.xlsx": "ebcae4f1c9f5ed46c109ddfd29bef209cc13825324bd06109b6c3a03a6224fd1",
+    "pecahan.docx": "26141020ee8bd05ef3ee0e74cecc845a978106e456b06af9fe8e9eb1f133f3e9",
+    "pecahan.json": "748af14adcd7cb3dd305a11ed9f28ada75e4f0aee1a7ed8c2e1ae1f246d311f1",
+    "pecahan.pdf": "0cd9d65de9cac06078b28f83fc503618b611177ea29e25fa9e4920ac64f46af4",
+    "pecahan.csv": "83f120d2f8a60a268bdba43bd28a4faed359de87cdc0209aa88ac92772994fbd"
+  }
+}

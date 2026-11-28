@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-11-28T09:04:03.901445+00:00",
+  "build": {
+    "release": "460c98b682110f7e",
+    "offline_manifest_sha256": "7d05df34af8cbd5c18d00ce310d8f0448c22e1d158527111df595dd3980f0add",
+    "dist_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+    "dist_files": 5047,
+    "app_version": "1.5.0",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU"
+  },
+  "modules_source_equal_dist_sha256": {
+    "data/backup.js": "430a906e12624b9d42cbe1d2948624d0934696b8a746e69739b3c384368764bd",
+    "data/backup-json-size.js": "21214ea648a09b89d0ddeeb5eb2a134eab36de88fb65adb8b666c8871806c8f7",
+    "data/archive.js": "97e8a77c58279cc8bdfc1b26ae5f14868eb987b4c55eecbde13d76f5a404b0d7",
+    "data/store.js": "7664cd86d24ab668f47726d1952878c3a89ba9a2728f83cb132cacefccb78fb1",
+    "data/db.js": "60f8103f6b8987eb8998c82df6b01b1330472dc40061391d14dba83e1a8970c7",
+    "data/backup-reader.worker.js": "138d2ae9d000e1ed7710ff12dbb9817c6b607aa463f2105e95460737151b49c1",
+    "data/panel-profile.js": "bdb0ff227bd232c30b572bb153d2daa7f2e5a22245566c978354a49303fc5778",
+    "data/snapshot-check.js": "e68aa13775dd4e012011ec2932f6fb398ce4b606e1ebd03a55357c5e64378eb9",
+    "player/session.mjs": "8c1a73946837db7e7c4be5ca46ef1175f8dd993642b78a16269231da9e308195"
+  },
+  "sequential": true,
+  "runs": [
+    {
+      "receipt": "rows.json",
+      "command": "node tests/v15/backup-capacity.mjs rows",
+      "command_file_sha256": "e11e44f6b13f048e3bb36970b8f9a560c4267444fc95eb60fd598ece67fa60a0",
+      "exit_code": 0,
+      "start_utc": "2026-11-28T09:04:03.943573+00:00",
+      "finish_utc": "2026-11-28T09:04:27.529226+00:00",
+      "elapsed_seconds": 23.59,
+      "receipt_sha256": "ab664cb2d61539c76a88ed0e68809fb20a75f250a6a4afd86cf88932185eba9f",
+      "check_count": 4,
+      "status": "PASS"
+    },
+    {
+      "receipt": "bytes.json",
+      "command": "node tests/v15/backup-capacity.mjs bytes",
+      "command_file_sha256": "e11e44f6b13f048e3bb36970b8f9a560c4267444fc95eb60fd598ece67fa60a0",
+      "exit_code": 0,
+      "start_utc": "2026-11-28T09:04:27.533526+00:00",
+      "finish_utc": "2026-11-28T09:04:37.359713+00:00",
+      "elapsed_seconds": 9.83,
+      "receipt_sha256": "257b132b9a3a9719da2d5c02f8717a3781804561b5a18e28848f1a412ee3e3b4",
+      "check_count": 4,
+      "status": "PASS"
+    },
+    {
+      "receipt": "large-zip.json",
+      "command": "node tests/v15/backup-capacity-large-zip.mjs",
+      "command_file_sha256": "e047a7f4262a2258c973cee26a1d86ad44216a587a9349993a4299bacf1b6752",
+      "exit_code": 0,
+      "start_utc": "2026-11-28T09:04:37.367016+00:00",
+      "finish_utc": "2026-11-28T09:05:14.179764+00:00",
+      "elapsed_seconds": 36.81,
+      "receipt_sha256": "b2b29f339d390db215acab49fc914788d121af1064aa2b0b48e3efb0025975df",
+      "check_count": 1,
+      "status": "PASS"
+    },
+    {
+      "receipt": "browser.json",
+      "command": "python3 tests/v15/backup-capacity-browser.py",
+      "command_file_sha256": "dd47c7101031240f026564ffcffcc9b32a4569575883a874a69537208c2689ae",
+      "exit_code": 0,
+      "start_utc": "2026-11-28T09:05:14.181105+00:00",
+      "finish_utc": "2026-11-28T09:05:56.343888+00:00",
+      "elapsed_seconds": 42.16,
+      "receipt_sha256": "1d915605e20660401c5768450c9d2cc90a9832f26d42ed994d094fac0f483262",
+      "check_count": 1,
+      "status": "PASS"
+    },
+    {
+      "receipt": "data-archive-edges.json",
+      "command": "node tests/data/archive-edges.mjs",
+      "command_file_sha256": "6da299580cdae54c86426ae626d919e1e4267198c10270436c64be3585ab869b",
+      "exit_code": 0,
+      "start_utc": "2026-11-28T09:05:56.344501+00:00",
+      "finish_utc": "2026-11-28T09:06:13.966543+00:00",
+      "elapsed_seconds": 17.62,
+      "receipt_sha256": "6496a2f7cc726e2f3a18fee1a03d5a9423e11133cf20c0f92125bb8e1a72fe40",
+      "check_count": 10,
+      "status": "PASS"
+    }
+  ],
+  "runtime": {
+    "node": "v24.22.3",
+    "python": "3.12.14",
+    "chromium": "Google Chrome for Testing 151.0.7922.34",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "finished_utc": "2026-11-28T09:06:15.504650+00:00",
+  "dist_identity_stable": true
+}

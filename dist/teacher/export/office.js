@@ -1,0 +1,5 @@
+export const xml=s=>String(s??'').replace(/[\u0000-\u0008\u000b\u000c\u000e-\u001f\ufffe\uffff]/g,'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&apos;');
+const types='http://schemas.openxmlformats.org/package/2006/content-types',rels='http://schemas.openxmlformats.org/package/2006/relationships';
+export const relBase='http://schemas.openxmlformats.org/officeDocument/2006/relationships/';
+export const relations=rows=>'<Relationships xmlns="'+rels+'">'+rows.map(([id,type,target])=>'<Relationship Id="'+id+'" Type="'+relBase+type+'" Target="'+target+'"/>').join('')+'</Relationships>';
+export const contentTypes=entries=>'<Types xmlns="'+types+'"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/>'+entries.map(([file,type])=>'<Override PartName="/'+file+'" ContentType="application/vnd.openxmlformats-officedocument.'+type+'"/>').join('')+'</Types>';

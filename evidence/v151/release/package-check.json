@@ -1,0 +1,37 @@
+{
+ "status": "PASS",
+ "problems": [],
+ "steps": {
+  "files": 6732,
+  "seal_in_copy": {
+   "exit": 0,
+   "tail": "\": \"CLOSED_VERIFIED\",\n  \"REL-01\": \"OPEN_EXTERNAL\",\n  \"REL-02\": \"OPEN_EXTERNAL\",\n  \"REL-03\": \"OPEN_EXTERNAL\",\n  \"DOC-01\": \"PARTIAL_ROSTER_READY_REVIEW_NOT_PERFORMED\"\n }\n}\n{\"verified\": \"CRC-32 for every entry, original file SHA-256 and byte count, safe relative paths; no symbolic links\", \"files\": 6732, \"bytes\": 123876055, \"sha256\": \"efed45dd6d78ea89a56b95dff263cc1757b76db59717b62ae998971460d21be8\"}\n"
+  },
+  "release_verify": {
+   "exit": 0,
+   "tail": "ARD_FISIK_TERBUKA\",\n  \"UX-04\": \"CLOSED_VERIFIED\",\n  \"UX-05\": \"CLOSED_VERIFIED\",\n  \"UX-06\": \"CLOSED_VERIFIED\",\n  \"TEK-01\": \"CLOSED_VERIFIED\",\n  \"TEK-02\": \"CLOSED_VERIFIED\",\n  \"REL-01\": \"OPEN_EXTERNAL\",\n  \"REL-02\": \"OPEN_EXTERNAL\",\n  \"REL-03\": \"OPEN_EXTERNAL\",\n  \"DOC-01\": \"PARTIAL_ROSTER_READY_REVIEW_NOT_PERFORMED\"\n }\n}\nVerified inventory, distribution, bank sources, release evidence and QA binding\n"
+  },
+  "bank_preservation": {
+   "exit": 0,
+   "tail": "{\"files_before\": 4677, \"files_now\": 4677, \"changed\": 0, \"missing\": 0, \"added\": 0, \"tree_sha256_before\": \"6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43\", \"tree_sha256_now\": \"6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43\", \"package_count\": 4604, \"question_slots\": 177640}\nbank preserved: 4677 files byte-identical\n"
+  },
+  "journey_check": {
+   "exit": 0,
+   "tail": "journey sidecar ok d04820e1932e9e00 177640 placements\n"
+  },
+  "rebuild": {
+   "exit": 0,
+   "dist_before": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+   "dist_after": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+   "identical": true
+  },
+  "guide_references": {
+   "checked": 36,
+   "missing": []
+  }
+ },
+ "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+ "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9",
+ "checked_utc": "2026-11-28T10:57:59+00:00",
+ "scope": "Trial ZIP verified from a fresh extraction, with the then-current register, before updating the package result and final inventory."
+}

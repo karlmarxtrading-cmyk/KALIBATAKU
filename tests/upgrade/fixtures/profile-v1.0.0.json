@@ -1,0 +1,720 @@
+{
+  "format": "kalibataku-profile-backup",
+  "schema_version": "1.0.0",
+  "release_id": "kalibataku-static-1",
+  "data_origin": "local_practice",
+  "exported_at": "2026-11-25T20:25:00.455Z",
+  "verification_status": "unverified",
+  "profile": {
+    "id": "b0e1773e-b4fe-4fd0-9a63-212fa43fa4f2",
+    "name": "Fixture migrasi 1.0"
+  },
+  "records": {
+    "attempts": [
+      {
+        "id": "50a46520-8c01-4201-93e2-72ad004ee64e",
+        "data": {
+          "attempt_id": "50a46520-8c01-4201-93e2-72ad004ee64e",
+          "schema_version": "1.0.0",
+          "status": "completed",
+          "profile_id": "b0e1773e-b4fe-4fd0-9a63-212fa43fa4f2",
+          "data_origin": "local_practice",
+          "mode": "practice",
+          "package_id": "MM-G01-L01-ADD-P001",
+          "package_title": {
+            "id": "Pengenalan 001 · Penjumlahan — Pasangan bilangan sampai 5",
+            "en": "Introduction 001 · Addition — Number bonds to 5"
+          },
+          "grade": 1,
+          "level": 1,
+          "operation": "ADD",
+          "target_competency_id": "arithmetic.addition.g01.l01",
+          "content_version": "1.0.0",
+          "curriculum_version": "1.0.0-draft.2",
+          "policy_version": "mastery-local-v1",
+          "form_id": null,
+          "form_family_id": null,
+          "form_instance_id": null,
+          "assessment_cycle_id": null,
+          "assignment_id": null,
+          "pool_size": 20,
+          "order_seed": "3213497199",
+          "index": 0,
+          "created_at": "2026-11-25T20:25:00.431Z",
+          "started_at": "2026-11-25T20:25:00.434Z",
+          "completed_at": "2026-11-25T20:25:00.450Z",
+          "duration_seconds": 0,
+          "deadline": null,
+          "ready": true,
+          "adaptive": null,
+          "locale": "id",
+          "items": [
+            {
+              "question": {
+                "question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.addition.g01.l01",
+                "template_id": "MM-TPL-G01-L01-ADD-BASE",
+                "template_version": "1.0.0",
+                "fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+                "fingerprint_policy": "canonical-ast-v1",
+                "question_type": "numeric_essay",
+                "answer_policy": "exact_rational",
+                "answer": {
+                  "numerator": "5",
+                  "denominator": "1"
+                },
+                "expression_ast": {
+                  "kind": "binary",
+                  "operation": "ADD",
+                  "left": {
+                    "kind": "rational",
+                    "numerator": "0",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  },
+                  "right": {
+                    "kind": "rational",
+                    "numerator": "5",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  }
+                },
+                "neutral_expression": "0 + 5",
+                "strategy_tags": [
+                  "NB"
+                ],
+                "hint": {
+                  "id": "Mulai dari 5. Hitung maju 0 langkah.",
+                  "en": "Start at 5 and count on 0."
+                },
+                "explanation": {
+                  "id": "Dari 5, maju 0 langkah membawa kita ke 5.",
+                  "en": "Starting at 5, moving forward 0 lands on 5."
+                },
+                "solution_steps": [
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "rational",
+                      "numerator": "5",
+                      "denominator": "1"
+                    },
+                    "text": {
+                      "id": "Hasil akhirnya 5.",
+                      "en": "The final value is 5."
+                    }
+                  }
+                ]
+              },
+              "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.1",
+              "seen": true,
+              "draft": "5",
+              "draft_locale": "id",
+              "dirty": false,
+              "history": [
+                {
+                  "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.1",
+                  "question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+                  "question_revision": "1.0.0",
+                  "competency_id": "arithmetic.addition.g01.l01",
+                  "answer": {
+                    "numerator": "99",
+                    "denominator": "1"
+                  },
+                  "raw_answer": "99",
+                  "draft_locale": "id",
+                  "submission_kind": "first",
+                  "attempt_number": 1,
+                  "hint_used": false,
+                  "active_duration_ms": 0,
+                  "elapsed_duration_ms": 12,
+                  "timing_quality": "valid_client_estimate",
+                  "client_is_correct": false,
+                  "event_id": "e1c10339-f956-400f-b775-cd082cb6d3d2",
+                  "is_correct": false
+                },
+                {
+                  "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.1",
+                  "question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+                  "question_revision": "1.0.0",
+                  "competency_id": "arithmetic.addition.g01.l01",
+                  "answer": {
+                    "numerator": "5",
+                    "denominator": "1"
+                  },
+                  "raw_answer": "5",
+                  "draft_locale": "id",
+                  "submission_kind": "retry",
+                  "attempt_number": 2,
+                  "hint_used": false,
+                  "active_duration_ms": 0,
+                  "elapsed_duration_ms": 14,
+                  "timing_quality": "valid_client_estimate",
+                  "client_is_correct": true,
+                  "event_id": "0607effa-4cfa-4788-b461-0332a417b8c4",
+                  "is_correct": true
+                }
+              ],
+              "hint_used": false,
+              "feedback": true,
+              "final_status": "correct",
+              "active_ms": 0,
+              "timing_quality": "valid_client_estimate",
+              "first_seen_at": "2026-11-25T20:25:00.434Z",
+              "last_event_id": "0607effa-4cfa-4788-b461-0332a417b8c4"
+            },
+            {
+              "question": {
+                "question_id": "arithmetic.addition.g01.l01.118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.addition.g01.l01",
+                "template_id": "MM-TPL-G01-L01-ADD-BASE",
+                "template_version": "1.0.0",
+                "fingerprint": "118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+                "fingerprint_policy": "canonical-ast-v1",
+                "question_type": "numeric_essay",
+                "answer_policy": "exact_rational",
+                "answer": {
+                  "numerator": "4",
+                  "denominator": "1"
+                },
+                "expression_ast": {
+                  "kind": "binary",
+                  "operation": "ADD",
+                  "left": {
+                    "kind": "rational",
+                    "numerator": "0",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  },
+                  "right": {
+                    "kind": "rational",
+                    "numerator": "4",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  }
+                },
+                "neutral_expression": "0 + 4",
+                "strategy_tags": [
+                  "NB"
+                ],
+                "hint": {
+                  "id": "Mulai dari 4. Hitung maju 0 langkah.",
+                  "en": "Start at 4 and count on 0."
+                },
+                "explanation": {
+                  "id": "Dari 4, maju 0 langkah membawa kita ke 4.",
+                  "en": "Starting at 4, moving forward 0 lands on 4."
+                },
+                "solution_steps": [
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "rational",
+                      "numerator": "4",
+                      "denominator": "1"
+                    },
+                    "text": {
+                      "id": "Hasil akhirnya 4.",
+                      "en": "The final value is 4."
+                    }
+                  }
+                ]
+              },
+              "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.2",
+              "seen": false,
+              "draft": "",
+              "draft_locale": "id",
+              "dirty": false,
+              "history": [],
+              "hint_used": false,
+              "feedback": false,
+              "final_status": "unseen",
+              "active_ms": 0,
+              "timing_quality": "valid_client_estimate"
+            }
+          ],
+          "_rev": 4,
+          "_seq": 4,
+          "finish_reason": "submitted",
+          "metrics": {
+            "N": 2,
+            "C": 1,
+            "W": 0,
+            "S": 0,
+            "B": 0,
+            "U": 1,
+            "score_percent": 50,
+            "accuracy_percent": 100,
+            "responded_percent": 50,
+            "first_response_count": 1,
+            "first_correct": 0,
+            "first_response_accuracy": 0,
+            "retries": 1,
+            "hints": 0
+          }
+        }
+      },
+      {
+        "id": "d34a4738-806f-4ceb-8da7-141d1eb770b0",
+        "data": {
+          "attempt_id": "d34a4738-806f-4ceb-8da7-141d1eb770b0",
+          "schema_version": "1.0.0",
+          "status": "ongoing",
+          "profile_id": "b0e1773e-b4fe-4fd0-9a63-212fa43fa4f2",
+          "data_origin": "local_practice",
+          "mode": "practice",
+          "package_id": "MM-G01-L01-ADD-P001",
+          "package_title": {
+            "id": "Pengenalan 001 · Penjumlahan — Pasangan bilangan sampai 5",
+            "en": "Introduction 001 · Addition — Number bonds to 5"
+          },
+          "grade": 1,
+          "level": 1,
+          "operation": "ADD",
+          "target_competency_id": "arithmetic.addition.g01.l01",
+          "content_version": "1.0.0",
+          "curriculum_version": "1.0.0-draft.2",
+          "policy_version": "mastery-local-v1",
+          "form_id": null,
+          "form_family_id": null,
+          "form_instance_id": null,
+          "assessment_cycle_id": null,
+          "assignment_id": null,
+          "pool_size": 20,
+          "order_seed": "713800225",
+          "index": 0,
+          "created_at": "2026-11-25T20:25:00.452Z",
+          "started_at": "2026-11-25T20:25:00.452Z",
+          "completed_at": null,
+          "duration_seconds": 0,
+          "deadline": null,
+          "ready": true,
+          "adaptive": null,
+          "locale": "id",
+          "items": [
+            {
+              "question": {
+                "question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.addition.g01.l01",
+                "template_id": "MM-TPL-G01-L01-ADD-BASE",
+                "template_version": "1.0.0",
+                "fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+                "fingerprint_policy": "canonical-ast-v1",
+                "question_type": "numeric_essay",
+                "answer_policy": "exact_rational",
+                "answer": {
+                  "numerator": "5",
+                  "denominator": "1"
+                },
+                "expression_ast": {
+                  "kind": "binary",
+                  "operation": "ADD",
+                  "left": {
+                    "kind": "rational",
+                    "numerator": "0",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  },
+                  "right": {
+                    "kind": "rational",
+                    "numerator": "5",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  }
+                },
+                "neutral_expression": "0 + 5",
+                "strategy_tags": [
+                  "NB"
+                ],
+                "hint": {
+                  "id": "Mulai dari 5. Hitung maju 0 langkah.",
+                  "en": "Start at 5 and count on 0."
+                },
+                "explanation": {
+                  "id": "Dari 5, maju 0 langkah membawa kita ke 5.",
+                  "en": "Starting at 5, moving forward 0 lands on 5."
+                },
+                "solution_steps": [
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "rational",
+                      "numerator": "5",
+                      "denominator": "1"
+                    },
+                    "text": {
+                      "id": "Hasil akhirnya 5.",
+                      "en": "The final value is 5."
+                    }
+                  }
+                ]
+              },
+              "question_instance_id": "d34a4738-806f-4ceb-8da7-141d1eb770b0.1",
+              "seen": true,
+              "draft": "5",
+              "draft_locale": "id",
+              "dirty": true,
+              "history": [],
+              "hint_used": false,
+              "feedback": false,
+              "final_status": "blank",
+              "active_ms": 0,
+              "timing_quality": "valid_client_estimate",
+              "first_seen_at": "2026-11-25T20:25:00.452Z"
+            },
+            {
+              "question": {
+                "question_id": "arithmetic.addition.g01.l01.118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.addition.g01.l01",
+                "template_id": "MM-TPL-G01-L01-ADD-BASE",
+                "template_version": "1.0.0",
+                "fingerprint": "118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+                "fingerprint_policy": "canonical-ast-v1",
+                "question_type": "numeric_essay",
+                "answer_policy": "exact_rational",
+                "answer": {
+                  "numerator": "4",
+                  "denominator": "1"
+                },
+                "expression_ast": {
+                  "kind": "binary",
+                  "operation": "ADD",
+                  "left": {
+                    "kind": "rational",
+                    "numerator": "0",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  },
+                  "right": {
+                    "kind": "rational",
+                    "numerator": "4",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  }
+                },
+                "neutral_expression": "0 + 4",
+                "strategy_tags": [
+                  "NB"
+                ],
+                "hint": {
+                  "id": "Mulai dari 4. Hitung maju 0 langkah.",
+                  "en": "Start at 4 and count on 0."
+                },
+                "explanation": {
+                  "id": "Dari 4, maju 0 langkah membawa kita ke 4.",
+                  "en": "Starting at 4, moving forward 0 lands on 4."
+                },
+                "solution_steps": [
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "rational",
+                      "numerator": "4",
+                      "denominator": "1"
+                    },
+                    "text": {
+                      "id": "Hasil akhirnya 4.",
+                      "en": "The final value is 4."
+                    }
+                  }
+                ]
+              },
+              "question_instance_id": "d34a4738-806f-4ceb-8da7-141d1eb770b0.2",
+              "seen": false,
+              "draft": "",
+              "draft_locale": "id",
+              "dirty": false,
+              "history": [],
+              "hint_used": false,
+              "feedback": false,
+              "final_status": "unseen",
+              "active_ms": 0,
+              "timing_quality": "valid_client_estimate"
+            }
+          ],
+          "_rev": 2,
+          "_seq": 1
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": "5401c7a5-50c7-4ac5-a539-bcb225cba2f6",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "5401c7a5-50c7-4ac5-a539-bcb225cba2f6",
+          "event_type": "attempt.started",
+          "event_sequence": 1,
+          "attempt_id": "50a46520-8c01-4201-93e2-72ad004ee64e",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "b0e1773e-b4fe-4fd0-9a63-212fa43fa4f2",
+            "server_subject_ref": null
+          },
+          "context": {
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G01-L01-ADD-P001",
+            "content_version": "1.0.0",
+            "material_grade": 1,
+            "level": 1,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-25T20:25:00.436Z",
+          "payload": {
+            "instances": [
+              {
+                "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.1",
+                "question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.addition.g01.l01"
+              },
+              {
+                "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.2",
+                "question_id": "arithmetic.addition.g01.l01.118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.addition.g01.l01"
+              }
+            ],
+            "order_seed": "3213497199",
+            "started_at_client": "2026-11-25T20:25:00.434Z"
+          },
+          "payload_hash": "78cd2a125ae5fb83a764ba2bb833f3890f43ba01f45c859e6709d84de39e603a"
+        }
+      },
+      {
+        "id": "e1c10339-f956-400f-b775-cd082cb6d3d2",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "e1c10339-f956-400f-b775-cd082cb6d3d2",
+          "event_type": "answer.submitted",
+          "event_sequence": 2,
+          "attempt_id": "50a46520-8c01-4201-93e2-72ad004ee64e",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "b0e1773e-b4fe-4fd0-9a63-212fa43fa4f2",
+            "server_subject_ref": null
+          },
+          "context": {
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G01-L01-ADD-P001",
+            "content_version": "1.0.0",
+            "material_grade": 1,
+            "level": 1,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-25T20:25:00.447Z",
+          "payload": {
+            "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.1",
+            "question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+            "question_revision": "1.0.0",
+            "competency_id": "arithmetic.addition.g01.l01",
+            "answer": {
+              "numerator": "99",
+              "denominator": "1"
+            },
+            "raw_answer": "99",
+            "draft_locale": "id",
+            "submission_kind": "first",
+            "attempt_number": 1,
+            "hint_used": false,
+            "active_duration_ms": 0,
+            "elapsed_duration_ms": 12,
+            "timing_quality": "valid_client_estimate",
+            "client_is_correct": false
+          },
+          "payload_hash": "5ebc6c72b935b9853ab73916ea20d31207d5db82bf05ff026698b288ad891f24"
+        }
+      },
+      {
+        "id": "0607effa-4cfa-4788-b461-0332a417b8c4",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "0607effa-4cfa-4788-b461-0332a417b8c4",
+          "event_type": "answer.submitted",
+          "event_sequence": 3,
+          "attempt_id": "50a46520-8c01-4201-93e2-72ad004ee64e",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "b0e1773e-b4fe-4fd0-9a63-212fa43fa4f2",
+            "server_subject_ref": null
+          },
+          "context": {
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G01-L01-ADD-P001",
+            "content_version": "1.0.0",
+            "material_grade": 1,
+            "level": 1,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-25T20:25:00.448Z",
+          "payload": {
+            "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.1",
+            "question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+            "question_revision": "1.0.0",
+            "competency_id": "arithmetic.addition.g01.l01",
+            "answer": {
+              "numerator": "5",
+              "denominator": "1"
+            },
+            "raw_answer": "5",
+            "draft_locale": "id",
+            "submission_kind": "retry",
+            "attempt_number": 2,
+            "hint_used": false,
+            "active_duration_ms": 0,
+            "elapsed_duration_ms": 14,
+            "timing_quality": "valid_client_estimate",
+            "client_is_correct": true
+          },
+          "payload_hash": "82f995c18886db157cadb2863e0c024c0fb0e0a62e7ea71cf5ae85345fc414b4"
+        }
+      },
+      {
+        "id": "66ae38d6-e47e-4d4b-9ac0-208377e7bd89",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "66ae38d6-e47e-4d4b-9ac0-208377e7bd89",
+          "event_type": "attempt.completed",
+          "event_sequence": 4,
+          "attempt_id": "50a46520-8c01-4201-93e2-72ad004ee64e",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "b0e1773e-b4fe-4fd0-9a63-212fa43fa4f2",
+            "server_subject_ref": null
+          },
+          "context": {
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G01-L01-ADD-P001",
+            "content_version": "1.0.0",
+            "material_grade": 1,
+            "level": 1,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-25T20:25:00.450Z",
+          "payload": {
+            "expected_event_count": 4,
+            "final_responses": [
+              {
+                "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.1",
+                "response_event_id": "0607effa-4cfa-4788-b461-0332a417b8c4",
+                "status": "answered"
+              },
+              {
+                "question_instance_id": "50a46520-8c01-4201-93e2-72ad004ee64e.2",
+                "response_event_id": null,
+                "status": "unseen"
+              }
+            ],
+            "completed_at_client": "2026-11-25T20:25:00.450Z"
+          },
+          "payload_hash": "a885bec277bb37d1edfef159377384718a33f9ec86e3e0353eddd64a9dc8b9e2"
+        }
+      },
+      {
+        "id": "a02e0018-136d-408d-bac0-45e3814fdcd0",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "a02e0018-136d-408d-bac0-45e3814fdcd0",
+          "event_type": "attempt.started",
+          "event_sequence": 1,
+          "attempt_id": "d34a4738-806f-4ceb-8da7-141d1eb770b0",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "b0e1773e-b4fe-4fd0-9a63-212fa43fa4f2",
+            "server_subject_ref": null
+          },
+          "context": {
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G01-L01-ADD-P001",
+            "content_version": "1.0.0",
+            "material_grade": 1,
+            "level": 1,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-25T20:25:00.452Z",
+          "payload": {
+            "instances": [
+              {
+                "question_instance_id": "d34a4738-806f-4ceb-8da7-141d1eb770b0.1",
+                "question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.addition.g01.l01"
+              },
+              {
+                "question_instance_id": "d34a4738-806f-4ceb-8da7-141d1eb770b0.2",
+                "question_id": "arithmetic.addition.g01.l01.118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.addition.g01.l01"
+              }
+            ],
+            "order_seed": "713800225",
+            "started_at_client": "2026-11-25T20:25:00.452Z"
+          },
+          "payload_hash": "8356c3e970597fcaa93580b369a0df354f13aa56f86873a121ca3699989146e4"
+        }
+      }
+    ],
+    "records": []
+  },
+  "checksum": "74ebbaabf60b47712083b651cd3cfc20f450ea990c9aea6ffc25b044470177ef"
+}

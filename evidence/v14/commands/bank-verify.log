@@ -1,0 +1,22 @@
+# command: npm run bank:verify
+# started: 2026-11-28T04:22:50Z
+# node v22.23.5 · Python 3.13.18
+
+> kalibataku-mental-math@1.4.0 bank:verify
+> python3 tests/bank/verify_bank.py && node tools/audit-bank.mjs
+
+{"packages":4604,"slots":177640,"unique":168142,"independently_checked_steps":389187,"checks":19}
+Grade 1 44 packages; 0 errors
+Grade 2 204 packages; 0 errors
+Grade 3 504 packages; 0 errors
+Grade 4 804 packages; 0 errors
+Grade 5 1204 packages; 0 errors
+Grade 6 1604 packages; 0 errors
+Grade 7 2104 packages; 0 errors
+Grade 8 2604 packages; 0 errors
+Grade 9 3104 packages; 0 errors
+Grade 10 3604 packages; 0 errors
+Grade 11 4104 packages; 0 errors
+Grade 12 4604 packages; 0 errors
+# exit: 0
+# finished: 2026-11-28T04:23:25Z

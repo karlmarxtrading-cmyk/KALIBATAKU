@@ -1,0 +1,1 @@
+Operator Windows menjalankan VALIDASI_EKSTERNAL/verifikasi-windows.sh dari Git Bash pada ekstraksi berspasi. Lihat VALIDASI_EKSTERNAL/07_WINDOWS_NATIVE.md untuk memeriksa asal, mengimpor native.json dan keempat log, serta menilai ulang build.

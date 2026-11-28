@@ -1,0 +1,516 @@
+{
+  "runtime": "v24.22.3",
+  "layer": "actual release engine, store, schema/ledger validator, explicit temporary storage; demo mock adapter",
+  "package": "MM-G01-L01-ADD-P001",
+  "version": "1.1.0",
+  "package_sha256": "52833cb65325cf3b139b6b83ac77f1317af470a9b9803661efaccc73c177f5ec",
+  "engine_sha256": "cb2df1387813470a1c5f703d54c1773c78cdf0575ad19972f44f5c8b2644352e",
+  "cases": [
+    {
+      "test": "valid draft on move and final, idempotent, ledger and final references",
+      "mode": "practice",
+      "counts": {
+        "correct": 2,
+        "incorrect": 0,
+        "blank": 0,
+        "skipped": 0,
+        "unseen": 0,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "metrics": {
+        "N": 2,
+        "C": 2,
+        "W": 0,
+        "S": 0,
+        "B": 0,
+        "U": 0,
+        "score_percent": 100,
+        "accuracy_percent": 100,
+        "responded_percent": 100,
+        "first_response_count": 2,
+        "first_correct": 2,
+        "first_response_accuracy": 100,
+        "retries": 0,
+        "hints": 0
+      },
+      "event_sequence": [
+        [
+          1,
+          "attempt.started"
+        ],
+        [
+          2,
+          "answer.submitted"
+        ],
+        [
+          3,
+          "answer.submitted"
+        ],
+        [
+          4,
+          "attempt.completed"
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "test": "valid draft on move and final, idempotent, ledger and final references",
+      "mode": "speed",
+      "counts": {
+        "correct": 2,
+        "incorrect": 0,
+        "blank": 0,
+        "skipped": 0,
+        "unseen": 0,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "metrics": {
+        "N": 2,
+        "C": 2,
+        "W": 0,
+        "S": 0,
+        "B": 0,
+        "U": 0,
+        "score_percent": 100,
+        "accuracy_percent": 100,
+        "responded_percent": 100,
+        "first_response_count": 2,
+        "first_correct": 2,
+        "first_response_accuracy": 100,
+        "retries": 0,
+        "hints": 0
+      },
+      "event_sequence": [
+        [
+          1,
+          "attempt.started"
+        ],
+        [
+          2,
+          "answer.submitted"
+        ],
+        [
+          3,
+          "answer.submitted"
+        ],
+        [
+          4,
+          "attempt.completed"
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "test": "valid draft on move and final, idempotent, ledger and final references",
+      "mode": "adaptive",
+      "counts": {
+        "correct": 2,
+        "incorrect": 0,
+        "blank": 0,
+        "skipped": 0,
+        "unseen": 0,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "metrics": {
+        "N": 2,
+        "C": 2,
+        "W": 0,
+        "S": 0,
+        "B": 0,
+        "U": 0,
+        "score_percent": 100,
+        "accuracy_percent": 100,
+        "responded_percent": 100,
+        "first_response_count": 2,
+        "first_correct": 2,
+        "first_response_accuracy": 100,
+        "retries": 0,
+        "hints": 0
+      },
+      "event_sequence": [
+        [
+          1,
+          "attempt.started"
+        ],
+        [
+          2,
+          "answer.submitted"
+        ],
+        [
+          3,
+          "answer.submitted"
+        ],
+        [
+          4,
+          "attempt.completed"
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "test": "valid draft on move and final, idempotent, ledger and final references",
+      "mode": "recovery",
+      "counts": {
+        "correct": 2,
+        "incorrect": 0,
+        "blank": 0,
+        "skipped": 0,
+        "unseen": 0,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "metrics": {
+        "N": 2,
+        "C": 2,
+        "W": 0,
+        "S": 0,
+        "B": 0,
+        "U": 0,
+        "score_percent": 100,
+        "accuracy_percent": 100,
+        "responded_percent": 100,
+        "first_response_count": 2,
+        "first_correct": 2,
+        "first_response_accuracy": 100,
+        "retries": 0,
+        "hints": 0
+      },
+      "event_sequence": [
+        [
+          1,
+          "attempt.started"
+        ],
+        [
+          2,
+          "answer.submitted"
+        ],
+        [
+          3,
+          "answer.submitted"
+        ],
+        [
+          4,
+          "attempt.completed"
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "test": "valid draft on move and final, idempotent, ledger and final references",
+      "mode": "assessment",
+      "counts": {
+        "correct": 2,
+        "incorrect": 0,
+        "blank": 0,
+        "skipped": 0,
+        "unseen": 8,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "metrics": {
+        "N": 10,
+        "C": 2,
+        "W": 0,
+        "S": 0,
+        "B": 0,
+        "U": 8,
+        "score_percent": 20,
+        "accuracy_percent": 100,
+        "responded_percent": 20,
+        "first_response_count": 2,
+        "first_correct": 2,
+        "first_response_accuracy": 100,
+        "retries": 0,
+        "hints": 0
+      },
+      "event_sequence": [
+        [
+          1,
+          "attempt.started"
+        ],
+        [
+          2,
+          "answer.submitted"
+        ],
+        [
+          3,
+          "answer.submitted"
+        ],
+        [
+          4,
+          "attempt.completed"
+        ]
+      ],
+      "status": "PASS"
+    },
+    {
+      "test": "manual invalid blocks all, corrected revision retained, explicit blank",
+      "mode": "practice",
+      "first_final": [
+        {
+          "answer": "999",
+          "kind": "first",
+          "hint": false
+        },
+        {
+          "answer": "5",
+          "kind": "retry",
+          "hint": true
+        }
+      ],
+      "metrics": {
+        "N": 2,
+        "C": 1,
+        "W": 0,
+        "S": 0,
+        "B": 1,
+        "U": 0,
+        "score_percent": 50,
+        "accuracy_percent": 100,
+        "responded_percent": 50,
+        "first_response_count": 1,
+        "first_correct": 0,
+        "first_response_accuracy": 0,
+        "retries": 1,
+        "hints": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "manual invalid blocks all, corrected revision retained, explicit blank",
+      "mode": "speed",
+      "first_final": [
+        {
+          "answer": "999",
+          "kind": "first",
+          "hint": false
+        },
+        {
+          "answer": "5",
+          "kind": "retry",
+          "hint": true
+        }
+      ],
+      "metrics": {
+        "N": 2,
+        "C": 1,
+        "W": 0,
+        "S": 0,
+        "B": 1,
+        "U": 0,
+        "score_percent": 50,
+        "accuracy_percent": 100,
+        "responded_percent": 50,
+        "first_response_count": 1,
+        "first_correct": 0,
+        "first_response_accuracy": 0,
+        "retries": 1,
+        "hints": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "manual invalid blocks all, corrected revision retained, explicit blank",
+      "mode": "adaptive",
+      "first_final": [
+        {
+          "answer": "999",
+          "kind": "first",
+          "hint": false
+        },
+        {
+          "answer": "5",
+          "kind": "retry",
+          "hint": true
+        }
+      ],
+      "metrics": {
+        "N": 2,
+        "C": 1,
+        "W": 0,
+        "S": 0,
+        "B": 1,
+        "U": 0,
+        "score_percent": 50,
+        "accuracy_percent": 100,
+        "responded_percent": 50,
+        "first_response_count": 1,
+        "first_correct": 0,
+        "first_response_accuracy": 0,
+        "retries": 1,
+        "hints": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "manual invalid blocks all, corrected revision retained, explicit blank",
+      "mode": "recovery",
+      "first_final": [
+        {
+          "answer": "999",
+          "kind": "first",
+          "hint": false
+        },
+        {
+          "answer": "5",
+          "kind": "retry",
+          "hint": true
+        }
+      ],
+      "metrics": {
+        "N": 2,
+        "C": 1,
+        "W": 0,
+        "S": 0,
+        "B": 1,
+        "U": 0,
+        "score_percent": 50,
+        "accuracy_percent": 100,
+        "responded_percent": 50,
+        "first_response_count": 1,
+        "first_correct": 0,
+        "first_response_accuracy": 0,
+        "retries": 1,
+        "hints": 1
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "manual invalid blocks all, corrected revision retained, explicit blank",
+      "mode": "assessment",
+      "first_final": [
+        {
+          "answer": "999",
+          "kind": "first",
+          "hint": false
+        },
+        {
+          "answer": "5",
+          "kind": "revision",
+          "hint": false
+        }
+      ],
+      "metrics": {
+        "N": 10,
+        "C": 1,
+        "W": 0,
+        "S": 0,
+        "B": 1,
+        "U": 8,
+        "score_percent": 10,
+        "accuracy_percent": 100,
+        "responded_percent": 10,
+        "first_response_count": 1,
+        "first_correct": 0,
+        "first_response_accuracy": 0,
+        "retries": 0,
+        "hints": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "deadline commits valid draft, archives malformed draft and counts previous answer/skip/blank",
+      "mode": "speed",
+      "prior": "none",
+      "counts": {
+        "correct": 1,
+        "incorrect": 0,
+        "blank": 1,
+        "skipped": 0,
+        "unseen": 0,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "deadline commits valid draft, archives malformed draft and counts previous answer/skip/blank",
+      "mode": "speed",
+      "prior": "incorrect",
+      "counts": {
+        "correct": 1,
+        "incorrect": 1,
+        "blank": 0,
+        "skipped": 0,
+        "unseen": 0,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "deadline commits valid draft, archives malformed draft and counts previous answer/skip/blank",
+      "mode": "speed",
+      "prior": "skipped",
+      "counts": {
+        "correct": 1,
+        "incorrect": 0,
+        "blank": 0,
+        "skipped": 1,
+        "unseen": 0,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "deadline commits valid draft, archives malformed draft and counts previous answer/skip/blank",
+      "mode": "assessment",
+      "prior": "none",
+      "counts": {
+        "correct": 1,
+        "incorrect": 0,
+        "blank": 1,
+        "skipped": 0,
+        "unseen": 8,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "deadline commits valid draft, archives malformed draft and counts previous answer/skip/blank",
+      "mode": "assessment",
+      "prior": "incorrect",
+      "counts": {
+        "correct": 1,
+        "incorrect": 1,
+        "blank": 0,
+        "skipped": 0,
+        "unseen": 8,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "deadline commits valid draft, archives malformed draft and counts previous answer/skip/blank",
+      "mode": "assessment",
+      "prior": "skipped",
+      "counts": {
+        "correct": 1,
+        "incorrect": 0,
+        "blank": 0,
+        "skipped": 1,
+        "unseen": 8,
+        "incomplete": 0,
+        "flagged": 0
+      },
+      "status": "PASS"
+    },
+    {
+      "test": "real formal local backup accepted by independent snapshot and ledger validator",
+      "attempts": 14,
+      "status": "PASS"
+    },
+    {
+      "test": "mock bridge accepts both synthesized final submission sequences without institutional verification",
+      "sent": 8,
+      "grading_state": "unverified",
+      "status": "PASS"
+    }
+  ]
+}

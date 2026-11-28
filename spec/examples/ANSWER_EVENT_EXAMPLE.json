@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "event_id": "EVT-CONTRACT-0002",
+  "event_type": "answer.submitted",
+  "event_sequence": 2,
+  "attempt_id": "ATT-CONTRACT-01",
+  "provenance": {
+    "data_origin": "demo",
+    "dataset_id": "DEMO-DATASET-01",
+    "local_profile_id": "DEMO-STUDENT-001",
+    "server_subject_ref": null
+  },
+  "context": {
+    "module_id": "mental-math",
+    "curriculum_id": "kalibataku",
+    "curriculum_version": "1.0.0-draft.2",
+    "package_id": "MM-G03-L02-MUL-CONTRACT",
+    "content_version": "1.0.0",
+    "material_grade": 3,
+    "level": 2,
+    "mode": "assessment",
+    "locale": "id",
+    "policy_version": "mastery-local-v1",
+    "assignment_id": null,
+    "form_id": "FORM-CONTRACT-A",
+    "assessment_cycle_id": "CYCLE-CONTRACT-01"
+  },
+  "occurred_at_client": "2026-11-25T12:00:04.200Z",
+  "payload": {
+    "question_instance_id": "INSTANCE-01",
+    "question_id": "MM-CONTRACT-Q001",
+    "question_revision": "1.0.0",
+    "competency_id": "arithmetic.multiplication.g03.l02",
+    "answer": {
+      "numerator": "96",
+      "denominator": "1"
+    },
+    "raw_answer": "96",
+    "draft_locale": "id",
+    "submission_kind": "first",
+    "attempt_number": 1,
+    "hint_used": false,
+    "active_duration_ms": 4200,
+    "elapsed_duration_ms": 4200,
+    "timing_quality": "valid_client_estimate",
+    "client_is_correct": null
+  },
+  "payload_hash": "028327f01591f34d311c29209ad98871620135e8e3e2002e155f698d9ffb8341"
+}

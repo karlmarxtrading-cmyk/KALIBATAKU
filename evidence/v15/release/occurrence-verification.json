@@ -1,0 +1,16 @@
+{
+  "method": "Independent position, identity, strategy, hash, catalog and graph comparison on the packaged dist.",
+  "active_nodes": 281,
+  "inactive_nodes": 19,
+  "packages": 4604,
+  "placements": 177640,
+  "prerequisite_edges": 712,
+  "unique_fingerprints": 168142,
+  "identity_hash_shape_errors": [],
+  "band_placements": {
+    "2": 59179,
+    "1": 59344,
+    "3": 59117
+  },
+  "offline_release": "460c98b682110f7e"
+}

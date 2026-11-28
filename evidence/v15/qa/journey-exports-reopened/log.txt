@@ -1,0 +1,1 @@
+{"pdf": true, "docx": true, "xlsx": true, "csv": true, "json": true}

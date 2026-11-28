@@ -1,0 +1,14 @@
+{
+  "browser": "151.0.7922.34",
+  "suites": [
+    "data",
+    "performance",
+    "layout",
+    "journeys",
+    "semantics",
+    "faults",
+    "teacher",
+    "offline"
+  ],
+  "failures": []
+}

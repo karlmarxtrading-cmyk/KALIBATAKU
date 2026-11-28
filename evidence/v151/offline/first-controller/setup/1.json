@@ -1,0 +1,32 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "browser-v13-firefox",
+  "build": {
+    "offline_release": "ef0b6798d9633ca8",
+    "app_version": "1.5.1"
+  },
+  "runtime": {
+    "engine": "firefox",
+    "version": "153.0",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41"
+  },
+  "assertions": 1,
+  "status": "PASS",
+  "errors": [],
+  "page_errors": [],
+  "checks": [
+    {
+      "id": "UX-004-SETUP",
+      "status": "PASS",
+      "expected": "Pace and options survive a material change; question count is re-validated for the new pack",
+      "actual": {
+        "pace_after_switch": "90",
+        "count_after_op_switch": "12",
+        "count_after_grade_switch": 10,
+        "pack_max": 10
+      },
+      "seconds": 2.7
+    }
+  ],
+  "method": "Native engine, local HTTP, synthetic profiles, real controls. Viewport widths are emulated; no physical device or screen-reader listener."
+}

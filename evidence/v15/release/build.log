@@ -1,0 +1,8 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kalibataku-mental-math@1.5.0 build
+> python3 tools/project.py build
+
++ node tests/data/build-offline.mjs /workspace/scratch/94a2cb03b99b/work/.build-rv2imoog/dist
+Offline manifest 460c98b682110f7e 64 assets 890519 bytes
+dist e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c 5047 files

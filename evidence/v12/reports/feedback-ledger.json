@@ -1,0 +1,370 @@
+{
+  "engine": "v24.22.3",
+  "profile": "synthetic",
+  "expected": "first wrong, final correct, independent count zero; evaluation has no early reveal; ID and exact fractions persist",
+  "status": "PASS",
+  "backupEvents": 20,
+  "modes": [
+    {
+      "mode": "practice",
+      "events": [
+        {
+          "id": "aa0b09cd-dc89-484f-a995-ab326b9dea9b",
+          "type": "attempt.started"
+        },
+        {
+          "id": "a42bfa93-a67b-4c2f-b0cb-b6b30b3ea33e",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "cd0345db-e13d-41b1-a1ed-5e03622ac026",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "e16f66ae-26fe-4230-aea4-15cf6a1ec180",
+          "type": "attempt.completed"
+        }
+      ],
+      "answers": [
+        {
+          "question_instance_id": "2ccfebf9-0050-4511-84be-fe56501b9de8.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "99",
+            "denominator": "1"
+          },
+          "raw_answer": "99",
+          "draft_locale": "id",
+          "submission_kind": "first",
+          "attempt_number": 1,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 4,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": false,
+          "key_seen_before": false,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-25T22:42:49.622Z",
+          "key_reveal_reason": "checked_response"
+        },
+        {
+          "question_instance_id": "2ccfebf9-0050-4511-84be-fe56501b9de8.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "7",
+            "denominator": "4"
+          },
+          "raw_answer": "21/12",
+          "draft_locale": "id",
+          "submission_kind": "retry",
+          "attempt_number": 2,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 5,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": true,
+          "key_seen_before": true,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-25T22:42:49.622Z",
+          "key_reveal_reason": "checked_response"
+        }
+      ]
+    },
+    {
+      "mode": "adaptive",
+      "events": [
+        {
+          "id": "8d5653e3-10d9-402e-9a7d-3812563c05f2",
+          "type": "attempt.started"
+        },
+        {
+          "id": "6c5cd1ed-0fb1-445b-8a25-d2ec3609574c",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "c97a17ee-3027-43b5-b166-7ad71ea131b0",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "e7d4c11a-6703-426d-9be2-f6e7a72a4b7a",
+          "type": "attempt.completed"
+        }
+      ],
+      "answers": [
+        {
+          "question_instance_id": "f6466cad-f4a4-4a40-abec-8e19e5753634.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "99",
+            "denominator": "1"
+          },
+          "raw_answer": "99",
+          "draft_locale": "id",
+          "submission_kind": "first",
+          "attempt_number": 1,
+          "hint_used": true,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 3,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": false,
+          "key_seen_before": false,
+          "hint_before": true,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-25T22:42:49.777Z",
+          "key_reveal_reason": "checked_response"
+        },
+        {
+          "question_instance_id": "f6466cad-f4a4-4a40-abec-8e19e5753634.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "7",
+            "denominator": "4"
+          },
+          "raw_answer": "21/12",
+          "draft_locale": "id",
+          "submission_kind": "retry",
+          "attempt_number": 2,
+          "hint_used": true,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 5,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": true,
+          "key_seen_before": true,
+          "hint_before": true,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-25T22:42:49.777Z",
+          "key_reveal_reason": "checked_response"
+        }
+      ]
+    },
+    {
+      "mode": "recovery",
+      "events": [
+        {
+          "id": "1e329d11-2ab1-446d-9a52-cfd416962a3a",
+          "type": "attempt.started"
+        },
+        {
+          "id": "99b029c6-af59-46fa-9a23-91f6a4300473",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "1a47f069-c316-4417-9149-fe0a8989bc10",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "7798d6c3-5170-48c7-bb65-c467c6e045ca",
+          "type": "attempt.completed"
+        }
+      ],
+      "answers": [
+        {
+          "question_instance_id": "8d9834ca-41de-4fc3-94ef-b4ae8101db0e.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "99",
+            "denominator": "1"
+          },
+          "raw_answer": "99",
+          "draft_locale": "id",
+          "submission_kind": "first",
+          "attempt_number": 1,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 4,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": false,
+          "key_seen_before": false,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-25T22:42:49.790Z",
+          "key_reveal_reason": "checked_response"
+        },
+        {
+          "question_instance_id": "8d9834ca-41de-4fc3-94ef-b4ae8101db0e.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "7",
+            "denominator": "4"
+          },
+          "raw_answer": "21/12",
+          "draft_locale": "id",
+          "submission_kind": "retry",
+          "attempt_number": 2,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 4,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": true,
+          "key_seen_before": true,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-25T22:42:49.790Z",
+          "key_reveal_reason": "checked_response"
+        }
+      ]
+    },
+    {
+      "mode": "speed",
+      "events": [
+        {
+          "id": "2ae6a5c5-959a-4778-ad33-6ca255ea1a94",
+          "type": "attempt.started"
+        },
+        {
+          "id": "e0cf581c-6768-47c5-bfff-84a41e4630df",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "85949ef0-1162-4625-a16e-cd4227c8f9aa",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "6e85921a-c2b3-4b92-9433-a26533cdc881",
+          "type": "attempt.completed"
+        }
+      ],
+      "answers": [
+        {
+          "question_instance_id": "da80a01a-4e7e-4d51-a1f1-8ef934177e3c.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "99",
+            "denominator": "1"
+          },
+          "raw_answer": "99",
+          "draft_locale": "id",
+          "submission_kind": "first",
+          "attempt_number": 1,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 2,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": false,
+          "key_seen_before": false,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-25T22:42:49.794Z",
+          "key_reveal_reason": "checked_response"
+        },
+        {
+          "question_instance_id": "da80a01a-4e7e-4d51-a1f1-8ef934177e3c.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "7",
+            "denominator": "4"
+          },
+          "raw_answer": "21/12",
+          "draft_locale": "id",
+          "submission_kind": "retry",
+          "attempt_number": 2,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 3,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": true,
+          "key_seen_before": true,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-25T22:42:49.794Z",
+          "key_reveal_reason": "checked_response"
+        }
+      ]
+    },
+    {
+      "mode": "assessment",
+      "events": [
+        {
+          "id": "bf4e81f8-11cc-497f-8a49-fa7c15332b6c",
+          "type": "attempt.started"
+        },
+        {
+          "id": "737e2600-d1bd-4695-98e7-fec763a61437",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "1901b4fc-6656-4420-86cd-e5acb1605429",
+          "type": "answer.submitted"
+        },
+        {
+          "id": "95e42101-c209-48ce-8e3f-50aba7d08345",
+          "type": "attempt.completed"
+        }
+      ],
+      "answers": [
+        {
+          "question_instance_id": "707c2186-86aa-4cee-9b62-65d512285278.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "99",
+            "denominator": "1"
+          },
+          "raw_answer": "99",
+          "draft_locale": "id",
+          "submission_kind": "first",
+          "attempt_number": 1,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 2,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": null,
+          "key_seen_before": false,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": null
+        },
+        {
+          "question_instance_id": "707c2186-86aa-4cee-9b62-65d512285278.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.1.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "7",
+            "denominator": "4"
+          },
+          "raw_answer": "21/12",
+          "draft_locale": "id",
+          "submission_kind": "revision",
+          "attempt_number": 2,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 4,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": null,
+          "key_seen_before": false,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": null
+        }
+      ]
+    }
+  ]
+}

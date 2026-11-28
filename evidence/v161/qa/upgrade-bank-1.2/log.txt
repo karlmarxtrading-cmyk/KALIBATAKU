@@ -1,0 +1,1 @@
+UPGRADE-app1.2.0-bank1.1.0: PASS · 6 assertions · 0 failed

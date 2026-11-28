@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "validator": "FastAPI OpenAPI.model_validate + JSON Schema Draft202012Validator + recursive local-ref resolution",
+  "version": "3.1.0",
+  "operations": 13,
+  "component_schemas": 29,
+  "schema_examples_checked": [
+    "Event",
+    "BatchReceipt",
+    "ReportSnapshot"
+  ]
+}

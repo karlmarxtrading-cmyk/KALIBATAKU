@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "scope": "All dist paths in the ZIP writer/reader round-trip. Final whole-archive checksum emitted externally after sealing.",
+  "verified": "CRC-32 for every entry, original file SHA-256 and byte count, safe relative paths; no symbolic links",
+  "files": 5054,
+  "bytes": 38233543,
+  "sha256": "948b88be8b7a60477399b51186edf597cb90953e1f63ddb1a1d9a45c0d6fc3a7"
+}

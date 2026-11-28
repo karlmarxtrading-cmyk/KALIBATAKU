@@ -1,0 +1,28 @@
+{
+ "catalogue_overlap": 0,
+ "same_order": false,
+ "journey": {
+  "missions": [
+   {
+    "kind": "intro",
+    "package_id": "MM-G03-L01-ADD-P002",
+    "n": 6,
+    "review": 0
+   },
+   {
+    "kind": "regular",
+    "package_id": "MM-G03-L01-ADD-P005",
+    "n": 8,
+    "review": 0
+   },
+   {
+    "kind": "regular",
+    "package_id": "MM-G03-L01-ADD-P004",
+    "n": 8,
+    "review": 0
+   }
+  ],
+  "total": 22,
+  "unique": 22
+ }
+}

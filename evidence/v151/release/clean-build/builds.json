@@ -1,0 +1,26 @@
+{
+  "build": {
+    "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+    "offline_release": "ef0b6798d9633ca8",
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9"
+  },
+  "runs": [
+    {
+      "run": "A",
+      "dist_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+      "files": 5052,
+      "log": "evidence/v151/release/clean-build/clean-build-A.log",
+      "log_sha256": "77258f2f1d1e4347eb0d4066ac480a8e075b8efaec3e0be5d990ae93e739935a"
+    },
+    {
+      "run": "B",
+      "dist_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+      "files": 5052,
+      "log": "evidence/v151/release/clean-build/clean-build-B.log",
+      "log_sha256": "065ed4674c6d8318d836da50f47add676077f663a46ecea3fa4cb2fd1b1029a1"
+    }
+  ],
+  "registered_QA_log_SHA256": "90fcbb25e587c8521fe0408d661acc884f8274596bdfdbc87c1bba3e711ef865"
+}

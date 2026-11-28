@@ -1,0 +1,194 @@
+{
+  "suite": "teacher",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+  "created_utc": "2026-11-28T10:40:43.014Z",
+  "base": "http://127.0.0.1:38483/probe-teacher-1795862443013/school/math/",
+  "checks": [
+    {
+      "id": "roster",
+      "status": "PASS",
+      "detail": "Two synthetic classes, six personas"
+    },
+    {
+      "id": "class-filter",
+      "status": "PASS",
+      "detail": "Six -> three personas in class 3A"
+    },
+    {
+      "id": "revision",
+      "status": "PASS",
+      "detail": "Append-only r1 and r2. Text is escaped."
+    },
+    {
+      "id": "assignment-bridge",
+      "status": "PASS",
+      "detail": {
+        "attempt": "41845381-6ff7-4db6-9538-cf8b836e47f9",
+        "detail": "Assigned real question, response, finalization, mock receipt and item drilldown."
+      }
+    },
+    {
+      "id": "report-preview",
+      "status": "PASS",
+      "detail": "Real DOM headings, tables, and preview text"
+    },
+    {
+      "id": "download-pdf",
+      "status": "PASS",
+      "detail": {
+        "filename": "KALIBATAKU_Report_demo-01_all_all_bilingual_v1.pdf",
+        "bytes": 409130
+      }
+    },
+    {
+      "id": "download-docx",
+      "status": "PASS",
+      "detail": {
+        "filename": "KALIBATAKU_Report_demo-01_all_all_bilingual_v1.docx",
+        "bytes": 13408
+      }
+    },
+    {
+      "id": "download-xlsx",
+      "status": "PASS",
+      "detail": {
+        "filename": "KALIBATAKU_Report_demo-01_all_all_bilingual_v1.xlsx",
+        "bytes": 38808
+      }
+    },
+    {
+      "id": "download-csv",
+      "status": "PASS",
+      "detail": {
+        "filename": "KALIBATAKU_Report_demo-01_all_all_bilingual_v1.csv",
+        "bytes": 9002
+      }
+    },
+    {
+      "id": "download-json",
+      "status": "PASS",
+      "detail": {
+        "filename": "KALIBATAKU_Report_demo-01_all_all_bilingual_v1.json",
+        "bytes": 13494
+      }
+    },
+    {
+      "id": "download-zip",
+      "status": "PASS",
+      "detail": {
+        "filename": "KALIBATAKU_Batch_bilingual_2026-11-28.zip",
+        "bytes": 409962
+      }
+    },
+    {
+      "id": "origin-isolation",
+      "status": "PASS",
+      "detail": "Personal report namespace restored"
+    },
+    {
+      "id": "batch-main-thread",
+      "status": "PASS",
+      "detail": {
+        "reports": 24,
+        "heap_before": 16100000,
+        "peak_observed_heap": 16100000,
+        "progress": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "ticks": 69,
+        "input_dispatch_ms": 0.09999999962747097,
+        "elapsed_ms": 1732,
+        "emitted_bytes": 9788509,
+        "archive_signature": [
+          80,
+          75,
+          3,
+          4
+        ],
+        "responded_during_batch": true,
+        "heap_after": 16100000
+      }
+    }
+  ],
+  "runtime": {
+    "offline_release": "ef0b6798d9633ca8",
+    "bootstrap_sha256": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "worker_profile": {
+    "reports": 24,
+    "heap_before": 16100000,
+    "peak_observed_heap": 16100000,
+    "progress": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "ticks": 69,
+    "input_dispatch_ms": 0.09999999962747097,
+    "elapsed_ms": 1732,
+    "emitted_bytes": 9788509,
+    "archive_signature": [
+      80,
+      75,
+      3,
+      4
+    ],
+    "responded_during_batch": true,
+    "heap_after": 16100000
+  },
+  "runtime_after": {
+    "offline_release": "ef0b6798d9633ca8",
+    "bootstrap_sha256": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "finished_utc": "2026-11-28T10:40:48.257Z"
+}

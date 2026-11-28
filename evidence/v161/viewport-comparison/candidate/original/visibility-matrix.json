@@ -1,0 +1,1183 @@
+{
+  "engine": "firefox",
+  "fresh_context_per_case": true,
+  "runs": [
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "answer": "correct",
+      "next_method": "Enter",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 0,
+          "questionText": "1 + 1",
+          "question": {
+            "top": 293.3999938964844,
+            "bottom": 346.8333282470703,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 394.0333251953125,
+            "bottom": 442.0333251953125,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 362,
+          "questionText": "1 + 1",
+          "question": {
+            "top": -45.5,
+            "bottom": 7.9333343505859375,
+            "fullyVisible": false,
+            "intersectsViewport": true
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 238,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 55.399993896484375,
+            "bottom": 108.83332824707031,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 156.03334045410156,
+            "bottom": 204.03334045410156,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 238,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 55.399993896484375,
+            "bottom": 108.83332824707031,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 156.03334045410156,
+            "bottom": 204.03334045410156,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "answer": "correct",
+      "next_method": "click",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 0,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 293.3999938964844,
+            "bottom": 346.8333282470703,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 394.0333251953125,
+            "bottom": 442.0333251953125,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 391,
+          "questionText": "0 + 4",
+          "question": {
+            "top": -74.5,
+            "bottom": -21.066665649414062,
+            "fullyVisible": false,
+            "intersectsViewport": false
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 238,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 55.399993896484375,
+            "bottom": 108.83332824707031,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 156.03334045410156,
+            "bottom": 204.03334045410156,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 238,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 55.399993896484375,
+            "bottom": 108.83332824707031,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 156.03334045410156,
+            "bottom": 204.03334045410156,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "answer": "incorrect",
+      "next_method": "Enter",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 0,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 293.3999938964844,
+            "bottom": 346.8333282470703,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 394.0333251953125,
+            "bottom": 442.0333251953125,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 391,
+          "questionText": "0 + 2",
+          "question": {
+            "top": -74.5,
+            "bottom": -21.066665649414062,
+            "fullyVisible": false,
+            "intersectsViewport": false
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 238,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 55.399993896484375,
+            "bottom": 108.83332824707031,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 156.03334045410156,
+            "bottom": 204.03334045410156,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 238,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 55.399993896484375,
+            "bottom": 108.83332824707031,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 156.03334045410156,
+            "bottom": 204.03334045410156,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        320,
+        568
+      ],
+      "answer": "incorrect",
+      "next_method": "click",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 0,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 293.3999938964844,
+            "bottom": 346.8333282470703,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 394.0333251953125,
+            "bottom": 442.0333251953125,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 391,
+          "questionText": "0 + 2",
+          "question": {
+            "top": -74.5,
+            "bottom": -21.066665649414062,
+            "fullyVisible": false,
+            "intersectsViewport": false
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 238,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 55.399993896484375,
+            "bottom": 108.83332824707031,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 156.03334045410156,
+            "bottom": 204.03334045410156,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            320,
+            568
+          ],
+          "scrollY": 238,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 55.399993896484375,
+            "bottom": 108.83332824707031,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 156.03334045410156,
+            "bottom": 204.03334045410156,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "answer": "correct",
+      "next_method": "Enter",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 0,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 317,
+            "bottom": 370.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 430.433349609375,
+            "bottom": 486.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "1 + 1",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 313.433349609375,
+            "bottom": 369.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "1 + 1",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 313.433349609375,
+            "bottom": 369.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "answer": "correct",
+      "next_method": "click",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 0,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 317,
+            "bottom": 370.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 430.433349609375,
+            "bottom": 486.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 313.433349609375,
+            "bottom": 369.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 313.433349609375,
+            "bottom": 369.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "answer": "incorrect",
+      "next_method": "Enter",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 0,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 317,
+            "bottom": 370.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 430.433349609375,
+            "bottom": 486.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 313.433349609375,
+            "bottom": 369.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 313.433349609375,
+            "bottom": 369.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        390,
+        844
+      ],
+      "answer": "incorrect",
+      "next_method": "click",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 0,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 317,
+            "bottom": 370.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 430.433349609375,
+            "bottom": 486.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 313.433349609375,
+            "bottom": 369.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            390,
+            844
+          ],
+          "scrollY": 117,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 200,
+            "bottom": 253.43333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 313.433349609375,
+            "bottom": 369.433349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "answer": "correct",
+      "next_method": "Enter",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 135,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 201.89999389648438,
+            "bottom": 288.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 335.933349609375,
+            "bottom": 383.933349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 468,
+          "questionText": "0 + 2",
+          "question": {
+            "top": -98.39999389648438,
+            "bottom": -11.566665649414062,
+            "fullyVisible": false,
+            "intersectsViewport": false
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 282,
+          "questionText": "1 + 1",
+          "question": {
+            "top": 54.899993896484375,
+            "bottom": 141.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 188.93333435058594,
+            "bottom": 236.93333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 282,
+          "questionText": "1 + 1",
+          "question": {
+            "top": 54.899993896484375,
+            "bottom": 141.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 188.93333435058594,
+            "bottom": 236.93333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "answer": "correct",
+      "next_method": "click",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 135,
+          "questionText": "0 + 4",
+          "question": {
+            "top": 201.89999389648438,
+            "bottom": 288.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 335.933349609375,
+            "bottom": 383.933349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 468,
+          "questionText": "0 + 4",
+          "question": {
+            "top": -98.39999389648438,
+            "bottom": -11.566665649414062,
+            "fullyVisible": false,
+            "intersectsViewport": false
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 282,
+          "questionText": "1 + 1",
+          "question": {
+            "top": 54.899993896484375,
+            "bottom": 141.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 188.93333435058594,
+            "bottom": 236.93333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 282,
+          "questionText": "1 + 1",
+          "question": {
+            "top": 54.899993896484375,
+            "bottom": 141.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 188.93333435058594,
+            "bottom": 236.93333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "answer": "incorrect",
+      "next_method": "Enter",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 135,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 201.89999389648438,
+            "bottom": 288.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 335.933349609375,
+            "bottom": 383.933349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 468,
+          "questionText": "0 + 2",
+          "question": {
+            "top": -98.39999389648438,
+            "bottom": -11.566665649414062,
+            "fullyVisible": false,
+            "intersectsViewport": false
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 282,
+          "questionText": "1 + 1",
+          "question": {
+            "top": 54.899993896484375,
+            "bottom": 141.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 188.93333435058594,
+            "bottom": 236.93333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 282,
+          "questionText": "1 + 1",
+          "question": {
+            "top": 54.899993896484375,
+            "bottom": 141.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 188.93333435058594,
+            "bottom": 236.93333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "answer": "incorrect",
+      "next_method": "click",
+      "fresh_attempts": 0,
+      "states": [
+        {
+          "label": "initial",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 135,
+          "questionText": "0 + 2",
+          "question": {
+            "top": 201.89999389648438,
+            "bottom": 288.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 335.933349609375,
+            "bottom": 383.933349609375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "feedback",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 468,
+          "questionText": "0 + 2",
+          "question": {
+            "top": -98.39999389648438,
+            "bottom": -11.566665649414062,
+            "fullyVisible": false,
+            "intersectsViewport": false
+          },
+          "input": null,
+          "focus": "SECTION",
+          "position": "Soal 1 dari 6"
+        },
+        {
+          "label": "next",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 282,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 54.899993896484375,
+            "bottom": 141.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 188.93333435058594,
+            "bottom": 236.93333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        },
+        {
+          "label": "typed",
+          "viewport": [
+            844,
+            390
+          ],
+          "scrollY": 282,
+          "questionText": "2 + 3",
+          "question": {
+            "top": 54.899993896484375,
+            "bottom": 141.73333740234375,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "input": {
+            "top": 188.93333435058594,
+            "bottom": 236.93333435058594,
+            "fullyVisible": true,
+            "intersectsViewport": true
+          },
+          "focus": "kp-answer",
+          "position": "Soal 2 dari 6"
+        }
+      ]
+    }
+  ],
+  "version": "153.0"
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "kalibataku-independent-audit/1",
+  "audit_date": "2026-11-28",
+  "timezone": "Asia/Bangkok",
+  "source": {
+    "filename": "KALIBATAKU_1.5.0_KANDIDAT_HOLD.zip",
+    "bytes": 116258093,
+    "sha256": "e61b032a091bda4e0867c15c3001e802bf808372f6dcee7ada073daefa21f534",
+    "files": 6372,
+    "uncompressed_bytes": 495342508
+  },
+  "build": {
+    "app_version": "1.5.0",
+    "bank_version": "1.2.0",
+    "offline_release": "460c98b682110f7e",
+    "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+    "dist_files": 5047,
+    "bank_tree_sha256": "6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43"
+  },
+  "decision": "HOLD",
+  "application_modified": false,
+  "deployed": false,
+  "mandatory_criteria": {
+    "count": 70,
+    "candidate": {
+      "PASS": 59,
+      "FAIL": 0,
+      "BLOCKED": 8,
+      "NOT_RUN": 3
+    },
+    "audit": {
+      "PASS": 57,
+      "BLOCKED": 8,
+      "FAIL": 2,
+      "NOT_RUN": 3
+    }
+  },
+  "post_pilot_criteria": {
+    "count": 1,
+    "audit": {
+      "NOT_RUN": 1
+    },
+    "id": "AC:PERF-03"
+  },
+  "new_confirmed_findings": [
+    {
+      "id": "AUD15-01",
+      "prioritas": "P2",
+      "status": "OPEN_CONFIRMED",
+      "judul": "Soal belum dilihat ikut memenuhi cakupan dan kesiapan",
+      "ac_lama_gagal": "AC:PROG-06",
+      "ac_terkait": "AC:PROG-04; AC:PROG-05; AC:TEACH-01; AC:TEACH-02",
+      "bukti_aktual": "Intro: 1 dilihat dan 0 dijawab dilaporkan sebagai cakupan 6. Tiga misi: 10 dilihat, 8 dijawab, tetapi cakupan 12/12 dan ready=true. Semua snapshot completed.",
+      "lokasi": "src/journey/model.mjs:193–196,216–220; src/journey/report.mjs:7,20–23",
+      "perbaikan": "Semantik exposure aktual bersama; jangan kredit unseen; kompatibilitas legacy konservatif; riwayat asli tetap.",
+      "syarat_tutup": "Probe sparse belum ready saat 10 < 12; jalur semua benar mencapai 281 kompetensi; peta dan lima ekspor cocok; first response, hint, revisi dan restore terjaga.",
+      "bukti": "09_BUKTI/progresi/independent_state_probe.json;09_BUKTI/ux/probe_unseen_coverage.json",
+      "batas": "Bukan klaim pemalsuan penguasaan formal; akurasi dua misi target memang memenuhi ambang."
+    },
+    {
+      "id": "AUD15-02",
+      "prioritas": "P2",
+      "status": "OPEN_CONFIRMED",
+      "judul": "Label kesiapan offline katalog/daftar bertentangan dengan verifikasi",
+      "ac_lama_gagal": "Tidak otomatis menggagalkan kriteria lama; syarat penutupan tambahan",
+      "ac_terkait": "AC:OFF-01; AC:OFF-04 (RELATED_NOT_DIRECT_FAILURE); AUD-02 residual",
+      "bukti_aktual": "Cache paket P001 diubah satu byte: peta/detail meminta perbaikan; katalog Tersedia offline; daftar Siap untuk latihan; launcher benar menolak.",
+      "lokasi": "src/data/offline.js:25,30,42,85; src/core/catalog.mjs:70,87; src/data/panel-offline.js:13,44,47",
+      "perbaikan": "Kontrak kesiapan terverifikasi bersama dan invalidasi; cek lingkup tampil/terpilih; jaga verifikasi launch tanpa unduh semua bank.",
+      "syarat_tutup": "Status/aksi peta, katalog, daftar, detail dan launch sepakat pada cache sehat, hilang, rusak, usang, dan setelah repair. Sesi aktif dan finalisasi offline tetap berjalan.",
+      "bukti": "09_BUKTI/ux/probe_catalog_offline.json;09_BUKTI/root/root_reproduction_offline/probe_catalog_offline.json",
+      "batas": "Tidak ditemukan eksekusi konten rusak atau kehilangan data. OFF-04 khusus peta tetap PASS."
+    },
+    {
+      "id": "AUD15-03",
+      "prioritas": "P2",
+      "status": "OPEN_CONFIRMED",
+      "judul": "Timestamp offset sah salah difilter pada laporan periode",
+      "ac_lama_gagal": "AC:TEACH-02",
+      "ac_terkait": "AUD-04 kasus asli tetap ditutup; kasus waktu baru",
+      "bukti_aktual": "Cadangan UTC dan +07:00 valid; offset dipulihkan dengan 45 record dan 4 sesi. Laporan 28 November Jakarta: 4 vs 0 sesi, 32 vs 0 soal, 3 vs 0 misi; lima format keliru.",
+      "lokasi": "src/teacher/report.js:24–37,49–66,89–98; src/data/validate.js:22; src/data/snapshot-check.js:6,20–22",
+      "perbaikan": "Bandingkan/urutkan epoch hingga, awal inklusif dan akhir eksklusif; pertahankan timestamp serta hash ledger historis.",
+      "syarat_tutup": "Z dan offset ekuivalen menghasilkan nilai identik pada empat zona dan batas milidetik; pratinjau/lima ekspor menunjukkan 4 sesi, 32 soal, 3 misi; restore serta AUD-04/05/06 tetap lulus.",
+      "bukti": "09_BUKTI/data/reports/timezone-offset.json;09_BUKTI/data/reports/timezone-offset-export-verification.json",
+      "batas": "Jalur normal UTC tidak dinyatakan selalu gagal; data riwayat sumber tetap utuh; validitas XML bukan bukti render Word."
+    }
+  ],
+  "old_findings_audit": {
+    "DITUTUP_SESUAI_CAKUPAN_ASAL": 9,
+    "PARSIAL": 4,
+    "TERBUKA_EKSTERNAL": 3
+  },
+  "bank": {
+    "preserved_files": 4677,
+    "packages": 4604,
+    "placements": 177640,
+    "unique_competency_fingerprints": 173309,
+    "template_families": 394,
+    "solution_steps_checked": 389187,
+    "oracle_errors": 0,
+    "human_review_decisions": 0
+  },
+  "provided_tests": {
+    "suites": 72,
+    "assertions": 1586,
+    "binding_verified": true,
+    "all_rerun_independently": false
+  },
+  "independent_rechecks": {
+    "all_files_manifest_and_format": 6372,
+    "clean_builds": 2,
+    "identical_dist": true,
+    "active_competencies_reached": 281,
+    "missions": 843,
+    "checkpoints": 60,
+    "firefox_source_checks": 63,
+    "local_update_rollback_observations": 12,
+    "browser_used": "Firefox 153.0"
+  },
+  "go_rule": "Seluruh 70 WAJIB PASS dengan bukti sah; AUD15-01/02/03 ditutup; tidak ada penghalang rilis; domain menyajikan build final; PERF-03 tetap fase SETELAH_PILOT.",
+  "limits": [
+    "No physical Android/iOS",
+    "No actual screen-reader speech",
+    "No Microsoft Word application validation",
+    "No human review of394families",
+    "No12student/3teacherpilot",
+    "No production-domain deployment",
+    "Chromium/WebKit not rerun successfully in this audit environment"
+  ],
+  "report_sections": 22,
+  "report_pdf_pages": 22
+}

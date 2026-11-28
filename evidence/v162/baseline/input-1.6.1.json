@@ -1,0 +1,35 @@
+{
+  "schema": "kalibataku-input-provenance/1",
+  "checked_utc": "2026-11-28T18:35:28.184026+00:00",
+  "source_archive_name": "KALIBATAKU_1.6.1_KANDIDAT_HOLD.zip",
+  "source_sha256": "37169d1c06edd8216acd3a263282004d893494c74d3dabc6dcb9376e9d7bf198",
+  "audit_archive_name": "KALIBATAKU_1.6.1_AUDIT_DAN_MANDAT_OTOMATIS_20261129.zip",
+  "audit_archive_sha256": "e054160c6b7f4d38a25cdfba75a373626611601d04fa2cad02c1a88283daa12c",
+  "audit_files": 95,
+  "audit_manifests_checked": 94,
+  "inventory_auditor_rows_matched": 7418,
+  "input_build": {
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "offline_release": "a2f40449c4738fe6",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "input_binding_sha256": "19fe3aa1e36c6d5e260c6077c817352fd85e7fcf98d7fe957c6447ecaa6bdf8d",
+  "input_status": "HOLD",
+  "input_suites": 94,
+  "input_assertions": 2325,
+  "baseline_dist_files": 5054,
+  "release_verify": {
+    "command": [
+      "npm",
+      "run",
+      "release:verify"
+    ],
+    "exit_code": 0,
+    "clean_extraction": true,
+    "log": "npm-release-verify-1.6.1.log",
+    "log_sha256": "a641d9256b295080ca3654874f045e84d416e25ec38b4e3df616775553a26b49"
+  },
+  "scope": "Checks the original archives against the supplied audit inventory and verifies 1.6.1 on a clean extraction. Historical suite counts come from the hash-bound 1.6.1 binding."
+}

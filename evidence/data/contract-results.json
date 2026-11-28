@@ -1,0 +1,106 @@
+{
+  "runtime": "v24.22.3",
+  "environment": "Node ES modules, transactional in-memory fallback, deterministic mock and same-origin HTTP contract fetch harness. No live LMS or browser IDB assertions in this run.",
+  "results": [
+    {
+      "id": "TC-129",
+      "description": "Commit with ledger/outbox, transaction abort rolls changes back in the temporary backend",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-130",
+      "description": "Temporary storage labelled, exportable, final session resists edits",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-131",
+      "description": "Independent writer IDs, explicit takeover, stale revision rejection",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-133",
+      "description": "Verified backup round trip, no duplicate records; mismatch/conflict roll back",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-134",
+      "description": "Profile isolation and removal including dependent data",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-135",
+      "description": "Remote missing config makes no request, no mocked receipt",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-136",
+      "description": "Partial, duplicate and malformed mock receipts; canonical cross-language hash fixture",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-137",
+      "description": "Retry after commit uses identical IDs/hashes, duplicate once; collision detected",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-138",
+      "description": "Partial ACK changes only correlated events; malformed attempt/hash keeps ledger and outbox",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-139",
+      "description": "401,403,409,422,429,500,503 mapped states; Retry-After and backoff applied",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-140",
+      "description": "Complete first produces missing sequence list and recovers after answer/start",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-141",
+      "description": "Account/environment switch halts old outbox; subject mismatch blocks POST",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-142",
+      "description": "Mock server deadline uses receipt time and rejects late offline events",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-143",
+      "description": "Server transport accepted, grading stays unverified; receipt origin validated",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-144",
+      "description": "Unsupported schema rejected; existing outbox and payload preserved",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-179",
+      "description": "Explicit foreground drain without background sync, transient queue to mock receipt",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-184",
+      "description": "Reject oversized, malformed and prototype-key import; data origins cannot be spoofed",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-137",
+      "description": "Remote adapter over fake same-origin HTTP: bind → lost response after commit → duplicate replay → finalization → progress and scoped report",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-144",
+      "description": "Malformed JSON, unsupported event version, cancelled batch and unavailable item revision retain local records",
+      "status": "PASS"
+    },
+    {
+      "id": "TC-134",
+      "description": "Recover a removed alias before a fresh start without transferring existing sessions to the default profile",
+      "status": "PASS"
+    }
+  ]
+}

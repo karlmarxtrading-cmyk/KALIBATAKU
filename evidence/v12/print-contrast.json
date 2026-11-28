@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "engine": "158.0.8127.0",
+  "build": "47c1663e7ea2fa9c",
+  "print": [
+    {
+      "language": "id",
+      "method": "Browser print from dark screen theme, real report preview and 64 synthetic sessions",
+      "paper": {
+        "background": "rgb(255, 255, 255)",
+        "color": "rgb(20, 38, 28)"
+      },
+      "pages": 5,
+      "page_bounds": [
+        [
+          58.757999420166016,
+          787.2659912109375,
+          205
+        ],
+        [
+          32.389198303222656,
+          791.9534301757812,
+          219
+        ],
+        [
+          41.72447967529297,
+          790.4534301757812,
+          353
+        ],
+        [
+          41.72447967529297,
+          790.4534301757812,
+          353
+        ],
+        [
+          41.72447967529297,
+          579.5159912109375,
+          224
+        ]
+      ],
+      "fraction_and_key": true,
+      "source": "demo"
+    },
+    {
+      "language": "en",
+      "method": "Browser print from dark screen theme, real report preview and 64 synthetic sessions",
+      "paper": {
+        "background": "rgb(255, 255, 255)",
+        "color": "rgb(20, 38, 28)"
+      },
+      "pages": 5,
+      "page_bounds": [
+        [
+          58.757999420166016,
+          768.5159912109375,
+          208
+        ],
+        [
+          32.389198303222656,
+          791.9534301757812,
+          216
+        ],
+        [
+          41.72447967529297,
+          790.4534301757812,
+          353
+        ],
+        [
+          41.72447967529297,
+          790.4534301757812,
+          353
+        ],
+        [
+          41.72447967529297,
+          579.5159912109375,
+          224
+        ]
+      ],
+      "fraction_and_key": true,
+      "source": "demo"
+    }
+  ],
+  "contrast": [
+    {
+      "theme": "light",
+      "samples": [
+        {
+          "selector": "[data-answer-feedback] h2",
+          "fg": "rgb(23, 43, 39)",
+          "bg": "rgb(255, 255, 255)",
+          "ratio": 14.880118013286522
+        },
+        {
+          "selector": "[data-answer-feedback] dt",
+          "fg": "rgb(23, 43, 39)",
+          "bg": "rgb(255, 255, 255)",
+          "ratio": 14.880118013286522
+        },
+        {
+          "selector": "[data-answer-feedback] dd",
+          "fg": "rgb(23, 43, 39)",
+          "bg": "rgb(255, 255, 255)",
+          "ratio": 14.880118013286522
+        },
+        {
+          "selector": "[data-answer-feedback] summary",
+          "fg": "rgb(23, 43, 39)",
+          "bg": "rgb(255, 255, 255)",
+          "ratio": 14.880118013286522
+        },
+        {
+          "selector": "[data-part=next]",
+          "fg": "rgb(255, 255, 255)",
+          "bg": "rgb(20, 92, 75)",
+          "ratio": 7.88820408265132
+        },
+        {
+          "selector": "#kp-expression svg",
+          "fg": "rgb(23, 43, 39)",
+          "bg": "rgb(255, 255, 255)",
+          "ratio": 14.880118013286522
+        },
+        {
+          "selector": "[data-mml-node=mfrac] rect",
+          "fg": "rgb(23, 43, 39)",
+          "bg": "rgb(255, 255, 255)",
+          "ratio": 14.880118013286522
+        },
+        {
+          "selector": "header a[href]",
+          "fg": "rgb(23, 43, 39)",
+          "bg": "rgb(255, 255, 255)",
+          "ratio": 14.880118013286522
+        },
+        {
+          "selector": "keyboard focus",
+          "fg": "rgb(20, 92, 75)",
+          "bg": "rgb(255, 255, 255)",
+          "ratio": 7.88820408265132
+        }
+      ]
+    },
+    {
+      "theme": "dark",
+      "samples": [
+        {
+          "selector": "[data-answer-feedback] h2",
+          "fg": "rgb(241, 246, 241)",
+          "bg": "rgb(25, 43, 37)",
+          "ratio": 13.577136391636456
+        },
+        {
+          "selector": "[data-answer-feedback] dt",
+          "fg": "rgb(241, 246, 241)",
+          "bg": "rgb(25, 43, 37)",
+          "ratio": 13.577136391636456
+        },
+        {
+          "selector": "[data-answer-feedback] dd",
+          "fg": "rgb(241, 246, 241)",
+          "bg": "rgb(25, 43, 37)",
+          "ratio": 13.577136391636456
+        },
+        {
+          "selector": "[data-answer-feedback] summary",
+          "fg": "rgb(241, 246, 241)",
+          "bg": "rgb(25, 43, 37)",
+          "ratio": 13.577136391636456
+        },
+        {
+          "selector": "[data-part=next]",
+          "fg": "rgb(16, 41, 31)",
+          "bg": "rgb(139, 213, 181)",
+          "ratio": 9.038114112941383
+        },
+        {
+          "selector": "#kp-expression svg",
+          "fg": "rgb(241, 246, 241)",
+          "bg": "rgb(25, 43, 37)",
+          "ratio": 13.577136391636456
+        },
+        {
+          "selector": "[data-mml-node=mfrac] rect",
+          "fg": "rgb(241, 246, 241)",
+          "bg": "rgb(25, 43, 37)",
+          "ratio": 13.577136391636456
+        },
+        {
+          "selector": "header a[href]",
+          "fg": "rgb(241, 246, 241)",
+          "bg": "rgb(25, 43, 37)",
+          "ratio": 13.577136391636456
+        },
+        {
+          "selector": "keyboard focus",
+          "fg": "rgb(139, 213, 181)",
+          "bg": "rgb(25, 43, 37)",
+          "ratio": 8.688975046678886
+        }
+      ]
+    }
+  ]
+}

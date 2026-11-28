@@ -1,0 +1,29 @@
+{
+  "fixture": "Synthetic malformed receipt; no application or human result claimed",
+  "expected": "FAIL: both checks are not assertion objects",
+  "actual_suite": {
+    "id": "malformed",
+    "command": [
+      "{python}",
+      "fixture.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.02,
+    "log": "malformed/log.txt",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "receipts": [
+      {
+        "source": "evidence/v13/receipts/malformed.json",
+        "file": "malformed/malformed.json",
+        "sha256": "edfccc81e9f53e42451df9decb8ba55f30a0a2d40eaff12a96b1901cf11f74a2",
+        "state": "PASS",
+        "assertions": 2
+      }
+    ],
+    "problems": [],
+    "assertions": 2,
+    "status": "PASS"
+  },
+  "actual_binding_status": "PASS",
+  "verify_binding_problems": []
+}

@@ -1,0 +1,42 @@
+{
+  "artifact_status": "template_not_release_verdict",
+  "release_id": null,
+  "readiness": {
+    "static_application": {
+      "status": "NOT_IMPLEMENTED",
+      "evidence": [],
+      "blockers": [],
+      "claim_boundary": "Template for future website build; not current document QA."
+    },
+    "bank_content": {
+      "status": "NOT_IMPLEMENTED",
+      "evidence": [],
+      "blockers": [],
+      "claim_boundary": "Template for future website build; not current document QA."
+    },
+    "bridge_contract": {
+      "status": "NOT_IMPLEMENTED",
+      "evidence": [],
+      "blockers": [],
+      "claim_boundary": "Template for future website build; not current document QA."
+    },
+    "live_lms": {
+      "status": "DEFERRED_BY_SCOPE",
+      "evidence": [],
+      "blockers": [],
+      "claim_boundary": "Template for future website build; not current document QA."
+    },
+    "pedagogical_calibration": {
+      "status": "NOT_PERFORMED",
+      "evidence": [],
+      "blockers": [],
+      "claim_boundary": "Template for future website build; not current document QA."
+    },
+    "live_deployment": {
+      "status": "NOT_PERFORMED",
+      "evidence": [],
+      "blockers": [],
+      "claim_boundary": "Template for future website build; not current document QA."
+    }
+  }
+}

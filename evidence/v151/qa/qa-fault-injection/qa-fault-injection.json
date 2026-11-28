@@ -1,0 +1,221 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "TECH-02-fault-injection",
+  "build": {
+    "offline_release": "ef0b6798d9633ca8"
+  },
+  "runtime": {
+    "python": "3.12.14"
+  },
+  "started": "2026-11-28T10:43:06Z",
+  "finished": "2026-11-28T10:43:18Z",
+  "assertions": 20,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "ALL-PASS-ACCEPTED",
+      "status": "PASS",
+      "expected": "Fresh receipts with only PASS rows are accepted and re-verify",
+      "actual": {
+        "status": "PASS",
+        "assertions": 2
+      }
+    },
+    {
+      "id": "FAILED-ASSERTION",
+      "status": "PASS",
+      "expected": "A receipt with one FAIL row fails the suite even when the process exits 0",
+      "actual": {
+        "suite_status": "FAIL",
+        "problems": [
+          "evidence/v13/receipts/fail-row.json: failed assertions: ['OKE-REVISE']",
+          "evidence/v13/receipts/fail-row.json: receipt status FAIL"
+        ]
+      }
+    },
+    {
+      "id": "EMPTY-RECEIPT",
+      "status": "PASS",
+      "expected": "A receipt with zero assertions fails",
+      "actual": {
+        "suite_status": "FAIL",
+        "problems": [
+          "evidence/v13/receipts/empty.json: empty receipt: no evaluated assertions",
+          "evidence/v13/receipts/empty.json: only 0 assertions, registry requires 2",
+          "evidence/v13/receipts/empty.json: receipt status FAIL"
+        ]
+      }
+    },
+    {
+      "id": "MISSING-RECEIPT",
+      "status": "PASS",
+      "expected": "A declared receipt that was never written fails",
+      "actual": {
+        "suite_status": "FAIL",
+        "problems": [
+          "missing receipt evidence/v13/receipts/missing.json"
+        ]
+      }
+    },
+    {
+      "id": "NONZERO-EXIT",
+      "status": "PASS",
+      "expected": "Exit code 1 fails although rows say PASS",
+      "actual": {
+        "suite_status": "FAIL",
+        "problems": [
+          "exit code 1"
+        ]
+      }
+    },
+    {
+      "id": "STALE-RECEIPT-BUILD",
+      "status": "PASS",
+      "expected": "A receipt for another build fails",
+      "actual": {
+        "suite_status": "FAIL",
+        "problems": [
+          "evidence/v13/receipts/stale.json: receipt build 0000000000000000 is not the certified build abcdefabcdef0123"
+        ]
+      }
+    },
+    {
+      "id": "RECORDED-ERROR",
+      "status": "PASS",
+      "expected": "Unexpected errors in a receipt fail it",
+      "actual": {
+        "suite_status": "FAIL",
+        "problems": [
+          "evidence/v13/receipts/error.json: errors: ['unexpected exception']",
+          "evidence/v13/receipts/error.json: receipt status FAIL"
+        ]
+      }
+    },
+    {
+      "id": "SELF-DECLARED-PASS",
+      "status": "PASS",
+      "expected": "A receipt that claims PASS over a FAIL row is rejected",
+      "actual": {
+        "suite_status": "FAIL",
+        "problems": [
+          "evidence/v13/receipts/lie.json: failed assertions: ['OKE-REVISE']",
+          "evidence/v13/receipts/lie.json: declared status PASS differs from rows (FAIL)"
+        ]
+      }
+    },
+    {
+      "id": "BLOCKED-NOT-ALLOWED",
+      "status": "PASS",
+      "expected": "BLOCKED_ENV in a suite that may not be blocked is FAIL",
+      "actual": {
+        "suite_status": "FAIL",
+        "problems": [
+          "exit code 3",
+          "evidence/v13/receipts/blocked.json: BLOCKED_ENV not permitted for this suite: ['A1']"
+        ]
+      }
+    },
+    {
+      "id": "BLOCKED-EXIT-NOT-ALLOWED",
+      "status": "PASS",
+      "expected": "Exit code 3 is a failure for a suite that may not be blocked",
+      "actual": {
+        "suite_status": "FAIL",
+        "problems": [
+          "exit code 3",
+          "evidence/v13/receipts/blocked.json: BLOCKED_ENV not permitted for this suite: ['A1']"
+        ]
+      }
+    },
+    {
+      "id": "BLOCKED-IS-NOT-PASS",
+      "status": "PASS",
+      "expected": "Allowed environment block stays BLOCKED_ENV and never becomes PASS",
+      "actual": {
+        "suite_status": "BLOCKED_ENV",
+        "overall": "BLOCKED_ENV"
+      }
+    },
+    {
+      "id": "LEGACY-ZERO-LINES",
+      "status": "PASS",
+      "expected": "A legacy suite whose output has no assertion lines fails",
+      "actual": [
+        "no assertion lines matched; an empty suite cannot pass",
+        "only 0 assertion lines, registry requires 1"
+      ]
+    },
+    {
+      "id": "MODIFIED-RECEIPT",
+      "status": "PASS",
+      "expected": "Editing a bound receipt (OKE-REVISE → FAIL) rejects the binding",
+      "actual": [
+        "ok: receipt ok/ok.json missing or modified",
+        "ok: assertion count differs from log and receipts",
+        "ok: recorded status PASS differs from receipts (FAIL)"
+      ]
+    },
+    {
+      "id": "ASSESSOR-FM001-FROM-FAIL",
+      "status": "PASS",
+      "expected": "Assessor cannot give FM-001 PASS from an OKE-REVISE FAIL receipt",
+      "actual": {
+        "verify": [
+          "ok: recorded receipt count or state differs from file",
+          "ok: failed assertions: ['OKE-REVISE']"
+        ],
+        "FM-001": "FAIL"
+      }
+    },
+    {
+      "id": "STALE-BINDING-DIST",
+      "status": "PASS",
+      "expected": "A binding for an older distribution is rejected",
+      "actual": [
+        "stale binding: dist_tree_sha256 28e51d411cc8483bda980ca17895c1cdaff2b5f606b5cdd3b465e4404d00f4f9 != current 3298e5de25df7276e1f47a1a63125ebc6e62fa391dd0747690331a98eb42d5c7"
+      ]
+    },
+    {
+      "id": "DIFFERENT-RUNTIME",
+      "status": "PASS",
+      "expected": "A binding from a different Node runtime is rejected",
+      "actual": [
+        "runtime differs: node v24.22.3 != v0.0.1"
+      ]
+    },
+    {
+      "id": "REGISTRY-CHANGED",
+      "status": "PASS",
+      "expected": "Lowering thresholds after the run invalidates the binding",
+      "actual": [
+        "binding was produced with a different suite registry"
+      ]
+    },
+    {
+      "id": "SKIPPED-SUITE",
+      "status": "PASS",
+      "expected": "A required suite that never ran rejects the binding",
+      "actual": [
+        "required suites missing from binding: ['extra']"
+      ]
+    },
+    {
+      "id": "EXTERNAL-GATE-NOT-AUTOPASS",
+      "status": "PASS",
+      "expected": "Criteria needing people or devices are never PASS from automation",
+      "actual": "BLOCKED"
+    },
+    {
+      "id": "V12-RUNNER-EXIT",
+      "status": "PASS",
+      "expected": "tests/v12/browser.py exits nonzero when one assertion fails (TECH-02 reproduction)",
+      "actual": {
+        "exit_code": 1,
+        "failed": [
+          "SPEED"
+        ]
+      }
+    }
+  ]
+}

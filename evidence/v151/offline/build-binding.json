@@ -1,0 +1,57 @@
+{
+  "finding": "AUD15-02",
+  "status": "PASS",
+  "scope": "Loopback on a Linux runner, synthetic cache mutations, actual browser and service worker. This is separate from field/device acceptance.",
+  "build": {
+    "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+    "offline_release": "ef0b6798d9633ca8",
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9"
+  },
+  "independent_probe": {
+    "baseline": "probe_catalog_offline.json",
+    "baseline_finding_confirmed": true,
+    "baseline_sha256": "48b83da81340faec4898257499d7729a10e6a165b5086f43f2cc9a007c48e959",
+    "candidate": "probe_catalog_offline_fixed.json",
+    "candidate_finding_confirmed": false,
+    "candidate_sha256": "14942640aed09532c10955a3b0aef710935d572aa638e803db4ca6e9d6f5dc84",
+    "observation": "The original probe reads the catalogue during checking. The browser suites additionally wait for the settled per-package label and check its control."
+  },
+  "first_controller": {
+    "summary": "first-controller/summary.json",
+    "sha256": "0bbdb58bca267c378e80f68eb5ef9e80eaf36e2ed546bb0470052aeec64ae2aa"
+  },
+  "cold_home": {
+    "scope": "cold-home/summary.json",
+    "summary_sha256": "178a9a2e7069c1744a9e85ec398016660174de0bf3690db655c359c4921cbd70",
+    "webkit_same_href": "cold-home/same-href-webkit.json",
+    "same_href_sha256": "e2f13f9e9c3a67562f89218a3e6ec023c2de006b619291164bc551a601c3ac4e"
+  },
+  "suite_source": "tests/v151/catalog_offline.py",
+  "suite_sha256": "d2914ec97a64a66eab135fbcaa9a45f011b3c2541c2720c0d8567d3d5fcf9e1f",
+  "engines": {
+    "chromium": {
+      "browser_version": "151.0.7922.34",
+      "checks": 11,
+      "receipt": "chromium/catalog-offline-v151-chromium.json",
+      "receipt_sha256": "4258ab94961674150db7e2c697dc560f838152a277c0928373d7cac9983b4918",
+      "stdout_sha256": "d8428ea009e827313474747e768e1de35a38416dada6cd55b556f859f2f7c946"
+    },
+    "firefox": {
+      "browser_version": "153.0",
+      "checks": 11,
+      "receipt": "firefox/catalog-offline-v151-firefox.json",
+      "receipt_sha256": "23216d8a31157671f80c95acf71da41dabc10fcb4b58cc79910dd36b2fc65faa",
+      "stdout_sha256": "6d8c8ee1b32d0dfcd38c1b8ec8fef22861ff4f1a146933d544db6418aa0fa905"
+    },
+    "webkit": {
+      "browser_version": "26.5",
+      "checks": 11,
+      "receipt": "webkit/catalog-offline-v151-webkit.json",
+      "receipt_sha256": "d9039e555b68932d66a3539844701f88bd314938a81e35e9a3f52bf335015827",
+      "stdout_sha256": "6d8c8ee1b32d0dfcd38c1b8ec8fef22861ff4f1a146933d544db6418aa0fa905"
+    }
+  },
+  "snapshot_regression": "tests/journey/offline_capability.py scenario map deletes all ready-pack caches after answering, reopens a document with no origin, then requires unchanged attempt ID and occurrence order, six answered questions and one final commit. See offline-capability-{engine} in the final QA binding."
+}

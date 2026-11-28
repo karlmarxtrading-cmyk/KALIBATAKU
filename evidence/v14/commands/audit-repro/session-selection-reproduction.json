@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "environment": "Node production-module execution, not browser UI test",
+  "checks": [
+    {
+      "finding": "Three new practice attempts with default question_count=10 and shuffle=false have the same source prefix, despite unique per-session seed",
+      "package_id": "MM-G05-L01-ADD-P001",
+      "source_package_length": 30,
+      "repeated_prefix_length": 10,
+      "attempts": [
+        {
+          "order_seed": "3786209786",
+          "question_ids": [
+            "arithmetic.addition.g05.l01.56cd032a0d807f76a1fb6e4b57b3befa1d49157d111a73685192ef315130165c",
+            "arithmetic.addition.g05.l01.40568dee5ca4fe2196b460b4d3b56555c227728a45a4792429c67e0078d5507f",
+            "arithmetic.addition.g05.l01.5498e7ccb25ef182f097e91aa556345905619635251897f1cbe4b42f724bff4b",
+            "arithmetic.addition.g05.l01.f88a884950bb4fa9cff52634c3e446b1b519aac0e5846e4b9723e248ed3a8566",
+            "arithmetic.addition.g05.l01.5bc7b9ec93c2c14c73107a8e5db3f2750f36812f32a0ce0f4fd5251fbc3d22cb",
+            "arithmetic.addition.g05.l01.1113ab200fa688ac290ee7b63c36b0a3833ac67f4cbb6369456bfab696fbcbc8",
+            "arithmetic.addition.g05.l01.4bc3714391e8325a4069a4c499b41c99ceda773c134215a23dbc63d4f88a94cb",
+            "arithmetic.addition.g05.l01.72d9c3e0aca4b4d4e0ab5bebce4e4fac77b0be18127c3aa47ac24b8f0022e889",
+            "arithmetic.addition.g05.l01.cbb2a9fdba52295030e64ddc3cf79d1a7d9b3d48fc4e24dabff2c157b7a74f79",
+            "arithmetic.addition.g05.l01.b0ff03e11a029199c93babf600023c8854051ed66805acc6f4db762aeb827b35"
+          ]
+        },
+        {
+          "order_seed": "780165798",
+          "question_ids": [
+            "arithmetic.addition.g05.l01.56cd032a0d807f76a1fb6e4b57b3befa1d49157d111a73685192ef315130165c",
+            "arithmetic.addition.g05.l01.40568dee5ca4fe2196b460b4d3b56555c227728a45a4792429c67e0078d5507f",
+            "arithmetic.addition.g05.l01.5498e7ccb25ef182f097e91aa556345905619635251897f1cbe4b42f724bff4b",
+            "arithmetic.addition.g05.l01.f88a884950bb4fa9cff52634c3e446b1b519aac0e5846e4b9723e248ed3a8566",
+            "arithmetic.addition.g05.l01.5bc7b9ec93c2c14c73107a8e5db3f2750f36812f32a0ce0f4fd5251fbc3d22cb",
+            "arithmetic.addition.g05.l01.1113ab200fa688ac290ee7b63c36b0a3833ac67f4cbb6369456bfab696fbcbc8",
+            "arithmetic.addition.g05.l01.4bc3714391e8325a4069a4c499b41c99ceda773c134215a23dbc63d4f88a94cb",
+            "arithmetic.addition.g05.l01.72d9c3e0aca4b4d4e0ab5bebce4e4fac77b0be18127c3aa47ac24b8f0022e889",
+            "arithmetic.addition.g05.l01.cbb2a9fdba52295030e64ddc3cf79d1a7d9b3d48fc4e24dabff2c157b7a74f79",
+            "arithmetic.addition.g05.l01.b0ff03e11a029199c93babf600023c8854051ed66805acc6f4db762aeb827b35"
+          ]
+        },
+        {
+          "order_seed": "356860860",
+          "question_ids": [
+            "arithmetic.addition.g05.l01.56cd032a0d807f76a1fb6e4b57b3befa1d49157d111a73685192ef315130165c",
+            "arithmetic.addition.g05.l01.40568dee5ca4fe2196b460b4d3b56555c227728a45a4792429c67e0078d5507f",
+            "arithmetic.addition.g05.l01.5498e7ccb25ef182f097e91aa556345905619635251897f1cbe4b42f724bff4b",
+            "arithmetic.addition.g05.l01.f88a884950bb4fa9cff52634c3e446b1b519aac0e5846e4b9723e248ed3a8566",
+            "arithmetic.addition.g05.l01.5bc7b9ec93c2c14c73107a8e5db3f2750f36812f32a0ce0f4fd5251fbc3d22cb",
+            "arithmetic.addition.g05.l01.1113ab200fa688ac290ee7b63c36b0a3833ac67f4cbb6369456bfab696fbcbc8",
+            "arithmetic.addition.g05.l01.4bc3714391e8325a4069a4c499b41c99ceda773c134215a23dbc63d4f88a94cb",
+            "arithmetic.addition.g05.l01.72d9c3e0aca4b4d4e0ab5bebce4e4fac77b0be18127c3aa47ac24b8f0022e889",
+            "arithmetic.addition.g05.l01.cbb2a9fdba52295030e64ddc3cf79d1a7d9b3d48fc4e24dabff2c157b7a74f79",
+            "arithmetic.addition.g05.l01.b0ff03e11a029199c93babf600023c8854051ed66805acc6f4db762aeb827b35"
+          ]
+        }
+      ]
+    },
+    {
+      "finding": "Two comparable assessment fixtures at 100% trigger assess while retaining same target competency",
+      "result": {
+        "decision": "assess",
+        "target": "arithmetic.addition.g05.l01",
+        "forms": 2,
+        "scores": [
+          100,
+          100
+        ],
+        "evidence": [
+          "form-1",
+          "form-2"
+        ]
+      }
+    }
+  ]
+}

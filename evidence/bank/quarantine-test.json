@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "bank_version": "1.1.0",
+  "test": "tests/bank/quarantine.py",
+  "injected_failure": "missing effective registry in isolated input",
+  "candidate_quarantined": true,
+  "previous_output_preserved": true,
+  "previous_manifest_and_evidence_bytes_preserved": true
+}

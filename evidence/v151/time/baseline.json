@@ -1,0 +1,195 @@
+{
+  "status": "REPRODUCED",
+  "expected_completed": 4,
+  "actual_completed": 0,
+  "utc_representation_completed": 4,
+  "accepted_backup": true,
+  "both_timestamp_representations_pass_backup_validation": true,
+  "restored_additions": 45,
+  "example_original_utc": "2026-11-28T13:00:05.000Z",
+  "example_equivalent_offset": "2026-11-28T20:00:05.000+07:00",
+  "filter": {
+    "source": "local_practice",
+    "classId": "",
+    "studentId": "",
+    "from": "2026-11-28",
+    "to": "2026-11-28",
+    "timezone": "Asia/Jakarta",
+    "module": "mental-math",
+    "grade": "",
+    "level": "",
+    "operation": "",
+    "mode": "",
+    "status": "",
+    "packageId": ""
+  },
+  "journey_rows": 1,
+  "activity_sessions": 0,
+  "boundary_cases": [
+    {
+      "timezone": "Asia/Jakarta",
+      "label": "one millisecond before local day",
+      "utc": "2026-11-27T16:59:59.999Z",
+      "offset": "2026-11-27T23:59:59.999+07:00",
+      "equivalent_instants": true,
+      "expected": 0,
+      "actual": 1
+    },
+    {
+      "timezone": "Asia/Jakarta",
+      "label": "exact start of local day",
+      "utc": "2026-11-27T17:00:00.000Z",
+      "offset": "2026-11-28T00:00:00.000+07:00",
+      "equivalent_instants": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "timezone": "Asia/Jakarta",
+      "label": "one millisecond before local day end",
+      "utc": "2026-11-28T16:59:59.999Z",
+      "offset": "2026-11-28T23:59:59.999+07:00",
+      "equivalent_instants": true,
+      "expected": 1,
+      "actual": 0
+    },
+    {
+      "timezone": "Asia/Jakarta",
+      "label": "exact exclusive end of local day",
+      "utc": "2026-11-28T17:00:00.000Z",
+      "offset": "2026-11-29T00:00:00.000+07:00",
+      "equivalent_instants": true,
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "timezone": "UTC",
+      "label": "one millisecond before UTC day",
+      "utc": "2026-11-27T23:59:59.999Z",
+      "offset": "2026-11-28T06:59:59.999+07:00",
+      "equivalent_instants": true,
+      "expected": 0,
+      "actual": 1
+    },
+    {
+      "timezone": "UTC",
+      "label": "exact start of UTC day",
+      "utc": "2026-11-28T00:00:00.000Z",
+      "offset": "2026-11-28T07:00:00.000+07:00",
+      "equivalent_instants": true,
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "timezone": "UTC",
+      "label": "one millisecond before UTC day end",
+      "utc": "2026-11-28T23:59:59.999Z",
+      "offset": "2026-11-29T06:59:59.999+07:00",
+      "equivalent_instants": true,
+      "expected": 1,
+      "actual": 0
+    },
+    {
+      "timezone": "UTC",
+      "label": "exact exclusive end of UTC day",
+      "utc": "2026-11-29T00:00:00.000Z",
+      "offset": "2026-11-29T07:00:00.000+07:00",
+      "equivalent_instants": true,
+      "expected": 0,
+      "actual": 0
+    }
+  ],
+  "exports": [
+    {
+      "representation": "utc",
+      "format": "json",
+      "file": "utc.json",
+      "bytes": 10809,
+      "sha256": "5995477b23b813707d33ec932314f5208362ecd723d8a640cc8ad957f3f60435",
+      "input_completed": 4,
+      "input_assigned": 32
+    },
+    {
+      "representation": "utc",
+      "format": "csv",
+      "file": "utc.csv",
+      "bytes": 5721,
+      "sha256": "5ae6b6b5523679199aca76d8bf841ae6618fe449923bc1d73a101b5677760ddd",
+      "input_completed": 4,
+      "input_assigned": 32
+    },
+    {
+      "representation": "utc",
+      "format": "xlsx",
+      "file": "utc.xlsx",
+      "bytes": 33047,
+      "sha256": "f38b8c63bfbf11c08817aaef64932952702c505224bca0cc3ea5670b3695ceaf",
+      "input_completed": 4,
+      "input_assigned": 32
+    },
+    {
+      "representation": "utc",
+      "format": "docx",
+      "file": "utc.docx",
+      "bytes": 10031,
+      "sha256": "5b2aca30fead149978c42c397f77d06251de3788dd0ba52d990c5a046f316c80",
+      "input_completed": 4,
+      "input_assigned": 32
+    },
+    {
+      "representation": "utc",
+      "format": "pdf",
+      "file": "utc.pdf",
+      "bytes": 399579,
+      "sha256": "e056cea7107ad0d85fa6e4a2999b2d6298c2bbe8a4535de487b6b55de4e1db33",
+      "input_completed": 4,
+      "input_assigned": 32
+    },
+    {
+      "representation": "offset",
+      "format": "json",
+      "file": "offset.json",
+      "bytes": 4939,
+      "sha256": "b9425e0b9780629dedea228677a2964e2799c238da17e52cfd96cd3a96eafb53",
+      "input_completed": 0,
+      "input_assigned": 0
+    },
+    {
+      "representation": "offset",
+      "format": "csv",
+      "file": "offset.csv",
+      "bytes": 4802,
+      "sha256": "f98e877f2c000919b5cb0533302cb5458bc4d7f863aa6fa6632975d092932411",
+      "input_completed": 0,
+      "input_assigned": 0
+    },
+    {
+      "representation": "offset",
+      "format": "xlsx",
+      "file": "offset.xlsx",
+      "bytes": 29304,
+      "sha256": "8564ea995146c5ccde9a2ac9a9bfb05618c48bf4dfe1d9f0401192836dbb174f",
+      "input_completed": 0,
+      "input_assigned": 0
+    },
+    {
+      "representation": "offset",
+      "format": "docx",
+      "file": "offset.docx",
+      "bytes": 8582,
+      "sha256": "2f3b2924dfc29af1bd804663e7d3fb7d7097675b7f6934286062b379dad3e90e",
+      "input_completed": 0,
+      "input_assigned": 0
+    },
+    {
+      "representation": "offset",
+      "format": "pdf",
+      "file": "offset.pdf",
+      "bytes": 398126,
+      "sha256": "10dc15a5372c683bbf33461049c198995f2053c2f6dbc4f1c582f3a27b2e4dba",
+      "input_completed": 0,
+      "input_assigned": 0
+    }
+  ],
+  "runtime": "v24.22.3"
+}

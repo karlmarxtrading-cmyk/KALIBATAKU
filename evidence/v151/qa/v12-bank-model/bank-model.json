@@ -1,0 +1,524 @@
+{
+  "packages": 4604,
+  "placements": 177640,
+  "unique": 168142,
+  "steps": 389187,
+  "errors": [],
+  "fixtures": [
+    {
+      "id": {
+        "text": "0 + 5",
+        "speech": "0 tambah 5",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>0</mn><mo>+</mo><mn>5</mn></mrow></math>"
+      },
+      "en": {
+        "text": "0 + 5",
+        "speech": "0 plus 5",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>0</mn><mo>+</mo><mn>5</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "5",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "11/12 + 10/12",
+        "speech": "11 per 12 tambah 10 per 12",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>11</mn><mn>12</mn></mfrac><mo>+</mo><mfrac><mn>10</mn><mn>12</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "11/12 + 10/12",
+        "speech": "11 over 12 plus 10 over 12",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>11</mn><mn>12</mn></mfrac><mo>+</mo><mfrac><mn>10</mn><mn>12</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "7",
+        "denominator": "4"
+      }
+    },
+    {
+      "id": {
+        "text": "20,0 + 35,3",
+        "speech": "20 koma 0 tambah 35 koma 3",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>20,0</mn><mo>+</mo><mn>35,3</mn></mrow></math>"
+      },
+      "en": {
+        "text": "20.0 + 35.3",
+        "speech": "20 point 0 plus 35 point 3",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>20.0</mn><mo>+</mo><mn>35.3</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "553",
+        "denominator": "10"
+      }
+    },
+    {
+      "id": {
+        "text": "−37 + 22",
+        "speech": "minus 37 tambah 22",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>−37</mn><mo>+</mo><mn>22</mn></mrow></math>"
+      },
+      "en": {
+        "text": "−37 + 22",
+        "speech": "negative 37 plus 22",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>−37</mn><mo>+</mo><mn>22</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "-15",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "72/5 + 91,762",
+        "speech": "72 per 5 tambah 91 koma 762",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>72</mn><mn>5</mn></mfrac><mo>+</mo><mn>91,762</mn></mrow></math>"
+      },
+      "en": {
+        "text": "72/5 + 91.762",
+        "speech": "72 over 5 plus 91 point 762",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>72</mn><mn>5</mn></mfrac><mo>+</mo><mn>91.762</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "53081",
+        "denominator": "500"
+      }
+    },
+    {
+      "id": {
+        "text": "(−39/20 × (−28/15) + (−1/3)) × 11 ÷ 2 − 1/2",
+        "speech": "buka kurung minus 39 per 20 kali buka kurung minus 28 per 15 tutup kurung tambah buka kurung minus 1 per 3 tutup kurung tutup kurung kali 11 dibagi 2 minus 1 per 2",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo>(</mo><mfrac><mn>−39</mn><mn>20</mn></mfrac><mo>×</mo><mo>(</mo><mfrac><mn>−28</mn><mn>15</mn></mfrac><mo>)</mo><mo>+</mo><mo>(</mo><mfrac><mn>−1</mn><mn>3</mn></mfrac><mo>)</mo><mo>)</mo><mo>×</mo><mn>11</mn><mo>÷</mo><mn>2</mn><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "(−39/20 × (−28/15) + (−1/3)) × 11 ÷ 2 − 1/2",
+        "speech": "open parenthesis negative 39 over 20 times open parenthesis negative 28 over 15 close parenthesis plus open parenthesis negative 1 over 3 close parenthesis close parenthesis times 11 divided by 2 minus 1 over 2",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo>(</mo><mfrac><mn>−39</mn><mn>20</mn></mfrac><mo>×</mo><mo>(</mo><mfrac><mn>−28</mn><mn>15</mn></mfrac><mo>)</mo><mo>+</mo><mo>(</mo><mfrac><mn>−1</mn><mn>3</mn></mfrac><mo>)</mo><mo>)</mo><mo>×</mo><mn>11</mn><mo>÷</mo><mn>2</mn><mo>−</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "2653",
+        "denominator": "150"
+      }
+    },
+    {
+      "id": {
+        "text": "999 × 0",
+        "speech": "999 kali 0",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>999</mn><mo>×</mo><mn>0</mn></mrow></math>"
+      },
+      "en": {
+        "text": "999 × 0",
+        "speech": "999 times 0",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>999</mn><mo>×</mo><mn>0</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "0",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "12 ÷ 3",
+        "speech": "12 dibagi 3",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>12</mn><mo>÷</mo><mn>3</mn></mrow></math>"
+      },
+      "en": {
+        "text": "12 ÷ 3",
+        "speech": "12 divided by 3",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>12</mn><mo>÷</mo><mn>3</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "4",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "2 − 7",
+        "speech": "2 minus 7",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>2</mn><mo>−</mo><mn>7</mn></mrow></math>"
+      },
+      "en": {
+        "text": "2 − 7",
+        "speech": "2 minus 7",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>2</mn><mo>−</mo><mn>7</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "-5",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "−3 − (−5)",
+        "speech": "minus 3 minus buka kurung minus 5 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>−3</mn><mo>−</mo><mo>(</mo><mn>−5</mn><mo>)</mo></mrow></math>"
+      },
+      "en": {
+        "text": "−3 − (−5)",
+        "speech": "negative 3 minus open parenthesis negative 5 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>−3</mn><mo>−</mo><mo>(</mo><mn>−5</mn><mo>)</mo></mrow></math>"
+      },
+      "exact": {
+        "numerator": "2",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "−8 × (−3)",
+        "speech": "minus 8 kali buka kurung minus 3 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>−8</mn><mo>×</mo><mo>(</mo><mn>−3</mn><mo>)</mo></mrow></math>"
+      },
+      "en": {
+        "text": "−8 × (−3)",
+        "speech": "negative 8 times open parenthesis negative 3 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>−8</mn><mo>×</mo><mo>(</mo><mn>−3</mn><mo>)</mo></mrow></math>"
+      },
+      "exact": {
+        "numerator": "24",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "−21 ÷ (−7)",
+        "speech": "minus 21 dibagi buka kurung minus 7 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>−21</mn><mo>÷</mo><mo>(</mo><mn>−7</mn><mo>)</mo></mrow></math>"
+      },
+      "en": {
+        "text": "−21 ÷ (−7)",
+        "speech": "negative 21 divided by open parenthesis negative 7 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>−21</mn><mo>÷</mo><mo>(</mo><mn>−7</mn><mo>)</mo></mrow></math>"
+      },
+      "exact": {
+        "numerator": "3",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "1/2 + 1/3",
+        "speech": "1 per 2 tambah 1 per 3",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "1/2 + 1/3",
+        "speech": "1 over 2 plus 1 over 3",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "5",
+        "denominator": "6"
+      }
+    },
+    {
+      "id": {
+        "text": "3/4 − 1/8",
+        "speech": "3 per 4 minus 1 per 8",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>−</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "3/4 − 1/8",
+        "speech": "3 over 4 minus 1 over 8",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>3</mn><mn>4</mn></mfrac><mo>−</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "5",
+        "denominator": "8"
+      }
+    },
+    {
+      "id": {
+        "text": "7/9 × (3/14)",
+        "speech": "7 per 9 kali buka kurung 3 per 14 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>7</mn><mn>9</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mn>14</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "7/9 × (3/14)",
+        "speech": "7 over 9 times open parenthesis 3 over 14 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>7</mn><mn>9</mn></mfrac><mo>×</mo><mfrac><mn>3</mn><mn>14</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "1",
+        "denominator": "6"
+      }
+    },
+    {
+      "id": {
+        "text": "2/3 ÷ (4/5)",
+        "speech": "2 per 3 dibagi buka kurung 4 per 5 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>÷</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "2/3 ÷ (4/5)",
+        "speech": "2 over 3 divided by open parenthesis 4 over 5 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>÷</mo><mfrac><mn>4</mn><mn>5</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "5",
+        "denominator": "6"
+      }
+    },
+    {
+      "id": {
+        "text": "−1/2 + 3/4",
+        "speech": "minus 1 per 2 tambah 3 per 4",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>−1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "−1/2 + 3/4",
+        "speech": "negative 1 over 2 plus 3 over 4",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>−1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>3</mn><mn>4</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "1",
+        "denominator": "4"
+      }
+    },
+    {
+      "id": {
+        "text": "−3/5 ÷ (−2/7)",
+        "speech": "minus 3 per 5 dibagi buka kurung minus 2 per 7 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>−3</mn><mn>5</mn></mfrac><mo>÷</mo><mo>(</mo><mfrac><mn>−2</mn><mn>7</mn></mfrac><mo>)</mo></mrow></math>"
+      },
+      "en": {
+        "text": "−3/5 ÷ (−2/7)",
+        "speech": "negative 3 over 5 divided by open parenthesis negative 2 over 7 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>−3</mn><mn>5</mn></mfrac><mo>÷</mo><mo>(</mo><mfrac><mn>−2</mn><mn>7</mn></mfrac><mo>)</mo></mrow></math>"
+      },
+      "exact": {
+        "numerator": "21",
+        "denominator": "10"
+      }
+    },
+    {
+      "id": {
+        "text": "0,125 × 8",
+        "speech": "0 koma 125 kali 8",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>0,125</mn><mo>×</mo><mn>8</mn></mrow></math>"
+      },
+      "en": {
+        "text": "0.125 × 8",
+        "speech": "0 point 125 times 8",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>0.125</mn><mo>×</mo><mn>8</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "1",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "1,20 + 0,30",
+        "speech": "1 koma 20 tambah 0 koma 30",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1,20</mn><mo>+</mo><mn>0,30</mn></mrow></math>"
+      },
+      "en": {
+        "text": "1.20 + 0.30",
+        "speech": "1 point 20 plus 0 point 30",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1.20</mn><mo>+</mo><mn>0.30</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "3",
+        "denominator": "2"
+      }
+    },
+    {
+      "id": {
+        "text": "1,0 ÷ 3",
+        "speech": "1 koma 0 dibagi 3",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1,0</mn><mo>÷</mo><mn>3</mn></mrow></math>"
+      },
+      "en": {
+        "text": "1.0 ÷ 3",
+        "speech": "1 point 0 divided by 3",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1.0</mn><mo>÷</mo><mn>3</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "1",
+        "denominator": "3"
+      }
+    },
+    {
+      "id": {
+        "text": "1000000 − 1",
+        "speech": "1000000 minus 1",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1000000</mn><mo>−</mo><mn>1</mn></mrow></math>"
+      },
+      "en": {
+        "text": "1000000 − 1",
+        "speech": "1000000 minus 1",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1000000</mn><mo>−</mo><mn>1</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "999999",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "12 − (5 − 2)",
+        "speech": "12 minus buka kurung 5 minus 2 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>12</mn><mo>−</mo><mo>(</mo><mn>5</mn><mo>−</mo><mn>2</mn><mo>)</mo></mrow></math>"
+      },
+      "en": {
+        "text": "12 − (5 − 2)",
+        "speech": "12 minus open parenthesis 5 minus 2 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>12</mn><mo>−</mo><mo>(</mo><mn>5</mn><mo>−</mo><mn>2</mn><mo>)</mo></mrow></math>"
+      },
+      "exact": {
+        "numerator": "9",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "12 − 5 − 2",
+        "speech": "12 minus 5 minus 2",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>12</mn><mo>−</mo><mn>5</mn><mo>−</mo><mn>2</mn></mrow></math>"
+      },
+      "en": {
+        "text": "12 − 5 − 2",
+        "speech": "12 minus 5 minus 2",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>12</mn><mo>−</mo><mn>5</mn><mo>−</mo><mn>2</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "5",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "24 ÷ (6 ÷ 2)",
+        "speech": "24 dibagi buka kurung 6 dibagi 2 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>24</mn><mo>÷</mo><mo>(</mo><mn>6</mn><mo>÷</mo><mn>2</mn><mo>)</mo></mrow></math>"
+      },
+      "en": {
+        "text": "24 ÷ (6 ÷ 2)",
+        "speech": "24 divided by open parenthesis 6 divided by 2 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>24</mn><mo>÷</mo><mo>(</mo><mn>6</mn><mo>÷</mo><mn>2</mn><mo>)</mo></mrow></math>"
+      },
+      "exact": {
+        "numerator": "8",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "24 ÷ 6 ÷ 2",
+        "speech": "24 dibagi 6 dibagi 2",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>24</mn><mo>÷</mo><mn>6</mn><mo>÷</mo><mn>2</mn></mrow></math>"
+      },
+      "en": {
+        "text": "24 ÷ 6 ÷ 2",
+        "speech": "24 divided by 6 divided by 2",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>24</mn><mo>÷</mo><mn>6</mn><mo>÷</mo><mn>2</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "2",
+        "denominator": "1"
+      }
+    },
+    {
+      "id": {
+        "text": "(1/2 + 1/3) ÷ (7/6)",
+        "speech": "buka kurung 1 per 2 tambah 1 per 3 tutup kurung dibagi buka kurung 7 per 6 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo>(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>)</mo><mo>÷</mo><mfrac><mn>7</mn><mn>6</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "(1/2 + 1/3) ÷ (7/6)",
+        "speech": "open parenthesis 1 over 2 plus 1 over 3 close parenthesis divided by open parenthesis 7 over 6 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mo>(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>)</mo><mo>÷</mo><mfrac><mn>7</mn><mn>6</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "5",
+        "denominator": "7"
+      }
+    },
+    {
+      "id": {
+        "text": "1 ÷ (2 + 1/3)",
+        "speech": "1 dibagi buka kurung 2 tambah 1 per 3 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1</mn><mo>÷</mo><mo>(</mo><mn>2</mn><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>)</mo></mrow></math>"
+      },
+      "en": {
+        "text": "1 ÷ (2 + 1/3)",
+        "speech": "1 divided by open parenthesis 2 plus 1 over 3 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1</mn><mo>÷</mo><mo>(</mo><mn>2</mn><mo>+</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>)</mo></mrow></math>"
+      },
+      "exact": {
+        "numerator": "3",
+        "denominator": "7"
+      }
+    },
+    {
+      "id": {
+        "text": "1000000000000000000000000000000,01 + 0,02",
+        "speech": "1000000000000000000000000000000 koma 01 tambah 0 koma 02",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1000000000000000000000000000000,01</mn><mo>+</mo><mn>0,02</mn></mrow></math>"
+      },
+      "en": {
+        "text": "1000000000000000000000000000000.01 + 0.02",
+        "speech": "1000000000000000000000000000000 point 01 plus 0 point 02",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mn>1000000000000000000000000000000.01</mn><mo>+</mo><mn>0.02</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "100000000000000000000000000000003",
+        "denominator": "100"
+      }
+    },
+    {
+      "id": {
+        "text": "100/200",
+        "speech": "100 per 200",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>100</mn><mn>200</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "100/200",
+        "speech": "100 over 200",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>100</mn><mn>200</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "1",
+        "denominator": "2"
+      }
+    },
+    {
+      "id": {
+        "text": "1/2 × (1/2) × (1/2)",
+        "speech": "1 per 2 kali buka kurung 1 per 2 tutup kurung kali buka kurung 1 per 2 tutup kurung",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>"
+      },
+      "en": {
+        "text": "1/2 × (1/2) × (1/2)",
+        "speech": "1 over 2 times open parenthesis 1 over 2 close parenthesis times open parenthesis 1 over 2 close parenthesis",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>×</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></math>"
+      },
+      "exact": {
+        "numerator": "1",
+        "denominator": "8"
+      }
+    },
+    {
+      "id": {
+        "text": "2/8 + 0,25",
+        "speech": "2 per 8 tambah 0 koma 25",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>2</mn><mn>8</mn></mfrac><mo>+</mo><mn>0,25</mn></mrow></math>"
+      },
+      "en": {
+        "text": "2/8 + 0.25",
+        "speech": "2 over 8 plus 0 point 25",
+        "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\"><mrow><mfrac><mn>2</mn><mn>8</mn></mfrac><mo>+</mo><mn>0.25</mn></mrow></math>"
+      },
+      "exact": {
+        "numerator": "1",
+        "denominator": "2"
+      }
+    }
+  ],
+  "utc": "2026-11-28T10:43:04.132Z",
+  "node": "v24.22.3",
+  "status": "PASS"
+}

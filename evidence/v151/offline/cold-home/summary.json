@@ -1,0 +1,82 @@
+{
+  "scope": "Cold home on a Linux desktop Chromium headless shell. Same 1024 × 768 viewport, id-ID locale and default preferences. Fresh browser storage per sample, same server implementation for all builds. No input, network throttling or field measurements.",
+  "release_gate_CLS": 0.1,
+  "observations": {
+    "baseline": {
+      "release": "460c98b682110f7e",
+      "scores": [
+        0.05270669857660929,
+        0.05270669857660929,
+        0.05270669857660929
+      ],
+      "trace_file": "baseline.json",
+      "trace_sha256": "90514eea390a5d46b5e01ab79e1872612ef097d46817c742f19aba598b4fd78a"
+    },
+    "candidate": {
+      "release": "2a7e8511a04b494f",
+      "scores": [
+        0.12419976790746054,
+        0.12419976790746054,
+        0.12419976790746054
+      ],
+      "trace_file": "candidate.json",
+      "trace_sha256": "d5e0b9f76062f532527876750b6b8077ccfba21732d4a3f9bedf0defa664c84b"
+    },
+    "patched": {
+      "release": "ef0b6798d9633ca8",
+      "scores": [
+        0.05270669857660929,
+        0.05270669857660929,
+        0.05270669857660929
+      ],
+      "trace_file": "patched.json",
+      "trace_sha256": "b93648cb1465acb8f4bb3824ddaa90f2c7284b0f83f1b9b0f5cc0268edd27647"
+    }
+  },
+  "cause": "Only the pre-correction home replaced its settled view on first service-worker controllerchange. The brief loading view brought the footer into view and removed it again. The connected home has no package-dependent status; it now listens to connectivity changes, and subscribes to install/controller events when displaying an offline-dependent action.",
+  "guarded_navigation_probe": "same-href-webkit.json",
+  "regression_on_faulty_candidate": {
+    "engine": "chromium",
+    "release": "2a7e8511a04b494f",
+    "id": "healthy",
+    "first_worker_controllerchange": 1,
+    "retained_home_element": false,
+    "outcome": "Expected failure on the pre-correction source. Final catalog-offline-v151 receipts require a retained home in all engines."
+  },
+  "browser": "Google Chrome for Testing 151.0.7922.34",
+  "sources": {
+    "observer": "PerformanceObserver layout-shift, buffered; exclude hadRecentInput. Record source node and pre/post y. MutationObserver assigns IDs to successive .app-view elements and records aria-busy and h1. The worker controllerchange is timestamped in the same document clock.",
+    "main_y_px": [
+      73,
+      132.640625
+    ],
+    "pre_correction_footer_y_px": [
+      [
+        0,
+        631.828125
+      ],
+      [
+        631.828125,
+        0
+      ]
+    ],
+    "pre_correction_footer_score_each": 0.03574653466542562
+  },
+  "shipping_integration_gate": {
+    "suite": "e2e-browser",
+    "check": "lab-paint",
+    "status": "PASS",
+    "release": "ef0b6798d9633ca8",
+    "lcp_ms": [
+      216,
+      252,
+      260
+    ],
+    "layout_shift_sum": [
+      0.05270669857660929,
+      0.05270669857660929,
+      0.05270669857660929
+    ],
+    "raw_receipt_sha256": "a084b221e9740b43c1e1600890a080ea2260fbe9b24b3d899f35cad25b0b241d"
+  }
+}

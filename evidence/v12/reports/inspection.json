@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "fractions_editable_omml": [
+    [
+      "11",
+      "12"
+    ],
+    [
+      "10",
+      "12"
+    ],
+    [
+      "7",
+      "4"
+    ],
+    [
+      "21",
+      "12"
+    ]
+  ],
+  "rendered": {
+    "pdf": {
+      "pages": 1,
+      "words": 143,
+      "reader": "PyMuPDF"
+    },
+    "docx": {
+      "pages": 1,
+      "words": 142,
+      "reader": "PyMuPDF after LibreOffice"
+    }
+  },
+  "sheets": [
+    "Summary",
+    "Competencies",
+    "Operations",
+    "Sessions",
+    "Dictionary",
+    "Metadata",
+    "Notes",
+    "Math",
+    "Family",
+    "Contexts"
+  ],
+  "csv_raw": "21/12",
+  "sha256": {
+    "pecahan.pdf": "4af7a6e44762f59ee3c38ffe02462c5f337048a9b022af1d21e394d7d02b0c35",
+    "pecahan.csv": "5cf36de4394bedebaafd1c9eaad291f66a094d6ae584e84d680f8d1c2741e8b2",
+    "pecahan.json": "679376743316a1cb3fdb9ff5bfabba4248cf3bdf8e652cacaccb873f3051ea78",
+    "pecahan.docx": "e8962b667a651a12e57def8215459391dde036cdbc2c11b3b175ddc9e4a7f2fa",
+    "pecahan.xlsx": "ad3bf935b0052f838f9739c0ec7f740976cb3b0b4abded7079f48250da50218a"
+  }
+}

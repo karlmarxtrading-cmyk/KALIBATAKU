@@ -1,0 +1,183 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "TECH-01-large-backup",
+  "scope": "Format-2 archive export and restore into empty storage; corruption and resource limits",
+  "build": {
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "node": "v24.22.3",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "started": "2026-11-28T18:49:39.733Z",
+  "finished": "2026-11-28T18:50:41.967Z",
+  "assertions": 17,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "fixture-volume",
+      "status": "PASS",
+      "expected": "250 sessions × 50 questions from MM-G12-L05-MIX-P001 plus 6 mixed sessions",
+      "actual": {
+        "attempts": 256,
+        "events": 13029,
+        "generate_ms": 7874
+      }
+    },
+    {
+      "id": "format1-limit-reproduced",
+      "status": "PASS",
+      "expected": "Single-file format 1 still refuses this profile (original 50 MiB limit kept, TECH-01 reproduced)",
+      "actual": "BACKUP_TOO_LARGE"
+    },
+    {
+      "id": "archive-export",
+      "status": "PASS",
+      "expected": "Format-2 archive exported with manifest, parts and checksums",
+      "actual": {
+        "bytes": 6289534,
+        "parts": 13,
+        "ms": 8280,
+        "progress_events": 27
+      }
+    },
+    {
+      "id": "restore-process",
+      "status": "PASS",
+      "expected": "Restore phase ran in a separate process with empty storage",
+      "actual": {
+        "exit": 0,
+        "empty_before": true
+      }
+    },
+    {
+      "id": "corrupt-part",
+      "status": "PASS",
+      "expected": "A changed byte inside a part is rejected",
+      "actual": "CHECKSUM_MISMATCH"
+    },
+    {
+      "id": "missing-part",
+      "status": "PASS",
+      "expected": "An archive without one listed part is rejected",
+      "actual": "ARCHIVE_PART_MISSING"
+    },
+    {
+      "id": "duplicate-part",
+      "status": "PASS",
+      "expected": "Duplicate entry names are rejected",
+      "actual": "INVALID_ARCHIVE"
+    },
+    {
+      "id": "unlisted-part",
+      "status": "PASS",
+      "expected": "A part not listed in the manifest is rejected",
+      "actual": "INVALID_BACKUP"
+    },
+    {
+      "id": "wrong-owner",
+      "status": "PASS",
+      "expected": "A part belonging to another profile is rejected",
+      "actual": "INVALID_BACKUP"
+    },
+    {
+      "id": "decompression-limit",
+      "status": "PASS",
+      "expected": "A part larger than its declared/limited size is refused",
+      "actual": "ARCHIVE_TOO_LARGE"
+    },
+    {
+      "id": "cancel-before-commit",
+      "status": "PASS",
+      "expected": "Cancelling the import writes nothing",
+      "actual": {
+        "code": "AbortError",
+        "attempts": 0
+      }
+    },
+    {
+      "id": "preview",
+      "status": "PASS",
+      "expected": "Preview counts additions without writing",
+      "actual": {
+        "additions": 13287,
+        "sessions": 256
+      }
+    },
+    {
+      "id": "import",
+      "status": "PASS",
+      "expected": "Import restores every row in one transaction",
+      "actual": {
+        "additions": 13287,
+        "ms": 5597
+      }
+    },
+    {
+      "id": "idempotent",
+      "status": "PASS",
+      "expected": "A second import adds nothing and reports duplicates",
+      "actual": {
+        "additions": 0,
+        "duplicates": 13287
+      }
+    },
+    {
+      "id": "conflict-blocked",
+      "status": "PASS",
+      "expected": "Differing content for an existing ID blocks the restore; device rows unchanged",
+      "actual": "IMPORT_CONFLICT"
+    },
+    {
+      "id": "format1-compatible",
+      "status": "PASS",
+      "expected": "Historical format-1 backup (v1.0.0 fixture) restores",
+      "actual": {
+        "additions": 8
+      }
+    },
+    {
+      "id": "restore-identical",
+      "status": "PASS",
+      "expected": "Attempt IDs, event IDs, payload hashes, order, raw answers, locale, first/final correctness, status and metrics identical",
+      "actual": {
+        "attempts": 256,
+        "events": 13029,
+        "detail_sha256": "757908ecad55668f07773e1c1ba4c7caf7338f0331a7bf26f191686d5abb55a1",
+        "sample_raw": [
+          [
+            "999",
+            "en",
+            false,
+            false,
+            true,
+            "5ffb330f-60ec-4a7f-9eb3-249fec91ab6e"
+          ],
+          [
+            "7/4",
+            "en",
+            true,
+            true,
+            true,
+            "e2065c28-19f4-4124-841d-5cfd024bebce"
+          ]
+        ]
+      }
+    }
+  ],
+  "archive_bytes": 6289534,
+  "limits": {
+    "format": "kalibataku-profile-archive",
+    "version": 2,
+    "part_target": 8388608,
+    "max_part": 33554432,
+    "max_total": 1073741824,
+    "max_file": 536870912,
+    "max_rows": 2000000,
+    "max_parts": 4000
+  }
+}

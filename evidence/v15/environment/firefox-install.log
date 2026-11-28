@@ -1,0 +1,56 @@
+Downloading Firefox 153.0 (playwright firefox v1538)[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/firefox/1538/firefox-debian-13.zip[22m
+Error: Download failed: server returned code 403 body '<html>
+    <head><title>Site Unavailable</title></head>
+    <body>
+      <center>
+        <h1>Site Unavailable</h1>
+        <p>Unable to access this site.</p>
+      </center>
+    </body>
+</html>
+'. URL: https://cdn.playwright.dev/dbazure/download/playwright/builds/firefox/1538/firefox-debian-13.zip
+    at IncomingMessage.handleError (/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/driver/package/lib/coreBundle.js:32138:23)
+    at IncomingMessage.emit (node:events:526:24)
+    at endReadableNT (node:internal/streams/readable:1783:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Downloading Firefox 153.0 (playwright firefox v1538)[2m from https://playwright.download.prss.microsoft.com/dbazure/download/playwright/builds/firefox/1538/firefox-debian-13.zip[22m
+|                                                                                |   0% of 108.2 MiB
+|■■■■■■■■                                                                        |  10% of 108.2 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 108.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 108.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 108.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 108.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 108.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 108.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 108.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 108.2 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 108.2 MiB
+Firefox 153.0 (playwright firefox v1538) downloaded to /home/agent/.cache/ms-playwright/firefox-1538
+Downloading FFmpeg (playwright ffmpeg v1011)[2m from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip[22m
+Error: Download failed: server returned code 403 body '<html>
+    <head><title>Site Unavailable</title></head>
+    <body>
+      <center>
+        <h1>Site Unavailable</h1>
+        <p>Unable to access this site.</p>
+      </center>
+    </body>
+</html>
+'. URL: https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+    at IncomingMessage.handleError (/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/driver/package/lib/coreBundle.js:32138:23)
+    at IncomingMessage.emit (node:events:526:24)
+    at endReadableNT (node:internal/streams/readable:1783:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+Downloading FFmpeg (playwright ffmpeg v1011)[2m from https://playwright.download.prss.microsoft.com/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip[22m
+|                                                                                |   0% of 2.3 MiB
+|■■■■■■■■                                                                        |  10% of 2.3 MiB
+|■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+|■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+FFmpeg (playwright ffmpeg v1011) downloaded to /home/agent/.cache/ms-playwright/ffmpeg-1011

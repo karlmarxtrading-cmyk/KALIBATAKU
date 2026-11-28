@@ -1,0 +1,13 @@
+﻿dokumen,bagian,event_id,tester,word_produk_versi_build,os_versi,nama_dokumen_dan_sha256,halaman_di_Word,ekspresi_kontrol,tampilan_aktual,hasil,bukti_render,temuan_retest
+fixture-pecahan,rumus_soal,,,,,,,,,,,
+fixture-pecahan,kunci,,,,,,,,,,,
+fixture-pecahan,jawaban_pertama,,,,,,,,,,,
+fixture-pecahan,jawaban_revisi,,,,,,,,,,,
+fixture-kurung-minus,rumus_soal,,,,,,,,,,,
+fixture-kurung-minus,kunci,,,,,,,,,,,
+fixture-kurung-minus,jawaban_pertama,,,,,,,,,,,
+fixture-kurung-minus,jawaban_revisi,,,,,,,,,,,
+ekspor-baru-sekolah,rumus_soal,,,,,,,,,,,
+ekspor-baru-sekolah,kunci,,,,,,,,,,,
+ekspor-baru-sekolah,jawaban_pertama,,,,,,,,,,,
+ekspor-baru-sekolah,jawaban_revisi,,,,,,,,,,,

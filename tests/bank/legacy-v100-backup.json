@@ -1,0 +1,204 @@
+{
+  "format": "kalibataku-profile-backup",
+  "schema_version": "1.0.0",
+  "release_id": "kalibataku-static-1",
+  "data_origin": "local_practice",
+  "exported_at": "2026-11-25T20:27:33.289Z",
+  "verification_status": "unverified",
+  "profile": {
+    "id": "c97cdf77-8dba-4855-aa3d-3aad8b3f5577",
+    "name": "Uji migrasi v1.0"
+  },
+  "records": {
+    "attempts": [
+      {
+        "id": "4bae0876-11e7-4b90-b0b9-aedccf0e1f40",
+        "data": {
+          "attempt_id": "4bae0876-11e7-4b90-b0b9-aedccf0e1f40",
+          "schema_version": "1.0.0",
+          "status": "ongoing",
+          "profile_id": "c97cdf77-8dba-4855-aa3d-3aad8b3f5577",
+          "data_origin": "local_practice",
+          "mode": "practice",
+          "package_id": "MM-G02-L02-SUB-P001",
+          "package_title": {
+            "id": "Pengenalan 001 · Pengurangan — Dua digit dengan pengelompokan ulang",
+            "en": "Introduction 001 · Subtraction — Two digits with regrouping"
+          },
+          "grade": 2,
+          "level": 2,
+          "operation": "SUB",
+          "target_competency_id": "arithmetic.subtraction.g02.l02",
+          "content_version": "1.0.0",
+          "curriculum_version": "1.0.0-draft.2",
+          "policy_version": "mastery-local-v1",
+          "form_id": null,
+          "form_family_id": null,
+          "form_instance_id": null,
+          "assessment_cycle_id": null,
+          "assignment_id": null,
+          "pool_size": 20,
+          "order_seed": "1924107745",
+          "index": 0,
+          "created_at": "2026-11-25T20:27:33.278Z",
+          "started_at": "2026-11-25T20:27:33.282Z",
+          "completed_at": null,
+          "duration_seconds": 0,
+          "deadline": null,
+          "ready": true,
+          "adaptive": null,
+          "locale": "id",
+          "items": [
+            {
+              "question": {
+                "question_id": "arithmetic.subtraction.g02.l02.b83de0ba641e1968eac3eb16af7048fbe525802588ff893d4216461884c45cb7",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.subtraction.g02.l02",
+                "template_id": "MM-TPL-G02-L02-SUB-BASE",
+                "template_version": "1.0.0",
+                "fingerprint": "b83de0ba641e1968eac3eb16af7048fbe525802588ff893d4216461884c45cb7",
+                "fingerprint_policy": "canonical-ast-v1",
+                "question_type": "numeric_essay",
+                "answer_policy": "exact_rational",
+                "answer": {
+                  "numerator": "9",
+                  "denominator": "1"
+                },
+                "expression_ast": {
+                  "kind": "binary",
+                  "operation": "SUB",
+                  "left": {
+                    "kind": "rational",
+                    "numerator": "98",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  },
+                  "right": {
+                    "kind": "rational",
+                    "numerator": "89",
+                    "denominator": "1",
+                    "display": {
+                      "kind": "integer"
+                    }
+                  }
+                },
+                "neutral_expression": "98 − 89",
+                "strategy_tags": [
+                  "BR"
+                ],
+                "hint": {
+                  "id": "Kurangi 98 sampai puluhan terdekat di bawahnya.",
+                  "en": "Subtract just enough to reach the ten below 98."
+                },
+                "explanation": {
+                  "id": "Kurangi 8 dahulu sehingga tersisa 90. Lalu kurangi lagi 81.",
+                  "en": "Subtract 8 first to reach 90. Then take away the remaining 81."
+                },
+                "solution_steps": [
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "binary",
+                      "operation": "SUB",
+                      "left": {
+                        "kind": "rational",
+                        "numerator": "90",
+                        "denominator": "1"
+                      },
+                      "right": {
+                        "kind": "rational",
+                        "numerator": "81",
+                        "denominator": "1"
+                      }
+                    },
+                    "text": {
+                      "id": "Kurangi 8 dahulu sehingga tersisa 90. Lalu kurangi lagi 81.",
+                      "en": "Subtract 8 first to reach 90. Then take away the remaining 81."
+                    }
+                  },
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "rational",
+                      "numerator": "9",
+                      "denominator": "1"
+                    },
+                    "text": {
+                      "id": "Hasil akhirnya 9.",
+                      "en": "The final value is 9."
+                    }
+                  }
+                ]
+              },
+              "question_instance_id": "4bae0876-11e7-4b90-b0b9-aedccf0e1f40.1",
+              "seen": true,
+              "draft": "9",
+              "draft_locale": "id",
+              "dirty": true,
+              "history": [],
+              "hint_used": false,
+              "feedback": false,
+              "final_status": "blank",
+              "active_ms": 0,
+              "timing_quality": "valid_client_estimate",
+              "first_seen_at": "2026-11-25T20:27:33.282Z"
+            }
+          ],
+          "_rev": 2,
+          "_seq": 1
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": "1c25bc30-a75a-4c3d-9f3d-2cd177097a0f",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "1c25bc30-a75a-4c3d-9f3d-2cd177097a0f",
+          "event_type": "attempt.started",
+          "event_sequence": 1,
+          "attempt_id": "4bae0876-11e7-4b90-b0b9-aedccf0e1f40",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "c97cdf77-8dba-4855-aa3d-3aad8b3f5577",
+            "server_subject_ref": null
+          },
+          "context": {
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G02-L02-SUB-P001",
+            "content_version": "1.0.0",
+            "material_grade": 2,
+            "level": 2,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-25T20:27:33.283Z",
+          "payload": {
+            "instances": [
+              {
+                "question_instance_id": "4bae0876-11e7-4b90-b0b9-aedccf0e1f40.1",
+                "question_id": "arithmetic.subtraction.g02.l02.b83de0ba641e1968eac3eb16af7048fbe525802588ff893d4216461884c45cb7",
+                "question_revision": "1.0.0",
+                "competency_id": "arithmetic.subtraction.g02.l02"
+              }
+            ],
+            "order_seed": "1924107745",
+            "started_at_client": "2026-11-25T20:27:33.282Z"
+          },
+          "payload_hash": "0119011c5386f10ea4e279679921db33c297d92992df36f209947849df0e64c9"
+        }
+      }
+    ],
+    "records": []
+  },
+  "checksum": "38769a4209c83ec91ab883bf2cc11e08914cb9a8a78b47c306bd4aa899a4671a"
+}

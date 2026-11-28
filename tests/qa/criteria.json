@@ -1,0 +1,3459 @@
+{
+ "schema": "kalibataku-criteria/1",
+ "criteria": [
+  {
+   "id": "AC-001",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-002",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-003",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-007",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-012",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-019",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-021",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-022",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-023",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-026",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-027",
+   "register": "ac",
+   "observation": "Alur player, pratinjau dan ledger diperiksa pada build ini. Bukti mencatat isian mentah, revisi, hasil dan urutan event.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-004",
+   "register": "ac",
+   "observation": "Uji sekolah menjalankan pilihan siswa, sumber laporan, penugasan dan penyimpanan draf melalui kontrol aplikasi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-005",
+   "register": "ac",
+   "observation": "Uji sekolah menjalankan pilihan siswa, sumber laporan, penugasan dan penyimpanan draf melalui kontrol aplikasi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-006",
+   "register": "ac",
+   "observation": "Uji sekolah menjalankan pilihan siswa, sumber laporan, penugasan dan penyimpanan draf melalui kontrol aplikasi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-036",
+   "register": "ac",
+   "observation": "Uji sekolah menjalankan pilihan siswa, sumber laporan, penugasan dan penyimpanan draf melalui kontrol aplikasi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-037",
+   "register": "ac",
+   "observation": "Uji sekolah menjalankan pilihan siswa, sumber laporan, penugasan dan penyimpanan draf melalui kontrol aplikasi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-038",
+   "register": "ac",
+   "observation": "Uji sekolah menjalankan pilihan siswa, sumber laporan, penugasan dan penyimpanan draf melalui kontrol aplikasi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-039",
+   "register": "ac",
+   "observation": "Uji sekolah menjalankan pilihan siswa, sumber laporan, penugasan dan penyimpanan draf melalui kontrol aplikasi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-040",
+   "register": "ac",
+   "observation": "Uji sekolah menjalankan pilihan siswa, sumber laporan, penugasan dan penyimpanan draf melalui kontrol aplikasi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-047",
+   "register": "ac",
+   "observation": "Uji sekolah menjalankan pilihan siswa, sumber laporan, penugasan dan penyimpanan draf melalui kontrol aplikasi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-008",
+   "register": "ac",
+   "observation": "Perubahan draf, kegagalan kuota, pemulihan dan transaksi lintas tab dijalankan pada penyimpanan browser.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-028",
+   "register": "ac",
+   "observation": "Perubahan draf, kegagalan kuota, pemulihan dan transaksi lintas tab dijalankan pada penyimpanan browser.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-009",
+   "register": "ac",
+   "observation": "Rute, profil, pilihan kurikulum, katalog dan setup dijalankan dari antarmuka yang diterbitkan.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-010",
+   "register": "ac",
+   "observation": "Rute, profil, pilihan kurikulum, katalog dan setup dijalankan dari antarmuka yang diterbitkan.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-011",
+   "register": "ac",
+   "observation": "Rute, profil, pilihan kurikulum, katalog dan setup dijalankan dari antarmuka yang diterbitkan.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-013",
+   "register": "ac",
+   "observation": "Rute, profil, pilihan kurikulum, katalog dan setup dijalankan dari antarmuka yang diterbitkan.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-014",
+   "register": "ac",
+   "observation": "Rute, profil, pilihan kurikulum, katalog dan setup dijalankan dari antarmuka yang diterbitkan.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-015",
+   "register": "ac",
+   "observation": "Rute, profil, pilihan kurikulum, katalog dan setup dijalankan dari antarmuka yang diterbitkan.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-016",
+   "register": "ac",
+   "observation": "Rute, profil, pilihan kurikulum, katalog dan setup dijalankan dari antarmuka yang diterbitkan.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-017",
+   "register": "ac",
+   "observation": "Permintaan gagal dan lambat, kesiapan player, URL serta navigasi diuji di server pratinjau.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-018",
+   "register": "ac",
+   "observation": "Permintaan gagal dan lambat, kesiapan player, URL serta navigasi diuji di server pratinjau.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-020",
+   "register": "ac",
+   "observation": "Lima mode, input lokal, rekomendasi, review, metrik dan navigasi dilacak melalui kontrol dan snapshot.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-024",
+   "register": "ac",
+   "observation": "Lima mode, input lokal, rekomendasi, review, metrik dan navigasi dilacak melalui kontrol dan snapshot.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-025",
+   "register": "ac",
+   "observation": "Lima mode, input lokal, rekomendasi, review, metrik dan navigasi dilacak melalui kontrol dan snapshot.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-029",
+   "register": "ac",
+   "observation": "Lima mode, input lokal, rekomendasi, review, metrik dan navigasi dilacak melalui kontrol dan snapshot.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-031",
+   "register": "ac",
+   "observation": "Lima mode, input lokal, rekomendasi, review, metrik dan navigasi dilacak melalui kontrol dan snapshot.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-032",
+   "register": "ac",
+   "observation": "Lima mode, input lokal, rekomendasi, review, metrik dan navigasi dilacak melalui kontrol dan snapshot.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-033",
+   "register": "ac",
+   "observation": "Lima mode, input lokal, rekomendasi, review, metrik dan navigasi dilacak melalui kontrol dan snapshot.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-034",
+   "register": "ac",
+   "observation": "Lima mode, input lokal, rekomendasi, review, metrik dan navigasi dilacak melalui kontrol dan snapshot.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-035",
+   "register": "ac",
+   "observation": "Lima mode, input lokal, rekomendasi, review, metrik dan navigasi dilacak melalui kontrol dan snapshot.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "AC-041",
+   "register": "ac",
+   "observation": "Berkas hasil dibaca kembali melalui parser independen. Periksa contoh laporan, render halaman dan keluaran worker.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "documents-reopened",
+     "rows": [
+      "docx-omml",
+      "xlsx-reopen",
+      "csv-reopen",
+      "json-reopen",
+      "pdf-vector-text",
+      "docx-render-layout"
+     ]
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "v12-print-contrast"
+    }
+   ]
+  },
+  {
+   "id": "AC-042",
+   "register": "ac",
+   "observation": "Berkas hasil dibaca kembali melalui parser independen. Periksa contoh laporan, render halaman dan keluaran worker.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "documents-reopened",
+     "rows": [
+      "docx-omml",
+      "xlsx-reopen",
+      "csv-reopen",
+      "json-reopen",
+      "pdf-vector-text",
+      "docx-render-layout"
+     ]
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "v12-print-contrast"
+    }
+   ]
+  },
+  {
+   "id": "AC-043",
+   "register": "ac",
+   "observation": "Berkas hasil dibaca kembali melalui parser independen. Periksa contoh laporan, render halaman dan keluaran worker.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "documents-reopened",
+     "rows": [
+      "docx-omml",
+      "xlsx-reopen",
+      "csv-reopen",
+      "json-reopen",
+      "pdf-vector-text",
+      "docx-render-layout"
+     ]
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "v12-print-contrast"
+    }
+   ]
+  },
+  {
+   "id": "AC-044",
+   "register": "ac",
+   "observation": "Berkas hasil dibaca kembali melalui parser independen. Periksa contoh laporan, render halaman dan keluaran worker.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "documents-reopened",
+     "rows": [
+      "docx-omml",
+      "xlsx-reopen",
+      "csv-reopen",
+      "json-reopen",
+      "pdf-vector-text",
+      "docx-render-layout"
+     ]
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "v12-print-contrast"
+    }
+   ]
+  },
+  {
+   "id": "AC-045",
+   "register": "ac",
+   "observation": "Berkas hasil dibaca kembali melalui parser independen. Periksa contoh laporan, render halaman dan keluaran worker.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "teacher-ux-evidence"
+    },
+    {
+     "suite": "documents-reopened",
+     "rows": [
+      "docx-omml",
+      "xlsx-reopen",
+      "csv-reopen",
+      "json-reopen",
+      "pdf-vector-text",
+      "docx-render-layout"
+     ]
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "v12-print-contrast"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Perlu pendengar pembaca layar pada laporan HTML."
+   }
+  },
+  {
+   "id": "AC-046",
+   "register": "ac",
+   "observation": "Dua bahasa dan tema diuji pada komponen serta halaman nyata, termasuk preservasi notasi dan preferensi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    }
+   ]
+  },
+  {
+   "id": "AC-048",
+   "register": "ac",
+   "observation": "Dua bahasa dan tema diuji pada komponen serta halaman nyata, termasuk preservasi notasi dan preferensi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    }
+   ]
+  },
+  {
+   "id": "AC-049",
+   "register": "ac",
+   "observation": "Dua bahasa dan tema diuji pada komponen serta halaman nyata, termasuk preservasi notasi dan preferensi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    }
+   ]
+  },
+  {
+   "id": "AC-051",
+   "register": "ac",
+   "observation": "Dua bahasa dan tema diuji pada komponen serta halaman nyata, termasuk preservasi notasi dan preferensi.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    }
+   ]
+  },
+  {
+   "id": "AC-050",
+   "register": "ac",
+   "observation": "Kontras pada latar aktual diukur untuk label, garis pecahan, tombol dan fokus. Status tersedia sebagai teks, termasuk saat forced-colors.",
+   "evidence": [
+    {
+     "suite": "v12-print-contrast"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-030",
+   "register": "ac",
+   "observation": "Viewport nyata pada browser desktop, tombol dan keyboard diuji. Batas perangkat serta pendengar tercatat dalam kolom sisa.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-roles-reflow"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Perlu keyboard dan caret pada perangkat Android dan iOS fisik."
+   }
+  },
+  {
+   "id": "AC-052",
+   "register": "ac",
+   "observation": "Viewport nyata pada browser desktop, tombol dan keyboard diuji. Batas perangkat serta pendengar tercatat dalam kolom sisa.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-roles-reflow"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ]
+  },
+  {
+   "id": "AC-053",
+   "register": "ac",
+   "observation": "Viewport nyata pada browser desktop, tombol dan keyboard diuji. Batas perangkat serta pendengar tercatat dalam kolom sisa.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-roles-reflow"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Perlu observasi salah ketuk serta jarak kontrol pada perangkat fisik."
+   }
+  },
+  {
+   "id": "AC-055",
+   "register": "ac",
+   "observation": "Viewport nyata pada browser desktop, tombol dan keyboard diuji. Batas perangkat serta pendengar tercatat dalam kolom sisa.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-roles-reflow"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Perlu perangkat Android dan IME sistem."
+   }
+  },
+  {
+   "id": "AC-056",
+   "register": "ac",
+   "observation": "Viewport nyata pada browser desktop, tombol dan keyboard diuji. Batas perangkat serta pendengar tercatat dalam kolom sisa.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-roles-reflow"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Perlu Safari iPhone/iPad dan Files pada perangkat fisik."
+   }
+  },
+  {
+   "id": "AC-057",
+   "register": "ac",
+   "observation": "Viewport nyata pada browser desktop, tombol dan keyboard diuji. Batas perangkat serta pendengar tercatat dalam kolom sisa.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-roles-reflow"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Perlu IME asli dengan composition pada perangkat sasaran."
+   }
+  },
+  {
+   "id": "AC-058",
+   "register": "ac",
+   "observation": "Viewport nyata pada browser desktop, tombol dan keyboard diuji. Batas perangkat serta pendengar tercatat dalam kolom sisa.",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-roles-reflow"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Perlu rekaman ujaran NVDA, TalkBack dan VoiceOver."
+   }
+  },
+  {
+   "id": "AC-054",
+   "register": "ac",
+   "observation": "Tombol Tab dan Enter menghasilkan dua respons benar melalui alur keyboard. Event tepercaya dan fokus direkam.",
+   "evidence": [
+    {
+     "suite": "v12-keyboard"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-059",
+   "register": "ac",
+   "observation": "Chromium, Firefox dan WebKit desktop menjalankan alur soal, fallback, pemulihan data, worker, berkas unduhan dan offline.",
+   "evidence": [
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "browser-v13-firefox"
+    },
+    {
+     "suite": "browser-v13-webkit"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    }
+   ]
+  },
+  {
+   "id": "AC-060",
+   "register": "ac",
+   "observation": "Pemasangan offline, outage HTTP, pembaruan, rollback, backup dan pemulihan diuji pada data lokal sintetis. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup"
+    }
+   ]
+  },
+  {
+   "id": "AC-061",
+   "register": "ac",
+   "observation": "Pemasangan offline, outage HTTP, pembaruan, rollback, backup dan pemulihan diuji pada data lokal sintetis. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup"
+    }
+   ]
+  },
+  {
+   "id": "AC-062",
+   "register": "ac",
+   "observation": "Pemasangan offline, outage HTTP, pembaruan, rollback, backup dan pemulihan diuji pada data lokal sintetis. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup"
+    },
+    {
+     "suite": "data-cache-policy"
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "TECH-04-CACHE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "AC-063",
+   "register": "ac",
+   "observation": "Pemasangan offline, outage HTTP, pembaruan, rollback, backup dan pemulihan diuji pada data lokal sintetis. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup"
+    }
+   ]
+  },
+  {
+   "id": "AC-064",
+   "register": "ac",
+   "observation": "Pemasangan offline, outage HTTP, pembaruan, rollback, backup dan pemulihan diuji pada data lokal sintetis. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup"
+    },
+    {
+     "suite": "data-large-backup"
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "TECH-01-BACKUP-UI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "AC-065",
+   "register": "ac",
+   "observation": "Kontrak event, antrean, ACK dan retry diuji dengan adapter serta fixture kegagalan.",
+   "evidence": [
+    {
+     "suite": "data-contract"
+    },
+    {
+     "suite": "data-ux-contract"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-066",
+   "register": "ac",
+   "observation": "Kontrak event, antrean, ACK dan retry diuji dengan adapter serta fixture kegagalan.",
+   "evidence": [
+    {
+     "suite": "data-contract"
+    },
+    {
+     "suite": "data-ux-contract"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "AC-067",
+   "register": "ac",
+   "observation": "Kontrak event, antrean, ACK dan retry diuji dengan adapter serta fixture kegagalan.",
+   "evidence": [
+    {
+     "suite": "data-contract"
+    },
+    {
+     "suite": "data-ux-contract"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ],
+   "external": {
+    "state": "DEFERRED_BY_SCOPE",
+    "reason": "Perlu endpoint institusi, akun dan ACL lintas kelas serta penilai server."
+   }
+  },
+  {
+   "id": "AC-068",
+   "register": "ac",
+   "observation": "Total tambahan player termasuk renderer yang teramati, gzip-6, dibanding batas 90 KiB yang berlaku.",
+   "evidence": [
+    {
+     "suite": "performance-budgets",
+     "rows": [
+      "student player including observed renderer, AC-068",
+      "AC-068"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "AC-069",
+   "register": "ac",
+   "observation": "Jejak resource, gzip per berkas, latency dan skala laboratorium tersimpan. Angka p75 lapangan memerlukan trafik produksi.",
+   "evidence": [
+    {
+     "suite": "performance-budgets",
+     "rows": [
+      "AC-069"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "AC-070",
+   "register": "ac",
+   "observation": "Jejak resource, gzip per berkas, latency dan skala laboratorium tersimpan. Angka p75 lapangan memerlukan trafik produksi.",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "performance-budgets"
+    }
+   ],
+   "external": {
+    "state": "NOT_RUN",
+    "reason": "Perlu host final dan trafik pengguna nyata untuk p75."
+   }
+  },
+  {
+   "id": "AC-071",
+   "register": "ac",
+   "observation": "Jejak resource, gzip per berkas, latency dan skala laboratorium tersimpan. Angka p75 lapangan memerlukan trafik produksi.",
+   "evidence": [
+    {
+     "suite": "performance-budgets",
+     "rows": [
+      "AC-071"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "AC-072",
+   "register": "ac",
+   "observation": "Identitas berkas, cakupan, kunci dan langkah dihitung. Untuk kalibrasi pedagogis diperlukan penilaian tersendiri.",
+   "evidence": [
+    {
+     "suite": "bank-verify"
+    },
+    {
+     "suite": "bank-audit-distribution"
+    },
+    {
+     "suite": "bank-determinism"
+    },
+    {
+     "suite": "bank-domain-prose"
+    },
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup"
+    }
+   ]
+  },
+  {
+   "id": "AC-073",
+   "register": "ac",
+   "observation": "Identitas berkas, cakupan, kunci dan langkah dihitung. Untuk kalibrasi pedagogis diperlukan penilaian tersendiri.",
+   "evidence": [
+    {
+     "suite": "bank-verify"
+    },
+    {
+     "suite": "bank-audit-distribution"
+    },
+    {
+     "suite": "bank-determinism"
+    },
+    {
+     "suite": "bank-domain-prose"
+    },
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup"
+    }
+   ]
+  },
+  {
+   "id": "AC-074",
+   "register": "ac",
+   "observation": "Identitas berkas, cakupan, kunci dan langkah dihitung. Untuk kalibrasi pedagogis diperlukan penilaian tersendiri.",
+   "evidence": [
+    {
+     "suite": "bank-verify"
+    },
+    {
+     "suite": "bank-audit-distribution"
+    },
+    {
+     "suite": "bank-determinism"
+    },
+    {
+     "suite": "bank-domain-prose"
+    },
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup"
+    }
+   ],
+   "external": {
+    "state": "NOT_PERFORMED",
+    "reason": "Perlu penelaah matematika dan bahasa untuk 394 keluarga template; roster dan log editorial 1.2.0 tersedia."
+   }
+  },
+  {
+   "id": "AC-075",
+   "register": "ac",
+   "observation": "Identitas berkas, cakupan, kunci dan langkah dihitung. Untuk kalibrasi pedagogis diperlukan penilaian tersendiri.",
+   "evidence": [
+    {
+     "suite": "bank-verify"
+    },
+    {
+     "suite": "bank-audit-distribution"
+    },
+    {
+     "suite": "bank-determinism"
+    },
+    {
+     "suite": "bank-domain-prose"
+    },
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup"
+    }
+   ]
+  },
+  {
+   "id": "AC-076",
+   "register": "ac",
+   "observation": "Protokol dan tugas per peran tersedia untuk pelaksanaan dengan peserta nyata.",
+   "evidence": [],
+   "external": {
+    "state": "NOT_RUN",
+    "reason": "Perlu siswa baru dan kembali."
+   }
+  },
+  {
+   "id": "AC-077",
+   "register": "ac",
+   "observation": "Protokol dan tugas per peran tersedia untuk pelaksanaan dengan peserta nyata.",
+   "evidence": [],
+   "external": {
+    "state": "NOT_RUN",
+    "reason": "Perlu guru peserta."
+   }
+  },
+  {
+   "id": "AC-078",
+   "register": "ac",
+   "observation": "Protokol dan tugas per peran tersedia untuk pelaksanaan dengan peserta nyata.",
+   "evidence": [],
+   "external": {
+    "state": "NOT_RUN",
+    "reason": "Perlu operator peserta."
+   }
+  },
+  {
+   "id": "AC-079",
+   "register": "ac",
+   "observation": "Protokol dan tugas per peran tersedia untuk pelaksanaan dengan peserta nyata.",
+   "evidence": [],
+   "external": {
+    "state": "NOT_RUN",
+    "reason": "Perlu orang tua peserta."
+   }
+  },
+  {
+   "id": "AC-080",
+   "register": "ac",
+   "observation": "Hash serta hasil teknis tersedia. Penerimaan menyeluruh mengikuti gate yang terbuka.",
+   "evidence": [
+    {
+     "suite": "clean-build-twice"
+    },
+    {
+     "suite": "hosting-smoke"
+    },
+    {
+     "suite": "compile-check"
+    }
+   ],
+   "depends_on_open_mandatory": true
+  },
+  {
+   "id": "FM-001",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "OKE-REVISE"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-002",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "FRACTION"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-003",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-004",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-005",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-006",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "FRACTION"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "UX-006-FEEDBACK"
+     ]
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-007",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "DECIMAL"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-008",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-009",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-010",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-011",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-012",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-013",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-014",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "ASSESSMENT"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-015",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-016",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "SPEED",
+      "SLOW-START"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-017",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-018",
+   "register": "fm",
+   "observation": "Kontrol aplikasi, snapshot sebelum/sesudah dan urutan event diuji. Bukti memuat nilai yang diharapkan dan nilai aktual.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "GRADE-RETRY"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-019",
+   "register": "fm",
+   "observation": "Oracle memeriksa seluruh bank dan langkah. Set 32 fixture dirender per mesin dalam dua bahasa dan dua tema.",
+   "evidence": [
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-020",
+   "register": "fm",
+   "observation": "32 fixture dirender oleh renderer SVG bawaan dalam dua bahasa dan dua tema.",
+   "evidence": [
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-021",
+   "register": "fm",
+   "observation": "Oracle memeriksa seluruh bank dan langkah. Set 32 fixture dirender per mesin dalam dua bahasa dan dua tema.",
+   "evidence": [
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-022",
+   "register": "fm",
+   "observation": "Oracle memeriksa seluruh bank dan langkah. Set 32 fixture dirender per mesin dalam dua bahasa dan dua tema.",
+   "evidence": [
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-023",
+   "register": "fm",
+   "observation": "Oracle memeriksa seluruh bank dan langkah. Set 32 fixture dirender per mesin dalam dua bahasa dan dua tema.",
+   "evidence": [
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-024",
+   "register": "fm",
+   "observation": "Oracle memeriksa seluruh bank dan langkah. Set 32 fixture dirender per mesin dalam dua bahasa dan dua tema.",
+   "evidence": [
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-025",
+   "register": "fm",
+   "observation": "Oracle memeriksa seluruh bank dan langkah. Set 32 fixture dirender per mesin dalam dua bahasa dan dua tema.",
+   "evidence": [
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-026",
+   "register": "fm",
+   "observation": "Oracle memeriksa seluruh bank dan langkah. Set 32 fixture dirender per mesin dalam dua bahasa dan dua tema.",
+   "evidence": [
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-028",
+   "register": "fm",
+   "observation": "Oracle memeriksa seluruh bank dan langkah. Set 32 fixture dirender per mesin dalam dua bahasa dan dua tema.",
+   "evidence": [
+    {
+     "suite": "v12-bank-model"
+    },
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-027",
+   "register": "fm",
+   "observation": "Model AST digunakan di player, rincian, review dan laporan. File persamaan, tampilan dan keluaran cetak diperiksa.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "documents-reopened",
+     "rows": [
+      "docx-omml",
+      "xlsx-reopen",
+      "csv-reopen",
+      "json-reopen",
+      "pdf-vector-text",
+      "docx-render-layout"
+     ]
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "v12-print-contrast"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "player-ledger"
+    },
+    {
+     "suite": "player-ux-domain"
+    }
+   ]
+  },
+  {
+   "id": "FM-029",
+   "register": "fm",
+   "observation": "Renderer 1.3 memakai glyph Noto Sans lokal; modul glyphs.mjs diekstrak ulang secara deterministik dari font yang dikirim (hash font tercatat).",
+   "evidence": [
+    {
+     "suite": "glyphs-reproducible"
+    },
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "ORIGIN"
+     ]
+    },
+    {
+     "suite": "hosting-smoke"
+    }
+   ]
+  },
+  {
+   "id": "FM-030",
+   "register": "fm",
+   "observation": "Versi lokal, hash byte vendor dan request origin diverifikasi. Glyph aritmetika memakai data SVG bawaan.",
+   "evidence": [
+    {
+     "suite": "glyphs-reproducible"
+    },
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "ORIGIN"
+     ]
+    },
+    {
+     "suite": "hosting-smoke"
+    }
+   ]
+  },
+  {
+   "id": "FM-031",
+   "register": "fm",
+   "observation": "Halaman awal tidak memuat renderer; modul renderer dimuat saat player membutuhkan rumus. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "performance-budgets"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "FM-032",
+   "register": "fm",
+   "observation": "Startup dengan penundaan 1.500 ms, pembatalan DOM, gagal HTTP 503 lalu retry 200, serta cache/update/rollback diuji. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "SLOW-START"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "performance-budgets"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "FM-033",
+   "register": "fm",
+   "observation": "Startup dengan penundaan 1.500 ms, pembatalan DOM, gagal HTTP 503 lalu retry 200, serta cache/update/rollback diuji. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "LIFECYCLE"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "performance-budgets"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "FM-034",
+   "register": "fm",
+   "observation": "Startup dengan penundaan 1.500 ms, pembatalan DOM, gagal HTTP 503 lalu retry 200, serta cache/update/rollback diuji. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "LOAD-FAILURE"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "MATH-001-FALLBACK"
+     ]
+    },
+    {
+     "suite": "performance-budgets"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "FM-035",
+   "register": "fm",
+   "observation": "Startup dengan penundaan 1.500 ms, pembatalan DOM, gagal HTTP 503 lalu retry 200, serta cache/update/rollback diuji. Diuji di Chromium; lintas mesin dicatat pada AC-059/FM-045.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "performance-budgets"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "FM-036",
+   "register": "fm",
+   "observation": "DOCX memiliki pecahan OMML. PDF vektor dan cetak browser berhalaman diperiksa kembali untuk bahasa ID dan EN.",
+   "evidence": [
+    {
+     "suite": "documents-reopened",
+     "rows": [
+      "docx-omml",
+      "xlsx-reopen",
+      "csv-reopen",
+      "json-reopen",
+      "pdf-vector-text",
+      "docx-render-layout",
+      "docx-render-equations"
+     ]
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "v12-print-contrast"
+    }
+   ]
+  },
+  {
+   "id": "FM-046",
+   "register": "fm",
+   "observation": "DOCX memiliki pecahan OMML. PDF vektor dan cetak browser berhalaman diperiksa kembali untuk bahasa ID dan EN.",
+   "evidence": [
+    {
+     "suite": "documents-reopened",
+     "rows": [
+      "docx-omml",
+      "xlsx-reopen",
+      "csv-reopen",
+      "json-reopen",
+      "pdf-vector-text",
+      "docx-render-layout"
+     ]
+    },
+    {
+     "suite": "teacher-exports"
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "v12-print-contrast"
+    }
+   ]
+  },
+  {
+   "id": "FM-037",
+   "register": "fm",
+   "observation": "Lebar 320–1.440 px, teks hingga 200%, batas operator dan 32 ekspresi diukur pada browser.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "REFLOW"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "REFLOW-1.3"
+     ]
+    },
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-roles-reflow"
+    }
+   ]
+  },
+  {
+   "id": "FM-038",
+   "register": "fm",
+   "observation": "Uji desktop dan protokol tersedia. Bukti fisik/pendengar masih dibutuhkan sesuai target.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Android fisik."
+   }
+  },
+  {
+   "id": "FM-039",
+   "register": "fm",
+   "observation": "Uji desktop dan protokol tersedia. Bukti fisik/pendengar masih dibutuhkan sesuai target.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Safari dan Files pada iPhone/iPad fisik."
+   }
+  },
+  {
+   "id": "FM-040",
+   "register": "fm",
+   "observation": "Uji desktop dan protokol tersedia. Bukti fisik/pendengar masih dibutuhkan sesuai target.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "IME fisik."
+   }
+  },
+  {
+   "id": "FM-041",
+   "register": "fm",
+   "observation": "Uji desktop dan protokol tersedia. Bukti fisik/pendengar masih dibutuhkan sesuai target.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Pendengar NVDA."
+   }
+  },
+  {
+   "id": "FM-042",
+   "register": "fm",
+   "observation": "Uji desktop dan protokol tersedia. Bukti fisik/pendengar masih dibutuhkan sesuai target.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Pendengar VoiceOver dan TalkBack."
+   }
+  },
+  {
+   "id": "FM-044",
+   "register": "fm",
+   "observation": "Uji desktop dan protokol tersedia. Bukti fisik/pendengar masih dibutuhkan sesuai target.",
+   "evidence": [
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "v12-keyboard"
+    }
+   ],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Observasi sentuh fisik."
+   }
+  },
+  {
+   "id": "FM-043",
+   "register": "fm",
+   "observation": "Pasangan warna pada layar, garis pecahan, outline, teks status dan forced-colors diuji pada antarmuka.",
+   "evidence": [
+    {
+     "suite": "v12-print-contrast"
+    },
+    {
+     "suite": "v12-browser-chromium",
+     "rows": [
+      "FOCUS-CONTRAST"
+     ]
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "ux-extended-browser"
+    }
+   ]
+  },
+  {
+   "id": "FM-045",
+   "register": "fm",
+   "observation": "Tiga mesin desktop asli menjalankan alur, backup, ekspor dan offline dengan versi serta lingkup eksplisit.",
+   "evidence": [
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "browser-v13-firefox"
+    },
+    {
+     "suite": "browser-v13-webkit"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    }
+   ]
+  },
+  {
+   "id": "FM-047",
+   "register": "fm",
+   "observation": "Hash dist dan identitas yang diamati browser ditautkan. Matriks baseline dan build ini dibuat terpisah.",
+   "evidence": [
+    {
+     "suite": "clean-build-twice"
+    },
+    {
+     "suite": "hosting-smoke"
+    }
+   ]
+  },
+  {
+   "id": "FM-048",
+   "register": "fm",
+   "observation": "Tugas, pertanyaan dan rubrik tersedia. Pemahaman peserta membutuhkan observasi langsung.",
+   "evidence": [],
+   "external": {
+    "state": "NOT_RUN",
+    "reason": "Peserta siswa, guru dan keluarga."
+   }
+  },
+  {
+   "id": "QA-01",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Integritas dan build",
+   "observation": "Source/dist/bank/hash konsisten dan dua build bersih sama",
+   "evidence": [
+    {
+     "suite": "clean-build-twice"
+    },
+    {
+     "suite": "bank-determinism"
+    },
+    {
+     "suite": "compile-check"
+    }
+   ]
+  },
+  {
+   "id": "QA-02",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Gerbang gagal menolak bukti gagal",
+   "observation": "Assertion gagal, suite kosong, stale hash, receipt hilang dan error tak diharapkan menahan kelulusan",
+   "evidence": [
+    {
+     "suite": "qa-fault-injection"
+    }
+   ]
+  },
+  {
+   "id": "QA-03",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Cakupan QA versi baru",
+   "observation": "Orkestrasi memasukkan suite v1.2 dan seluruh regresi audit baru dengan assertion count",
+   "evidence": [
+    {
+     "suite": "qa-fault-injection"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    }
+   ]
+  },
+  {
+   "id": "QA-04",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Nilai seluruh bank",
+   "observation": "Semua kunci/AST/langkah/fingerprint/cakupan lulus oracle independen",
+   "evidence": [
+    {
+     "suite": "bank-verify"
+    },
+    {
+     "suite": "bank-audit-distribution"
+    },
+    {
+     "suite": "bank-determinism"
+    },
+    {
+     "suite": "bank-domain-prose"
+    },
+    {
+     "suite": "v12-bank-model"
+    }
+   ]
+  },
+  {
+   "id": "QA-05",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Teks matematika aman",
+   "observation": "Roundtrip nilai teks seluruh soal/langkah sama AST; divisor pecahan tetap terkurung",
+   "evidence": [
+    {
+     "suite": "math-linear-roundtrip"
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "MATH-001-FALLBACK"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "QA-06",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Pembahasan sesuai domain",
+   "observation": "Narasi dan langkah sesuai domain kelas/tujuan strategi, lengkap ID/EN dan berversi",
+   "evidence": [
+    {
+     "suite": "bank-domain-prose"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    }
+   ]
+  },
+  {
+   "id": "QA-07",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Lima mode dan ledger",
+   "observation": "Jawaban pertama/revisi, hint/key_seen, finalisasi dan deadline tidak berubah makna",
+   "evidence": [
+    {
+     "suite": "player-run"
+    },
+    {
+     "suite": "player-ux-domain"
+    },
+    {
+     "suite": "v12-feedback-export"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "e2e-browser"
+    }
+   ]
+  },
+  {
+   "id": "QA-08",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Browser build final",
+   "observation": "Suite browser aktual lulus dengan versi/OS/hash, tidak ada error tak diharapkan",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    },
+    {
+     "suite": "browser-v13-chromium"
+    },
+    {
+     "suite": "browser-v13-firefox"
+    },
+    {
+     "suite": "browser-v13-webkit"
+    }
+   ]
+  },
+  {
+   "id": "QA-09",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Backup kompatibel",
+   "observation": "Backup lama/kecil dipulihkan utuh; raw session/report dibedakan",
+   "evidence": [
+    {
+     "suite": "upgrade-restore-v1.0"
+    },
+    {
+     "suite": "bank-snapshot-upgrade"
+    },
+    {
+     "suite": "upgrade-bank-1.2"
+    },
+    {
+     "suite": "data-large-backup",
+     "rows": [
+      "format1-compatible"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "QA-10",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Backup besar dapat dipulihkan",
+   "observation": "250 sesi/13000 event dari fixture dipulihkan ke store kosong tanpa kehilangan identitas/nilai",
+   "evidence": [
+    {
+     "suite": "data-large-backup"
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "TECH-01-BACKUP-UI"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "QA-11",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Storage dan pemisahan scope",
+   "observation": "Transaksi, quota retry idempoten, lease, profil/demo tidak bocor",
+   "evidence": [
+    {
+     "suite": "data-ux-contract"
+    },
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "v12-browser-chromium"
+    }
+   ]
+  },
+  {
+   "id": "QA-12",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Offline lifecycle",
+   "observation": "Instal lengkap, offline, update, rollback dan sesi lama konsisten",
+   "evidence": [
+    {
+     "suite": "e2e-browser"
+    },
+    {
+     "suite": "upgrade-verified-package"
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "UX-001-VERSION"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "QA-13",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Retensi cache",
+   "observation": "Orphan aman dibersihkan; cache aktif/rollback dipertahankan; IDB tidak dihapus",
+   "evidence": [
+    {
+     "suite": "data-cache-policy"
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "TECH-04-CACHE"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "QA-14",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Anggaran penuh player",
+   "observation": "Total dependensi memenuhi batas90KiB yang berlaku atau kontrak baru disetujui eksplisit berdasar bukti",
+   "evidence": [
+    {
+     "suite": "performance-budgets",
+     "rows": [
+      "student player including observed renderer, AC-068"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "QA-15",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Preferensi dan setup",
+   "observation": "Default/persistensi/global-versus-profil, fallback storage dan setup independen benar",
+   "evidence": [
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "UX-004-SETUP",
+      "PREFS-RESET"
+     ]
+    },
+    {
+     "suite": "ux-extended-browser"
+    }
+   ]
+  },
+  {
+   "id": "QA-16",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Identitas versi",
+   "observation": "Versi aplikasi di UI berasal dari build final; versi bank terpisah",
+   "evidence": [
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "UX-001-VERSION"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "QA-17",
+   "register": "qa",
+   "gate": "WAJIB_MUTU_UIUX",
+   "title": "Feedback profesional",
+   "observation": "Status/response/key/ide/persamaan/detail jelas tanpa repetisi berlebihan; ledger tetap akurat",
+   "evidence": [
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "UX-006-FEEDBACK"
+     ]
+    },
+    {
+     "suite": "v12-browser-chromium"
+    }
+   ]
+  },
+  {
+   "id": "QA-18",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Keyboard, timer, IME dan ponsel",
+   "observation": "Enter/composition/caret, timer nonvisual, safe area, rotate dan unduhan terbukti pada perangkat",
+   "evidence": [],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Perangkat Android dan iPhone/iPad fisik diperlukan (caret, IME, safe area, rotasi, unduhan). Uji desktop dan emulasi viewport bukan pengganti."
+   }
+  },
+  {
+   "id": "QA-19",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Teknologi bantu",
+   "observation": "Rumus/status/error/dialog/timer/laporan dipahami lewat pembaca layar aktual",
+   "evidence": [],
+   "external": {
+    "state": "BLOCKED",
+    "reason": "Pendengar NVDA, VoiceOver dan TalkBack diperlukan. Pengumuman waktu dan nama rumus diuji melalui DOM/aria, bukan ujaran nyata."
+   }
+  },
+  {
+   "id": "QA-20",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Responsif dan tema",
+   "observation": "Dua bahasa+tema,320–1440, font200%, browserzoom, forced colors dan reduced motion terpisah",
+   "evidence": [
+    {
+     "suite": "ux-extended-browser"
+    },
+    {
+     "suite": "v12-roles-reflow"
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "REFLOW-1.3"
+     ]
+    },
+    {
+     "suite": "v12-print-contrast"
+    }
+   ]
+  },
+  {
+   "id": "QA-21",
+   "register": "qa",
+   "gate": "WAJIB_MUTU_UIUX",
+   "title": "Bahasa dan konsistensi kecil",
+   "observation": "197key dan literal UI setara; speedHint tidak berulang; audio capability sesuai browser dukungan",
+   "evidence": [
+    {
+     "suite": "ui-catalog-tokens"
+    },
+    {
+     "suite": "browser-v13-chromium",
+     "rows": [
+      "UX-003-AUDIO"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "QA-22",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Ekspor dokumen nyata",
+   "observation": "Enam format dibuka ulang; pecahan, glyph, identitas, sumber, periode, batch/cancel benar",
+   "evidence": [
+    {
+     "suite": "documents-reopened",
+     "rows": [
+      "docx-omml",
+      "xlsx-reopen",
+      "csv-reopen",
+      "json-reopen",
+      "pdf-vector-text",
+      "docx-render-layout",
+      "docx-render-equations"
+     ]
+    },
+    {
+     "suite": "math-exports"
+    },
+    {
+     "suite": "teacher-exports"
+    }
+   ]
+  },
+  {
+   "id": "QA-23",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Kontrak bridge dan simulasi",
+   "observation": "Retry/ACK/izin tetap terpisah dari verified grade; demo tetap demo",
+   "evidence": [
+    {
+     "suite": "data-contract"
+    },
+    {
+     "suite": "data-ux-contract"
+    },
+    {
+     "suite": "player-ledger"
+    }
+   ]
+  },
+  {
+   "id": "QA-24",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Hosting lokal",
+   "observation": "HTTP/HTTPS root/subfolder,MIME,404,CSP,headers dan hash aset benar",
+   "evidence": [
+    {
+     "suite": "hosting-smoke"
+    }
+   ]
+  },
+  {
+   "id": "QA-25",
+   "register": "qa",
+   "gate": "WAJIB_SEBELUM_KLAIM_SUDAH_LIVE",
+   "title": "Deployment publik",
+   "observation": "Domain akhir, unduhan, cache,SW dan rollback diverifikasi jika deployment diotorisasi",
+   "evidence": [],
+   "external": {
+    "state": "NOT_RUN",
+    "reason": "Deployment publik belum diotorisasi dan tidak ada akses host; domain akhir belum diuji."
+   }
+  },
+  {
+   "id": "QA-26",
+   "register": "qa",
+   "gate": "WAJIB_KLAIM_KUALITAS_PEMBELAJARAN_MAX",
+   "title": "Review editorial manusia",
+   "observation": "Review roster keluarga/kompetensi dengan reviewer, catatan, perbaikan dan retest nyata",
+   "evidence": [],
+   "external": {
+    "state": "NOT_PERFORMED",
+    "reason": "Belum ada penelaah manusia. Log editorial 1.1.0→1.2.0 dan roster tersedia untuk penelaahan."
+   }
+  },
+  {
+   "id": "QA-27",
+   "register": "qa",
+   "gate": "WAJIB_KLAIM_UX_MAX",
+   "title": "Pilot pengguna",
+   "observation": "Siswa/guru/operator/orangtua menjalankan tugas, kendala diperbaiki",
+   "evidence": [],
+   "external": {
+    "state": "NOT_PERFORMED",
+    "reason": "Belum ada pilot siswa/guru/operator/orang tua."
+   }
+  },
+  {
+   "id": "QA-28",
+   "register": "qa",
+   "gate": "TINDAK_LANJUT_FIELD",
+   "title": "Kinerja lapangan",
+   "observation": "p75 LCP/INP/CLS dihitung dari populasi/perioda produksi yang dinyatakan",
+   "evidence": [],
+   "external": {
+    "state": "NOT_RUN",
+    "reason": "Tidak ada trafik produksi untuk p75 LCP/INP/CLS."
+   }
+  },
+  {
+   "id": "QA-29",
+   "register": "qa",
+   "gate": "DI_LUAR_LINGKUP_STATIS",
+   "title": "LMS institusi live",
+   "observation": "Tidak mengklaim LMS live sebelum auth/ACL/grading server benar-benar diuji",
+   "evidence": [],
+   "external": {
+    "state": "DEFERRED_BY_SCOPE",
+    "reason": "LMS institusi live di luar lingkup statis."
+   }
+  },
+  {
+   "id": "QA-30",
+   "register": "qa",
+   "gate": "WAJIB_STATIC",
+   "title": "Sealing dan handoff",
+   "observation": "ZIP final lengkap dan diverifikasi setelah seluruh bukti final selesai",
+   "evidence": [
+    {
+     "suite": "clean-build-twice"
+    }
+   ],
+   "depends_on_open_mandatory": true
+  }
+ ]
+}

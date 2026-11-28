@@ -1,0 +1,27 @@
+{
+  "runtime": "v22.23.5",
+  "scope": "Synthetic local data in Node memory adapter; no source or user data modified.",
+  "cases": [
+    {
+      "id": "large-record-part-roundtrip",
+      "records": 150000,
+      "archive_bytes": 790504,
+      "advertised_max_records": 2000000,
+      "export_succeeded": true,
+      "restored": 150000,
+      "error": null
+    },
+    {
+      "id": "stored-entry-size-limit",
+      "declared_bytes": 1,
+      "compressed_bytes": 1048576,
+      "limit_bytes": 64,
+      "array_buffer_bytes_read": [],
+      "error": {
+        "name": "Error",
+        "code": "INVALID_ARCHIVE",
+        "message": "INVALID_ARCHIVE"
+      }
+    }
+  ]
+}

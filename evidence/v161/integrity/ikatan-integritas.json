@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-28T17:24:37.153375+00:00",
+  "build": {
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "offline_release": "a2f40449c4738fe6",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "method": "Verifikasi identitas source penyerahan secara terpisah setelah pengujian. Dist yang dihitung ulang identik dengan dist pada uji bank dan transisi dua arah. SHA-256 setiap bukti dihitung pada waktu verifikasi.",
+  "local_transition": {
+    "engine": "Chromium 151.0.7922.34",
+    "observations": 12,
+    "stable_snapshots": 6,
+    "release_rollback": "6c43a824957f99ed",
+    "finalization_events": 1,
+    "page_errors": []
+  },
+  "sha256": {
+    "evidence/v161/integrity/bank-per-berkas.csv": "9e6c8a35696c622e11d6bc88ffcb1b881aba88174983e09517c9d2f40f84e450",
+    "evidence/v161/integrity/bank-dan-pemetaan.json": "bbd0f2203f8cd4a3888c574549903a2822d7fc5ba38e995fb53e3d438f1dad9b",
+    "evidence/v161/integrity/periksa_bank.py": "31e9388b4bed47a601358d5a20acd96b2d3b70432488620f979caec06d3f2c2d",
+    "evidence/v161/integrity/release-verify-1.6.0.json": "604aa3a7cc0bca9d664d1e38fb0b51897b5c446beaaba0f839c390abf63bd875",
+    "evidence/v161/integrity/release-verify-1.6.0.log": "62e7566e287943288b28b6db82db2e713be5963e70c6653e638e8c38fdb7ad10",
+    "evidence/v161/integrity/identitas-masukan.json": "231827038c6009f0569f3f90df2592c8d0353771a4885d4d37bdd03b2cab27c5",
+    "evidence/v161/integrity/inventaris-arsip-audit.csv": "53858be2094cae00a7435bfe56fbcf4546dfac59a4a8b1ba070d674d2ed6b7c0",
+    "evidence/v161/integrity/periksa_masukan.py": "2b9f5367db1256af5da540c8aee07e079c849d1d51d44df1b912eef9766c3255",
+    "evidence/v161/integrity/periksa_zip_akhir.py": "c3ecbf55f6239335f52a854ae70ee75149134ae1098d7b02baae32630e4e8fed",
+    "evidence/v161/integrity/zip-independen-baseline.json": "8105856b2516756a90dcc43fc7e9ae32b93e77d80936388c3efd6696cb66111f",
+    "evidence/v161/integrity/bank-verifikasi.log": "e772449b27e5ffdfc9c46d6ed43bee7648629b7e2f2ae4b7701f0ac3db26e8b1",
+    "evidence/v161/update-local/update-rollback.json": "6a16481a2dc77cf4c9bba5545776410b06d343073fdc93f6a9ad464d4acdd3be",
+    "evidence/v161/update-local/update-rollback.log": "49b40bdadc20fc59a35f7a266c6144313022b8ff2aff557b9e1dbb8108219a33",
+    "tests/v15/update-rollback-local.py": "b9ab656929ca5e4392ccfa0fc1c59218ba6c9148406dbb56b5fe6a072c9ce8f0"
+  }
+}

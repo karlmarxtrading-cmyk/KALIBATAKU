@@ -1,0 +1,67 @@
+﻿"Summary","Siswa / Student","Sumber / Source","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"
+"Summary","Demo Éka, ""Arum""","SIMULASI / DEMONSTRATION DATA",0,0,0,0,0,0,,,
+"Competencies","Kompetensi / Competency","Kelas / Grade","Level","Operasi / Operation","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"
+"Operations","Operasi / Operation","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"
+"Operations","Penjumlahan / Addition",0,0,0,0,0,0,,,
+"Operations","Pengurangan / Subtraction",0,0,0,0,0,0,,,
+"Operations","Perkalian / Multiplication",0,0,0,0,0,0,,,
+"Operations","Pembagian / Division",0,0,0,0,0,0,,,
+"Operations","Campuran / Mixed operations",0,0,0,0,0,0,,,
+"Sessions","ID","UTC","Paket / Package","Mode","Status","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"
+"Dictionary","Ukuran / Measure","Definisi / Definition"
+"Dictionary","Skor paket / Form score","0 / 0"
+"Dictionary","Akurasi jawaban / Response accuracy","0 / 0"
+"Dictionary","Soal ditanggapi / Questions responded to","0 / 0"
+"Dictionary","Jawaban pertama benar / First response correct","0 / 0"
+"Dictionary","Penyebut nol / Zero denominator","Kosong = belum dievaluasi / Empty = not assessed"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-c39fa668-355f-4849-ace8-95756fd24114"
+"Metadata","data_origin","demo"
+"Metadata","verification_status","unverified"
+"Metadata","locale","bilingual"
+"Metadata","period_start_utc","1969-12-31T17:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2099-12-31T17:00:00.000Z"
+"Metadata","display_timezone","Asia/Jakarta"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-25T12:05:00Z"
+"Metadata","assigned_count",0
+"Metadata","correct_count",0
+"Metadata","incorrect_count",0
+"Metadata","skipped_count",0
+"Metadata","blank_count",0
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",
+"Metadata","valid_response_accuracy_percent",
+"Metadata","responded_percent",
+"Metadata","subject_id","demo-01"
+"Metadata","subject_alias","Demo Éka, ""Arum"""
+"Metadata","source","demo"
+"Metadata","classId",""
+"Metadata","studentId","demo-01"
+"Metadata","from",""
+"Metadata","to",""
+"Metadata","timezone","Asia/Jakarta"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions",""
+"Metadata","change_pp",
+"Notes","Penulis / Author","UTC","Revisi / Revision","Catatan / Note","ID","Menggantikan / Supersedes","Status"
+"Math","Sumber / Source","ID","Ekspresi / Expression","Pembilang kunci / Key numerator","Penyebut kunci / Key denominator","Respons pertama / First response","Respons terakhir / Last response"
+"Family","SIMULASI / DEMONSTRATION DATA"
+"Family","Demo Éka, ""Arum"""
+"Family","3A · Semua tanggal / All dates · Asia/Jakarta"
+"Family","Sesi selesai dalam periode ini:  / Completed sessions in this period: 0 · Berjalan:  / In progress: 0"
+"Family","Yang sudah terlihat / What went well"
+"Family","Belum ada jawaban benar mandiri pada respons pertama yang tercatat dalam periode ini. / No independent first-try correct responses are recorded in this period."
+"Family","Fokus pendampingan / What to work on"
+"Family","Mulai dengan satu latihan pendek untuk mengenal cara siswa berpikir. / Start with a short practice session to see how the learner approaches questions."
+"Family","Belum diuji melalui evaluasi pada periode ini / Not assessed in this period — Penjumlahan / Addition, Pengurangan / Subtraction, Perkalian / Multiplication, Pembagian / Division, Campuran / Mixed operations."
+"Family","Rencana latihan berikutnya / Next practice plan"
+"Family","Mulai satu latihan singkat untuk mengumpulkan bukti awal. / Complete a short practice session to collect initial evidence."
+"Family","Tanggal tinjauan / Review date · Belum ditetapkan bersama guru. / To be agreed with the teacher."
+"Contexts","Kelas / Grade","Level","Operasi / Operation","Mode","Respons pertama benar / First correct","Jumlah respons pertama / First responses","Dengan petunjuk / With hints","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"

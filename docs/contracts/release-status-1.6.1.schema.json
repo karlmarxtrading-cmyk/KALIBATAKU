@@ -1,0 +1,405 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KALIBATAKU release status 1.6.1",
+  "type": "object",
+  "required": [
+    "artifact_status",
+    "schema",
+    "release_id",
+    "app_version",
+    "bank_version",
+    "dist_tree_sha256",
+    "offline_release",
+    "qa_binding",
+    "qa_binding_verified",
+    "release_label",
+    "label_mapping",
+    "criteria_counts",
+    "readiness",
+    "phase_counts",
+    "audit_1_5",
+    "source_tree_sha256",
+    "audit_1_6",
+    "redesign_phase_counts",
+    "generated_utc"
+  ],
+  "properties": {
+    "artifact_status": {
+      "const": "release_verdict"
+    },
+    "release_id": {
+      "type": "string",
+      "pattern": "^kalibataku-static-\\d+\\.\\d+\\.\\d+$"
+    },
+    "app_version": {
+      "type": "string"
+    },
+    "bank_version": {
+      "type": "string"
+    },
+    "dist_tree_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "offline_release": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{16}$"
+    },
+    "qa_binding": {
+      "type": "string"
+    },
+    "readiness": {
+      "type": "object",
+      "required": [
+        "static_application",
+        "adventure_journey",
+        "ui_ux",
+        "backup_archive",
+        "offline",
+        "teacher_reports",
+        "browsers_devices_assistive",
+        "content_review",
+        "pedagogy_pilot",
+        "performance_lab",
+        "field_performance",
+        "live_deployment"
+      ],
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "status",
+          "label",
+          "criteria",
+          "evidence",
+          "claim_boundary",
+          "blockers"
+        ],
+        "properties": {
+          "status": {
+            "enum": [
+              "PASS",
+              "HOLD",
+              "FAIL",
+              "NOT_PERFORMED",
+              "NOT_RUN",
+              "DEFERRED_BY_SCOPE",
+              "PREVIEW_PASS",
+              "TECHNICAL_PASS_USABILITY_NOT_VALIDATED"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "claim_boundary": {
+            "type": "string",
+            "minLength": 10
+          },
+          "blockers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "label": {
+            "enum": [
+              "GO",
+              "READY_FOR_VALIDATION",
+              "HOLD"
+            ]
+          },
+          "criteria": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^AC:"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "schema": {
+      "const": "release-status-1.6.1"
+    },
+    "qa_binding_verified": {
+      "type": "boolean"
+    },
+    "release_label": {
+      "enum": [
+        "GO",
+        "READY_FOR_VALIDATION",
+        "HOLD"
+      ]
+    },
+    "label_mapping": {
+      "type": "object",
+      "required": [
+        "GO",
+        "READY_FOR_VALIDATION",
+        "HOLD"
+      ]
+    },
+    "criteria_counts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      }
+    },
+    "automated_wajib_all_pass": {
+      "type": "boolean"
+    },
+    "generated_utc": {
+      "type": "string"
+    },
+    "phase_counts": {
+      "type": "object",
+      "required": [
+        "WAJIB",
+        "SETELAH_PILOT"
+      ],
+      "properties": {
+        "WAJIB": {
+          "type": "object",
+          "required": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ],
+          "properties": {
+            "PASS": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "FAIL": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "BLOCKED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "NOT_RUN": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        "SETELAH_PILOT": {
+          "type": "object",
+          "required": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ],
+          "properties": {
+            "PASS": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "FAIL": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "BLOCKED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "NOT_RUN": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_tree_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "audit_1_5": {
+      "type": "object",
+      "required": [
+        "AUD15-01",
+        "AUD15-02",
+        "AUD15-03"
+      ],
+      "properties": {
+        "AUD15-01": {
+          "enum": [
+            "DITUTUP",
+            "TERBUKA"
+          ]
+        },
+        "AUD15-02": {
+          "enum": [
+            "DITUTUP",
+            "TERBUKA"
+          ]
+        },
+        "AUD15-03": {
+          "enum": [
+            "DITUTUP",
+            "TERBUKA"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "audit_1_6": {
+      "type": "object",
+      "required": [
+        "AUD160-01",
+        "AUD160-02",
+        "OBS160-01",
+        "OBS160-02",
+        "DOC160-01",
+        "EXT160-01",
+        "EXT160-02",
+        "OBS160-03"
+      ],
+      "properties": {
+        "AUD160-01": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ]
+        },
+        "AUD160-02": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ]
+        },
+        "OBS160-01": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ]
+        },
+        "OBS160-02": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ]
+        },
+        "DOC160-01": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ]
+        },
+        "EXT160-01": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ]
+        },
+        "EXT160-02": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ]
+        },
+        "OBS160-03": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "redesign_phase_counts": {
+      "type": "object",
+      "required": [
+        "WAJIB",
+        "SETELAH_PILOT"
+      ],
+      "properties": {
+        "WAJIB": {
+          "type": "object",
+          "required": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ],
+          "properties": {
+            "PASS": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "FAIL": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "BLOCKED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "NOT_RUN": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        },
+        "SETELAH_PILOT": {
+          "type": "object",
+          "required": [
+            "PASS",
+            "FAIL",
+            "BLOCKED",
+            "NOT_RUN"
+          ],
+          "properties": {
+            "PASS": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "FAIL": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "BLOCKED": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "NOT_RUN": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "description": "Current candidate and build evidence, with separate original and redesign criteria and eight findings from the 1.6.0 audit."
+}

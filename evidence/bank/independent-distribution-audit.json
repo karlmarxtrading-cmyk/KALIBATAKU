@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checks": [
+    "physical package SHA-256, plan ID, curriculum cell, purpose and grade-level manifest",
+    "closed structural keywords from core.schema.json with six rejected corrupt fixtures",
+    "independent plain-text precedence and rational arithmetic",
+    "display values and canonical SHA-256 same over commutative operands",
+    "per-package uniqueness and global inventory"
+  ],
+  "packages": 4604,
+  "slots": 177640,
+  "unique": 168142,
+  "intentionalRepetitions": 9498,
+  "duplicatesInPackages": 0,
+  "assessmentForms": 562,
+  "maximumPackageGzipBytes": 13523,
+  "errors": [],
+  "totalErrors": 0
+}

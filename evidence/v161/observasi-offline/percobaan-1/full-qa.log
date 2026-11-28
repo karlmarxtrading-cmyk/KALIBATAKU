@@ -1,0 +1,136 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm. See `npm help npmrc` for supported config options.
+
+> kalibataku-mental-math@1.6.1 qa:production
+> python3 tools/qa_gate.py --parallel --keep
+
+build {"dist_tree_sha256": "00e3ce3b4dc1fc76cc60b2dd48b51543970d342cbdd7b06c36cecf4fc3255147", "offline_release": "83fef50a05e52452", "app_version": "1.6.1", "bank_version": "1.2.0", "source_tree_sha256": "26813c26b7884587af4dec071dce2f88a0a4835336bd763f37922dff564d2393"} 
+runtime {"node": "v24.22.3", "python": "3.12.14", "os": "Linux-6.18.57-x86_64-with-glibc2.41", "chromium": "Google Chrome for Testing 151.0.7922.34", "playwright": "1.62.0"}
+[PASS       ] compile-check                          140 assertions    17.7s
+[PASS       ] glyphs-reproducible                      1 assertions     0.1s
+[PASS       ] curriculum                               1 assertions     0.5s
+[PASS       ] player-run                              18 assertions     0.1s
+[PASS       ] player-ledger                            1 assertions     0.2s
+[PASS       ] data-contract                            1 assertions     0.7s
+[PASS       ] teacher-exports                          1 assertions     0.7s
+[PASS       ] ui-catalog-tokens                        4 assertions     0.7s
+[PASS       ] upgrade-restore-v1.0                     1 assertions     0.1s
+[PASS       ] player-ux-domain                         1 assertions     0.2s
+[PASS       ] bank-snapshot-upgrade                    1 assertions     0.1s
+[PASS       ] upgrade-verified-package                 1 assertions     0.1s
+[PASS       ] data-ux-contract                         7 assertions     1.1s
+[PASS       ] ui-session-plan                          1 assertions     0.1s
+[PASS       ] teacher-ux-evidence                      1 assertions     1.2s
+[PASS       ] bank-verify                              1 assertions    28.5s
+[PASS       ] bank-audit-distribution                 12 assertions    10.4s
+[PASS       ] e2e-browser                            262 assertions    73.2s
+[PASS       ] browser-v13-firefox                     11 assertions    90.2s
+[PASS       ] journey-browser-firefox                 41 assertions    17.7s
+[PASS       ] bank-determinism                         2 assertions    55.4s
+[PASS       ] intent-browser-firefox                   1 assertions    10.6s
+[PASS       ] bank-domain-prose                        9 assertions     9.1s
+[PASS       ] math-linear-roundtrip                   26 assertions    14.7s
+[PASS       ] math-exports                            14 assertions     0.2s
+[PASS       ] v12-bank-model                          32 assertions     8.3s
+[PASS       ] v12-feedback-export                      1 assertions     0.2s
+[PASS       ] documents-reopened                       7 assertions     0.8s
+[PASS       ] data-cache-policy                       10 assertions     0.1s
+[PASS       ] upgrade-bank-1.2                         6 assertions     0.1s
+[PASS       ] qa-fault-injection                      20 assertions     9.9s
+[PASS       ] ux-extended-browser                    409 assertions   117.7s
+[FAIL       ] offline-capability-firefox              10 assertions    75.3s  ['evidence/v13/receipts/offline-capability-firefox.json: failed assertions: map', 'exit code 1 incompatible with evidence (FAIL)']
+[PASS       ] v12-browser-chromium                    14 assertions     9.2s
+[PASS       ] v12-keyboard                            15 assertions     2.2s
+[PASS       ] v12-print-contrast                       2 assertions     2.1s
+[PASS       ] v12-roles-reflow                       240 assertions     8.8s
+[PASS       ] browser-v13-webkit                      11 assertions    69.4s
+[PASS       ] bank-preservation                        1 assertions     1.9s
+[PASS       ] review-roster                            1 assertions     0.7s
+[PASS       ] journey-sidecar                          1 assertions    16.2s
+[PASS       ] catalog-offline-v151-firefox            11 assertions    69.9s
+[PASS       ] journey-model                           34 assertions    16.4s
+[PASS       ] journey-next-practice-probe              1 assertions     0.2s
+[PASS       ] journey-exports-reopened                 1 assertions     0.3s
+[PASS       ] enter-cycles-firefox                     6 assertions     7.8s
+[PASS       ] browser-v13-chromium                    11 assertions    65.9s
+[PASS       ] data-archive-edges                      10 assertions    13.3s
+[PASS       ] hosting-smoke                            1 assertions     2.7s
+[PASS       ] journey-browser-chromium                41 assertions    14.4s
+[PASS       ] journey-browser-webkit                  41 assertions    15.1s
+[PASS       ] intent-browser-chromium                  1 assertions     7.7s
+[PASS       ] progression-bounds                       1 assertions     8.2s
+[PASS       ] progression-launch                       1 assertions     0.3s
+[PASS       ] start-intent                            22 assertions     1.0s
+[PASS       ] period-readiness                         1 assertions     0.2s
+[PASS       ] format-readiness                         1 assertions     0.3s
+[PASS       ] semantic-restore                         1 assertions     1.1s
+[PASS       ] restore-index                            1 assertions     0.1s
+[PASS       ] restore-worker                           1 assertions     3.0s
+[PASS       ] next-viewport-firefox                  150 assertions    42.5s
+[PASS       ] intent-browser-webkit                    1 assertions     8.6s
+[PASS       ] offline-legacy-repeat-firefox            3 assertions    39.1s
+[PASS       ] offline-capability-chromium             10 assertions    58.0s
+[PASS       ] map-native-zoom                          1 assertions     7.3s
+[PASS       ] offline-capability-webkit               10 assertions    60.1s
+[PASS       ] register-policy                          1 assertions     0.0s
+[PASS       ] bank-occurrence-identity                 1 assertions     5.7s
+[PASS       ] viewed-coverage                         33 assertions     0.5s
+[PASS       ] viewed-exports                           1 assertions     0.4s
+[PASS       ] viewed-browser                           1 assertions     6.9s
+[PASS       ] catalog-offline-v151-chromium           11 assertions    57.2s
+[PASS       ] enter-cycles-chromium                    6 assertions     5.5s
+[PASS       ] next-viewport-chromium                 145 assertions    26.0s
+[PASS       ] catalog-offline-v151-webkit             11 assertions    62.2s
+[PASS       ] time-offset-engine                       1 assertions     2.2s
+[PASS       ] time-offset-exports                      1 assertions     1.0s
+[PASS       ] external-receipts                      101 assertions    30.6s
+[PASS       ] enter-cycles-webkit                      6 assertions     5.2s
+[PASS       ] learning-policy-160                      5 assertions     0.1s
+[PASS       ] portable-path-order                      6 assertions     2.9s
+[PASS       ] catalog-context                          4 assertions     1.1s
+[PASS       ] route-faults                             3 assertions     4.2s
+[PASS       ] next-viewport-webkit                   145 assertions    27.2s
+[PASS       ] qa-receipt-shape                        39 assertions     0.8s
+[PASS       ] data-large-backup                       17 assertions    64.6s
+[PASS       ] performance-budgets                     27 assertions    36.3s
+[PASS       ] journey-perf-lab                         5 assertions    28.5s
+[PASS       ] clean-build-twice                        2 assertions     8.6s
+[PASS       ] capacity-rows                            4 assertions    12.0s
+[PASS       ] capacity-bytes                           4 assertions     4.4s
+[PASS       ] capacity-browser                         1 assertions    24.5s
+[PASS       ] capacity-beyond-string                   1 assertions    30.8s
+primary sandbox kept at /workspace/scratch/94a2cb03b99b/k161/qwork/kalibataku-qa-egqqa8ab
+chromium sandbox kept at /workspace/scratch/94a2cb03b99b/k161/qwork/kalibataku-qa-ka1zg63a
+firefox sandbox kept at /workspace/scratch/94a2cb03b99b/k161/qwork/kalibataku-qa-ldgcbrkd
+
+QA gate FAIL · 93 suites · 2283 assertions · /workspace/scratch/94a2cb03b99b/k161/site/evidence/v161/qa
+binding re-verification failed:
+  binding was produced with a different suite registry
+  stale binding: recorded build identity differs from current payload
+  bank-determinism: recorded receipt count or state differs from file
+  bank-determinism: receipt build 83fef50a05e52452 is not the certified build a2f40449c4738fe6
+  bank-determinism: recorded status PASS differs from evidence (FAIL)
+  bank-determinism: suite status FAIL not accepted
+  bank-domain-prose: recorded receipt count or state differs from file
+  bank-domain-prose: receipt build 83fef50a05e52452 is not the certified build a2f40449c4738fe6
+  bank-domain-prose: recorded status PASS differs from evidence (FAIL)
+  bank-domain-prose: suite status FAIL not accepted
+  math-linear-roundtrip: recorded receipt count or state differs from file
+  math-linear-roundtrip: receipt build 83fef50a05e52452 is not the certified build a2f40449c4738fe6
+  math-linear-roundtrip: recorded status PASS differs from evidence (FAIL)
+  math-linear-roundtrip: suite status FAIL not accepted
+  math-exports: recorded receipt count or state differs from file
+  math-exports: receipt build 83fef50a05e52452 is not the certified build a2f40449c4738fe6
+  math-exports: recorded status PASS differs from evidence (FAIL)
+  math-exports: suite status FAIL not accepted
+  documents-reopened: recorded receipt count or state differs from file
+  documents-reopened: receipt build 83fef50a05e52452 is not the certified build a2f40449c4738fe6
+  documents-reopened: recorded status PASS differs from evidence (FAIL)
+  documents-reopened: suite status FAIL not accepted
+  data-large-backup: recorded receipt count or state differs from file
+  data-large-backup: receipt build 83fef50a05e52452 is not the certified build a2f40449c4738fe6
+  data-large-backup: recorded status PASS differs from evidence (FAIL)
+  data-large-backup: suite status FAIL not accepted
+  data-cache-policy: recorded receipt count or state differs from file
+  data-cache-policy: receipt build 83fef50a05e52452 is not the certified build a2f40449c4738fe6
+  data-cache-policy: recorded status PASS differs from evidence (FAIL)
+  data-cache-policy: suite status FAIL not accepted

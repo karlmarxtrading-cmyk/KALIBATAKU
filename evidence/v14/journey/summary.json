@@ -1,0 +1,29 @@
+{
+ "nodes": 300,
+ "active": 281,
+ "inactive": 19,
+ "edges": 712,
+ "roots": [
+  "arithmetic.addition.g01.l01"
+ ],
+ "acyclic": true,
+ "topological_order": true,
+ "first_subtraction": "arithmetic.subtraction.g01.l01",
+ "first_subtraction_ancestors": [
+  "arithmetic.addition.g01.l01"
+ ],
+ "placements_mapped": 177640,
+ "packages": 4604,
+ "by_use": {
+  "mission_intro": 26260,
+  "mission_core": 62160,
+  "assessment_form_reserved": 20020,
+  "mission_apply": 34400,
+  "mission_review": 34800
+ },
+ "errors": [],
+ "sidecar_sha256": "83f4f159f58a58ee8e880e8aca108fc8d1fc322368c477b1d5866d3f79e82589",
+ "metadata_version": "1.0.0",
+ "route_version": "route-1.0.0",
+ "reviewer_status": "authored_heuristic"
+}

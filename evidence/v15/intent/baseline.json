@@ -1,0 +1,33 @@
+{
+  "suite": "AUD-03 historical regression, verified before change",
+  "source_sha256": "86b030e3196cbf2116ce37bad3a6b7bcb350eadee4d1931cff8ba7bcf094046d",
+  "source_version": "1.4.0",
+  "probe": "08_REPRODUKSI/probe-engine-cases.mjs",
+  "runtime": "Node v24.22.3",
+  "at": "2026-11-28T08:30:19.608893+00:00",
+  "expected": "stage S-G05-L01 on empty profile and after six incorrect first answers in G1 intro",
+  "actual": {
+    "control": {
+      "action": "start",
+      "node_id": "arithmetic.addition.g05.l01",
+      "kind": "intro",
+      "reason": "start_point"
+    },
+    "completed_attempt": {
+      "node": "arithmetic.addition.g01.l01",
+      "status": "completed",
+      "items": 6,
+      "correct": 0
+    },
+    "selectedStart": {
+      "stage_id": "S-G05-L01"
+    },
+    "actual": {
+      "action": "reinforce",
+      "node_id": "arithmetic.addition.g01.l01",
+      "kind": "reinforcement",
+      "reason": "last_mission_below_60_percent_independent"
+    }
+  },
+  "status": "BASELINE_FAILURE_REPRODUCED"
+}

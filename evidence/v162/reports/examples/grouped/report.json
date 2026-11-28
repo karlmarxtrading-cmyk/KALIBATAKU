@@ -1,0 +1,426 @@
+{
+  "schema_version": "parents-report-1.3",
+  "core": {
+    "schema_version": "1.0.0",
+    "report_id": "R-1ea299ed-1bd0-4620-b5ce-69175749f78d",
+    "data_origin": "local_practice",
+    "verification_status": "unverified",
+    "locale": "id",
+    "period_start_utc": "2026-11-28T17:00:00.000Z",
+    "period_end_exclusive_utc": "2026-11-29T17:00:00.000Z",
+    "display_timezone": "Asia/Jakarta",
+    "policy_version": "analytics-local-v1",
+    "created_at": "2026-11-30T00:00:00.000Z",
+    "assigned_count": 1,
+    "correct_count": 1,
+    "incorrect_count": 0,
+    "skipped_count": 0,
+    "blank_count": 0,
+    "unseen_count": 0,
+    "form_score_percent": 100,
+    "valid_response_accuracy_percent": 100,
+    "responded_percent": 100
+  },
+  "contexts": [
+    {
+      "id": "arithmetic.mixed.g11.l03",
+      "grade": 11,
+      "level": 3,
+      "mode": "practice",
+      "operation": "MIX",
+      "feedback_policy_version": "visible-key-v2",
+      "timing_policy_version": "continuous-deadline-v2",
+      "N": 1,
+      "C": 1,
+      "W": 0,
+      "S": 0,
+      "B": 0,
+      "U": 0,
+      "score_percent": 100,
+      "accuracy_percent": 100,
+      "responded_percent": 100,
+      "firstCorrect": 0,
+      "firstTotal": 1,
+      "hintCount": 0,
+      "retryCount": 1,
+      "score": 100,
+      "accuracy": 100,
+      "responded": 100,
+      "independent": 0,
+      "sessions": 1,
+      "period": [
+        "2026-11-28T17:00:01.001Z",
+        "2026-11-28T17:00:01.001Z"
+      ]
+    }
+  ],
+  "firstDifficulty": {
+    "first_ast": {
+      "kind": "rational",
+      "numerator": "99",
+      "denominator": "1"
+    },
+    "final_ast": {
+      "kind": "rational",
+      "numerator": "14",
+      "denominator": "3",
+      "display": {
+        "kind": "fraction",
+        "numerator": "14",
+        "denominator": "3"
+      }
+    },
+    "expression_ast": {
+      "kind": "binary",
+      "operation": "DIV",
+      "left": {
+        "kind": "binary",
+        "operation": "MUL",
+        "left": {
+          "kind": "binary",
+          "operation": "ADD",
+          "left": {
+            "kind": "binary",
+            "operation": "MUL",
+            "left": {
+              "kind": "rational",
+              "numerator": "-25",
+              "denominator": "24",
+              "display": {
+                "kind": "fraction",
+                "numerator": "-25",
+                "denominator": "24"
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "2",
+              "denominator": "5",
+              "display": {
+                "kind": "fraction",
+                "numerator": "2",
+                "denominator": "5"
+              }
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "1",
+            "denominator": "1",
+            "display": {
+              "kind": "fraction",
+              "numerator": "5",
+              "denominator": "5"
+            }
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "16",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        }
+      },
+      "right": {
+        "kind": "rational",
+        "numerator": "2",
+        "denominator": "1",
+        "display": {
+          "kind": "integer"
+        }
+      }
+    },
+    "key": {
+      "numerator": "14",
+      "denominator": "3"
+    },
+    "feedback_policy_version": "visible-key-v2",
+    "after_key": true,
+    "expression": "((((−25⁄24) × (2⁄5)) + (5⁄5)) × 16) ÷ 2",
+    "first": "99",
+    "final": "14/3",
+    "hint": false,
+    "mode": "practice",
+    "grade": 11,
+    "level": 3,
+    "at": "2026-11-28T17:00:01.001Z",
+    "attempt": "7fb0c734-37a3-47ba-90db-ff1330f7e56f"
+  },
+  "activeNotes": [],
+  "plan": "",
+  "reviewDate": "",
+  "appendix": false,
+  "person": {
+    "id": "75b79040-4c3d-49fb-ae90-b0b764390ed0",
+    "alias": "QA grouped",
+    "classId": ""
+  },
+  "filters": {
+    "source": "local_practice",
+    "classId": "",
+    "studentId": "75b79040-4c3d-49fb-ae90-b0b764390ed0",
+    "from": "2026-11-29",
+    "to": "2026-11-29",
+    "timezone": "Asia/Jakarta",
+    "module": "mental-math",
+    "grade": "",
+    "level": "",
+    "operation": "",
+    "mode": "",
+    "status": "",
+    "packageId": ""
+  },
+  "content_versions": [
+    "1.2.0"
+  ],
+  "counts": {
+    "N": 1,
+    "C": 1,
+    "W": 0,
+    "S": 0,
+    "B": 0,
+    "U": 0,
+    "score_percent": 100,
+    "accuracy_percent": 100,
+    "responded_percent": 100,
+    "firstCorrect": 0,
+    "firstTotal": 1,
+    "hintCount": 0,
+    "retryCount": 1,
+    "score": 100,
+    "accuracy": 100,
+    "responded": 100
+  },
+  "completed": 1,
+  "ongoing": 0,
+  "operations": [
+    {
+      "operation": "ADD",
+      "N": 0,
+      "C": 0,
+      "W": 0,
+      "S": 0,
+      "B": 0,
+      "U": 0,
+      "score_percent": null,
+      "accuracy_percent": null,
+      "responded_percent": null,
+      "firstCorrect": 0,
+      "firstTotal": 0,
+      "hintCount": 0,
+      "retryCount": 0,
+      "score": null,
+      "accuracy": null,
+      "responded": null
+    },
+    {
+      "operation": "SUB",
+      "N": 0,
+      "C": 0,
+      "W": 0,
+      "S": 0,
+      "B": 0,
+      "U": 0,
+      "score_percent": null,
+      "accuracy_percent": null,
+      "responded_percent": null,
+      "firstCorrect": 0,
+      "firstTotal": 0,
+      "hintCount": 0,
+      "retryCount": 0,
+      "score": null,
+      "accuracy": null,
+      "responded": null
+    },
+    {
+      "operation": "MUL",
+      "N": 0,
+      "C": 0,
+      "W": 0,
+      "S": 0,
+      "B": 0,
+      "U": 0,
+      "score_percent": null,
+      "accuracy_percent": null,
+      "responded_percent": null,
+      "firstCorrect": 0,
+      "firstTotal": 0,
+      "hintCount": 0,
+      "retryCount": 0,
+      "score": null,
+      "accuracy": null,
+      "responded": null
+    },
+    {
+      "operation": "DIV",
+      "N": 0,
+      "C": 0,
+      "W": 0,
+      "S": 0,
+      "B": 0,
+      "U": 0,
+      "score_percent": null,
+      "accuracy_percent": null,
+      "responded_percent": null,
+      "firstCorrect": 0,
+      "firstTotal": 0,
+      "hintCount": 0,
+      "retryCount": 0,
+      "score": null,
+      "accuracy": null,
+      "responded": null
+    },
+    {
+      "operation": "MIX",
+      "N": 1,
+      "C": 1,
+      "W": 0,
+      "S": 0,
+      "B": 0,
+      "U": 0,
+      "score_percent": 100,
+      "accuracy_percent": 100,
+      "responded_percent": 100,
+      "firstCorrect": 0,
+      "firstTotal": 1,
+      "hintCount": 0,
+      "retryCount": 1,
+      "score": 100,
+      "accuracy": 100,
+      "responded": 100
+    }
+  ],
+  "competencies": [
+    {
+      "id": "arithmetic.mixed.g11.l03",
+      "grade": 11,
+      "level": 3,
+      "operation": "MIX",
+      "N": 1,
+      "C": 1,
+      "W": 0,
+      "S": 0,
+      "B": 0,
+      "U": 0,
+      "score_percent": 100,
+      "accuracy_percent": 100,
+      "responded_percent": 100,
+      "firstCorrect": 0,
+      "firstTotal": 1,
+      "hintCount": 0,
+      "retryCount": 1,
+      "score": 100,
+      "accuracy": 100,
+      "responded": 100,
+      "mastery": {
+        "status": "not_started",
+        "gates": {
+          "pool": true,
+          "sample": false,
+          "accuracy": false,
+          "forms": false,
+          "spacing": false,
+          "scores": false,
+          "lifetime": false
+        },
+        "policy_version": "mastery-local-v1",
+        "assessment_cycle_id": null,
+        "forms": 0,
+        "unique": 0,
+        "correct": 0,
+        "needed": 20,
+        "accuracy_percent": null,
+        "scores": [],
+        "spacing_hours": 0,
+        "overlap": 0,
+        "all_time_unique": 0,
+        "exposures": 0,
+        "review_due": false,
+        "review_interval_days": 7,
+        "cycle_expired": false
+      }
+    }
+  ],
+  "timing": {
+    "n": 0,
+    "excluded": 0,
+    "median_ms": null,
+    "p90_ms": null
+  },
+  "journey": {
+    "policy": "journey-policy-1.1.0",
+    "exposure_policy": "viewed-items-1.0.0",
+    "readiness_registry": "readiness-bank-1.2.0/v1",
+    "mission_policy": "mission-policy-1.1.0",
+    "as_of": {
+      "utc": "2026-11-29T17:00:00.000Z",
+      "inclusive": false
+    },
+    "readiness_scope": "cumulative_completed_as_of_current_policy",
+    "activity_scope": "selected_sessions_started_in_period_completed_by_cutoff",
+    "rows": [
+      {
+        "node_id": "arithmetic.mixed.g11.l03",
+        "grade": 11,
+        "level": 3,
+        "operation": "MIX",
+        "missions": 0,
+        "first_independent": 0,
+        "first_total": 0,
+        "assisted": 0,
+        "revised_after_key": 0,
+        "xp": 0,
+        "cumulative_missions": 0,
+        "passing_missions": 0,
+        "unique_seen": 1,
+        "strategies_seen": 2,
+        "ready": false,
+        "rule": {
+          "target_missions": 2,
+          "min_rate": 0.8,
+          "coverage_needed": 12,
+          "strategies_needed": 2,
+          "label": "product_policy_not_psychometric"
+        }
+      }
+    ],
+    "missions": 0,
+    "xp": 0,
+    "readiness_label": "product_policy_not_psychometric",
+    "xp_label": "effort_marker_not_academic"
+  },
+  "change_pp": null,
+  "notes": [],
+  "sessions": [
+    {
+      "id": "7fb0c734-37a3-47ba-90db-ff1330f7e56f",
+      "started": "2026-11-28T17:00:01.001Z",
+      "ended": "2026-11-28T17:00:01.004Z",
+      "status": "completed",
+      "operation": "MIX",
+      "mode": "practice",
+      "grade": 11,
+      "level": 3,
+      "package": "MM-G11-L03-MIX-P001",
+      "assignment": null,
+      "N": 1,
+      "C": 1,
+      "W": 0,
+      "S": 0,
+      "B": 0,
+      "U": 0,
+      "score_percent": 100,
+      "accuracy_percent": 100,
+      "responded_percent": 100,
+      "firstCorrect": 0,
+      "firstTotal": 1,
+      "hintCount": 0,
+      "retryCount": 1,
+      "score": 100,
+      "accuracy": 100,
+      "responded": 100
+    }
+  ]
+}

@@ -1,0 +1,1383 @@
+{
+  "scope": "Observed static release acceptance; each status is bound to evidence and limitations.",
+  "counts": {
+    "PASS": 88,
+    "NOT_RUN": 2
+  },
+  "tests": [
+    {
+      "test_id": "TC-100",
+      "title": "Inventaris kurikulum penuh",
+      "expected": "60 level, 300 slot, 281 aktif, 19 nonaktif; jumlah per kelas cocok sumber+errata",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/summary.json",
+        "evidence/bank/coverage.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-101",
+      "title": "ID dan versi",
+      "expected": "Semua ID unik pada scope-nya, referensi resolve, revisi/versi tidak berbenturan",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/inventory.json",
+        "evidence/bank/oracle-by-level.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-102",
+      "title": "Prasyarat",
+      "expected": "Semua node prasyarat ada/aktif; tidak ada siklus tak disengaja; MIX hanya operasi yang diperbolehkan",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/coverage.json",
+        "evidence/bank/semantic-by-cell.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-103",
+      "title": "Semua template",
+      "expected": "Setiap kompetensi aktif punya implementasi constraint; tidak ada aturan editorial yang dilewati diam-diam",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/coverage.json",
+        "evidence/bank/semantic-by-cell.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-104",
+      "title": "Domain kelas awal",
+      "expected": "G01–G04: operand/hasil antara sesuai aturan dan integer nonnegatif; semua DIV habis",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/oracle-by-level.json",
+        "evidence/bank/regression-fixtures.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-105",
+      "title": "Domain rasional",
+      "expected": "G05–G06 tidak mempunyai nilai antara negatif; G07–G12 bertanda sesuai template",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/oracle-by-level.json",
+        "evidence/bank/semantic-by-cell.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-106",
+      "title": "Nilai batas",
+      "expected": "Minimum/maksimum operand, hasil antara, denominator, carry/borrow dan near-base diuji per template",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/semantic-by-cell.json",
+        "evidence/bank/regression-fixtures.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-107",
+      "title": "Oracle independen",
+      "expected": "Evaluator rasional independen cocok untuk semua item; pembagian nol atau kunci beda menggagalkan build",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/oracle-by-level.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-108",
+      "title": "Langkah pembahasan",
+      "expected": "Setiap langkah valid, kesetaraan dipertahankan, hasil akhir cocok; label strategi sesuai langkah",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/oracle-by-level.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-109",
+      "title": "MIX",
+      "expected": "Minimal dua jenis operasi biner; precedence dan parentheses eksplisit; tidak ada bentuk ambigu",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/semantic-by-cell.json",
+        "evidence/bank/oracle-by-level.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-110",
+      "title": "Duplikat",
+      "expected": "Tidak ada duplikat tak disengaja dalam paket; lintas paket terukur; repeat sengaja diberi provenance",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/summary.json",
+        "evidence/bank/inventory.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-111",
+      "title": "Pool kecil",
+      "expected": "Target disesuaikan dengan bukti pool; contoh G01-L01 ADD tidak diklaim punya ratusan unique pairs",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/coverage.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-112",
+      "title": "Distribusi",
+      "expected": "Blueprint subtipe/friendly structure/tujuan dan keseimbangan jawaban dipenuhi atau deviasi tercatat",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/inventory.json",
+        "evidence/bank/semantic-by-cell.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-113",
+      "title": "Form setara",
+      "expected": "A/B memiliki profil isi/kompleksitas yang sebanding; overlap tercatat, label ekuivalen tidak asal",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/coverage.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-114",
+      "title": "Bilingual konten",
+      "expected": "Seluruh title/instruction/hint/explanation/error/label tersedia ID+EN; AST dan kunci sama",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/oracle-by-level.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-115",
+      "title": "Manifest lengkap",
+      "expected": "Semua paket aktual di dist resolve dengan schema/hash/jumlah item benar; tidak ada file yatim tak disengaja",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/bank_sha256.json",
+        "evidence/bank/inventory.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-116",
+      "title": "Determinisme factory",
+      "expected": "Seed+version+input sama menghasilkan canonical content hashes sama pada dua clean run",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/determinism.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-117",
+      "title": "Data sintetis terisolasi",
+      "expected": "ID/data demo tidak berada dalam namespace skor aktual; tidak ada identitas siswa asli di source",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-teacher.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "A completed synthetic assignment and its reports stay separate from the personal namespace."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-118",
+      "title": "Batas output bank",
+      "expected": "Total paket, slot dan unik aktual dilaporkan; selisih terhadap target punya penjelasan per kompetensi",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/summary.json",
+        "evidence/bank/deviations.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-119",
+      "title": "Semantik ESM",
+      "expected": "Paket tidak mempunyai efek samping; hanya bentuk ekspor data yang diizinkan; tidak ada dependency remote runtime",
+      "status": "PASS",
+      "evidence": [
+        "evidence/bank/oracle-by-level.json",
+        "evidence/bank/test-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Factory and independent oracle/distribution checks referenced for this cell."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-120",
+      "title": "Error format vs salah hitung",
+      "expected": "Input malformed tidak menambah salah; jawaban valid tetapi tidak sama kunci menambah salah sesuai mode",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "46 normative parser cases including exact rational values and each error code; invalid input creates no response; cross-checked precedence, zero divisor and unknown AST operation.",
+        "Typed input, locale change and reload were exercised on actual browser controls."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-121",
+      "title": "Pergantian locale saat mengetik",
+      "expected": "Nilai valid tetap sama, draft invalid mempertahankan teks serta validator/keypad `draft_locale` sampai valid/dikosongkan; posisi sesi/timer tidak reset",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "An invalid ID draft retains comma validation across EN switch; completing it reformats exactly, including 1/64. Timer, index and item instances stay pinned.",
+        "Typed input, locale change and reload were exercised on actual browser controls."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-122",
+      "title": "Input berulang cepat",
+      "expected": "Double click/Enter berulang menghasilkan satu submit dan satu event yang sah",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Repeated submit and Enter with the same clean value produces exactly one response command and one history row; repeated finalization returns no command."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-123",
+      "title": "Practice",
+      "expected": "Feedback/hint/retry bekerja, jawaban pertama tidak ditimpa retry, waktu tidak memaksa selesai",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "MET-D: 92 then hinted 96 recorded as first incorrect and retry correct; no deadline and no mastery evidence.",
+        "Five modes were started and completed from session setup; result and item review appeared."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-124",
+      "title": "Speed",
+      "expected": "Countdown, timeout, skip dan hasil sesuai konfigurasi; deadline Speed terus berjalan saat hidden/jeda visual; tidak ada waktu negatif",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Fixed speed deadline starts at ready with 2s, survives hidden elapsed wall time and clamps to zero even after backward wall clock via monotonic anchor. Timeout scores skipped, blank and unseen separately.",
+        "Five modes were started and completed from session setup; result and item review appeared."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-125",
+      "title": "Assessment",
+      "expected": "Feedback/kunci tidak bocor melalui UI sebelum selesai; revisi draft disimpan; dirty-invalid draft memblokir finalisasi atau ditandai kosong eksplisit, tidak memakai nilai lama; finalisasi idempotent",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "MET-G/H: assessment suppresses per-response correctness in event/feedback, takes revision into final, invalid/empty dirty draft blocks completion until explicitly blank. Final results immutable.",
+        "Five modes were started and completed from session setup; result and item review appeared."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-126",
+      "title": "Adaptive",
+      "expected": "Rute sesuai bukti, N/prasyarat/policy; kasus bukti kurang tidak naik/turun secara sewenang-wenang",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Two comparable assessments drive hold, vary, prerequisite or assess; one answer never changes placement.",
+        "Five modes were started and completed from session setup; result and item review appeared."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-127",
+      "title": "Recovery",
+      "expected": "Varian setara terkait soal asal, queue diperbarui, histori kesalahan asli tetap tersedia",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Wrong original and a distinct same-template question linked to its instance; correct variation closes queue with original missed response retained.",
+        "Five modes were started and completed from session setup; result and item review appeared."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-128",
+      "title": "Randomisasi/resume",
+      "expected": "Urutan tersimpan tetap identik setelah reload/back/theme/locale, tidak mengganti versi soal",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Serialized and restored shuffled snapshot retains pinned IDs, AST, key, version, package, elapsed deadline and index on locale change.",
+        "Typed input, locale change and reload were exercised on actual browser controls."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-129",
+      "title": "Atomisitas simpan",
+      "expected": "Kegagalan transaksi tidak meninggalkan skor tanpa ledger/event terkait; outbox mock/remote ikut atomik, local adapter tidak membuat pending server",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json",
+        "evidence/acceptance/browser-data.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Commit with ledger/outbox, transaction abort rolls changes back in the temporary backend",
+        "Native IndexedDB rolls back snapshot + ledger + outbox when outbox write fails: {'failed_write': 'quota injected before outbox put', 'committed_retries': 1, 'local_pending': 0}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-130",
+      "title": "Storage diblokir/quota",
+      "expected": "Ada state gagal/temporer yang jujur; retry/ekspor aman; tidak ada toast simpan palsu",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json",
+        "evidence/acceptance/browser-data.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Temporary storage labelled, exportable, final session resists edits",
+        "Unavailable browser storage exposes temporary namespace and downloadable backup: {'temporary': True}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-131",
+      "title": "Dua tab satu attempt",
+      "expected": "Hanya satu writer sah; takeover jelas; tidak ada event sequence duplikat atau nilai ganda",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json",
+        "evidence/acceptance/browser-data.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Independent writer IDs, explicit takeover, stale revision rejection",
+        "Concurrent browsing contexts, takeover, stale revision, crashed lease expires: {'contexts': 2, 'expired_after_simulated_ms': 20000}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-132",
+      "title": "Upgrade IndexedDB",
+      "expected": "Data fixture versi lama dan pending outbox tetap ada; blocked upgrade/recovery mempunyai jalur UI",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-data.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Version 1 → 2 preserves pending outbox; blocked upgrade gives explicit status: {'database': 'qa-kalibataku-ec5e6176-0a46-422b-b47f-3f83e2edc046', 'from': 1, 'to': 2, 'pending_retained': 1}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-133",
+      "title": "Backup/import",
+      "expected": "Round-trip data canonical cocok; duplikat ID sama+payload sama tidak digandakan; conflict tidak ditimpa",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json",
+        "evidence/acceptance/browser-data.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Verified backup round trip, no duplicate records; mismatch/conflict roll back",
+        "Profile and attempts/ledger round trip through JSON, compare before atomic import: {'events': 2, 'duplicates': 4, 'created': 4, 'target': 'daa3f5a1-fdd6-422c-81ff-8cf5d990939b', 'dates': ['2026-11-25T22:39:30.370Z', '2026-11-25T22:39:30.370Z'], 'summary_bytes': 550}",
+        "Profiles panel previews and restores an actual backup file to the named owner on a shared device: {'source': 'Archive owner', 'active_during_restore': 'Active sibling', 'opened_only_after_explicit_choice': True, 'sessions': 1, 'ledger': 2, 'report_json_rejected': True, 'raw_session_rejected': True, 'deletion_review_includes_scope_and_counts': True}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-134",
+      "title": "Profil lokal",
+      "expected": "Filter/history/export sesuai profil, reset satu profil tidak menghapus lainnya; batas privasi shared device jelas",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json",
+        "evidence/acceptance/browser-data.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Profile isolation and removal including dependent data",
+        "Recover a removed alias before a fresh start without transferring existing sessions to the default profile",
+        "Delete one local profile preserves other namespace: {'retained_profiles': 1}",
+        "Stale alias at startup and deletion in another tab recover without copying attempts: {'active': 'local-default', 'old_attempt_copied': False, 'fresh_session': 'completed'}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-135",
+      "title": "Remote tanpa config",
+      "expected": "Error `BRIDGE_NOT_CONFIGURED`, tidak ada request tak sah, tidak ada ACK mock yang disajikan sebagai server",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Remote missing config makes no request, no mocked receipt"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-136",
+      "title": "Mock ACK",
+      "expected": "Receipt berlabel mock; simulasi partial ACK/latency/error dapat diulang; tidak memberi status verified",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Partial, duplicate and malformed mock receipts; canonical cross-language hash fixture"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-137",
+      "title": "Idempotensi remote",
+      "expected": "Retry event ID+hash sama menerapkan satu kali; ID sama+isi berbeda menjadi konflik",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Retry after commit uses identical IDs/hashes, duplicate once; collision detected",
+        "Remote adapter over fake same-origin HTTP: bind → lost response after commit → duplicate replay → finalization → progress and scoped report"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-138",
+      "title": "Partial ACK",
+      "expected": "Hanya event yang diakui berubah status; 200 malformed/mismatched receipt tidak menghapus outbox",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Partial ACK changes only correlated events; malformed attempt/hash keeps ledger and outbox"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-139",
+      "title": "Error transport",
+      "expected": "401/403/409/422/429/5xx/timeout diperlakukan sesuai kontrak; backoff, auth-required dan rejected berbeda",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "401,403,409,422,429,500,503 mapped states; Retry-After and backoff applied"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-140",
+      "title": "Urutan event/finalisasi",
+      "expected": "Complete sebelum missing events tidak menjadi final akademik; missing sequence dapat dipulihkan",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Complete first produces missing sequence list and recovers after answer/start"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-141",
+      "title": "Logout/pergantian identitas",
+      "expected": "Outbox profil lama tidak terkirim sebagai pengguna baru; pemisahan lingkungan tetap ada",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Account/environment switch halts old outbox; subject mismatch blocks POST"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-142",
+      "title": "Offline deadline",
+      "expected": "Waktu klien/diterima server tersimpan berbeda; keputusan terlambat/ditolak tampil jujur",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Mock server deadline uses receipt time and rejects late offline events"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-143",
+      "title": "ACK vs penilaian",
+      "expected": "`server_accepted` tidak otomatis `mastered_verified`; skor klien dan skor verifikasi berbeda asal",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Server transport accepted, grading stays unverified; receipt origin validated"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-144",
+      "title": "Upgrade schema bridge",
+      "expected": "Versi tak didukung ditolak dengan sebab; event lama tidak dibuang atau diberi versi baru palsu",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Unsupported schema rejected; existing outbox and payload preserved",
+        "Malformed JSON, unsupported event version, cancelled batch and unavailable item revision retain local records"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-145",
+      "title": "Skor dan denominasi",
+      "expected": "Form 10 item: 6 benar, 2 salah, 2 skip → skor 60%, akurasi jawaban 75%, jumlah tiap status jelas",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "6 correct, 2 incorrect, 2 skip gives 60% form score, 75% accuracy; MET-A/B agree with pinned fixtures."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-146",
+      "title": "Completion",
+      "expected": "Respons/skip final dibandingkan total assigned; soal belum dilihat tidak dianggap terjawab; definisi ditampilkan",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "MET-A/B response percentages 95% and 50%; unseen stays in assigned denominator and outside response count."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-147",
+      "title": "Tidak ada bukti",
+      "expected": "N=0 tampil “Belum dievaluasi/Not assessed”, tanpa angka 0% atau klaim lemah",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Zero denominator produces null for form/accuracy/completion/first response. Empty assessment history yields not_started, not 0% mastery."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-148",
+      "title": "Mastery",
+      "expected": "Minimal dua form dan bukti unik per assessment_cycle_id sesuai policy; gunakan final response pada form eligible pertama; skip/blank/unseen masuk denominator sebagai tidak benar; retest sesudah penguatan membuat siklus baru tanpa menghapus histori; duplicate/retry/hint/unfinished tidak menggelembungkan bukti",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "MET-I: 10/12 first cycle fails; new A/B cycle after explicit targeted practice with 12/12 succeeds, no prior exposure removed. Blank/skip/unseen as noncorrect unique evidence. Spacing, assistance, time-to-live, distinct forms, sample floor and per-slice gates tested."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-149",
+      "title": "Perbandingan perkembangan",
+      "expected": "Form setara dipisahkan; 58→86 = +28 pp; perpindahan kesulitan tidak disebut peningkatan setara otomatis",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Comparable form change 58→86 = +28 percentage points. Different content/level/family or absent data suppress comparison."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-150",
+      "title": "Durasi",
+      "expected": "Median/P90 dan N mengikuti 09: median rata dua nilai tengah untuk N genap, P90 nearest-rank, tampil setelah N≥10; kualitas timing ditangani sesuai policy",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Sample count, discarded timing quality, mean of middle two and nearest-rank P90; summaries suppressed below ten first correct unassisted responses."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-151",
+      "title": "Akurasi kelas",
+      "expected": "Metode pembobotan dan denominator tepat; aggregasi tidak merata-ratakan persentase tanpa definisi",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/teacher/validation.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "MET-C: row-weighted response accuracy is 59/110 = 53.6%; form score also uses total assigned.",
+        "MET-C pooled 59/110 response accuracy; incomplete forms excluded"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-152",
+      "title": "Penguasaan per operasi",
+      "expected": "MIX terpisah; nilai ADD tinggi tidak menutup DIV belum diuji/rendah; level mastery memerlukan seluruh sel aktif",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Mastered ADD does not cover an untested DIV or MIX; inactive rows excluded from level denominator."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-153",
+      "title": "Filter lintas tampilan",
+      "expected": "Dashboard, detail siswa, preview laporan dan export memakai filter/snapshot identik",
+      "status": "PASS",
+      "evidence": [
+        "evidence/teacher/validation.json",
+        "evidence/acceptance/browser-teacher.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Matching dashboard and exported snapshot. Filter checks include subject, admin class, module, source, grade, level, mode and local-date-exclusive period.",
+        "The real dashboard changed from six to three people under the class filter."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-154",
+      "title": "Rekomendasi",
+      "expected": "Alasan dapat ditelusuri ke bukti; data kurang diberi label; tidak mengklaim strategi aktual atau diagnosis siswa",
+      "status": "PASS",
+      "evidence": [
+        "evidence/player/checks.json",
+        "evidence/teacher/validation.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Recommendations reference the two exact comparable attempt IDs and scores, return collect for absent evidence; no inferred strategy/personality.",
+        "Traceable recommendations for zero, insufficient and observed arithmetic evidence."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-155",
+      "title": "PDF/DOCX",
+      "expected": "File valid, teks dan angka cocok, font matematika utuh, pagination/heading/table tidak terpotong",
+      "status": "PASS",
+      "evidence": [
+        "evidence/teacher/validation.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "All six metric fixtures parsed from PDF and DOCX; embedded Unicode PDF font, DOCX repeat-header, LibreOffice rendering and multipage stress checks."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-156",
+      "title": "XLSX/CSV",
+      "expected": "Angka tetap angka, encoding/quotes/delimiter benar, field teks berformula disanitasi; angka negatif tidak rusak",
+      "status": "PASS",
+      "evidence": [
+        "evidence/teacher/validation.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "XLSX numerics and typed-string aliases, CSV quoted names, semicolon/comma, UTF-8 BOM, injection escaping and numeric negative preservation."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-157",
+      "title": "JSON/ZIP",
+      "expected": "Schema/hash valid, archive utuh, file count benar, export-import konsisten untuk tipe yang didukung",
+      "status": "PASS",
+      "evidence": [
+        "evidence/teacher/validation.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Schema-validated strict core JSON and versioned report detail. ZIP CRC, SHA-256, membership, safe filenames and report-to-subject mapping."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-158",
+      "title": "Export besar/cancel",
+      "expected": "Progres nyata, UI responsif, cancel membersihkan pekerjaan/URL blob; partial failure dijelaskan",
+      "status": "PASS",
+      "evidence": [
+        "evidence/teacher/validation.json",
+        "evidence/acceptance/browser-teacher.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Batch progress per subject, abort after first file and single-failure manifest; worker transport tested separately in browser.",
+        "All six formats were produced by the real export worker on a resolved synthetic subject."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-159",
+      "title": "Provenance laporan",
+      "expected": "Demo watermark, local unverified, official gated; periode/versi/sumber/created-at sesuai data",
+      "status": "PASS",
+      "evidence": [
+        "evidence/teacher/validation.json",
+        "evidence/acceptance/browser-teacher.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Unverified local label and scope isolation; demo watermark and metadata in documents and spreadsheets.",
+        "All six formats were produced by the real export worker on a resolved synthetic subject."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-160",
+      "title": "Layout minimum/zoom",
+      "expected": "Tidak ada horizontal scroll halaman yang tidak perlu; soal/input/CTA tetap terbaca pada 320px dan zoom sesuai target aksesibilitas",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-layout.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Ninety live viewport and appearance checks, ten additional sandboxed wide-layout measurements, and five live 200% root-text reflow checks. Actual dimensions are recorded."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-161",
+      "title": "Keyboard virtual",
+      "expected": "Input/CTA tidak tertutup; scroll mempertahankan konteks, minus/slash/decimal dapat dimasukkan tanpa paste",
+      "status": "NOT_RUN",
+      "evidence": [
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Short viewport, actual answer control and on-screen minus/slash/decimal tested in the desktop engine."
+      ],
+      "limitations": [
+        "A physical iOS/Android software keyboard and its occlusion events were unavailable in this Linux browser."
+      ]
+    },
+    {
+      "test_id": "TC-162",
+      "title": "Tema/bahasa",
+      "expected": "Semua screen/state termasuk modal, chart, tooltip, error dan export benar; tidak ada lost state/flash kontras parah",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-semantics.json",
+        "evidence/acceptance/browser-journeys.json",
+        "evidence/acceptance/browser-layout.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Bilingual/light/dark routes, definitions, rendered DOM, labels, feedback, and persistence checked across sessions and previews. See route-level coverage."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-163",
+      "title": "Keyboard-only",
+      "expected": "Urutan fokus logis, skip link, dialog tidak menjebak, Esc/Enter sesuai tujuan, focus terlihat dan tidak tertutup",
+      "status": "PASS",
+      "evidence": [
+        "evidence/ux/acceptance/keyboard.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Trusted native input, Tab and Enter answered both questions, opened confirmation, and completed an actual 2/2 session. The trace includes initial and final focus and visible feedback."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-164",
+      "title": "Screen reader",
+      "expected": "Nama kontrol, bentuk pecahan/negatif, progres, error dan hasil diumumkan bermakna tanpa pengumuman per detik yang mengganggu",
+      "status": "NOT_RUN",
+      "evidence": [
+        "evidence/ux/acceptance/keyboard.json",
+        "evidence/acceptance/browser-semantics.json",
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Native Chromium accessibility tree exposed question, input, progress, feedback and review. Speech and announcement timing require assistive technology."
+      ],
+      "limitations": [
+        "No NVDA, VoiceOver, TalkBack or Orca speech session was available for the requested manual screen-reader evaluation."
+      ]
+    },
+    {
+      "test_id": "TC-165",
+      "title": "Aksesibilitas visual",
+      "expected": "Contrast, non-color cues, target sentuh, reflow dan focus sesuai arahan UI; scan otomatis dilengkapi pemeriksaan manual",
+      "status": "PASS",
+      "evidence": [
+        "evidence/ui/catalog-and-tokens.json",
+        "evidence/acceptance/browser-semantics.json",
+        "evidence/ux/acceptance/keyboard.json",
+        "evidence/acceptance/browser-layout.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Design token contrast, actual computed text, labels, color-independent status, keyboard outlines, and reflow measured in Chromium."
+      ],
+      "limitations": [
+        "Color checks skip ambiguous backgrounds, covered separately by token checks and visual review; this is not a WCAG certification."
+      ]
+    },
+    {
+      "test_id": "TC-166",
+      "title": "Reduced motion/timer",
+      "expected": "Animasi berkurang, countdown opsional/akomodasi bekerja, tidak ada kilat atau timeout tanpa konteks",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-journeys.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Reduced-motion option, untimed ordinary practice, and optional speed timer display checked in the actual app; deadline tested separately in domain suite."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-167",
+      "title": "Slow/offline/error state",
+      "expected": "Loading, retry, cached/not cached, quota, unknown route dan failed export punya tindakan yang tepat",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-faults.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Slow network, failed first catalogue request, retry, superseded navigation and unknown route exercised using the served app. Other unavailable/quota cases have dedicated tests."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-168",
+      "title": "Kepadatan data",
+      "expected": "Tabel guru/admin responsif; mobile memprioritaskan data, pagination/filter tetap dapat dioperasikan",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-layout.json",
+        "evidence/acceptance/browser-teacher.json",
+        "evidence/ux/acceptance/browser-reflow-ux.json",
+        "evidence/v12/roles-reflow.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Teacher cards, filters and drilldown exercised in the browser. The dedicated reflow suite measured actual live 320 CSS px teacher windows in both languages."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-169",
+      "title": "UI benar-benar berfungsi",
+      "expected": "Tiap CTA mempunyai aksi lengkap atau disabled state beralasan; tidak ada tautan mati, lorem ipsum atau angka demo tanpa label",
+      "status": "PASS",
+      "evidence": [
+        "evidence/ui/catalog-and-tokens.json",
+        "evidence/acceptance/browser-journeys.json",
+        "evidence/acceptance/browser-teacher.json",
+        "evidence/acceptance/browser-semantics.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "All curriculum entries resolve; core calls to action tested across five student journeys, teacher assignment, six exports, management routes and retry."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-170",
+      "title": "Initial load",
+      "expected": "Tidak memuat seluruh bank, generator, dashboard guru/admin, chart atau library export; budget shell sesuai dokumen UI",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-performance.json",
+        "evidence/acceptance/bundle-budgets.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Three fresh path namespaces, named resources, local gzip totals, no question modules or exporters on initial load."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-171",
+      "title": "Request paket",
+      "expected": "Pilih satu paket hanya memuat shard/aset relevan; jumlah request dan byte tercatat; prefetch dibatasi",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-journeys.json",
+        "evidence/ui/catalog-and-tokens.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Lazy pack requests recorded on five real sessions. Metadata catalogue resolver separately checks all 4,604 pack references."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-172",
+      "title": "Interaksi saat lazy load",
+      "expected": "Klik mempunyai feedback segera, error dapat diulang, hasil load usang tidak mengubah pilihan terakhir",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-faults.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Slow network, failed first catalogue request, retry, superseded navigation and unknown route exercised using the served app. Other unavailable/quota cases have dedicated tests."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-173",
+      "title": "Sesi stabil",
+      "expected": "Submit/next/timer tidak menjalankan import/generasi besar; input responsif selama analytics/export berjalan",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-journeys.json",
+        "evidence/acceptance/browser-teacher.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "No package fetch on next/submit. Browser worker runs six exports. During a 24-report batch the main thread dispatched a synthetic button click and continued processing timers."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-174",
+      "title": "Lab performance",
+      "expected": "Profil network/CPU/viewport/versi runner dilaporkan; LCP/CLS dan interaksi representatif sesuai budget",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-performance.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Three laboratory runs, unique cold URL namespaces, local network, unthrottled CPU. Report includes LCP, shifts and individual network entries plus a separate first-interaction measurement."
+      ],
+      "limitations": [
+        "No field Core Web Vitals or real-device performance claim."
+      ]
+    },
+    {
+      "test_id": "TC-175",
+      "title": "Memory/batch",
+      "expected": "Daftar ribuan paket tidak membuat ribuan node aktif; export/cache besar tidak crash pada target perangkat yang diuji",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-layout.json",
+        "evidence/teacher/validation.json",
+        "evidence/acceptance/browser-teacher.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Catalogue and teacher DOM sizes recorded, large multipage exports structurally verified, and worker produced a 24-report archive with observed heap and responsiveness samples."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-176",
+      "title": "Offline install",
+      "expected": "Status ready baru setelah semua aset wajib tersimpan; paket belum cached tetap mendapat penjelasan dan pilihan yang benar",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-data.json",
+        "evidence/acceptance/browser-offline.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Select one pack; integrity failure and cancellation keep prior state, certified assets exist: {'installed': 'MM-G01-L01-ADD-P001', 'shell_assets': 54, 'bank_assets': 4, 'remaining_bytes': 17965, 'verified_transferred': 17965, 'capabilities': {'practice': 'installed-pack', 'teacher': 'online', 'reports': 'online', 'exports': 'online'}}",
+        "Launch a pinned assessment in a new application document while every source request returns HTTP 503: {'pack': 'MM-G01-L01-ADD-P003', 'attempt_mode': 'assessment', 'loaded': 10, 'network_status': 503, 'controller': 'http://127.0.0.1:33747/probe-offline-4f6dcd1a-154e-4d0a-9be7-da5f6eb2ebe8/school/math/sw.js'}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-177",
+      "title": "Update SW",
+      "expected": "Update saat assessment tidak mencampur versi/hilang jawaban; aktivasi sesudah aman dan retry download bekerja",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-offline.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "New worker waits throughout a live assessment; closing its client switches to the verified new shell: {'old_release': '47c1663e7ea2fa9c', 'new_release': 'd94a12735a6e9c9c', 'old_js_sha256': 'e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736', 'new_js_sha256': '8649fd6dd5e40f6ffcacd18f721ce734d13615ff883843d100798e16d18431f9', 'items_retained': 10}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-178",
+      "title": "Cache eviction",
+      "expected": "Penghapusan/kehilangan cache tidak menghapus ledger; paket aktif dipin atau mempunyai pemulihan jelas",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-data.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Eviction invalidates offline-ready status and leaves persisted ledger intact: {'events_retained': 2}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-179",
+      "title": "Background sync fallback",
+      "expected": "App tetap menyinkron melalui foreground tanpa API Background Sync; status online tidak diperlakukan sebagai ACK",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json",
+        "evidence/acceptance/browser-data.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Explicit foreground drain without background sync, transient queue to mock receipt",
+        "Foreground drain produces only correlated mock receipts and no Background Sync dependency: {'sent': 1, 'state': 'mock_accepted', 'last_mock_ack': '2026-11-25T22:39:32.117Z', 'grading': 'unverified'}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-180",
+      "title": "Clean build",
+      "expected": "Source+lockfile+runtime tercatat menghasilkan dist dan bank sesuai manifest, tanpa dependensi file dari mesin pembuat",
+      "status": "PASS",
+      "evidence": [
+        "evidence/deployment/clean-build.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Separate clean build directories produced identical deployment bytes."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-181",
+      "title": "Static deploy",
+      "expected": "Latihan berjalan di static HTTP/HTTPS; tidak memanggil server/API eksternal yang tidak tersedia untuk fungsi inti",
+      "status": "PASS",
+      "evidence": [
+        "evidence/deployment/static-http-https.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Static HTTP and TLS plus practice through complete static application."
+      ],
+      "limitations": [
+        "Cloudflare production hosting was not requested or contacted."
+      ]
+    },
+    {
+      "test_id": "TC-182",
+      "title": "Deep link/base path/MIME",
+      "expected": "Refresh route bekerja, semua module/font/worker/bank mempunyai path/MIME benar; missing JS tidak menjadi HTML 200",
+      "status": "PASS",
+      "evidence": [
+        "evidence/deployment/static-http-https.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Root and nested URL, module MIME and missing assets checked."
+      ],
+      "limitations": [
+        "Cloudflare production hosting was not requested or contacted."
+      ]
+    },
+    {
+      "test_id": "TC-183",
+      "title": "Header/CSP",
+      "expected": "Header aktual diperiksa, fitur berfungsi, CSP tidak memerlukan eval atau sumber tak dikenal; no secret in dist",
+      "status": "PASS",
+      "evidence": [
+        "evidence/deployment/static-http-https.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Served CSP, declared optional features and headers checked in local static host."
+      ],
+      "limitations": [
+        "Cloudflare production hosting was not requested or contacted."
+      ]
+    },
+    {
+      "test_id": "TC-184",
+      "title": "Import/XSS",
+      "expected": "Script/HTML/URL berbahaya pada nama/catatan/import tidak dieksekusi; schema/batas file bekerja",
+      "status": "PASS",
+      "evidence": [
+        "evidence/data/contract-results.json",
+        "evidence/acceptance/browser-teacher.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Reject oversized, malformed and prototype-key import; data origins cannot be spoofed",
+        "Markup-like note text stayed literal through rendering and append-only revision."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-185",
+      "title": "Privasi dan export",
+      "expected": "Demo/local terpisah, tidak ada transmisi otomatis ke pihak ketiga, tidak ada data asli/credential di ZIP",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-teacher.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "A completed synthetic assignment and its reports stay separate from the personal namespace."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-186",
+      "title": "Update/rollback",
+      "expected": "Rilis baru dan rollback mempertahankan/menangani sesi lama dengan jelas; data tidak dibersihkan otomatis",
+      "status": "PASS",
+      "evidence": [
+        "evidence/acceptance/browser-offline.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Roll back to archived revision A, verify original JS bytes and retained local assessment from revision B: {'restored_js_sha256': 'e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736', 'restored_release': '47c1663e7ea2fa9c', 'local_attempt_preserved': True}"
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-187",
+      "title": "Dependency dan lisensi",
+      "expected": "Lockfile, asset provenance, lisensi dan advisory relevan diperiksa; unresolved risk dengan dampak nyata memblokir GO",
+      "status": "PASS",
+      "evidence": [
+        "evidence/deployment/npm-audit.json",
+        "evidence/deployment/asset-review.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Lockfile, local assets/licenses and runtime dependency review."
+      ],
+      "limitations": []
+    },
+    {
+      "test_id": "TC-188",
+      "title": "Paket rilis",
+      "expected": "Source/dist/docs/evidence lengkap, SHA-256 benar, ZIP CRC lulus, file guide menunjuk lokasi yang benar",
+      "status": "PASS",
+      "evidence": [
+        "evidence/deployment/archive-preflight.json",
+        "tools/release_pack.py"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Distribution preflight and safe, self-verifying whole-payload packaging command. Final ZIP itself is accepted only after all member CRCs and hashes pass this command."
+      ],
+      "limitations": [
+        "The final archive cannot contain its own final digest; the packing receipt reports it externally."
+      ]
+    },
+    {
+      "test_id": "TC-189",
+      "title": "Klaim hasil",
+      "expected": "RELEASE_STATUS cocok evidence; tidak mengklaim server aktif, jumlah unik, real-device pass atau official curriculum tanpa bukti",
+      "status": "PASS",
+      "evidence": [
+        "RELEASE_STATUS.json"
+      ],
+      "scope": "Release acceptance",
+      "observations": [
+        "Six status fields separate executable product, bank, contract, live LMS, pilot and deployment."
+      ],
+      "limitations": []
+    }
+  ]
+}

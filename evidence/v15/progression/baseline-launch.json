@@ -1,0 +1,219 @@
+{
+  "environment": "Node; in-memory profile storage, actual launch/engine/commit/recommendation paths, real bank",
+  "runtime": "v24.22.3",
+  "started_at": "2026-11-28T08:30:01.250Z",
+  "stage": "S-G12-L01",
+  "target": "arithmetic.multiplication.g12.l01",
+  "history": [
+    {
+      "node": "arithmetic.addition.g12.l01",
+      "kind": "intro",
+      "package_id": "MM-G12-L01-ADD-P001",
+      "answer_count": 6,
+      "unique": 6,
+      "passing": 0,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "ready": false,
+      "reasons": []
+    },
+    {
+      "node": "arithmetic.addition.g12.l01",
+      "kind": "regular",
+      "package_id": "MM-G12-L01-ADD-P006",
+      "answer_count": 8,
+      "unique": 14,
+      "passing": 1,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "ready": false,
+      "reasons": []
+    },
+    {
+      "node": "arithmetic.addition.g12.l01",
+      "kind": "regular",
+      "package_id": "MM-G12-L01-ADD-P009",
+      "answer_count": 8,
+      "unique": 22,
+      "passing": 2,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "node": "arithmetic.subtraction.g12.l01",
+      "kind": "intro",
+      "package_id": "MM-G12-L01-SUB-P001",
+      "answer_count": 6,
+      "unique": 6,
+      "passing": 0,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "ready": false,
+      "reasons": []
+    },
+    {
+      "node": "arithmetic.subtraction.g12.l01",
+      "kind": "regular",
+      "package_id": "MM-G12-L01-SUB-P009",
+      "answer_count": 8,
+      "unique": 14,
+      "passing": 1,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "ready": false,
+      "reasons": []
+    },
+    {
+      "node": "arithmetic.subtraction.g12.l01",
+      "kind": "regular",
+      "package_id": "MM-G12-L01-SUB-P006",
+      "answer_count": 8,
+      "unique": 22,
+      "passing": 2,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "ready": true,
+      "reasons": []
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l01",
+      "kind": "intro",
+      "package_id": "MM-G12-L01-MUL-P001",
+      "answer_count": 6,
+      "unique": 6,
+      "passing": 0,
+      "strategies": [
+        "DS"
+      ],
+      "ready": false,
+      "reasons": [],
+      "selected_indices": [
+        25,
+        35,
+        18,
+        21,
+        46,
+        49
+      ]
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l01",
+      "kind": "regular",
+      "package_id": "MM-G12-L01-MUL-P010",
+      "answer_count": 8,
+      "unique": 14,
+      "passing": 1,
+      "strategies": [
+        "DS"
+      ],
+      "ready": false,
+      "reasons": [],
+      "selected_indices": [
+        6,
+        42,
+        21,
+        15,
+        26,
+        37,
+        16,
+        7
+      ]
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l01",
+      "kind": "regular",
+      "package_id": "MM-G12-L01-MUL-P004",
+      "answer_count": 8,
+      "unique": 22,
+      "passing": 2,
+      "strategies": [
+        "DS"
+      ],
+      "ready": false,
+      "reasons": [],
+      "selected_indices": [
+        0,
+        2,
+        4,
+        24,
+        27,
+        48,
+        18,
+        10
+      ]
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l01",
+      "kind": "regular",
+      "package_id": "MM-G12-L01-MUL-P005",
+      "answer_count": 8,
+      "unique": 30,
+      "passing": 3,
+      "strategies": [
+        "DS"
+      ],
+      "ready": false,
+      "reasons": [],
+      "selected_indices": [
+        18,
+        25,
+        35,
+        36,
+        43,
+        48,
+        49,
+        32
+      ]
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l01",
+      "kind": "regular",
+      "package_id": "MM-G12-L01-MUL-P007",
+      "answer_count": 8,
+      "unique": 38,
+      "passing": 4,
+      "strategies": [
+        "DS"
+      ],
+      "ready": false,
+      "reasons": [],
+      "selected_indices": [
+        42,
+        22,
+        46,
+        9,
+        11,
+        31,
+        13,
+        6
+      ]
+    }
+  ],
+  "policy": "mission-policy-1.0.0",
+  "actual": {
+    "ready": false,
+    "unique": 38,
+    "passing": 4,
+    "strategies": [
+      "DS"
+    ],
+    "strategies_needed": 2
+  },
+  "status": "FAIL",
+  "error": "default path failed to advance; target missions 5",
+  "finished_at": "2026-11-28T08:30:01.536Z"
+}

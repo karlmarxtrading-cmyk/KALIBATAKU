@@ -1,0 +1,343 @@
+{
+  "suite_source": {
+    "file": "tests/v161/viewport.py",
+    "sha256": "1093c30dd55040849bb07e4008065babfbed93cefc1ffa3bfb23b3cfe0bfa36f"
+  },
+  "auditor_script_sha256": "cd5484c10f18ce0fc3b1f8bc4fbe9f1da7053ac22d7c79ae8d47a23901de3de2",
+  "builds": {
+    "baseline": {
+      "app_version": "1.6.0",
+      "bank_version": "1.2.0",
+      "offline_release": "6c43a824957f99ed",
+      "dist_tree_sha256": "f6e679cf51e9e24f9017e85743aedf60ac92fa176790eeb61e96562122725df9",
+      "auditor_script": {
+        "engine": "firefox",
+        "engine_version": "153.0",
+        "result_file": "baseline/original/visibility-matrix.json",
+        "result_sha256": "bc5a29d14f4dcaf764c3e5a42cfba6715ea8f59f64d415cc5daec0fdd24a1313",
+        "written_utc": "2026-11-28T17:08:27.544220+00:00",
+        "results": {
+          "320x568": [
+            {
+              "answer": "correct",
+              "next_method": "Enter",
+              "passed": false,
+              "expression_top": -65.43333435058594,
+              "expression_bottom": -12
+            },
+            {
+              "answer": "correct",
+              "next_method": "click",
+              "passed": false,
+              "expression_top": -65.43333435058594,
+              "expression_bottom": -12
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "Enter",
+              "passed": false,
+              "expression_top": -65.43333435058594,
+              "expression_bottom": -12
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "click",
+              "passed": false,
+              "expression_top": -65.43333435058594,
+              "expression_bottom": -12
+            }
+          ],
+          "390x844": [
+            {
+              "answer": "correct",
+              "next_method": "Enter",
+              "passed": true,
+              "expression_top": 317,
+              "expression_bottom": 370.43333435058594
+            },
+            {
+              "answer": "correct",
+              "next_method": "click",
+              "passed": true,
+              "expression_top": 317,
+              "expression_bottom": 370.43333435058594
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "Enter",
+              "passed": true,
+              "expression_top": 317,
+              "expression_bottom": 370.43333435058594
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "click",
+              "passed": true,
+              "expression_top": 317,
+              "expression_bottom": 370.43333435058594
+            }
+          ],
+          "844x390": [
+            {
+              "answer": "correct",
+              "next_method": "Enter",
+              "passed": false,
+              "expression_top": -108.43333435058594,
+              "expression_bottom": -21.600006103515625
+            },
+            {
+              "answer": "correct",
+              "next_method": "click",
+              "passed": false,
+              "expression_top": -108.43333435058594,
+              "expression_bottom": -21.600006103515625
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "Enter",
+              "passed": false,
+              "expression_top": -108.43333435058594,
+              "expression_bottom": -21.600006103515625
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "click",
+              "passed": false,
+              "expression_top": -108.43333435058594,
+              "expression_bottom": -21.600006103515625
+            }
+          ]
+        }
+      },
+      "expanded": {
+        "chromium": {
+          "engine": "151.0.7922.34",
+          "result_file": "baseline/expanded/chromium.json",
+          "result_sha256": "4ea004801495bba520f007279c61e10215499553bf90528f5c13c5445dbe1760",
+          "started": "2026-11-28T17:11:31.249625+00:00",
+          "finished": "2026-11-28T17:12:16.609770+00:00",
+          "exit_code": 1,
+          "checks": {
+            "FAIL": 42,
+            "PASS": 73
+          },
+          "verified_images": [
+            "chromium-320x568-enter-next.png",
+            "chromium-844x390-enter-next.png"
+          ]
+        },
+        "firefox": {
+          "engine": "153.0",
+          "result_file": "baseline/expanded/firefox.json",
+          "result_sha256": "b1192d07411b3eb5505de83922ee123b4a926ebdcd27ef4f2fbb965b8040397f",
+          "started": "2026-11-28T17:11:31.211273+00:00",
+          "finished": "2026-11-28T17:12:39.145821+00:00",
+          "exit_code": 1,
+          "checks": {
+            "FAIL": 45,
+            "PASS": 81
+          },
+          "verified_images": [
+            "firefox-320x568-enter-next.png",
+            "firefox-844x390-enter-next.png"
+          ]
+        },
+        "webkit": {
+          "engine": "26.5",
+          "result_file": "baseline/expanded/webkit.json",
+          "result_sha256": "4b0f8cc9a087c7bf34ef109f25367f61e90023b1b25e1e23223438d92ff2a094",
+          "started": "2026-11-28T17:11:31.233478+00:00",
+          "finished": "2026-11-28T17:12:20.152758+00:00",
+          "exit_code": 1,
+          "checks": {
+            "FAIL": 42,
+            "PASS": 82
+          },
+          "verified_images": [
+            "webkit-320x568-enter-next.png",
+            "webkit-844x390-enter-next.png"
+          ]
+        }
+      }
+    },
+    "candidate": {
+      "app_version": "1.6.1",
+      "bank_version": "1.2.0",
+      "offline_release": "a2f40449c4738fe6",
+      "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+      "auditor_script": {
+        "engine": "firefox",
+        "engine_version": "153.0",
+        "result_file": "candidate/original/visibility-matrix.json",
+        "result_sha256": "17e4c073dfbd5889d102b1cd724a52f1ed3c15a56d4a276834c0c3dce0c6b29a",
+        "written_utc": "2026-11-28T17:24:33.140705+00:00",
+        "results": {
+          "320x568": [
+            {
+              "answer": "correct",
+              "next_method": "Enter",
+              "passed": true,
+              "expression_top": 55.399993896484375,
+              "expression_bottom": 108.83332824707031
+            },
+            {
+              "answer": "correct",
+              "next_method": "click",
+              "passed": true,
+              "expression_top": 55.399993896484375,
+              "expression_bottom": 108.83332824707031
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "Enter",
+              "passed": true,
+              "expression_top": 55.399993896484375,
+              "expression_bottom": 108.83332824707031
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "click",
+              "passed": true,
+              "expression_top": 55.399993896484375,
+              "expression_bottom": 108.83332824707031
+            }
+          ],
+          "390x844": [
+            {
+              "answer": "correct",
+              "next_method": "Enter",
+              "passed": true,
+              "expression_top": 200,
+              "expression_bottom": 253.43333435058594
+            },
+            {
+              "answer": "correct",
+              "next_method": "click",
+              "passed": true,
+              "expression_top": 200,
+              "expression_bottom": 253.43333435058594
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "Enter",
+              "passed": true,
+              "expression_top": 200,
+              "expression_bottom": 253.43333435058594
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "click",
+              "passed": true,
+              "expression_top": 200,
+              "expression_bottom": 253.43333435058594
+            }
+          ],
+          "844x390": [
+            {
+              "answer": "correct",
+              "next_method": "Enter",
+              "passed": true,
+              "expression_top": 54.899993896484375,
+              "expression_bottom": 141.73333740234375
+            },
+            {
+              "answer": "correct",
+              "next_method": "click",
+              "passed": true,
+              "expression_top": 54.899993896484375,
+              "expression_bottom": 141.73333740234375
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "Enter",
+              "passed": true,
+              "expression_top": 54.899993896484375,
+              "expression_bottom": 141.73333740234375
+            },
+            {
+              "answer": "incorrect",
+              "next_method": "click",
+              "passed": true,
+              "expression_top": 54.899993896484375,
+              "expression_bottom": 141.73333740234375
+            }
+          ]
+        }
+      },
+      "expanded": {
+        "chromium": {
+          "engine": "151.0.7922.34",
+          "result_file": "candidate/expanded/chromium.json",
+          "result_sha256": "8e85ececdfb9be0c86c17084d244eb85a57b42ef704b9b07754d4e25566fbcbc",
+          "started": "2026-11-28T17:23:59.706204+00:00",
+          "finished": "2026-11-28T17:24:34.476957+00:00",
+          "exit_code": 0,
+          "checks": {
+            "PASS": 145
+          },
+          "verified_images": [
+            "chromium-320x568-enter-next.png",
+            "chromium-844x390-enter-next.png"
+          ]
+        },
+        "firefox": {
+          "engine": "153.0",
+          "result_file": "candidate/expanded/firefox.json",
+          "result_sha256": "f1162d0f8bcab2f8d49c20c4fa9df76da56475ac95c3283c4e734621c0c6d27c",
+          "started": "2026-11-28T17:23:59.584284+00:00",
+          "finished": "2026-11-28T17:25:02.045725+00:00",
+          "exit_code": 0,
+          "checks": {
+            "PASS": 150
+          },
+          "verified_images": [
+            "firefox-320x568-enter-next.png",
+            "firefox-844x390-enter-next.png"
+          ]
+        },
+        "webkit": {
+          "engine": "26.5",
+          "result_file": "candidate/expanded/webkit.json",
+          "result_sha256": "42e37f029d39ef3228f1728fb068fa827d58a6e4a6bb4cf6e982e3eb8b81b234",
+          "started": "2026-11-28T17:23:59.736782+00:00",
+          "finished": "2026-11-28T17:24:47.093831+00:00",
+          "exit_code": 0,
+          "checks": {
+            "PASS": 145
+          },
+          "verified_images": [
+            "webkit-320x568-enter-next.png",
+            "webkit-844x390-enter-next.png"
+          ]
+        }
+      }
+    }
+  },
+  "compose_commit": {
+    "source": "tests/v161/compose_commit.py",
+    "sha256": "64e27391f4dc9a6f4ac4d9bf0740704840146f58b511ccbe6f9e9cb9591b53a4",
+    "comparison": {
+      "before": {
+        "offline_release": "83fef50a05e52452",
+        "sha256": "ab3de2ce568c9dcb540ba5b28f0cb6a11427d7be05a6d5be0e6b8edf7908c068",
+        "file": "development/compose-commit/before.json",
+        "status": "FAIL",
+        "exit_code": 1,
+        "checks": {
+          "PASS": 25,
+          "FAIL": 4
+        }
+      },
+      "after": {
+        "offline_release": "a2f40449c4738fe6",
+        "sha256": "a79d8c95ce9b6e7d3951c842b14daf56c51cbd90cc308fc35f68a39de6663fce",
+        "file": "development/compose-commit/after.json",
+        "status": "PASS",
+        "exit_code": 0,
+        "checks": {
+          "PASS": 39
+        }
+      }
+    }
+  }
+}

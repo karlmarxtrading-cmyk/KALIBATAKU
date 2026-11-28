@@ -1,0 +1,622 @@
+{
+  "name": "minus05",
+  "checks": [
+    {
+      "name": "JSON preview chronology",
+      "actual": [
+        "2026-11-28T08:00:05.000-05:00",
+        "2026-11-28T08:02:20.000-05:00"
+      ],
+      "expected": [
+        "2026-11-28T08:00:05.000-05:00",
+        "2026-11-28T08:02:20.000-05:00"
+      ]
+    },
+    {
+      "name": "JSON store order",
+      "actual": [
+        "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+        "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+        "81df6d85-03f3-470f-bb59-b9989dc78a62",
+        "3848eda1-9db5-4db7-9be3-3e106806f95d"
+      ],
+      "expected": [
+        "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+        "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+        "81df6d85-03f3-470f-bb59-b9989dc78a62",
+        "3848eda1-9db5-4db7-9be3-3e106806f95d"
+      ]
+    },
+    {
+      "name": "JSON snapshot hash",
+      "actual": "a202847ca7182fdf2e11ca23cf5c64a2766af4b3f0a4656beac9690ee1c012f5",
+      "expected": "a202847ca7182fdf2e11ca23cf5c64a2766af4b3f0a4656beac9690ee1c012f5"
+    },
+    {
+      "name": "JSON complete timestamp and event-payload hash",
+      "actual": "d272ad94eb9a66e7c4b3cf86b95eec38ea093b9453e1f00ff39befcb1d61781a",
+      "expected": "d272ad94eb9a66e7c4b3cf86b95eec38ea093b9453e1f00ff39befcb1d61781a"
+    },
+    {
+      "name": "JSON compact index order",
+      "actual": [
+        "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+        "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+        "81df6d85-03f3-470f-bb59-b9989dc78a62",
+        "3848eda1-9db5-4db7-9be3-3e106806f95d"
+      ],
+      "expected": [
+        "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+        "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+        "81df6d85-03f3-470f-bb59-b9989dc78a62",
+        "3848eda1-9db5-4db7-9be3-3e106806f95d"
+      ]
+    },
+    {
+      "name": "empty before ZIP restore",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "ZIP preview chronology",
+      "actual": [
+        "2026-11-28T08:00:05.000-05:00",
+        "2026-11-28T08:02:20.000-05:00"
+      ],
+      "expected": [
+        "2026-11-28T08:00:05.000-05:00",
+        "2026-11-28T08:02:20.000-05:00"
+      ]
+    },
+    {
+      "name": "ZIP store order",
+      "actual": [
+        "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+        "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+        "81df6d85-03f3-470f-bb59-b9989dc78a62",
+        "3848eda1-9db5-4db7-9be3-3e106806f95d"
+      ],
+      "expected": [
+        "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+        "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+        "81df6d85-03f3-470f-bb59-b9989dc78a62",
+        "3848eda1-9db5-4db7-9be3-3e106806f95d"
+      ]
+    },
+    {
+      "name": "ZIP snapshot hash",
+      "actual": "a202847ca7182fdf2e11ca23cf5c64a2766af4b3f0a4656beac9690ee1c012f5",
+      "expected": "a202847ca7182fdf2e11ca23cf5c64a2766af4b3f0a4656beac9690ee1c012f5"
+    },
+    {
+      "name": "ZIP complete timestamp and event-payload hash",
+      "actual": "d272ad94eb9a66e7c4b3cf86b95eec38ea093b9453e1f00ff39befcb1d61781a",
+      "expected": "d272ad94eb9a66e7c4b3cf86b95eec38ea093b9453e1f00ff39befcb1d61781a"
+    },
+    {
+      "name": "ZIP compact index order",
+      "actual": [
+        "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+        "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+        "81df6d85-03f3-470f-bb59-b9989dc78a62",
+        "3848eda1-9db5-4db7-9be3-3e106806f95d"
+      ],
+      "expected": [
+        "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+        "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+        "81df6d85-03f3-470f-bb59-b9989dc78a62",
+        "3848eda1-9db5-4db7-9be3-3e106806f95d"
+      ]
+    },
+    {
+      "name": "UTC actual boundaries",
+      "actual": [
+        "2026-11-28T00:00:00.000Z",
+        "2026-11-29T00:00:00.000Z"
+      ],
+      "expected": [
+        "2026-11-28T00:00:00.000Z",
+        "2026-11-29T00:00:00.000Z"
+      ]
+    },
+    {
+      "name": "UTC S-1",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "UTC S",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "UTC S+1",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "UTC E-1",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "UTC E",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "UTC E+1",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "UTC report values",
+      "actual": [
+        4,
+        32,
+        32,
+        3,
+        [
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d"
+        ]
+      ],
+      "expected": [
+        4,
+        32,
+        32,
+        3,
+        [
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d"
+        ]
+      ]
+    },
+    {
+      "name": "UTC notes boundaries, epoch order and ID ties",
+      "actual": [
+        "B",
+        "A",
+        "Z",
+        "LAST"
+      ],
+      "expected": [
+        "B",
+        "A",
+        "Z",
+        "LAST"
+      ]
+    },
+    {
+      "name": "UTC stable ties",
+      "actual": [
+        "a",
+        "z"
+      ],
+      "expected": [
+        "a",
+        "z"
+      ]
+    },
+    {
+      "name": "UTC finalization exactly at cutoff",
+      "actual": [
+        3,
+        1,
+        2
+      ],
+      "expected": [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Asia/Jakarta actual boundaries",
+      "actual": [
+        "2026-11-27T17:00:00.000Z",
+        "2026-11-28T17:00:00.000Z"
+      ],
+      "expected": [
+        "2026-11-27T17:00:00.000Z",
+        "2026-11-28T17:00:00.000Z"
+      ]
+    },
+    {
+      "name": "Asia/Jakarta S-1",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "Asia/Jakarta S",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Asia/Jakarta S+1",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Asia/Jakarta E-1",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Asia/Jakarta E",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "Asia/Jakarta E+1",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "Asia/Jakarta report values",
+      "actual": [
+        4,
+        32,
+        32,
+        3,
+        [
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d"
+        ]
+      ],
+      "expected": [
+        4,
+        32,
+        32,
+        3,
+        [
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d"
+        ]
+      ]
+    },
+    {
+      "name": "Asia/Jakarta notes boundaries, epoch order and ID ties",
+      "actual": [
+        "B",
+        "A",
+        "Z",
+        "LAST"
+      ],
+      "expected": [
+        "B",
+        "A",
+        "Z",
+        "LAST"
+      ]
+    },
+    {
+      "name": "Asia/Jakarta stable ties",
+      "actual": [
+        "a",
+        "z"
+      ],
+      "expected": [
+        "a",
+        "z"
+      ]
+    },
+    {
+      "name": "Asia/Jakarta finalization exactly at cutoff",
+      "actual": [
+        3,
+        1,
+        2
+      ],
+      "expected": [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Asia/Makassar actual boundaries",
+      "actual": [
+        "2026-11-27T16:00:00.000Z",
+        "2026-11-28T16:00:00.000Z"
+      ],
+      "expected": [
+        "2026-11-27T16:00:00.000Z",
+        "2026-11-28T16:00:00.000Z"
+      ]
+    },
+    {
+      "name": "Asia/Makassar S-1",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "Asia/Makassar S",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Asia/Makassar S+1",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Asia/Makassar E-1",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Asia/Makassar E",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "Asia/Makassar E+1",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "Asia/Makassar report values",
+      "actual": [
+        4,
+        32,
+        32,
+        3,
+        [
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d"
+        ]
+      ],
+      "expected": [
+        4,
+        32,
+        32,
+        3,
+        [
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d"
+        ]
+      ]
+    },
+    {
+      "name": "Asia/Makassar notes boundaries, epoch order and ID ties",
+      "actual": [
+        "B",
+        "A",
+        "Z",
+        "LAST"
+      ],
+      "expected": [
+        "B",
+        "A",
+        "Z",
+        "LAST"
+      ]
+    },
+    {
+      "name": "Asia/Makassar stable ties",
+      "actual": [
+        "a",
+        "z"
+      ],
+      "expected": [
+        "a",
+        "z"
+      ]
+    },
+    {
+      "name": "Asia/Makassar finalization exactly at cutoff",
+      "actual": [
+        3,
+        1,
+        2
+      ],
+      "expected": [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "Asia/Jayapura actual boundaries",
+      "actual": [
+        "2026-11-27T15:00:00.000Z",
+        "2026-11-28T15:00:00.000Z"
+      ],
+      "expected": [
+        "2026-11-27T15:00:00.000Z",
+        "2026-11-28T15:00:00.000Z"
+      ]
+    },
+    {
+      "name": "Asia/Jayapura S-1",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "Asia/Jayapura S",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Asia/Jayapura S+1",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Asia/Jayapura E-1",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "name": "Asia/Jayapura E",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "Asia/Jayapura E+1",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "Asia/Jayapura report values",
+      "actual": [
+        4,
+        32,
+        32,
+        3,
+        [
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d"
+        ]
+      ],
+      "expected": [
+        4,
+        32,
+        32,
+        3,
+        [
+          "e05b6fe8-4bf9-4135-8118-da1103323b0a",
+          "7b0ab75b-de6c-4323-941a-eac78b3b7c3f",
+          "81df6d85-03f3-470f-bb59-b9989dc78a62",
+          "3848eda1-9db5-4db7-9be3-3e106806f95d"
+        ]
+      ]
+    },
+    {
+      "name": "Asia/Jayapura notes boundaries, epoch order and ID ties",
+      "actual": [
+        "B",
+        "A",
+        "Z",
+        "LAST"
+      ],
+      "expected": [
+        "B",
+        "A",
+        "Z",
+        "LAST"
+      ]
+    },
+    {
+      "name": "Asia/Jayapura stable ties",
+      "actual": [
+        "a",
+        "z"
+      ],
+      "expected": [
+        "a",
+        "z"
+      ]
+    },
+    {
+      "name": "Asia/Jayapura finalization exactly at cutoff",
+      "actual": [
+        3,
+        1,
+        2
+      ],
+      "expected": [
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "name": "invalid timestamp 2026-02-30T12:00:00Z",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "invalid session excluded 2026-02-30T12:00:00Z",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "invalid timestamp 2026-11-28T12:00:00",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "invalid session excluded 2026-11-28T12:00:00",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "invalid timestamp 2026-11-28T12:00:00+55:00",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "invalid session excluded 2026-11-28T12:00:00+55:00",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "invalid timestamp garbage",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "invalid session excluded garbage",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "invalid timestamp null",
+      "actual": true,
+      "expected": true
+    },
+    {
+      "name": "invalid session excluded null",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "name": "invalid display",
+      "actual": "—",
+      "expected": "—"
+    },
+    {
+      "name": "invalid restore leaves data",
+      "actual": "5f1554aa0d9afe2db1c342df26865e900b5e2ac4840ee57cfcdce1ce99e3abaf",
+      "expected": "5f1554aa0d9afe2db1c342df26865e900b5e2ac4840ee57cfcdce1ce99e3abaf"
+    },
+    {
+      "name": "historical zone midnight Jakarta 1935",
+      "actual": "1935-11-27T16:30:00.000Z",
+      "expected": "1935-11-27T16:30:00.000Z"
+    },
+    {
+      "name": "historical zone midnight Makassar 1943",
+      "actual": "1943-11-27T15:00:00.000Z",
+      "expected": "1943-11-27T15:00:00.000Z"
+    },
+    {
+      "name": "historical zone midnight Jayapura 1947",
+      "actual": "1947-11-27T14:30:00.000Z",
+      "expected": "1947-11-27T14:30:00.000Z"
+    }
+  ],
+  "zone_order": [
+    "UTC",
+    "Asia/Jakarta",
+    "Asia/Makassar",
+    "Asia/Jayapura"
+  ],
+  "export_zone": "Asia/Jayapura"
+}

@@ -1,0 +1,396 @@
+{
+  "command": "node tests/data/journey-restore.mjs",
+  "at": "2026-11-28T09:03:32.310Z",
+  "runtime": "v24.22.3",
+  "offline_release": "460c98b682110f7e",
+  "environment": "Node memory transaction adapter; synthetic profiles; local bank bytes via CacheStorage interface for installed-source cases",
+  "expected": "Valid, supported data round trips exactly; invalid inputs fail reader, preview and commit atomically.",
+  "cases": [
+    {
+      "id": "offline-roundtrip-JSON",
+      "status": "PASS",
+      "actual": {
+        "newRecords": 14,
+        "journey": {
+          "internal_only": 1,
+          "occurrences_matched": 0,
+          "bank_matched": 0
+        },
+        "identicalStoredRows": true,
+        "legacy13": true,
+        "duplicateAdditions": 0
+      }
+    },
+    {
+      "id": "offline-roundtrip-ZIP",
+      "status": "PASS",
+      "actual": {
+        "newRecords": 14,
+        "journey": {
+          "internal_only": 1,
+          "occurrences_matched": 0,
+          "bank_matched": 0
+        },
+        "identicalStoredRows": true,
+        "legacy13": true,
+        "duplicateAdditions": 0
+      }
+    },
+    {
+      "id": "audit-node-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "audit-node-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "audit-occurrence-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "audit-occurrence-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "audit-readiness-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "audit-readiness-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "audit-selected-count-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "audit-selected-count-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "role-domain-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "role-domain-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "band-domain-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "band-domain-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "selected-order-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "selected-order-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "form-reserved-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "form-reserved-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "candidate-index-range-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "candidate-index-range-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "policy-change-within-range-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "policy-change-within-range-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "unknown-version-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "UNSUPPORTED_BACKUP_JOURNEY",
+        "preview": "UNSUPPORTED_BACKUP_JOURNEY",
+        "commit": "UNSUPPORTED_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "unknown-version-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "UNSUPPORTED_BACKUP_JOURNEY",
+        "preview": "UNSUPPORTED_BACKUP_JOURNEY",
+        "commit": "UNSUPPORTED_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "item-revision-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "item-revision-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "dangling-intent-JSON",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "dangling-intent-ZIP",
+      "status": "PASS",
+      "actual": {
+        "reader": "INVALID_BACKUP_JOURNEY",
+        "preview": "INVALID_BACKUP_JOURNEY",
+        "commit": "INVALID_BACKUP_JOURNEY",
+        "unchangedProfiles": 2
+      }
+    },
+    {
+      "id": "absent-destination-atomicity-JSON",
+      "status": "PASS",
+      "actual": {
+        "createdProfiles": 0,
+        "createdAttempts": 0
+      }
+    },
+    {
+      "id": "absent-destination-atomicity-ZIP",
+      "status": "PASS",
+      "actual": {
+        "createdProfiles": 0,
+        "createdAttempts": 0
+      }
+    },
+    {
+      "id": "trusted-bank-JSON",
+      "status": "PASS",
+      "actual": {
+        "internal_only": 0,
+        "occurrences_matched": 0,
+        "bank_matched": 1
+      }
+    },
+    {
+      "id": "trusted-bank-ZIP",
+      "status": "PASS",
+      "actual": {
+        "internal_only": 0,
+        "occurrences_matched": 0,
+        "bank_matched": 1
+      }
+    },
+    {
+      "id": "bank-content-mismatch-JSON",
+      "status": "PASS",
+      "actual": {
+        "checksumValid": true,
+        "commit": "INVALID_BACKUP_JOURNEY"
+      }
+    },
+    {
+      "id": "bank-content-mismatch-ZIP",
+      "status": "PASS",
+      "actual": {
+        "checksumValid": true,
+        "commit": "INVALID_BACKUP_JOURNEY"
+      }
+    },
+    {
+      "id": "coexisting-release-caches",
+      "status": "PASS",
+      "actual": {
+        "matchedCurrentCatalog": true
+      }
+    },
+    {
+      "id": "shard-only",
+      "status": "PASS",
+      "actual": {
+        "occurrences_matched": 1
+      }
+    },
+    {
+      "id": "historical-catalog-only",
+      "status": "PASS",
+      "actual": {
+        "internal_only": 1,
+        "requiresNetwork": false
+      }
+    },
+    {
+      "id": "supported-1.4-JSON",
+      "status": "PASS",
+      "actual": {
+        "preserved": true
+      }
+    },
+    {
+      "id": "supported-1.4-ZIP",
+      "status": "PASS",
+      "actual": {
+        "preserved": true
+      }
+    },
+    {
+      "id": "unknown-policy-existing-history",
+      "status": "PASS",
+      "actual": {
+        "journeyAttempts": 0,
+        "xp": 0,
+        "coverage": 0,
+        "rawAttemptPreserved": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+// Contract example only. This is not a full practice package or production bank.
+export default {
+  "schema_version": "1.0.0",
+  "artifact_status": "contract_example_not_production",
+  "module_id": "mental-math",
+  "curriculum_id": "kalibataku",
+  "curriculum_version": "1.0.0-draft.2",
+  "package_id": "MM-G03-L02-MUL-CONTRACT",
+  "content_version": "1.0.0",
+  "grade": 3,
+  "level": 2,
+  "operation": "MUL",
+  "target_competency_id": "arithmetic.multiplication.g03.l02",
+  "purpose": "consolidate",
+  "title": {
+    "id": "Contoh kontrak — bukan bank produksi",
+    "en": "Contract example — not the production bank"
+  },
+  "instructions": {
+    "id": "Hitung tanpa kalkulator.",
+    "en": "Calculate without a calculator."
+  },
+  "question_count": 1,
+  "form_family_id": null,
+  "form_id": null,
+  "questions": [
+    {
+      "question_id": "MM-CONTRACT-Q001",
+      "question_revision": "1.0.0",
+      "competency_id": "arithmetic.multiplication.g03.l02",
+      "template_id": "MM-TPL-G03-L02-MUL-DECOMP-01",
+      "template_version": "1.0.0",
+      "fingerprint": "83bf13f989904590c7307015ab4b4fe0f19860c65dbaf99d257e8d757b21c3fc",
+      "fingerprint_policy": "canonical-ast-v1",
+      "strategy_tags": [
+        "DE",
+        "DS"
+      ],
+      "question_type": "numeric_essay",
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "MUL",
+        "left": {
+          "kind": "rational",
+          "numerator": "24",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "4",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        }
+      },
+      "neutral_expression": "24×4",
+      "answer": {
+        "numerator": "96",
+        "denominator": "1"
+      },
+      "answer_policy": "exact_rational",
+      "hint": {
+        "id": "Pisahkan 24 menjadi 20 dan 4.",
+        "en": "Split 24 into 20 and 4."
+      },
+      "explanation": {
+        "id": "24 × 4 = 20 × 4 + 4 × 4 = 80 + 16 = 96.",
+        "en": "24 × 4 = 20 × 4 + 4 × 4 = 80 + 16 = 96."
+      },
+      "solution_steps": [
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "ADD",
+            "left": {
+              "kind": "binary",
+              "operation": "MUL",
+              "left": {
+                "kind": "rational",
+                "numerator": "20",
+                "denominator": "1"
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "4",
+                "denominator": "1"
+              }
+            },
+            "right": {
+              "kind": "binary",
+              "operation": "MUL",
+              "left": {
+                "kind": "rational",
+                "numerator": "4",
+                "denominator": "1"
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "4",
+                "denominator": "1"
+              }
+            }
+          },
+          "text": {
+            "id": "Kalikan kedua bagian, lalu jumlahkan.",
+            "en": "Multiply each part, then add."
+          }
+        },
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "ADD",
+            "left": {
+              "kind": "rational",
+              "numerator": "80",
+              "denominator": "1"
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "16",
+              "denominator": "1"
+            }
+          },
+          "text": {
+            "id": "Jumlahkan 80 dan 16.",
+            "en": "Add 80 and 16."
+          }
+        }
+      ]
+    }
+  ]
+};

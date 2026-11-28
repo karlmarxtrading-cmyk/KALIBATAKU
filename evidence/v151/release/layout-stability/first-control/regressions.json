@@ -1,0 +1,129 @@
+{
+  "prior_build": {
+    "dist_tree_sha256": "a2a34a4ad857bb771f8077068e01d55a204efa075b8bf4d5bd3187caf8aaad90",
+    "offline_release": "319ea44060dbbc58",
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "21eac25ef2c2fc9690237474db1e783d673e805fb3a47c2e059c7f13fad10b1c"
+  },
+  "shipping_build": {
+    "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+    "offline_release": "ef0b6798d9633ca8",
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9"
+  },
+  "cases": [
+    {
+      "suite": "browser-v13-firefox",
+      "case": "UX-004-SETUP",
+      "prior": {
+        "status": "FAIL",
+        "sha256": "21756fddb79c298168991fae7d1b001a58354ca3f1132b5e0ab61e374983db74",
+        "observed": "Locator.select_option: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"select[name=planning_pace]\")\n    - locator resolved to <select name=\"planning_pace\" aria-label=\"Perkiraan detik per soal\">…</select>\n  - attempting select option action\n    2 × waiting for element to be visible and enabled\n      - element is not visible\n    - retrying select option action\n    - waiting 20ms\n    2 × waiting for element to be visible and enabled\n      - element is not visible\n    - retrying select option action\n      - waiting 100ms\n    58 × waiting for element to be visible and enabled\n       - element is not visible\n     - retrying select option action\n       - waiting 500ms\n"
+      },
+      "shipping": {
+        "status": "PASS",
+        "sha256": "3720dcea730e7292b155e136ddd32b62e1442092ee6f45b4e0472f1da35ee0c3",
+        "observed": {
+          "pace_after_switch": "90",
+          "count_after_op_switch": "12",
+          "count_after_grade_switch": 10,
+          "pack_max": 10
+        }
+      }
+    },
+    {
+      "suite": "map-native-zoom",
+      "case": "native-map-400pct",
+      "prior": {
+        "status": "FAIL",
+        "sha256": "434e645f21ac07e1d023953a0f0089b552282f4f9533c033882b6ad0da00d3a9",
+        "observed": "Traceback (most recent call last):\n  File \"/workspace/scratch/94a2cb03b99b/next/shipping-qa-work/kalibataku-qa-ktuzdhhv/tests/journey/map_native_zoom.py\", line 64, in main\n    normal, version = measure(pw,profile,server.url,1)\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/scratch/94a2cb03b99b/next/shipping-qa-work/kalibataku-qa-ktuzdhhv/tests/journey/map_native_zoom.py\", line 47, in measure\n    assert action.evaluate(\"el=>el===document.activeElement\")\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+      },
+      "shipping": {
+        "status": "PASS",
+        "sha256": "307e103869a5895b8c884bbb6354ce23a0252b987215bcee07608e31cb8029d9",
+        "observed": {
+          "before": {
+            "css_viewport": 1280,
+            "scroll_width": 1280,
+            "root_px": 16,
+            "actions": [
+              {
+                "name": "Arti status",
+                "left": 86.55000305175781,
+                "right": 1193.4500274658203
+              },
+              {
+                "name": "Simpan misi untuk offline",
+                "left": 113.14999389648438,
+                "right": 352.1666717529297
+              },
+              {
+                "name": "Kelola penyimpanan offline",
+                "left": 352.16668701171875,
+                "right": 550.3166809082031
+              },
+              {
+                "name": "Mainkan · Penjumlahan · Pasangan bilangan sampai 5",
+                "left": 129.9499969482422,
+                "right": 229.39999389648438
+              },
+              {
+                "name": "Tampilkan semua 60 tahap",
+                "left": 85.75,
+                "right": 329.3500061035156
+              },
+              {
+                "name": "Ubah titik mulai",
+                "left": 338.95001220703125,
+                "right": 455.9666748046875
+              }
+            ],
+            "first_worker_claim_kept_focus": true
+          },
+          "after": {
+            "css_viewport": 320,
+            "scroll_width": 320,
+            "root_px": 16,
+            "actions": [
+              {
+                "name": "Arti status",
+                "left": 16.800003051757812,
+                "right": 303.1999969482422
+              },
+              {
+                "name": "Simpan misi untuk offline",
+                "left": 33,
+                "right": 272.01666259765625
+              },
+              {
+                "name": "Kelola penyimpanan offline",
+                "left": 33,
+                "right": 217.78334045410156
+              },
+              {
+                "name": "Mainkan · Penjumlahan · Pasangan bilangan sampai 5",
+                "left": 52.19999694824219,
+                "right": 151.64999389648438
+              },
+              {
+                "name": "Tampilkan semua 60 tahap",
+                "left": 16,
+                "right": 259.6000061035156
+              },
+              {
+                "name": "Ubah titik mulai",
+                "left": 16,
+                "right": 125.14999389648438
+              }
+            ],
+            "used_map_action_to_start_mission": true
+          },
+          "site_full_zoom": 4.0
+        }
+      }
+    }
+  ]
+}

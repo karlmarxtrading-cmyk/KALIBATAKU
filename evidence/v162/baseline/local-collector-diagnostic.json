@@ -1,0 +1,175 @@
+{
+  "scope": "Loopback/inert diagnostic only. No public target, real TLS or deployment was exercised.",
+  "build": {
+    "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fd4dbd2442531a9b6adf42b476a5a9732b6ca0d9ba6dab799303521bfe9c2848"
+  },
+  "tested_utc": "2026-11-28T18:41:36.633688+00:00",
+  "loopback_url": "http://127.0.0.1:43313/app/",
+  "engine": "Chromium 151.0.7922.34",
+  "observations": [
+    {
+      "phase": "baseline",
+      "snapshot": {
+        "frozen": "d197320da013bad40382a9bc381457811534cc69eb01bf23718cd246235909c7",
+        "events": "b672cae6c317feb1589d70ed8a39ec37136f425b723c64f7e08b0ca03e2734d4",
+        "responses": "22406c7209706aeba27a24dd57dff1145be719d57cf3f7e23fa88e4d2558a2b2"
+      },
+      "draft": "37/9",
+      "cache": {
+        "shell_assets_verified": 71,
+        "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+        "package": "MM-G01-L01-ADD-P001",
+        "release": "a2f40449c4738fe6",
+        "installed_release": "a2f40449c4738fe6",
+        "shell_caches": 1
+      }
+    },
+    {
+      "phase": "update waiting in two tabs",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d197320da013bad40382a9bc381457811534cc69eb01bf23718cd246235909c7",
+        "events": "b672cae6c317feb1589d70ed8a39ec37136f425b723c64f7e08b0ca03e2734d4",
+        "responses": "22406c7209706aeba27a24dd57dff1145be719d57cf3f7e23fa88e4d2558a2b2"
+      }
+    },
+    {
+      "phase": "update workers",
+      "two_clients": [
+        "a2f40449c4738fe6",
+        "a2f40449c4738fe6"
+      ],
+      "next_worker": "installed/waiting"
+    },
+    {
+      "phase": "update resumed",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d197320da013bad40382a9bc381457811534cc69eb01bf23718cd246235909c7",
+        "events": "b672cae6c317feb1589d70ed8a39ec37136f425b723c64f7e08b0ca03e2734d4",
+        "responses": "22406c7209706aeba27a24dd57dff1145be719d57cf3f7e23fa88e4d2558a2b2"
+      }
+    },
+    {
+      "phase": "candidate cache",
+      "cache": {
+        "shell_assets_verified": 71,
+        "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+        "package": "MM-G01-L01-ADD-P001",
+        "release": "f630b3dc6aa6b5a5",
+        "installed_release": "f630b3dc6aa6b5a5",
+        "shell_caches": 2
+      }
+    },
+    {
+      "phase": "offline candidate reload",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d197320da013bad40382a9bc381457811534cc69eb01bf23718cd246235909c7",
+        "events": "b672cae6c317feb1589d70ed8a39ec37136f425b723c64f7e08b0ca03e2734d4",
+        "responses": "22406c7209706aeba27a24dd57dff1145be719d57cf3f7e23fa88e4d2558a2b2"
+      }
+    },
+    {
+      "phase": "rollback waiting in two tabs",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d197320da013bad40382a9bc381457811534cc69eb01bf23718cd246235909c7",
+        "events": "b672cae6c317feb1589d70ed8a39ec37136f425b723c64f7e08b0ca03e2734d4",
+        "responses": "22406c7209706aeba27a24dd57dff1145be719d57cf3f7e23fa88e4d2558a2b2"
+      }
+    },
+    {
+      "phase": "rollback workers",
+      "two_clients": [
+        "f630b3dc6aa6b5a5",
+        "f630b3dc6aa6b5a5"
+      ],
+      "next_worker": "installed/waiting"
+    },
+    {
+      "phase": "rollback resumed",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d197320da013bad40382a9bc381457811534cc69eb01bf23718cd246235909c7",
+        "events": "b672cae6c317feb1589d70ed8a39ec37136f425b723c64f7e08b0ca03e2734d4",
+        "responses": "22406c7209706aeba27a24dd57dff1145be719d57cf3f7e23fa88e4d2558a2b2"
+      }
+    },
+    {
+      "phase": "rollback cache",
+      "cache": {
+        "shell_assets_verified": 71,
+        "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+        "package": "MM-G01-L01-ADD-P001",
+        "release": "a2f40449c4738fe6",
+        "installed_release": "a2f40449c4738fe6",
+        "shell_caches": 2
+      }
+    },
+    {
+      "phase": "offline rollback reload",
+      "draft": "37/9",
+      "immutable_fields": {
+        "frozen": "d197320da013bad40382a9bc381457811534cc69eb01bf23718cd246235909c7",
+        "events": "b672cae6c317feb1589d70ed8a39ec37136f425b723c64f7e08b0ca03e2734d4",
+        "responses": "22406c7209706aeba27a24dd57dff1145be719d57cf3f7e23fa88e4d2558a2b2"
+      }
+    },
+    {
+      "phase": "completed after rollback offline",
+      "items": 6,
+      "completion_events": 1,
+      "preserved_first_response": true
+    },
+    {
+      "phase": "restored candidate",
+      "release": "f630b3dc6aa6b5a5",
+      "two_clients": [
+        "a2f40449c4738fe6",
+        "a2f40449c4738fe6"
+      ],
+      "before": "a0f8faf8e867635d50e060a22577587026aa61145a1fe9ca17c83bac677e6d45",
+      "after": "a0f8faf8e867635d50e060a22577587026aa61145a1fe9ca17c83bac677e6d45",
+      "completion_events": 1,
+      "cache": {
+        "shell_assets_verified": 71,
+        "pack_sha256": "1491ae0755cad3b1e84512097b4bd66bb2d747655350918cb5262a63ef0d0ce5",
+        "package": "MM-G01-L01-ADD-P001",
+        "release": "f630b3dc6aa6b5a5",
+        "installed_release": "f630b3dc6aa6b5a5",
+        "shell_caches": 2
+      }
+    }
+  ],
+  "local_offline_probes": [
+    {
+      "phase": "candidate",
+      "url": "http://127.0.0.1:43313/app/__kalibataku_offline_ae117f0530434018bb8695d85b3daa88",
+      "worker": "http://127.0.0.1:43313/app/sw.js",
+      "reachable": false,
+      "error": "TypeError"
+    },
+    {
+      "phase": "rollback",
+      "url": "http://127.0.0.1:43313/app/__kalibataku_offline_cc5672ba95bc43f0844230d4f57e27af",
+      "worker": "http://127.0.0.1:43313/app/sw.js",
+      "reachable": false,
+      "error": "TypeError"
+    }
+  ],
+  "synthetic_rejections": {
+    "missing-restore-stage": "Incomplete/future rollout",
+    "wrong-asset-hash": "Wrong response: candidate/__kalibataku_missing_06e5337b00da43628743f15288e4feaf",
+    "wrong-mime": "Wrong MIME/nosniff: __kalibataku_missing_f9da06f40857417cad67cebe8e7f1731",
+    "missing-csp": "Wrong Content-Security-Policy: __kalibataku_missing_dcad79587b9541a0a6d46df28aaeabf6",
+    "missing-offline-probe": "Missing offline network probes",
+    "missing-draft": "Browser rollback observations failed: ['baseline']",
+    "changed-restored-data": "Restored build or completed data differ",
+    "duplicate-completion": "Restored build or completed data differ"
+  }
+}

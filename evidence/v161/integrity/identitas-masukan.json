@@ -1,0 +1,179 @@
+{
+  "status": "PASS",
+  "observed_utc": "2026-11-28T17:10:57.450040+00:00",
+  "source_archive": {
+    "name": "KALIBATAKU_1.6.0_KANDIDAT_HOLD.zip",
+    "bytes": 125430853,
+    "sha256": "94620186f0c6f6d530531db2d8f083ef0d3356a0603d7bdd23eff98ec707714d",
+    "expanded_bytes": 513600840,
+    "files_crc_ok": 6922,
+    "file_inventory_rows": 6920,
+    "sha256sums_rows": 6921,
+    "rows_matching_external_audit": 6922
+  },
+  "audit_archive": {
+    "name": "KALIBATAKU_1.6.0_AUDIT_PRODUKSI_20261128.zip",
+    "bytes": 584940,
+    "sha256": "13bb2fbbf04de94a1d282b729e0b0ba538740056bc2aeaad30e9bb99d2807d3b",
+    "files_crc_ok": 90,
+    "sha256sums_rows": 89,
+    "separate_pdf_byte_identical": false,
+    "audit_pdf_sha256": "7537090384623c11609f5c0b53370ba978c4815b1ba3a87de44702e90126f7e3",
+    "pdf_text_raster_matches": [
+      {
+        "page": 1,
+        "text_sha256": "49c924027943419fec7ab900d6a2ea810a4ebd64cdf46a6830964fcfbfab358d",
+        "render72_rgb_sha256": "80c9e6c487601f731d96f1985c3483f23b1b1747f735403de7f1476a8754c93a",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 2,
+        "text_sha256": "eacede915cd53e2e2d95efaf1aca02fa65cc21b9b201fdfc2d06588218d1741a",
+        "render72_rgb_sha256": "c0ac7dadde171cb386f8af32b8edc7a0cf3be76bafd387749d88f7b8d027a74b",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 3,
+        "text_sha256": "908015ee3b69b083089a592599dfc0ff33354c5ff8d120c4e2b8e4ff353d071d",
+        "render72_rgb_sha256": "e93ea718bb53ac90ec09b61ab1c7fd2e8cb629a21cbb21b0955aa8bfef506b5a",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 4,
+        "text_sha256": "47ad310db571d5d8a5886cad37e8a81c71f8b90204cdb055ca3b9314eb5c5256",
+        "render72_rgb_sha256": "96431621d9b21e46327de4147e0f5ba3b73c17c860445fe4b31453c52e6f9c93",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 5,
+        "text_sha256": "820443c9002ccdbefddb5049829a955e284675c16477d9a365774a7c613ddd21",
+        "render72_rgb_sha256": "48bdfc25127df67ec4fe9c03de1eebeeac05a629c2c3e5b9681aee5c69769c6e",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 6,
+        "text_sha256": "891de40a17ab5bfae0f2954854e25fbb903f857beee679b13c32f37325728ac1",
+        "render72_rgb_sha256": "53b6ed64b6d236f75a8e247633a94cc8e330845a00e35e4b87bf960850aafc45",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 7,
+        "text_sha256": "b58310a0af24c26a63ad4afd49752fd4b8408e2fda32f40a3ba27bb7a98fbda9",
+        "render72_rgb_sha256": "90f9a4846ddfa97a0f7704d2c4c082976581283f41cc6a2f1559c8cc71d9f7b9",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 8,
+        "text_sha256": "9145be9b479608fef025fae3d11ca70e170a992111476e1c7b50203bd9502742",
+        "render72_rgb_sha256": "54882c71a97477144a434f896fde5e84e294614cb06c3e33ea8ad4e5ee3aa5f7",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 9,
+        "text_sha256": "954024b6bf4db8d32735280126f8befaa3489ad519c75499df50005dddd64779",
+        "render72_rgb_sha256": "0dcba35fda70e5b35edac79c8d22c1ea2baef77aef56e6ba37a78ef0885890f4",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 10,
+        "text_sha256": "674291328eee01c0dd3183d105785dadd72d66fb4231aa6cfee95e430d0ddbc5",
+        "render72_rgb_sha256": "10f934228b6ece15a6496eff2a9160172e86bc7be8a95450b93725bbc635d4d9",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 11,
+        "text_sha256": "776a023554d8249f7aaf57f8734327c11b0d2697641e16d6a1cd49355a887619",
+        "render72_rgb_sha256": "75bc87f1348837b4ce11e386b44caa4d8c3881a921a49889de95ba58a85f7d70",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 12,
+        "text_sha256": "5247b0f5e8f17d972c30df2de53c275864bfdba3a7d561c3cc428bf5ba30dcdb",
+        "render72_rgb_sha256": "b4957c2bb7285bcbce591c1574b486738a7aec2eff0c9613c6e7f573d50c418f",
+        "pixels": [
+          596,
+          842
+        ]
+      },
+      {
+        "page": 13,
+        "text_sha256": "42230406b84aa781a4912817de80d577c79a1a562d02acb995ac68637960c9d0",
+        "render72_rgb_sha256": "0eeb8ec721df8c2198e6013480cfa48342cf9da72a8647a75b47c32cee3e464c",
+        "pixels": [
+          596,
+          842
+        ]
+      }
+    ],
+    "pymupdf": "1.26.6",
+    "separate_pdf_sha256": "aae2f187cae43b1341cf776a47887bc0bf9b95f39120f3af389f5d8fb3c5aec8",
+    "firefox_offline_history_from_audit": [
+      {
+        "audit_path": "07_BUKTI/rilis/offline-firefox.json",
+        "started": "2026-11-28T16:20:07.062526+00:00",
+        "engine": "firefox",
+        "status": "FAIL",
+        "counts": {
+          "PASS": 9,
+          "FAIL": 1
+        },
+        "sha256": "275e212f97a012519264cc05a9f752844912c764cff01788591d22d5ab37caf4"
+      },
+      {
+        "audit_path": "07_BUKTI/rilis/offline-legacy-firefox-rerun.json",
+        "started": "2026-11-28T16:21:49.618756+00:00",
+        "engine": "firefox",
+        "status": "PASS",
+        "counts": {
+          "PASS": 1
+        },
+        "sha256": "556b39ccbaccfdf9a316cd0dea45463d793c319fb155b3a4d08a9136bbf38712"
+      },
+      {
+        "audit_path": "07_BUKTI/rilis/offline-firefox-repeat.json",
+        "started": "2026-11-28T16:22:49.439805+00:00",
+        "engine": "firefox",
+        "status": "PASS",
+        "counts": {
+          "PASS": 10
+        },
+        "sha256": "e094c957a28e40e4a064c1d3f5d4dba1ddd00a9c9eca7322a396e32065c6eb8f"
+      }
+    ]
+  },
+  "baseline_release": "HOLD",
+  "baseline_build": "6c43a824957f99ed"
+}

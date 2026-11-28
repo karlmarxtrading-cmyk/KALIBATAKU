@@ -1,0 +1,41 @@
+{
+  "suite": "faults",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+  "created_utc": "2026-11-28T15:49:46.891Z",
+  "base": "http://127.0.0.1:35583/probe-faults-1795880986891/school/math/",
+  "checks": [
+    {
+      "id": "503-recovery",
+      "status": "PASS",
+      "detail": "Bagian ini belum dapat dibuka.\n\nPeriksa koneksi atau buka paket yang sudah disimpan untuk penggunaan offline.\n\nCoba lagi\nPaket offline\nKembali ke ruang latihan"
+    },
+    {
+      "id": "stale-request",
+      "status": "PASS",
+      "detail": "Delayed metadata leaves last selection intact"
+    },
+    {
+      "id": "unknown-route",
+      "status": "PASS",
+      "detail": "Halaman tidak ditemukan\nKembali ke ruang latihan"
+    }
+  ],
+  "runtime": {
+    "offline_release": "6c43a824957f99ed",
+    "bootstrap_sha256": "11bf45716136efcb1f7d8bcf0d2fd14cba2f091a59ad8b2edcc61ae8e544d78d",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "scope": "Local server returns one synthetic 503 for root bank metadata, and delays metadata by 600 ms on a separate test base.",
+  "failure": "Bagian ini belum dapat dibuka.\n\nPeriksa koneksi atau buka paket yang sudah disimpan untuk penggunaan offline.\n\nCoba lagi\nPaket offline\nKembali ke ruang latihan",
+  "feedback_latency_ms": 41,
+  "runtime_after": {
+    "offline_release": "6c43a824957f99ed",
+    "bootstrap_sha256": "11bf45716136efcb1f7d8bcf0d2fd14cba2f091a59ad8b2edcc61ae8e544d78d",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "finished_utc": "2026-11-28T15:49:49.094Z"
+}

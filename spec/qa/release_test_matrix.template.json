@@ -1,0 +1,635 @@
+{
+  "artifact_status": "template_not_results",
+  "tests": [
+    {
+      "test_id": "TC-100",
+      "title": "Inventaris kurikulum penuh",
+      "expected": "60 level, 300 slot, 281 aktif, 19 nonaktif; jumlah per kelas cocok sumber+errata",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-101",
+      "title": "ID dan versi",
+      "expected": "Semua ID unik pada scope-nya, referensi resolve, revisi/versi tidak berbenturan",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-102",
+      "title": "Prasyarat",
+      "expected": "Semua node prasyarat ada/aktif; tidak ada siklus tak disengaja; MIX hanya operasi yang diperbolehkan",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-103",
+      "title": "Semua template",
+      "expected": "Setiap kompetensi aktif punya implementasi constraint; tidak ada aturan editorial yang dilewati diam-diam",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-104",
+      "title": "Domain kelas awal",
+      "expected": "G01–G04: operand/hasil antara sesuai aturan dan integer nonnegatif; semua DIV habis",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-105",
+      "title": "Domain rasional",
+      "expected": "G05–G06 tidak mempunyai nilai antara negatif; G07–G12 bertanda sesuai template",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-106",
+      "title": "Nilai batas",
+      "expected": "Minimum/maksimum operand, hasil antara, denominator, carry/borrow dan near-base diuji per template",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-107",
+      "title": "Oracle independen",
+      "expected": "Evaluator rasional independen cocok untuk semua item; pembagian nol atau kunci beda menggagalkan build",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-108",
+      "title": "Langkah pembahasan",
+      "expected": "Setiap langkah valid, kesetaraan dipertahankan, hasil akhir cocok; label strategi sesuai langkah",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-109",
+      "title": "MIX",
+      "expected": "Minimal dua jenis operasi biner; precedence dan parentheses eksplisit; tidak ada bentuk ambigu",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-110",
+      "title": "Duplikat",
+      "expected": "Tidak ada duplikat tak disengaja dalam paket; lintas paket terukur; repeat sengaja diberi provenance",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-111",
+      "title": "Pool kecil",
+      "expected": "Target disesuaikan dengan bukti pool; contoh G01-L01 ADD tidak diklaim punya ratusan unique pairs",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-112",
+      "title": "Distribusi",
+      "expected": "Blueprint subtipe/friendly structure/tujuan dan keseimbangan jawaban dipenuhi atau deviasi tercatat",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-113",
+      "title": "Form setara",
+      "expected": "A/B memiliki profil isi/kompleksitas yang sebanding; overlap tercatat, label ekuivalen tidak asal",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-114",
+      "title": "Bilingual konten",
+      "expected": "Seluruh title/instruction/hint/explanation/error/label tersedia ID+EN; AST dan kunci sama",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-115",
+      "title": "Manifest lengkap",
+      "expected": "Semua paket aktual di dist resolve dengan schema/hash/jumlah item benar; tidak ada file yatim tak disengaja",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-116",
+      "title": "Determinisme factory",
+      "expected": "Seed+version+input sama menghasilkan canonical content hashes sama pada dua clean run",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-117",
+      "title": "Data sintetis terisolasi",
+      "expected": "ID/data demo tidak berada dalam namespace skor aktual; tidak ada identitas siswa asli di source",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-118",
+      "title": "Batas output bank",
+      "expected": "Total paket, slot dan unik aktual dilaporkan; selisih terhadap target punya penjelasan per kompetensi",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-119",
+      "title": "Semantik ESM",
+      "expected": "Paket tidak mempunyai efek samping; hanya bentuk ekspor data yang diizinkan; tidak ada dependency remote runtime",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-120",
+      "title": "Error format vs salah hitung",
+      "expected": "Input malformed tidak menambah salah; jawaban valid tetapi tidak sama kunci menambah salah sesuai mode",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-121",
+      "title": "Pergantian locale saat mengetik",
+      "expected": "Nilai valid tetap sama, draft invalid mempertahankan teks serta validator/keypad `draft_locale` sampai valid/dikosongkan; posisi sesi/timer tidak reset",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-122",
+      "title": "Input berulang cepat",
+      "expected": "Double click/Enter berulang menghasilkan satu submit dan satu event yang sah",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-123",
+      "title": "Practice",
+      "expected": "Feedback/hint/retry bekerja, jawaban pertama tidak ditimpa retry, waktu tidak memaksa selesai",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-124",
+      "title": "Speed",
+      "expected": "Countdown, timeout, skip dan hasil sesuai konfigurasi; deadline Speed terus berjalan saat hidden/jeda visual; tidak ada waktu negatif",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-125",
+      "title": "Assessment",
+      "expected": "Feedback/kunci tidak bocor melalui UI sebelum selesai; revisi draft disimpan; dirty-invalid draft memblokir finalisasi atau ditandai kosong eksplisit, tidak memakai nilai lama; finalisasi idempotent",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-126",
+      "title": "Adaptive",
+      "expected": "Rute sesuai bukti, N/prasyarat/policy; kasus bukti kurang tidak naik/turun secara sewenang-wenang",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-127",
+      "title": "Recovery",
+      "expected": "Varian setara terkait soal asal, queue diperbarui, histori kesalahan asli tetap tersedia",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-128",
+      "title": "Randomisasi/resume",
+      "expected": "Urutan tersimpan tetap identik setelah reload/back/theme/locale, tidak mengganti versi soal",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-129",
+      "title": "Atomisitas simpan",
+      "expected": "Kegagalan transaksi tidak meninggalkan skor tanpa ledger/event terkait; outbox mock/remote ikut atomik, local adapter tidak membuat pending server",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-130",
+      "title": "Storage diblokir/quota",
+      "expected": "Ada state gagal/temporer yang jujur; retry/ekspor aman; tidak ada toast simpan palsu",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-131",
+      "title": "Dua tab satu attempt",
+      "expected": "Hanya satu writer sah; takeover jelas; tidak ada event sequence duplikat atau nilai ganda",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-132",
+      "title": "Upgrade IndexedDB",
+      "expected": "Data fixture versi lama dan pending outbox tetap ada; blocked upgrade/recovery mempunyai jalur UI",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-133",
+      "title": "Backup/import",
+      "expected": "Round-trip data canonical cocok; duplikat ID sama+payload sama tidak digandakan; conflict tidak ditimpa",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-134",
+      "title": "Profil lokal",
+      "expected": "Filter/history/export sesuai profil, reset satu profil tidak menghapus lainnya; batas privasi shared device jelas",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-135",
+      "title": "Remote tanpa config",
+      "expected": "Error `BRIDGE_NOT_CONFIGURED`, tidak ada request tak sah, tidak ada ACK mock yang disajikan sebagai server",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-136",
+      "title": "Mock ACK",
+      "expected": "Receipt berlabel mock; simulasi partial ACK/latency/error dapat diulang; tidak memberi status verified",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-137",
+      "title": "Idempotensi remote",
+      "expected": "Retry event ID+hash sama menerapkan satu kali; ID sama+isi berbeda menjadi konflik",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-138",
+      "title": "Partial ACK",
+      "expected": "Hanya event yang diakui berubah status; 200 malformed/mismatched receipt tidak menghapus outbox",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-139",
+      "title": "Error transport",
+      "expected": "401/403/409/422/429/5xx/timeout diperlakukan sesuai kontrak; backoff, auth-required dan rejected berbeda",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-140",
+      "title": "Urutan event/finalisasi",
+      "expected": "Complete sebelum missing events tidak menjadi final akademik; missing sequence dapat dipulihkan",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-141",
+      "title": "Logout/pergantian identitas",
+      "expected": "Outbox profil lama tidak terkirim sebagai pengguna baru; pemisahan lingkungan tetap ada",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-142",
+      "title": "Offline deadline",
+      "expected": "Waktu klien/diterima server tersimpan berbeda; keputusan terlambat/ditolak tampil jujur",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-143",
+      "title": "ACK vs penilaian",
+      "expected": "`server_accepted` tidak otomatis `mastered_verified`; skor klien dan skor verifikasi berbeda asal",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-144",
+      "title": "Upgrade schema bridge",
+      "expected": "Versi tak didukung ditolak dengan sebab; event lama tidak dibuang atau diberi versi baru palsu",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-145",
+      "title": "Skor dan denominasi",
+      "expected": "Form 10 item: 6 benar, 2 salah, 2 skip → skor 60%, akurasi jawaban 75%, jumlah tiap status jelas",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-146",
+      "title": "Completion",
+      "expected": "Respons/skip final dibandingkan total assigned; soal belum dilihat tidak dianggap terjawab; definisi ditampilkan",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-147",
+      "title": "Tidak ada bukti",
+      "expected": "N=0 tampil “Belum dievaluasi/Not assessed”, tanpa angka 0% atau klaim lemah",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-148",
+      "title": "Mastery",
+      "expected": "Minimal dua form dan bukti unik per assessment_cycle_id sesuai policy; gunakan final response pada form eligible pertama; skip/blank/unseen masuk denominator sebagai tidak benar; retest sesudah penguatan membuat siklus baru tanpa menghapus histori; duplicate/retry/hint/unfinished tidak menggelembungkan bukti",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-149",
+      "title": "Perbandingan perkembangan",
+      "expected": "Form setara dipisahkan; 58→86 = +28 pp; perpindahan kesulitan tidak disebut peningkatan setara otomatis",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-150",
+      "title": "Durasi",
+      "expected": "Median/P90 dan N mengikuti 09: median rata dua nilai tengah untuk N genap, P90 nearest-rank, tampil setelah N≥10; kualitas timing ditangani sesuai policy",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-151",
+      "title": "Akurasi kelas",
+      "expected": "Metode pembobotan dan denominator tepat; aggregasi tidak merata-ratakan persentase tanpa definisi",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-152",
+      "title": "Penguasaan per operasi",
+      "expected": "MIX terpisah; nilai ADD tinggi tidak menutup DIV belum diuji/rendah; level mastery memerlukan seluruh sel aktif",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-153",
+      "title": "Filter lintas tampilan",
+      "expected": "Dashboard, detail siswa, preview laporan dan export memakai filter/snapshot identik",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-154",
+      "title": "Rekomendasi",
+      "expected": "Alasan dapat ditelusuri ke bukti; data kurang diberi label; tidak mengklaim strategi aktual atau diagnosis siswa",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-155",
+      "title": "PDF/DOCX",
+      "expected": "File valid, teks dan angka cocok, font matematika utuh, pagination/heading/table tidak terpotong",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-156",
+      "title": "XLSX/CSV",
+      "expected": "Angka tetap angka, encoding/quotes/delimiter benar, field teks berformula disanitasi; angka negatif tidak rusak",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-157",
+      "title": "JSON/ZIP",
+      "expected": "Schema/hash valid, archive utuh, file count benar, export-import konsisten untuk tipe yang didukung",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-158",
+      "title": "Export besar/cancel",
+      "expected": "Progres nyata, UI responsif, cancel membersihkan pekerjaan/URL blob; partial failure dijelaskan",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-159",
+      "title": "Provenance laporan",
+      "expected": "Demo watermark, local unverified, official gated; periode/versi/sumber/created-at sesuai data",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-160",
+      "title": "Layout minimum/zoom",
+      "expected": "Tidak ada horizontal scroll halaman yang tidak perlu; soal/input/CTA tetap terbaca pada 320px dan zoom sesuai target aksesibilitas",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-161",
+      "title": "Keyboard virtual",
+      "expected": "Input/CTA tidak tertutup; scroll mempertahankan konteks, minus/slash/decimal dapat dimasukkan tanpa paste",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-162",
+      "title": "Tema/bahasa",
+      "expected": "Semua screen/state termasuk modal, chart, tooltip, error dan export benar; tidak ada lost state/flash kontras parah",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-163",
+      "title": "Keyboard-only",
+      "expected": "Urutan fokus logis, skip link, dialog tidak menjebak, Esc/Enter sesuai tujuan, focus terlihat dan tidak tertutup",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-164",
+      "title": "Screen reader",
+      "expected": "Nama kontrol, bentuk pecahan/negatif, progres, error dan hasil diumumkan bermakna tanpa pengumuman per detik yang mengganggu",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-165",
+      "title": "Aksesibilitas visual",
+      "expected": "Contrast, non-color cues, target sentuh, reflow dan focus sesuai arahan UI; scan otomatis dilengkapi pemeriksaan manual",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-166",
+      "title": "Reduced motion/timer",
+      "expected": "Animasi berkurang, countdown opsional/akomodasi bekerja, tidak ada kilat atau timeout tanpa konteks",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-167",
+      "title": "Slow/offline/error state",
+      "expected": "Loading, retry, cached/not cached, quota, unknown route dan failed export punya tindakan yang tepat",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-168",
+      "title": "Kepadatan data",
+      "expected": "Tabel guru/admin responsif; mobile memprioritaskan data, pagination/filter tetap dapat dioperasikan",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-169",
+      "title": "UI benar-benar berfungsi",
+      "expected": "Tiap CTA mempunyai aksi lengkap atau disabled state beralasan; tidak ada tautan mati, lorem ipsum atau angka demo tanpa label",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-170",
+      "title": "Initial load",
+      "expected": "Tidak memuat seluruh bank, generator, dashboard guru/admin, chart atau library export; budget shell sesuai dokumen UI",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-171",
+      "title": "Request paket",
+      "expected": "Pilih satu paket hanya memuat shard/aset relevan; jumlah request dan byte tercatat; prefetch dibatasi",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-172",
+      "title": "Interaksi saat lazy load",
+      "expected": "Klik mempunyai feedback segera, error dapat diulang, hasil load usang tidak mengubah pilihan terakhir",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-173",
+      "title": "Sesi stabil",
+      "expected": "Submit/next/timer tidak menjalankan import/generasi besar; input responsif selama analytics/export berjalan",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-174",
+      "title": "Lab performance",
+      "expected": "Profil network/CPU/viewport/versi runner dilaporkan; LCP/CLS dan interaksi representatif sesuai budget",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-175",
+      "title": "Memory/batch",
+      "expected": "Daftar ribuan paket tidak membuat ribuan node aktif; export/cache besar tidak crash pada target perangkat yang diuji",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-176",
+      "title": "Offline install",
+      "expected": "Status ready baru setelah semua aset wajib tersimpan; paket belum cached tetap mendapat penjelasan dan pilihan yang benar",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-177",
+      "title": "Update SW",
+      "expected": "Update saat assessment tidak mencampur versi/hilang jawaban; aktivasi sesudah aman dan retry download bekerja",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-178",
+      "title": "Cache eviction",
+      "expected": "Penghapusan/kehilangan cache tidak menghapus ledger; paket aktif dipin atau mempunyai pemulihan jelas",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-179",
+      "title": "Background sync fallback",
+      "expected": "App tetap menyinkron melalui foreground tanpa API Background Sync; status online tidak diperlakukan sebagai ACK",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-180",
+      "title": "Clean build",
+      "expected": "Source+lockfile+runtime tercatat menghasilkan dist dan bank sesuai manifest, tanpa dependensi file dari mesin pembuat",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-181",
+      "title": "Static deploy",
+      "expected": "Latihan berjalan di static HTTP/HTTPS; tidak memanggil server/API eksternal yang tidak tersedia untuk fungsi inti",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-182",
+      "title": "Deep link/base path/MIME",
+      "expected": "Refresh route bekerja, semua module/font/worker/bank mempunyai path/MIME benar; missing JS tidak menjadi HTML 200",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-183",
+      "title": "Header/CSP",
+      "expected": "Header aktual diperiksa, fitur berfungsi, CSP tidak memerlukan eval atau sumber tak dikenal; no secret in dist",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-184",
+      "title": "Import/XSS",
+      "expected": "Script/HTML/URL berbahaya pada nama/catatan/import tidak dieksekusi; schema/batas file bekerja",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-185",
+      "title": "Privasi dan export",
+      "expected": "Demo/local terpisah, tidak ada transmisi otomatis ke pihak ketiga, tidak ada data asli/credential di ZIP",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-186",
+      "title": "Update/rollback",
+      "expected": "Rilis baru dan rollback mempertahankan/menangani sesi lama dengan jelas; data tidak dibersihkan otomatis",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-187",
+      "title": "Dependency dan lisensi",
+      "expected": "Lockfile, asset provenance, lisensi dan advisory relevan diperiksa; unresolved risk dengan dampak nyata memblokir GO",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-188",
+      "title": "Paket rilis",
+      "expected": "Source/dist/docs/evidence lengkap, SHA-256 benar, ZIP CRC lulus, file guide menunjuk lokasi yang benar",
+      "status": "NOT_RUN",
+      "evidence": []
+    },
+    {
+      "test_id": "TC-189",
+      "title": "Klaim hasil",
+      "expected": "RELEASE_STATUS cocok evidence; tidak mengklaim server aktif, jumlah unik, real-device pass atau official curriculum tanpa bukti",
+      "status": "NOT_RUN",
+      "evidence": []
+    }
+  ]
+}

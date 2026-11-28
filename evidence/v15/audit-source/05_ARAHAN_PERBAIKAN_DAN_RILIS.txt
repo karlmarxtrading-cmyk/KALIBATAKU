@@ -1,0 +1,87 @@
+ARAHAN PERBAIKAN DAN PENUTUPAN RILIS KALIBATAKU 1.4.0
+Tanggal: 28 November 2026
+Keputusan audit: HOLD. Ini pekerjaan implementasi berikutnya, bukan klaim bahwa perbaikan telah dilakukan.
+Sumber: KALIBATAKU_ADVENTURE_SOURCE_DIST_BANK_EVIDENCE.zip; SHA-256 86b030e3196cbf2116ce37bad3a6b7bcb350eadee4d1931cff8ba7bcf094046d
+
+KONTRAK YANG HARUS DIPERTAHANKAN
+- Semua 4.677 berkas bank lama byte-identik, 4.604 paket dan 177.640 occurrence tetap tersedia.
+- Tidak menghapus riwayat, snapshot, bantuan, penjelasan asli atau fitur evaluasi formal untuk menyederhanakan perbaikan.
+- Bedakan selesai, respons pertama mandiri, bantuan/revisi, kesiapan kebijakan produk dan XP. Tidak mengklaim kalibrasi empiris atau mastery resmi tanpa bukti.
+- Satu perubahan harus disertai regresi bermakna dan bukti pada build final; jangan menurunkan AC atau menyalin status PASS lama.
+
+TEMUAN YANG HARUS DITUTUP
+
+AUD-01 [P1] Jalur petualangan buntu pada perkalian kelas 12 level 1
+Aktual: 38/38 jawaban pertama benar mandiri; 4 misi lulus dan 38 soal unik; strategi 1/2, ready=false. Satu-satunya PO berada di pool review yang tidak tersedia sebelum ready.
+Sumber: src/journey/model.mjs:10-15,167-170,200-225; tools/build-journey.py:235-251; src/journey/ui.mjs:113,219-225
+Kerjakan: Pilih bahan sah yang menutup strategi yang belum tercakup sebelum mewajibkan ready; validasi keterjangkauan semua syarat; tampilkan syarat yang kurang.
+Selesai jika: Seluruh 281 node lolos validator keterjangkauan semantik; kasus G12L1MUL mencapai ready melalui alur default dengan bank tetap identik; regresi engine dan UI lulus.
+Bukti: 07_BUKTI/progression/engine-cases.json; 07_BUKTI/progression/strategy-pools.json; 07_BUKTI/progression/occurrence-verification.json
+Batas klaim: Jalur katalog manual yang memuat PO dapat membantu. Tidak berarti semua node atau seluruh bank tidak dapat dimainkan.
+
+AUD-02 [P1] Indikator siap offline tidak sesuai kemampuan membuat misi
+Aktual: P001 yang dipasang lewat katalog tanpa occurrence shard ditandai tersimpan tetapi gagal NOT_INSTALLED/JOURNEY_LOAD. Assessment-only P003 juga ditandai siap tetapi gagal NO_MATERIAL. Kontrol P001+shard berhasil.
+Sumber: src/journey/ui.mjs:34-40,136-153; src/journey/journey.mjs:29-40,77-85; src/data/offline.js:25-64
+Kerjakan: Gunakan pemeriksaan kemampuan bersama untuk peta dan pembuat misi; cek seluruh dependensi dan paket eligible; sediakan perbaikan instalasi katalog lama.
+Selesai jika: Pada browser baru, catalogue-only dan assessment-only diberi status belum lengkap; eligible package+shard bisa mulai, reload, resume, dan selesai tanpa jaringan.
+Bukti: 07_BUKTI/ux/offline-readiness-probe.json
+Batas klaim: Probe memakai modul dist produksi dan adapter DOM/Cache minimal di Node. Jalur unduh peta yang lengkap mempunyai kontrol positif; bukan kegagalan semua resume offline.
+
+AUD-03 [P2] Perubahan titik mulai diabaikan ketika sudah ada misi selesai
+Aktual: Tanpa riwayat, S-G05-L01 memilih intro G5L1ADD. Setelah intro G1L1ADD completed dengan 0/6, pilihan yang sama tetap menghasilkan reinforcement G1L1ADD.
+Sumber: src/journey/model.mjs:188-203; src/journey/ui.mjs:161-167; src/journey/journey.mjs:43-54
+Kerjakan: Hormati intent titik mulai terbaru untuk misi berikutnya tanpa menghapus riwayat; tetapkan perilaku terpisah untuk snapshot ongoing.
+Selesai jika: Ubah titik mulai setelah intro selesai, misi gagal, node ready, dan saat ongoing; tujuan sesuai pilihan, riwayat utuh, sesi aktif tidak diam-diam ditimpa.
+Bukti: 07_BUKTI/progression/engine-cases.json
+Batas klaim: Kasus menggunakan completed, bukan sesi ongoing yang memang perlu dilanjutkan. Navigasi manual peta masih mungkin.
+
+AUD-04 [P2] Peta siswa dan ekspor laporan guru berbeda status kesiapan
+Aktual: Empat snapshot normal valid: latihan non-journey P002, intro+dua regular P001. Peta coverage=12/12 dan ready=true; JSON guru unique_seen=10 dan ready=false.
+Sumber: src/journey/model.mjs:148-150; src/journey/report.mjs:9,16-17,24-25; src/teacher/report.js:49-52,81; src/teacher/export/index.js:4-5
+Kerjakan: Gunakan satu perhitungan readiness bersama dengan aturan scope yang eksplisit; pisahkan statistik periode dari kesiapan kumulatif bila laporan difilter.
+Selesai jika: Pada fixture ini peta dan JSON aktual sama-sama coverage 12, passing 2, ready=true; uji riwayat journey-only, campuran, dan filter periode.
+Bukti: 07_BUKTI/inventaris/journey-report-consistency.json
+Batas klaim: Dibuktikan sampai buildSnapshot -> encode(JSON) -> parse. Bukan mutasi backup; tidak mengklaim seluruh format ekspor telah diuji ulang dengan fixture ini.
+
+AUD-05 [P2] Restore menerima metadata journey yang tidak konsisten
+Aktual: Empat metadata sintetis dengan checksum valid lolos preview, reader, serta commit restore JSON dan ZIP: node salah, referensi mustahil, aturan negatif, dan daftar referensi kosong.
+Sumber: src/data/snapshot-check.js:17-70; src/data/backup.js:99-127,227,255-260; src/journey/report.mjs:10-25
+Kerjakan: Validator journey berversi bersama JSON/ZIP; validasi node, jenis misi, domain readiness, peran/band, referensi item dan pilihan; penolakan atomik dan kompatibilitas snapshot lama.
+Selesai jika: Keempat mutasi ditolak sebelum penulisan parsial; data valid tetap roundtrip; snapshot 1.3 tanpa journey tetap dapat dibaca; versi tidak dikenal tidak dipakai diam-diam untuk readiness.
+Bukti: 07_BUKTI/technical/contract-boundaries.json; 07_BUKTI/technical/contract-boundaries.log
+Batas klaim: Impor lokal sintetis dengan checksum dihitung ulang. Tidak membuktikan serangan jarak jauh, kehilangan data nyata, atau korupsi spontan pada misi normal.
+
+AUD-06 [P2] Ekspor JSON legacy tidak selalu dapat dibaca kembali; recovery gagal fallback
+Aktual: 100.001 record diekspor JSON 7.967.175 byte tetapi reader menolak BACKUP_TOO_LARGE. ZIP data yang sama berhasil. Recovery pada 100.003 record gagal tanpa fallback ZIP.
+Sumber: src/data/backup.js:9,14-25,29-56,86-104; src/data/panel-profile.js:52-56,92
+Kerjakan: Samakan batas jumlah dan byte sebelum unduhan; fallback recovery ke ZIP untuk kedua batas; beri pesan UI yang dapat ditindaklanjuti.
+Selesai jika: Uji100.000 / 100.001 record, batas byte, komposisi attempts/events/records, dan recovery draft; semua output yang dinyatakan siap dapat dibaca dan dipulihkan.
+Bukti: 07_BUKTI/technical/contract-boundaries.json; 07_BUKTI/technical/contract-boundaries.log
+Batas klaim: Kasus kapasitas sintetis. ZIP standar150.000 record dan perbaikan STORED lama tetap lulus.
+
+AUD-07 [P2] PASS untuk keyboard ponsel fisik tidak didukung bukti yang diminta
+Aktual: AC:UX-09 mensyaratkan ponsel fisik portrait/landscape. Register menyebut no physical devices namun PASS; pemetaan hanya menguji Tab/fokus desktop.
+Sumber: REGISTER_AC_1.4.csv:29; tests/qa/criteria-1.4.json:392-403; tests/journey/browser_flow.py:177-184
+Kerjakan: Ubah UX-09 menjadi BLOCKED sampai bukti perangkat tersedia; pertahankan tes desktop pada cakupannya; perbarui matrix, binding dan status rilis konsisten.
+Selesai jika: Android/iOS fisik portrait/landscape dengan keyboard terbuka: input, OKE, feedback, Lanjut, draft dan final commit benar; versi/perangkat/build tercatat.
+Bukti: 07_BUKTI/ux/ux09-evidence-mismatch.json
+Batas klaim: Tidak menyatakan layout ponsel telah terbukti rusak. Dua AC terdampak berasal dari satu temuan bukti, bukan dua defect tambahan.
+
+URUTAN KERJA
+1. Jalankan reproduksi pada salinan 1.4.0 untuk memastikan pemahaman counterexample. Hasil probe yang menunjukkan cacat bukan PASS aplikasi.
+2. Perbaiki model/selector dan start intent; lalu readiness offline; lalu kontrak data serta laporan.
+3. Tambahkan kasus ke suite resmi bersama kontrol positif dan regresi 1.3. Jangan menulis tes yang hanya mengembalikan konstanta.
+4. Regenerasi metadata bila kebijakan berubah, tanpa mengubah bank. Bangun ulang dist, inventaris dan binding; jalankan release:verify serta gate terdampak.
+5. Koreksi register 71 baris sesuai03_REVIEW_71_KRITERIA.csv. PASS_PAKET_TIDAK_DISANGGAH bukan sertifikasi ulang.
+6. Jalankan review 394 template, browser/perangkat/pembaca layar/Word dan pilot 12 siswa3 guru. Catat hasil nyata dan retest sesudah perbaikan.
+7. Verifikasi domain final serta update/rollback pada artefak yang sama. PERF-03 tetap fase SETELAH_PILOT sampai data nyata tersedia.
+
+DOKUMEN HASIL IMPLEMENTASI YANG HARUS ADA
+- Change log dan keputusan desain; trace setiap AUD-ID ke file, regression test dan receipt.
+- Inventaris bank/source/dist, versi kebijakan, hash build, command dan runtime pengujian.
+- Register AC jujur; bukti BLOCKED/NOT_RUN tidak diubah menjadi PASS tanpa metode yang diwajibkan.
+- Panduan update, backup, restore, cache tidak lengkap dan rollback; known limitations yang tersisa.
+
+BATAS AUDIT INI
+Tidak ada deployment atau perubahan source. Tidak ada browser/perangkat/pilot/domain baru yang berhasil diuji. Rerun Node menggunakan adapter memori; browser evidence bawaan merupakan bukti historis.
+Jangan menyatakan 100% production ready hanya dari jumlah assertion. Putuskan GO setelah gate wajib dan cacat di atas benar-benar ditutup dengan bukti.

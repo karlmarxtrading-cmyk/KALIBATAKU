@@ -1,0 +1,10 @@
+﻿slot,tugas,alias,jenjang,event_id,mulai_utc,detik,jawaban_aktual,berhasil,arahan_moderator,bukti_id,temuan_retest
+G01,temukan_kesulitan,,,,,,,,,,
+G01,bedakan_mandiri_revisi,,,,,,,,,,
+G01,putuskan_arah_lanjut,,,,,,,,,,
+G02,temukan_kesulitan,,,,,,,,,,
+G02,bedakan_mandiri_revisi,,,,,,,,,,
+G02,putuskan_arah_lanjut,,,,,,,,,,
+G03,temukan_kesulitan,,,,,,,,,,
+G03,bedakan_mandiri_revisi,,,,,,,,,,
+G03,putuskan_arah_lanjut,,,,,,,,,,

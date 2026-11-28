@@ -1,0 +1,148 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "MATH-001-exports",
+  "scope": "Text exports keep grouped fraction operands",
+  "build": {
+    "offline_release": "a2f40449c4738fe6",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "node": "v24.22.3",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "started": "2026-11-28T17:27:09.987Z",
+  "finished": "2026-11-28T17:27:10.054Z",
+  "assertions": 14,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "fixture-id",
+      "status": "PASS",
+      "expected": "First question of MM-G05-L04-DIV-P001 is 21 ÷ (3⁄11) with key 77",
+      "actual": "21 ÷ (3⁄11)"
+    },
+    {
+      "id": "document-model-id",
+      "status": "PASS",
+      "expected": "Document model text keeps the divisor grouped",
+      "actual": [
+        "Soal · 21 ÷ (3/11)",
+        "Kunci jawaban · 77",
+        "Jawaban pertama · 7"
+      ]
+    },
+    {
+      "id": "csv-id",
+      "status": "PASS",
+      "expected": "CSV contains 21 ÷ (3/11) and key 77",
+      "actual": [
+        "\"Math\",\"local_practice\",\"4e54415e-e8a2-4b07-ab8e-3c00966d6d27\",\"21 ÷ (3/11)\",\"77\",\"1\",\"7\",\"7\"\r",
+        "\"Family\",\"Soal · 21 ÷ (3/11)\"\r"
+      ]
+    },
+    {
+      "id": "xlsx-math-id",
+      "status": "PASS",
+      "expected": "XLSX Math sheet keeps 21 ÷ (3/11) beside key numerator 77",
+      "actual": {
+        "sheets": [
+          "Summary",
+          "Competencies",
+          "Operations",
+          "Sessions",
+          "Dictionary",
+          "Metadata",
+          "Notes",
+          "Math",
+          "Family",
+          "Journey",
+          "Contexts"
+        ]
+      }
+    },
+    {
+      "id": "xlsx-family-id",
+      "status": "PASS",
+      "expected": "XLSX Family sheet keeps 21 ÷ (3/11)",
+      "actual": true
+    },
+    {
+      "id": "json-id",
+      "status": "PASS",
+      "expected": "JSON keeps the exact AST of the fraction divisor",
+      "actual": true
+    },
+    {
+      "id": "docx-omml-id",
+      "status": "PASS",
+      "expected": "DOCX shows 3/11 as an editable stacked OMML fraction",
+      "actual": true
+    },
+    {
+      "id": "fixture-en",
+      "status": "PASS",
+      "expected": "First question of MM-G05-L04-DIV-P001 is 21 ÷ (3⁄11) with key 77",
+      "actual": "21 ÷ (3⁄11)"
+    },
+    {
+      "id": "document-model-en",
+      "status": "PASS",
+      "expected": "Document model text keeps the divisor grouped",
+      "actual": [
+        "Question · 21 ÷ (3/11)",
+        "Correct answer · 77",
+        "First response · 7"
+      ]
+    },
+    {
+      "id": "csv-en",
+      "status": "PASS",
+      "expected": "CSV contains 21 ÷ (3/11) and key 77",
+      "actual": [
+        "\"Math\",\"local_practice\",\"c926cf19-1015-498a-ac12-57406f12a67f\",\"21 ÷ (3/11)\",\"77\",\"1\",\"7\",\"7\"\r",
+        "\"Family\",\"Question · 21 ÷ (3/11)\"\r"
+      ]
+    },
+    {
+      "id": "xlsx-math-en",
+      "status": "PASS",
+      "expected": "XLSX Math sheet keeps 21 ÷ (3/11) beside key numerator 77",
+      "actual": {
+        "sheets": [
+          "Summary",
+          "Competencies",
+          "Operations",
+          "Sessions",
+          "Dictionary",
+          "Metadata",
+          "Notes",
+          "Math",
+          "Family",
+          "Journey",
+          "Contexts"
+        ]
+      }
+    },
+    {
+      "id": "xlsx-family-en",
+      "status": "PASS",
+      "expected": "XLSX Family sheet keeps 21 ÷ (3/11)",
+      "actual": true
+    },
+    {
+      "id": "json-en",
+      "status": "PASS",
+      "expected": "JSON keeps the exact AST of the fraction divisor",
+      "actual": true
+    },
+    {
+      "id": "docx-omml-en",
+      "status": "PASS",
+      "expected": "DOCX shows 3/11 as an editable stacked OMML fraction",
+      "actual": true
+    }
+  ]
+}

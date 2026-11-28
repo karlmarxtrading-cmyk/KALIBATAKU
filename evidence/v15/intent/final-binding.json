@@ -1,0 +1,36 @@
+{
+  "release": "460c98b682110f7e",
+  "verified_at": "2026-11-28T09:03:57.065050+00:00",
+  "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c",
+  "dist_offline_assets_sha256": "7d05df34af8cbd5c18d00ce310d8f0448c22e1d158527111df595dd3980f0add",
+  "receipts": [
+    {
+      "file": "engine.json",
+      "sha256": "c74093080e1d47a448c07ccb7d4a033ad355221a4c6f9e1015f561483da3e71d",
+      "successful_checks": 22,
+      "runtime": "v24.22.3",
+      "started": "2026-11-28T09:03:24.132Z"
+    },
+    {
+      "file": "browser-chromium.json",
+      "sha256": "01a2dd538f32bc62b55910671f92ada1885f65fca7dc1bb847f2568ed1b94a32",
+      "successful_checks": 11,
+      "runtime": "151.0.7922.34",
+      "started": "2026-11-28T09:03:22.231722+00:00"
+    },
+    {
+      "file": "browser-firefox.json",
+      "sha256": "fc84d1d0d5c264e06c0a38008e5329f9a24bf03608f9f575aabc3c96530e42b4",
+      "successful_checks": 11,
+      "runtime": "153.0",
+      "started": "2026-11-28T09:03:22.025451+00:00"
+    },
+    {
+      "file": "browser-webkit.json",
+      "sha256": "411607afd265ec3390bf45ac28a746a1eb5214970a213012fd4e4388d31fb0bd",
+      "successful_checks": 11,
+      "runtime": "26.5",
+      "started": "2026-11-28T09:03:22.047801+00:00"
+    }
+  ]
+}

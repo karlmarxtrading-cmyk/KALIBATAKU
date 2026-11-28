@@ -1,0 +1,508 @@
+{
+  "suite": "player-ux",
+  "utc": "2026-11-26T11:12:37.622Z",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "checks": [
+    {
+      "id": "S01-preview",
+      "status": "PASS",
+      "expected": "Exact audited expression pair; preview 2 correct/0 blank, only first answer committed so far",
+      "actual": {
+        "terms": [
+          "0 + 5",
+          "0 + 4"
+        ],
+        "totals": {
+          "correct": 2,
+          "incorrect": 0,
+          "blank": 0,
+          "unseen": 0,
+          "skipped": 0
+        },
+        "events": [
+          "attempt.started",
+          "answer.submitted"
+        ]
+      }
+    },
+    {
+      "id": "S01-final",
+      "status": "PASS",
+      "expected": "2/2, 100%, four sequenced events with matching final references",
+      "actual": {
+        "metrics": {
+          "N": 2,
+          "C": 2,
+          "W": 0,
+          "S": 0,
+          "B": 0,
+          "U": 0,
+          "score_percent": 100,
+          "accuracy_percent": 100,
+          "responded_percent": 100,
+          "first_response_count": 2,
+          "first_correct": 2,
+          "first_response_accuracy": 100,
+          "retries": 0,
+          "hints": 0
+        },
+        "sequence": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "references": [
+          {
+            "question_instance_id": "504cf733-f030-4937-a08c-b5b86b228d95.1",
+            "response_event_id": "6e7b581a-6497-4f84-97f4-3a92b9a40e8f",
+            "status": "answered"
+          },
+          {
+            "question_instance_id": "504cf733-f030-4937-a08c-b5b86b228d95.2",
+            "response_event_id": "7980a702-db3c-46bd-8fe5-f6cf4a75b1dd",
+            "status": "answered"
+          }
+        ]
+      }
+    },
+    {
+      "id": "S08-policy-update",
+      "status": "PASS",
+      "expected": "Wrong answer shows the key before any hint, and stays on the item",
+      "actual": "!Belum tepatJawabanmu999Kunci jawaban5Salah satu cara menghitungMenambah atau mengurangi nol membuat bilangannya tetap sama.Lihat langkah lengkap5Soal berikutnyaRevisi jawaban"
+    },
+    {
+      "id": "S09-method",
+      "status": "PASS",
+      "expected": "Complete steps can be opened without leaving the feedback card",
+      "actual": true
+    },
+    {
+      "id": "S02-composition",
+      "status": "PASS",
+      "expected": "Composition Enter is not a submit",
+      "actual": true
+    },
+    {
+      "id": "S02-primary",
+      "status": "PASS",
+      "expected": "Input form submission advances after correct answer",
+      "actual": "Soal 2 dari 2"
+    },
+    {
+      "id": "L07-pause",
+      "status": "PASS",
+      "expected": "Persisted pause survives language change",
+      "actual": "Practice paused"
+    },
+    {
+      "id": "S03-map",
+      "status": "PASS",
+      "expected": "Neutral answered, blank, unseen and flagged map",
+      "actual": [
+        "Question 1 · Answered · Flagged",
+        "Question 2 · Blank",
+        "Question 3 · Unseen"
+      ]
+    },
+    {
+      "id": "S03-invalid",
+      "status": "PASS",
+      "expected": "Invalid revision is retained and focused",
+      "actual": "1/"
+    },
+    {
+      "id": "S03-final",
+      "status": "PASS",
+      "expected": "Explicit blank, same first response and neutral submitted event",
+      "actual": {
+        "N": 10,
+        "C": 0,
+        "W": 0,
+        "S": 0,
+        "B": 2,
+        "U": 8,
+        "score_percent": 0,
+        "accuracy_percent": null,
+        "responded_percent": 0,
+        "first_response_count": 1,
+        "first_correct": 0,
+        "first_response_accuracy": 0,
+        "retries": 0,
+        "hints": 0
+      }
+    },
+    {
+      "id": "AC032-snapshot",
+      "status": "PASS",
+      "expected": "Post-session disclosure shows the actual retained first response and pinned expression",
+      "actual": {
+        "first": "5",
+        "heading": "0 + 1"
+      }
+    },
+    {
+      "id": "AC032-similar",
+      "status": "PASS",
+      "expected": "Review → related example → real one-question practice, same template with different expression and exact original provenance",
+      "actual": {
+        "setup": "Start 1 question",
+        "source": "9d386872-10a1-49dc-abec-431dbd793708.1",
+        "target": "9d386872-10a1-49dc-abec-431dbd793708.1",
+        "old": "0 + 1",
+        "variation": "0 + 3"
+      }
+    },
+    {
+      "id": "AC035-next",
+      "status": "PASS",
+      "expected": "Progress shows one primary recommendation for the recently practised skill before the complete matrix; CTA opens its real setup",
+      "actual": {
+        "title": "Your next step · Addition",
+        "cta": "Continue learning",
+        "destination": "#/session/new?grade=1&level=1&op=ADD&mode=adaptive",
+        "setup": "Start 10 questions"
+      }
+    },
+    {
+      "id": "AC033-history",
+      "status": "PASS",
+      "expected": "Progress → history → completed session → same filter and focused row",
+      "actual": {
+        "filter": "completed",
+        "chosen": "9d386872-10a1-49dc-abec-431dbd793708"
+      }
+    },
+    {
+      "id": "AC002-003-012-027-practice",
+      "status": "PASS",
+      "expected": "Checked 999 → valid revision → pause → reload → leave → same attempt → resume → preview → cancel → submit once",
+      "actual": {
+        "mode": "practice",
+        "history": [
+          "999",
+          "5"
+        ],
+        "projection": {
+          "correct": 1,
+          "incorrect": 0,
+          "blank": 0,
+          "unseen": 1,
+          "skipped": 0
+        },
+        "metrics": {
+          "N": 2,
+          "C": 1,
+          "W": 0,
+          "S": 0,
+          "B": 0,
+          "U": 1,
+          "score_percent": 50,
+          "accuracy_percent": 100,
+          "responded_percent": 50,
+          "first_response_count": 1,
+          "first_correct": 0,
+          "first_response_accuracy": 0,
+          "retries": 1,
+          "hints": 0
+        },
+        "sequence": [
+          "attempt.started",
+          "answer.submitted",
+          "answer.submitted",
+          "attempt.completed"
+        ],
+        "deadline": null
+      }
+    },
+    {
+      "id": "AC002-003-012-027-assessment",
+      "status": "PASS",
+      "expected": "Checked 999 → valid revision → pause → reload → leave → same attempt → resume → preview → cancel → submit once",
+      "actual": {
+        "mode": "assessment",
+        "history": [
+          "999",
+          "1"
+        ],
+        "projection": {
+          "answered": 1,
+          "blank": 1,
+          "unseen": 8,
+          "skipped": 0,
+          "flagged": 0
+        },
+        "metrics": {
+          "N": 10,
+          "C": 1,
+          "W": 0,
+          "S": 0,
+          "B": 1,
+          "U": 8,
+          "score_percent": 10,
+          "accuracy_percent": 100,
+          "responded_percent": 10,
+          "first_response_count": 1,
+          "first_correct": 0,
+          "first_response_accuracy": 0,
+          "retries": 0,
+          "hints": 0
+        },
+        "sequence": [
+          "attempt.started",
+          "answer.submitted",
+          "answer.submitted",
+          "attempt.completed"
+        ],
+        "deadline": null
+      }
+    },
+    {
+      "id": "AC002-003-012-027-speed",
+      "status": "PASS",
+      "expected": "Checked 999 → valid revision → pause → reload → leave → same attempt → resume → preview → cancel → submit once",
+      "actual": {
+        "mode": "speed",
+        "history": [
+          "999",
+          "5"
+        ],
+        "projection": {
+          "correct": 1,
+          "incorrect": 0,
+          "blank": 0,
+          "unseen": 1,
+          "skipped": 0
+        },
+        "metrics": {
+          "N": 2,
+          "C": 1,
+          "W": 0,
+          "S": 0,
+          "B": 0,
+          "U": 1,
+          "score_percent": 50,
+          "accuracy_percent": 100,
+          "responded_percent": 50,
+          "first_response_count": 1,
+          "first_correct": 0,
+          "first_response_accuracy": 0,
+          "retries": 1,
+          "hints": 0
+        },
+        "sequence": [
+          "attempt.started",
+          "answer.submitted",
+          "answer.submitted",
+          "attempt.completed"
+        ],
+        "deadline": 1795691622742
+      }
+    },
+    {
+      "id": "AC002-003-012-027-adaptive",
+      "status": "PASS",
+      "expected": "Checked 999 → valid revision → pause → reload → leave → same attempt → resume → preview → cancel → submit once",
+      "actual": {
+        "mode": "adaptive",
+        "history": [
+          "999",
+          "5"
+        ],
+        "projection": {
+          "correct": 1,
+          "incorrect": 0,
+          "blank": 0,
+          "unseen": 1,
+          "skipped": 0
+        },
+        "metrics": {
+          "N": 2,
+          "C": 1,
+          "W": 0,
+          "S": 0,
+          "B": 0,
+          "U": 1,
+          "score_percent": 50,
+          "accuracy_percent": 100,
+          "responded_percent": 50,
+          "first_response_count": 1,
+          "first_correct": 0,
+          "first_response_accuracy": 0,
+          "retries": 1,
+          "hints": 0
+        },
+        "sequence": [
+          "attempt.started",
+          "answer.submitted",
+          "answer.submitted",
+          "attempt.completed"
+        ],
+        "deadline": null
+      }
+    },
+    {
+      "id": "AC002-003-012-027-recovery",
+      "status": "PASS",
+      "expected": "Checked 999 → valid revision → pause → reload → leave → same attempt → resume → preview → cancel → submit once",
+      "actual": {
+        "mode": "recovery",
+        "history": [
+          "999",
+          "5"
+        ],
+        "projection": {
+          "correct": 1,
+          "incorrect": 0,
+          "blank": 0,
+          "unseen": 1,
+          "skipped": 0
+        },
+        "metrics": {
+          "N": 2,
+          "C": 1,
+          "W": 0,
+          "S": 0,
+          "B": 0,
+          "U": 1,
+          "score_percent": 50,
+          "accuracy_percent": 100,
+          "responded_percent": 50,
+          "first_response_count": 1,
+          "first_correct": 0,
+          "first_response_accuracy": 0,
+          "retries": 1,
+          "hints": 0
+        },
+        "sequence": [
+          "attempt.started",
+          "answer.submitted",
+          "answer.submitted",
+          "attempt.completed"
+        ],
+        "deadline": null
+      }
+    },
+    {
+      "id": "AC023-deadline-valid",
+      "status": "PASS",
+      "expected": "Real browser deadline processes last entry once, retains incomplete text and unseen status",
+      "actual": {
+        "input": "5",
+        "counts": {
+          "N": 2,
+          "C": 1,
+          "W": 0,
+          "S": 0,
+          "B": 0,
+          "U": 1,
+          "score_percent": 50,
+          "accuracy_percent": 100,
+          "responded_percent": 50,
+          "first_response_count": 1,
+          "first_correct": 1,
+          "first_response_accuracy": 100,
+          "retries": 0,
+          "hints": 0
+        },
+        "reason": "time_expired",
+        "events": [
+          "attempt.started",
+          "answer.submitted",
+          "attempt.completed"
+        ]
+      }
+    },
+    {
+      "id": "AC023-deadline-incomplete",
+      "status": "PASS",
+      "expected": "Real browser deadline processes last entry once, retains incomplete text and unseen status",
+      "actual": {
+        "input": "1/",
+        "counts": {
+          "N": 2,
+          "C": 0,
+          "W": 0,
+          "S": 0,
+          "B": 1,
+          "U": 1,
+          "score_percent": 0,
+          "accuracy_percent": null,
+          "responded_percent": 0,
+          "first_response_count": 0,
+          "first_correct": 0,
+          "first_response_accuracy": null,
+          "retries": 0,
+          "hints": 0
+        },
+        "reason": "time_expired",
+        "events": [
+          "attempt.started",
+          "attempt.completed"
+        ]
+      }
+    },
+    {
+      "id": "AC008-unsaved",
+      "status": "PASS",
+      "expected": "Rolled-back draft write leaves prior durable revision unchanged, draft visible with a quota-specific message",
+      "actual": {
+        "heading": "Device storage is full. Download a backup before leaving.",
+        "visible": "3/",
+        "stored": "",
+        "revision": 2
+      }
+    },
+    {
+      "id": "AC008-exit",
+      "status": "PASS",
+      "expected": "Reload event requests native confirmation; in-page navigation offers Stay or Leave without losing the draft",
+      "actual": {
+        "native_cancelled": true,
+        "guarded": true,
+        "retained": "3/"
+      }
+    },
+    {
+      "id": "AC008-rescue",
+      "status": "PASS",
+      "expected": "Backup downloaded via real recovery control validates and retains unsaved draft separately with original event ledger",
+      "actual": {
+        "format": "kalibataku-profile-backup",
+        "patch": {
+          "attempt_id": "aebe754d-1ad8-4dbf-98b0-91f50b9029d2",
+          "instance_id": "aebe754d-1ad8-4dbf-98b0-91f50b9029d2.1",
+          "revision": 2,
+          "sequence": 1,
+          "text": "3/",
+          "locale": "en"
+        },
+        "filename": "KALIBATAKU-profile-backup-aebe754d-1ad8-4dbf-98b0-91f50b9029d2.json"
+      }
+    },
+    {
+      "id": "AC008-retry",
+      "status": "PASS",
+      "expected": "Retry stores the exact draft, never an answer event or grade",
+      "actual": {
+        "draft": "3/",
+        "revision": 3,
+        "events": [
+          "attempt.started"
+        ]
+      }
+    }
+  ],
+  "runtime": {
+    "release": "d69d4921d7f04c1a",
+    "bootstrap": "7710d4bde37c7f7e19556e228d68c6888d3368435ee603f4b8ed31c6992a90a4",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "runtime_after": {
+    "release": "d69d4921d7f04c1a",
+    "bootstrap": "7710d4bde37c7f7e19556e228d68c6888d3368435ee603f4b8ed31c6992a90a4",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "finished_utc": "2026-11-26T11:12:52.069Z"
+}

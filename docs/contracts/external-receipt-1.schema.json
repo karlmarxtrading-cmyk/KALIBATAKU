@@ -1,0 +1,310 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "KALIBATAKU external receipt v1 (final signed payload)",
+  "description": "Structure only. The local validator also verifies exact signatures, trust, evidence, coverage, dates and supersession.",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "kalibataku-external-receipt/1"
+    },
+    "receipt_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "criterion": {
+      "enum": [
+        "BANK-07",
+        "UX-09",
+        "DEVICE-02",
+        "DEVICE-03",
+        "A11Y-04",
+        "TEACH-03",
+        "PILOT-01",
+        "PILOT-02",
+        "PILOT-03",
+        "REL-02",
+        "REL-03",
+        "PERF-03"
+      ]
+    },
+    "phase": {
+      "enum": [
+        "WAJIB",
+        "SETELAH_PILOT"
+      ]
+    },
+    "template_only": {
+      "const": false
+    },
+    "test_only": {
+      "const": false
+    },
+    "action": {
+      "enum": [
+        "record",
+        "replace",
+        "revoke"
+      ]
+    },
+    "result": {
+      "enum": [
+        "PASS",
+        "FAIL",
+        "REVOKED"
+      ]
+    },
+    "previous": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "receipt_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "receipt_id",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "change_reason": {
+      "type": "string"
+    },
+    "test_event_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+    },
+    "build": {
+      "type": "object",
+      "properties": {
+        "app_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bank_version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "offline_release": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{16}$"
+        },
+        "dist_tree_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_tree_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "app_version",
+        "bank_version",
+        "offline_release",
+        "dist_tree_sha256",
+        "source_tree_sha256"
+      ],
+      "additionalProperties": false
+    },
+    "protocol_reference": {
+      "type": "string",
+      "minLength": 1
+    },
+    "started_at_utc": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,6})?Z$"
+    },
+    "finished_at_utc": {
+      "type": "string",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,6})?Z$"
+    },
+    "operator": {
+      "type": "object",
+      "properties": {
+        "actor_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "at_utc": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,6})?Z$"
+        }
+      },
+      "required": [
+        "actor_id",
+        "role",
+        "statement",
+        "at_utc"
+      ],
+      "additionalProperties": false
+    },
+    "reviewer": {
+      "type": "object",
+      "properties": {
+        "actor_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+        },
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "at_utc": {
+          "type": "string",
+          "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]{1,6})?Z$"
+        },
+        "decision": {
+          "enum": [
+            "accept",
+            "reject"
+          ]
+        }
+      },
+      "required": [
+        "actor_id",
+        "role",
+        "statement",
+        "at_utc",
+        "decision"
+      ],
+      "additionalProperties": false
+    },
+    "scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "case_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          },
+          "environment": {
+            "type": "object"
+          },
+          "checks": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "measurements": {
+            "type": "object"
+          },
+          "artifact_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+            }
+          },
+          "result": {
+            "enum": [
+              "PASS",
+              "FAIL"
+            ]
+          },
+          "required_artifact_kinds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+            }
+          }
+        },
+        "required": [
+          "case_id",
+          "environment",
+          "checks",
+          "measurements",
+          "artifact_ids",
+          "result"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "artifact_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]{0,127}$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "type": "string",
+            "minLength": 1
+          },
+          "media_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "artifact_id",
+          "path",
+          "kind",
+          "media_type",
+          "description",
+          "sha256"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "receipt_id",
+    "criterion",
+    "phase",
+    "template_only",
+    "test_only",
+    "action",
+    "result",
+    "previous",
+    "change_reason",
+    "test_event_id",
+    "build",
+    "protocol_reference",
+    "started_at_utc",
+    "finished_at_utc",
+    "operator",
+    "reviewer",
+    "scenarios",
+    "artifacts"
+  ],
+  "additionalProperties": false
+}

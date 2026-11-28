@@ -1,0 +1,4148 @@
+{
+  "suite": "visual-ux",
+  "utc": "2026-11-28T18:42:24.226Z",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+  "checks": [
+    {
+      "id": "labels/id/light/",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 37,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/start",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/start",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/start",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 27,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/curriculum",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/curriculum",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/curriculum",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 66,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 66,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 43,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 27,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/history",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/history",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/history",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 24,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/progress",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/progress",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/progress",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 33,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/profiles",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/profiles",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/profiles",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 33,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/settings",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/settings",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/settings",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 59,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/offline",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/offline",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/offline",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 26,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 42,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/demo/teacher",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/demo/teacher",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/demo/teacher",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 51,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 50,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/demo/assignments",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/demo/assignments",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/demo/assignments",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 31,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/light/demo/admin",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/light/demo/admin",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/light/demo/admin",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 59,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 37,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/start",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/start",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/start",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 27,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/curriculum",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/curriculum",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/curriculum",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 66,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 66,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 43,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 27,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/history",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/history",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/history",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 24,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/progress",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/progress",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/progress",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 33,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/profiles",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/profiles",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/profiles",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 33,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/settings",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/settings",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/settings",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 59,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/offline",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/offline",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/offline",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 26,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 42,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/demo/teacher",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/demo/teacher",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/demo/teacher",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 51,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 50,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/demo/assignments",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/demo/assignments",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/demo/assignments",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 31,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/id/dark/demo/admin",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/id/dark/demo/admin",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/id/dark/demo/admin",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 59,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 37,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/start",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/start",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/start",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 27,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/curriculum",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/curriculum",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/curriculum",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 66,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 66,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 43,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 27,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/history",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/history",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/history",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 24,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/progress",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/progress",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/progress",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 33,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/profiles",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/profiles",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/profiles",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 33,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/settings",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/settings",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/settings",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 59,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/offline",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/offline",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/offline",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 26,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 42,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/demo/teacher",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/demo/teacher",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/demo/teacher",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 51,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 50,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/demo/assignments",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/demo/assignments",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/demo/assignments",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 31,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/light/demo/admin",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/light/demo/admin",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/light/demo/admin",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 59,
+        "min": 5.74,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 37,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/start",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/start",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/start",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 27,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/curriculum",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/curriculum",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/curriculum",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 66,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/curriculum?grade=1",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 66,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 43,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/session/new?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 27,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/history",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/history",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/history",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 24,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/progress",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/progress",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/progress",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 33,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/profiles",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/profiles",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/profiles",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 33,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/settings",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/settings",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/settings",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 59,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/offline",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/offline",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/offline",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 26,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/reports?source=local_practice",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 42,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/demo/teacher",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/demo/teacher",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/demo/teacher",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 51,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/demo/student/demo-04",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 50,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/demo/assignments",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/demo/assignments",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/demo/assignments",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 31,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    },
+    {
+      "id": "labels/en/dark/demo/admin",
+      "status": "PASS",
+      "expected": "Exactly one h1; named controls; linked descriptions; skip link",
+      "actual": {
+        "headings": 1,
+        "unnamed": [],
+        "broken": [],
+        "duplicates": []
+      }
+    },
+    {
+      "id": "visibleCopy/en/dark/demo/admin",
+      "status": "PASS",
+      "expected": "No missing JavaScript values displayed as text",
+      "actual": []
+    },
+    {
+      "id": "textContrast/en/dark/demo/admin",
+      "status": "PASS",
+      "expected": "4.5:1 normal / 3:1 large on unambiguous rendered background",
+      "actual": {
+        "n": 59,
+        "min": 7.01,
+        "violations": [],
+        "excluded": 0
+      }
+    }
+  ],
+  "runtime": {
+    "release": "f630b3dc6aa6b5a5",
+    "bootstrap": "43f5123f5b3c5d7e7775b844ccf905819a309530f5df569ae9c35487bcb9d128",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "samples": [
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Petualangan"
+        ],
+        [
+          "H2",
+          "Penjumlahan · Pasangan bilangan sampai 5"
+        ],
+        [
+          "H2",
+          "Jejak terdekat"
+        ],
+        [
+          "H2",
+          "Lainnya"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 37,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 25
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "start",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Siapkan latihan"
+        ],
+        [
+          "H2",
+          "Penjumlahan — Pasangan bilangan sampai 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 33
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "curriculum",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Peta kurikulum"
+        ],
+        [
+          "H2",
+          "Pilih kelas materi"
+        ],
+        [
+          "H2",
+          "Kelas materi 1 · Level pembelajaran"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 5"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 10"
+        ],
+        [
+          "H3",
+          "Belasan tanpa melewati puluhan"
+        ],
+        [
+          "H3",
+          "Melewati batas sepuluh"
+        ],
+        [
+          "H3",
+          "Puluhan dan satuan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 33
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "curriculum?grade=1",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Peta kurikulum"
+        ],
+        [
+          "H2",
+          "Pilih kelas materi"
+        ],
+        [
+          "H2",
+          "Kelas materi 1 · Level pembelajaran"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 5"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 10"
+        ],
+        [
+          "H3",
+          "Belasan tanpa melewati puluhan"
+        ],
+        [
+          "H3",
+          "Melewati batas sepuluh"
+        ],
+        [
+          "H3",
+          "Puluhan dan satuan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 33
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "packs?grade=1&level=1&op=ADD",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Katalog paket"
+        ],
+        [
+          "H2",
+          "Penjumlahan — Pasangan bilangan sampai 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 43,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 33
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Siapkan latihan"
+        ],
+        [
+          "H2",
+          "Penjumlahan — Pasangan bilangan sampai 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 33
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "history",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Riwayat latihan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 24,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 38
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "progress",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Progres belajarmu"
+        ],
+        [
+          "H2",
+          "Langkah berikutnya · Penjumlahan"
+        ],
+        [
+          "H2",
+          "Kelas 1 · Level 1"
+        ],
+        [
+          "H3",
+          "Penjumlahan"
+        ],
+        [
+          "H3",
+          "Pengurangan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 47
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "profiles",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Profil dan data"
+        ],
+        [
+          "H2",
+          "Profil utama"
+        ],
+        [
+          "H2",
+          "Cadangan dan pemulihan"
+        ],
+        [
+          "H2",
+          "Hapus data profil"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 51
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "settings",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Pengaturan"
+        ],
+        [
+          "H2",
+          "Tampilan"
+        ],
+        [
+          "H2",
+          "Kontrol latihan"
+        ],
+        [
+          "H2",
+          "Data perangkat"
+        ],
+        [
+          "H2",
+          "Aturan evaluasi lokal"
+        ],
+        [
+          "H2",
+          "Bantuan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 51
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "offline",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Paket offline"
+        ],
+        [
+          "H2",
+          "Paket di perangkat ini"
+        ],
+        [
+          "H2",
+          "Yang tersedia tanpa internet"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 26,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 52
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "reports?source=local_practice",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Laporan"
+        ],
+        [
+          "H2",
+          "Pilihan laporan"
+        ],
+        [
+          "H2",
+          "Laporan pertemuan orang tua"
+        ],
+        [
+          "H3",
+          "Local"
+        ],
+        [
+          "H3",
+          "Yang sudah terlihat"
+        ],
+        [
+          "H3",
+          "Fokus pendampingan"
+        ],
+        [
+          "H3",
+          "Rencana latihan berikutnya"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 42,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 62
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "demo/teacher",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Monitoring kelas"
+        ],
+        [
+          "H2",
+          "Siswa dan tindak lanjut"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 51,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 62
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "demo/student/demo-04",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Demo 04"
+        ],
+        [
+          "H2",
+          "Materi dan langkah berikutnya"
+        ],
+        [
+          "H2",
+          "Sesi dan jawaban"
+        ],
+        [
+          "H2",
+          "Catatan guru"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 50,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 62
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "demo/assignments",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Penugasan"
+        ],
+        [
+          "H2",
+          "Buat tugas simulasi"
+        ],
+        [
+          "H2",
+          "Tugas pada perangkat ini"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 31,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 63
+    },
+    {
+      "lang": "id",
+      "theme": "light",
+      "page": "demo/admin",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Administrasi"
+        ],
+        [
+          "H2",
+          "Pengiriman sesi simulasi"
+        ],
+        [
+          "H2",
+          "Cakupan bank soal"
+        ],
+        [
+          "H2",
+          "Rekap kelas"
+        ],
+        [
+          "H2",
+          "Jejak tindakan simulasi"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 63
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Petualangan"
+        ],
+        [
+          "H2",
+          "Penjumlahan · Pasangan bilangan sampai 5"
+        ],
+        [
+          "H2",
+          "Jejak terdekat"
+        ],
+        [
+          "H2",
+          "Lainnya"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 37,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 63
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "start",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Siapkan latihan"
+        ],
+        [
+          "H2",
+          "Penjumlahan — Pasangan bilangan sampai 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 63
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "curriculum",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Peta kurikulum"
+        ],
+        [
+          "H2",
+          "Pilih kelas materi"
+        ],
+        [
+          "H2",
+          "Kelas materi 1 · Level pembelajaran"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 5"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 10"
+        ],
+        [
+          "H3",
+          "Belasan tanpa melewati puluhan"
+        ],
+        [
+          "H3",
+          "Melewati batas sepuluh"
+        ],
+        [
+          "H3",
+          "Puluhan dan satuan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 63
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "curriculum?grade=1",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Peta kurikulum"
+        ],
+        [
+          "H2",
+          "Pilih kelas materi"
+        ],
+        [
+          "H2",
+          "Kelas materi 1 · Level pembelajaran"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 5"
+        ],
+        [
+          "H3",
+          "Pasangan bilangan sampai 10"
+        ],
+        [
+          "H3",
+          "Belasan tanpa melewati puluhan"
+        ],
+        [
+          "H3",
+          "Melewati batas sepuluh"
+        ],
+        [
+          "H3",
+          "Puluhan dan satuan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 63
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "packs?grade=1&level=1&op=ADD",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Katalog paket"
+        ],
+        [
+          "H2",
+          "Penjumlahan — Pasangan bilangan sampai 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 43,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 63
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Siapkan latihan"
+        ],
+        [
+          "H2",
+          "Penjumlahan — Pasangan bilangan sampai 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 63
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "history",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Riwayat latihan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 24,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 63
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "progress",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Progres belajarmu"
+        ],
+        [
+          "H2",
+          "Langkah berikutnya · Penjumlahan"
+        ],
+        [
+          "H2",
+          "Kelas 1 · Level 1"
+        ],
+        [
+          "H3",
+          "Penjumlahan"
+        ],
+        [
+          "H3",
+          "Pengurangan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "profiles",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Profil dan data"
+        ],
+        [
+          "H2",
+          "Profil utama"
+        ],
+        [
+          "H2",
+          "Cadangan dan pemulihan"
+        ],
+        [
+          "H2",
+          "Hapus data profil"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "settings",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Pengaturan"
+        ],
+        [
+          "H2",
+          "Tampilan"
+        ],
+        [
+          "H2",
+          "Kontrol latihan"
+        ],
+        [
+          "H2",
+          "Data perangkat"
+        ],
+        [
+          "H2",
+          "Aturan evaluasi lokal"
+        ],
+        [
+          "H2",
+          "Bantuan"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "offline",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Paket offline"
+        ],
+        [
+          "H2",
+          "Paket di perangkat ini"
+        ],
+        [
+          "H2",
+          "Yang tersedia tanpa internet"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 26,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "reports?source=local_practice",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Laporan"
+        ],
+        [
+          "H2",
+          "Pilihan laporan"
+        ],
+        [
+          "H2",
+          "Laporan pertemuan orang tua"
+        ],
+        [
+          "H3",
+          "Local"
+        ],
+        [
+          "H3",
+          "Yang sudah terlihat"
+        ],
+        [
+          "H3",
+          "Fokus pendampingan"
+        ],
+        [
+          "H3",
+          "Rencana latihan berikutnya"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 42,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "demo/teacher",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Monitoring kelas"
+        ],
+        [
+          "H2",
+          "Siswa dan tindak lanjut"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 51,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "demo/student/demo-04",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Demo 04"
+        ],
+        [
+          "H2",
+          "Materi dan langkah berikutnya"
+        ],
+        [
+          "H2",
+          "Sesi dan jawaban"
+        ],
+        [
+          "H2",
+          "Catatan guru"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 50,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "demo/assignments",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Penugasan"
+        ],
+        [
+          "H2",
+          "Buat tugas simulasi"
+        ],
+        [
+          "H2",
+          "Tugas pada perangkat ini"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 31,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "id",
+      "theme": "dark",
+      "page": "demo/admin",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Administrasi"
+        ],
+        [
+          "H2",
+          "Pengiriman sesi simulasi"
+        ],
+        [
+          "H2",
+          "Cakupan bank soal"
+        ],
+        [
+          "H2",
+          "Rekap kelas"
+        ],
+        [
+          "H2",
+          "Jejak tindakan simulasi"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Adventure"
+        ],
+        [
+          "H2",
+          "Addition · Number bonds to 5"
+        ],
+        [
+          "H2",
+          "Nearby stops"
+        ],
+        [
+          "H2",
+          "More"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 37,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "start",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Set up your practice"
+        ],
+        [
+          "H2",
+          "Addition — Number bonds to 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "curriculum",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Curriculum map"
+        ],
+        [
+          "H2",
+          "Choose a material grade"
+        ],
+        [
+          "H2",
+          "Material grade 1 · Learning levels"
+        ],
+        [
+          "H3",
+          "Number bonds to 5"
+        ],
+        [
+          "H3",
+          "Number bonds to 10"
+        ],
+        [
+          "H3",
+          "Teens without crossing ten"
+        ],
+        [
+          "H3",
+          "Bridging ten"
+        ],
+        [
+          "H3",
+          "Tens and ones"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "curriculum?grade=1",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Curriculum map"
+        ],
+        [
+          "H2",
+          "Choose a material grade"
+        ],
+        [
+          "H2",
+          "Material grade 1 · Learning levels"
+        ],
+        [
+          "H3",
+          "Number bonds to 5"
+        ],
+        [
+          "H3",
+          "Number bonds to 10"
+        ],
+        [
+          "H3",
+          "Teens without crossing ten"
+        ],
+        [
+          "H3",
+          "Bridging ten"
+        ],
+        [
+          "H3",
+          "Tens and ones"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "packs?grade=1&level=1&op=ADD",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Pack catalogue"
+        ],
+        [
+          "H2",
+          "Addition — Number bonds to 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 43,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Set up your practice"
+        ],
+        [
+          "H2",
+          "Addition — Number bonds to 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "history",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Practice history"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 24,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 72
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "progress",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Your learning progress"
+        ],
+        [
+          "H2",
+          "Your next step · Addition"
+        ],
+        [
+          "H2",
+          "Grade 1 · Level 1"
+        ],
+        [
+          "H3",
+          "Addition"
+        ],
+        [
+          "H3",
+          "Subtraction"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "profiles",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Profiles and data"
+        ],
+        [
+          "H2",
+          "Main profile"
+        ],
+        [
+          "H2",
+          "Backup and restore"
+        ],
+        [
+          "H2",
+          "Delete profile data"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "settings",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Settings"
+        ],
+        [
+          "H2",
+          "Display"
+        ],
+        [
+          "H2",
+          "Practice controls"
+        ],
+        [
+          "H2",
+          "Device data"
+        ],
+        [
+          "H2",
+          "Local assessment policy"
+        ],
+        [
+          "H2",
+          "Help"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "offline",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Offline packs"
+        ],
+        [
+          "H2",
+          "Packs on this device"
+        ],
+        [
+          "H2",
+          "What works offline"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 26,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "reports?source=local_practice",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Reports"
+        ],
+        [
+          "H2",
+          "Report options"
+        ],
+        [
+          "H2",
+          "Laporan pertemuan orang tua"
+        ],
+        [
+          "H3",
+          "Local"
+        ],
+        [
+          "H3",
+          "Yang sudah terlihat"
+        ],
+        [
+          "H3",
+          "Fokus pendampingan"
+        ],
+        [
+          "H3",
+          "Rencana latihan berikutnya"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 42,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "demo/teacher",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Class monitoring"
+        ],
+        [
+          "H2",
+          "Learners and follow-up"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 51,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "demo/student/demo-04",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Demo 04"
+        ],
+        [
+          "H2",
+          "Learning focus and next step"
+        ],
+        [
+          "H2",
+          "Sessions and responses"
+        ],
+        [
+          "H2",
+          "Teacher notes"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 50,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "demo/assignments",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Assignments"
+        ],
+        [
+          "H2",
+          "Create a demo assignment"
+        ],
+        [
+          "H2",
+          "Assignments on this device"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 31,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "light",
+      "page": "demo/admin",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Administration"
+        ],
+        [
+          "H2",
+          "Demo session delivery"
+        ],
+        [
+          "H2",
+          "Question bank coverage"
+        ],
+        [
+          "H2",
+          "Class summaries"
+        ],
+        [
+          "H2",
+          "Demo action log"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 5.74,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Adventure"
+        ],
+        [
+          "H2",
+          "Addition · Number bonds to 5"
+        ],
+        [
+          "H2",
+          "Nearby stops"
+        ],
+        [
+          "H2",
+          "More"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 37,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "start",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Set up your practice"
+        ],
+        [
+          "H2",
+          "Addition — Number bonds to 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "curriculum",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Curriculum map"
+        ],
+        [
+          "H2",
+          "Choose a material grade"
+        ],
+        [
+          "H2",
+          "Material grade 1 · Learning levels"
+        ],
+        [
+          "H3",
+          "Number bonds to 5"
+        ],
+        [
+          "H3",
+          "Number bonds to 10"
+        ],
+        [
+          "H3",
+          "Teens without crossing ten"
+        ],
+        [
+          "H3",
+          "Bridging ten"
+        ],
+        [
+          "H3",
+          "Tens and ones"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "curriculum?grade=1",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Curriculum map"
+        ],
+        [
+          "H2",
+          "Choose a material grade"
+        ],
+        [
+          "H2",
+          "Material grade 1 · Learning levels"
+        ],
+        [
+          "H3",
+          "Number bonds to 5"
+        ],
+        [
+          "H3",
+          "Number bonds to 10"
+        ],
+        [
+          "H3",
+          "Teens without crossing ten"
+        ],
+        [
+          "H3",
+          "Bridging ten"
+        ],
+        [
+          "H3",
+          "Tens and ones"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 66,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "packs?grade=1&level=1&op=ADD",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Pack catalogue"
+        ],
+        [
+          "H2",
+          "Addition — Number bonds to 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 43,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "session/new?grade=1&level=1&op=ADD",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Set up your practice"
+        ],
+        [
+          "H2",
+          "Addition — Number bonds to 5"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 27,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "history",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Practice history"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 24,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 81
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "progress",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Your learning progress"
+        ],
+        [
+          "H2",
+          "Your next step · Addition"
+        ],
+        [
+          "H2",
+          "Grade 1 · Level 1"
+        ],
+        [
+          "H3",
+          "Addition"
+        ],
+        [
+          "H3",
+          "Subtraction"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 90
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "profiles",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Profiles and data"
+        ],
+        [
+          "H2",
+          "Main profile"
+        ],
+        [
+          "H2",
+          "Backup and restore"
+        ],
+        [
+          "H2",
+          "Delete profile data"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 33,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 90
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "settings",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Settings"
+        ],
+        [
+          "H2",
+          "Display"
+        ],
+        [
+          "H2",
+          "Practice controls"
+        ],
+        [
+          "H2",
+          "Device data"
+        ],
+        [
+          "H2",
+          "Local assessment policy"
+        ],
+        [
+          "H2",
+          "Help"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 90
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "offline",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Offline packs"
+        ],
+        [
+          "H2",
+          "Packs on this device"
+        ],
+        [
+          "H2",
+          "What works offline"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 26,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 90
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "reports?source=local_practice",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Reports"
+        ],
+        [
+          "H2",
+          "Report options"
+        ],
+        [
+          "H2",
+          "Laporan pertemuan orang tua"
+        ],
+        [
+          "H3",
+          "Local"
+        ],
+        [
+          "H3",
+          "Yang sudah terlihat"
+        ],
+        [
+          "H3",
+          "Fokus pendampingan"
+        ],
+        [
+          "H3",
+          "Rencana latihan berikutnya"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 42,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 90
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "demo/teacher",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Class monitoring"
+        ],
+        [
+          "H2",
+          "Learners and follow-up"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 51,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 90
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "demo/student/demo-04",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Demo 04"
+        ],
+        [
+          "H2",
+          "Learning focus and next step"
+        ],
+        [
+          "H2",
+          "Sessions and responses"
+        ],
+        [
+          "H2",
+          "Teacher notes"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 50,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 90
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "demo/assignments",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Assignments"
+        ],
+        [
+          "H2",
+          "Create a demo assignment"
+        ],
+        [
+          "H2",
+          "Assignments on this device"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 31,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 90
+    },
+    {
+      "lang": "en",
+      "theme": "dark",
+      "page": "demo/admin",
+      "unexpected": [],
+      "headings": [
+        [
+          "H1",
+          "Administration"
+        ],
+        [
+          "H2",
+          "Demo session delivery"
+        ],
+        [
+          "H2",
+          "Question bank coverage"
+        ],
+        [
+          "H2",
+          "Class summaries"
+        ],
+        [
+          "H2",
+          "Demo action log"
+        ]
+      ],
+      "unnamed": [],
+      "brokenRefs": [],
+      "duplicateIds": [],
+      "skip": true,
+      "contrast": {
+        "measured": 59,
+        "ambiguous_backgrounds": 0,
+        "min_ratio": 7.01,
+        "violations": []
+      },
+      "touchExceptions": [],
+      "resources": 90
+    }
+  ],
+  "runtime_after": {
+    "release": "f630b3dc6aa6b5a5",
+    "bootstrap": "43f5123f5b3c5d7e7775b844ccf905819a309530f5df569ae9c35487bcb9d128",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "finished_utc": "2026-11-28T18:42:37.723Z"
+}

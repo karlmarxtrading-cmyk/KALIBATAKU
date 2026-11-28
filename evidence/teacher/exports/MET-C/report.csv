@@ -1,0 +1,75 @@
+﻿"Summary","Siswa / Student","Sumber / Source","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"
+"Summary","Demo Éka, ""Arum""","SIMULASI / DEMONSTRATION DATA",110,59,51,0,0,0,53.63636363636363,53.63636363636363,100
+"Competencies","Kompetensi / Competency","Kelas / Grade","Level","Operasi / Operation","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"
+"Competencies","arithmetic.multiplication.g03.l02",3,2,"Perkalian / Multiplication",110,59,51,0,0,0,53.63636363636363,53.63636363636363,100
+"Operations","Operasi / Operation","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"
+"Operations","Penjumlahan / Addition",0,0,0,0,0,0,,,
+"Operations","Pengurangan / Subtraction",0,0,0,0,0,0,,,
+"Operations","Perkalian / Multiplication",110,59,51,0,0,0,53.63636363636363,53.63636363636363,100
+"Operations","Pembagian / Division",0,0,0,0,0,0,,,
+"Operations","Campuran / Mixed operations",0,0,0,0,0,0,,,
+"Sessions","ID","UTC","Paket / Package","Mode","Status","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"
+"Sessions","1ab519a1-bd33-4c0f-be29-39b1e9b0d82a","2026-11-05T01:00:00.000Z","TEST-MUL","Evaluasi / Assessment","Selesai / Completed",100,50,50,0,0,0,50,50,100
+"Sessions","48fe3454-38a0-4310-acd9-3301302dd46c","2026-11-05T01:00:00.000Z","TEST-MUL","Evaluasi / Assessment","Selesai / Completed",10,9,1,0,0,0,90,90,100
+"Dictionary","Ukuran / Measure","Definisi / Definition"
+"Dictionary","Skor paket / Form score","59 / 110"
+"Dictionary","Akurasi jawaban / Response accuracy","59 / 110"
+"Dictionary","Soal ditanggapi / Questions responded to","110 / 110"
+"Dictionary","Jawaban pertama benar / First response correct","59 / 110"
+"Dictionary","Penyebut nol / Zero denominator","Kosong = belum dievaluasi / Empty = not assessed"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-feb9c736-d432-4c53-9e47-2fd90baf7a7a"
+"Metadata","data_origin","demo"
+"Metadata","verification_status","unverified"
+"Metadata","locale","bilingual"
+"Metadata","period_start_utc","1969-12-31T17:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2099-12-31T17:00:00.000Z"
+"Metadata","display_timezone","Asia/Jakarta"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-25T12:05:00Z"
+"Metadata","assigned_count",110
+"Metadata","correct_count",59
+"Metadata","incorrect_count",51
+"Metadata","skipped_count",0
+"Metadata","blank_count",0
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",53.63636363636363
+"Metadata","valid_response_accuracy_percent",53.63636363636363
+"Metadata","responded_percent",100
+"Metadata","subject_id","demo-01"
+"Metadata","subject_alias","Demo Éka, ""Arum"""
+"Metadata","source","demo"
+"Metadata","classId",""
+"Metadata","studentId","demo-01"
+"Metadata","from",""
+"Metadata","to",""
+"Metadata","timezone","Asia/Jakarta"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions","1.0.0"
+"Metadata","change_pp",
+"Notes","Penulis / Author","UTC","Revisi / Revision","Catatan / Note","ID","Menggantikan / Supersedes","Status"
+"Math","Sumber / Source","ID","Ekspresi / Expression","Pembilang kunci / Key numerator","Penyebut kunci / Key denominator","Respons pertama / First response","Respons terakhir / Last response"
+"Math","demo","1ab519a1-bd33-4c0f-be29-39b1e9b0d82a","2 × 4","8","1","7","7"
+"Family","SIMULASI / DEMONSTRATION DATA"
+"Family","Demo Éka, ""Arum"""
+"Family","3A · Semua tanggal / All dates · Asia/Jakarta"
+"Family","Sesi selesai dalam periode ini:  / Completed sessions in this period: 2 · Berjalan:  / In progress: 0"
+"Family","Yang sudah terlihat / What went well"
+"Family","Perkalian / Multiplication · kelas / grade 3 · level 2 · Evaluasi / Assessment — 59 dari 110 soal yang dijawab benar pada upaya pertama tanpa bantuan. / 59 of 110 answered questions were correct on the first try without help."
+"Family","Fokus pendampingan / What to work on"
+"Family","Perkalian / Multiplication · kelas / grade 3 · level 2 · Evaluasi / Assessment — 51 dari 110 respons pertama perlu diperbaiki. / 51 of 110 first responses needed correction."
+"Family","Contoh dari sesi / Example from the session 5 Nov 2026, 08:00 · Evaluasi / Assessment"
+"Family","2 × 4"
+"Family","Jawaban pertama / First response · 7"
+"Family","Belum diuji melalui evaluasi pada periode ini / Not assessed in this period — Penjumlahan / Addition, Pengurangan / Subtraction, Pembagian / Division, Campuran / Mixed operations."
+"Family","Rencana latihan berikutnya / Next practice plan"
+"Family","Bahas satu contoh perkalian · kelas 3 · level 2 · Evaluasi bersama, lalu minta siswa mencoba satu soal sejenis sendiri (59 dari 110 respons pertama benar). / Discuss one example of multiplication · grade 3 · level 2 · Assessment together, then try one similar item independently (59 of 110 first responses correct)."
+"Family","Tanggal tinjauan / Review date · Belum ditetapkan bersama guru. / To be agreed with the teacher."
+"Contexts","Kelas / Grade","Level","Operasi / Operation","Mode","Respons pertama benar / First correct","Jumlah respons pertama / First responses","Dengan petunjuk / With hints","Soal / Assigned","Benar / Correct","Salah / Incorrect","Dilewati / Skipped","Kosong / Blank","Belum dilihat / Unseen","Skor (%) / Score (%)","Akurasi (%) / Accuracy (%)","Ditanggapi (%) / Responded (%)"
+"Contexts",3,2,"Perkalian / Multiplication","Evaluasi / Assessment",59,110,0,110,59,51,0,0,0,53.63636363636363,53.63636363636363,100

@@ -1,0 +1,866 @@
+{
+  "counts": {
+    "question_placements": 177640,
+    "rational_operands": 108371,
+    "decimal_operands": 65542,
+    "fraction_answer": 88869,
+    "depth_4_plus": 8864,
+    "negative_operands": 88113,
+    "exponent_like_text": 0
+  },
+  "ast_node_kinds": {
+    "binary": 246592,
+    "rational": 424232
+  },
+  "operations": {
+    "ADD": 65471,
+    "SUB": 51204,
+    "MUL": 76396,
+    "DIV": 53521
+  },
+  "max_ast_depth": 6,
+  "cases": [
+    {
+      "case": "integer_control",
+      "package_id": "MM-G01-L01-ADD-P001",
+      "grade": 1,
+      "level": 1,
+      "operation": "ADD",
+      "question_number": 1,
+      "question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+      "neutral_expression": "0 + 5",
+      "answer": {
+        "numerator": "5",
+        "denominator": "1"
+      },
+      "depth": 1,
+      "path": "dist/bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+      "hint": {
+        "id": "Apa yang berubah ketika kamu menambah atau mengurangi nol?",
+        "en": "What changes when you add or subtract zero?"
+      },
+      "explanation": {
+        "id": "Menambah atau mengurangi nol membuat bilangannya tetap sama.",
+        "en": "Adding or subtracting zero leaves the number unchanged."
+      },
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "0",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "5",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        }
+      },
+      "solution_steps": [
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "rational",
+            "numerator": "5",
+            "denominator": "1"
+          },
+          "text": {
+            "id": "Hasil akhirnya 5.",
+            "en": "The final value is 5."
+          }
+        }
+      ]
+    },
+    {
+      "case": "fraction_visual",
+      "package_id": "MM-G05-L03-ADD-P001",
+      "grade": 5,
+      "level": 3,
+      "operation": "ADD",
+      "question_number": 1,
+      "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+      "neutral_expression": "(11⁄12) + (10⁄12)",
+      "answer": {
+        "numerator": "7",
+        "denominator": "4"
+      },
+      "depth": 1,
+      "path": "dist/bank/v1.1/g05/l03/MM-G05-L03-ADD-P001.mjs",
+      "hint": {
+        "id": "Nyatakan kedua bilangan dalam satuan 1/12.",
+        "en": "Express both numbers in units of 1/12."
+      },
+      "explanation": {
+        "id": "Dengan penyebut 12, pembilangnya 11 dan 10. Hitung 11 + (10) = 21, lalu sederhanakan 21/12.",
+        "en": "With denominator 12, the numerators are 11 and 10. Compute 11 + (10) = 21, then simplify 21/12."
+      },
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "11",
+          "denominator": "12",
+          "display": {
+            "kind": "fraction",
+            "numerator": "11",
+            "denominator": "12"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "5",
+          "denominator": "6",
+          "display": {
+            "kind": "fraction",
+            "numerator": "10",
+            "denominator": "12"
+          }
+        }
+      },
+      "solution_steps": [
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "DIV",
+            "left": {
+              "kind": "binary",
+              "operation": "ADD",
+              "left": {
+                "kind": "rational",
+                "numerator": "11",
+                "denominator": "1"
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "10",
+                "denominator": "1"
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "12",
+              "denominator": "1"
+            }
+          },
+          "text": {
+            "id": "Dengan penyebut 12, pembilangnya 11 dan 10. Hitung 11 + (10) = 21, lalu sederhanakan 21/12.",
+            "en": "With denominator 12, the numerators are 11 and 10. Compute 11 + (10) = 21, then simplify 21/12."
+          }
+        },
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "rational",
+            "numerator": "7",
+            "denominator": "4"
+          },
+          "text": {
+            "id": "Hasil akhirnya 7⁄4.",
+            "en": "The final value is 7⁄4."
+          }
+        }
+      ]
+    },
+    {
+      "case": "decimals",
+      "package_id": "MM-G05-L01-ADD-P001",
+      "grade": 5,
+      "level": 1,
+      "operation": "ADD",
+      "question_number": 1,
+      "question_id": "arithmetic.addition.g05.l01.56cd032a0d807f76a1fb6e4b57b3befa1d49157d111a73685192ef315130165c",
+      "neutral_expression": "20.0 + 35.3",
+      "answer": {
+        "numerator": "553",
+        "denominator": "10"
+      },
+      "depth": 1,
+      "path": "dist/bank/v1.1/g05/l01/MM-G05-L01-ADD-P001.mjs",
+      "hint": {
+        "id": "Pisahkan 35,3 menjadi 30 dan 5,3.",
+        "en": "Split 35.3 into 30 and 5.3."
+      },
+      "explanation": {
+        "id": "Kerjakan 20 + (30) terlebih dahulu. Gunakan 50 untuk menyelesaikan bagian sisanya.",
+        "en": "Work out 20 + (30) first. Use 50 to finish the remaining part."
+      },
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "20",
+          "denominator": "1",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 1
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "353",
+          "denominator": "10",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 1
+          }
+        }
+      },
+      "solution_steps": [
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "ADD",
+            "left": {
+              "kind": "rational",
+              "numerator": "50",
+              "denominator": "1"
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "53",
+              "denominator": "10"
+            }
+          },
+          "text": {
+            "id": "Kerjakan 20 + (30) terlebih dahulu. Gunakan 50 untuk menyelesaikan bagian sisanya.",
+            "en": "Work out 20 + (30) first. Use 50 to finish the remaining part."
+          }
+        },
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "rational",
+            "numerator": "553",
+            "denominator": "10"
+          },
+          "text": {
+            "id": "Hasil akhirnya 55,3.",
+            "en": "The final value is 55.3."
+          }
+        }
+      ]
+    },
+    {
+      "case": "negative",
+      "package_id": "MM-G07-L01-ADD-P001",
+      "grade": 7,
+      "level": 1,
+      "operation": "ADD",
+      "question_number": 1,
+      "question_id": "arithmetic.addition.g07.l01.af20644de281eaa91bd1d1f61ea48dbe6270ce8d44e6fdf586335d4d72ac2d2c",
+      "neutral_expression": "(−37) + 22",
+      "answer": {
+        "numerator": "-15",
+        "denominator": "1"
+      },
+      "depth": 1,
+      "path": "dist/bank/v1.1/g07/l01/MM-G07-L01-ADD-P001.mjs",
+      "hint": {
+        "id": "Pisahkan 22 menjadi 20 dan 2.",
+        "en": "Split 22 into 20 and 2."
+      },
+      "explanation": {
+        "id": "Kerjakan −37 + (20) terlebih dahulu. Gunakan −17 untuk menyelesaikan bagian sisanya.",
+        "en": "Work out −37 + (20) first. Use −17 to finish the remaining part."
+      },
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "-37",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "22",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        }
+      },
+      "solution_steps": [
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "ADD",
+            "left": {
+              "kind": "rational",
+              "numerator": "-17",
+              "denominator": "1"
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "2",
+              "denominator": "1"
+            }
+          },
+          "text": {
+            "id": "Kerjakan −37 + (20) terlebih dahulu. Gunakan −17 untuk menyelesaikan bagian sisanya.",
+            "en": "Work out −37 + (20) first. Use −17 to finish the remaining part."
+          }
+        },
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "rational",
+            "numerator": "-15",
+            "denominator": "1"
+          },
+          "text": {
+            "id": "Hasil akhirnya −15.",
+            "en": "The final value is −15."
+          }
+        }
+      ]
+    },
+    {
+      "case": "mixed_visual",
+      "package_id": "MM-G05-L05-ADD-P001",
+      "grade": 5,
+      "level": 5,
+      "operation": "ADD",
+      "question_number": 1,
+      "question_id": "arithmetic.addition.g05.l05.49ad34599e7e0e9cda40b62d08b1dcb433461bf2c4e7adf9488d66c1139e9e43",
+      "neutral_expression": "(72⁄5) + 91.762",
+      "answer": {
+        "numerator": "53081",
+        "denominator": "500"
+      },
+      "depth": 1,
+      "path": "dist/bank/v1.1/g05/l05/MM-G05-L05-ADD-P001.mjs",
+      "hint": {
+        "id": "Nyatakan kedua bilangan dalam satuan 1/500.",
+        "en": "Express both numbers in units of 1/500."
+      },
+      "explanation": {
+        "id": "Dengan penyebut 500, pembilangnya 7200 dan 45881. Hitung 7200 + (45881) = 53081, lalu sederhanakan 53081/500.",
+        "en": "With denominator 500, the numerators are 7200 and 45881. Compute 7200 + (45881) = 53081, then simplify 53081/500."
+      },
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "72",
+          "denominator": "5",
+          "display": {
+            "kind": "fraction",
+            "numerator": "72",
+            "denominator": "5"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "45881",
+          "denominator": "500",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 3
+          }
+        }
+      },
+      "solution_steps": [
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "DIV",
+            "left": {
+              "kind": "binary",
+              "operation": "ADD",
+              "left": {
+                "kind": "rational",
+                "numerator": "7200",
+                "denominator": "1"
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "45881",
+                "denominator": "1"
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "500",
+              "denominator": "1"
+            }
+          },
+          "text": {
+            "id": "Dengan penyebut 500, pembilangnya 7200 dan 45881. Hitung 7200 + (45881) = 53081, lalu sederhanakan 53081/500.",
+            "en": "With denominator 500, the numerators are 7200 and 45881. Compute 7200 + (45881) = 53081, then simplify 53081/500."
+          }
+        },
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "rational",
+            "numerator": "53081",
+            "denominator": "500"
+          },
+          "text": {
+            "id": "Hasil akhirnya 106,162.",
+            "en": "The final value is 106.162."
+          }
+        }
+      ]
+    },
+    {
+      "case": "longest",
+      "package_id": "MM-G12-L03-MIX-P001",
+      "grade": 12,
+      "level": 3,
+      "operation": "MIX",
+      "question_number": 14,
+      "question_id": "arithmetic.mixed.g12.l03.e8740ede180d3d53b2fd9870d76b694e540bc49036c565b7e9c9744faece9906",
+      "neutral_expression": "(((((−39⁄20) × (−28⁄15)) + (−1⁄3)) × 11) ÷ 2) − (1⁄2)",
+      "answer": {
+        "numerator": "2653",
+        "denominator": "150"
+      },
+      "depth": 5,
+      "path": "dist/bank/v1.1/g12/l03/MM-G12-L03-MIX-P001.mjs",
+      "hint": {
+        "id": "Mulai dari (−39⁄20) × (−28⁄15). Tulis −39⁄20 dan −28⁄15 sebagai pecahan. Cari faktor yang dapat dicoret silang.",
+        "en": "Start with (−39⁄20) × (−28⁄15). Write −39⁄20 and −28⁄15 as fractions. Look for a common factor across the product."
+      },
+      "explanation": {
+        "id": "Mulai dengan (-39/20) × (-28/15). Setelah mencoret faktor persekutuan, hitung (-13 × -7)/(5 × 5).",
+        "en": "Start with (-39/20) × (-28/15). After cross-cancelling common factors, compute (-13 × -7)/(5 × 5)."
+      },
+      "expression_ast": {
+        "kind": "binary",
+        "operation": "SUB",
+        "left": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "binary",
+            "operation": "MUL",
+            "left": {
+              "kind": "binary",
+              "operation": "ADD",
+              "left": {
+                "kind": "binary",
+                "operation": "MUL",
+                "left": {
+                  "kind": "rational",
+                  "numerator": "-39",
+                  "denominator": "20",
+                  "display": {
+                    "kind": "fraction",
+                    "numerator": "-39",
+                    "denominator": "20"
+                  }
+                },
+                "right": {
+                  "kind": "rational",
+                  "numerator": "-28",
+                  "denominator": "15",
+                  "display": {
+                    "kind": "fraction",
+                    "numerator": "-28",
+                    "denominator": "15"
+                  }
+                }
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "-1",
+                "denominator": "3",
+                "display": {
+                  "kind": "fraction",
+                  "numerator": "-1",
+                  "denominator": "3"
+                }
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "11",
+              "denominator": "1",
+              "display": {
+                "kind": "integer"
+              }
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1",
+            "display": {
+              "kind": "integer"
+            }
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "1",
+          "denominator": "2",
+          "display": {
+            "kind": "fraction",
+            "numerator": "1",
+            "denominator": "2"
+          }
+        }
+      },
+      "solution_steps": [
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "SUB",
+            "left": {
+              "kind": "binary",
+              "operation": "DIV",
+              "left": {
+                "kind": "binary",
+                "operation": "MUL",
+                "left": {
+                  "kind": "binary",
+                  "operation": "ADD",
+                  "left": {
+                    "kind": "rational",
+                    "numerator": "91",
+                    "denominator": "25"
+                  },
+                  "right": {
+                    "kind": "rational",
+                    "numerator": "-1",
+                    "denominator": "3"
+                  }
+                },
+                "right": {
+                  "kind": "rational",
+                  "numerator": "11",
+                  "denominator": "1"
+                }
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "2",
+                "denominator": "1"
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "2"
+            }
+          },
+          "text": {
+            "id": "(−39⁄20) × (−28⁄15) = 91⁄25.",
+            "en": "(−39⁄20) × (−28⁄15) = 91⁄25."
+          }
+        },
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "SUB",
+            "left": {
+              "kind": "binary",
+              "operation": "DIV",
+              "left": {
+                "kind": "binary",
+                "operation": "MUL",
+                "left": {
+                  "kind": "rational",
+                  "numerator": "248",
+                  "denominator": "75"
+                },
+                "right": {
+                  "kind": "rational",
+                  "numerator": "11",
+                  "denominator": "1"
+                }
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "2",
+                "denominator": "1"
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "2"
+            }
+          },
+          "text": {
+            "id": "(91⁄25) + (−1⁄3) = 248⁄75.",
+            "en": "(91⁄25) + (−1⁄3) = 248⁄75."
+          }
+        },
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "SUB",
+            "left": {
+              "kind": "binary",
+              "operation": "DIV",
+              "left": {
+                "kind": "rational",
+                "numerator": "2728",
+                "denominator": "75"
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "2",
+                "denominator": "1"
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "2"
+            }
+          },
+          "text": {
+            "id": "(248⁄75) × 11 = 2728⁄75.",
+            "en": "(248⁄75) × 11 = 2728⁄75."
+          }
+        },
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "binary",
+            "operation": "SUB",
+            "left": {
+              "kind": "rational",
+              "numerator": "1364",
+              "denominator": "75"
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "2"
+            }
+          },
+          "text": {
+            "id": "(2728⁄75) ÷ 2 = 1364⁄75.",
+            "en": "(2728⁄75) ÷ 2 = 1364⁄75."
+          }
+        },
+        {
+          "kind": "equivalent_expression",
+          "expression_ast": {
+            "kind": "rational",
+            "numerator": "2653",
+            "denominator": "150"
+          },
+          "text": {
+            "id": "(1364⁄75) − (1⁄2) = 2653⁄150.",
+            "en": "(1364⁄75) − (1⁄2) = 2653⁄150."
+          }
+        }
+      ]
+    }
+  ],
+  "extra_nested_case": {
+    "case": "nested",
+    "package_id": "MM-G06-L05-MIX-P006",
+    "grade": 6,
+    "level": 5,
+    "operation": "MIX",
+    "question_number": 1,
+    "question_id": "arithmetic.mixed.g06.l05.1a14c56daeffe56ff4197b77d2a3f3c07e7c834866f3aa47e5c1c8261b47c084",
+    "neutral_expression": "(((40.2 + (2⁄8)) × 5) − 3.6) ÷ 2",
+    "answer": {
+      "numerator": "3973",
+      "denominator": "40"
+    },
+    "depth": 4,
+    "path": "dist/bank/v1.1/g06/l05/MM-G06-L05-MIX-P006.mjs",
+    "hint": {
+      "id": "Mulai dari 40,2 + (2⁄8). Nyatakan kedua bilangan dalam satuan 1/40.",
+      "en": "Start with 40.2 + (2⁄8). Express both numbers in units of 1/40."
+    },
+    "explanation": {
+      "id": "Dengan penyebut 40, pembilangnya 1608 dan 10. Hitung 1608 + (10) = 1618, lalu sederhanakan 1618/40.",
+      "en": "With denominator 40, the numerators are 1608 and 10. Compute 1608 + (10) = 1618, then simplify 1618/40."
+    },
+    "expression_ast": {
+      "kind": "binary",
+      "operation": "DIV",
+      "left": {
+        "kind": "binary",
+        "operation": "SUB",
+        "left": {
+          "kind": "binary",
+          "operation": "MUL",
+          "left": {
+            "kind": "binary",
+            "operation": "ADD",
+            "left": {
+              "kind": "rational",
+              "numerator": "201",
+              "denominator": "5",
+              "display": {
+                "kind": "decimal",
+                "decimal_places": 1
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "4",
+              "display": {
+                "kind": "fraction",
+                "numerator": "2",
+                "denominator": "8"
+              }
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "5",
+            "denominator": "1",
+            "display": {
+              "kind": "integer"
+            }
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "18",
+          "denominator": "5",
+          "display": {
+            "kind": "decimal",
+            "decimal_places": 1
+          }
+        }
+      },
+      "right": {
+        "kind": "rational",
+        "numerator": "2",
+        "denominator": "1",
+        "display": {
+          "kind": "integer"
+        }
+      }
+    },
+    "solution_steps": [
+      {
+        "kind": "equivalent_expression",
+        "expression_ast": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "binary",
+            "operation": "SUB",
+            "left": {
+              "kind": "binary",
+              "operation": "MUL",
+              "left": {
+                "kind": "rational",
+                "numerator": "809",
+                "denominator": "20"
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "5",
+                "denominator": "1"
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "18",
+              "denominator": "5"
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1"
+          }
+        },
+        "text": {
+          "id": "40,2 + (2⁄8) = 40,45.",
+          "en": "40.2 + (2⁄8) = 40.45."
+        }
+      },
+      {
+        "kind": "equivalent_expression",
+        "expression_ast": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "binary",
+            "operation": "SUB",
+            "left": {
+              "kind": "rational",
+              "numerator": "809",
+              "denominator": "4"
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "18",
+              "denominator": "5"
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1"
+          }
+        },
+        "text": {
+          "id": "(809⁄20) × 5 = 202,25.",
+          "en": "(809⁄20) × 5 = 202.25."
+        }
+      },
+      {
+        "kind": "equivalent_expression",
+        "expression_ast": {
+          "kind": "binary",
+          "operation": "DIV",
+          "left": {
+            "kind": "rational",
+            "numerator": "3973",
+            "denominator": "20"
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "2",
+            "denominator": "1"
+          }
+        },
+        "text": {
+          "id": "(809⁄4) − 3,6 = 198,65.",
+          "en": "(809⁄4) − 3.6 = 198.65."
+        }
+      },
+      {
+        "kind": "equivalent_expression",
+        "expression_ast": {
+          "kind": "rational",
+          "numerator": "3973",
+          "denominator": "40"
+        },
+        "text": {
+          "id": "(3973⁄20) ÷ 2 = 99,325.",
+          "en": "(3973⁄20) ÷ 2 = 99.325."
+        }
+      }
+    ]
+  },
+  "scope_note": "All 177640 question placements inspected as inert JSON; fractional rational denominator counts include decimal-display values. Cases select visible fraction slash separately. No exponent AST operator or exponent-like neutral text found."
+}

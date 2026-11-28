@@ -1,0 +1,17 @@
+﻿namespace_id,judul_asal,status_klaim_paket,status_audit_ini,catatan
+TEMUAN:PG-01,Urutan paket Pengenalan sudah diacak sejak build,CLOSED_VERIFIED,PERBAIKAN_ADA_PERLU_REVIEW_CAKUPAN,Sidecar dan selector baru menyusun role-band; definisi random bucket dan fallback seluruh bank perlu review (OBS-01).
+TEMUAN:PG-02,Jalur default mengulang 10 soal pertama dari paket pertama,CLOSED_VERIFIED,DIDUKUNG_PADA_KASUS_DIUJI,Exposure/selected refs sudah dipakai; ulang prefix lama diganti seleksi perluasan cakupan.
+TEMUAN:PG-03,Adaptif belum mengantar ke kompetensi atau tahap penerus,CLOSED_VERIFIED,DIBUKA_KEMBALI,"Resolver ada, tetapi jalur default buntu pada G12L1MUL (AUD-01); semantik readiness laporan juga berbeda (AUD-04)."
+TEMUAN:PG-04,Fitur kesulitan belum memodelkan strategi mental math,CLOSED_VERIFIED,IMPLEMENTASI_HEURISTIK_ADA,Metadata strategi dan beberapa fitur beban tersedia; bukan kalibrasi empiris atau review pengajar.
+TEMUAN:UX-01,Mengatur tingkat masih melalui struktur katalog,CLOSED_VERIFIED,PERBAIKAN_DIDUKUNG,"Beranda, peta, CTA dan jalur misi ada; kepraktisan siswa masih memerlukan pilot."
+TEMUAN:UX-02,Practice berakhir dengan review/kirim ala evaluasi,CLOSED_VERIFIED,PERBAIKAN_DIDUKUNG,Practice memiliki finalisasi ringkas; tes komponen dan bukti browser bawaan mendukung kasus yang diuji.
+TEMUAN:UX-03,Feedback dan kontrol sesi membentuk halaman panjang,CLOSED_VERIFIED,PERBAIKAN_DIDUKUNG_BATAS_PERANGKAT,"Jawaban, kunci dan feedback lebih terfokus; keyboard ponsel fisik belum dibuktikan (AUD-07)."
+TEMUAN:UX-04,Shell game masih memuat pintu guru/laporan dan kontrol administratif,CLOSED_VERIFIED,PERBAIKAN_DIDUKUNG,Shell siswa difokuskan; pintu guru dan ekspor dipisahkan dalam navigasi.
+TEMUAN:UX-05,Orientasi belum tahu tingkat saya selalu mulai G1L1ADD,CLOSED_VERIFIED,DIBUKA_KEMBALI_SEBAGIAN,Pemilih awal bekerja pada profil kosong; koreksi setelah ada riwayat gagal (AUD-03).
+TEMUAN:UX-06,Status aktivitas belum menjadi posisi perjalanan,CLOSED_VERIFIED,DIBUKA_KEMBALI_SEBAGIAN,Status perjalanan ada; readiness peta vs laporan berbeda pada riwayat valid (AUD-04).
+TEMUAN:TEK-01,Cadangan 150.000 record dapat diekspor namun readArchive gagal,CLOSED_VERIFIED,TERKONFIRMASI_KASUS_LAMA,ZIP 150.000 records terbaca; append dan chunk berhasil. AUD-06 adalah batas JSON legacy/recovery terpisah.
+TEMUAN:TEK-02,Batas alokasi entri STORED diperiksa terlambat,CLOSED_VERIFIED,TERKONFIRMASI_KASUS_LAMA,Ukuran STORED invalid ditolak sebelum body dibaca pada lima probe.
+TEMUAN:REL-01,Penerimaan lintas browser/perangkat/teknologi bantu masih terbuka,OPEN_EXTERNAL,TETAP_TERBUKA,"Browser lain, perangkat dan teknologi bantu belum lengkap."
+TEMUAN:REL-02,Pilot UX dan penelaahan pedagogis belum dilakukan,OPEN_EXTERNAL,TETAP_TERBUKA,Pilot siswa/guru dan review pedagogis belum dijalankan.
+TEMUAN:REL-03,Domain akhir dan rollback belum diverifikasi,OPEN_EXTERNAL,TETAP_TERBUKA,Domain final dan update/rollback nyata belum dibuktikan.
+TEMUAN:DOC-01,Referensi roster lama tidak cocok dan roster bukan review bank sekarang,PARTIAL_ROSTER_READY_REVIEW_NOT_PERFORMED,PARSIAL,Roster 394 template ada dan penelaah kosong; persiapan review belum berarti review selesai.

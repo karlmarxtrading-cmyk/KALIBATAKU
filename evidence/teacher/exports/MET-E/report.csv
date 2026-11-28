@@ -1,0 +1,75 @@
+﻿"Summary","Student","Source","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Summary","Demo Éka, ""Arum""","SIMULASI / DEMONSTRATION DATA",100,72,28,0,0,0,72,72,100
+"Competencies","Competency","Grade","Level","Operation","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Competencies","arithmetic.multiplication.g03.l02",3,2,"Multiplication",100,72,28,0,0,0,72,72,100
+"Operations","Operation","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Operations","Addition",0,0,0,0,0,0,,,
+"Operations","Subtraction",0,0,0,0,0,0,,,
+"Operations","Multiplication",100,72,28,0,0,0,72,72,100
+"Operations","Division",0,0,0,0,0,0,,,
+"Operations","Mixed operations",0,0,0,0,0,0,,,
+"Sessions","ID","UTC","Package","Mode","Status","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Sessions","9b16161b-5228-48b7-b171-5e9fcdc810c2","2026-11-07T01:00:00.000Z","TEST-MUL","Assessment","Completed",50,43,7,0,0,0,86,86,100
+"Sessions","c1bae944-4741-4947-bfd9-be2d76eb5b6c","2026-11-05T01:00:00.000Z","TEST-MUL","Assessment","Completed",50,29,21,0,0,0,58,58,100
+"Dictionary","Measure","Definition"
+"Dictionary","Form score","72 / 100"
+"Dictionary","Response accuracy","72 / 100"
+"Dictionary","Questions responded to","100 / 100"
+"Dictionary","First response correct","72 / 100"
+"Dictionary","Zero denominator","Empty = not assessed"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-353206b9-b06c-4bc3-8396-80b99852ce2e"
+"Metadata","data_origin","demo"
+"Metadata","verification_status","unverified"
+"Metadata","locale","en"
+"Metadata","period_start_utc","1969-12-31T17:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2099-12-31T17:00:00.000Z"
+"Metadata","display_timezone","Asia/Jakarta"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-25T12:05:00Z"
+"Metadata","assigned_count",100
+"Metadata","correct_count",72
+"Metadata","incorrect_count",28
+"Metadata","skipped_count",0
+"Metadata","blank_count",0
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",72
+"Metadata","valid_response_accuracy_percent",72
+"Metadata","responded_percent",100
+"Metadata","subject_id","demo-01"
+"Metadata","subject_alias","Demo Éka, ""Arum"""
+"Metadata","source","demo"
+"Metadata","classId",""
+"Metadata","studentId","demo-01"
+"Metadata","from",""
+"Metadata","to",""
+"Metadata","timezone","Asia/Jakarta"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions","1.0.0"
+"Metadata","change_pp",28
+"Notes","Author","UTC","Revision","Note","ID","Supersedes","Status"
+"Math","Source","ID","Expression","Key numerator","Key denominator","First response","Last response"
+"Math","demo","9b16161b-5228-48b7-b171-5e9fcdc810c2","2 × 4","8","1","7","7"
+"Family","SIMULASI / DEMONSTRATION DATA"
+"Family","Demo Éka, ""Arum"""
+"Family","3A · All dates · Asia/Jakarta"
+"Family","Completed sessions in this period: 2 · In progress: 0"
+"Family","What went well"
+"Family","Multiplication · grade 3 · level 2 · Assessment — 72 of 100 answered questions were correct on the first try without help."
+"Family","What to work on"
+"Family","Multiplication · grade 3 · level 2 · Assessment — 28 of 100 first responses needed correction."
+"Family","Example from the session 7 Nov 2026, 08:00 · Assessment"
+"Family","2 × 4"
+"Family","First response · 7"
+"Family","Not assessed in this period — Addition, Subtraction, Division, Mixed operations."
+"Family","Next practice plan"
+"Family","Discuss one example of multiplication · grade 3 · level 2 · Assessment together, then try one similar item independently (72 of 100 first responses correct)."
+"Family","Review date · To be agreed with the teacher."
+"Contexts","Grade","Level","Operation","Mode","First correct","First responses","With hints","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Contexts",3,2,"Multiplication","Assessment",72,100,0,100,72,28,0,0,0,72,72,100

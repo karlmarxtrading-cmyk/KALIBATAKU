@@ -1,0 +1,127 @@
+{
+  "src": {
+    "added": [
+      "src/data/backup-json-size.js",
+      "src/data/journey-bank-index.js",
+      "src/data/journey-snapshot.js",
+      "src/journey/offline.mjs",
+      "src/journey/versions.mjs"
+    ],
+    "changed": [
+      "src/app.mjs",
+      "src/assets/base.css",
+      "src/core/package-data.mjs",
+      "src/data/backup-reader.worker.js",
+      "src/data/backup.js",
+      "src/data/db.js",
+      "src/data/offline.js",
+      "src/data/panel-offline.js",
+      "src/data/panel-profile.js",
+      "src/data/panels.js",
+      "src/data/snapshot-check.js",
+      "src/data/store.js",
+      "src/journey/journey.mjs",
+      "src/journey/model.mjs",
+      "src/journey/report.mjs",
+      "src/journey/ui.mjs",
+      "src/journey/v1/route.json",
+      "src/player/start.mjs",
+      "src/sw.js",
+      "src/teacher/document.js",
+      "src/teacher/report.js"
+    ],
+    "removed": []
+  },
+  "tools": {
+    "added": [
+      "tools/build-restore-index.py",
+      "tools/release_registers_v15.py"
+    ],
+    "changed": [
+      "tools/bank-preservation.py",
+      "tools/build-journey.py",
+      "tools/build-roster.py",
+      "tools/package_check.py",
+      "tools/project.py",
+      "tools/qa_gate.py",
+      "tools/release_pack.py"
+    ],
+    "removed": []
+  },
+  "tests": {
+    "added": [
+      "tests/data/journey-restore-browser.py",
+      "tests/data/journey-restore.mjs",
+      "tests/journey/fixtures/report-audit-04-v14.json",
+      "tests/journey/inspect-report-readiness.py",
+      "tests/journey/map_native_zoom.py",
+      "tests/journey/offline_capability.py",
+      "tests/journey/offline_origin.py",
+      "tests/journey/progression-bounds.mjs",
+      "tests/journey/progression-launch.mjs",
+      "tests/journey/report-readiness.mjs",
+      "tests/journey/start-intent.test.mjs",
+      "tests/journey/start_intent_browser.py",
+      "tests/journey/verify-final-occurrences.py",
+      "tests/qa/criteria-1.5.json",
+      "tests/qa/register-policy.py",
+      "tests/v15/backup-capacity-baseline.mjs",
+      "tests/v15/backup-capacity-browser.py",
+      "tests/v15/backup-capacity-large-zip.mjs",
+      "tests/v15/backup-capacity.mjs",
+      "tests/v15/update-rollback-local.py"
+    ],
+    "changed": [
+      "tests/data/ux-contract.mjs",
+      "tests/journey/browser_flow.py",
+      "tests/journey/journey.test.mjs",
+      "tests/journey/reopen_exports.py",
+      "tests/qa/suites.json",
+      "tests/v12/print-contrast.py",
+      "tests/v13/browser.py"
+    ],
+    "removed": []
+  },
+  "docs": {
+    "added": [
+      "docs/PROTOKOL_EKSTERNAL_1.5.md",
+      "docs/QA_1.5.md",
+      "docs/contracts/JOURNEY_1.5.md",
+      "docs/contracts/RESTORE_JOURNEY_1.5.md",
+      "docs/contracts/release-status-1.5.schema.json"
+    ],
+    "changed": [
+      "docs/DEPLOY.md",
+      "docs/PANDUAN_CADANGAN_OFFLINE.md",
+      "docs/PANDUAN_GURU.md",
+      "docs/PANDUAN_SISWA.md",
+      "docs/QA.md"
+    ],
+    "removed": []
+  },
+  "factory": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "spec": {
+    "added": [],
+    "changed": [],
+    "removed": []
+  },
+  "project_files": {
+    "added": [
+      "00_MULAI_DI_SINI.txt",
+      "CHANGELOG_1.5.0.md"
+    ],
+    "changed": [
+      "DECISIONS.md",
+      "KNOWN_LIMITATIONS.md",
+      "MULAI_DI_SINI.txt",
+      "package-lock.json",
+      "package.json",
+      "requirements-qa.txt"
+    ],
+    "removed": []
+  }
+}

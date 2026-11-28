@@ -1,0 +1,371 @@
+{
+  "suite": "shell-ux",
+  "utc": "2026-11-28T15:49:58.857Z",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+  "checks": [
+    {
+      "id": "AC-010",
+      "status": "PASS",
+      "expected": "One primary action, visible active synthetic alias, no score for new profile",
+      "actual": {
+        "alias": "UX-a944b001",
+        "rendered": "KALIBATAKU\nLatihan berhitung mental\nPetualangan\nPeta\nProgres\nRiwayat\nProfil aktif\nUX-a944b001\nID\nMenu",
+        "cta": [
+          "Mulai dari dasar"
+        ],
+        "href": [
+          "#/mission?node=arithmetic.addition.g01.l01&kind=intro"
+        ],
+        "links": [
+          [
+            "Langsung ke isi",
+            "#main"
+          ],
+          [
+            "Kembali ke ruang latihan",
+            "#/"
+          ],
+          [
+            "Petualangan",
+            "#/"
+          ],
+          [
+            "Peta",
+            "#/map"
+          ],
+          [
+            "Progres",
+            "#/progress"
+          ],
+          [
+            "Riwayat",
+            "#/history"
+          ],
+          [
+            "Profil aktif · UX-a944b001 · Profil dan data",
+            "#/profiles"
+          ],
+          [
+            "Mulai dari dasar",
+            "#/mission?node=arithmetic.addition.g01.l01&kind=intro"
+          ],
+          [
+            "Pilih titik mulai",
+            "#/start-point"
+          ],
+          [
+            "Buka peta",
+            "#/map"
+          ],
+          [
+            "Riwayat latihan",
+            "#/history"
+          ],
+          [
+            "Latihan bebas · semua paket",
+            "#/curriculum"
+          ],
+          [
+            "Ubah titik mulai",
+            "#/start-point"
+          ],
+          [
+            "Ruang guru · simulasi",
+            "#/demo/teacher"
+          ],
+          [
+            "Laporan",
+            "#/reports"
+          ],
+          [
+            "Bantuan",
+            "#/settings?section=help"
+          ]
+        ],
+        "main": "Petualangan\nUX-a944b001\nPetualangan baru\nPenjumlahan · Pasangan bilangan sampai 5\n\nTahap 1 · Kelas 1 · Level 1 · Pengenalan · 6 soal\n\nKenali cara hitungnya, lalu coba satu per satu.\n\nMulai dari dasar\nPilih titik mulai\nJejak terdekat\nBuka peta\nPenjumlahan · Pasangan bilangan sampai 5\nKamu di sini\nPengurangan · Pasangan bilangan sampai 5\nBelum terbuka\nPenjumlahan · Pasangan bilangan sampai 10\nBelum terbuka\nCatatan perjalanan\nLainnya\nRiwayat latihan\nLatihan bebas · semua paket\nUbah titik mulai\n\nRiwayat latihan disimpan di browser ini. Profil lokal dapat dibuka oleh pengguna perangkat yang sama."
+      }
+    },
+    {
+      "id": "AC-011-direct",
+      "status": "PASS",
+      "expected": "Home CTA opens a mission question in one action without a setup form",
+      "actual": {
+        "destination": "#/session/7bd2665d-b7af-4f97-a837-8446cc583da9",
+        "setupForm": false,
+        "owner": true
+      }
+    },
+    {
+      "id": "AC-011-player",
+      "status": "PASS",
+      "expected": "Expression and same active alias in real session after one action",
+      "actual": {
+        "question": "0 + 4",
+        "aliasVisible": true
+      }
+    },
+    {
+      "id": "AC-014",
+      "status": "PASS",
+      "expected": "12 grades, 60 levels, 281 linked operations and 19 unavailable explained near level",
+      "actual": {
+        "levels": 60,
+        "active": 281,
+        "explained": 19,
+        "samples": [
+          {
+            "grade": 1,
+            "levels": 5,
+            "active": 11
+          },
+          {
+            "grade": 2,
+            "levels": 5,
+            "active": 20
+          },
+          {
+            "grade": 3,
+            "levels": 5,
+            "active": 25
+          },
+          {
+            "grade": 4,
+            "levels": 5,
+            "active": 25
+          },
+          {
+            "grade": 5,
+            "levels": 5,
+            "active": 25
+          },
+          {
+            "grade": 6,
+            "levels": 5,
+            "active": 25
+          },
+          {
+            "grade": 7,
+            "levels": 5,
+            "active": 25
+          },
+          {
+            "grade": 8,
+            "levels": 5,
+            "active": 25
+          },
+          {
+            "grade": 9,
+            "levels": 5,
+            "active": 25
+          },
+          {
+            "grade": 10,
+            "levels": 5,
+            "active": 25
+          },
+          {
+            "grade": 11,
+            "levels": 5,
+            "active": 25
+          },
+          {
+            "grade": 12,
+            "levels": 5,
+            "active": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "AC-015",
+      "status": "PASS",
+      "expected": "Paged catalogue has at most 8 rows, no overlapping page, direct ID match and preserved search after language change",
+      "actual": {
+        "first": 8,
+        "second": 8,
+        "distinct": true,
+        "match": 1,
+        "target": "http://127.0.0.1:42631/school/math/#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P009",
+        "query": "MM-G07-L02-ADD-P009"
+      }
+    },
+    {
+      "id": "AC-015-pages",
+      "status": "PASS",
+      "expected": "Pages are bounded, disjoint; current range and page in URL",
+      "actual": {
+        "firstPage": [
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P001",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P002",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P003",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P004",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P005",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P006",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P007",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P008"
+        ],
+        "secondPage": [
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P009",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P010",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P011",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P012",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P013",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P014",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P015",
+          "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P016"
+        ],
+        "range": "Paket 9–16 dari 20",
+        "url": "#/packs?grade=7&level=2&op=ADD&page=2"
+      }
+    },
+    {
+      "id": "AC-015-locale",
+      "status": "PASS",
+      "expected": "Package ID search and result persist after locale switch",
+      "actual": {
+        "query": "MM-G07-L02-ADD-P009",
+        "href": "#/session/new?grade=7&level=2&op=ADD&pack=MM-G07-L02-ADD-P009",
+        "range": "Packages 1–1 of 1"
+      }
+    },
+    {
+      "id": "AC-015-reset",
+      "status": "PASS",
+      "expected": "Empty state can restore the original competency",
+      "actual": {
+        "url": "#/packs?grade=7&level=2&op=ADD",
+        "rows": 8
+      }
+    },
+    {
+      "id": "AC-047-setup",
+      "status": "PASS",
+      "expected": "Mode, count, seconds, shuffle, pace, expanded options and effective summary preserved",
+      "actual": {
+        "mode": "speed",
+        "count": "2",
+        "seconds": "120",
+        "shuffle": true,
+        "expanded": true,
+        "pace": "90",
+        "action": "Mulai 2 soal",
+        "summary": "2 soal · 120 detik"
+      }
+    },
+    {
+      "id": "AC-016-fixed",
+      "status": "PASS",
+      "expected": "Fixed assessment count; prior editable count when switching back",
+      "actual": {
+        "countInAssessment": "10 soal · Tanpa batas waktu",
+        "practice": "Start 2 questions"
+      }
+    },
+    {
+      "id": "AC-049-051-prefs",
+      "status": "PASS",
+      "expected": "Theme, text, reduced motion, language and timer persist; system remains available",
+      "actual": {
+        "theme": "dark",
+        "text": "large",
+        "reduce": "true",
+        "timer": false,
+        "language": "en",
+        "themes": [
+          "system",
+          "light",
+          "dark"
+        ]
+      }
+    },
+    {
+      "id": "AC-013-profiles",
+      "status": "PASS",
+      "expected": "A retains its ongoing session; new B and C start at introductory material; B resumes its own start-point mission",
+      "actual": {
+        "profileA": "UX-a944b001",
+        "originalResume": "#/session/7bd2665d-b7af-4f97-a837-8446cc583da9",
+        "restoredA": "#/session/7bd2665d-b7af-4f97-a837-8446cc583da9",
+        "newProfiles": [
+          {
+            "alias": "State-B-6705e164",
+            "header": "State-B-6705e164",
+            "cta": "#/mission?node=arithmetic.addition.g01.l01&kind=intro",
+            "session": "#/session/a0c2bd71-2e68-4272-9f9e-032549358c70",
+            "grade": "Practice stop · Grade 7 · Level 2"
+          },
+          {
+            "alias": "State-C-9b1529f5",
+            "header": "State-C-9b1529f5",
+            "cta": "#/mission?node=arithmetic.addition.g01.l01&kind=intro",
+            "session": "#/session/e59ad8c3-4de0-4e68-b0a5-b1a8e0b0eaf2",
+            "grade": "Practice stop · Grade 8 · Level 2"
+          }
+        ],
+        "rememberedB": "#/session/a0c2bd71-2e68-4272-9f9e-032549358c70"
+      }
+    },
+    {
+      "id": "AC-009-054-menu",
+      "status": "PASS",
+      "expected": "Visible menu gives settings, offline, teacher simulation and admin; Escape restores summary focus",
+      "actual": {
+        "destinations": [
+          "#/curriculum",
+          "#/settings",
+          "#/offline",
+          "#/sync",
+          "#/demo/teacher",
+          "#/demo/admin",
+          "#/settings?section=help"
+        ],
+        "open": false,
+        "focus": "SUMMARY"
+      }
+    },
+    {
+      "id": "AC-049-media",
+      "status": "PASS",
+      "expected": "Simulated OS changes update System; explicit dark survives opposite OS and reload before UI mounts",
+      "actual": {
+        "dark": "dark",
+        "light": "light",
+        "explicit": "dark",
+        "restored": {
+          "selected": "dark",
+          "bootstrap": [
+            "dark",
+            "dark",
+            "light"
+          ],
+          "actual": "dark"
+        }
+      }
+    },
+    {
+      "id": "AC-008-consent",
+      "status": "PASS",
+      "expected": "Temporary mode requires explicit consent, in-session warning and reachable backup",
+      "actual": {
+        "before": {
+          "disabled": true,
+          "consent": false,
+          "copy": "Temporary storage\n\nThis session is stored in memory only. Reloading or closing the page can erase your answers.\n\nI want to practise temporarily and understand the risk.\nRetry storage on reload\nBack"
+        },
+        "temporary": "Temporary mode · download before leaving\nDownload restorable backup\n\nDownload readable session record",
+        "backupAvailable": true
+      }
+    }
+  ],
+  "runtime": {
+    "release": "6c43a824957f99ed",
+    "bootstrap": "11bf45716136efcb1f7d8bcf0d2fd14cba2f091a59ad8b2edcc61ae8e544d78d",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "runtime_after": {
+    "release": "6c43a824957f99ed",
+    "bootstrap": "11bf45716136efcb1f7d8bcf0d2fd14cba2f091a59ad8b2edcc61ae8e544d78d",
+    "bank": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1"
+  },
+  "finished_utc": "2026-11-28T15:50:06.984Z"
+}

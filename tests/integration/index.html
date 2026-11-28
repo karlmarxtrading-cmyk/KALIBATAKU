@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>KALIBATAKU release checks</title>
+<main>
+<h1>KALIBATAKU release checks</h1>
+<p>Tests use synthetic practice records on this origin. The application runs in a separate, top-level window with its release headers.</p>
+<p><a href="/school/math/">Open application</a></p>
+<button id="all" data-sequence>Run all eight groups in sequence</button>
+<button id="after-perf" data-sequence>Run seven functional groups after foreground measurement</button>
+<button id="functional" data-sequence>Run six other functional groups</button>
+<button data-suite="data">Check browser storage and bridge</button>
+<button data-suite="teacher">Exercise teacher and report exports</button>
+<button data-suite="offline">Exercise installed packs and release updates</button>
+<button data-suite="performance">Measure first load (three runs)</button>
+<button data-suite="layout">Check responsive layouts</button>
+<button data-suite="journeys">Exercise learning modes</button>
+<button data-suite="semantics">Check accessible controls and reports</button>
+<button data-suite="faults">Exercise loading and retry</button>
+<pre id="out" role="status"></pre>
+</main><script type="module" src="runner.mjs"></script></html>

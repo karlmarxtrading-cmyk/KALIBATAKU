@@ -1,0 +1,496 @@
+{
+  "app.mjs": {
+    "static": [
+      "core/dom.mjs",
+      "core/material.mjs"
+    ],
+    "lazy": [
+      "core/bank.mjs",
+      "core/catalog.mjs",
+      "core/home.mjs",
+      "core/settings.mjs",
+      "data/offline.js",
+      "data/panels.js",
+      "data/store.js",
+      "data/sync.js",
+      "player/view.mjs",
+      "teacher/index.js"
+    ],
+    "worker_or_asset": []
+  },
+  "core/appearance.js": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "core/bank.mjs": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "core/catalog.mjs": {
+    "static": [
+      "core/bank.mjs",
+      "core/dom.mjs",
+      "core/material.mjs"
+    ],
+    "lazy": [
+      "data/offline.js",
+      "data/store.js",
+      "player/start.mjs"
+    ],
+    "worker_or_asset": []
+  },
+  "core/dom.mjs": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "core/home.mjs": {
+    "static": [
+      "core/bank.mjs",
+      "core/dom.mjs",
+      "core/material.mjs",
+      "data/store.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "core/material.mjs": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "core/package-data.mjs": {
+    "static": [
+      "core/bank.mjs",
+      "data/common.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "core/settings.mjs": {
+    "static": [
+      "core/dom.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/backup-reader.worker.js": {
+    "static": [
+      "data/backup.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/backup.js": {
+    "static": [
+      "data/common.js",
+      "data/db.js",
+      "data/store.js",
+      "data/summary.js",
+      "data/validate.js"
+    ],
+    "lazy": [
+      "data/snapshot-check.js"
+    ],
+    "worker_or_asset": [
+      "data/backup-reader.worker.js"
+    ]
+  },
+  "data/bridge.js": {
+    "static": [
+      "data/common.js",
+      "data/db.js",
+      "data/store.js",
+      "data/validate.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/common.js": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/contract-defs.js": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/db.js": {
+    "static": [
+      "data/common.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/offline.js": {
+    "static": [
+      "data/common.js",
+      "data/db.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/panel-offline.js": {
+    "static": [
+      "core/dom.mjs",
+      "data/offline.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/panel-profile.js": {
+    "static": [
+      "core/dom.mjs",
+      "data/backup.js",
+      "data/store.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/panel-sync.js": {
+    "static": [
+      "core/dom.mjs",
+      "data/store.js",
+      "data/sync.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/panels.js": {
+    "static": [
+      "core/dom.mjs",
+      "data/store.js"
+    ],
+    "lazy": [
+      "data/panel-offline.js",
+      "data/panel-profile.js",
+      "data/panel-sync.js"
+    ],
+    "worker_or_asset": []
+  },
+  "data/snapshot-check.js": {
+    "static": [
+      "data/common.js",
+      "data/validate.js",
+      "player/analytics.mjs",
+      "player/math.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/store.js": {
+    "static": [
+      "data/common.js",
+      "data/db.js",
+      "data/summary.js",
+      "data/validate.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/summary.js": {
+    "static": [
+      "data/db.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/sync.js": {
+    "static": [
+      "data/bridge.js",
+      "data/common.js",
+      "data/db.js",
+      "data/store.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "data/validate.js": {
+    "static": [
+      "data/common.js",
+      "data/contract-defs.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "learning/input-guide.mjs": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "math/model.mjs": {
+    "static": [
+      "player/math.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "math/view.mjs": {
+    "static": [
+      "math/model.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "player/analytics.mjs": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "player/base.mjs": {
+    "static": [
+      "math/model.mjs",
+      "math/view.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "player/engine.mjs": {
+    "static": [
+      "player/analytics.mjs",
+      "player/math.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "player/math.mjs": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "player/progress-worker.mjs": {
+    "static": [
+      "data/store.js",
+      "player/analytics.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "player/records.mjs": {
+    "static": [
+      "data/store.js",
+      "math/model.mjs",
+      "math/view.mjs",
+      "player/analytics.mjs",
+      "player/base.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": [
+      "player/progress-worker.mjs"
+    ]
+  },
+  "player/session.mjs": {
+    "static": [
+      "data/store.js",
+      "learning/input-guide.mjs",
+      "math/model.mjs",
+      "math/view.mjs",
+      "player/base.mjs",
+      "player/engine.mjs",
+      "player/math.mjs"
+    ],
+    "lazy": [
+      "data/backup.js"
+    ],
+    "worker_or_asset": []
+  },
+  "player/start.mjs": {
+    "static": [
+      "core/bank.mjs",
+      "core/package-data.mjs",
+      "data/store.js",
+      "player/analytics.mjs",
+      "player/engine.mjs",
+      "player/math.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "player/view.mjs": {
+    "static": [
+      "data/store.js",
+      "player/base.mjs",
+      "player/start.mjs"
+    ],
+    "lazy": [
+      "data/store.js",
+      "player/records.mjs",
+      "player/session.mjs"
+    ],
+    "worker_or_asset": [
+      "player/player.css"
+    ]
+  },
+  "sw.js": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/assignments.js": {
+    "static": [
+      "data/db.js",
+      "teacher/demo.js",
+      "teacher/drafts.js",
+      "teacher/report.js",
+      "teacher/ui.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/demo.js": {
+    "static": [
+      "data/bridge.js",
+      "data/store.js",
+      "data/sync.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/document.js": {
+    "static": [
+      "math/model.mjs",
+      "teacher/report.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/drafts.js": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/export/csv.js": {
+    "static": [
+      "teacher/document.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/export/docx.js": {
+    "static": [
+      "teacher/document.js",
+      "teacher/export/office.js",
+      "teacher/export/zip.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/export/index.js": {
+    "static": [
+      "teacher/document.js"
+    ],
+    "lazy": [
+      "teacher/export/csv.js",
+      "teacher/export/docx.js",
+      "teacher/export/pdf.js",
+      "teacher/export/xlsx.js",
+      "teacher/export/zip.js"
+    ],
+    "worker_or_asset": []
+  },
+  "teacher/export/office.js": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/export/pdf.js": {
+    "static": [
+      "teacher/document.js",
+      "teacher/export/zip.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/export/work.js": {
+    "static": [
+      "teacher/export/index.js",
+      "teacher/report.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/export/xlsx.js": {
+    "static": [
+      "teacher/document.js",
+      "teacher/export/office.js",
+      "teacher/export/zip.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/export/zip.js": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/index.js": {
+    "static": [
+      "data/db.js",
+      "math/model.mjs",
+      "math/view.mjs",
+      "player/base.mjs",
+      "teacher/demo.js",
+      "teacher/drafts.js",
+      "teacher/report.js",
+      "teacher/ui.js"
+    ],
+    "lazy": [
+      "teacher/assignments.js",
+      "teacher/reports-view.js"
+    ],
+    "worker_or_asset": [
+      "teacher/teacher.css"
+    ]
+  },
+  "teacher/report-work.js": {
+    "static": [
+      "teacher/report.js"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/report.js": {
+    "static": [
+      "math/model.mjs",
+      "player/analytics.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "teacher/reports-view.js": {
+    "static": [
+      "math/view.mjs",
+      "teacher/document.js",
+      "teacher/drafts.js",
+      "teacher/report.js",
+      "teacher/ui.js"
+    ],
+    "lazy": [
+      "teacher/export/index.js"
+    ],
+    "worker_or_asset": [
+      "teacher/export/work.js",
+      "teacher/report-work.js"
+    ]
+  },
+  "teacher/ui.js": {
+    "static": [
+      "core/dom.mjs"
+    ],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "vendor/mathjax-4.1.3/mml-svg.js": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  },
+  "vendor/mathjax-4.1.3/sre/speech-worker.js": {
+    "static": [],
+    "lazy": [],
+    "worker_or_asset": []
+  }
+}

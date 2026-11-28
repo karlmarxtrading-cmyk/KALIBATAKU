@@ -1,0 +1,197 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "offline-capability-chromium",
+  "scope": "Journey offline installers and map reflow on localhost; desktop browser automation",
+  "started": "2026-11-28T09:08:46.513940+00:00",
+  "finished": "2026-11-28T09:09:46.338824+00:00",
+  "build": {
+    "app_version": "1.5.0",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "460c98b682110f7e"
+  },
+  "engine": "chromium",
+  "version": "151.0.7922.34",
+  "status": "PASS",
+  "assertions": 10,
+  "checks": [
+    {
+      "id": "map",
+      "status": "PASS",
+      "expected": "Actual map capability matches launch. Complete or repaired material supports fresh offline start, feedback, resume and final commit.",
+      "actual": {
+        "installed": [
+          "MM-G01-L01-ADD-P001",
+          "MM-G01-L01-ADD-P002"
+        ],
+        "material_repaired": false,
+        "pack_played": "MM-G01-L01-ADD-P001",
+        "items": 6,
+        "retained_after_reload": true,
+        "final_commits": 1,
+        "network_probe_failed": true,
+        "evicted_after_start": true
+      }
+    },
+    {
+      "id": "catalog",
+      "status": "PASS",
+      "expected": "Actual map capability matches launch. Complete or repaired material supports fresh offline start, feedback, resume and final commit.",
+      "actual": {
+        "installed": [
+          "MM-G01-L01-ADD-P001"
+        ],
+        "material_repaired": false,
+        "pack_played": "MM-G01-L01-ADD-P001",
+        "items": 6,
+        "retained_after_reload": true,
+        "final_commits": 1,
+        "network_probe_failed": true,
+        "evicted_after_start": false
+      }
+    },
+    {
+      "id": "legacy",
+      "status": "PASS",
+      "expected": "Actual map capability matches launch. Complete or repaired material supports fresh offline start, feedback, resume and final commit.",
+      "actual": {
+        "installed": [
+          "MM-G01-L01-ADD-P001"
+        ],
+        "material_repaired": true,
+        "pack_played": "MM-G01-L01-ADD-P001",
+        "items": 6,
+        "retained_after_reload": true,
+        "final_commits": 1,
+        "network_probe_failed": true,
+        "evicted_after_start": false
+      }
+    },
+    {
+      "id": "assessment",
+      "status": "PASS",
+      "expected": "Actual map capability matches launch. Complete or repaired material supports fresh offline start, feedback, resume and final commit.",
+      "actual": {
+        "installed": [
+          "MM-G01-L01-ADD-P003"
+        ],
+        "material_repaired": true,
+        "pack_played": "MM-G01-L01-ADD-P001",
+        "items": 6,
+        "retained_after_reload": true,
+        "final_commits": 1,
+        "network_probe_failed": true,
+        "evicted_after_start": false
+      }
+    },
+    {
+      "id": "stale",
+      "status": "PASS",
+      "expected": "Actual map capability matches launch. Complete or repaired material supports fresh offline start, feedback, resume and final commit.",
+      "actual": {
+        "installed": [
+          "MM-G01-L01-ADD-P001"
+        ],
+        "material_repaired": true,
+        "pack_played": "MM-G01-L01-ADD-P001",
+        "items": 6,
+        "retained_after_reload": true,
+        "final_commits": 1,
+        "network_probe_failed": true,
+        "evicted_after_start": false
+      }
+    },
+    {
+      "id": "corrupt_shard",
+      "status": "PASS",
+      "expected": "Actual map capability matches launch. Complete or repaired material supports fresh offline start, feedback, resume and final commit.",
+      "actual": {
+        "installed": [
+          "MM-G01-L01-ADD-P001"
+        ],
+        "material_repaired": true,
+        "pack_played": "MM-G01-L01-ADD-P001",
+        "items": 6,
+        "retained_after_reload": true,
+        "final_commits": 1,
+        "network_probe_failed": true,
+        "evicted_after_start": false
+      }
+    },
+    {
+      "id": "corrupt_package",
+      "status": "PASS",
+      "expected": "Actual map capability matches launch. Complete or repaired material supports fresh offline start, feedback, resume and final commit.",
+      "actual": {
+        "installed": [
+          "MM-G01-L01-ADD-P001"
+        ],
+        "material_repaired": true,
+        "pack_played": "MM-G01-L01-ADD-P001",
+        "items": 6,
+        "retained_after_reload": true,
+        "final_commits": 1,
+        "network_probe_failed": true,
+        "evicted_after_start": false
+      }
+    },
+    {
+      "id": "corrupt_shell",
+      "status": "PASS",
+      "expected": "Actual map capability matches launch. Complete or repaired material supports fresh offline start, feedback, resume and final commit.",
+      "actual": {
+        "installed": [
+          "MM-G01-L01-ADD-P001"
+        ],
+        "material_repaired": true,
+        "pack_played": "MM-G01-L01-ADD-P001",
+        "items": 6,
+        "retained_after_reload": true,
+        "final_commits": 1,
+        "network_probe_failed": true,
+        "evicted_after_start": false
+      }
+    },
+    {
+      "id": "bootstrap_repair",
+      "status": "PASS",
+      "expected": "Offline entry-module corruption yields 503. A fresh online document rehydrates the exact module; the corrected app then reloads offline.",
+      "actual": {
+        "networkless_corrupt_entry_status": 503,
+        "fresh_document_module_sha256": "13878f44e22d01992d64001ef2278b2069daadeb144e1117487b520f526bd27b",
+        "offline_reload_after_repair": true
+      }
+    },
+    {
+      "id": "map_reflow",
+      "status": "PASS",
+      "expected": "All map actions fit and accept focus at desktop, tablet and narrow widths including a 200% font.",
+      "actual": [
+        {
+          "css_viewport": 1440,
+          "root_font_px": 16,
+          "scroll_width": 1440,
+          "visible_actions": 6
+        },
+        {
+          "css_viewport": 768,
+          "root_font_px": 16,
+          "scroll_width": 768,
+          "visible_actions": 6
+        },
+        {
+          "css_viewport": 320,
+          "root_font_px": 16,
+          "scroll_width": 320,
+          "visible_actions": 6
+        },
+        {
+          "css_viewport": 320,
+          "root_font_px": 32,
+          "scroll_width": 320,
+          "visible_actions": 6
+        }
+      ]
+    }
+  ]
+}

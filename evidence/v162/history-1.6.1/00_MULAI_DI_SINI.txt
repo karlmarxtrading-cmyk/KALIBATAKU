@@ -1,0 +1,68 @@
+KALIBATAKU 1.6.1 • Petualangan berhitung • Bank 1.2.0
+
+MEMBUKA WEBSITE DI KOMPUTER SENDIRI
+
+Ekstrak ZIP ke folder baru. Buka terminal di folder yang memuat package.json.
+Gunakan Node 24, Python 3.12 dan jsonschema. Pada Windows Git Bash, perintah
+Python dapat dijalankan dengan py -3.12. Contoh berikut untuk Git Bash.
+
+    export PYTHONDONTWRITEBYTECODE=1 PYTHONUTF8=1
+    py -3.12 -m pip install jsonschema
+    py -3.12 tools/project.py verify
+    py -3.12 tools/preview.py
+
+Di Linux gunakan python3 sebagai pengganti py -3.12. Buka http://127.0.0.1:4173/
+dan pilih Mulai dari dasar. Ketik jawaban, tekan Enter lalu lepaskan. Baca
+Jawabanmu, kunci dan pembahasan. Enter baru atau Soal berikutnya menampilkan
+ekspresi berikut dan menyiapkan input. Pada soal terakhir, lanjut membuka
+hasil tersimpan. Tindakan baru dari hasil membuka misi berikut. Peta dan
+katalog dapat dipakai kapan diperlukan. PRATINJAU.html memuat tangkapan UI.
+
+MEMERIKSA, MEMBANGUN DAN MENGUJI
+
+Di hasil ekstraksi yang bersih jalankan verify → build → verify. Untuk build
+gunakan py -3.12 tools/project.py build pada Git Bash atau npm run build pada
+sistem dengan python3. Untuk membuka di subfolder jalankan tools/preview.py
+melalui Python dengan argumen --prefix /sekolah/math/.
+
+docs/QA_1.6.1.md              Persiapan QA, suite lengkap, penilaian dan penyegelan.
+docs/ENTER_1.6.1.md           Enter, modifier, fokus, pembahasan dan layar pendek.
+docs/contracts/JOURNEY_1.6.md Seleksi soal, review, kesiapan dan kompatibilitas.
+LAPORAN_HASIL_UJI.md          Lingkungan, hasil aktual dan batas verifikasi.
+STATUS_RILIS.md               Keputusan paket serta kriteria terbuka per fase.
+RELEASE_STATUS.json           Identitas source/dist, rilis offline dan keputusan.
+SHA256SUMS                    Digest setiap berkas menurut cakupan inventaris.
+REGISTER_AC_FINAL.csv         70 kriteria wajib dan satu sesudah pilot.
+REGISTER_PENERIMAAN.csv       Kriteria desain ulang dan kasus master.
+REGISTER_AUDIT_160.csv        Dua temuan prioritas dan observasi audit 1.6.0.
+REGISTER_PENUTUPAN_TEMUAN.csv Penutupan dari audit pendahulu.
+REGISTER_IRISAN.csv           Hubungan antarkriteria yang menggunakan bukti sama.
+CHANGELOG_1.6.1.md            Perubahan dalam kandidat ini.
+VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md   Gate, siapa, langkah dan bukti sasaran.
+
+GIT BASH WINDOWS, GITHUB DAN CLOUDFLARE PAGES
+
+Untuk bukti Windows asli, ekstrak ke path berspasi lalu jalankan pada Git Bash
+
+    bash VALIDASI_EKSTERNAL/verifikasi-windows.sh
+
+Simpan folder hasil di samping proyek. Instruksi dan pemeriksaan asal hasil
+tersedia di VALIDASI_EKSTERNAL/07_WINDOWS_NATIVE.md. Untuk penerbitan oleh
+operator berwenang, ikuti docs/DEPLOY.md. Dari GitHub, hubungkan cabang
+validasi ke proyek preview terkontrol. Gunakan direktori output dist dengan
+isi persis build yang diuji. Simpan bukti, kit dan cadangan di luar dist.
+Syarat promosi serta hasil sesungguhnya tercantum di STATUS_RILIS.md.
+
+MENJAGA PEKERJAAN SISWA
+
+Pilih Profil aktif → Unduh cadangan profil. Simpan di luar folder situs.
+Saat restore, buka pratinjau cadangan dan periksa alias, duplikat, konflik,
+sesi, draf serta riwayat sebelum menyetujui. Untuk update, simpan ZIP lama
+dan ID deployment. Coba update di origin serta subpath yang sama dengan
+profil sintetis, termasuk dua tab dan misi offline. Untuk rollback, aktifkan
+deployment utuh terdahulu pada target yang berizin, tutup seluruh tab lalu
+buka kembali dan bandingkan riwayat serta draf. Pertahankan data situs.
+
+docs/PANDUAN_CADANGAN_OFFLINE.md   Backup, restore, unduhan dan pemulihan.
+docs/PANDUAN_SISWA.md              Belajar, revisi, jeda dan misi selanjutnya.
+docs/PANDUAN_GURU.md               Riwayat, laporan dan ekspor.

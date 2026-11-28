@@ -1,0 +1,3208 @@
+[
+  {
+    "package": "MM-G01-L01-ADD-P001",
+    "path": "bank/v1.2/g01/l01/MM-G01-L01-ADD-P001.mjs",
+    "grade": 1,
+    "level": 1,
+    "operation": "ADD",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "0 + 5",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "5"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "0 + 4",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "4"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "1 + 4",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "4"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "1 + 3",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "3"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "0 + 2",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "2"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "2 + 2",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "2"
+        ],
+        "strategies": [
+          "DB"
+        ]
+      },
+      {
+        "expression": "0 + 3",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "3"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "1 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "1"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "2 + 3",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "3"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "0 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "1"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L01-SUB-P001",
+    "path": "bank/v1.2/g01/l01/MM-G01-L01-SUB-P001.mjs",
+    "grade": 1,
+    "level": 1,
+    "operation": "SUB",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "4 − 3",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "4"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "4 − 1",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "4"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "2 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "2"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "0 − 0",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "0"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "5 − 4",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "5"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "5 − 0",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "5"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "4 − 0",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "4"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "1 − 1",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "1"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "5 − 3",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "5"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "4 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "4"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L02-ADD-P001",
+    "path": "bank/v1.2/g01/l02/MM-G01-L02-ADD-P001.mjs",
+    "grade": 1,
+    "level": 2,
+    "operation": "ADD",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "4 + 3",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "4"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "1 + 9",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "9"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "0 + 0",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "0"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "7 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "7"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "0 + 5",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "5"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "0 + 8",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "8"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "2 + 2",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "2"
+        ],
+        "strategies": [
+          "DB"
+        ]
+      },
+      {
+        "expression": "4 + 4",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "4"
+        ],
+        "strategies": [
+          "DB"
+        ]
+      },
+      {
+        "expression": "3 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "3"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "5 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "5"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L02-SUB-P001",
+    "path": "bank/v1.2/g01/l02/MM-G01-L02-SUB-P001.mjs",
+    "grade": 1,
+    "level": 2,
+    "operation": "SUB",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "3 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "3"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "10 − 5",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "10"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "6 − 4",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "6"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "8 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "8"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "7 − 0",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "7"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "7 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "7"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "1 − 1",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "1"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "8 − 7",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "8"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "3 − 3",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "3"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "10 − 6",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "10"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L03-ADD-P001",
+    "path": "bank/v1.2/g01/l03/MM-G01-L03-ADD-P001.mjs",
+    "grade": 1,
+    "level": 3,
+    "operation": "ADD",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "11 + 0",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "11"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "14 + 3",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "14"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "12 + 4",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "12"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "13 + 0",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "13"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "16 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "16"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "10 + 9",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "10"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "11 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "11"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "12 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "12"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "10 + 4",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "10"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "17 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "17"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L03-SUB-P001",
+    "path": "bank/v1.2/g01/l03/MM-G01-L03-SUB-P001.mjs",
+    "grade": 1,
+    "level": 3,
+    "operation": "SUB",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "17 − 7",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "17"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "12 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "12"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "18 − 4",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "18"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "17 − 4",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "17"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "16 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "16"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "15 − 4",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "15"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "19 − 1",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "19"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "19 − 5",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "19"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "13 − 3",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "13"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "14 − 0",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "14"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L04-ADD-P001",
+    "path": "bank/v1.2/g01/l04/MM-G01-L04-ADD-P001.mjs",
+    "grade": 1,
+    "level": 4,
+    "operation": "ADD",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "8 + 8",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "8"
+        ],
+        "strategies": [
+          "DB"
+        ]
+      },
+      {
+        "expression": "9 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "9"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "3 + 9",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "9"
+        ],
+        "strategies": [
+          "MT"
+        ]
+      },
+      {
+        "expression": "6 + 7",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "7"
+        ],
+        "strategies": [
+          "MT"
+        ]
+      },
+      {
+        "expression": "7 + 9",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "9"
+        ],
+        "strategies": [
+          "MT"
+        ]
+      },
+      {
+        "expression": "7 + 3",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "7"
+        ],
+        "strategies": [
+          "MT"
+        ]
+      },
+      {
+        "expression": "5 + 7",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "7"
+        ],
+        "strategies": [
+          "MT"
+        ]
+      },
+      {
+        "expression": "9 + 9",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "9"
+        ],
+        "strategies": [
+          "DB"
+        ]
+      },
+      {
+        "expression": "6 + 8",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "8"
+        ],
+        "strategies": [
+          "MT"
+        ]
+      },
+      {
+        "expression": "7 + 4",
+        "rank": [
+          2,
+          0,
+          0,
+          4,
+          "7"
+        ],
+        "strategies": [
+          "MT"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L04-SUB-P001",
+    "path": "bank/v1.2/g01/l04/MM-G01-L04-SUB-P001.mjs",
+    "grade": 1,
+    "level": 4,
+    "operation": "SUB",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "10 − 5",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "10"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "10 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "10"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "12 − 3",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "12"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "13 − 5",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "13"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "15 − 7",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "15"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "17 − 9",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "17"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "13 − 7",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "13"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "13 − 9",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "13"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "10 − 8",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "10"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "14 − 9",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "14"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L05-ADD-P001",
+    "path": "bank/v1.2/g01/l05/MM-G01-L05-ADD-P001.mjs",
+    "grade": 1,
+    "level": 5,
+    "operation": "ADD",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "60 + 7",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "60"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "10 + 80",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "80"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "30 + 8",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "30"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "80 + 6",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "80"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "70 + 3",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "70"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "30 + 40",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "40"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "30 + 2",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "30"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "20 + 3",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "20"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "80 + 5",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "80"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "50 + 1",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "50"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L05-SUB-P001",
+    "path": "bank/v1.2/g01/l05/MM-G01-L05-SUB-P001.mjs",
+    "grade": 1,
+    "level": 5,
+    "operation": "SUB",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "100 − 30",
+        "rank": [
+          2,
+          0,
+          0,
+          7,
+          "100"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "14 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "14"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "94 − 0",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "94"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "42 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "42"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "17 − 2",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "17"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "65 − 1",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "65"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "99 − 20",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "99"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "64 − 30",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "64"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "76 − 3",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "76"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      },
+      {
+        "expression": "74 − 3",
+        "rank": [
+          2,
+          0,
+          0,
+          5,
+          "74"
+        ],
+        "strategies": [
+          "INV"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G01-L05-MIX-P001",
+    "path": "bank/v1.2/g01/l05/MM-G01-L05-MIX-P001.mjs",
+    "grade": 1,
+    "level": 5,
+    "operation": "MIX",
+    "count": 10,
+    "first10": [
+      {
+        "expression": "(30 + 6) − 1",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "30"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "(30 + 9) − 3",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "30"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "(10 + 6) − 4",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "10"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "(40 + 7) − 6",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "40"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "(30 + 3) − 3",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "30"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "(20 + 4) − 4",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "20"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "(80 + 7) − 6",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "80"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "(40 + 8) − 2",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "40"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "(50 + 9) − 1",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "50"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "(90 + 3) − 2",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "90"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      }
+    ],
+    "tail_example": []
+  },
+  {
+    "package": "MM-G02-L01-ADD-P001",
+    "path": "bank/v1.2/g02/l01/MM-G02-L01-ADD-P001.mjs",
+    "grade": 2,
+    "level": 1,
+    "operation": "ADD",
+    "count": 20,
+    "first10": [
+      {
+        "expression": "70 + 12",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "70"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "58 + 30",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "58"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "30 + 21",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "30"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "16 + 50",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "50"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "37 + 31",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "37"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "35 + 53",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "53"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "28 + 71",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "71"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "55 + 22",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "55"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "45 + 32",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "45"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "36 + 12",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "36"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      }
+    ],
+    "tail_example": [
+      "20 + 17",
+      "27 + 52",
+      "63 + 30"
+    ]
+  },
+  {
+    "package": "MM-G03-L01-ADD-P001",
+    "path": "bank/v1.2/g03/l01/MM-G03-L01-ADD-P001.mjs",
+    "grade": 3,
+    "level": 1,
+    "operation": "ADD",
+    "count": 25,
+    "first10": [
+      {
+        "expression": "914 + 0",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "914"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "291 + 300",
+        "rank": [
+          2,
+          0,
+          0,
+          8,
+          "300"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "701 + 200",
+        "rank": [
+          2,
+          0,
+          0,
+          8,
+          "701"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "500 + 0",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "500"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "4 + 400",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "400"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "419 + 100",
+        "rank": [
+          2,
+          0,
+          0,
+          8,
+          "419"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "604 + 0",
+        "rank": [
+          2,
+          0,
+          0,
+          6,
+          "604"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "503 + 400",
+        "rank": [
+          2,
+          0,
+          0,
+          8,
+          "503"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "580 + 200",
+        "rank": [
+          2,
+          0,
+          0,
+          8,
+          "580"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      },
+      {
+        "expression": "227 + 400",
+        "rank": [
+          2,
+          0,
+          0,
+          8,
+          "400"
+        ],
+        "strategies": [
+          "NB"
+        ]
+      }
+    ],
+    "tail_example": [
+      "92 + 100",
+      "49 + 300",
+      "24 + 800"
+    ]
+  },
+  {
+    "package": "MM-G03-L01-MIX-P001",
+    "path": "bank/v1.2/g03/l01/MM-G03-L01-MIX-P001.mjs",
+    "grade": 3,
+    "level": 1,
+    "operation": "MIX",
+    "count": 25,
+    "first10": [
+      {
+        "expression": "(0 ÷ 6) − 0",
+        "rank": [
+          3,
+          0,
+          0,
+          6,
+          "6"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(45 ÷ 5) − 2",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "45"
+        ],
+        "strategies": [
+          "OO",
+          "INV"
+        ]
+      },
+      {
+        "expression": "(3 × 4) + 0",
+        "rank": [
+          3,
+          0,
+          0,
+          6,
+          "4"
+        ],
+        "strategies": [
+          "OO",
+          "DS"
+        ]
+      },
+      {
+        "expression": "(15 ÷ 5) − 3",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "15"
+        ],
+        "strategies": [
+          "OO",
+          "INV"
+        ]
+      },
+      {
+        "expression": "(42 ÷ 6) − 0",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "42"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(4 ÷ 1) − 2",
+        "rank": [
+          3,
+          0,
+          0,
+          6,
+          "4"
+        ],
+        "strategies": [
+          "OO",
+          "INV"
+        ]
+      },
+      {
+        "expression": "(45 ÷ 9) − 4",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "45"
+        ],
+        "strategies": [
+          "OO",
+          "CO"
+        ]
+      },
+      {
+        "expression": "(56 ÷ 8) − 2",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "56"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(24 ÷ 8) − 0",
+        "rank": [
+          3,
+          0,
+          0,
+          7,
+          "24"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(50 ÷ 10) − 3",
+        "rank": [
+          3,
+          0,
+          0,
+          8,
+          "50"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      }
+    ],
+    "tail_example": [
+      "(10 × 10) + 5",
+      "(18 ÷ 9) − 2",
+      "(40 ÷ 8) − 2"
+    ]
+  },
+  {
+    "package": "MM-G05-L01-ADD-P001",
+    "path": "bank/v1.2/g05/l01/MM-G05-L01-ADD-P001.mjs",
+    "grade": 5,
+    "level": 1,
+    "operation": "ADD",
+    "count": 30,
+    "first10": [
+      {
+        "expression": "20.0 + 35.3",
+        "rank": [
+          2,
+          0,
+          1,
+          8,
+          "353/10"
+        ],
+        "strategies": [
+          "DE"
+        ]
+      },
+      {
+        "expression": "35.9 + 61.9",
+        "rank": [
+          2,
+          0,
+          2,
+          10,
+          "619/10"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "31.1 + 47.3",
+        "rank": [
+          2,
+          0,
+          2,
+          10,
+          "473/10"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "8.5 + 55.1",
+        "rank": [
+          2,
+          0,
+          2,
+          8,
+          "551/10"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "32.4 + 43.0",
+        "rank": [
+          2,
+          0,
+          1,
+          7,
+          "43"
+        ],
+        "strategies": [
+          "DE"
+        ]
+      },
+      {
+        "expression": "42.0 + 72.2",
+        "rank": [
+          2,
+          0,
+          1,
+          7,
+          "361/5"
+        ],
+        "strategies": [
+          "DE"
+        ]
+      },
+      {
+        "expression": "10.5 + 91.2",
+        "rank": [
+          2,
+          0,
+          2,
+          7,
+          "456/5"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "27.6 + 28.4",
+        "rank": [
+          2,
+          0,
+          2,
+          8,
+          "142/5"
+        ],
+        "strategies": [
+          "BR"
+        ]
+      },
+      {
+        "expression": "60.4 + 7.1",
+        "rank": [
+          2,
+          0,
+          2,
+          8,
+          "302/5"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "68.3 + 70.4",
+        "rank": [
+          2,
+          0,
+          2,
+          9,
+          "352/5"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      }
+    ],
+    "tail_example": [
+      "12.2 + 59.1",
+      "29.1 + 9.2",
+      "67.0 + 72.7"
+    ]
+  },
+  {
+    "package": "MM-G05-L01-MIX-P001",
+    "path": "bank/v1.2/g05/l01/MM-G05-L01-MIX-P001.mjs",
+    "grade": 5,
+    "level": 1,
+    "operation": "MIX",
+    "count": 30,
+    "first10": [
+      {
+        "expression": "(673 ÷ 10) + 0.0",
+        "rank": [
+          3,
+          0,
+          0,
+          9,
+          "673"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(18.0 × 5) − 19.4",
+        "rank": [
+          3,
+          0,
+          1,
+          8,
+          "97/5"
+        ],
+        "strategies": [
+          "OO",
+          "HL"
+        ]
+      },
+      {
+        "expression": "(85.2 ÷ 2) + 14.4",
+        "rank": [
+          3,
+          0,
+          2,
+          9,
+          "426/5"
+        ],
+        "strategies": [
+          "OO",
+          "HL"
+        ]
+      },
+      {
+        "expression": "(15.2 × 100) − 2.6",
+        "rank": [
+          3,
+          0,
+          2,
+          10,
+          "100"
+        ],
+        "strategies": [
+          "OO",
+          "FR"
+        ]
+      },
+      {
+        "expression": "(11.6 ÷ 2) + 18.0",
+        "rank": [
+          3,
+          0,
+          1,
+          8,
+          "18"
+        ],
+        "strategies": [
+          "OO",
+          "HL"
+        ]
+      },
+      {
+        "expression": "(4810 ÷ 100) + 12.1",
+        "rank": [
+          3,
+          0,
+          1,
+          14,
+          "4810"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(83.3 × 10) − 9.9",
+        "rank": [
+          3,
+          0,
+          2,
+          12,
+          "833/10"
+        ],
+        "strategies": [
+          "OO",
+          "FR"
+        ]
+      },
+      {
+        "expression": "(95.6 ÷ 2) + 19.1",
+        "rank": [
+          3,
+          0,
+          2,
+          11,
+          "478/5"
+        ],
+        "strategies": [
+          "OO",
+          "HL"
+        ]
+      },
+      {
+        "expression": "(5.8 × 100) − 4.4",
+        "rank": [
+          3,
+          0,
+          2,
+          10,
+          "100"
+        ],
+        "strategies": [
+          "OO",
+          "FR"
+        ]
+      },
+      {
+        "expression": "(27.3 × 100) − 0.0",
+        "rank": [
+          3,
+          0,
+          1,
+          11,
+          "100"
+        ],
+        "strategies": [
+          "OO",
+          "FR"
+        ]
+      }
+    ],
+    "tail_example": [
+      "(127.6 ÷ 2) + 16.8",
+      "(303.5 ÷ 5) + 10.5",
+      "(203 ÷ 5) + 14.2"
+    ]
+  },
+  {
+    "package": "MM-G07-L01-ADD-P001",
+    "path": "bank/v1.2/g07/l01/MM-G07-L01-ADD-P001.mjs",
+    "grade": 7,
+    "level": 1,
+    "operation": "ADD",
+    "count": 40,
+    "first10": [
+      {
+        "expression": "(−37) + 22",
+        "rank": [
+          2,
+          1,
+          0,
+          6,
+          "37"
+        ],
+        "strategies": [
+          "DE"
+        ]
+      },
+      {
+        "expression": "(−21) + (−42)",
+        "rank": [
+          2,
+          2,
+          0,
+          6,
+          "42"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−10) + (−19)",
+        "rank": [
+          2,
+          2,
+          0,
+          6,
+          "19"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−20) + (−29)",
+        "rank": [
+          2,
+          2,
+          0,
+          6,
+          "29"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−15) + 41",
+        "rank": [
+          2,
+          1,
+          0,
+          6,
+          "41"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−29) + 43",
+        "rank": [
+          2,
+          1,
+          0,
+          6,
+          "43"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−45) + (−7)",
+        "rank": [
+          2,
+          2,
+          0,
+          5,
+          "45"
+        ],
+        "strategies": [
+          "SG"
+        ]
+      },
+      {
+        "expression": "(−38) + (−15)",
+        "rank": [
+          2,
+          2,
+          0,
+          6,
+          "38"
+        ],
+        "strategies": [
+          "DE"
+        ]
+      },
+      {
+        "expression": "(−30) + 38",
+        "rank": [
+          2,
+          1,
+          0,
+          6,
+          "38"
+        ],
+        "strategies": [
+          "DE"
+        ]
+      },
+      {
+        "expression": "(−40) + 23",
+        "rank": [
+          2,
+          1,
+          0,
+          6,
+          "40"
+        ],
+        "strategies": [
+          "DE"
+        ]
+      }
+    ],
+    "tail_example": [
+      "(−22) + 9",
+      "(−3) + (−3)",
+      "(−27) + (−24)"
+    ]
+  },
+  {
+    "package": "MM-G07-L01-MIX-P001",
+    "path": "bank/v1.2/g07/l01/MM-G07-L01-MIX-P001.mjs",
+    "grade": 7,
+    "level": 1,
+    "operation": "MIX",
+    "count": 40,
+    "first10": [
+      {
+        "expression": "(−6) + (0 × (−10))",
+        "rank": [
+          3,
+          2,
+          0,
+          7,
+          "10"
+        ],
+        "strategies": [
+          "OO",
+          "NB"
+        ]
+      },
+      {
+        "expression": "0 + (5 × (−2))",
+        "rank": [
+          3,
+          1,
+          0,
+          6,
+          "5"
+        ],
+        "strategies": [
+          "OO",
+          "DS"
+        ]
+      },
+      {
+        "expression": "(7 + 3) × (−10)",
+        "rank": [
+          3,
+          1,
+          0,
+          7,
+          "10"
+        ],
+        "strategies": [
+          "OO",
+          "SG"
+        ]
+      },
+      {
+        "expression": "((−1) + (−2)) × (−9)",
+        "rank": [
+          3,
+          3,
+          0,
+          6,
+          "9"
+        ],
+        "strategies": [
+          "OO",
+          "SG"
+        ]
+      },
+      {
+        "expression": "1 + ((−6) × (−10))",
+        "rank": [
+          3,
+          2,
+          0,
+          7,
+          "10"
+        ],
+        "strategies": [
+          "OO",
+          "DS"
+        ]
+      },
+      {
+        "expression": "(3 + (−3)) × (−10)",
+        "rank": [
+          3,
+          2,
+          0,
+          7,
+          "10"
+        ],
+        "strategies": [
+          "OO",
+          "SG"
+        ]
+      },
+      {
+        "expression": "(1 + (−1)) × (−4)",
+        "rank": [
+          3,
+          2,
+          0,
+          6,
+          "4"
+        ],
+        "strategies": [
+          "OO",
+          "SG"
+        ]
+      },
+      {
+        "expression": "(4 + (−1)) × (−1)",
+        "rank": [
+          3,
+          2,
+          0,
+          6,
+          "4"
+        ],
+        "strategies": [
+          "OO",
+          "SG"
+        ]
+      },
+      {
+        "expression": "9 + (10 × (−2))",
+        "rank": [
+          3,
+          1,
+          0,
+          7,
+          "10"
+        ],
+        "strategies": [
+          "OO",
+          "PO"
+        ]
+      },
+      {
+        "expression": "(−9) + ((−8) × (−10))",
+        "rank": [
+          3,
+          3,
+          0,
+          7,
+          "10"
+        ],
+        "strategies": [
+          "OO",
+          "DS"
+        ]
+      }
+    ],
+    "tail_example": [
+      "(−8) + (2 × 2)",
+      "10 + (7 × (−2))",
+      "10 + (9 × (−8))"
+    ]
+  },
+  {
+    "package": "MM-G10-L01-ADD-P001",
+    "path": "bank/v1.2/g10/l01/MM-G10-L01-ADD-P001.mjs",
+    "grade": 10,
+    "level": 1,
+    "operation": "ADD",
+    "count": 50,
+    "first10": [
+      {
+        "expression": "626691 + 100003",
+        "rank": [
+          2,
+          0,
+          0,
+          14,
+          "626691"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−570014) + (−400006)",
+        "rank": [
+          2,
+          2,
+          0,
+          14,
+          "570014"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "509194 + (−899993)",
+        "rank": [
+          2,
+          1,
+          0,
+          14,
+          "899993"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "398810 + (−835000)",
+        "rank": [
+          2,
+          1,
+          0,
+          14,
+          "835000"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−552014) + 299998",
+        "rank": [
+          2,
+          1,
+          0,
+          14,
+          "552014"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−696279) + (−474000)",
+        "rank": [
+          2,
+          2,
+          0,
+          14,
+          "696279"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "738985 + 732000",
+        "rank": [
+          2,
+          0,
+          0,
+          14,
+          "738985"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "608941 + 9",
+        "rank": [
+          2,
+          0,
+          0,
+          9,
+          "608941"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−508790) + (−300004)",
+        "rank": [
+          2,
+          2,
+          0,
+          14,
+          "508790"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "534909 + (−500020)",
+        "rank": [
+          2,
+          1,
+          0,
+          14,
+          "534909"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      }
+    ],
+    "tail_example": [
+      "987369 + (−846000)",
+      "(−808743) + (−346000)",
+      "(−947659) + 615000"
+    ]
+  },
+  {
+    "package": "MM-G10-L01-MIX-P001",
+    "path": "bank/v1.2/g10/l01/MM-G10-L01-MIX-P001.mjs",
+    "grade": 10,
+    "level": 1,
+    "operation": "MIX",
+    "count": 50,
+    "first10": [
+      {
+        "expression": "(16 × 1000) ÷ 16",
+        "rank": [
+          3,
+          0,
+          0,
+          11,
+          "1000"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(400 × 1000) ÷ 16",
+        "rank": [
+          3,
+          0,
+          0,
+          12,
+          "1000"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(((40 × 125) ÷ 2) + 145) × 2",
+        "rank": [
+          5,
+          0,
+          0,
+          15,
+          "145"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(128 × 125) ÷ 16",
+        "rank": [
+          3,
+          0,
+          0,
+          11,
+          "128"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(352 × 125) ÷ 2",
+        "rank": [
+          3,
+          0,
+          0,
+          10,
+          "352"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(((152 × 10) ÷ 2) + 20) × 2",
+        "rank": [
+          5,
+          0,
+          0,
+          14,
+          "152"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(376 × 125) ÷ 2",
+        "rank": [
+          3,
+          0,
+          0,
+          10,
+          "376"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(64 × 1000) ÷ 16",
+        "rank": [
+          3,
+          0,
+          0,
+          11,
+          "1000"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      },
+      {
+        "expression": "(248 × 1000) ÷ 16",
+        "rank": [
+          3,
+          0,
+          0,
+          12,
+          "1000"
+        ],
+        "strategies": [
+          "OO",
+          "PO"
+        ]
+      },
+      {
+        "expression": "(280 × 1000) ÷ 8",
+        "rank": [
+          3,
+          0,
+          0,
+          11,
+          "1000"
+        ],
+        "strategies": [
+          "OO",
+          "HD"
+        ]
+      }
+    ],
+    "tail_example": [
+      "(((64 × 1000) ÷ 16) + 120) × 2",
+      "((384 × 125) ÷ 8) + 70",
+      "((144 × 125) ÷ 16) + 250"
+    ]
+  },
+  {
+    "package": "MM-G12-L01-ADD-P001",
+    "path": "bank/v1.2/g12/l01/MM-G12-L01-ADD-P001.mjs",
+    "grade": 12,
+    "level": 1,
+    "operation": "ADD",
+    "count": 50,
+    "first10": [
+      {
+        "expression": "1514022 + (−6200099)",
+        "rank": [
+          2,
+          1,
+          0,
+          16,
+          "6200099"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "875 + 125",
+        "rank": [
+          2,
+          0,
+          0,
+          8,
+          "875"
+        ],
+        "strategies": [
+          "DE"
+        ]
+      },
+      {
+        "expression": "(−9917195) + (−2800026)",
+        "rank": [
+          2,
+          2,
+          0,
+          16,
+          "9917195"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−7637529) + 5800038",
+        "rank": [
+          2,
+          1,
+          0,
+          16,
+          "7637529"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−9245603) + 3499985",
+        "rank": [
+          2,
+          1,
+          0,
+          16,
+          "9245603"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−4579923) + (−5499957)",
+        "rank": [
+          2,
+          2,
+          0,
+          16,
+          "5499957"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−1132920) + (−7399909)",
+        "rank": [
+          2,
+          2,
+          0,
+          16,
+          "7399909"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "4010053 + 6499904",
+        "rank": [
+          2,
+          0,
+          0,
+          16,
+          "6499904"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      },
+      {
+        "expression": "(−650) + 750",
+        "rank": [
+          2,
+          1,
+          0,
+          8,
+          "750"
+        ],
+        "strategies": [
+          "DE"
+        ]
+      },
+      {
+        "expression": "(−4671867) + 3000081",
+        "rank": [
+          2,
+          1,
+          0,
+          16,
+          "4671867"
+        ],
+        "strategies": [
+          "CO"
+        ]
+      }
+    ],
+    "tail_example": [
+      "6232598 + 2599931",
+      "(−50235) + (−8900075)",
+      "(−9439806) + (−2399920)"
+    ]
+  },
+  {
+    "package": "MM-G12-L01-MIX-P001",
+    "path": "bank/v1.2/g12/l01/MM-G12-L01-MIX-P001.mjs",
+    "grade": 12,
+    "level": 1,
+    "operation": "MIX",
+    "count": 50,
+    "first10": [
+      {
+        "expression": "((9998 × 949) + (2 × 949)) − 37",
+        "rank": [
+          5,
+          0,
+          0,
+          18,
+          "9998"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      },
+      {
+        "expression": "(999 × 850) + 850",
+        "rank": [
+          3,
+          0,
+          0,
+          12,
+          "999"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      },
+      {
+        "expression": "((998 × 27) + (2 × 27)) − 19",
+        "rank": [
+          5,
+          0,
+          0,
+          15,
+          "998"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      },
+      {
+        "expression": "((9998 × 390) + (2 × 390)) − 42",
+        "rank": [
+          5,
+          0,
+          0,
+          18,
+          "9998"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      },
+      {
+        "expression": "(((9999 × 364) + 364) − 14) × 2",
+        "rank": [
+          5,
+          0,
+          0,
+          18,
+          "9999"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      },
+      {
+        "expression": "((998 × 627) + (2 × 627)) − 36",
+        "rank": [
+          5,
+          0,
+          0,
+          17,
+          "998"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      },
+      {
+        "expression": "((999 × 95) + 95) − 28",
+        "rank": [
+          4,
+          0,
+          0,
+          13,
+          "999"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      },
+      {
+        "expression": "(998 × 599) + (2 × 599)",
+        "rank": [
+          4,
+          0,
+          0,
+          14,
+          "998"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      },
+      {
+        "expression": "((999 × 774) + 774) − 37",
+        "rank": [
+          4,
+          0,
+          0,
+          15,
+          "999"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      },
+      {
+        "expression": "((999 × 304) + 304) − 25",
+        "rank": [
+          4,
+          0,
+          0,
+          15,
+          "999"
+        ],
+        "strategies": [
+          "DS",
+          "OO"
+        ]
+      }
+    ],
+    "tail_example": [
+      "((9999 × 83) + 83) − 7",
+      "((999 × 383) + 383) − 27",
+      "((999 × 225) + 225) − 23"
+    ]
+  }
+]

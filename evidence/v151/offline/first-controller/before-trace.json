@@ -1,0 +1,406 @@
+{
+  "release": "319ea44060dbbc58",
+  "engine": "firefox",
+  "browser": "153.0",
+  "samples": [
+    {
+      "initially_focused": true,
+      "after_first_claim": {
+        "focus": false,
+        "retained": false
+      },
+      "genuine_replacement": {
+        "invalidated": true,
+        "worker": "http://127.0.0.1:33011/control-probe.js"
+      },
+      "events": [
+        {
+          "event": "view",
+          "at": 216,
+          "state": [
+            0,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 433,
+          "state": [
+            1,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 656,
+          "state": [
+            1,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1173,
+          "state": [
+            1,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1173,
+          "state": [
+            1,
+            null,
+            true,
+            false
+          ]
+        },
+        {
+          "event": "controllerchange",
+          "at": 1445,
+          "script": "http://127.0.0.1:33011/sw.js"
+        },
+        {
+          "event": "view",
+          "at": 1448,
+          "state": [
+            2,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1717,
+          "state": [
+            2,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1717,
+          "state": [
+            2,
+            null,
+            true,
+            false
+          ]
+        },
+        {
+          "event": "controllerchange",
+          "at": 1886,
+          "script": "http://127.0.0.1:33011/control-probe.js"
+        },
+        {
+          "event": "view",
+          "at": 1888,
+          "state": [
+            3,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1941,
+          "state": [
+            3,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1941,
+          "state": [
+            3,
+            null,
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "initially_focused": true,
+      "after_first_claim": {
+        "focus": false,
+        "retained": false
+      },
+      "genuine_replacement": {
+        "invalidated": true,
+        "worker": "http://127.0.0.1:33011/control-probe.js"
+      },
+      "events": [
+        {
+          "event": "view",
+          "at": 24,
+          "state": [
+            0,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 68,
+          "state": [
+            1,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 111,
+          "state": [
+            1,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 320,
+          "state": [
+            1,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 320,
+          "state": [
+            1,
+            null,
+            true,
+            false
+          ]
+        },
+        {
+          "event": "controllerchange",
+          "at": 535,
+          "script": "http://127.0.0.1:33011/sw.js"
+        },
+        {
+          "event": "view",
+          "at": 536,
+          "state": [
+            2,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 589,
+          "state": [
+            2,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 589,
+          "state": [
+            2,
+            null,
+            true,
+            false
+          ]
+        },
+        {
+          "event": "controllerchange",
+          "at": 720,
+          "script": "http://127.0.0.1:33011/control-probe.js"
+        },
+        {
+          "event": "view",
+          "at": 726,
+          "state": [
+            3,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 766,
+          "state": [
+            3,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 766,
+          "state": [
+            3,
+            null,
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "initially_focused": true,
+      "after_first_claim": {
+        "focus": false,
+        "retained": false
+      },
+      "genuine_replacement": {
+        "invalidated": true,
+        "worker": "http://127.0.0.1:33011/control-probe.js"
+      },
+      "events": [
+        {
+          "event": "view",
+          "at": 44,
+          "state": [
+            0,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 109,
+          "state": [
+            1,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 166,
+          "state": [
+            1,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 526,
+          "state": [
+            1,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 526,
+          "state": [
+            1,
+            null,
+            true,
+            false
+          ]
+        },
+        {
+          "event": "controllerchange",
+          "at": 781,
+          "script": "http://127.0.0.1:33011/sw.js"
+        },
+        {
+          "event": "view",
+          "at": 783,
+          "state": [
+            2,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 835,
+          "state": [
+            2,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 835,
+          "state": [
+            2,
+            null,
+            true,
+            false
+          ]
+        },
+        {
+          "event": "controllerchange",
+          "at": 941,
+          "script": "http://127.0.0.1:33011/control-probe.js"
+        },
+        {
+          "event": "view",
+          "at": 945,
+          "state": [
+            3,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 988,
+          "state": [
+            3,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 993,
+          "state": [
+            3,
+            null,
+            true,
+            false
+          ]
+        }
+      ]
+    }
+  ]
+}

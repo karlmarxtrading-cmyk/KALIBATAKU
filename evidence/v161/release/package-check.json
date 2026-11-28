@@ -1,0 +1,41 @@
+{
+ "status": "PASS",
+ "problems": [],
+ "steps": {
+  "files": 7418,
+  "seal_in_copy": {
+   "exit": 0,
+   "tail": "\": \"CLOSED_VERIFIED\",\n  \"REL-01\": \"OPEN_EXTERNAL\",\n  \"REL-02\": \"OPEN_EXTERNAL\",\n  \"REL-03\": \"OPEN_EXTERNAL\",\n  \"DOC-01\": \"PARTIAL_ROSTER_READY_REVIEW_NOT_PERFORMED\"\n }\n}\n{\"verified\": \"CRC-32 for every entry, original file SHA-256 and byte count, safe relative paths; no symbolic links\", \"files\": 7418, \"bytes\": 128603643, \"sha256\": \"c63875b83e24c678c1a0290a08a020b5476cf08acbdefce24f0e222d596d6a55\"}\n"
+  },
+  "release_verify": {
+   "exit": 0,
+   "tail": ",\n  \"REL-01\": \"OPEN_EXTERNAL\",\n  \"REL-02\": \"OPEN_EXTERNAL\",\n  \"REL-03\": \"OPEN_EXTERNAL\",\n  \"DOC-01\": \"PARTIAL_ROSTER_READY_REVIEW_NOT_PERFORMED\"\n }\n}\nVerified inventory, distribution, bank sources, release evidence and QA binding\nVerified 7417 checksums / source fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41 / dist 9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b\n"
+  },
+  "bank_preservation": {
+   "exit": 0,
+   "tail": "{\"files_before\": 4677, \"files_now\": 4677, \"changed\": 0, \"missing\": 0, \"added\": 0, \"tree_sha256_before\": \"6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43\", \"tree_sha256_now\": \"6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43\", \"package_count\": 4604, \"question_slots\": 177640}\nbank preserved: 4677 files byte-identical\n"
+  },
+  "journey_check": {
+   "exit": 0,
+   "tail": "journey sidecar ok d04820e1932e9e00 177640 placements\n"
+  },
+  "rebuild": {
+   "exit": 0,
+   "dist_before": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+   "dist_after": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+   "identical": true
+  },
+  "release_verify_after_rebuild": {
+   "exit": 0,
+   "tail": ",\n  \"REL-01\": \"OPEN_EXTERNAL\",\n  \"REL-02\": \"OPEN_EXTERNAL\",\n  \"REL-03\": \"OPEN_EXTERNAL\",\n  \"DOC-01\": \"PARTIAL_ROSTER_READY_REVIEW_NOT_PERFORMED\"\n }\n}\nVerified inventory, distribution, bank sources, release evidence and QA binding\nVerified 7417 checksums / source fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41 / dist 9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b\n"
+  },
+  "guide_references": {
+   "checked": 37,
+   "missing": []
+  }
+ },
+ "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+ "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41",
+ "checked_utc": "2026-11-28T17:40:19+00:00",
+ "scope": "Trial ZIP verified from a fresh extraction, with the then-current register, before updating the package result and final inventory."
+}

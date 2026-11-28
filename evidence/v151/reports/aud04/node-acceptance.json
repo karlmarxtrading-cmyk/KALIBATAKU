@@ -1,0 +1,247 @@
+{
+  "suite": "AUD-04",
+  "scope": "Node engine, immutable validated 1.4.0 snapshots and new assisted mission, map and report writers",
+  "date": "2026-11-28T10:40:01.490Z",
+  "runtime": "v24.22.3",
+  "release_tree": "dist",
+  "offline_release": "ef0b6798d9633ca8",
+  "command": "node tests/journey/report-readiness.mjs --dist [output-dir]",
+  "expected": "12/12 unique, 2 passing, 2 strategies, ready",
+  "checks": [
+    {
+      "name": "map fixture",
+      "expected": [
+        12,
+        12,
+        2,
+        2,
+        true
+      ],
+      "actual": [
+        12,
+        12,
+        2,
+        2,
+        true
+      ]
+    },
+    {
+      "name": "mixed catalog and missions",
+      "expected": [
+        12,
+        12,
+        2,
+        2,
+        true
+      ],
+      "actual": [
+        12,
+        12,
+        2,
+        2,
+        true
+      ]
+    },
+    {
+      "name": "journey-only coverage",
+      "expected": [
+        10,
+        12,
+        2,
+        2,
+        false
+      ],
+      "actual": [
+        10,
+        12,
+        2,
+        2,
+        false
+      ]
+    },
+    {
+      "name": "empty selected period retains cumulative readiness",
+      "expected": [
+        0,
+        0,
+        0,
+        12,
+        12,
+        2,
+        2,
+        true
+      ],
+      "actual": [
+        0,
+        0,
+        0,
+        12,
+        12,
+        2,
+        2,
+        true
+      ]
+    },
+    {
+      "name": "catalog-only activity filter retains journey passes",
+      "expected": [
+        1,
+        0,
+        12,
+        12,
+        2,
+        2,
+        true
+      ],
+      "actual": [
+        1,
+        0,
+        12,
+        12,
+        2,
+        2,
+        true
+      ]
+    },
+    {
+      "name": "grade filter omits unrelated material",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "name": "generation time cutoff immediately before finalization",
+      "expected": 1,
+      "actual": 1
+    },
+    {
+      "name": "generation time includes same-instant commit",
+      "expected": 2,
+      "actual": 2
+    },
+    {
+      "name": "report period upper bound is exclusive",
+      "expected": [
+        1,
+        2
+      ],
+      "actual": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "cross-midnight session has no future answers or completion in period activity",
+      "expected": [
+        3,
+        1,
+        0,
+        2
+      ],
+      "actual": [
+        3,
+        1,
+        0,
+        2
+      ]
+    },
+    {
+      "name": "profile, origin, module and class isolation",
+      "expected": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "name": "unsupported journey is excluded from readiness",
+      "expected": 0,
+      "actual": 0
+    },
+    {
+      "name": "frozen metrics use current rule and retain original policy in session record",
+      "expected": [
+        "mission-policy-1.1.0",
+        "mission-policy-1.0.0"
+      ],
+      "actual": [
+        "mission-policy-1.1.0",
+        "mission-policy-1.0.0"
+      ]
+    },
+    {
+      "name": "legacy data unchanged after reports",
+      "expected": "7f09d991b2393bce60988ede95c3cfae66ec5c53c2937d0c0269969c1ba319d5",
+      "actual": "7f09d991b2393bce60988ede95c3cfae66ec5c53c2937d0c0269969c1ba319d5"
+    },
+    {
+      "name": "hint and revision after key do not award a passing mission",
+      "expected": [
+        8,
+        6,
+        2,
+        1,
+        0,
+        false
+      ],
+      "actual": [
+        8,
+        6,
+        2,
+        1,
+        0,
+        false
+      ]
+    },
+    {
+      "name": "decoded exported JSON equals audited expected values",
+      "expected": [
+        12,
+        12,
+        2,
+        2,
+        true
+      ],
+      "actual": [
+        12,
+        12,
+        2,
+        2,
+        true
+      ]
+    }
+  ],
+  "files": [
+    {
+      "format": "json",
+      "bytes": 10817,
+      "sha256": "d41ef21c4aecbce4e4df756b4a607d036765803ae6714f332be0816d987a5774"
+    },
+    {
+      "format": "csv",
+      "bytes": 5724,
+      "sha256": "7c98d7c83f7bd975a04d629be55eee941bfbb296249cb3d789ed9fe20e564cc0"
+    },
+    {
+      "format": "xlsx",
+      "bytes": 33182,
+      "sha256": "35bfdc99cbeeb94817c9fad6826e38aef20e2ca0dd61febca901cd7799a484f7"
+    },
+    {
+      "format": "docx",
+      "bytes": 9974,
+      "sha256": "c79a49d018fe21641dfd9e6445b6ab4103fdb4605054e01afe4f805e4256bdb6"
+    },
+    {
+      "format": "pdf",
+      "bytes": 399289,
+      "sha256": "5b0300253c956b17058e9db949be63cd8ec65c25ef244574f655e44922742903"
+    }
+  ]
+}

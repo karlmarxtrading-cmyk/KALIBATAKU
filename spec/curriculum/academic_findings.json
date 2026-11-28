@@ -1,0 +1,278 @@
+{
+  "audit_id": "KALIBATAKU-ACADEMIC-AUDIT-20261125",
+  "status": "review_of_source_specification_not_production_bank_audit",
+  "source_files": [
+    {
+      "file_name": "KALIBATAKU_MASTER_CURRICULUM_v1.md",
+      "sha256": "fc71cd6bed169bdf5fd284f1bd1242fbfbf36d2ca3d85f51151007d920a6296c"
+    },
+    {
+      "file_name": "KALIBATAKU_CURRICULUM_REGISTRY_v1.json",
+      "sha256": "3f4df37542b5a7570e405483001810013365f6641bb8ebb0c24359d94ff01012"
+    }
+  ],
+  "verification": {
+    "levels": 60,
+    "slots": 300,
+    "active": 281,
+    "inactive": 19,
+    "package_target_ceiling": 4604,
+    "question_slot_target_ceiling": 177640,
+    "independent_expression_parser": "recursive-descent tokenizer; +,-,*,/ equivalents; rational literals and decimals evaluated using exact Fraction; no eval",
+    "exact_answer_checks": 281,
+    "exact_answer_failures": 0,
+    "display_answer_checks": 281,
+    "display_answer_failures": 0,
+    "ast_agreement_checks": 281,
+    "ast_agreement_failures": 0,
+    "basic_domain_checks": "all examples G01-G04 have integer operands/intermediates; G01-G06 nonnegative",
+    "prerequisite_references_valid": true,
+    "prerequisite_candidate_cycles": 0,
+    "entire_future_bank_validated": false
+  },
+  "findings": [
+    {
+      "issue_id": "AC-001",
+      "severity": "must_correct_before_generation",
+      "competency_id": "arithmetic.addition.g02.l05",
+      "kind": "example_rule_conflict",
+      "rule": "a,b=10–299; a+b≤500; satu operand mudah/one friendly operand (kelipatan/multiple 10 atau/or ±1)",
+      "evidence": {
+        "expression": "198+42",
+        "answer": "240",
+        "distance_to_multiple_10": [
+          2,
+          2
+        ],
+        "why": "Kedua operand bukan kelipatan 10 dan tidak berjarak 1 dari kelipatan 10."
+      },
+      "proposed_correction": {
+        "method": "replace_example_only",
+        "expression": "199+42",
+        "answer": {
+          "numerator": "241",
+          "denominator": "1"
+        },
+        "preserve_rule": true
+      }
+    },
+    {
+      "issue_id": "AC-002",
+      "severity": "must_correct_before_generation",
+      "competency_id": "arithmetic.mixed.g11.l03",
+      "kind": "example_operation_count_conflict",
+      "rule": "3–4 operasi/operations; multiple cancellations; denominators≤720",
+      "evidence": {
+        "expression": "144⁄175×245⁄216+1⁄3",
+        "binary_operation_count": 2,
+        "required_minimum": 3,
+        "why": "Garis pecahan literal ⁄ bukan operasi tambahan dalam AST."
+      },
+      "proposed_correction": {
+        "method": "replace_example_only",
+        "expression": "(144⁄175×245⁄216+1⁄3)×15",
+        "binary_operation_count": 3,
+        "answer": {
+          "numerator": "19",
+          "denominator": "1"
+        },
+        "preserve_rule": true
+      }
+    },
+    {
+      "issue_id": "AC-003",
+      "severity": "must_correct_before_generation",
+      "competency_id": "arithmetic.division.g12.l01",
+      "kind": "example_quotient_range_conflict",
+      "rule": "b near-base as MUL or friendly factor 25,125,250; q integer magnitude 10–5000; a=b×q; magnitude≤50000000",
+      "evidence": {
+        "expression": "249950÷25",
+        "quotient": "9998",
+        "quotient_maximum": "5000",
+        "why": "Kunci 9998 benar secara aritmetika, tetapi q melampaui batas lokal."
+      },
+      "proposed_correction": {
+        "method": "replace_example_only",
+        "expression": "249950÷9998",
+        "answer": {
+          "numerator": "25",
+          "denominator": "1"
+        },
+        "reason": "b=9998 dekat 10000 dengan selisih2; q=25 memenuhi10–5000; a tetap249950.",
+        "preserve_rule": true
+      }
+    },
+    {
+      "issue_id": "AC-004",
+      "severity": "must_correct_before_generation",
+      "competency_id": "arithmetic.mixed.g12.l02",
+      "kind": "example_operation_count_conflict",
+      "rule": "3–4 operasi/operations; at least one conversion and one scaling; intermediate denominators≤1000000; magnitude≤50000000",
+      "evidence": {
+        "expression": "(1⁄64+0.015625)×3200",
+        "binary_operation_count": 2,
+        "required_minimum": 3
+      },
+      "proposed_correction": {
+        "method": "replace_example_only",
+        "expression": "(1⁄64+0.015625)×3200÷10",
+        "binary_operation_count": 3,
+        "answer": {
+          "numerator": "10",
+          "denominator": "1"
+        },
+        "preserve_rule": true
+      }
+    },
+    {
+      "issue_id": "AC-005",
+      "severity": "specification_required_before_generation",
+      "competency_id": null,
+      "kind": "nonexecutable_predicates",
+      "rule": "friendly; anchor; near; related denominators; one/two mental affordances; cancellation",
+      "evidence": "281 rules are editorial strings. Global complementary permits a result forming an integer, so the test is vacuous for integer-only items. No template_id or executable predicate registry is supplied.",
+      "proposed_correction": {
+        "method": "compile_explicit_predicate_registry",
+        "requirements": [
+          "Enumerate anchor sets, permitted offsets, factor pairs and denominator domains per template.",
+          "Define complement as a specified target or relation, not any integer.",
+          "Represent independent strategy affordances as verifiable template predicates.",
+          "Record inheritance from ADD/MUL explicitly; no natural-language parsing during browser runtime.",
+          "Give each cell one or more finite parameter recipes and validators with versioned provenance."
+        ]
+      }
+    },
+    {
+      "issue_id": "AC-006",
+      "severity": "specification_required_before_adaptive_mastery",
+      "competency_id": null,
+      "kind": "prerequisite_candidate_not_pedagogical_DAG",
+      "evidence": {
+        "arithmetic.multiplication.g02.l03": [],
+        "arithmetic.division.g02.l04": [],
+        "arithmetic.mixed.g01.l05": [],
+        "arithmetic.addition.g05.l03": [
+          "arithmetic.addition.g05.l02"
+        ]
+      },
+      "proposed_correction": {
+        "method": "supplement_prerequisite_mapping",
+        "requirements": [
+          "Keep supplied prerequisite_candidates as traceable source hints.",
+          "Add operator prerequisites for first MUL/DIV/MIX, fraction representation and sign understanding.",
+          "Represent strict prerequisites separately from recommended review.",
+          "Allow diagnostic override and teacher review; do not hard-lock a first skill because its list is empty.",
+          "Validate DAG, references and attainable placement paths."
+        ]
+      }
+    },
+    {
+      "issue_id": "AC-007",
+      "severity": "specification_required_before_reporting_mastery",
+      "competency_id": null,
+      "kind": "uncalibrated_policy",
+      "evidence": "90% pooled mastery,80% each form, two sessions, spacing24h, sample min20 and minimum8 are design proposals; no pilot evidence.",
+      "proposed_correction": {
+        "method": "configurable_versioned_policy",
+        "requirements": [
+          "Use provisional local status.",
+          "Keep timing separate from accuracy; no universal seconds gate.",
+          "Report sample size, independent-item count, mode, version and comparable-form status.",
+          "Do not claim validated grade norms or formal psychometric mastery.",
+          "Provide review/override fields without inventing human approval."
+        ]
+      }
+    },
+    {
+      "issue_id": "AC-008",
+      "severity": "definition_of_complete_required",
+      "competency_id": null,
+      "kind": "capacity_not_uniqueness",
+      "evidence": {
+        "target_slots": 177640,
+        "target_package_files": 4604,
+        "actual_examples_in_registry": 281,
+        "G01-L01-ADD_canonical_pool": 12,
+        "G02-L03-MUL_canonical_pool": 30,
+        "G03-L01-MUL_canonical_pool": 66
+      },
+      "proposed_correction": {
+        "method": "track_slots_unique_forms_and_coverage_separately",
+        "requirements": [
+          "Cover all281 active competencies and60 levels; keep19 inactive.",
+          "Compute exact pool sizes for small cells and bounded constructive feasibility for large cells.",
+          "Generate real package content, not cloned samples or manifests with missing files.",
+          "Do not duplicate a canonical question within one package.",
+          "Permit declared spaced repetition across packages; do not inflate unique counts.",
+          "Derive reduced package sizes only from mathematical pool constraints and record every deviation, not from deadline or token limits."
+        ]
+      }
+    },
+    {
+      "issue_id": "AC-009",
+      "severity": "specification_required_before_rendering",
+      "competency_id": null,
+      "kind": "rational_value_vs_display_representation",
+      "evidence": "Registry AST uses reduced rationals; display expression uses decimal or literal fraction. JSON alone cannot infer intended display of 1/2 as0.5 or2/4.",
+      "proposed_correction": {
+        "method": "separate_value_display_and_identity",
+        "requirements": [
+          "Keep exact canonical rational values and independently declared display representation for each operand.",
+          "Use canonical value/structure fingerprint for independent evidence; representation variant may be separate pedagogical exposure.",
+          "Rendering must distinguish fraction literal from inline division; never render 12÷3/4 ambiguously.",
+          "ID/EN locale must not alter mathematical value or reset an attempt."
+        ]
+      }
+    },
+    {
+      "issue_id": "AC-010",
+      "severity": "delivery_status_must_be_explicit",
+      "competency_id": null,
+      "kind": "source_is_curriculum_not_full_bank",
+      "evidence": "ZIP contains a Markdown blueprint and a JSON registry with281 examples, not177640 generated slots, factory, tests, UI or executable constraints.",
+      "proposed_correction": {
+        "method": "release_evidence",
+        "requirements": [
+          "Keep archive status specification_handoff.",
+          "Production readiness is a future release verdict tied to produced package hashes and gate evidence.",
+          "Do not assert mathematical correctness for nonexistent generated items.",
+          "Treat academic review/pilot as pending when no genuine evidence exists."
+        ]
+      }
+    },
+    {
+      "issue_id": "AC-011",
+      "severity": "specification_required_before_generation",
+      "competency_id": null,
+      "kind": "cross_domain_mix_recipe_ambiguity",
+      "evidence": "Some MIX cells give only operation count and broad magnitude/denominator bounds while asking subexpressions from present or prior active skills; membership of DIV by16 in G06-L04 example and mandatory vs optional parentheses are not specified.",
+      "proposed_correction": {
+        "method": "explicit_AST_shape_recipes",
+        "requirements": [
+          "Enumerate permitted AST shapes, node operations and leaf domains per MIX cell.",
+          "Specify whether parentheses are mandatory in display or simply allowed.",
+          "Specify whether suboperation operand ranges inherit strict standalone limits or the broader combined-expression policy.",
+          "For new factors required by an accepted MIX example, declare exact rational/factor decomposition prerequisite instead of silently extending unrelated standalone domains."
+        ]
+      }
+    }
+  ],
+  "small_pool_exact_counts": {
+    "G01-L01-ADD": 12,
+    "G01-L01-SUB": 21,
+    "G01-L02-ADD": 36,
+    "G01-L02-SUB": 66,
+    "G01-L03-ADD": 55,
+    "G01-L03-SUB": 55,
+    "G01-L04-ADD": 25,
+    "G01-L04-SUB": 45,
+    "G01-L05-ADD": 115,
+    "G01-L05-SUB": 955,
+    "G01-L05-MIX": 405,
+    "G02-L03-MUL": 30,
+    "G02-L04-MUL": 36,
+    "G02-L05-MUL": 45,
+    "G03-L01-MUL": 66
+  },
+  "pool_count_convention": "Finite enumeration under literal source domains; commutative operand swaps canonicalized for ADD/MUL; SUB/DIV ordered; no reduction by equal final answer; MIX AST distinct."
+}

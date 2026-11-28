@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "environment": "Node v24.22.3; temporary transactional adapter; native IndexedDB is tested separately.",
+  "source_archive_sha256": "47594d89f492b440b365a080ba7654f136eef3bcd1537c5d241333c27f9cf3e9",
+  "source_backup_sha256": "c96ae550b7d635fe19cdc503c813a31b0dafc52b67e153d9385a2a597976e014",
+  "original_session_count": 2,
+  "preserved_events": 5,
+  "old_snapshot_content_version": "1.0.0",
+  "old_snapshot_questions_unchanged": 2,
+  "retained_wrong_first_response": "99",
+  "retained_revised_answer": "5",
+  "restored_draft": "5",
+  "restored_final": {
+    "correct": 1,
+    "unseen": 1
+  },
+  "duplicate_import_writes": 0,
+  "raw_original_attempt_ids": [
+    "d34a4738-806f-4ceb-8da7-141d1eb770b0",
+    "50a46520-8c01-4201-93e2-72ad004ee64e"
+  ],
+  "other_profile_reads": 0,
+  "final_export_validation": "PASS"
+}

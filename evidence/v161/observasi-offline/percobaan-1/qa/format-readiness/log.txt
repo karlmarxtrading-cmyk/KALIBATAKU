@@ -1,0 +1,1 @@
+PASS readiness values from JSON, CSV, XLSX, DOCX and PDF

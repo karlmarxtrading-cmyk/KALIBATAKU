@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "engine": "Chromium 151.0.7922.34",
+  "release": "ef0b6798d9633ca8",
+  "fixture_sha256": "2e4b824c6c2e94f11ee1d720efa53dbb2f332c48266bde98e91dd226577ff35d",
+  "report_sha256": "acc4820eb7c7df7708974628f384ae36fc8e2ba45ab4b0453ac9686e71130c58",
+  "method": "Synthetic profile restored through file picker to IndexedDB, page reloaded, profile selected, date controls applied, report downloaded through actual export worker.",
+  "completed": 4,
+  "assigned": 32,
+  "missions": 3,
+  "retained_offset": true,
+  "page_errors": []
+}

@@ -1,0 +1,236 @@
+{
+  "offline_release": "f630b3dc6aa6b5a5",
+  "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+  "utc": "2026-11-28T18:43:53.945Z",
+  "profile": "Uji papan ketik ab7da",
+  "method": "Actual keyboard actions on a separate top-level Chrome window. Event.isTrusted and visible DOM recorded. No physical IME or spoken assistive technology.",
+  "opening": {
+    "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+    "focus": "kp-answer text",
+    "q": "0 + 5",
+    "position": "Soal 1 dari 2",
+    "draft": "",
+    "cta": "Periksa \u00b7 Enter",
+    "h1": "Penjumlahan"
+  },
+  "events": [
+    {
+      "type": "keydown",
+      "key": "Tab",
+      "shift": false,
+      "trusted": true,
+      "target": "kp-answer text",
+      "before": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "kp-answer text",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "",
+        "cta": "Periksa \u00b7 Enter",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "\u2713BenarJawabanmu4Kunci jawaban4Lihat hasil \u00b7 E",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "cta": "Lihat hasil \u00b7 Enter",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "submit Periksa \u00b7 Enter"
+    },
+    {
+      "type": "keydown",
+      "key": "Shift",
+      "shift": true,
+      "trusted": true,
+      "target": "submit Periksa \u00b7 Enter",
+      "before": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "submit Periksa \u00b7 Enter",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "",
+        "cta": "Periksa \u00b7 Enter",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "\u2713BenarJawabanmu4Kunci jawaban4Lihat hasil \u00b7 E",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "cta": "Lihat hasil \u00b7 Enter",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "keydown",
+      "key": "Tab",
+      "shift": true,
+      "trusted": true,
+      "target": "submit Periksa \u00b7 Enter",
+      "before": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "submit Periksa \u00b7 Enter",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "",
+        "cta": "Periksa \u00b7 Enter",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "\u2713BenarJawabanmu4Kunci jawaban4Lihat hasil \u00b7 E",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "cta": "Lihat hasil \u00b7 Enter",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "kp-answer text"
+    },
+    {
+      "type": "keydown",
+      "key": "5",
+      "shift": false,
+      "trusted": true,
+      "target": "kp-answer text",
+      "before": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "kp-answer text",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "",
+        "cta": "Periksa \u00b7 Enter",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "\u2713BenarJawabanmu4Kunci jawaban4Lihat hasil \u00b7 E",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "cta": "Lihat hasil \u00b7 Enter",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "kp-answer text",
+      "before": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "kp-answer text",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "5",
+        "cta": "Periksa \u00b7 Enter",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "\u2713BenarJawabanmu4Kunci jawaban4Lihat hasil \u00b7 E",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "cta": "Lihat hasil \u00b7 Enter",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "\u2713BenarJawabanmu5Kunci jawaban5Soal berikutnya"
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "\u2713BenarJawabanmu5Kunci jawaban5Soal berikutnya",
+      "before": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "\u2713BenarJawabanmu5Kunci jawaban5Soal berikutnya",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "cta": "Soal berikutnya \u00b7 Enter",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/results/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "main Hasil sesiUji papan ketik ab7da \u00b7 Kelas 1 \u00b7 L",
+        "h1": "Hasil sesi"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "kp-answer text"
+    },
+    {
+      "type": "keydown",
+      "key": "4",
+      "shift": false,
+      "trusted": true,
+      "target": "kp-answer text",
+      "before": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "kp-answer text",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "",
+        "cta": "Periksa \u00b7 Enter",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "kp-answer text",
+      "before": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "kp-answer text",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "Periksa \u00b7 Enter",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "\u2713BenarJawabanmu4Kunci jawaban4Lihat hasil \u00b7 E"
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "\u2713BenarJawabanmu4Kunci jawaban4Lihat hasil \u00b7 E",
+      "before": {
+        "route": "#/session/7afcf39c-bad4-412f-a88a-948c94923801",
+        "focus": "\u2713BenarJawabanmu4Kunci jawaban4Lihat hasil \u00b7 E",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "cta": "Lihat hasil \u00b7 Enter",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "main Hasil sesiUji papan ketik ab7da \u00b7 Kelas 1 \u00b7 L"
+    }
+  ],
+  "ending": {
+    "route": "#/results/7afcf39c-bad4-412f-a88a-948c94923801",
+    "focus": "main Hasil sesiUji papan ketik ab7da \u00b7 Kelas 1 \u00b7 L",
+    "h1": "Hasil sesi"
+  },
+  "finalVisible": "Hasil sesi\n\nUji papan ketik ab7da \u00b7 Kelas 1 \u00b7 Level 1 \u00b7 Penjumlahan \u00b7 Latihan \u00b7 29 Nov 2026, 01.43\n\n2 dari 2 soal benar\n\nSemua soal terjawab dengan benar. Siap mencoba paket lain?\n\nBenar pada jawaban pertama \u00b7 2 / 2\n\nSoal direvisi setelah melihat kunci \u00b7 0\n\n2 benar \u00b7 0 salah \u00b7 0 dilewati \u00b7 0 kosong \u00b7 0 belum dilihat\n\nHasil latihan lokal \u00b7 belum diverifikasi institusi\n\nLatihan lagi\nTinjau jawaban\nLihat progres\nRiwayat latihan\nDetail untuk orang tua dan guru",
+  "trustedKeystrokes": 9
+}

@@ -1,0 +1,1 @@
+Slot bukti Windows native. Pada Windows, jalankan python tools/native_receipt.py ../native-Windows dari salinan bersih ZIP. Cocokkan identitas kandidat, platform dan log dari mesin penguji. Masukkan native.json dan empat log ke folder ini di salinan pengemasan, kemudian hitung ulang register. Placeholder petunjuk ini tidak memenuhi gerbang.

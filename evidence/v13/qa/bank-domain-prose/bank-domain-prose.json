@@ -1,0 +1,124 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "MATH-002-domain-prose",
+  "scope": "Grade 1–6 nonnegative teaching text and steps; lineage to bank 1.1.0",
+  "build": {
+    "offline_release": "d69d4921d7f04c1a",
+    "app_version": "1.3.0",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "python": "3.13.18",
+    "platform": "Linux-6.18.44-fc-v880-x86_64-with-glibc2.39"
+  },
+  "started": "2026-11-26T11:09:38Z",
+  "finished": "2026-11-26T11:09:44Z",
+  "assertions": 9,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "bank-complete",
+      "status": "PASS",
+      "expected": "Full bank scanned: 4.604 packages, 177.640 placements, content 1.2.0",
+      "actual": {
+        "packages": 4604,
+        "placements": 177640,
+        "grade_1_6_placements": 42640,
+        "version": "1.2.0"
+      }
+    },
+    {
+      "id": "g01-g06-no-signed-prose",
+      "status": "PASS",
+      "expected": "No signed number in G1–6 hint, explanation or step text (ID and EN)",
+      "actual": {
+        "grade_1_6_placements_checked": 42640,
+        "signed_numbers": 0
+      }
+    },
+    {
+      "id": "g01-g06-nonnegative-steps",
+      "status": "PASS",
+      "expected": "Every value inside every G1–6 structured step is nonnegative",
+      "actual": {
+        "negative_step_values": 0
+      }
+    },
+    {
+      "id": "steps-move-forward",
+      "status": "PASS",
+      "expected": "No step repeats the previous step and the last step is the key (all grades)",
+      "actual": {
+        "repeated_consecutive_steps": 0,
+        "last_step_not_key": 0
+      }
+    },
+    {
+      "id": "fixture-G03-L05-DIV-924",
+      "status": "PASS",
+      "expected": "924 ÷ 11: dividend split 880 + 44, steps 80 + 4 → 84, no negative remainder",
+      "actual": {
+        "explanation": {
+          "id": "Pisahkan 924 menjadi 880 + 44; keduanya kelipatan 11. Bagi setiap bagian, lalu jumlahkan hasilnya.",
+          "en": "Split 924 into 880 + 44; both are multiples of 11. Divide each part, then add the results."
+        },
+        "steps": [
+          {
+            "id": "924 = 880 + 44.",
+            "en": "924 = 880 + 44."
+          },
+          {
+            "id": "880 ÷ 11 = 80 dan 44 ÷ 11 = 4.",
+            "en": "880 ÷ 11 = 80 and 44 ÷ 11 = 4."
+          },
+          {
+            "id": "Hasil akhirnya 84.",
+            "en": "The final value is 84."
+          }
+        ]
+      }
+    },
+    {
+      "id": "fixture-G02-L03-MIX-5x9",
+      "status": "PASS",
+      "expected": "(5 × 9) + 6 in grade 2: groups language, no −1 × 5",
+      "actual": {
+        "explanation": {
+          "id": "10 kelompok 5 adalah 50. 9 kelompok berarti 1 kelompok lebih sedikit, jadi kurangi 1 × 5 = 5.",
+          "en": "10 groups of 5 make 50. 9 groups is 1 group fewer, so take away 1 × 5 = 5."
+        }
+      }
+    },
+    {
+      "id": "fixture-G03-L01-ADD-291",
+      "status": "PASS",
+      "expected": "291 + 300: compensation described as “9 less than 300”, no −9",
+      "actual": {
+        "explanation": {
+          "id": "Ganti 291 dengan 300: 300 + 300 = 600. Karena 291 adalah 9 kurang dari 300, kurangi hasilnya dengan 9.",
+          "en": "Replace 291 with 300: 300 + 300 = 600. Because 291 is 9 less than 300, take 9 away from the result."
+        }
+      }
+    },
+    {
+      "id": "math-identity-preserved",
+      "status": "PASS",
+      "expected": "Question IDs, fingerprints, keys, ASTs and order identical to bank 1.1.0 in all 4.604 packages",
+      "actual": {
+        "packages_math_identical": 4604,
+        "packages_with_wording_changes": 1771
+      }
+    },
+    {
+      "id": "editorial-log",
+      "status": "PASS",
+      "expected": "Every changed wording is listed with old and new text in both languages",
+      "actual": {
+        "rows": 41019,
+        "question_ids": 19966
+      }
+    }
+  ],
+  "redundant_two_step_explanations_g1_6": 19947
+}

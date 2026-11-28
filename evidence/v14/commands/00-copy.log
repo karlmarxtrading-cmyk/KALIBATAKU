@@ -1,0 +1,2 @@
+# Commands ran in /home/claude/cmdcopy, a copy of the release checkout without .git (tar warned that a register file changed while copying; the copy was taken while registers were being regenerated — no app or bank file was involved).
+# dist tree of the copy after all commands: 4b4948fcbe986c6950dfb74288ade613da75101f1bba3328fd496931457bf2c4 (identical to the gated build)

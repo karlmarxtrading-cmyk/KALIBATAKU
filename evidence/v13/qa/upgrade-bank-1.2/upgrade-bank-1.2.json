@@ -1,0 +1,89 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "UPGRADE-app1.2.0-bank1.1.0",
+  "scope": "Restore and resume sessions recorded with bank 1.1.0 on the 1.3.0 application",
+  "build": {
+    "offline_release": "d69d4921d7f04c1a",
+    "app_version": "1.3.0",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "node": "v22.23.5",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "started": "2026-11-26T11:11:06.147Z",
+  "finished": "2026-11-26T11:11:06.202Z",
+  "assertions": 6,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "preview-old-backup",
+      "status": "PASS",
+      "expected": "Format-1 backup written by 1.2.0 previews without conflicts",
+      "actual": {
+        "additions": 10,
+        "sessions": 2
+      }
+    },
+    {
+      "id": "import-old-backup",
+      "status": "PASS",
+      "expected": "Import restores both sessions with their 1.1.0 snapshots",
+      "actual": [
+        [
+          "ongoing",
+          "1.1.0"
+        ],
+        [
+          "completed",
+          "1.1.0"
+        ]
+      ]
+    },
+    {
+      "id": "resume-finish-old",
+      "status": "PASS",
+      "expected": "Ongoing 1.1.0 session resumes, keeps its snapshot and finishes",
+      "actual": {
+        "status": "completed",
+        "first": false,
+        "final": false,
+        "history": [
+          "8",
+          "84"
+        ]
+      }
+    },
+    {
+      "id": "old-snapshot-wording",
+      "status": "PASS",
+      "expected": "Old review shows the wording the learner saw (1.1.0 snapshot), not rewritten text",
+      "actual": "Perkiraan 92 memberi 92 × (11) = 1012. Sisanya −88. Bagi sisa itu dengan 11 untuk mengoreksi perkiraan."
+    },
+    {
+      "id": "new-session-new-wording",
+      "status": "PASS",
+      "expected": "A new session of the same package uses bank 1.2.0 wording with the same question identity and key",
+      "actual": {
+        "content_version": "1.2.0",
+        "explanation": "Pisahkan 924 menjadi 880 + 44; keduanya kelipatan 11. Bagi setiap bagian, lalu jumlahkan hasilnya.",
+        "url": "bank/v1.2/g03/l05/MM-G03-L05-DIV-P001.mjs"
+      }
+    },
+    {
+      "id": "reexport-archive",
+      "status": "PASS",
+      "expected": "The upgraded profile exports as an archive and re-reads with every event",
+      "actual": {
+        "attempts": 3,
+        "events": 11,
+        "versions": [
+          "1.1.0",
+          "1.2.0"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "started": "2026-11-28T10:10:52.549135+00:00",
+  "scenario": "New intro mission, end from first unanswered question, inspect map coverage",
+  "build": {
+    "app_version": "1.5.0",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "460c98b682110f7e",
+    "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c"
+  },
+  "browser": "153.0",
+  "confirmation": "Profil utama · Kelas 1 · Level 1 · Misi petualangan\n\nPenjumlahan\nSoal 1 dari 6\nTanpa batas waktu\nSelesaikan sesi ini?\nBenar · 0\nBelum tepat · 0\nKosong · 1\nBelum dilihat · 5\nDilewati · 0\n\nSoal yang belum dijawab dicatat sebagai belum dilihat atau kosong.\n\nSelesaikan dan lihat hasil\nKembali ke soal\nTersimpan di perangkat · 28 Nov 2026, 17.10",
+  "result": "Penjumlahan · Pasangan bilangan sampai 5 · Tahap 1 · Kelas 1 · Level 1 · Pengenalan · 6 soal\n\n0 dari 6 benar pada jawaban pertama tanpa bantuan\nJawaban akhir benar · 0 / 6\nSoal dengan petunjuk atau kunci terlihat · 0\nSoal target mandiri · 0 / 4\nXP misi ini · 5 (penanda usaha, bukan nilai)\n\nMisi target mandiri 0/2 · soal unik 6/12 · strategi dicoba 0/2\n\nMisi penguatan: soal lebih bertahap pada keterampilan yang sama. · Penjumlahan · Pasangan bilangan sampai 5\n\nMisi berikutnya\nTinjau jawaban\nPeta\nBeranda",
+  "state": {
+    "attempt_id": "76a2ff59-a03f-4301-9c09-94ef60acf632",
+    "status": "completed",
+    "items": [
+      {
+        "id": "arithmetic.addition.g01.l01.1211ad42a2283a2705d2d85438fe6c52d18cf16436a349a8712f3f2f52cba1c2",
+        "seen": true,
+        "history": 0,
+        "final_status": "blank"
+      },
+      {
+        "id": "arithmetic.addition.g01.l01.00ec0d458fe3944d229b08825cf0843abdcfce15dd43defb0cad09d2f23815cd",
+        "seen": false,
+        "history": 0,
+        "final_status": "unseen"
+      },
+      {
+        "id": "arithmetic.addition.g01.l01.118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+        "seen": false,
+        "history": 0,
+        "final_status": "unseen"
+      },
+      {
+        "id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+        "seen": false,
+        "history": 0,
+        "final_status": "unseen"
+      },
+      {
+        "id": "arithmetic.addition.g01.l01.4710cc69a66e7bfd44e16899dae84aa343093bee57430284b6eb3ac6c6749de5",
+        "seen": false,
+        "history": 0,
+        "final_status": "unseen"
+      },
+      {
+        "id": "arithmetic.addition.g01.l01.ac2cb7d42538dedcfd1f0ee96a91f70b4ba09ca999e20fb9964ac454e8b2577f",
+        "seen": false,
+        "history": 0,
+        "final_status": "unseen"
+      }
+    ],
+    "coverage": 6,
+    "coverage_needed": 12,
+    "passing": 0,
+    "strategies": 0,
+    "ready": false
+  },
+  "map_node": "Perlu penguatan\nPenjumlahan · Pasangan bilangan sampai 5\n\nMisi target mandiri 0/2 · soal unik 6/12 · strategi dicoba 0/2\n\nMisi yang disarankan: Misi penguatan: soal lebih bertahap pada keterampilan yang sama.\n\nMain lagi\n· Penjumlahan · Pasangan bilangan sampai 5",
+  "finding_confirmed": true,
+  "finished": "2026-11-28T10:10:57.715365+00:00"
+}

@@ -1,0 +1,420 @@
+[
+  {
+    "started": "2026-11-28T17:00:01.001Z",
+    "completed": "2026-11-28T17:00:01.004Z",
+    "id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad",
+    "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+    "events": [
+      {
+        "schema_version": "1.0.0",
+        "event_id": "6b2aec25-8a62-4eb5-97a1-9bb756360e81",
+        "event_type": "attempt.started",
+        "event_sequence": 1,
+        "attempt_id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad",
+        "provenance": {
+          "data_origin": "local_practice",
+          "dataset_id": "device",
+          "local_profile_id": "1240cc2c-dd78-49ff-9ab3-b9ae5fcc528f",
+          "server_subject_ref": null
+        },
+        "context": {
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "module_id": "mental-math",
+          "curriculum_id": "kalibataku",
+          "curriculum_version": "1.0.0-draft.2",
+          "package_id": "MM-G05-L03-ADD-P001",
+          "content_version": "1.2.0",
+          "material_grade": 5,
+          "level": 3,
+          "mode": "practice",
+          "locale": "id",
+          "policy_version": "mastery-local-v1",
+          "assignment_id": null,
+          "form_id": null,
+          "assessment_cycle_id": null
+        },
+        "occurred_at_client": "2026-11-28T18:48:48.476Z",
+        "payload": {
+          "instances": [
+            {
+              "question_instance_id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad.1",
+              "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+              "question_revision": "1.2.0",
+              "competency_id": "arithmetic.addition.g05.l03"
+            }
+          ],
+          "order_seed": "988089485",
+          "started_at_client": "2026-11-28T17:00:01.001Z"
+        },
+        "payload_hash": "5471afc7071d1823eb0b3dbe110dab4bb2898e3482545376c5f3403ec697f1a7"
+      },
+      {
+        "schema_version": "1.0.0",
+        "event_id": "af306237-79aa-49ae-879f-cfd241296235",
+        "event_type": "answer.submitted",
+        "event_sequence": 2,
+        "attempt_id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad",
+        "provenance": {
+          "data_origin": "local_practice",
+          "dataset_id": "device",
+          "local_profile_id": "1240cc2c-dd78-49ff-9ab3-b9ae5fcc528f",
+          "server_subject_ref": null
+        },
+        "context": {
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "module_id": "mental-math",
+          "curriculum_id": "kalibataku",
+          "curriculum_version": "1.0.0-draft.2",
+          "package_id": "MM-G05-L03-ADD-P001",
+          "content_version": "1.2.0",
+          "material_grade": 5,
+          "level": 3,
+          "mode": "practice",
+          "locale": "id",
+          "policy_version": "mastery-local-v1",
+          "assignment_id": null,
+          "form_id": null,
+          "assessment_cycle_id": null
+        },
+        "occurred_at_client": "2026-11-28T18:48:48.476Z",
+        "payload": {
+          "question_instance_id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.2.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "99",
+            "denominator": "1"
+          },
+          "raw_answer": "99",
+          "draft_locale": "id",
+          "submission_kind": "first",
+          "attempt_number": 1,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 1,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": false,
+          "key_seen_before": false,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-28T17:00:01.002Z",
+          "key_reveal_reason": "checked_response"
+        },
+        "payload_hash": "075be5d36eda36b82b4dc5b1d2faf19eaf1adef78b5fff5f0b75585e65b5babe"
+      },
+      {
+        "schema_version": "1.0.0",
+        "event_id": "9e5fdb6c-f7ef-41f4-8d00-fff37d4024dd",
+        "event_type": "answer.submitted",
+        "event_sequence": 3,
+        "attempt_id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad",
+        "provenance": {
+          "data_origin": "local_practice",
+          "dataset_id": "device",
+          "local_profile_id": "1240cc2c-dd78-49ff-9ab3-b9ae5fcc528f",
+          "server_subject_ref": null
+        },
+        "context": {
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "module_id": "mental-math",
+          "curriculum_id": "kalibataku",
+          "curriculum_version": "1.0.0-draft.2",
+          "package_id": "MM-G05-L03-ADD-P001",
+          "content_version": "1.2.0",
+          "material_grade": 5,
+          "level": 3,
+          "mode": "practice",
+          "locale": "id",
+          "policy_version": "mastery-local-v1",
+          "assignment_id": null,
+          "form_id": null,
+          "assessment_cycle_id": null
+        },
+        "occurred_at_client": "2026-11-28T18:48:48.477Z",
+        "payload": {
+          "question_instance_id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.2.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "7",
+            "denominator": "4"
+          },
+          "raw_answer": "21/12",
+          "draft_locale": "id",
+          "submission_kind": "retry",
+          "attempt_number": 2,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 2,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": true,
+          "key_seen_before": true,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-28T17:00:01.002Z",
+          "key_reveal_reason": "checked_response"
+        },
+        "payload_hash": "aac78f8d3c0f7ef6bbf16767fb82fb8c5da9ab0bc4b2949aafe9ce111d3b0338"
+      },
+      {
+        "schema_version": "1.0.0",
+        "event_id": "ffa7baeb-bcbb-41ff-b62b-367921d086b5",
+        "event_type": "attempt.completed",
+        "event_sequence": 4,
+        "attempt_id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad",
+        "provenance": {
+          "data_origin": "local_practice",
+          "dataset_id": "device",
+          "local_profile_id": "1240cc2c-dd78-49ff-9ab3-b9ae5fcc528f",
+          "server_subject_ref": null
+        },
+        "context": {
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "module_id": "mental-math",
+          "curriculum_id": "kalibataku",
+          "curriculum_version": "1.0.0-draft.2",
+          "package_id": "MM-G05-L03-ADD-P001",
+          "content_version": "1.2.0",
+          "material_grade": 5,
+          "level": 3,
+          "mode": "practice",
+          "locale": "id",
+          "policy_version": "mastery-local-v1",
+          "assignment_id": null,
+          "form_id": null,
+          "assessment_cycle_id": null
+        },
+        "occurred_at_client": "2026-11-28T18:48:48.477Z",
+        "payload": {
+          "expected_event_count": 4,
+          "final_responses": [
+            {
+              "question_instance_id": "85e3bc62-4d74-4b71-a3e3-b995d5e71bad.1",
+              "response_event_id": "9e5fdb6c-f7ef-41f4-8d00-fff37d4024dd",
+              "status": "answered"
+            }
+          ],
+          "completed_at_client": "2026-11-28T17:00:01.004Z"
+        },
+        "payload_hash": "0272dae063b3f4404ddda1a0619926a86250ee47b76fc337339146e00ca89ff2"
+      }
+    ]
+  },
+  {
+    "started": "2026-11-28T16:59:50.001Z",
+    "completed": "2026-11-28T16:59:50.004Z",
+    "id": "460487ec-dde9-4edb-83a0-05060eeb3e07",
+    "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+    "events": [
+      {
+        "schema_version": "1.0.0",
+        "event_id": "e794515f-655e-4e77-87e4-de5ca6a57f39",
+        "event_type": "attempt.started",
+        "event_sequence": 1,
+        "attempt_id": "460487ec-dde9-4edb-83a0-05060eeb3e07",
+        "provenance": {
+          "data_origin": "local_practice",
+          "dataset_id": "device",
+          "local_profile_id": "1240cc2c-dd78-49ff-9ab3-b9ae5fcc528f",
+          "server_subject_ref": null
+        },
+        "context": {
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "module_id": "mental-math",
+          "curriculum_id": "kalibataku",
+          "curriculum_version": "1.0.0-draft.2",
+          "package_id": "MM-G05-L03-ADD-P001",
+          "content_version": "1.2.0",
+          "material_grade": 5,
+          "level": 3,
+          "mode": "practice",
+          "locale": "id",
+          "policy_version": "mastery-local-v1",
+          "assignment_id": null,
+          "form_id": null,
+          "assessment_cycle_id": null
+        },
+        "occurred_at_client": "2026-11-28T18:48:48.471Z",
+        "payload": {
+          "instances": [
+            {
+              "question_instance_id": "460487ec-dde9-4edb-83a0-05060eeb3e07.1",
+              "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+              "question_revision": "1.2.0",
+              "competency_id": "arithmetic.addition.g05.l03"
+            }
+          ],
+          "order_seed": "2506734568",
+          "started_at_client": "2026-11-28T16:59:50.001Z"
+        },
+        "payload_hash": "88a311a5699689cbe86ecc84a9a49a3645f72b42b94287ee51f7826427927c04"
+      },
+      {
+        "schema_version": "1.0.0",
+        "event_id": "f5bf8ae4-727f-4b7d-b72f-15d0fa33c8d4",
+        "event_type": "answer.submitted",
+        "event_sequence": 2,
+        "attempt_id": "460487ec-dde9-4edb-83a0-05060eeb3e07",
+        "provenance": {
+          "data_origin": "local_practice",
+          "dataset_id": "device",
+          "local_profile_id": "1240cc2c-dd78-49ff-9ab3-b9ae5fcc528f",
+          "server_subject_ref": null
+        },
+        "context": {
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "module_id": "mental-math",
+          "curriculum_id": "kalibataku",
+          "curriculum_version": "1.0.0-draft.2",
+          "package_id": "MM-G05-L03-ADD-P001",
+          "content_version": "1.2.0",
+          "material_grade": 5,
+          "level": 3,
+          "mode": "practice",
+          "locale": "id",
+          "policy_version": "mastery-local-v1",
+          "assignment_id": null,
+          "form_id": null,
+          "assessment_cycle_id": null
+        },
+        "occurred_at_client": "2026-11-28T18:48:48.474Z",
+        "payload": {
+          "question_instance_id": "460487ec-dde9-4edb-83a0-05060eeb3e07.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.2.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "99",
+            "denominator": "1"
+          },
+          "raw_answer": "99",
+          "draft_locale": "id",
+          "submission_kind": "first",
+          "attempt_number": 1,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 1,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": false,
+          "key_seen_before": false,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-28T16:59:50.002Z",
+          "key_reveal_reason": "checked_response"
+        },
+        "payload_hash": "cbaf06358995b27085016a5e2b6c31e52eab0c204e30dc2220cb7e700eb1eecd"
+      },
+      {
+        "schema_version": "1.0.0",
+        "event_id": "dcf89b44-029a-4d02-8a1a-9f43237c7f07",
+        "event_type": "answer.submitted",
+        "event_sequence": 3,
+        "attempt_id": "460487ec-dde9-4edb-83a0-05060eeb3e07",
+        "provenance": {
+          "data_origin": "local_practice",
+          "dataset_id": "device",
+          "local_profile_id": "1240cc2c-dd78-49ff-9ab3-b9ae5fcc528f",
+          "server_subject_ref": null
+        },
+        "context": {
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "module_id": "mental-math",
+          "curriculum_id": "kalibataku",
+          "curriculum_version": "1.0.0-draft.2",
+          "package_id": "MM-G05-L03-ADD-P001",
+          "content_version": "1.2.0",
+          "material_grade": 5,
+          "level": 3,
+          "mode": "practice",
+          "locale": "id",
+          "policy_version": "mastery-local-v1",
+          "assignment_id": null,
+          "form_id": null,
+          "assessment_cycle_id": null
+        },
+        "occurred_at_client": "2026-11-28T18:48:48.474Z",
+        "payload": {
+          "question_instance_id": "460487ec-dde9-4edb-83a0-05060eeb3e07.1",
+          "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+          "question_revision": "1.2.0",
+          "competency_id": "arithmetic.addition.g05.l03",
+          "answer": {
+            "numerator": "7",
+            "denominator": "4"
+          },
+          "raw_answer": "21/12",
+          "draft_locale": "id",
+          "submission_kind": "retry",
+          "attempt_number": 2,
+          "hint_used": false,
+          "active_duration_ms": 0,
+          "elapsed_duration_ms": 2,
+          "timing_quality": "valid_client_estimate",
+          "client_is_correct": true,
+          "key_seen_before": true,
+          "hint_before": false,
+          "feedback_policy_version": "visible-key-v2",
+          "first_correct": false,
+          "key_revealed_at": "2026-11-28T16:59:50.002Z",
+          "key_reveal_reason": "checked_response"
+        },
+        "payload_hash": "33929296c4dd66d52a86b178aef3999dd7f7e73d179a103bc9f5ab6865e4112f"
+      },
+      {
+        "schema_version": "1.0.0",
+        "event_id": "14e2a74d-6e36-4889-8a7f-6e06268a562d",
+        "event_type": "attempt.completed",
+        "event_sequence": 4,
+        "attempt_id": "460487ec-dde9-4edb-83a0-05060eeb3e07",
+        "provenance": {
+          "data_origin": "local_practice",
+          "dataset_id": "device",
+          "local_profile_id": "1240cc2c-dd78-49ff-9ab3-b9ae5fcc528f",
+          "server_subject_ref": null
+        },
+        "context": {
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "module_id": "mental-math",
+          "curriculum_id": "kalibataku",
+          "curriculum_version": "1.0.0-draft.2",
+          "package_id": "MM-G05-L03-ADD-P001",
+          "content_version": "1.2.0",
+          "material_grade": 5,
+          "level": 3,
+          "mode": "practice",
+          "locale": "id",
+          "policy_version": "mastery-local-v1",
+          "assignment_id": null,
+          "form_id": null,
+          "assessment_cycle_id": null
+        },
+        "occurred_at_client": "2026-11-28T18:48:48.475Z",
+        "payload": {
+          "expected_event_count": 4,
+          "final_responses": [
+            {
+              "question_instance_id": "460487ec-dde9-4edb-83a0-05060eeb3e07.1",
+              "response_event_id": "dcf89b44-029a-4d02-8a1a-9f43237c7f07",
+              "status": "answered"
+            }
+          ],
+          "completed_at_client": "2026-11-28T16:59:50.004Z"
+        },
+        "payload_hash": "f4308944bc185193653c97a9ab33e91f9bbd067227508c87826fd0f9894c9661"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+# command: npm run build
+# started: 2026-11-28T04:22:24Z
+# node v22.23.5 · Python 3.13.18
+
+> kalibataku-mental-math@1.4.0 build
+> python3 tools/project.py build
+
++ node tests/data/build-offline.mjs /home/claude/cmdcopy/.build-tp63z4zc/dist
+Offline manifest 137cc1a9b76ed428 59 assets 803614 bytes
+dist 4b4948fcbe986c6950dfb74288ade613da75101f1bba3328fd496931457bf2c4 5042 files
+# exit: 0
+# finished: 2026-11-28T04:22:26Z

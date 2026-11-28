@@ -1,0 +1,148 @@
+{
+  "suite": "data",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.8127.0 Safari/537.36",
+  "created_utc": "2026-11-25T22:39:29.966Z",
+  "base": "http://127.0.0.1:33747/probe-data-1795646369966/school/math/",
+  "checks": [],
+  "runtime": {
+    "offline_release": "47c1663e7ea2fa9c",
+    "bootstrap_sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736",
+    "bank_index_sha256": "538b91acb48e7845cbcb663f3ddd42473a412f8fb279c98264e67a63613306cd",
+    "bank_version": "1.1.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "results": [
+    {
+      "id": "TC-132",
+      "description": "Version 1 → 2 preserves pending outbox; blocked upgrade gives explicit status",
+      "status": "PASS",
+      "observations": {
+        "database": "qa-kalibataku-ec5e6176-0a46-422b-b47f-3f83e2edc046",
+        "from": 1,
+        "to": 2,
+        "pending_retained": 1
+      }
+    },
+    {
+      "id": "TC-129",
+      "description": "Native IndexedDB rolls back snapshot + ledger + outbox when outbox write fails",
+      "status": "PASS",
+      "observations": {
+        "failed_write": "quota injected before outbox put",
+        "committed_retries": 1,
+        "local_pending": 0
+      }
+    },
+    {
+      "id": "TC-130",
+      "description": "Unavailable browser storage exposes temporary namespace and downloadable backup",
+      "status": "PASS",
+      "observations": {
+        "temporary": true
+      }
+    },
+    {
+      "id": "TC-131",
+      "description": "Concurrent browsing contexts, takeover, stale revision, crashed lease expires",
+      "status": "PASS",
+      "observations": {
+        "contexts": 2,
+        "expired_after_simulated_ms": 20000
+      }
+    },
+    {
+      "id": "TC-133",
+      "description": "Profile and attempts/ledger round trip through JSON, compare before atomic import",
+      "status": "PASS",
+      "observations": {
+        "events": 2,
+        "duplicates": 4,
+        "created": 4,
+        "target": "daa3f5a1-fdd6-422c-81ff-8cf5d990939b",
+        "dates": [
+          "2026-11-25T22:39:30.370Z",
+          "2026-11-25T22:39:30.370Z"
+        ],
+        "summary_bytes": 550
+      }
+    },
+    {
+      "id": "TC-134",
+      "description": "Delete one local profile preserves other namespace",
+      "status": "PASS",
+      "observations": {
+        "retained_profiles": 1
+      }
+    },
+    {
+      "id": "TC-134",
+      "description": "Stale alias at startup and deletion in another tab recover without copying attempts",
+      "status": "PASS",
+      "observations": {
+        "active": "local-default",
+        "old_attempt_copied": false,
+        "fresh_session": "completed"
+      }
+    },
+    {
+      "id": "TC-133",
+      "description": "Profiles panel previews and restores an actual backup file to the named owner on a shared device",
+      "status": "PASS",
+      "observations": {
+        "source": "Archive owner",
+        "active_during_restore": "Active sibling",
+        "opened_only_after_explicit_choice": true,
+        "sessions": 1,
+        "ledger": 2,
+        "report_json_rejected": true,
+        "raw_session_rejected": true,
+        "deletion_review_includes_scope_and_counts": true
+      }
+    },
+    {
+      "id": "TC-179",
+      "description": "Foreground drain produces only correlated mock receipts and no Background Sync dependency",
+      "status": "PASS",
+      "observations": {
+        "sent": 1,
+        "state": "mock_accepted",
+        "last_mock_ack": "2026-11-25T22:39:32.117Z",
+        "grading": "unverified"
+      }
+    },
+    {
+      "id": "TC-176",
+      "description": "Select one pack; integrity failure and cancellation keep prior state, certified assets exist",
+      "status": "PASS",
+      "observations": {
+        "installed": "MM-G01-L01-ADD-P001",
+        "shell_assets": 54,
+        "bank_assets": 4,
+        "remaining_bytes": 17965,
+        "verified_transferred": 17965,
+        "capabilities": {
+          "practice": "installed-pack",
+          "teacher": "online",
+          "reports": "online",
+          "exports": "online"
+        }
+      }
+    },
+    {
+      "id": "TC-178",
+      "description": "Eviction invalidates offline-ready status and leaves persisted ledger intact",
+      "status": "PASS",
+      "observations": {
+        "events_retained": 2
+      }
+    }
+  ],
+  "runtime_after": {
+    "offline_release": "47c1663e7ea2fa9c",
+    "bootstrap_sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736",
+    "bank_index_sha256": "538b91acb48e7845cbcb663f3ddd42473a412f8fb279c98264e67a63613306cd",
+    "bank_version": "1.1.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "finished_utc": "2026-11-25T22:39:33.718Z"
+}

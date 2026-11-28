@@ -1,0 +1,23 @@
+{
+  "command": "python tests/data/journey-restore-browser.py --engine firefox",
+  "at": "2026-11-28T09:03:48.188326+00:00",
+  "engine": "firefox",
+  "version": "153.0",
+  "offline_release": "460c98b682110f7e",
+  "workerCount": 6,
+  "cases": [
+    {
+      "format": "json",
+      "invalidPreview": "localized error, no commit button, zero target profiles",
+      "validPreview": "bank_matched=1",
+      "commit": "ongoing attempt, refs, start intent and timestamps identical; active profile isolated"
+    },
+    {
+      "format": "zip",
+      "invalidPreview": "localized error, no commit button, zero target profiles",
+      "validPreview": "bank_matched=1",
+      "commit": "ongoing attempt, refs, start intent and timestamps identical; active profile isolated"
+    }
+  ],
+  "status": "PASS"
+}

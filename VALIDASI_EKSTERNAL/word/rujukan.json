@@ -1,0 +1,289 @@
+{
+  "build": {
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU"
+  },
+  "offline_release": "a2f40449c4738fe6",
+  "generated_at_utc": "2026-11-28T17:24:38.965Z",
+  "fixture_kind": "latihan profil sintetis",
+  "target_word_review": "BELUM_DIUJI",
+  "documents": [
+    {
+      "name": "fixture-pecahan",
+      "package_id": "MM-G05-L03-ADD-P001",
+      "question_index": 0,
+      "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+      "canonical": "(11⁄12) + (10⁄12)",
+      "expected_fractions_and_signs": {
+        "kind": "binary",
+        "operation": "ADD",
+        "left": {
+          "kind": "rational",
+          "numerator": "11",
+          "denominator": "12",
+          "display": {
+            "kind": "fraction",
+            "numerator": "11",
+            "denominator": "12"
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "5",
+          "denominator": "6",
+          "display": {
+            "kind": "fraction",
+            "numerator": "10",
+            "denominator": "12"
+          }
+        }
+      },
+      "first_response": "99",
+      "revised_response": "21/12",
+      "canonical_key": "7/4",
+      "rows": [
+        {
+          "label": "Soal",
+          "readable": "Soal · 11/12 + 10/12",
+          "tokens": [
+            {
+              "type": "fraction",
+              "n": "11",
+              "d": "12"
+            },
+            {
+              "type": "op",
+              "text": "+"
+            },
+            {
+              "type": "fraction",
+              "n": "10",
+              "d": "12"
+            }
+          ]
+        },
+        {
+          "label": "Kunci jawaban",
+          "readable": "Kunci jawaban · 7/4",
+          "tokens": [
+            {
+              "type": "fraction",
+              "n": "7",
+              "d": "4"
+            }
+          ]
+        },
+        {
+          "label": "Jawaban pertama",
+          "readable": "Jawaban pertama · 99",
+          "tokens": [
+            {
+              "type": "number",
+              "text": "99"
+            }
+          ]
+        },
+        {
+          "label": "Jawaban terakhir",
+          "readable": "Jawaban terakhir · 21/12",
+          "tokens": [
+            {
+              "type": "fraction",
+              "n": "21",
+              "d": "12"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "fixture-pecahan-profil-sintetis.json",
+          "sha256": "e0dbde37707170dd0c338f95c02d930c8eb5373c1a2dca9c87c39c002c334753"
+        },
+        {
+          "name": "fixture-pecahan.docx",
+          "sha256": "a45878dc43993a49feaaa654d055a9d616fe0e8685af50246794764def38efe0"
+        },
+        {
+          "name": "fixture-pecahan.pdf",
+          "sha256": "0aa9247a0aa432b72cecda715fa5d8a92059e94b0a14031fb92bce0f59e7d909"
+        }
+      ]
+    },
+    {
+      "name": "fixture-kurung-minus",
+      "package_id": "MM-G11-L03-MIX-P001",
+      "question_index": 1,
+      "question_id": "arithmetic.mixed.g11.l03.a4883d0a996804209f85657569c3fd60b0d39cc6fff7a1ff9761700db97be1ca",
+      "canonical": "((((−25⁄24) × (2⁄5)) + (5⁄5)) × 16) ÷ 2",
+      "expected_fractions_and_signs": {
+        "kind": "binary",
+        "operation": "DIV",
+        "left": {
+          "kind": "binary",
+          "operation": "MUL",
+          "left": {
+            "kind": "binary",
+            "operation": "ADD",
+            "left": {
+              "kind": "binary",
+              "operation": "MUL",
+              "left": {
+                "kind": "rational",
+                "numerator": "-25",
+                "denominator": "24",
+                "display": {
+                  "kind": "fraction",
+                  "numerator": "-25",
+                  "denominator": "24"
+                }
+              },
+              "right": {
+                "kind": "rational",
+                "numerator": "2",
+                "denominator": "5",
+                "display": {
+                  "kind": "fraction",
+                  "numerator": "2",
+                  "denominator": "5"
+                }
+              }
+            },
+            "right": {
+              "kind": "rational",
+              "numerator": "1",
+              "denominator": "1",
+              "display": {
+                "kind": "fraction",
+                "numerator": "5",
+                "denominator": "5"
+              }
+            }
+          },
+          "right": {
+            "kind": "rational",
+            "numerator": "16",
+            "denominator": "1",
+            "display": {
+              "kind": "integer"
+            }
+          }
+        },
+        "right": {
+          "kind": "rational",
+          "numerator": "2",
+          "denominator": "1",
+          "display": {
+            "kind": "integer"
+          }
+        }
+      },
+      "first_response": "99",
+      "revised_response": "14/3",
+      "canonical_key": "14/3",
+      "rows": [
+        {
+          "label": "Soal",
+          "readable": "Soal · (−25/24 × (2/5) + 5/5) × 16 ÷ 2",
+          "tokens": [
+            {
+              "type": "sign",
+              "text": "("
+            },
+            {
+              "type": "fraction",
+              "n": "−25",
+              "d": "24"
+            },
+            {
+              "type": "op",
+              "text": "×"
+            },
+            {
+              "type": "fraction",
+              "n": "2",
+              "d": "5",
+              "group": true
+            },
+            {
+              "type": "op",
+              "text": "+"
+            },
+            {
+              "type": "fraction",
+              "n": "5",
+              "d": "5"
+            },
+            {
+              "type": "sign",
+              "text": ")"
+            },
+            {
+              "type": "op",
+              "text": "×"
+            },
+            {
+              "type": "number",
+              "text": "16"
+            },
+            {
+              "type": "op",
+              "text": "÷"
+            },
+            {
+              "type": "number",
+              "text": "2"
+            }
+          ]
+        },
+        {
+          "label": "Kunci jawaban",
+          "readable": "Kunci jawaban · 14/3",
+          "tokens": [
+            {
+              "type": "fraction",
+              "n": "14",
+              "d": "3"
+            }
+          ]
+        },
+        {
+          "label": "Jawaban pertama",
+          "readable": "Jawaban pertama · 99",
+          "tokens": [
+            {
+              "type": "number",
+              "text": "99"
+            }
+          ]
+        },
+        {
+          "label": "Jawaban terakhir",
+          "readable": "Jawaban terakhir · 14/3",
+          "tokens": [
+            {
+              "type": "fraction",
+              "n": "14",
+              "d": "3"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "fixture-kurung-minus-profil-sintetis.json",
+          "sha256": "c2ebbeb995c9fb95a8e9d1d45d7bb0de56fb1bca05030a43252188ca7fdcaea0"
+        },
+        {
+          "name": "fixture-kurung-minus.docx",
+          "sha256": "4d4fe798bacfe24a7451ccad4fabd3866d372f3b7be503c60a5734027478c082"
+        },
+        {
+          "name": "fixture-kurung-minus.pdf",
+          "sha256": "7c9b6e95dce7925dea06ac89a1e62de1bdc168eb13d51ffd5474c05f8b43d30c"
+        }
+      ]
+    }
+  ]
+}

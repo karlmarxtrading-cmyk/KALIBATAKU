@@ -1,0 +1,325 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "journey-browser",
+  "scope": "Adventure flow in chromium (Playwright, headless; harness context bypasses CSP only so Playwright can poll the page \u2014 CSP itself is verified by the 1.3 header suites)",
+  "build": {
+    "offline_release": "6c43a824957f99ed",
+    "app_version": "1.6.0"
+  },
+  "runtime": {
+    "browser": "chromium",
+    "version": "151.0.7922.34",
+    "executable": "/workspace/scratch/94a2cb03b99b/k26/runtime/chrome-headless-shell-linux64/chrome-headless-shell"
+  },
+  "started": "2026-11-28T15:37:04.494594+00:00",
+  "finished": "2026-11-28T15:37:17.389216+00:00",
+  "assertions": 41,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "home-new-user-cta",
+      "status": "PASS",
+      "expected": "one dominant CTA 'Mulai dari dasar' and optional start point",
+      "actual": true
+    },
+    {
+      "id": "home-profile-visible",
+      "status": "PASS",
+      "expected": "active profile shown",
+      "actual": "Profil aktif\nProfil utama"
+    },
+    {
+      "id": "mission-created-frozen",
+      "status": "PASS",
+      "expected": "intro mission of 6 with frozen refs and trace",
+      "actual": {
+        "package": "MM-G01-L01-ADD-P001",
+        "node": "arithmetic.addition.g01.l01"
+      }
+    },
+    {
+      "id": "arena-one-primary",
+      "status": "PASS",
+      "expected": "question state has exactly one primary action (Periksa)",
+      "actual": true
+    },
+    {
+      "id": "arena-menu-no-school-spaces",
+      "status": "PASS",
+      "expected": "menu inside a mission has no teacher/admin entries",
+      "actual": true
+    },
+    {
+      "id": "feedback-shows-answer-and-key",
+      "status": "PASS",
+      "expected": "student answer + key + one idea + steps collapsed",
+      "actual": true
+    },
+    {
+      "id": "no-auto-next",
+      "status": "PASS",
+      "expected": "feedback stays until Lanjut",
+      "actual": true
+    },
+    {
+      "id": "next-button-0",
+      "status": "PASS",
+      "expected": "core button >= 44x44 css px",
+      "actual": {
+        "x": 49.453125,
+        "y": 676.65625,
+        "width": 296.09375,
+        "height": 48
+      }
+    },
+    {
+      "id": "wrong-streak-help",
+      "status": "PASS",
+      "expected": "help offer shown, question unchanged",
+      "actual": true
+    },
+    {
+      "id": "next-button-1",
+      "status": "PASS",
+      "expected": "core button >= 44x44 css px",
+      "actual": {
+        "x": 49.453125,
+        "y": 678.07861328125,
+        "width": 296.09375,
+        "height": 48
+      }
+    },
+    {
+      "id": "next-button-2",
+      "status": "PASS",
+      "expected": "core button >= 44x44 css px",
+      "actual": {
+        "x": 49.453125,
+        "y": 400.508056640625,
+        "width": 296.09375,
+        "height": 48
+      }
+    },
+    {
+      "id": "next-button-3",
+      "status": "PASS",
+      "expected": "core button >= 44x44 css px",
+      "actual": {
+        "x": 49.453125,
+        "y": 355.65625,
+        "width": 296.09375,
+        "height": 48
+      }
+    },
+    {
+      "id": "next-button-4",
+      "status": "PASS",
+      "expected": "core button >= 44x44 css px",
+      "actual": {
+        "x": 49.453125,
+        "y": 355.0591125488281,
+        "width": 296.09375,
+        "height": 48
+      }
+    },
+    {
+      "id": "last-label-lihat-hasil",
+      "status": "PASS",
+      "expected": "last feedback offers 'Lihat hasil'",
+      "actual": "Lihat hasil \u00b7 Enter"
+    },
+    {
+      "id": "single-finalize",
+      "status": "PASS",
+      "expected": "exactly one attempt.completed event, no review grid",
+      "actual": {
+        "status": "completed",
+        "completed": 1
+      }
+    },
+    {
+      "id": "result-one-next-action",
+      "status": "PASS",
+      "expected": "one primary next action with reason",
+      "actual": "Coba cara hitung yang belum kamu latih. Misi berikut memuat soal untuk strategi itu. \u00b7 Penjumlahan \u00b7 Pasangan bilangan sampai 5"
+    },
+    {
+      "id": "result-independent-counts",
+      "status": "PASS",
+      "expected": "first-response independent count excludes the 2 wrong",
+      "actual": "4 dari 6 benar pada jawaban pertama tanpa bantuan"
+    },
+    {
+      "id": "second-mission-new-questions",
+      "status": "PASS",
+      "expected": "next mission takes all unseen material first; repeats are labelled review with a reason",
+      "actual": {
+        "kind": "regular",
+        "n": 8,
+        "new": 5,
+        "review": 3,
+        "reasons": [
+          "missing_strategy",
+          "role_quota_filled_from_target",
+          "role_or_package_has_limited_unseen"
+        ]
+      }
+    },
+    {
+      "id": "home-resume-cta",
+      "status": "PASS",
+      "expected": "returning user: one CTA 'Lanjutkan petualangan' to the ongoing mission",
+      "actual": true
+    },
+    {
+      "id": "resume-same-snapshot",
+      "status": "PASS",
+      "expected": "resume keeps question ids, order and index",
+      "actual": true
+    },
+    {
+      "id": "language-no-reshuffle",
+      "status": "PASS",
+      "expected": "EN switch keeps the frozen questions",
+      "actual": true
+    },
+    {
+      "id": "map-list-statuses",
+      "status": "PASS",
+      "expected": "ordered list with text statuses; playing node present",
+      "actual": 4
+    },
+    {
+      "id": "map-region-has-skill-names",
+      "status": "PASS",
+      "expected": "stage headings carry grade/level/skill focus",
+      "actual": "Tahap 1\nKelas 1 \u00b7 Level 1 \u00b7 Pasangan bilangan sampai 5"
+    },
+    {
+      "id": "keyboard-reaches-map",
+      "status": "PASS",
+      "expected": "Tab reaches a map node action with visible focus",
+      "actual": "Lanjutkan \u00b7 Penjumlahan \u00b7 Pasangan bilangan sampai 5"
+    },
+    {
+      "id": "reflow-320-home",
+      "status": "PASS",
+      "expected": "no horizontal scroll at 320 px",
+      "actual": true
+    },
+    {
+      "id": "reflow-320-map",
+      "status": "PASS",
+      "expected": "no horizontal scroll at 320 px",
+      "actual": true
+    },
+    {
+      "id": "reflow-320-session",
+      "status": "PASS",
+      "expected": "no horizontal scroll at 320 px",
+      "actual": true
+    },
+    {
+      "id": "reflow-320-large-text-home",
+      "status": "PASS",
+      "expected": "no horizontal scroll at 320 px with the largest text size",
+      "actual": true
+    },
+    {
+      "id": "reflow-320-large-text-map",
+      "status": "PASS",
+      "expected": "no horizontal scroll at 320 px with the largest text size",
+      "actual": true
+    },
+    {
+      "id": "reflow-320-large-text-session",
+      "status": "PASS",
+      "expected": "no horizontal scroll at 320 px with the largest text size",
+      "actual": true
+    },
+    {
+      "id": "home-cta-44",
+      "status": "PASS",
+      "expected": "home CTA at least 44x44 at 320 px with large text",
+      "actual": {
+        "x": 76.15625,
+        "y": 1019.765625,
+        "width": 167.6875,
+        "height": 145.90625
+      }
+    },
+    {
+      "id": "english-dark-home",
+      "status": "PASS",
+      "expected": "English copy and dark theme",
+      "actual": true
+    },
+    {
+      "id": "start-targets-44",
+      "status": "PASS",
+      "expected": "start-stage buttons are at least 44 px tall",
+      "actual": 72.71875
+    },
+    {
+      "id": "start-point-not-a-test",
+      "status": "PASS",
+      "expected": "start page says it is not a test",
+      "actual": true
+    },
+    {
+      "id": "offline-saved-two-packs",
+      "status": "PASS",
+      "expected": "the active mission pack and one spare are installed (not the whole bank)",
+      "actual": [
+        "MM-G01-L01-ADD-P001",
+        "MM-G01-L01-ADD-P002"
+      ]
+    },
+    {
+      "id": "offline-resume-and-finish",
+      "status": "PASS",
+      "expected": "ongoing mission resumed and completed while offline",
+      "actual": "8 dari 8 benar pada jawaban pertama tanpa bantuan"
+    },
+    {
+      "id": "offline-next-mission-from-installed",
+      "status": "PASS",
+      "expected": "next mission created offline from an installed pack",
+      "actual": "MM-G01-L01-ADD-P001"
+    },
+    {
+      "id": "offline-not-downloaded-distinct",
+      "status": "PASS",
+      "expected": "open but not downloaded node says 'Belum diunduh'; locked nodes still say 'Belum terbuka'",
+      "actual": true
+    },
+    {
+      "id": "offline-active-mission-survives-cache-cleanup",
+      "status": "PASS",
+      "expected": "after pack caches are deleted the active mission still answers and saves offline",
+      "actual": true
+    },
+    {
+      "id": "legacy-13-session-keeps-review-step",
+      "status": "PASS",
+      "expected": "1.3-style session ends with its original review grid and submit",
+      "actual": true
+    },
+    {
+      "id": "no-page-errors",
+      "status": "PASS",
+      "expected": "no uncaught errors",
+      "actual": true
+    }
+  ],
+  "screenshots": [
+    "01-home-new.png",
+    "02-arena.png",
+    "03-wrong-streak.png",
+    "04-result.png",
+    "05-map.png",
+    "06-arena-320.png",
+    "07-home-en-dark-1024.png"
+  ]
+}

@@ -1,0 +1,83 @@
+﻿"Summary","Student","Source","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Summary","Siswa uji AUD-04","Local practice results · institutionally unverified",32,32,0,0,0,0,100,100,100
+"Competencies","Competency","Grade","Level","Operation","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Competencies","arithmetic.addition.g01.l01",1,1,"Addition",32,32,0,0,0,0,100,100,100
+"Operations","Operation","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Operations","Addition",32,32,0,0,0,0,100,100,100
+"Operations","Subtraction",0,0,0,0,0,0,,,
+"Operations","Multiplication",0,0,0,0,0,0,,,
+"Operations","Division",0,0,0,0,0,0,,,
+"Operations","Mixed operations",0,0,0,0,0,0,,,
+"Sessions","ID","UTC","Package","Mode","Status","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Sessions","e05b6fe8-4bf9-4135-8118-da1103323b0a","2026-11-28T01:02:20.000Z","MM-G01-L01-ADD-P001","Practice","Completed",8,8,0,0,0,0,100,100,100
+"Sessions","7b0ab75b-de6c-4323-941a-eac78b3b7c3f","2026-11-28T01:01:35.000Z","MM-G01-L01-ADD-P001","Practice","Completed",8,8,0,0,0,0,100,100,100
+"Sessions","81df6d85-03f3-470f-bb59-b9989dc78a62","2026-11-28T01:01:00.000Z","MM-G01-L01-ADD-P001","Practice","Completed",6,6,0,0,0,0,100,100,100
+"Sessions","3848eda1-9db5-4db7-9be3-3e106806f95d","2026-11-28T01:00:05.000Z","MM-G01-L01-ADD-P002","Practice","Completed",10,10,0,0,0,0,100,100,100
+"Dictionary","Measure","Definition"
+"Dictionary","Form score","32 / 32"
+"Dictionary","Response accuracy","32 / 32"
+"Dictionary","Questions responded to","32 / 32"
+"Dictionary","First response correct","32 / 32"
+"Dictionary","Zero denominator","Empty = not assessed"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-01f1852a-f057-4688-b401-a1e6f65a015d"
+"Metadata","data_origin","local_practice"
+"Metadata","verification_status","unverified"
+"Metadata","locale","en"
+"Metadata","period_start_utc","1970-01-01T00:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2100-01-01T00:00:00.000Z"
+"Metadata","display_timezone","UTC"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-30T12:00:00.000Z"
+"Metadata","assigned_count",32
+"Metadata","correct_count",32
+"Metadata","incorrect_count",0
+"Metadata","skipped_count",0
+"Metadata","blank_count",0
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",100
+"Metadata","valid_response_accuracy_percent",100
+"Metadata","responded_percent",100
+"Metadata","subject_id","a421bf22-36d1-43fc-b1d7-da089fb78fe6"
+"Metadata","subject_alias","Siswa uji AUD-04"
+"Metadata","source","local_practice"
+"Metadata","classId",""
+"Metadata","studentId","a421bf22-36d1-43fc-b1d7-da089fb78fe6"
+"Metadata","from",""
+"Metadata","to",""
+"Metadata","timezone","UTC"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions","1.2.0"
+"Metadata","change_pp",
+"Metadata","journey_policy","mission-policy-1.1.0"
+"Metadata","journey_readiness_as_of_utc","2026-11-30T12:00:00.000Z"
+"Metadata","journey_as_of_inclusive",1
+"Metadata","journey_readiness_scope","cumulative_completed_as_of_current_policy"
+"Metadata","journey_activity_scope","selected_sessions_started_in_period_completed_by_cutoff"
+"Notes","Author","UTC","Revision","Note","ID","Supersedes","Status"
+"Math","Source","ID","Expression","Key numerator","Key denominator","First response","Last response"
+"Family","Local practice results · institutionally unverified"
+"Family","Siswa uji AUD-04"
+"Family","A · All dates · UTC"
+"Family","Completed sessions in this period: 4 · In progress: 0"
+"Family","What went well"
+"Family","Addition · grade 1 · level 1 · Practice — 32 of 32 answered questions were correct on the first try without help."
+"Family","What to work on"
+"Family","Try a similar question to see whether the result is consistent."
+"Family","Adventure readiness"
+"Family","Current policy · mission-policy-1.1.0 · through 30 Nov 2026, 12:00 UTC. Coverage includes completed sessions since the first practice, including catalogue practice."
+"Family","Missions in period 3 · XP 235 · independent correct first responses 22 / 22. Readiness unlocks the next skill. XP records effort. A/B assessments measure formal mastery."
+"Family","Not assessed in this period — Addition, Subtraction, Multiplication, Division, Mixed operations."
+"Family","Next practice plan"
+"Family","Discuss one example of addition · grade 1 · level 1 · Practice together, then try one similar item independently (32 of 32 first responses correct)."
+"Family","Review date · To be agreed with the teacher."
+"Journey","Competency","Grade","Level","Operation","Period missions","Cumulative passes","Cumulative unique items","Coverage target","Period independent first responses","Period first responses","Period assisted","Period revised after key","Ready to move on","Period XP","Passing target","Cumulative strategies","Strategy target","Cumulative missions"
+"Journey","arithmetic.addition.g01.l01",1,1,"Addition",3,2,12,12,22,22,0,0,1,235,2,2,2,3
+"Contexts","Grade","Level","Operation","Mode","First correct","First responses","With hints","Assigned","Correct","Incorrect","Skipped","Blank","Unseen","Score (%)","Accuracy (%)","Responded (%)"
+"Contexts",1,1,"Addition","Practice",32,32,0,32,32,0,0,0,0,100,100,100

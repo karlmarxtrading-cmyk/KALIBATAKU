@@ -1,0 +1,137 @@
+{
+  "scope": "Chromium desktop, three independent fresh-profile local home loads on each build. Threshold unchanged. Field PERF-03 remains separate.",
+  "build": {
+    "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+    "offline_release": "ef0b6798d9633ca8",
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9"
+  },
+  "maximum_CLS": 0.1,
+  "provisional": {
+    "release": "2a7e8511a04b494f",
+    "engine": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+    "started_utc": "2026-11-28T10:22:38.031Z",
+    "finished_utc": "2026-11-28T10:22:41.329Z",
+    "CLS": [
+      0.12419976790746054,
+      0.12419976790746054,
+      0.12419976790746054
+    ],
+    "LCP_ms": [
+      184,
+      300,
+      152
+    ],
+    "events": [
+      [
+        {
+          "score": 0.05270669857660929,
+          "elements": [
+            "MAIN"
+          ]
+        },
+        {
+          "score": 0.03574653466542562,
+          "elements": [
+            "FOOTER"
+          ]
+        },
+        {
+          "score": 0.03574653466542562,
+          "elements": [
+            "FOOTER"
+          ]
+        }
+      ],
+      [
+        {
+          "score": 0.05270669857660929,
+          "elements": [
+            "MAIN"
+          ]
+        },
+        {
+          "score": 0.03574653466542562,
+          "elements": [
+            "FOOTER"
+          ]
+        },
+        {
+          "score": 0.03574653466542562,
+          "elements": [
+            "FOOTER"
+          ]
+        }
+      ],
+      [
+        {
+          "score": 0.05270669857660929,
+          "elements": [
+            "MAIN"
+          ]
+        },
+        {
+          "score": 0.03574653466542562,
+          "elements": [
+            "FOOTER"
+          ]
+        },
+        {
+          "score": 0.03574653466542562,
+          "elements": [
+            "FOOTER"
+          ]
+        }
+      ]
+    ],
+    "sha256_performance_receipt": "db1a26b35f1c95bdf2af61674cfeb4a79ad50d4403e12412e03c8dd03b3c99d1",
+    "sha256_e2e_log": "d25e21cc717623678e67de489122aa5349e866f4a799f5b35b51e422fa50e084"
+  },
+  "shipping": {
+    "release": "ef0b6798d9633ca8",
+    "engine": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+    "started_utc": "2026-11-28T10:39:40.367Z",
+    "finished_utc": "2026-11-28T10:39:43.787Z",
+    "CLS": [
+      0.05270669857660929,
+      0.05270669857660929,
+      0.05270669857660929
+    ],
+    "LCP_ms": [
+      252,
+      260,
+      216
+    ],
+    "events": [
+      [
+        {
+          "score": 0.05270669857660929,
+          "elements": [
+            "MAIN"
+          ]
+        }
+      ],
+      [
+        {
+          "score": 0.05270669857660929,
+          "elements": [
+            "MAIN"
+          ]
+        }
+      ],
+      [
+        {
+          "score": 0.05270669857660929,
+          "elements": [
+            "MAIN"
+          ]
+        }
+      ]
+    ],
+    "sha256_performance_receipt": "a084b221e9740b43c1e1600890a080ea2260fbe9b24b3d899f35cad25b0b241d",
+    "sha256_e2e_log": "01fae24a31f91ca790af78f0cae8533462595a88369d9ea7488fb96a50b4c061"
+  },
+  "final_raw": "evidence/v151/qa/e2e-browser/browser-performance.json",
+  "causal_traces": "evidence/v151/offline/cold-home/summary.json"
+}

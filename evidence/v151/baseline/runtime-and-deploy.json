@@ -1,0 +1,76 @@
+{
+  "application_version": "1.5.1",
+  "dependencies": {},
+  "npm_packages_excluding_project": 0,
+  "npm_engines": {
+    "node": ">=22"
+  },
+  "declared_node": "24.22.3",
+  "node": "v24.22.3",
+  "npm": "11.19.1",
+  "declared_python": "3.12",
+  "python": "3.12.14",
+  "qa_dependency_versions": {
+    "playwright": {
+      "declared": "1.62.0",
+      "installed": "1.62.0",
+      "identical": true
+    },
+    "pymupdf": {
+      "declared": "1.26.6",
+      "installed": "1.26.6",
+      "identical": true
+    },
+    "openpyxl": {
+      "declared": "3.1.5",
+      "installed": "3.1.5",
+      "identical": true
+    },
+    "python-docx": {
+      "declared": "1.2.0",
+      "installed": "1.2.0",
+      "identical": true
+    },
+    "fonttools": {
+      "declared": "4.61.1",
+      "installed": "4.61.1",
+      "identical": true
+    },
+    "jsonschema": {
+      "declared": "4.26.0",
+      "installed": "4.26.0",
+      "identical": true
+    },
+    "reportlab": {
+      "declared": "4.4.9",
+      "installed": "4.4.9",
+      "identical": true
+    }
+  },
+  "publish_directory": "dist",
+  "public_file_count": 5052,
+  "public_top_level": [
+    "404.html",
+    "_headers",
+    "app.mjs",
+    "assets",
+    "bank",
+    "build-info.json",
+    "cache-policy.js",
+    "core",
+    "data",
+    "index.html",
+    "journey",
+    "learning",
+    "locales",
+    "manifest.webmanifest",
+    "math",
+    "offline-assets.json",
+    "player",
+    "sw.js",
+    "teacher"
+  ],
+  "dist_headers_sha256": "f1b588296d8cb97ae0b4e3d7882e1be7b7be90556bc3d15043232ac0022bba90",
+  "build_script": "python3 tools/project.py build",
+  "note": "Prebuilt static distribution, local font assets and deployment header policy inspected. No external vulnerability feed queried. Physical devices and public domain remain separate acceptance tests."
+}

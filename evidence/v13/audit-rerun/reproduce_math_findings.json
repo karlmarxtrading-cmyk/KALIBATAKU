@@ -1,0 +1,43 @@
+{
+  "MATH_001": {
+    "path": "dist/bank/v1.2/g05/l04/MM-G05-L04-DIV-P001.mjs",
+    "question_number": 1,
+    "stored_expression": "21 ÷ (3⁄11)",
+    "rendered_plain_text": "21 ÷ (3/11)",
+    "correct_answer": {
+      "numerator": "77",
+      "denominator": "1"
+    },
+    "required_plain_text": "21 ÷ (3/11)",
+    "standard_left_to_right_value_of_current_plain_text": "7/11"
+  },
+  "MATH_002": {
+    "path": "dist/bank/v1.2/g03/l05/MM-G03-L05-DIV-P001.mjs",
+    "question_number": 2,
+    "expression": "924 ÷ 11",
+    "correct_answer": {
+      "numerator": "84",
+      "denominator": "1"
+    },
+    "explanation": {
+      "id": "Pisahkan 924 menjadi 880 + 44; keduanya kelipatan 11. Bagi setiap bagian, lalu jumlahkan hasilnya.",
+      "en": "Split 924 into 880 + 44; both are multiples of 11. Divide each part, then add the results."
+    },
+    "step_count": 3,
+    "steps": [
+      {
+        "id": "924 = 880 + 44.",
+        "en": "924 = 880 + 44."
+      },
+      {
+        "id": "880 ÷ 11 = 80 dan 44 ÷ 11 = 4.",
+        "en": "880 ÷ 11 = 80 and 44 ÷ 11 = 4."
+      },
+      {
+        "id": "Hasil akhirnya 84.",
+        "en": "The final value is 84."
+      }
+    ],
+    "required_grade_domain": "Grade 1–6 teaching intermediates nonnegative; use excess/subtract language or lower positive estimate"
+  }
+}

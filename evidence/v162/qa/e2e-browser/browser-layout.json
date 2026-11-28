@@ -1,0 +1,2658 @@
+{
+  "suite": "layout",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36",
+  "created_utc": "2026-11-28T18:40:49.710Z",
+  "base": "http://127.0.0.1:38527/probe-layout-1795891249710/school/math/",
+  "checks": [
+    {
+      "id": "reflow/320/id/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/320/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/320/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/320/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/320/id/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/320/en/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/320/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/320/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/320/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/320/en/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/id/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/id/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/en/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/360/en/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/id/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/id/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/en/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/390/en/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/id/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/id/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/en/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/568/en/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/id/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/id/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/en/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/768/en/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/id/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/id/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/en/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1024/en/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/id/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/id/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/en/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1366/en/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/id/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/id/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/en/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/1440/en/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/id/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/id/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/id/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/id/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/id/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/en/",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/en/curriculum?grade=1",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/en/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/en/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "reflow/2560/en/reports",
+      "status": "PASS",
+      "detail": {
+        "viewport": 1024,
+        "scroll": 1024,
+        "offending": []
+      }
+    },
+    {
+      "id": "wide-css//1440",
+      "status": "PASS",
+      "detail": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "id": "wide-css//2560",
+      "status": "PASS",
+      "detail": {
+        "width": 2560,
+        "scroll": 2560
+      }
+    },
+    {
+      "id": "text-200/",
+      "status": "PASS",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "offenders": [
+          "i",
+          "i",
+          "i"
+        ]
+      }
+    },
+    {
+      "id": "wide-css/packs?grade=1&level=1&op=ADD/1440",
+      "status": "PASS",
+      "detail": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "id": "wide-css/packs?grade=1&level=1&op=ADD/2560",
+      "status": "PASS",
+      "detail": {
+        "width": 2560,
+        "scroll": 2560
+      }
+    },
+    {
+      "id": "text-200/packs?grade=1&level=1&op=ADD",
+      "status": "PASS",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "offenders": []
+      }
+    },
+    {
+      "id": "wide-css/session/new?grade=12&level=2&op=MIX/1440",
+      "status": "PASS",
+      "detail": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "id": "wide-css/session/new?grade=12&level=2&op=MIX/2560",
+      "status": "PASS",
+      "detail": {
+        "width": 2560,
+        "scroll": 2560
+      }
+    },
+    {
+      "id": "text-200/session/new?grade=12&level=2&op=MIX",
+      "status": "PASS",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "offenders": []
+      }
+    },
+    {
+      "id": "wide-css/demo/teacher/1440",
+      "status": "PASS",
+      "detail": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "id": "wide-css/demo/teacher/2560",
+      "status": "PASS",
+      "detail": {
+        "width": 2560,
+        "scroll": 2560
+      }
+    },
+    {
+      "id": "text-200/demo/teacher",
+      "status": "PASS",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "offenders": []
+      }
+    },
+    {
+      "id": "wide-css/reports/1440",
+      "status": "PASS",
+      "detail": {
+        "width": 1440,
+        "scroll": 1440
+      }
+    },
+    {
+      "id": "wide-css/reports/2560",
+      "status": "PASS",
+      "detail": {
+        "width": 2560,
+        "scroll": 2560
+      }
+    },
+    {
+      "id": "text-200/reports",
+      "status": "PASS",
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "offenders": []
+      }
+    }
+  ],
+  "runtime": {
+    "offline_release": "f630b3dc6aa6b5a5",
+    "bootstrap_sha256": "43f5123f5b3c5d7e7775b844ccf905819a309530f5df569ae9c35487bcb9d128",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "screens": [
+    {
+      "path": "",
+      "width": 320,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 168,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 320,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 194,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 320,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 172,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 320,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 320,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 320,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 320,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 320,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 320,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 320,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 360,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 360,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 360,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 360,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 360,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 360,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 360,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 360,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 360,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 360,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 390,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 390,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 390,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 390,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 390,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 390,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 390,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 390,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 390,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 390,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 568,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 568,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 568,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 568,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 568,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 568,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 568,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 568,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 568,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 568,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 768,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 768,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 768,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 768,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 768,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 768,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 768,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 768,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 768,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 768,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 1024,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 1024,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 1366,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 1366,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 1440,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 1440,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 1440,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 1440,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 1440,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 1440,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 1440,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 1440,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 1440,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 1440,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 2560,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Petualangan"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 2560,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Peta kurikulum"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 2560,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Katalog paket"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 2560,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Monitoring kelas"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 2560,
+      "height": 768,
+      "theme": "light",
+      "lang": "id",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Laporan"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    },
+    {
+      "path": "",
+      "width": 2560,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 169,
+      "visibleControls": 19
+    },
+    {
+      "path": "curriculum?grade=1",
+      "width": 2560,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Curriculum map"
+      ],
+      "overflowElements": [],
+      "domCount": 195,
+      "visibleControls": 33
+    },
+    {
+      "path": "packs?grade=1&level=1&op=ADD",
+      "width": 2560,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 173,
+      "visibleControls": 23
+    },
+    {
+      "path": "demo/teacher",
+      "width": 2560,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 252,
+      "visibleControls": 19
+    },
+    {
+      "path": "reports",
+      "width": 2560,
+      "height": 768,
+      "theme": "dark",
+      "lang": "en",
+      "innerWidth": 1024,
+      "viewport": 1024,
+      "scroll": 1024,
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 86,
+      "visibleControls": 10
+    }
+  ],
+  "scope": "Desktop browser pop-up window; actual innerWidth/innerHeight recorded separately for each requested size.",
+  "wide_css": [
+    {
+      "page": "",
+      "width": 1440,
+      "height": 900,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 167,
+      "visibleControls": 19
+    },
+    {
+      "page": "",
+      "width": 2560,
+      "height": 1080,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [],
+      "domCount": 167,
+      "visibleControls": 19
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "width": 1440,
+      "height": 900,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 171,
+      "visibleControls": 23
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "width": 2560,
+      "height": 1080,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 171,
+      "visibleControls": 23
+    },
+    {
+      "page": "session/new?grade=12&level=2&op=MIX",
+      "width": 1440,
+      "height": 900,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 198,
+      "visibleControls": 19
+    },
+    {
+      "page": "session/new?grade=12&level=2&op=MIX",
+      "width": 2560,
+      "height": 1080,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 198,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "width": 1440,
+      "height": 900,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 250,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "width": 2560,
+      "height": 1080,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 250,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports",
+      "width": 1440,
+      "height": 900,
+      "innerWidth": 1440,
+      "viewport": 1440,
+      "scroll": 1440,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 84,
+      "visibleControls": 10
+    },
+    {
+      "page": "reports",
+      "width": 2560,
+      "height": 1080,
+      "innerWidth": 2560,
+      "viewport": 2560,
+      "scroll": 2560,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 84,
+      "visibleControls": 10
+    }
+  ],
+  "text_200": [
+    {
+      "page": "",
+      "computed_font_px": 32,
+      "default_font_px": 16,
+      "innerWidth": 320,
+      "viewport": 320,
+      "height": 568,
+      "scroll": 320,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Adventure"
+      ],
+      "overflowElements": [
+        "i",
+        "i",
+        "i"
+      ],
+      "domCount": 167,
+      "visibleControls": 19
+    },
+    {
+      "page": "packs?grade=1&level=1&op=ADD",
+      "computed_font_px": 32,
+      "default_font_px": 16,
+      "innerWidth": 320,
+      "viewport": 320,
+      "height": 568,
+      "scroll": 320,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Pack catalogue"
+      ],
+      "overflowElements": [],
+      "domCount": 171,
+      "visibleControls": 23
+    },
+    {
+      "page": "session/new?grade=12&level=2&op=MIX",
+      "computed_font_px": 32,
+      "default_font_px": 16,
+      "innerWidth": 320,
+      "viewport": 320,
+      "height": 568,
+      "scroll": 320,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Set up your practice"
+      ],
+      "overflowElements": [],
+      "domCount": 198,
+      "visibleControls": 19
+    },
+    {
+      "page": "demo/teacher",
+      "computed_font_px": 32,
+      "default_font_px": 16,
+      "innerWidth": 320,
+      "viewport": 320,
+      "height": 568,
+      "scroll": 320,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Class monitoring"
+      ],
+      "overflowElements": [],
+      "domCount": 250,
+      "visibleControls": 19
+    },
+    {
+      "page": "reports",
+      "computed_font_px": 32,
+      "default_font_px": 16,
+      "innerWidth": 320,
+      "viewport": 320,
+      "height": 568,
+      "scroll": 320,
+      "lang": "en",
+      "theme": "dark",
+      "h1": [
+        "Reports"
+      ],
+      "overflowElements": [],
+      "domCount": 84,
+      "visibleControls": 10
+    }
+  ],
+  "runtime_after": {
+    "offline_release": "f630b3dc6aa6b5a5",
+    "bootstrap_sha256": "43f5123f5b3c5d7e7775b844ccf905819a309530f5df569ae9c35487bcb9d128",
+    "bank_index_sha256": "8ac1fdfc6cf704391adc059faf64492747b559954d82c2f7fe929059ced6f3a1",
+    "bank_version": "1.2.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "finished_utc": "2026-11-28T18:41:22.706Z"
+}

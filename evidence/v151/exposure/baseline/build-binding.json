@@ -1,0 +1,27 @@
+{
+  "decision": "REPRODUCED",
+  "build": {
+    "app_version": "1.5.0",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "460c98b682110f7e",
+    "dist_tree_sha256": "e10803322291540a525e6edb0ad272395be6e5a172d2b4cb7aac1032c2ed3e0c"
+  },
+  "browser": "153.0",
+  "node": "v24.22.3",
+  "commands": [
+    "python3 probe_unseen_coverage.py --root <original-release> --out <baseline>",
+    "node independent_state_probe.mjs --root <original-release> --out <baseline>"
+  ],
+  "probes": {
+    "probe_unseen_coverage.py": "96100be263886d4590ace054d00292ecccbae2ccdf8a43b7220138cb1ccb22a3",
+    "independent_state_probe.mjs": "ac7a86b3f823295d3c4df21ea8dc18049f2d26f0bc7f7f4992560b69a2cd008e"
+  },
+  "results": {
+    "browser.log": "f262be3adfc73a487e38861c95929d5d0d388acfd7ae766f1cba23f2899f4ca0",
+    "engine.log": "34d143907b210e786c61ca2ced6153cbfb172941f68a16de8c654822e4f5ab6c",
+    "independent_state_probe.json": "34d143907b210e786c61ca2ced6153cbfb172941f68a16de8c654822e4f5ab6c",
+    "probe_unseen_coverage.json": "7fda2133364330351b3f86b8f45fc5e51f2b00db011565061c24db6f5a3b896a",
+    "sparse_completion_attempts.json": "78654cfe2d8b65f3bd1185b0aeb03391f462b2d15aa884c4511090422cf92706"
+  }
+}

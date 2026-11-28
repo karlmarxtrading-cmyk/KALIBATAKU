@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "command": "node tests/v15/backup-capacity-large-zip.mjs",
+  "runtime": "v24.22.3",
+  "time": "2026-11-28T10:56:49.764Z",
+  "offline_release": "ef0b6798d9633ca8",
+  "source": "Node memory adapter",
+  "logical_value_bytes": 544000000,
+  "unpacked_part_bytes": 544101510,
+  "engine_max_string_length": 536870888,
+  "rows": 70,
+  "counts": {
+    "attempts": 1,
+    "events": 1,
+    "records": 68,
+    "parts": 69
+  },
+  "largest_part_bytes": 8001427,
+  "zip_bytes": 621415,
+  "json_writer": "BACKUP_TOO_LARGE",
+  "recovery_export_and_readback": "PASS",
+  "preview_additions": 71,
+  "restored_additions": 71,
+  "restored_values_verified": 6800,
+  "draft": "4/"
+}

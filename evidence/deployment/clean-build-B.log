@@ -1,0 +1,3 @@
++ node tests/data/build-offline.mjs /workspace/scratch/78d69f482602/math12_rebuild/.build-un5tmfx3/dist
+Offline manifest 47c1663e7ea2fa9c 54 assets 3337773 bytes
+dist 08cac7c52d13761fffb67a2b45fd082fd3fc0c86883b6e02b912315cf7994314 4758 files

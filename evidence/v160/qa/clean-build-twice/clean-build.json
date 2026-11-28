@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "method": "Two builds into independent empty staging directories using the verified physical bank. Every relative path and byte hash contributes to the tree hash.",
+  "runs": [
+    {
+      "run": "A",
+      "sha256": "f6e679cf51e9e24f9017e85743aedf60ac92fa176790eeb61e96562122725df9",
+      "files": 5054,
+      "log": "evidence/deployment/clean-build-A.log"
+    },
+    {
+      "run": "B",
+      "sha256": "f6e679cf51e9e24f9017e85743aedf60ac92fa176790eeb61e96562122725df9",
+      "files": 5054,
+      "log": "evidence/deployment/clean-build-B.log"
+    }
+  ],
+  "dist_sha256": "f6e679cf51e9e24f9017e85743aedf60ac92fa176790eeb61e96562122725df9",
+  "files": 5054
+}

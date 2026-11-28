@@ -1,0 +1,316 @@
+{
+  "release": "ef0b6798d9633ca8",
+  "engine": "firefox",
+  "browser": "153.0",
+  "samples": [
+    {
+      "initially_focused": true,
+      "after_first_claim": {
+        "focus": true,
+        "retained": true
+      },
+      "genuine_replacement": {
+        "invalidated": true,
+        "worker": "http://127.0.0.1:35349/control-probe.js"
+      },
+      "events": [
+        {
+          "event": "view",
+          "at": 38,
+          "state": [
+            0,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 124,
+          "state": [
+            1,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 300,
+          "state": [
+            1,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 701,
+          "state": [
+            1,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 701,
+          "state": [
+            1,
+            null,
+            true,
+            false
+          ]
+        },
+        {
+          "event": "controllerchange",
+          "at": 1505,
+          "script": "http://127.0.0.1:35349/sw.js"
+        },
+        {
+          "event": "controllerchange",
+          "at": 1594,
+          "script": "http://127.0.0.1:35349/control-probe.js"
+        },
+        {
+          "event": "view",
+          "at": 1596,
+          "state": [
+            2,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1649,
+          "state": [
+            2,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1653,
+          "state": [
+            2,
+            null,
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "initially_focused": true,
+      "after_first_claim": {
+        "focus": true,
+        "retained": true
+      },
+      "genuine_replacement": {
+        "invalidated": true,
+        "worker": "http://127.0.0.1:35349/control-probe.js"
+      },
+      "events": [
+        {
+          "event": "view",
+          "at": 36,
+          "state": [
+            0,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 118,
+          "state": [
+            1,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 207,
+          "state": [
+            1,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 538,
+          "state": [
+            1,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 539,
+          "state": [
+            1,
+            null,
+            true,
+            false
+          ]
+        },
+        {
+          "event": "controllerchange",
+          "at": 819,
+          "script": "http://127.0.0.1:35349/sw.js"
+        },
+        {
+          "event": "controllerchange",
+          "at": 903,
+          "script": "http://127.0.0.1:35349/control-probe.js"
+        },
+        {
+          "event": "view",
+          "at": 907,
+          "state": [
+            2,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 970,
+          "state": [
+            2,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 970,
+          "state": [
+            2,
+            null,
+            true,
+            false
+          ]
+        }
+      ]
+    },
+    {
+      "initially_focused": true,
+      "after_first_claim": {
+        "focus": true,
+        "retained": true
+      },
+      "genuine_replacement": {
+        "invalidated": true,
+        "worker": "http://127.0.0.1:35349/control-probe.js"
+      },
+      "events": [
+        {
+          "event": "view",
+          "at": 94,
+          "state": [
+            0,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 150,
+          "state": [
+            1,
+            null,
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 269,
+          "state": [
+            1,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 613,
+          "state": [
+            1,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 614,
+          "state": [
+            1,
+            null,
+            true,
+            false
+          ]
+        },
+        {
+          "event": "controllerchange",
+          "at": 1012,
+          "script": "http://127.0.0.1:35349/sw.js"
+        },
+        {
+          "event": "controllerchange",
+          "at": 1151,
+          "script": "http://127.0.0.1:35349/control-probe.js"
+        },
+        {
+          "event": "view",
+          "at": 1163,
+          "state": [
+            2,
+            "true",
+            false,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1273,
+          "state": [
+            2,
+            "true",
+            true,
+            false
+          ]
+        },
+        {
+          "event": "view",
+          "at": 1273,
+          "state": [
+            2,
+            null,
+            true,
+            false
+          ]
+        }
+      ]
+    }
+  ]
+}

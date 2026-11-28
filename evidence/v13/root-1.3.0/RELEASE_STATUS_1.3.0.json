@@ -1,0 +1,130 @@
+{
+  "artifact_status": "release_verdict",
+  "release_id": "kalibataku-static-1.3.0",
+  "app_version": "1.3.0",
+  "bank_version": "1.2.0",
+  "dist_tree_sha256": "d49eb6de1f8df3e2f22151e3efd282127de4bfcf25f207cfbb728772f2a56461",
+  "offline_release": "d69d4921d7f04c1a",
+  "qa_binding": "evidence/v13/qa/binding.json",
+  "readiness": {
+    "static_application": {
+      "status": "HOLD",
+      "evidence": [
+        "ACCEPTANCE_RESULTS.csv",
+        "ACCEPTANCE_FM.csv",
+        "PENUTUPAN_AUDIT_1.2.0.csv"
+      ],
+      "claim_boundary": "Build statis lengkap dan terverifikasi untuk hosting. Gate wajib yang membutuhkan perangkat fisik, pembaca layar atau mesin browser lain masih terbuka.",
+      "blockers": [
+        "AC-030",
+        "AC-045",
+        "AC-053",
+        "AC-055",
+        "AC-056",
+        "AC-057",
+        "AC-058",
+        "AC-059",
+        "AC-080",
+        "FM-036",
+        "FM-038",
+        "FM-039",
+        "FM-040",
+        "FM-041",
+        "FM-042",
+        "FM-044",
+        "FM-045",
+        "QA-08",
+        "QA-18",
+        "QA-19",
+        "QA-22",
+        "QA-30"
+      ]
+    },
+    "ui_ux": {
+      "status": "TECHNICAL_PASS_USABILITY_NOT_VALIDATED",
+      "evidence": [
+        "TEMUAN_AUDIT_1.2.0.csv",
+        "evidence/v13/qa/browser-v13-chromium/browser-v13-chromium.json"
+      ],
+      "claim_boundary": "Redesain dan temuan UX diuji otomatis di Chromium dengan viewport/teks/tema. Usability dengan pengguna nyata belum dilakukan.",
+      "blockers": [
+        "QA-27"
+      ]
+    },
+    "arithmetic_bank": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/v13/qa/bank-verify/log.txt",
+        "evidence/v13/qa/bank-determinism/bank-determinism.json"
+      ],
+      "claim_boundary": "Bank konten 1.2.0: 4.604 paket, 177.640 penempatan, oracle eksak dan regenerasi byte-identik.",
+      "blockers": []
+    },
+    "representation_narrative": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/v13/qa/math-linear-roundtrip/math-linear-roundtrip.json",
+        "evidence/v13/qa/bank-domain-prose/bank-domain-prose.json"
+      ],
+      "claim_boundary": "Teks linear seluruh soal/langkah setara AST; narasi G1–6 nonnegatif. Ini pemeriksaan otomatis, bukan penelaahan guru.",
+      "blockers": []
+    },
+    "pedagogy_pilot": {
+      "status": "NOT_PERFORMED",
+      "evidence": [
+        "evidence/v13/bank/editorial-changes-1.1.0-to-1.2.0.csv.gz",
+        "docs/PROTOKOL_GATE_EKSTERNAL.md"
+      ],
+      "claim_boundary": "Penelaah manusia dan pilot peserta belum ada.",
+      "blockers": [
+        "QA-26",
+        "QA-27"
+      ]
+    },
+    "bridge_contract": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/v13/qa/data-contract/log.txt"
+      ],
+      "claim_boundary": "Kontrak, retry, ACK dan isolasi diuji dengan fixture.",
+      "blockers": []
+    },
+    "live_lms": {
+      "status": "DEFERRED_BY_SCOPE",
+      "evidence": [
+        "docs/bridge/README.md"
+      ],
+      "claim_boundary": "LMS institusi live di luar lingkup statis.",
+      "blockers": []
+    },
+    "performance_lab": {
+      "status": "PASS",
+      "evidence": [
+        "evidence/v13/qa/performance-budgets/performance-budgets.json"
+      ],
+      "claim_boundary": "Player + renderer 50090 B gzip (batas 90 KiB). Lab tanpa throttling; bukan data lapangan.",
+      "blockers": []
+    },
+    "field_performance": {
+      "status": "NOT_RUN",
+      "evidence": [
+        "evidence/v13/qa/performance-budgets/performance-budgets.json"
+      ],
+      "claim_boundary": "p75 LCP/INP/CLS memerlukan trafik produksi.",
+      "blockers": [
+        "QA-28"
+      ]
+    },
+    "live_deployment": {
+      "status": "PREVIEW_PASS",
+      "evidence": [
+        "evidence/v13/qa/hosting-smoke/log.txt",
+        "docs/DEPLOY.md"
+      ],
+      "claim_boundary": "HTTP/HTTPS root dan subfolder lulus di pratinjau lokal. Deployment publik belum dilakukan.",
+      "blockers": [
+        "QA-25"
+      ]
+    }
+  }
+}

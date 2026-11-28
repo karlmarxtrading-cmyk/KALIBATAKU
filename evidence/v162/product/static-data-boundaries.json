@@ -1,0 +1,68 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "static-data-boundaries",
+  "build": {
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU",
+    "offline_release": "f630b3dc6aa6b5a5"
+  },
+  "started": "2026-11-28T18:49:16.483795+00:00",
+  "finished": "2026-11-28T18:49:19.371447+00:00",
+  "checks": [
+    {
+      "id": "public-allowlist",
+      "status": "PASS",
+      "expected": "Only shipped source assets, build metadata and the pinned public bank are present.",
+      "actual": {
+        "files": 5054,
+        "differences": []
+      }
+    },
+    {
+      "id": "publication-excludes-private-input",
+      "status": "PASS",
+      "expected": "No fixture, backup, key or private evidence paths in deployment.",
+      "actual": []
+    },
+    {
+      "id": "publication-boundary-controls",
+      "status": "PASS",
+      "expected": "Reject each inert private filename fixture.",
+      "actual": [
+        ".env.staging",
+        "backups/demo.zip",
+        "evidence/results.json",
+        "server.key",
+        "release-authorization/foo.json"
+      ]
+    },
+    {
+      "id": "public-secret-patterns",
+      "status": "PASS",
+      "expected": "No matches for supported secret signatures in public files.",
+      "actual": []
+    },
+    {
+      "id": "profile-displays-literal",
+      "status": "PASS",
+      "expected": "The saved label is presented as literal text.",
+      "actual": {
+        "text": "<em data-synthetic-label>Simulasi 27</em>",
+        "elements_created_from_label": 0
+      }
+    },
+    {
+      "id": "profile-length-boundaries",
+      "status": "PASS",
+      "expected": "Empty and oversized names are rejected.",
+      "actual": [
+        true,
+        true
+      ]
+    }
+  ],
+  "assertions": 6,
+  "status": "PASS",
+  "scope": "Local deterministic package and browser checks; synthetic profiles."
+}

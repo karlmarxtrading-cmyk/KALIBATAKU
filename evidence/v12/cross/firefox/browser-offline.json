@@ -1,0 +1,105 @@
+{
+  "suite": "offline",
+  "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:153.0) Gecko/20100101 Firefox/153.0",
+  "created_utc": "2026-11-25T22:40:04.236Z",
+  "base": "http://127.0.0.1:39831/probe-offline-1795646404234/school/math/",
+  "checks": [],
+  "runtime": {
+    "offline_release": "47c1663e7ea2fa9c",
+    "bootstrap_sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736",
+    "bank_index_sha256": "538b91acb48e7845cbcb663f3ddd42473a412f8fb279c98264e67a63613306cd",
+    "bank_version": "1.1.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "results": [
+    {
+      "id": "AC-060",
+      "description": "Selected pack size, quota message, retry, verified practice and teacher/report capabilities on the offline screen",
+      "status": "PASS",
+      "observations": {
+        "expected": "Exact estimate, actionable full storage, no ready flag on failure; successful retry identifies supported features.",
+        "size_label": "Perkiraan unduhan tersisa, termasuk aplikasi dan dependensi: 3,2 MiB.",
+        "native_storage_manager": true,
+        "quota_recovery": true,
+        "final_state": "Profil dan data\nPaket offline\nPengiriman hasil\nPaket offline\n\nEvaluasi A · Penjumlahan — Pasangan bilangan sampai 5\n\nSiap untuk latihan offline.\n\nBuka latihan\nPaket di perangkat ini\nEvaluasi A · Penjumlahan — Pasangan bilangan sampai 5\n\nSiap untuk latihan · 12,3 KiB · v1.1.0\n\nBuka latihan\nHapus salinan offline\nPilih paket latihan\n\nMenghapus salinan offline hanya menghapus berkas paket. Riwayat jawaban tetap berada di profil.\n\nYang tersedia tanpa internet\n\nLatihan, tinjauan jawaban, dan riwayat lokal dapat dibuka setelah satu paket siap.\n\nMengunduh materi baru, membuka ruang guru, dan membuat laporan atau ekspor memerlukan koneksi.",
+        "decoded_bytes": 3355778
+      }
+    },
+    {
+      "id": "AC-065",
+      "description": "Personal delivery panel identifies device-only scope and unverified academic status",
+      "status": "PASS",
+      "observations": {
+        "expected": "Local only without delivery claim",
+        "visible": "Profil dan data\nPaket offline\nPengiriman hasil\nStatus sinkronisasi\n\nLatihan pribadi · QA offline\n\n0 sesi tersimpan pada profil ini.\n\nHasil pribadi tersimpan di browser ini. Tidak ada pengiriman ke sekolah.\n\nPenilaian resmi: belum diverifikasi. Layanan LMS sekolah belum terhubung.\n\nBuka riwayat profil"
+      }
+    },
+    {
+      "id": "TC-176",
+      "description": "Launch a pinned assessment in a new application document while every source request returns HTTP 503",
+      "status": "PASS",
+      "observations": {
+        "pack": "MM-G01-L01-ADD-P003",
+        "attempt_mode": "assessment",
+        "loaded": 10,
+        "network_status": 503,
+        "controller": "http://127.0.0.1:39831/probe-offline-a93de5af-4490-4226-b697-f26f476bd3f2/school/math/sw.js"
+      }
+    },
+    {
+      "id": "TC-177",
+      "description": "New worker waits throughout a live assessment; closing its client switches to the verified new shell",
+      "status": "PASS",
+      "observations": {
+        "old_release": "47c1663e7ea2fa9c",
+        "new_release": "d94a12735a6e9c9c",
+        "old_js_sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736",
+        "new_js_sha256": "8649fd6dd5e40f6ffcacd18f721ce734d13615ff883843d100798e16d18431f9",
+        "items_retained": 10
+      }
+    },
+    {
+      "id": "TC-186",
+      "description": "Roll back to archived revision A, verify original JS bytes and retained local assessment from revision B",
+      "status": "PASS",
+      "observations": {
+        "restored_js_sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736",
+        "restored_release": "47c1663e7ea2fa9c",
+        "local_attempt_preserved": true
+      }
+    },
+    {
+      "id": "AC-061",
+      "description": "Complete a cached assessment during HTTP 503, then open an unavailable teacher route and return to local work",
+      "status": "PASS",
+      "observations": {
+        "expected": "Saved answer and result at 503; unavailable report and uncached material offer retry/back to packs",
+        "correct": 1,
+        "items": 10,
+        "explicit_resume_takeover": true,
+        "teacher_fallback": "Bagian ini belum dapat dibuka.\n\nPeriksa koneksi atau buka paket yang sudah disimpan untuk penggunaan offline.\n\nCoba lagi\nPaket offline\nKembali ke ruang latihan",
+        "uncached_fallback": "Bagian ini belum dapat dibuka.\n\nPeriksa koneksi atau buka paket yang sudah disimpan untuk penggunaan offline.\n\nCoba lagi\nPaket offline\nKembali ke ruang latihan",
+        "return_route": "#/offline"
+      }
+    },
+    {
+      "id": "AC-062",
+      "description": "Remove an offline copy from the interface while retaining the completed session and event sequence",
+      "status": "PASS",
+      "observations": {
+        "expected": "Explanation visible, removed pack no longer ready, exact event ledger retained",
+        "visible_explanation": "Menghapus salinan offline hanya menghapus berkas paket. Riwayat jawaban tetap berada di profil.",
+        "events": 3,
+        "profile": "c5e86ee2-1a64-4ace-bfbc-d28b7ffff076"
+      }
+    }
+  ],
+  "runtime_after": {
+    "offline_release": "47c1663e7ea2fa9c",
+    "bootstrap_sha256": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736",
+    "bank_index_sha256": "538b91acb48e7845cbcb663f3ddd42473a412f8fb279c98264e67a63613306cd",
+    "bank_version": "1.1.0",
+    "export_worker_sha256": "c61c3aeb9fd65192c739050399d06708ce6c473b9ea50e7de2c508126f1964fc"
+  },
+  "finished_utc": "2026-11-25T22:40:12.742Z"
+}

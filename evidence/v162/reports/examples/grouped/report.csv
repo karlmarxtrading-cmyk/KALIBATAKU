@@ -1,0 +1,88 @@
+﻿"Summary","Siswa","Sumber","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Summary","QA grouped","Hasil latihan lokal · belum diverifikasi institusi",1,1,0,0,0,0,100,100,100
+"Competencies","Kompetensi","Kelas","Level","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Competencies","arithmetic.mixed.g11.l03",11,3,"Campuran",1,1,0,0,0,0,100,100,100
+"Operations","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Operations","Penjumlahan",0,0,0,0,0,0,,,
+"Operations","Pengurangan",0,0,0,0,0,0,,,
+"Operations","Perkalian",0,0,0,0,0,0,,,
+"Operations","Pembagian",0,0,0,0,0,0,,,
+"Operations","Campuran",1,1,0,0,0,0,100,100,100
+"Sessions","ID","UTC","Paket","Mode","Status","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Sessions","7fb0c734-37a3-47ba-90db-ff1330f7e56f","2026-11-28T17:00:01.001Z","MM-G11-L03-MIX-P001","Latihan","Selesai",1,1,0,0,0,0,100,100,100
+"Dictionary","Ukuran","Definisi"
+"Dictionary","Skor paket","1 / 1"
+"Dictionary","Akurasi jawaban","1 / 1"
+"Dictionary","Soal ditanggapi","1 / 1"
+"Dictionary","Jawaban pertama benar","0 / 1"
+"Dictionary","Penyebut nol","Kosong = belum dievaluasi"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-1ea299ed-1bd0-4620-b5ce-69175749f78d"
+"Metadata","data_origin","local_practice"
+"Metadata","verification_status","unverified"
+"Metadata","locale","id"
+"Metadata","period_start_utc","2026-11-28T17:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2026-11-29T17:00:00.000Z"
+"Metadata","display_timezone","Asia/Jakarta"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-30T00:00:00.000Z"
+"Metadata","assigned_count",1
+"Metadata","correct_count",1
+"Metadata","incorrect_count",0
+"Metadata","skipped_count",0
+"Metadata","blank_count",0
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",100
+"Metadata","valid_response_accuracy_percent",100
+"Metadata","responded_percent",100
+"Metadata","subject_id","75b79040-4c3d-49fb-ae90-b0b764390ed0"
+"Metadata","subject_alias","QA grouped"
+"Metadata","source","local_practice"
+"Metadata","classId",""
+"Metadata","studentId","75b79040-4c3d-49fb-ae90-b0b764390ed0"
+"Metadata","from","2026-11-29"
+"Metadata","to","2026-11-29"
+"Metadata","timezone","Asia/Jakarta"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions","1.2.0"
+"Metadata","change_pp",
+"Metadata","journey_policy","mission-policy-1.1.0"
+"Metadata","journey_exposure_policy","viewed-items-1.0.0"
+"Metadata","journey_readiness_as_of_utc","2026-11-29T17:00:00.000Z"
+"Metadata","journey_as_of_inclusive",0
+"Metadata","journey_readiness_scope","cumulative_completed_as_of_current_policy"
+"Metadata","journey_activity_scope","selected_sessions_started_in_period_completed_by_cutoff"
+"Notes","Penulis","UTC","Revisi","Catatan","ID","Menggantikan","Status"
+"Math","Sumber","ID","Ekspresi","Pembilang kunci","Penyebut kunci","Respons pertama","Respons terakhir"
+"Math","local_practice","7fb0c734-37a3-47ba-90db-ff1330f7e56f","(−25/24 × (2/5) + 5/5) × 16 ÷ 2","14","3","99","14/3"
+"Family","Hasil latihan lokal · belum diverifikasi institusi"
+"Family","QA grouped"
+"Family","2026-11-29 — 2026-11-29 · Asia/Jakarta"
+"Family","Sesi selesai dalam periode ini: 1 · Berjalan: 0"
+"Family","Yang sudah terlihat"
+"Family","Belum ada jawaban benar mandiri pada respons pertama yang tercatat dalam periode ini."
+"Family","Fokus pendampingan"
+"Family","Campuran · kelas 11 · level 3 · Latihan — 1 dari 1 respons pertama perlu diperbaiki."
+"Family","Kesiapan petualangan"
+"Family","Kebijakan saat ini · mission-policy-1.1.0 · viewed-items-1.0.0 · sebelum 30 Nov 2026, 00.00 Asia/Jakarta. Cakupan menghitung soal unik yang pernah dilihat dalam sesi selesai, termasuk latihan di katalog."
+"Family","Misi dalam periode 0 · XP 0 · respons pertama benar mandiri 0 / 0. Kesiapan membuka keterampilan berikutnya. XP mencatat usaha. Evaluasi A/B mengukur penguasaan formal."
+"Family","Contoh dari sesi 29 Nov 2026, 00.00 · Latihan"
+"Family","Soal · (−25/24 × (2/5) + 5/5) × 16 ÷ 2"
+"Family","Kunci jawaban · 14/3"
+"Family","Jawaban pertama · 99"
+"Family","Jawaban terakhir · 14/3"
+"Family","Revisi setelah melihat kunci."
+"Family","Belum diuji melalui evaluasi pada periode ini — Penjumlahan, Pengurangan, Perkalian, Pembagian, Campuran."
+"Family","Rencana latihan berikutnya"
+"Family","Kumpulkan lebih banyak jawaban pada satu materi dan mode sebelum menarik kesimpulan."
+"Family","Tanggal tinjauan · Belum ditetapkan bersama guru."
+"Journey","Kompetensi","Kelas","Level","Operasi","Misi periode","Misi lulus kumulatif","Soal unik kumulatif","Target cakupan","Respons pertama mandiri periode","Respons pertama periode","Dengan bantuan periode","Revisi setelah kunci periode","Siap lanjut","XP periode","Target misi lulus","Strategi kumulatif","Target strategi","Misi kumulatif"
+"Journey","arithmetic.mixed.g11.l03",11,3,"Campuran",0,0,1,12,0,0,0,0,0,0,2,2,2,0
+"Contexts","Kelas","Level","Operasi","Mode","Respons pertama benar","Jumlah respons pertama","Dengan petunjuk","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Contexts",11,3,"Campuran","Latihan",0,1,0,1,1,0,0,0,0,100,100,100

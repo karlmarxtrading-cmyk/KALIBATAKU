@@ -1,0 +1,1025 @@
+{
+  "schema": "kalibataku-criteria/1.5",
+  "source": "05_KRITERIA_PENERIMAAN.csv (audit 1.3.0, 2026-11-28), 71 baris",
+  "criteria": {
+    "BANK-01": {
+      "impl": "Bank tidak disentuh; build menyalin bank lewat pin; tools/bank-preservation.py membandingkan 4.677 hash dengan manifest yang dibekukan dari ZIP 1.3.0",
+      "evidence": [
+        {
+          "suite": "bank-preservation"
+        }
+      ]
+    },
+    "BANK-02": {
+      "impl": "index.json 4.604 paket/177.640 slot; sidecar memetakan setiap penempatan ke paket yang hash-nya cocok",
+      "evidence": [
+        {
+          "suite": "bank-preservation"
+        },
+        {
+          "suite": "journey-model",
+          "rows": [
+            "all-placements-mapped"
+          ]
+        },
+        {
+          "suite": "bank-occurrence-identity"
+        }
+      ]
+    },
+    "BANK-03": {
+      "impl": "route.json: 300 node, 281 aktif dengan shard occurrence, 19 nonaktif tanpa shard",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "route-covers-281-active"
+          ]
+        },
+        {
+          "suite": "curriculum"
+        }
+      ]
+    },
+    "BANK-04": {
+      "impl": "journey/v1/occ: satu baris per penempatan (paket, indeks, fingerprint, band, peran, fitur, strategi, domain, template, repeat_of)",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "all-placements-mapped"
+          ]
+        },
+        {
+          "suite": "journey-sidecar"
+        }
+      ]
+    },
+    "BANK-05": {
+      "impl": "reviewer_status=authored_heuristic di route/shard/roster; readiness berlabel product_policy_not_psychometric",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "heuristic-labelled"
+          ]
+        }
+      ]
+    },
+    "BANK-06": {
+      "impl": "Mesin rasional eksak, bank dan typesetter tidak diubah; suite bank/oracle/math 1.3 dijalankan ulang pada build 1.5",
+      "evidence": [
+        {
+          "suite": "bank-verify"
+        },
+        {
+          "suite": "bank-determinism"
+        },
+        {
+          "suite": "bank-domain-prose"
+        },
+        {
+          "suite": "math-linear-roundtrip"
+        },
+        {
+          "suite": "math-exports"
+        },
+        {
+          "suite": "v12-bank-model"
+        }
+      ]
+    },
+    "BANK-07": {
+      "external": {
+        "state": "BLOCKED",
+        "reason": "Butuh penelaah manusia. Roster 394 template siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      },
+      "evidence_note": [
+        {
+          "suite": "review-roster"
+        }
+      ]
+    },
+    "PROG-01": {
+      "impl": "Jalur default diselesaikan oleh permainan sempurna pada semua node aktif. Graf prasyarat diperiksa terpisah.",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "dag-acyclic-topological",
+            "first-subtraction-not-behind-all-addition"
+          ]
+        },
+        {
+          "suite": "progression-bounds"
+        },
+        {
+          "suite": "progression-launch"
+        }
+      ]
+    },
+    "PROG-02": {
+      "impl": "Misi diurutkan pemanasan→target→penerapan, band naik di dalam peran (urutan dari fitur strategi, bukan posisi array)",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "intro-order-by-strategy-band",
+            "roles-and-order"
+          ]
+        }
+      ]
+    },
+    "PROG-03": {
+      "impl": "Peran, band, skor heuristik, strategi, domain dan paparan menentukan bucket. Pemilihan pengganti mencatat alasan.",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "random-only-within-equal-buckets",
+            "selector-deterministic"
+          ]
+        },
+        {
+          "suite": "progression-bounds"
+        }
+      ]
+    },
+    "PROG-04": {
+      "impl": "Exposure per profil/kompetensi dari snapshot; paket dengan butir belum terlihat terbanyak dipilih; jalur katalog: set latihan pendek mengambil butir yang belum terlihat lebih dulu",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "g03l01add-three-missions-disjoint",
+            "g05l01add-intro-then-regular"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "second-mission-new-questions"
+          ]
+        },
+        {
+          "suite": "journey-next-practice-probe"
+        }
+      ]
+    },
+    "PROG-05": {
+      "impl": "Selector memenuhi kekurangan cakupan/strategi dari bahan ajar termasuk review yang sah.",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "perfect-practice-advances"
+          ]
+        },
+        {
+          "suite": "progression-bounds"
+        },
+        {
+          "suite": "progression-launch"
+        }
+      ]
+    },
+    "PROG-06": {
+      "impl": "Pool kecil: semua butir baru diambil dulu, sisanya review berlabel dengan alasan dan hitungan unik jujur",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "small-pool-review-honest"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "second-mission-new-questions"
+          ]
+        },
+        {
+          "suite": "viewed-coverage"
+        },
+        {
+          "suite": "viewed-browser"
+        },
+        {
+          "suite": "viewed-exports"
+        }
+      ]
+    },
+    "PROG-07": {
+      "impl": "Dua salah beruntun → tawaran bantuan tanpa mengganti soal; misi <60% mandiri → misi penguatan",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "wrong-streak-reinforcement"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "wrong-streak-help"
+          ]
+        }
+      ]
+    },
+    "PROG-08": {
+      "impl": "firstIndependent: benar pertama tanpa petunjuk dan sebelum kunci; revisi setelah kunci tercatat sebagai bantuan",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "revision-after-key-not-independent"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "result-independent-counts"
+          ]
+        }
+      ]
+    },
+    "PROG-09": {
+      "impl": "Misi selesai, siap lanjut (kebijakan produk), penguasaan formal (A/B, tidak berubah) dan XP (penanda usaha) dihitung terpisah",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "teacher-report-journey-exports",
+            "xp-idempotent",
+            "assessment-unchanged"
+          ]
+        }
+      ]
+    },
+    "PROG-10": {
+      "impl": "Pilihan tahap memakai identitas intent profil. Misi aktif mendapat prioritas dan pilihan berikutnya bertahan saat reload.",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "start-point-unlocks-later-stage",
+            "start-point-correctable",
+            "new-user-choose-start"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "start-point-not-a-test"
+          ]
+        },
+        {
+          "suite": "start-intent"
+        },
+        {
+          "suite": "intent-browser-chromium"
+        }
+      ]
+    },
+    "PROG-11": {
+      "impl": "Item, seed, occurrence_ref dan trace dibekukan saat attempt dibuat; resume/bahasa tidak mengacak",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "frozen-provenance",
+            "snapshots-valid"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "resume-same-snapshot",
+            "language-no-reshuffle"
+          ]
+        }
+      ]
+    },
+    "PROG-12": {
+      "impl": "metadata_version, route_version, policy_version, selector_version, journey_policy dan alasan nextMission tercatat",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "policy-versioned-with-reasons"
+          ]
+        }
+      ]
+    },
+    "UX-01": {
+      "impl": "Beranda: satu CTA 'Lanjutkan petualangan' ke snapshot berjalan atau misi berikutnya",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "home-resume-cta"
+          ]
+        },
+        {
+          "suite": "ux-extended-browser"
+        }
+      ]
+    },
+    "UX-02": {
+      "impl": "Profil baru: 'Mulai dari dasar' langsung ke misi Pengenalan; 'Pilih titik mulai' opsional",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "home-new-user-cta",
+            "mission-created-frozen"
+          ]
+        },
+        {
+          "suite": "ux-extended-browser"
+        }
+      ]
+    },
+    "UX-03": {
+      "impl": "Satu aksi primer di beranda, arena (OKE / Soal berikutnya) dan hasil (Misi berikutnya)",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "home-new-user-cta",
+            "arena-one-primary",
+            "result-one-next-action"
+          ]
+        }
+      ]
+    },
+    "UX-04": {
+      "impl": "Kartu feedback: jawabanmu, kunci (termasuk ekuivalen), satu cara, langkah lengkap dapat dibuka",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "feedback-shows-answer-and-key"
+          ]
+        },
+        {
+          "suite": "player-ux-domain"
+        }
+      ]
+    },
+    "UX-05": {
+      "impl": "flow_policy direct-result-v1: soal terakhir 'Lihat hasil' memfinalkan sekali; grid tinjau hanya untuk evaluasi dan sesi 1.3",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "last-label-lihat-hasil",
+            "single-finalize"
+          ]
+        },
+        {
+          "suite": "v12-keyboard"
+        }
+      ]
+    },
+    "UX-06": {
+      "impl": "Evaluasi tidak mendapat flow baru; kunci tersembunyi sampai final; form/peninjauan tetap",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "assessment-unchanged"
+          ]
+        },
+        {
+          "suite": "e2e-browser"
+        }
+      ]
+    },
+    "UX-07": {
+      "impl": "Input tidak sah memberi pesan format, tidak dinilai; draf tersimpan (tidak diubah dari 1.3)",
+      "evidence": [
+        {
+          "suite": "player-run"
+        },
+        {
+          "suite": "e2e-browser"
+        }
+      ]
+    },
+    "UX-08": {
+      "impl": "Fokus ke kartu feedback, guard detail>1, busy guard; Lihat hasil dobel → satu event completed",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "single-finalize",
+            "no-auto-next"
+          ]
+        },
+        {
+          "suite": "v12-keyboard"
+        }
+      ]
+    },
+    "UX-09": {
+      "external": {
+        "state": "BLOCKED",
+        "reason": "Belum ada hasil Android dan iOS fisik dengan keyboard sistem terbuka pada portrait dan landscape. Lihat docs/PROTOKOL_EKSTERNAL_1.5.md; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "UX-10": {
+      "impl": "Peta adalah daftar bernomor (ol) per tahap dengan status teks + ikon; tidak ada versi grafis terpisah",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "map-list-statuses",
+            "map-region-has-skill-names"
+          ]
+        }
+      ]
+    },
+    "UX-11": {
+      "impl": "Misi tanpa timer; tantangan waktu tetap opsional di katalog",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "missions-untimed"
+          ]
+        }
+      ]
+    },
+    "UX-12": {
+      "impl": "Tanpa nyawa/penantian; salah → penguatan, bukan blokir",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "wrong-streak-reinforcement"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "wrong-streak-help"
+          ]
+        }
+      ]
+    },
+    "UX-13": {
+      "impl": "Nav siswa: Petualangan, Peta, Progres, Riwayat; menu dalam misi tanpa ruang guru/admin; katalog di tautan sekunder",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "arena-menu-no-school-spaces"
+          ]
+        }
+      ]
+    },
+    "UX-14": {
+      "impl": "Seluruh teks baru ID/EN; tema terang/gelap memakai token yang sama",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "english-dark-home",
+            "language-no-reshuffle"
+          ]
+        },
+        {
+          "suite": "ux-extended-browser"
+        }
+      ]
+    },
+    "DATA-01": {
+      "impl": "Attempt tanpa flow_policy_version (1.3) memakai aturan lama sampai selesai",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "legacy-13-session-keeps-review-step"
+          ]
+        },
+        {
+          "suite": "journey-model",
+          "rows": [
+            "legacy-13-attempts-untouched"
+          ]
+        }
+      ]
+    },
+    "DATA-02": {
+      "impl": "Tidak ada penulisan ulang snapshot; skor turunan dihitung baca-saja",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "legacy-13-attempts-untouched"
+          ]
+        },
+        {
+          "suite": "upgrade-restore-v1.0"
+        },
+        {
+          "suite": "upgrade-bank-1.2"
+        },
+        {
+          "suite": "bank-snapshot-upgrade"
+        }
+      ]
+    },
+    "DATA-03": {
+      "impl": "XP turunan dari attempt_id unik; finalisasi idempoten",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "xp-idempotent"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "single-finalize"
+          ]
+        }
+      ]
+    },
+    "DATA-04": {
+      "impl": "Hasil hanya dibuka setelah transaksi final tersimpan; kegagalan simpan menampilkan galat (tidak diubah dari 1.3)",
+      "evidence": [
+        {
+          "suite": "qa-fault-injection"
+        }
+      ]
+    },
+    "DATA-05": {
+      "impl": "Semua turunan journey memakai scope profil aktif",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "profile-isolation"
+          ]
+        },
+        {
+          "suite": "ux-extended-browser"
+        }
+      ]
+    },
+    "DATA-06": {
+      "impl": "Validasi metadata, identitas soal dan provenance memisahkan keselarasan internal dan kecocokan sumber terpercaya saat tersedia.",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "frozen-provenance",
+            "archive-roundtrip-journey"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "mission-created-frozen"
+          ]
+        },
+        {
+          "suite": "semantic-restore"
+        },
+        {
+          "suite": "restore-worker"
+        },
+        {
+          "suite": "restore-index"
+        }
+      ]
+    },
+    "DATA-07": {
+      "impl": "Penggabungan record per baris (tanpa spread); roundtrip 150.000 record identik",
+      "evidence": [
+        {
+          "suite": "data-archive-edges",
+          "rows": [
+            "roundtrip-150000-records"
+          ]
+        }
+      ]
+    },
+    "DATA-08": {
+      "impl": "Writer dan reader memeriksa kapasitas JSON yang sama. Pemulihan draf beralih ke arsip ZIP pada batas jumlah atau byte.",
+      "evidence": [
+        {
+          "suite": "data-archive-edges",
+          "rows": [
+            "limits-aligned",
+            "roundtrip-150000-records",
+            "roundtrip-mixed",
+            "roundtrip-small"
+          ]
+        },
+        {
+          "suite": "capacity-rows"
+        },
+        {
+          "suite": "capacity-bytes"
+        },
+        {
+          "suite": "capacity-browser"
+        },
+        {
+          "suite": "capacity-beyond-string"
+        }
+      ]
+    },
+    "DATA-09": {
+      "impl": "readEntry memvalidasi size/csize/limit dari central directory sebelum membaca body",
+      "evidence": [
+        {
+          "suite": "data-archive-edges",
+          "rows": [
+            "tek02-stored-csize-larger-than-size",
+            "tek02-stored-csize-smaller-than-size",
+            "tek02-stored-both-over-limit",
+            "tek02-declared-size-over-limit",
+            "tek02-negative-or-non-integer-size",
+            "tek02-valid-stored-still-reads"
+          ]
+        }
+      ]
+    },
+    "DATA-10": {
+      "impl": "Tidak ada perubahan skema IndexedDB (versi 2); field attempt aditif berversi; fixture 1.3 dibaca tanpa diubah; migrasi lama tetap teruji",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "legacy-13-attempts-untouched"
+          ]
+        },
+        {
+          "suite": "data-contract"
+        },
+        {
+          "suite": "upgrade-restore-v1.0"
+        },
+        {
+          "suite": "upgrade-bank-1.2"
+        }
+      ]
+    },
+    "DATA-11": {
+      "impl": "Teks journey menyebut profil lokal; tidak ada klaim akun/server",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "local-profile-wording"
+          ]
+        },
+        {
+          "suite": "data-ux-contract"
+        }
+      ]
+    },
+    "OFF-01": {
+      "impl": "Misi tersimpan dimainkan, dilanjutkan, diselesaikan offline; misi baru dari paket terpasang",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "offline-resume-and-finish",
+            "offline-next-mission-from-installed"
+          ]
+        },
+        {
+          "suite": "offline-capability-chromium"
+        },
+        {
+          "suite": "catalog-offline-v151-chromium"
+        },
+        {
+          "suite": "catalog-offline-v151-firefox"
+        },
+        {
+          "suite": "catalog-offline-v151-webkit"
+        }
+      ]
+    },
+    "OFF-02": {
+      "impl": "Shell offline tanpa paket bank/shard; simpan offline = paket aktif + satu kandidat + shard node",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "offline-shell-not-whole-bank"
+          ]
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "offline-saved-two-packs"
+          ]
+        }
+      ]
+    },
+    "OFF-03": {
+      "impl": "Snapshot misi memuat soal lengkap; kebijakan cache menyimpan paket yang tercatat",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "offline-active-mission-survives-cache-cleanup"
+          ]
+        },
+        {
+          "suite": "data-cache-policy"
+        }
+      ]
+    },
+    "OFF-04": {
+      "impl": "Status 'Belum terbuka' (prasyarat) berbeda dari 'Belum diunduh' (offline, paket tidak ada)",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "offline-not-downloaded-distinct"
+          ]
+        },
+        {
+          "suite": "offline-capability-chromium"
+        }
+      ]
+    },
+    "A11Y-01": {
+      "impl": "Target produk 44×44 CSS px untuk kontrol inti; pemeriksaan WCAG 1.3 tetap",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "next-button-0",
+            "next-button-1",
+            "home-cta-44",
+            "start-targets-44"
+          ]
+        },
+        {
+          "suite": "v12-roles-reflow"
+        }
+      ]
+    },
+    "A11Y-02": {
+      "impl": "320 px + teks terbesar/200% tanpa scroll horizontal (setara zoom 400% pada 1280)",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "reflow-320-home",
+            "reflow-320-map",
+            "reflow-320-session",
+            "reflow-320-large-text-home",
+            "reflow-320-large-text-map",
+            "reflow-320-large-text-session"
+          ]
+        },
+        {
+          "suite": "ux-extended-browser"
+        },
+        {
+          "suite": "e2e-browser"
+        },
+        {
+          "suite": "offline-capability-chromium"
+        },
+        {
+          "suite": "map-native-zoom"
+        }
+      ]
+    },
+    "A11Y-03": {
+      "impl": "Fokus terlihat dan berurutan; fokus pindah ke kartu feedback/heading keadaan",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "keyboard-reaches-map"
+          ]
+        },
+        {
+          "suite": "v12-keyboard"
+        }
+      ]
+    },
+    "A11Y-04": {
+      "external": {
+        "state": "BLOCKED",
+        "reason": "Ujaran NVDA/VoiceOver/TalkBack belum direkam; inspeksi DOM otomatis bukan bukti ujaran. Protokol siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "A11Y-05": {
+      "impl": "Suara default mati; reduced motion global; status tidak bergantung warna (teks+ikon); kontras token",
+      "evidence": [
+        {
+          "suite": "v12-print-contrast"
+        },
+        {
+          "suite": "e2e-browser"
+        },
+        {
+          "suite": "journey-browser-chromium",
+          "rows": [
+            "map-list-statuses"
+          ]
+        }
+      ]
+    },
+    "DEVICE-01": {
+      "impl": "Pengujian desktop Chromium, Firefox, WebKit melalui Playwright pada dist yang sama.",
+      "evidence": [
+        {
+          "suite": "journey-browser-chromium"
+        },
+        {
+          "suite": "browser-v13-chromium"
+        },
+        {
+          "suite": "browser-v13-firefox"
+        },
+        {
+          "suite": "browser-v13-webkit"
+        },
+        {
+          "suite": "journey-browser-firefox"
+        },
+        {
+          "suite": "journey-browser-webkit"
+        }
+      ]
+    },
+    "DEVICE-02": {
+      "external": {
+        "state": "BLOCKED",
+        "reason": "Tidak ada Android fisik. Emulasi viewport bukan bukti perangkat. Protokol siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "DEVICE-03": {
+      "external": {
+        "state": "BLOCKED",
+        "reason": "Tidak ada iPhone/iPad fisik. Protokol siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "TEACH-01": {
+      "impl": "Laporan & ekspor memisahkan mandiri, bantuan, revisi setelah kunci, cakupan, siap lanjut, penguasaan formal, XP",
+      "evidence": [
+        {
+          "suite": "journey-model",
+          "rows": [
+            "teacher-report-journey-exports"
+          ]
+        },
+        {
+          "suite": "teacher-exports"
+        }
+      ]
+    },
+    "TEACH-02": {
+      "impl": "Semua ekspor dibaca kembali dan nilai cakupan, kelulusan misi, strategi dan kesiapan dibandingkan dengan peta pada fixture audit.",
+      "evidence": [
+        {
+          "suite": "journey-exports-reopened"
+        },
+        {
+          "suite": "documents-reopened",
+          "rows": [
+            "docx-omml",
+            "xlsx-reopen",
+            "csv-reopen",
+            "json-reopen",
+            "pdf-vector-text",
+            "docx-render-layout"
+          ]
+        },
+        {
+          "suite": "teacher-exports"
+        },
+        {
+          "suite": "period-readiness"
+        },
+        {
+          "suite": "format-readiness"
+        },
+        {
+          "suite": "time-offset-engine"
+        },
+        {
+          "suite": "time-offset-exports"
+        },
+        {
+          "suite": "viewed-exports"
+        }
+      ]
+    },
+    "TEACH-03": {
+      "external": {
+        "state": "BLOCKED",
+        "reason": "Penelaah belum merender dan memeriksa persamaan di Microsoft Word pada perangkat sasaran; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "TEACH-04": {
+      "impl": "timingStats: hanya respons pertama benar tanpa bantuan dengan kualitas waktu sah; N ditulis; median/P90 bila N≥10",
+      "evidence": [
+        {
+          "suite": "teacher-exports"
+        },
+        {
+          "suite": "v12-feedback-export"
+        }
+      ]
+    },
+    "PILOT-01": {
+      "external": {
+        "state": "NOT_RUN",
+        "reason": "Belum ada peserta/izin pilot. Protokol dan formulir siap; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "PILOT-02": {
+      "external": {
+        "state": "NOT_RUN",
+        "reason": "Belum ada guru peserta pilot; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "PILOT-03": {
+      "external": {
+        "state": "NOT_RUN",
+        "reason": "Bergantung pada PILOT-01/02; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "PERF-01": {
+      "impl": "JS beranda dan tambahan player diukur gzip pada build final",
+      "evidence": [
+        {
+          "suite": "journey-perf-lab",
+          "rows": [
+            "home-js-budget",
+            "player-js-budget"
+          ]
+        },
+        {
+          "suite": "performance-budgets"
+        }
+      ]
+    },
+    "PERF-02": {
+      "impl": "Lab Chromium headless: waktu misi siap, latensi feedback (median/p95), transfer misi pertama",
+      "evidence": [
+        {
+          "suite": "journey-perf-lab",
+          "rows": [
+            "mission-ready-measured",
+            "feedback-latency-measured",
+            "first-mission-transfer-measured"
+          ]
+        }
+      ]
+    },
+    "PERF-03": {
+      "external": {
+        "state": "NOT_RUN",
+        "reason": "Fase SETELAH_PILOT: butuh data lapangan p75 setelah pilot dan deployment; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "REL-01": {
+      "impl": "Dua build bersih identik; dist = src + bank terpin; hosting smoke root/subfolder",
+      "evidence": [
+        {
+          "suite": "clean-build-twice"
+        },
+        {
+          "suite": "hosting-smoke"
+        }
+      ]
+    },
+    "REL-02": {
+      "external": {
+        "state": "BLOCKED",
+        "reason": "Tidak ada akses akun Cloudflare/domain; tidak ada klaim deployment. Panduan + perintah verifikasi siap (docs/DEPLOY.md); lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "REL-03": {
+      "external": {
+        "state": "BLOCKED",
+        "reason": "Update/rollback nyata memerlukan domain. Rollback lokal/kompatibilitas data dijelaskan; belum dijalankan di Pages; lihat VALIDASI_EKSTERNAL/00_MULAI_DI_SINI.md."
+      }
+    },
+    "REL-04": {
+      "impl": "Register diturunkan otomatis dari binding QA yang diverifikasi ulang; status rilis dihitung dari register",
+      "derived": "consistency"
+    },
+    "REL-05": {
+      "impl": "Paket diuji: ekstraksi bersih, release:verify, build ulang identik, rujukan panduan ada",
+      "derived": "package"
+    }
+  }
+}

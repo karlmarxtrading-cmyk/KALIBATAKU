@@ -1,0 +1,282 @@
+{
+  "status": "PASS",
+  "release": "ef0b6798d9633ca8",
+  "artifacts": [
+    {
+      "file": "z/report.json",
+      "sha256": "a33c91e428d8897cee7b624b7ff7356113e1ee8dc6b4ad2c35550a5c6462e8ba",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "z/report.csv",
+      "sha256": "440ae3fed8394f260ec1c797ea5cf864d03a120d63e941c8aa0786a4a2cca391",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "z/report.xlsx",
+      "sha256": "ba199f3e30d53a1711d6cf0a1b3ffa520a327688100bc18d1210c43646c1cd7f",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "z/report.docx",
+      "sha256": "17987d8a1b2d71457cd82f819bd9997801dd5935f6e244ee9ecec5e00eb684e5",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "z/report.pdf",
+      "sha256": "e535f4adcc835876595a37af547d17fc1e8e6d347785c85873a120c1b83311f3",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus07/report.json",
+      "sha256": "8ef749d2a935a2ca150d2c1dc27d5aea16b7e1048108abe76ece9a2f466cd620",
+      "zone": "Asia/Jakarta",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus07/report.csv",
+      "sha256": "830fa08cad8bf88f68b2579276068d58e948e37e33e02d57b12c1fc233742ea5",
+      "zone": "Asia/Jakarta",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus07/report.xlsx",
+      "sha256": "cbbd1c8ddedb62db92adc51fbf2bc86d0511f70d8719ead09c32480340aa0387",
+      "zone": "Asia/Jakarta",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus07/report.docx",
+      "sha256": "d79a1ffbb10145431dcfd0aa1e7a1d872e084355eb2d60c65278ceb7eff53786",
+      "zone": "Asia/Jakarta",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus07/report.pdf",
+      "sha256": "0daed7568f5e6c3ec68a7e5dc7e12da44f74a4c21a96a258db0dcd45f567b7b3",
+      "zone": "Asia/Jakarta",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus08/report.json",
+      "sha256": "faeb0204fae2df5d5e9905e233ba46dcc53363aedd5e1d7d3d6f8b9ec9461453",
+      "zone": "Asia/Makassar",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus08/report.csv",
+      "sha256": "0a89c60dc423ade05d0faf26e74c55ee3d0806bfa076ae2d77f5e042cbabdd82",
+      "zone": "Asia/Makassar",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus08/report.xlsx",
+      "sha256": "1bb68cefdaa1d806b297d7d6a78eb5f94d0a9464e89377d27d4edf55fb990e6b",
+      "zone": "Asia/Makassar",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus08/report.docx",
+      "sha256": "56d3ba0810b588f9b0ec32df64cc8a571c12e401c06619b2f67916921bd00ec4",
+      "zone": "Asia/Makassar",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "plus08/report.pdf",
+      "sha256": "4320da5587764bcbc91b3a1e4a6270dd5e62cad281de738c5be2fe4823352d35",
+      "zone": "Asia/Makassar",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "minus05/report.json",
+      "sha256": "cf2e6b6917d044c29ef3d9ec017043663f2d42c8f16dd0b17d8baf057a15ae00",
+      "zone": "Asia/Jayapura",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "minus05/report.csv",
+      "sha256": "87666d660489ea470aa1e5d26f03c2e4169d51371671c8b8aa5ab8d1dd94e811",
+      "zone": "Asia/Jayapura",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "minus05/report.xlsx",
+      "sha256": "d08b57f51803fc3c67b4c096a42424210641aedb92045eca3bc72598d91b75bc",
+      "zone": "Asia/Jayapura",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "minus05/report.docx",
+      "sha256": "a6e1118bf41d37e0330f0b26260822843bee22908b4a467cb9bc19b3d6bad37e",
+      "zone": "Asia/Jayapura",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "minus05/report.pdf",
+      "sha256": "d0fbd759010fac0a07dbbf102c7aebdf3afe6b53a91dee0eecb0a744175f5a88",
+      "zone": "Asia/Jayapura",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "mixed/report.json",
+      "sha256": "bcb8d58225edcfb4bc04c3e2aed84d585c8bf5eb76682a0f007c6d4ca2a67f8e",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "mixed/report.csv",
+      "sha256": "107784ec88a2247e47c66742410d292ed2e32ff9382aacd50a4d92b95cfd86d7",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "mixed/report.xlsx",
+      "sha256": "43e21c7077d274707ffd2824b7f0dd1e234cc6ecc01ace63bacefbea12db16db",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "mixed/report.docx",
+      "sha256": "e8e3363414b33426fb8fd05de832e79292f5032a26baa4bc00332f95263c6422",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    },
+    {
+      "file": "mixed/report.pdf",
+      "sha256": "9bf55fb878f5faf182be6ff2cd73247efa5ba59ce678870d2c7eded62fb13fb7",
+      "zone": "UTC",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "missions": 3,
+      "ordered_sessions": 4,
+      "ordered_notes": 4
+    }
+  ],
+  "method": "Independent JSON, CSV, XML, openpyxl and PyMuPDF reading with Python zoneinfo/calendar and immutable fixture as oracle."
+}

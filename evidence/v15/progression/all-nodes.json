@@ -1,0 +1,3540 @@
+{
+  "status": "PASS",
+  "command": "node tests/journey/progression-bounds.mjs",
+  "node": "v24.22.3",
+  "started_at": "2026-11-28T09:03:55.999Z",
+  "finished_at": "2026-11-28T09:04:08.304Z",
+  "environment": "Node; real question bank, real selector, resolver and player engine; synthetic perfect responses",
+  "route": "route-1.1.0",
+  "policy": "mission-policy-1.1.0",
+  "full_route": {
+    "nodes": 281,
+    "checkpoint_missions": 60,
+    "practice_missions": 843,
+    "submitted_answers": 6782,
+    "final_action": {
+      "action": "review",
+      "node_id": "arithmetic.addition.g01.l01",
+      "kind": "review",
+      "reason": "all_open_nodes_ready"
+    },
+    "max_observed": 3,
+    "max_bound_after_intro": 8,
+    "max_seed_independent_bound": 8
+  },
+  "buckets": {
+    "fresh_partial_full": 3,
+    "seeds_per_state": 4,
+    "kindCounts": {
+      "intro": 3372,
+      "regular": 3372,
+      "reinforcement": 3372,
+      "checkpoint": 3372,
+      "review": 3372
+    },
+    "reasons": {
+      "alternate_heuristic_band_within_role": 4279,
+      "missing_strategy": 4092,
+      "role_or_package_has_limited_unseen": 365,
+      "role_quota_filled_from_target": 274,
+      "pool_exhausted_review": 5620,
+      "missing_coverage": 206,
+      "teaching_purpose_fallback_for_readiness": 17
+    }
+  },
+  "g12l01mul": [
+    {
+      "kind": "intro",
+      "package_id": "MM-G12-L01-MUL-P001",
+      "reasons": [],
+      "passing": 0,
+      "unique": 6,
+      "strategies": [
+        "DS"
+      ],
+      "question_indices": [
+        24,
+        43,
+        18,
+        48,
+        2,
+        37
+      ]
+    },
+    {
+      "kind": "regular",
+      "package_id": "MM-G12-L01-MUL-P017",
+      "reasons": [
+        "missing_strategy",
+        "teaching_purpose_fallback_for_readiness"
+      ],
+      "passing": 1,
+      "unique": 14,
+      "strategies": [
+        "DS",
+        "PO"
+      ],
+      "question_indices": [
+        19,
+        43,
+        11,
+        28,
+        3,
+        27,
+        22,
+        16
+      ]
+    },
+    {
+      "kind": "regular",
+      "package_id": "MM-G12-L01-MUL-P004",
+      "reasons": [],
+      "passing": 2,
+      "unique": 22,
+      "strategies": [
+        "DS",
+        "PO"
+      ],
+      "question_indices": [
+        3,
+        42,
+        5,
+        28,
+        4,
+        20,
+        19,
+        39
+      ]
+    }
+  ],
+  "edge_cases": [
+    {
+      "goal": "coverage",
+      "package": "review",
+      "new_to_committed_coverage": "fp2",
+      "all_previously_exposed": true,
+      "excluded_partial_install": true
+    },
+    {
+      "goal": "strategy",
+      "package": "review",
+      "new_to_committed_coverage": "fp2",
+      "all_previously_exposed": true,
+      "excluded_partial_install": true
+    }
+  ],
+  "nodes": [
+    {
+      "node": "arithmetic.addition.g01.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 12,
+      "strategies": [
+        "DB",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g01.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 16,
+      "strategies": [
+        "INV",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g01.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 17,
+      "strategies": [
+        "DB",
+        "MT",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g01.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 16,
+      "strategies": [
+        "INV",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g01.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 17,
+      "strategies": [
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g01.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 17,
+      "strategies": [
+        "INV",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g01.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 16,
+      "strategies": [
+        "DB",
+        "MT",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g01.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 16,
+      "strategies": [
+        "BR",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g01.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 17,
+      "strategies": [
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g01.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 16,
+      "strategies": [
+        "BR",
+        "INV",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g01.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 17,
+      "strategies": [
+        "NB",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g02.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g02.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g02.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "DB",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g02.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "BR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g02.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g02.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g02.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g02.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g02.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS",
+        "NB",
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g02.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "DB",
+        "DS",
+        "NB",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g02.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g02.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g02.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS",
+        "NB",
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g02.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "HL",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g02.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS",
+        "HD",
+        "HL",
+        "INV",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g02.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g02.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g02.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g02.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "HL",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g02.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS",
+        "HD",
+        "HL",
+        "INV",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g03.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g03.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "INV",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g03.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS",
+        "HL"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g03.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g03.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g03.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g03.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g03.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g03.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DE",
+        "HD",
+        "HL",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g03.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DE",
+        "DS",
+        "HD",
+        "INV",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g03.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g03.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g03.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g03.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "HL",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g03.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DB",
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g03.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g03.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g03.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS",
+        "HL"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g03.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DE",
+        "HD",
+        "HL",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g03.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DB",
+        "DE",
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g03.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g03.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g03.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g03.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DE",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g03.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "HD",
+        "HL",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g04.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g04.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g04.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g04.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g04.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g04.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g04.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g04.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g04.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DE",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g04.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DE",
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g04.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g04.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g04.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g04.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g04.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g04.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g04.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g04.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g04.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DE",
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g04.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g04.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g04.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g04.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g04.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DE",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g04.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g05.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g05.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g05.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g05.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "HL"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g05.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "EQ",
+        "FR",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g05.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g05.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g05.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g05.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "HL"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g05.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "FR",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g05.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g05.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g05.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g05.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "HL",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g05.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g05.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g05.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g05.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g05.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g05.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g05.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g05.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g05.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g05.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g05.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g06.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g06.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g06.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g06.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g06.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g06.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g06.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g06.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g06.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g06.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g06.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g06.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g06.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g06.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g06.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g06.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g06.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g06.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g06.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g06.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g06.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g06.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g06.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g06.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g06.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g07.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g07.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "NB",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g07.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g07.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "HD",
+        "HL",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g07.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DB",
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g07.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g07.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g07.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g07.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "HL",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g07.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DB",
+        "DE",
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g07.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g07.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g07.l03",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g07.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g07.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g07.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "CO",
+        "DE",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g07.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g07.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g07.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "HD",
+        "HL",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g07.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g07.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g07.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g07.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g07.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g07.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g08.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g08.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g08.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g08.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g08.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g08.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g08.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g08.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g08.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g08.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g08.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g08.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g08.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g08.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g08.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g08.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g08.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g08.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g08.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g08.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g08.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g08.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g08.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g08.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g08.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g09.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g09.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g09.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g09.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g09.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g09.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g09.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g09.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g09.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g09.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g09.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g09.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g09.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g09.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g09.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g09.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g09.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g09.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g09.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g09.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g09.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g09.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g09.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g09.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g09.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g10.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g10.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g10.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g10.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g10.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g10.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g10.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g10.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HL"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g10.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g10.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DS",
+        "OO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g10.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g10.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g10.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g10.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g10.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g10.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "BR",
+        "NB"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g10.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g10.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g10.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "INV"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g10.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g10.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g10.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g10.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g10.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g10.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g11.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g11.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g11.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g11.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g11.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g11.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g11.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g11.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g11.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g11.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g11.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g11.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g11.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g11.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g11.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g11.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "BR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g11.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g11.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g11.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g11.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g11.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g11.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g11.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g11.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g11.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g12.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "SG"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g12.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "PO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g12.l01",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g12.l01",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g12.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g12.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g12.l02",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "HD"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g12.l02",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g12.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g12.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g12.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g12.l03",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "FR",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g12.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "BR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g12.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 7,
+      "coverage": 22,
+      "strategies": [
+        "CO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l04",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DB",
+        "DS",
+        "EQ"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g12.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g12.l04",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.addition.g12.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.subtraction.g12.l05",
+      "missions": 3,
+      "bound": 8,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.multiplication.g12.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "EQ",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.division.g12.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "CO",
+        "DE",
+        "FR"
+      ],
+      "passing": 2
+    },
+    {
+      "node": "arithmetic.mixed.g12.l05",
+      "missions": 3,
+      "bound": 7,
+      "seed_independent_bound": 8,
+      "coverage": 22,
+      "strategies": [
+        "DS",
+        "HD",
+        "OO"
+      ],
+      "passing": 2
+    }
+  ]
+}

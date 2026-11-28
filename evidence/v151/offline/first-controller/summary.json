@@ -1,0 +1,76 @@
+{
+  "build": {
+    "dist_tree_sha256": "983375c467ae67f31129cfcc93c4a4eeb1da026fd1d28e7a560f4dc065706fce",
+    "offline_release": "ef0b6798d9633ca8",
+    "app_version": "1.5.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "10b349edcffe2c564f73b28dee3d0185717e4b901765ae7907dd1383b26c38a9"
+  },
+  "engine": "Firefox",
+  "method": "On a disposable origin, pause the real first registration until a settled map control has keyboard focus. Allow native registration and the first controller claim. Record real control identity and focus. Then register a throwaway worker that activates with skipWaiting/clients.claim, and assert that an actual controller replacement refreshes the map. The shipping app contains no diagnostic worker.",
+  "controlled_claim": {
+    "before": {
+      "release": "319ea44060dbbc58",
+      "observed_first_claim_focus": false,
+      "retained_real_element": false,
+      "actual_replacement_invalidated_map": true,
+      "repetitions": 3,
+      "trace": "before-trace.json",
+      "sha256": "35f05b49802c1feb50bc4202de418722a1e3f088baf0c3e06b2c2c418059eb77"
+    },
+    "after": {
+      "release": "ef0b6798d9633ca8",
+      "observed_first_claim_focus": true,
+      "retained_real_element": true,
+      "actual_replacement_invalidated_map": true,
+      "repetitions": 3,
+      "trace": "after-final-trace.json",
+      "sha256": "093fd7af911a64e7f7478c5eb1a9d4c98661238e6f44e5f3c1bed49e35037d83"
+    }
+  },
+  "regression_runs": {
+    "zoom": [
+      {
+        "case": "native-map-400pct",
+        "status": "PASS",
+        "receipt": "zoom/1.json",
+        "sha256": "10b6a70f9d30f7d983270e87a05e21201e1d3b372fd80bd7bd679aace006201e"
+      },
+      {
+        "case": "native-map-400pct",
+        "status": "PASS",
+        "receipt": "zoom/2.json",
+        "sha256": "077044e1df422e5f2c31af15775c397e5f155bb196bb5a21cb537abd639709f0"
+      },
+      {
+        "case": "native-map-400pct",
+        "status": "PASS",
+        "receipt": "zoom/3.json",
+        "sha256": "7bb91798cb7c7d66ac270c9e6c92aa3cfad8727983132c4b925f9e45d6a0890f"
+      }
+    ],
+    "setup": [
+      {
+        "case": "UX-004-SETUP",
+        "status": "PASS",
+        "receipt": "setup/1.json",
+        "sha256": "4566b6ac69ceef818bd713190cf43aeccf762f7a16a0bc43ba9a3c8ec097d6bb"
+      },
+      {
+        "case": "UX-004-SETUP",
+        "status": "PASS",
+        "receipt": "setup/2.json",
+        "sha256": "6ab5260a5ac5df43ce9ac3805e8a7690a0e50fe1afc965f89fe856feac055c97"
+      },
+      {
+        "case": "UX-004-SETUP",
+        "status": "PASS",
+        "receipt": "setup/3.json",
+        "sha256": "a0e1517c53a1c9ec6db4e57e981d406b007da9b94f37bb675cdb3630889cd550"
+      }
+    ]
+  },
+  "setup_method": "Original UX-004-SETUP Playwright case body, repeated in three fresh Firefox runs; other browser-v13 rows were omitted in this focused rerun. The full registered browser-v13 suite runs separately in production QA.",
+  "prior_aggregate_failures": "evidence/v151/release/layout-stability/first-control",
+  "native_zoom_source_sha256": "2d6b7afc3e59cdb8fb6e224e9e0eddc5909d400bf1e37cb8fe4c3b766f0fd24f"
+}

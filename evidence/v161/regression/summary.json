@@ -1,0 +1,56 @@
+{
+  "build": {
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "offline_release": "a2f40449c4738fe6",
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41"
+  },
+  "verified_utc": "2026-11-28T17:36:24.206730+00:00",
+  "standalone_logs": [
+    {
+      "file": "check-final.log",
+      "sha256": "97c9aca2170d8ed03c612420a4b39d8c20065cca5041e04ccaa484225fd49b87"
+    },
+    {
+      "file": "unit-final.log",
+      "sha256": "ddb5bf8aaff217d3b313c1d06f197e6e5b104179f16155581e6ec801f0ad766e"
+    },
+    {
+      "file": "curriculum-final.log",
+      "sha256": "df529355a4ebda5368e285991c5bfbe160609a56f90875e4eb292cf7c657b362"
+    },
+    {
+      "file": "build-final.log",
+      "sha256": "e11cb0b3700c2ba8b8314df8dfec22e6932d499dbcaeb8aa9be4b9c5ee27d231"
+    },
+    {
+      "file": "preflight.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "kit-final-build.log",
+      "sha256": "e2ec21956bdca640859297902985b5445dc96a2041fc45a8284e70c5a62c36f7"
+    },
+    {
+      "file": "learning-final.log",
+      "sha256": "d01c92831bbca152c98a8fdf348ce2cdad5a45acb498b55b354561ccaf91a175"
+    },
+    {
+      "file": "validator-after.log",
+      "sha256": "50b2febeb26552b8aaa3c7f46f94946be703993eaac96eea997e28fa8733b29e"
+    },
+    {
+      "file": "gallery.log",
+      "sha256": "2a3c298ae01e10342d7d787d9790a4c3ea424ddd6d847520c33f4caa6f841f31"
+    },
+    {
+      "file": "full-qa.log",
+      "sha256": "83ad26c90f4db0eb0dee5029af685b3e798c1cb696efc8fc02b02ae93e8f4a40"
+    }
+  ],
+  "manifest_dist_files": 5054,
+  "bank_frozen_against_baseline": 4677,
+  "unexpected_private_assets": [],
+  "sha256_of_bank_path_hash_lines": "8136cf6878e4bd13b6bc3cd0b5659ae4c39ed8e1fcc318a31ed38c66e6fb9537"
+}

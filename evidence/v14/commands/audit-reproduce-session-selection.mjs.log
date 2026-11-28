@@ -1,0 +1,23 @@
+# command: node /home/claude/repro14/reproduce-session-selection.mjs /home/claude/cmdcopy
+# started: 2026-11-28T04:23:38Z
+# node v22.23.5 · Python 3.13.18
+{
+  "status": "PASS",
+  "package": "MM-G05-L01-ADD-P001",
+  "prefix": 10,
+  "adaptive": {
+    "decision": "assess",
+    "target": "arithmetic.addition.g05.l01",
+    "forms": 2,
+    "scores": [
+      100,
+      100
+    ],
+    "evidence": [
+      "form-1",
+      "form-2"
+    ]
+  }
+}
+# exit: 0
+# finished: 2026-11-28T04:23:38Z

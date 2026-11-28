@@ -1,0 +1,55 @@
+KALIBATAKU 1.6.2 · Petualangan berhitung · bank 1.2.0
+
+MEMBUKA APLIKASI
+
+Ekstrak seluruh ZIP ke folder baru. Dari folder yang memuat package.json,
+jalankan perintah berikut di Git Bash pada Windows dengan Python 3.12.
+
+    py -3.12 tools/preview.py
+
+Pada Linux, gunakan python3 tools/preview.py. Buka http://127.0.0.1:4173/
+dan pilih Mulai dari dasar atau Lanjutkan petualangan. Ketik jawaban, tekan
+Enter dan lepaskan. Baca hasil serta pembahasan, lalu tekan Enter baru untuk
+berpindah. Nomor soal, ekspresi dan kotak jawaban berada pada arena baru.
+Tombol Periksa dan Soal berikutnya menjalankan tindakan yang sama. Setelah
+soal terakhir, baca hasil misi dan lanjutkan ke misi berikut dengan Enter baru.
+
+MEMERIKSA PAKET
+
+Bandingkan SHA-256 ZIP sebelum ekstraksi dengan nilai pada pesan pengiriman.
+RELEASE_STATUS.json dan REGISTER_OTOMATIS.csv mencatat keputusan untuk build
+ini. ARTIFACT_READY berarti seluruh gerbang paket pada profil static-auto-v1
+lulus. Baca bidang deployment tersendiri untuk mengetahui apakah domain
+sebenarnya diuji. Bukti domain dapat ditambahkan saat target tersedia.
+
+SHA256SUMS mencakup payload dan FILE_INVENTORY.json. Seluruh 4.677 berkas
+bank lama berada di dist/bank. Berkas lain yang perlu dikenali:
+
+    STATUS_RILIS.md                   Ringkasan keputusan paket dan deployment
+    REGISTER_OTOMATIS.csv             Hasil gerbang otomatis build ini
+    REGISTER_PEMETAAN_HISTORIS.csv    Disposisi gerbang lama dan penggantinya
+    evidence/v162/                    Baseline, identitas build dan bukti rilis
+    evidence/v162/history-1.6.1/      Keputusan, register dan binding kandidat awal
+    docs/contracts/static-auto-v1/    Profil, schema dan peta gerbang terkontrol
+    tests/qa/suites.json              Perintah, receipt serta kontrak tiap suite
+    CHANGELOG_1.6.2.md                Perubahan dari 1.6.1
+
+MENYAJIKAN KEPADA SISWA
+
+Direktori yang dipublikasikan adalah dist/. Seluruh aplikasi, bank, font,
+laporan yang dapat dibuat browser dan aset offline ada di dalamnya. Source,
+hasil uji serta arsip profil tetap berada di luar situs publik. Operator
+Windows dapat mengunggah dist yang telah dibangun di Linux melalui GitHub
+dan Cloudflare Pages tanpa membangun ulang. Lihat docs/DEPLOY.md untuk
+contoh Git Bash, path berspasi, pemeriksaan byte, preview dan rollback.
+
+    docs/QA_1.6.2.md                  Verifikasi, reproduksi dan pengemasan
+    docs/PEMELIHARAAN.md              Arsitektur, bank frozen dan perubahan
+    docs/PANDUAN_SISWA.md             Misi, Enter, koreksi dan offline
+    docs/PANDUAN_GURU.md              Periode, metrik, laporan dan ekspor
+    docs/PANDUAN_CADANGAN_OFFLINE.md  Backup, restore, update dan pemulihan
+    KNOWN_LIMITATIONS.md              Lingkup bukti dan dukungan
+
+Pilih Profil aktif → Unduh cadangan profil sebelum pindah perangkat, origin,
+browser atau deployment. Simpan di luar folder publik. Buka pratinjau saat
+memulihkan, periksa alias, sesi, konflik serta riwayat, lalu lanjutkan misi.

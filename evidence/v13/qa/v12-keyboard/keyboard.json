@@ -1,0 +1,385 @@
+{
+  "offline_release": "d69d4921d7f04c1a",
+  "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+  "utc": "2026-11-26T11:15:01.721Z",
+  "profile": "Uji papan ketik ded8b",
+  "method": "Actual keyboard actions on a separate top-level Chrome window. Event.isTrusted and visible DOM recorded. No physical IME or spoken assistive technology.",
+  "opening": {
+    "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+    "focus": "kp-answer text",
+    "q": "0 + 5",
+    "position": "Soal 1 dari 2",
+    "draft": "",
+    "cta": "OKE \u00b7 Periksa jawaban",
+    "h1": "Penjumlahan"
+  },
+  "events": [
+    {
+      "type": "keydown",
+      "key": "5",
+      "shift": false,
+      "trusted": true,
+      "target": "kp-answer text",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "kp-answer text",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "",
+        "cta": "OKE \u00b7 Periksa jawaban",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "kp-answer text",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "",
+        "cta": "OKE \u00b7 Periksa jawaban",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "kp-answer text",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "kp-answer text",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "5",
+        "cta": "OKE \u00b7 Periksa jawaban",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "kp-answer text",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "OKE \u00b7 Periksa jawaban",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "\u2713BenarJawabanmu5Kunci jawaban5Salah satu cara"
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "\u2713BenarJawabanmu5Kunci jawaban5Salah satu cara",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "\u2713BenarJawabanmu5Kunci jawaban5Salah satu cara",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "5",
+        "cta": "Soal berikutnya",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "\u2713BenarJawabanmu4Kunci jawaban4Salah satu cara",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "Tinjau hasil",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "keydown",
+      "key": "Tab",
+      "shift": false,
+      "trusted": true,
+      "target": "\u2713BenarJawabanmu5Kunci jawaban5Salah satu cara",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "\u2713BenarJawabanmu5Kunci jawaban5Salah satu cara",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "5",
+        "cta": "Soal berikutnya",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Lihat langkah lengkap",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "Tinjau hasil",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "Lihat langkah lengkap"
+    },
+    {
+      "type": "keydown",
+      "key": "Tab",
+      "shift": false,
+      "trusted": true,
+      "target": "Lihat langkah lengkap",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Lihat langkah lengkap",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "5",
+        "cta": "Soal berikutnya",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "next button Tinjau hasil",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "Tinjau hasil",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "next button Soal berikutnya"
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "next button Soal berikutnya",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "next button Soal berikutnya",
+        "q": "0 + 5",
+        "position": "Soal 1 dari 2",
+        "draft": "5",
+        "cta": "Soal berikutnya",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Langsung ke isi\n  KALIBATAKULatihan berhitung",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "Tinjau hasil",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "kp-answer text"
+    },
+    {
+      "type": "keydown",
+      "key": "4",
+      "shift": false,
+      "trusted": true,
+      "target": "kp-answer text",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "kp-answer text",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "",
+        "cta": "OKE \u00b7 Periksa jawaban",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Soal 1 \u00b7 Benar",
+        "position": "Soal 2 dari 2",
+        "review": "Benar \u00b7 2Belum tepat \u00b7 0Kosong \u00b7 0Belum dilihat \u00b7 0Dilewati \u00b7 0",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "kp-answer text",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "kp-answer text",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "OKE \u00b7 Periksa jawaban",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Soal 2 \u00b7 Benar",
+        "position": "Soal 2 dari 2",
+        "review": "Benar \u00b7 2Belum tepat \u00b7 0Kosong \u00b7 0Belum dilihat \u00b7 0Dilewati \u00b7 0",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "\u2713BenarJawabanmu4Kunci jawaban4Salah satu cara"
+    },
+    {
+      "type": "keydown",
+      "key": "Tab",
+      "shift": false,
+      "trusted": true,
+      "target": "\u2713BenarJawabanmu4Kunci jawaban4Salah satu cara",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "\u2713BenarJawabanmu4Kunci jawaban4Salah satu cara",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "Tinjau hasil",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/results/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Langsung ke isi\n  KALIBATAKULatihan berhitung"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "Lihat langkah lengkap"
+    },
+    {
+      "type": "keydown",
+      "key": "Tab",
+      "shift": false,
+      "trusted": true,
+      "target": "Lihat langkah lengkap",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Lihat langkah lengkap",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "Tinjau hasil",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/results/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Langsung ke isi\n  KALIBATAKULatihan berhitung"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "next button Tinjau hasil"
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "next button Tinjau hasil",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "next button Tinjau hasil",
+        "q": "0 + 4",
+        "position": "Soal 2 dari 2",
+        "draft": "4",
+        "cta": "Tinjau hasil",
+        "h1": "Penjumlahan"
+      },
+      "after": {
+        "route": "#/results/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Langsung ke isi\n  KALIBATAKULatihan berhitung"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "Selesaikan sesi ini?"
+    },
+    {
+      "type": "keydown",
+      "key": "Tab",
+      "shift": false,
+      "trusted": true,
+      "target": "Selesaikan sesi ini?",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Selesaikan sesi ini?",
+        "position": "Soal 2 dari 2",
+        "review": "Benar \u00b7 2Belum tepat \u00b7 0Kosong \u00b7 0Belum dilihat \u00b7 0Dilewati \u00b7 0",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "Soal 1 \u00b7 Benar"
+    },
+    {
+      "type": "keydown",
+      "key": "Tab",
+      "shift": false,
+      "trusted": true,
+      "target": "Soal 1 \u00b7 Benar",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Soal 1 \u00b7 Benar",
+        "position": "Soal 2 dari 2",
+        "review": "Benar \u00b7 2Belum tepat \u00b7 0Kosong \u00b7 0Belum dilihat \u00b7 0Dilewati \u00b7 0",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "Soal 2 \u00b7 Benar"
+    },
+    {
+      "type": "keydown",
+      "key": "Tab",
+      "shift": false,
+      "trusted": true,
+      "target": "Soal 2 \u00b7 Benar",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "Soal 2 \u00b7 Benar",
+        "position": "Soal 2 dari 2",
+        "review": "Benar \u00b7 2Belum tepat \u00b7 0Kosong \u00b7 0Belum dilihat \u00b7 0Dilewati \u00b7 0",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "finish button Kirim hasil akhir"
+    },
+    {
+      "type": "keydown",
+      "key": "Enter",
+      "shift": false,
+      "trusted": true,
+      "target": "finish button Kirim hasil akhir",
+      "before": {
+        "route": "#/session/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+        "focus": "finish button Kirim hasil akhir",
+        "position": "Soal 2 dari 2",
+        "review": "Benar \u00b7 2Belum tepat \u00b7 0Kosong \u00b7 0Belum dilihat \u00b7 0Dilewati \u00b7 0",
+        "h1": "Penjumlahan"
+      }
+    },
+    {
+      "type": "focus",
+      "target": "main Hasil sesiUji papan ketik ded8b \u00b7 Kelas 1 \u00b7 L"
+    }
+  ],
+  "ending": {
+    "route": "#/results/d5b08711-2843-4b1b-89dc-3eb7ba84fbd5",
+    "focus": "main Hasil sesiUji papan ketik ded8b \u00b7 Kelas 1 \u00b7 L",
+    "h1": "Hasil sesi"
+  },
+  "finalVisible": "Hasil sesi\n\nUji papan ketik ded8b \u00b7 Kelas 1 \u00b7 Level 1 \u00b7 Penjumlahan \u00b7 Latihan \u00b7 26 Nov 2026, 18.15\n\n2 dari 2 soal benar\n\nSemua soal terjawab dengan benar. Siap mencoba paket lain?\n\nBenar pada jawaban pertama \u00b7 2 / 2\n\nSoal direvisi setelah melihat kunci \u00b7 0\n\n2 benar \u00b7 0 salah \u00b7 0 dilewati \u00b7 0 kosong \u00b7 0 belum dilihat\n\nHasil latihan lokal \u00b7 belum diverifikasi institusi\n\nLatihan lagi\nTinjau jawaban\nLihat progres\nRiwayat latihan\nDetail untuk orang tua dan guru",
+  "trustedKeystrokes": 15
+}

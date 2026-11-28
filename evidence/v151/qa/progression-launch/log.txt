@@ -1,0 +1,1 @@
+{"status":"PASS","actual":{"ready":true,"unique":22,"passing":2,"strategies":["DS","PO"],"strategies_needed":2},"missions":9,"next":{"action":"advance","node_id":"arithmetic.division.g12.l01","kind":"intro","reason":"ready_to_advance"}}

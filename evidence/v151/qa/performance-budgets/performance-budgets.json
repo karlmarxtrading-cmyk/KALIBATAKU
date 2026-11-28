@@ -1,0 +1,257 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "performance-budgets",
+  "build": {
+    "offline_release": "ef0b6798d9633ca8"
+  },
+  "assertions": 27,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "initial js run 1",
+      "status": "PASS",
+      "expected": "≤ 150 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 46698,
+        "files": 21
+      }
+    },
+    {
+      "id": "initial css run 1",
+      "status": "PASS",
+      "expected": "≤ 35 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 10120,
+        "files": 1
+      }
+    },
+    {
+      "id": "initial font run 1",
+      "status": "PASS",
+      "expected": "≤ 100 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 64855,
+        "files": 2
+      }
+    },
+    {
+      "id": "initial js run 2",
+      "status": "PASS",
+      "expected": "≤ 150 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 46698,
+        "files": 21
+      }
+    },
+    {
+      "id": "initial css run 2",
+      "status": "PASS",
+      "expected": "≤ 35 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 10120,
+        "files": 1
+      }
+    },
+    {
+      "id": "initial font run 2",
+      "status": "PASS",
+      "expected": "≤ 100 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 64855,
+        "files": 2
+      }
+    },
+    {
+      "id": "initial js run 3",
+      "status": "PASS",
+      "expected": "≤ 150 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 46698,
+        "files": 21
+      }
+    },
+    {
+      "id": "initial css run 3",
+      "status": "PASS",
+      "expected": "≤ 35 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 10120,
+        "files": 1
+      }
+    },
+    {
+      "id": "initial font run 3",
+      "status": "PASS",
+      "expected": "≤ 100 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 64855,
+        "files": 2
+      }
+    },
+    {
+      "id": "initial js run 4",
+      "status": "PASS",
+      "expected": "≤ 150 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 46698,
+        "files": 21
+      }
+    },
+    {
+      "id": "initial css run 4",
+      "status": "PASS",
+      "expected": "≤ 35 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 10120,
+        "files": 1
+      }
+    },
+    {
+      "id": "initial font run 4",
+      "status": "PASS",
+      "expected": "≤ 100 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 64855,
+        "files": 2
+      }
+    },
+    {
+      "id": "initial js run 5",
+      "status": "PASS",
+      "expected": "≤ 150 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 46698,
+        "files": 21
+      }
+    },
+    {
+      "id": "initial css run 5",
+      "status": "PASS",
+      "expected": "≤ 35 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 10120,
+        "files": 1
+      }
+    },
+    {
+      "id": "initial font run 5",
+      "status": "PASS",
+      "expected": "≤ 100 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 64855,
+        "files": 2
+      }
+    },
+    {
+      "id": "locale",
+      "status": "PASS",
+      "expected": "≤ 25 KiB gzip (maximum per file)",
+      "actual": {
+        "gzip_bytes": 3644,
+        "files": 2
+      }
+    },
+    {
+      "id": "bank index",
+      "status": "PASS",
+      "expected": "≤ 20 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 290,
+        "files": 1
+      }
+    },
+    {
+      "id": "bank shard",
+      "status": "PASS",
+      "expected": "≤ 50 KiB gzip (maximum per file)",
+      "actual": {
+        "gzip_bytes": 6878,
+        "files": 72
+      }
+    },
+    {
+      "id": "bank package",
+      "status": "PASS",
+      "expected": "≤ 60 KiB gzip (maximum per file)",
+      "actual": {
+        "gzip_bytes": 13645,
+        "files": 4604
+      }
+    },
+    {
+      "id": "additional student player + shared static dependencies",
+      "status": "PASS",
+      "expected": "≤ 90 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 47315,
+        "files": 15
+      }
+    },
+    {
+      "id": "student player including observed renderer, AC-068",
+      "status": "PASS",
+      "expected": "≤ 90 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 52019,
+        "files": 17
+      }
+    },
+    {
+      "id": "additional teacher workspace (conservative full workspace)",
+      "status": "PASS",
+      "expected": "≤ 150 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 52763,
+        "files": 18
+      }
+    },
+    {
+      "id": "additional admin workspace (conservative full workspace)",
+      "status": "PASS",
+      "expected": "≤ 150 KiB gzip (sum)",
+      "actual": {
+        "gzip_bytes": 52763,
+        "files": 18
+      }
+    },
+    {
+      "id": "AC-068",
+      "status": "PASS",
+      "expected": "performance gate",
+      "actual": "PASS"
+    },
+    {
+      "id": "AC-069",
+      "status": "PASS",
+      "expected": "performance gate",
+      "actual": "PASS"
+    },
+    {
+      "id": "AC-071",
+      "status": "PASS",
+      "expected": "performance gate",
+      "actual": "PASS"
+    },
+    {
+      "id": "renderer-observed",
+      "status": "PASS",
+      "expected": "renderer requests observed after the player opened",
+      "actual": [
+        "math/glyphs.mjs",
+        "math/model.mjs",
+        "math/typeset.mjs",
+        "math/view.mjs"
+      ]
+    }
+  ],
+  "field_p75": {
+    "status": "NOT_RUN",
+    "reason": "No production RUM cohort or field deployment."
+  },
+  "profile": {
+    "network": "Managed preview; no artificial network throttling",
+    "cpu": "Unthrottled",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.7922.34 Safari/537.36"
+  }
+}

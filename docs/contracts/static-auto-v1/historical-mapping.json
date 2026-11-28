@@ -1,0 +1,424 @@
+{
+  "schema": "kalibataku-historical-mapping/1",
+  "source_version": "1.6.1",
+  "profile_id": "KALIBATAKU_STATIC_AUTO_V1",
+  "rows": [
+    {
+      "id": "AC:BANK-07",
+      "phase": "WAJIB",
+      "requirement": "394 template direview pada urutan baru",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-01",
+        "AUTO-02",
+        "AUTO-03",
+        "AUTO-04",
+        "AUTO-05"
+      ],
+      "rationale": "Freeze bank; validasi semua jawaban/langkah/representasi; roster otomatis seluruh 394 keluarga; audit AI independen terdokumentasi; metadata urutan heuristik berversi.",
+      "claim_boundary": "Tidak ada penelaah guru/manusia atau kalibrasi empiris yang diklaim; temuan matematika/bahasa nyata tetap harus ditangani.",
+      "related": "REDESIGN:PED-05;REDESIGN:PED-07;REDESIGN:REL-03"
+    },
+    {
+      "id": "AC:UX-09",
+      "phase": "WAJIB",
+      "requirement": "Kontrol inti dapat dicapai dengan keyboard sistem",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-06",
+        "AUTO-07",
+        "AUTO-17"
+      ],
+      "rationale": "E2E tiga engine; geometri, fokus, occlusion, touch, orientasi, visual viewport tereduksi, IME dan finalisasi; fallback tombol tetap dapat dipakai.",
+      "claim_boundary": "Responsivitas dan alur mobile dipertahankan; emulasi tetap emulasi; Android/iOS fisik belum tersertifikasi.",
+      "related": "REDESIGN:UI-03;REDESIGN:E10;AUD160-01;ADV-03"
+    },
+    {
+      "id": "AC:A11Y-04",
+      "phase": "WAJIB",
+      "requirement": "Rumus dan feedback terdengar benar",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-06",
+        "AUTO-07",
+        "AUTO-09",
+        "AUTO-17"
+      ],
+      "rationale": "Semantic/accessibility tree, teks linear ID/EN, label, live region, error, keyboard, reflow, kontras, reduced motion dan negative controls.",
+      "claim_boundary": "Tidak mengklaim ujaran NVDA/VoiceOver/TalkBack nyata atau kepatuhan WCAG menyeluruh tanpa bukti tersebut.",
+      "related": "REDESIGN:UI-06"
+    },
+    {
+      "id": "AC:DEVICE-02",
+      "phase": "WAJIB",
+      "requirement": "Android fisik",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-06",
+        "AUTO-07",
+        "AUTO-17"
+      ],
+      "rationale": "E2E tiga engine; geometri, fokus, occlusion, touch, orientasi, visual viewport tereduksi, IME dan finalisasi; fallback tombol tetap dapat dipakai.",
+      "claim_boundary": "Responsivitas dan alur mobile dipertahankan; emulasi tetap emulasi; Android/iOS fisik belum tersertifikasi.",
+      "related": "AUD160-01"
+    },
+    {
+      "id": "AC:DEVICE-03",
+      "phase": "WAJIB",
+      "requirement": "iPhone/iPad fisik",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-06",
+        "AUTO-07",
+        "AUTO-17"
+      ],
+      "rationale": "E2E tiga engine; geometri, fokus, occlusion, touch, orientasi, visual viewport tereduksi, IME dan finalisasi; fallback tombol tetap dapat dipakai.",
+      "claim_boundary": "Responsivitas dan alur mobile dipertahankan; emulasi tetap emulasi; Android/iOS fisik belum tersertifikasi.",
+      "related": "AUD160-01"
+    },
+    {
+      "id": "AC:TEACH-03",
+      "phase": "WAJIB",
+      "requirement": "Persamaan DOCX terlihat pada aplikasi target",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-10"
+      ],
+      "rationale": "Data dan persamaan lima format sama; render PDF; DOCX schema/OMML dan fallback; hasil renderer lain diberi nama aslinya.",
+      "claim_boundary": "DOCX tetap tersedia; Word-specific rendering belum tervalidasi; PDF menjadi pilihan tampilan tetap.",
+      "related": "REDESIGN:REL-04"
+    },
+    {
+      "id": "AC:PILOT-01",
+      "phase": "WAJIB",
+      "requirement": "12 siswa menjalankan tugas utama",
+      "historical_evidence_status": "NOT_RUN",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-04",
+        "AUTO-05",
+        "AUTO-08",
+        "AUTO-10"
+      ],
+      "rationale": "Jalankan skenario tugas melalui browser dengan profil sintetis, assert keadaan/fokus/data/CTA, audit UI AI serta regresi temuan nyata.",
+      "claim_boundary": "Tidak merekrut atau mengarang 12 siswa/3 guru; tidak mengklaim tingkat keberhasilan pengguna atau efektivitas belajar dari simulasi.",
+      "related": "REDESIGN:NAV-01;REDESIGN:REL-05;ADV-09"
+    },
+    {
+      "id": "AC:PILOT-02",
+      "phase": "WAJIB",
+      "requirement": "3 guru memahami hasil dan arah lanjut",
+      "historical_evidence_status": "NOT_RUN",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-04",
+        "AUTO-05",
+        "AUTO-08",
+        "AUTO-10"
+      ],
+      "rationale": "Jalankan skenario tugas melalui browser dengan profil sintetis, assert keadaan/fokus/data/CTA, audit UI AI serta regresi temuan nyata.",
+      "claim_boundary": "Tidak merekrut atau mengarang 12 siswa/3 guru; tidak mengklaim tingkat keberhasilan pengguna atau efektivitas belajar dari simulasi.",
+      "related": "REDESIGN:REL-05"
+    },
+    {
+      "id": "AC:PILOT-03",
+      "phase": "WAJIB",
+      "requirement": "Hasil pilot menghasilkan perbaikan nyata",
+      "historical_evidence_status": "NOT_RUN",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-04",
+        "AUTO-05",
+        "AUTO-08",
+        "AUTO-10"
+      ],
+      "rationale": "Jalankan skenario tugas melalui browser dengan profil sintetis, assert keadaan/fokus/data/CTA, audit UI AI serta regresi temuan nyata.",
+      "claim_boundary": "Tidak merekrut atau mengarang 12 siswa/3 guru; tidak mengklaim tingkat keberhasilan pengguna atau efektivitas belajar dari simulasi.",
+      "related": "REDESIGN:PED-05;REDESIGN:PED-06;REDESIGN:REL-05"
+    },
+    {
+      "id": "AC:PERF-03",
+      "phase": "SETELAH_PILOT",
+      "requirement": "Target Web Vitals lapangan",
+      "historical_evidence_status": "NOT_RUN",
+      "applicability": "POST_RELEASE",
+      "replacement_gates": [
+        "AUTO-21",
+        "AUTO-26"
+      ],
+      "rationale": "Budget dan regresi performa lab tetap wajib. Pengukuran p75 lapangan tetap setelah penggunaan nyata bila pengumpulan data diotorisasi.",
+      "claim_boundary": "Tidak menukar angka lab dengan p75 pengguna; tidak memasang telemetry tak diminta; bukan blocker paket.",
+      "related": "REDESIGN:POST-01"
+    },
+    {
+      "id": "AC:REL-02",
+      "phase": "WAJIB",
+      "requirement": "Domain akhir menyajikan build tepat",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "DEPLOYMENT_ONLY",
+      "replacement_gates": [
+        "AUTO-13",
+        "AUTO-19",
+        "AUTO-20",
+        "AUTO-24"
+      ],
+      "rationale": "Artefak: origin lokal HTTP/TLS, header/MIME/404/subpath, offline dan update/rollback. Domain: URL/build aktual dan pemeriksaan otomatis hanya dengan akses serta otorisasi.",
+      "claim_boundary": "Bukti lokal tidak membuktikan domain/provider preview. GO_PAKET boleh selesai; DEPLOYMENT_NOT_RUN jelas sampai target benar diuji.",
+      "related": "REDESIGN:REL-06"
+    },
+    {
+      "id": "AC:REL-03",
+      "phase": "WAJIB",
+      "requirement": "Update dan rollback nyata",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "DEPLOYMENT_ONLY",
+      "replacement_gates": [
+        "AUTO-13",
+        "AUTO-19",
+        "AUTO-20",
+        "AUTO-24"
+      ],
+      "rationale": "Artefak: origin lokal HTTP/TLS, header/MIME/404/subpath, offline dan update/rollback. Domain: URL/build aktual dan pemeriksaan otomatis hanya dengan akses serta otorisasi.",
+      "claim_boundary": "Bukti lokal tidak membuktikan domain/provider preview. GO_PAKET boleh selesai; DEPLOYMENT_NOT_RUN jelas sampai target benar diuji.",
+      "related": "REDESIGN:REL-06"
+    },
+    {
+      "id": "REDESIGN:NAV-01",
+      "phase": "WAJIB",
+      "requirement": "Profil baru mencapai soal pertama dengan satu CTA tanpa filter wajib.",
+      "historical_evidence_status": "NOT_RUN",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-04",
+        "AUTO-05",
+        "AUTO-08",
+        "AUTO-10"
+      ],
+      "rationale": "Jalankan skenario tugas melalui browser dengan profil sintetis, assert keadaan/fokus/data/CTA, audit UI AI serta regresi temuan nyata.",
+      "claim_boundary": "Tidak merekrut atau mengarang 12 siswa/3 guru; tidak mengklaim tingkat keberhasilan pengguna atau efektivitas belajar dari simulasi.",
+      "related": "AC:PILOT-01"
+    },
+    {
+      "id": "REDESIGN:UI-03",
+      "phase": "WAJIB",
+      "requirement": "Input, feedback dan aksi aman dengan keyboard Android/iOS terbuka pada dua orientasi.",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-06",
+        "AUTO-07",
+        "AUTO-17"
+      ],
+      "rationale": "E2E tiga engine; geometri, fokus, occlusion, touch, orientasi, visual viewport tereduksi, IME dan finalisasi; fallback tombol tetap dapat dipakai.",
+      "claim_boundary": "Responsivitas dan alur mobile dipertahankan; emulasi tetap emulasi; Android/iOS fisik belum tersertifikasi.",
+      "related": "AC:UX-09"
+    },
+    {
+      "id": "REDESIGN:UI-06",
+      "phase": "WAJIB",
+      "requirement": "Ujaran matematika dan perubahan keadaan benar pada NVDA/VoiceOver/TalkBack.",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-06",
+        "AUTO-07",
+        "AUTO-09",
+        "AUTO-17"
+      ],
+      "rationale": "Semantic/accessibility tree, teks linear ID/EN, label, live region, error, keyboard, reflow, kontras, reduced motion dan negative controls.",
+      "claim_boundary": "Tidak mengklaim ujaran NVDA/VoiceOver/TalkBack nyata atau kepatuhan WCAG menyeluruh tanpa bukti tersebut.",
+      "related": "AC:A11Y-04"
+    },
+    {
+      "id": "REDESIGN:PED-05",
+      "phase": "WAJIB",
+      "requirement": "Setiap label kesulitan mempunyai dasar metadata ditelaah; skor seri tidak dipaksa bermakna berbeda.",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-01",
+        "AUTO-02",
+        "AUTO-03",
+        "AUTO-04",
+        "AUTO-05"
+      ],
+      "rationale": "Freeze bank; validasi semua jawaban/langkah/representasi; roster otomatis seluruh 394 keluarga; audit AI independen terdokumentasi; metadata urutan heuristik berversi.",
+      "claim_boundary": "Tidak ada penelaah guru/manusia atau kalibrasi empiris yang diklaim; temuan matematika/bahasa nyata tetap harus ditangani.",
+      "related": "AC:BANK-07;AC:PILOT-03;ADV-05"
+    },
+    {
+      "id": "REDESIGN:PED-06",
+      "phase": "WAJIB",
+      "requirement": "Antrean review menyisipkan latihan lama tanpa menghambat kemajuan tanpa batas.",
+      "historical_evidence_status": "NOT_RUN",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-04",
+        "AUTO-05"
+      ],
+      "rationale": "Review clock-controlled dan jalur lengkap: minimal jeda, batas frekuensi, resume didahulukan dan tidak ada starvation; schema snapshot serta rollback tetap lulus.",
+      "claim_boundary": "Kinerja scheduler dibuktikan teknis; manfaat spaced review untuk siswa belum diukur pada pilot.",
+      "related": "AC:PILOT-03;ADV-06"
+    },
+    {
+      "id": "REDESIGN:PED-07",
+      "phase": "WAJIB",
+      "requirement": "Label sesuai kompetensi dan fungsi; gate baru mempunyai kebijakan berversi.",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-01",
+        "AUTO-02",
+        "AUTO-03",
+        "AUTO-04",
+        "AUTO-05"
+      ],
+      "rationale": "Freeze bank; validasi semua jawaban/langkah/representasi; roster otomatis seluruh 394 keluarga; audit AI independen terdokumentasi; metadata urutan heuristik berversi.",
+      "claim_boundary": "Tidak ada penelaah guru/manusia atau kalibrasi empiris yang diklaim; temuan matematika/bahasa nyata tetap harus ditangani.",
+      "related": "AC:BANK-07;ADV-07"
+    },
+    {
+      "id": "REDESIGN:REL-01",
+      "phase": "WAJIB",
+      "requirement": "Hash semua pohon sama untuk byte sama pada Windows/Linux.",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "OPTIONAL_COMPATIBILITY",
+      "replacement_gates": [
+        "AUTO-18",
+        "AUTO-22",
+        "AUTO-23",
+        "AUTO-25"
+      ],
+      "rationale": "Jalankan Linux dan workflow Windows native otomatis jika tersedia. Distribusi prabuild lulus; bila Windows build belum diuji, build kanonis Linux CI dan dukungan build Windows belum tervalidasi.",
+      "claim_boundary": "Jangan menyatakan PureWindowsPath sebagai Windows native. Tidak mematikan checksum. Browser Windows bukan otomatis dinyatakan gagal.",
+      "related": "EXT160-02;TECH-151-01"
+    },
+    {
+      "id": "REDESIGN:REL-03",
+      "phase": "WAJIB",
+      "requirement": "394 keluarga ditelaah dan koreksi tercatat; tidak ada klaim review fiktif.",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-01",
+        "AUTO-02",
+        "AUTO-03",
+        "AUTO-04",
+        "AUTO-05"
+      ],
+      "rationale": "Freeze bank; validasi semua jawaban/langkah/representasi; roster otomatis seluruh 394 keluarga; audit AI independen terdokumentasi; metadata urutan heuristik berversi.",
+      "claim_boundary": "Tidak ada penelaah guru/manusia atau kalibrasi empiris yang diklaim; temuan matematika/bahasa nyata tetap harus ditangani.",
+      "related": "AC:BANK-07"
+    },
+    {
+      "id": "REDESIGN:REL-04",
+      "phase": "WAJIB",
+      "requirement": "Persamaan5 formatekspor diperiksa termasuk Microsoft Word sasaran.",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-10"
+      ],
+      "rationale": "Data dan persamaan lima format sama; render PDF; DOCX schema/OMML dan fallback; hasil renderer lain diberi nama aslinya.",
+      "claim_boundary": "DOCX tetap tersedia; Word-specific rendering belum tervalidasi; PDF menjadi pilihan tampilan tetap.",
+      "related": "AC:TEACH-03"
+    },
+    {
+      "id": "REDESIGN:REL-05",
+      "phase": "WAJIB",
+      "requirement": "12 siswa dan 3 guru menjalankan protokol; target kegunaan disepakati dan hasil dicatat.",
+      "historical_evidence_status": "NOT_RUN",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-04",
+        "AUTO-05",
+        "AUTO-08",
+        "AUTO-10"
+      ],
+      "rationale": "Jalankan skenario tugas melalui browser dengan profil sintetis, assert keadaan/fokus/data/CTA, audit UI AI serta regresi temuan nyata.",
+      "claim_boundary": "Tidak merekrut atau mengarang 12 siswa/3 guru; tidak mengklaim tingkat keberhasilan pengguna atau efektivitas belajar dari simulasi.",
+      "related": "AC:PILOT-01;AC:PILOT-02;AC:PILOT-03"
+    },
+    {
+      "id": "REDESIGN:REL-06",
+      "phase": "WAJIB",
+      "requirement": "HTTPS,headers,MIME,routingroot/subfolder,update/rollback diuji pada domain.",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "DEPLOYMENT_ONLY",
+      "replacement_gates": [
+        "AUTO-13",
+        "AUTO-19",
+        "AUTO-20",
+        "AUTO-24"
+      ],
+      "rationale": "Artefak: origin lokal HTTP/TLS, header/MIME/404/subpath, offline dan update/rollback. Domain: URL/build aktual dan pemeriksaan otomatis hanya dengan akses serta otorisasi.",
+      "claim_boundary": "Bukti lokal tidak membuktikan domain/provider preview. GO_PAKET boleh selesai; DEPLOYMENT_NOT_RUN jelas sampai target benar diuji.",
+      "related": "AC:REL-02;AC:REL-03"
+    },
+    {
+      "id": "REDESIGN:REL-07",
+      "phase": "WAJIB",
+      "requirement": "Semua 70 kriteria wajib yang berlaku pada build baru ditutup dengan bukti build yang benar.",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-15",
+        "AUTO-16"
+      ],
+      "rationale": "Arsip sejarah; profil owner-authorized berversi; semua mandatory auto gate PASS terikat build; negative tests keputusan; dukungan dan klaim konsisten.",
+      "claim_boundary": "Penggantian lingkup bukan PASS historis. Kegagalan teknis wajib tetap HOLD. Baseline dan redesign tidak dijumlahkan naif.",
+      "related": "Semua WAJIB baseline dan redesign;EXT160-01;REL-151-01"
+    },
+    {
+      "id": "REDESIGN:POST-01",
+      "phase": "SETELAH_PILOT",
+      "requirement": "p75 performa lapangan diukur setelah pilot sesuai fase register.",
+      "historical_evidence_status": "NOT_RUN",
+      "applicability": "POST_RELEASE",
+      "replacement_gates": [
+        "AUTO-21",
+        "AUTO-26"
+      ],
+      "rationale": "Budget dan regresi performa lab tetap wajib. Pengukuran p75 lapangan tetap setelah penggunaan nyata bila pengumpulan data diotorisasi.",
+      "claim_boundary": "Tidak menukar angka lab dengan p75 pengguna; tidak memasang telemetry tak diminta; bukan blocker paket.",
+      "related": "AC:PERF-03"
+    },
+    {
+      "id": "REDESIGN:E10",
+      "phase": "WAJIB",
+      "requirement": "Kesetaraan klik, sentuh dan keyboard sistem fisik",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "REPLACED_BY_AUTO_SCOPE",
+      "replacement_gates": [
+        "AUTO-06",
+        "AUTO-07",
+        "AUTO-17"
+      ],
+      "rationale": "E2E tiga engine; geometri, fokus, occlusion, touch, orientasi, visual viewport tereduksi, IME dan finalisasi; fallback tombol tetap dapat dipakai.",
+      "claim_boundary": "Responsivitas dan alur mobile dipertahankan; emulasi tetap emulasi; Android/iOS fisik belum tersertifikasi.",
+      "related": "AC:UX-09;AUD160-01"
+    },
+    {
+      "id": "REDESIGN:R02",
+      "phase": "WAJIB",
+      "requirement": "Build native, binding dan pengemasan",
+      "historical_evidence_status": "BLOCKED",
+      "applicability": "OPTIONAL_COMPATIBILITY",
+      "replacement_gates": [
+        "AUTO-18",
+        "AUTO-22",
+        "AUTO-23",
+        "AUTO-25"
+      ],
+      "rationale": "Jalankan Linux dan workflow Windows native otomatis jika tersedia. Distribusi prabuild lulus; bila Windows build belum diuji, build kanonis Linux CI dan dukungan build Windows belum tervalidasi.",
+      "claim_boundary": "Jangan menyatakan PureWindowsPath sebagai Windows native. Tidak mematikan checksum. Browser Windows bukan otomatis dinyatakan gagal.",
+      "related": "EXT160-02;TECH-151-01;AC:REL-05"
+    }
+  ]
+}

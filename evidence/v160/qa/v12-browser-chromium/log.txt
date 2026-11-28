@@ -1,0 +1,14 @@
+OKE-REVISE PASS {'first_item': {'key': '2026-11-28T15:51:56.770Z', 'first': False, 'final': True, 'history': [['999', False, False, Fals
+GRADE-RETRY PASS {'failed_event': '15d25ea9-d501-4f25-8003-9242623e93f8', 'committed_event': '15d25ea9-d501-4f25-8003-9242623e93f8', 'sub
+FRACTION PASS {'question': '11/12 + 10/12', 'raw': '21/12', 'key': '7/4', 'status': 'equivalent'}
+DECIMAL PASS {'id': '20,0 + 35,3 → 50 + 5,3', 'en': '20.0 + 35.3', 'raw': '55,3'}
+ASSESSMENT PASS {'ongoing_key': False, 'completed_key': True, 'rendered_expressions': 21}
+SPEED PASS {'original': 1795881179186, 'after': 1795881179186}
+MATH-32 PASS [{'id': 'MATH-FX-01', 'lang': 'id', 'theme': 'light', 'svg': 2, 'fractions': 0, 'state': 'svg', 'spoken': '0 tambah 5', 
+SLOW-START PASS {'delay_ms': 1500, 'before': {'ready': False, 'deadline': None, 'duration': 60, 'start': '2026-11-28T15:51:59.573Z', 'hi
+LOAD-FAILURE PASS {'fallback': 'linear', 'retry': 'SVG', 'preserved': '42', 'requests': [['http://127.0.0.1:36651/probe-renderer-06dc3fbb-
+TEACHER-3 PASS {'assignment': 'Demo 04', 'saved_note': True, 'report_alias': 'Local'}
+REFLOW PASS [[320, '100%', {'width': 320, 'scroll': 320, 'button': [227.84375, 48], 'ink': True, 'overflow': []}], [320, '200%', {'w
+LIFECYCLE PASS {'removed_first_svg': 0, 'replacement': 'svg', 'cases': [{'fixture': 'MATH-FX-01', 'container': 280, 'outer': 144, 'scro
+FOCUS-CONTRAST PASS [{'requested': 'none', 'theme': 'light', 'color': 'rgb(255, 255, 255)', 'background': 'rgb(20, 92, 75)', 'outline': 'sol
+v12-browser chromium assertions 14 failed [] page_errors 0

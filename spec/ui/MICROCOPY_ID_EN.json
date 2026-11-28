@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_status": "design_reference_not_implemented",
+  "created_on": "2026-11-25",
+  "product": "KALIBATAKU",
+  "source_document": "../01_ARAHAN_UI_UX.md",
+  "source_sha256": "74a7a82d4de9225c466b22f0cd5ca5815a486fc6babcd8fb786f4197977b5d61",
+  "reference_type": "illustrative_bilingual_microcopy_catalog",
+  "catalog_completeness": "All examples in section 16; not the complete production i18n catalog.",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "initial_locale": "id",
+  "messages": {
+    "action.start_practice": {
+      "context": "Aksi awal",
+      "id": "Mulai latihan",
+      "en": "Start practice"
+    },
+    "action.continue_practice": {
+      "context": "Ada sesi tersimpan",
+      "id": "Lanjutkan latihan",
+      "en": "Continue practice"
+    },
+    "instruction.mental_calculation": {
+      "context": "Petunjuk",
+      "id": "Hitung dalam pikiran, lalu tulis jawabanmu.",
+      "en": "Work it out mentally, then enter your answer."
+    },
+    "field.answer_label": {
+      "context": "Label input",
+      "id": "Jawabanmu",
+      "en": "Your answer"
+    },
+    "action.check_answer": {
+      "context": "Submit latihan",
+      "id": "Periksa jawaban",
+      "en": "Check answer"
+    },
+    "action.save_continue": {
+      "context": "Submit evaluasi",
+      "id": "Simpan & lanjut",
+      "en": "Save & continue"
+    },
+    "error.answer_required": {
+      "context": "Kosong",
+      "id": "Tulis jawaban terlebih dahulu.",
+      "en": "Enter an answer first."
+    },
+    "error.decimal_separator_id": {
+      "context": "Koma ID",
+      "id": "Gunakan koma untuk desimal, misalnya 1,25.",
+      "en": "Use a comma in Indonesian number format, for example 1,25."
+    },
+    "error.decimal_separator_en": {
+      "context": "Titik EN",
+      "id": "Gunakan titik pada format Inggris, misalnya 1.25.",
+      "en": "Use a decimal point, for example 1.25."
+    },
+    "error.fraction_format": {
+      "context": "Pecahan invalid",
+      "id": "Tulis pecahan seperti 3/4, dengan penyebut bilangan bulat positif.",
+      "en": "Enter a fraction such as 3/4, with a positive integer denominator."
+    },
+    "result.correct": {
+      "context": "Benar",
+      "id": "Benar.",
+      "en": "Correct."
+    },
+    "result.not_correct": {
+      "context": "Salah",
+      "id": "Belum tepat. Coba periksa kembali.",
+      "en": "Not quite. Check your calculation and try again."
+    },
+    "action.show_strategy": {
+      "context": "Lihat strategi",
+      "id": "Lihat satu cara menghitung",
+      "en": "See one way to calculate it"
+    },
+    "mastery.insufficient_evidence": {
+      "context": "Tidak ada bukti",
+      "id": "Belum cukup data untuk menilai penguasaan.",
+      "en": "There is not enough evidence to assess mastery yet."
+    },
+    "curriculum.operation_inactive": {
+      "context": "Paket nonaktif",
+      "id": "Operasi ini belum masuk cakupan level ini.",
+      "en": "This operation is not included at this level."
+    },
+    "offline.pack_missing": {
+      "context": "Offline belum siap",
+      "id": "Paket ini belum tersimpan untuk penggunaan offline.",
+      "en": "This pack has not been saved for offline use."
+    },
+    "storage.answer_save_failed": {
+      "context": "Simpan gagal",
+      "id": "Jawabanmu belum tersimpan. Coba lagi sebelum melanjutkan.",
+      "en": "Your answer has not been saved. Try again before continuing."
+    },
+    "demo.teacher_banner": {
+      "context": "Simulasi",
+      "id": "Ruang simulasi guru — data contoh",
+      "en": "Teacher simulation — sample data"
+    },
+    "storage.local_results_saved": {
+      "context": "Lokal",
+      "id": "Hasil tersimpan pada perangkat ini.",
+      "en": "Results are saved on this device."
+    },
+    "action.delete_offline_copies": {
+      "context": "Hapus cache",
+      "id": "Hapus salinan paket offline",
+      "en": "Remove offline pack copies"
+    },
+    "action.delete_selected_history": {
+      "context": "Hapus histori",
+      "id": "Hapus hasil latihan yang dipilih",
+      "en": "Delete selected practice results"
+    },
+    "export.report_failed": {
+      "context": "Ekspor gagal",
+      "id": "Laporan belum berhasil dibuat. Pengaturanmu tetap tersimpan.",
+      "en": "The report could not be created. Your settings have been kept."
+    },
+    "metrics.not_assessed": {
+      "context": "Skor belum ada",
+      "id": "Belum dievaluasi",
+      "en": "Not assessed"
+    }
+  },
+  "implementation_rules": [
+    "Expand all remaining product strings, reports, accessible labels and mathematical explanations with tested ID/EN parity.",
+    "Error locale strings may describe draft_locale when different from current UI locale.",
+    "No source key or untranslated fallback may remain in release-visible UI.",
+    "The underlying numeric value and attempt identity must not change when switching locale."
+  ]
+}

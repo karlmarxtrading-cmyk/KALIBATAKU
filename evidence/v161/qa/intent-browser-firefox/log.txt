@@ -1,0 +1,4 @@
+PASS 11 evidence/v15/intent/browser-firefox.json
+
+[stderr]
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.

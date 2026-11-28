@@ -1,0 +1,5 @@
+PASS F01 old profile stays ready with a changed pool, strategy, prerequisite and thresholds
+PASS PED-01 PED-02 independent target denominator 4, 6 and 8 fallback, including 7/8 vs 3/4
+PASS PED-05 one mathematical score yields one difficulty target across legacy tertiles
+PASS PED-06 review after seven days, four-mission spacing, active attempt first
+PASS PED-07 zero of ten in a closing challenge preserves readiness earned before it

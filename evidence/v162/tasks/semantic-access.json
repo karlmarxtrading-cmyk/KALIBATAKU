@@ -1,0 +1,578 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "semantic-access",
+  "status": "PASS",
+  "started": "2026-11-28T18:49:13.087261+00:00",
+  "finished": "2026-11-28T18:49:15.370216+00:00",
+  "runtime": {
+    "platform": "Linux",
+    "python": "3.12.14",
+    "browser": "Chromium",
+    "browser_version": "151.0.7922.34"
+  },
+  "build": {
+    "dist_tree_sha256": "4e0e7265bdf5628bc0c9dd49c51b56939221fd6d846e4da61ba967dac7f43df8",
+    "offline_release": "f630b3dc6aa6b5a5",
+    "app_version": "1.6.2",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "fd4dbd2442531a9b6adf42b476a5a9732b6ca0d9ba6dab799303521bfe9c2848"
+  },
+  "scope": "Synthetic role tasks and Chromium engine observations in Linux; no physical device, human participant or speech trial.",
+  "assertions": 24,
+  "checks": [
+    {
+      "id": "id-keyboard-entry",
+      "status": "PASS",
+      "expected": "Public primary action has a link name, can receive keyboard focus, and displays an outline",
+      "actual": {
+        "ax": {
+          "role": "link",
+          "name": "Mulai dari dasar",
+          "description": "",
+          "value": ""
+        },
+        "ring": {
+          "visible": true,
+          "width": 3,
+          "style": "solid"
+        },
+        "tab_path": [
+          "A:Langsung ke isi",
+          "A:KALIBATAKU",
+          "A:Petualangan",
+          "A:Peta",
+          "A:Progres",
+          "A:Riwayat",
+          "A:Profil aktif\nProfil utama",
+          "BUTTON:ID",
+          "SUMMARY:Menu",
+          "A:Mulai dari dasar"
+        ]
+      }
+    },
+    {
+      "id": "id-landmarks",
+      "status": "PASS",
+      "expected": "Main landmark and one visible level-one heading in requested UI language",
+      "actual": {
+        "main": {
+          "role": "main",
+          "name": "",
+          "description": "",
+          "value": ""
+        },
+        "h1": {
+          "role": "heading",
+          "name": "Petualangan",
+          "description": "",
+          "value": ""
+        },
+        "lang": "id"
+      }
+    },
+    {
+      "id": "id-input-context",
+      "status": "PASS",
+      "expected": "Keyboard entry lands on a named textbox with descriptions for position, expression and format",
+      "actual": {
+        "ax": {
+          "role": "textbox",
+          "name": "Jawabanmu",
+          "description": "Soal 1 dari 6 1 tambah 1 Hitung dalam hati. Tulis jawabanmu. Gunakan angka, misalnya 4.",
+          "value": ""
+        },
+        "references": {
+          "kp-question-position": 1,
+          "kp-expression": 1,
+          "kp-input-help": 1
+        }
+      }
+    },
+    {
+      "id": "id-math-text",
+      "status": "PASS",
+      "expected": "Typeset formula exposes one localized named math node and a grouped linear expression",
+      "actual": {
+        "ax": {
+          "role": "math",
+          "name": "1 tambah 1",
+          "description": "",
+          "value": ""
+        },
+        "linear": "1 + 1",
+        "visual_surface_hidden_from_ax": "true"
+      }
+    },
+    {
+      "id": "id-missing-math-label-control",
+      "status": "PASS",
+      "expected": "Removing the accessible math label is detected by the actual tree",
+      "actual": {
+        "mutated": {
+          "role": "math",
+          "name": "",
+          "description": "",
+          "value": ""
+        },
+        "restored": {
+          "role": "math",
+          "name": "1 tambah 1",
+          "description": "",
+          "value": ""
+        }
+      }
+    },
+    {
+      "id": "id-progress-and-live",
+      "status": "PASS",
+      "expected": "Progress has accessible position and timer updates have a polite live region",
+      "actual": {
+        "progress": {
+          "role": "progressbar",
+          "name": "Soal 1 dari 6",
+          "description": "",
+          "value": 1
+        },
+        "live": {
+          "role": "status",
+          "name": "",
+          "description": "",
+          "value": ""
+        },
+        "aria_live": "polite"
+      }
+    },
+    {
+      "id": "id-reflow-motion",
+      "status": "PASS",
+      "expected": "At 320 CSS pixels, input and formula fit viewport; reduced-motion styles disable animation and transitions",
+      "actual": {
+        "viewport": 320,
+        "doc": 320,
+        "expr_top": 293.296875,
+        "input_bottom": 441.875,
+        "height": 568,
+        "reduce": true,
+        "animation": "none",
+        "transition": "0s",
+        "scroll": "auto"
+      }
+    },
+    {
+      "id": "id-empty-error",
+      "status": "PASS",
+      "expected": "Empty Enter exposes a described alert and retains focus on the invalid field",
+      "actual": {
+        "ax": {
+          "role": "alert",
+          "name": "",
+          "description": "",
+          "value": ""
+        },
+        "description": "Soal 1 dari 6 1 tambah 1 Hitung dalam hati. Tulis jawabanmu. Gunakan angka, misalnya 4. Isi jawaban dahulu.",
+        "message": "Isi jawaban dahulu."
+      }
+    },
+    {
+      "id": "id-broken-error-control",
+      "status": "PASS",
+      "expected": "Missing description reference is rejected and restored reference is accepted",
+      "actual": {
+        "mutant_rejected": true,
+        "restored": true
+      }
+    },
+    {
+      "id": "id-feedback-focus",
+      "status": "PASS",
+      "expected": "Named result region receives focus, holds two labeled values and an accessible next action",
+      "actual": {
+        "ax": {
+          "role": "region",
+          "name": "Belum tepat",
+          "description": "",
+          "value": ""
+        },
+        "next": {
+          "role": "button",
+          "name": "Soal berikutnya · Enter",
+          "description": "",
+          "value": ""
+        },
+        "tree_excerpt": "- region \"Belum tepat\":\n  - heading \"Belum tepat\" [level=2]\n  - term: Jawabanmu\n  - definition:\n    - math \"minus 997\"\n  - term: Kunci jawaban\n  - definition:\n    - math \"2\"\n  - button \"Soal berikutnya · Enter\"\n  - button \"Revisi jawaban\"\n  - heading \"Salah satu cara menghitung\" [level=3]\n  - paragraph: Satu langkah setelah 1 adalah 2.\n  - group: Lihat langkah lengkap"
+      }
+    },
+    {
+      "id": "id-rendered-contrast",
+      "status": "PASS",
+      "expected": "Result title, value labels and both action buttons have at least 4.5:1 text contrast",
+      "actual": {
+        "theme": "light",
+        "samples": [
+          {
+            "selector": "[data-answer-feedback] h2",
+            "fg": [
+              138,
+              59,
+              13
+            ],
+            "bg": [
+              255,
+              255,
+              255
+            ],
+            "ratio": 7.743213635203706
+          },
+          {
+            "selector": ".verdict-tile.mine dt",
+            "fg": [
+              79,
+              98,
+              91
+            ],
+            "bg": [
+              246,
+              247,
+              244
+            ],
+            "ratio": 6.045084551214803
+          },
+          {
+            "selector": ".verdict-tile.key dt",
+            "fg": [
+              79,
+              98,
+              91
+            ],
+            "bg": [
+              231,
+              245,
+              236
+            ],
+            "ratio": 5.779118206610205
+          },
+          {
+            "selector": "[data-part=next]",
+            "fg": [
+              255,
+              255,
+              255
+            ],
+            "bg": [
+              20,
+              92,
+              75
+            ],
+            "ratio": 7.88820408265132
+          },
+          {
+            "selector": "[data-part=revise]",
+            "fg": [
+              20,
+              92,
+              75
+            ],
+            "bg": [
+              255,
+              255,
+              255
+            ],
+            "ratio": 7.88820408265132
+          }
+        ]
+      }
+    },
+    {
+      "id": "id-keyboard-next",
+      "status": "PASS",
+      "expected": "Fresh Enter advances once, the empty second item is focused and progress updates",
+      "actual": {
+        "index": 1,
+        "submissions": 1,
+        "progress": {
+          "role": "progressbar",
+          "name": "Soal 2 dari 6",
+          "description": "",
+          "value": 2
+        }
+      }
+    },
+    {
+      "id": "en-keyboard-entry",
+      "status": "PASS",
+      "expected": "Public primary action has a link name, can receive keyboard focus, and displays an outline",
+      "actual": {
+        "ax": {
+          "role": "link",
+          "name": "Start from the basics",
+          "description": "",
+          "value": ""
+        },
+        "ring": {
+          "visible": true,
+          "width": 3,
+          "style": "solid"
+        },
+        "tab_path": [
+          "A:KALIBATAKU",
+          "A:Adventure",
+          "A:Map",
+          "A:Progress",
+          "A:History",
+          "A:Active profile\nMain profile",
+          "BUTTON:EN",
+          "SUMMARY:Menu",
+          "A:Start from the basics"
+        ]
+      }
+    },
+    {
+      "id": "en-landmarks",
+      "status": "PASS",
+      "expected": "Main landmark and one visible level-one heading in requested UI language",
+      "actual": {
+        "main": {
+          "role": "main",
+          "name": "",
+          "description": "",
+          "value": ""
+        },
+        "h1": {
+          "role": "heading",
+          "name": "Adventure",
+          "description": "",
+          "value": ""
+        },
+        "lang": "en"
+      }
+    },
+    {
+      "id": "en-input-context",
+      "status": "PASS",
+      "expected": "Keyboard entry lands on a named textbox with descriptions for position, expression and format",
+      "actual": {
+        "ax": {
+          "role": "textbox",
+          "name": "Your answer",
+          "description": "Question 1 of 6 1 plus 1 Work it out in your head. Enter your answer. Use digits, for example 4.",
+          "value": ""
+        },
+        "references": {
+          "kp-question-position": 1,
+          "kp-expression": 1,
+          "kp-input-help": 1
+        }
+      }
+    },
+    {
+      "id": "en-math-text",
+      "status": "PASS",
+      "expected": "Typeset formula exposes one localized named math node and a grouped linear expression",
+      "actual": {
+        "ax": {
+          "role": "math",
+          "name": "1 plus 1",
+          "description": "",
+          "value": ""
+        },
+        "linear": "1 + 1",
+        "visual_surface_hidden_from_ax": "true"
+      }
+    },
+    {
+      "id": "en-missing-math-label-control",
+      "status": "PASS",
+      "expected": "Removing the accessible math label is detected by the actual tree",
+      "actual": {
+        "mutated": {
+          "role": "math",
+          "name": "",
+          "description": "",
+          "value": ""
+        },
+        "restored": {
+          "role": "math",
+          "name": "1 plus 1",
+          "description": "",
+          "value": ""
+        }
+      }
+    },
+    {
+      "id": "en-progress-and-live",
+      "status": "PASS",
+      "expected": "Progress has accessible position and timer updates have a polite live region",
+      "actual": {
+        "progress": {
+          "role": "progressbar",
+          "name": "Question 1 of 6",
+          "description": "",
+          "value": 1
+        },
+        "live": {
+          "role": "status",
+          "name": "",
+          "description": "",
+          "value": ""
+        },
+        "aria_live": "polite"
+      }
+    },
+    {
+      "id": "en-reflow-motion",
+      "status": "PASS",
+      "expected": "At 320 CSS pixels, input and formula fit viewport; reduced-motion styles disable animation and transitions",
+      "actual": {
+        "viewport": 320,
+        "doc": 320,
+        "expr_top": 293.296875,
+        "input_bottom": 441.875,
+        "height": 568,
+        "reduce": true,
+        "animation": "none",
+        "transition": "0s",
+        "scroll": "auto"
+      }
+    },
+    {
+      "id": "en-empty-error",
+      "status": "PASS",
+      "expected": "Empty Enter exposes a described alert and retains focus on the invalid field",
+      "actual": {
+        "ax": {
+          "role": "alert",
+          "name": "",
+          "description": "",
+          "value": ""
+        },
+        "description": "Question 1 of 6 1 plus 1 Work it out in your head. Enter your answer. Use digits, for example 4. Enter an answer first.",
+        "message": "Enter an answer first."
+      }
+    },
+    {
+      "id": "en-broken-error-control",
+      "status": "PASS",
+      "expected": "Missing description reference is rejected and restored reference is accepted",
+      "actual": {
+        "mutant_rejected": true,
+        "restored": true
+      }
+    },
+    {
+      "id": "en-feedback-focus",
+      "status": "PASS",
+      "expected": "Named result region receives focus, holds two labeled values and an accessible next action",
+      "actual": {
+        "ax": {
+          "role": "region",
+          "name": "Not quite",
+          "description": "",
+          "value": ""
+        },
+        "next": {
+          "role": "button",
+          "name": "Next question · Enter",
+          "description": "",
+          "value": ""
+        },
+        "tree_excerpt": "- region \"Not quite\":\n  - heading \"Not quite\" [level=2]\n  - term: Your answer\n  - definition:\n    - math \"negative 997\"\n  - term: Correct answer\n  - definition:\n    - math \"2\"\n  - button \"Next question · Enter\"\n  - button \"Revise answer\"\n  - heading \"One way to calculate\" [level=3]\n  - paragraph: One step after 1 is 2.\n  - group: See all steps"
+      }
+    },
+    {
+      "id": "en-rendered-contrast",
+      "status": "PASS",
+      "expected": "Result title, value labels and both action buttons have at least 4.5:1 text contrast",
+      "actual": {
+        "theme": "dark",
+        "samples": [
+          {
+            "selector": "[data-answer-feedback] h2",
+            "fg": [
+              255,
+              201,
+              163
+            ],
+            "bg": [
+              25,
+              43,
+              37
+            ],
+            "ratio": 9.999667057808736
+          },
+          {
+            "selector": ".verdict-tile.mine dt",
+            "fg": [
+              180,
+              201,
+              190
+            ],
+            "bg": [
+              17,
+              29,
+              26
+            ],
+            "ratio": 9.912634793179977
+          },
+          {
+            "selector": ".verdict-tile.key dt",
+            "fg": [
+              180,
+              201,
+              190
+            ],
+            "bg": [
+              23,
+              53,
+              39
+            ],
+            "ratio": 7.643867380377976
+          },
+          {
+            "selector": "[data-part=next]",
+            "fg": [
+              16,
+              41,
+              31
+            ],
+            "bg": [
+              139,
+              213,
+              181
+            ],
+            "ratio": 9.038114112941383
+          },
+          {
+            "selector": "[data-part=revise]",
+            "fg": [
+              139,
+              213,
+              181
+            ],
+            "bg": [
+              25,
+              43,
+              37
+            ],
+            "ratio": 8.688975046678886
+          }
+        ]
+      }
+    },
+    {
+      "id": "en-keyboard-next",
+      "status": "PASS",
+      "expected": "Fresh Enter advances once, the empty second item is focused and progress updates",
+      "actual": {
+        "index": 1,
+        "submissions": 1,
+        "progress": {
+          "role": "progressbar",
+          "name": "Question 2 of 6",
+          "description": "",
+          "value": 2
+        }
+      }
+    }
+  ],
+  "errors": []
+}

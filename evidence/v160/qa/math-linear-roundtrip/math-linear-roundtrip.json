@@ -1,0 +1,205 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "MATH-001-linear-roundtrip",
+  "scope": "Full bank text representation versus AST value",
+  "build": {
+    "offline_release": "6c43a824957f99ed",
+    "app_version": "1.6.0",
+    "bank_version": "1.2.0"
+  },
+  "runtime": {
+    "node": "v24.22.3",
+    "platform": "linux",
+    "arch": "x64"
+  },
+  "started": "2026-11-28T15:50:39.571Z",
+  "finished": "2026-11-28T15:50:54.641Z",
+  "assertions": 26,
+  "status": "PASS",
+  "errors": [],
+  "checks": [
+    {
+      "id": "bank-complete",
+      "status": "PASS",
+      "expected": "4.604 packages and 177.640 placements scanned",
+      "actual": {
+        "packages": 4604,
+        "placements": 177640,
+        "expressions": 566827,
+        "texts": 1552634,
+        "grouped_fraction_texts": 76646
+      }
+    },
+    {
+      "id": "roundtrip-all",
+      "status": "PASS",
+      "expected": "Every linear text re-reads to the exact AST value",
+      "actual": {
+        "texts": 1552634,
+        "failures": 0
+      }
+    },
+    {
+      "id": "audit-example-G05-L04-DIV-P001",
+      "status": "PASS",
+      "expected": "21 ÷ (3/11) keeps the divisor grouped; key 77",
+      "actual": {
+        "package": "MM-G05-L04-DIV-P001",
+        "text": "21 ÷ (3/11)",
+        "speech": "21 dibagi buka kurung 3 per 11 tutup kurung",
+        "key": {
+          "numerator": "77",
+          "denominator": "1"
+        }
+      }
+    },
+    {
+      "id": "grouped-count",
+      "status": "PASS",
+      "expected": "Placements whose text needs a grouped fraction are counted (audit baseline 7.632 IDs)",
+      "actual": {
+        "distinct_question_ids": 23114,
+        "grouped_texts": 76646
+      }
+    },
+    {
+      "id": "synthetic-frac-div-frac-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "3/4 ÷ (5/6)"
+    },
+    {
+      "id": "synthetic-frac-div-frac-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "3/4 ÷ (5/6)"
+    },
+    {
+      "id": "synthetic-frac-mul-frac-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "−3/4 × (5/6)"
+    },
+    {
+      "id": "synthetic-frac-mul-frac-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "−3/4 × (5/6)"
+    },
+    {
+      "id": "synthetic-neg-frac-divisor-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "21 ÷ (−3/11)"
+    },
+    {
+      "id": "synthetic-neg-frac-divisor-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "21 ÷ (−3/11)"
+    },
+    {
+      "id": "synthetic-nested-div-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "100 ÷ (10 ÷ (1/2))"
+    },
+    {
+      "id": "synthetic-nested-div-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "100 ÷ (10 ÷ (1/2))"
+    },
+    {
+      "id": "synthetic-left-div-chain-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "100 ÷ (1/2) ÷ (5/3)"
+    },
+    {
+      "id": "synthetic-left-div-chain-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "100 ÷ (1/2) ÷ (5/3)"
+    },
+    {
+      "id": "synthetic-mixed-ops-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "2/3 × 9 − 4 ÷ (2/5)"
+    },
+    {
+      "id": "synthetic-mixed-ops-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "2/3 × 9 − 4 ÷ (2/5)"
+    },
+    {
+      "id": "synthetic-sub-of-frac-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "1 − 3/4"
+    },
+    {
+      "id": "synthetic-sub-of-frac-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "1 − 3/4"
+    },
+    {
+      "id": "synthetic-decimal-div-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "10,5 ÷ (3/11)"
+    },
+    {
+      "id": "synthetic-decimal-div-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "10.5 ÷ (3/11)"
+    },
+    {
+      "id": "synthetic-big-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "123456789012345678901234567890 ÷ (987654321/123456789)"
+    },
+    {
+      "id": "synthetic-big-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "123456789012345678901234567890 ÷ (987654321/123456789)"
+    },
+    {
+      "id": "synthetic-mul-right-frac-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "8 × (3/4)"
+    },
+    {
+      "id": "synthetic-mul-right-frac-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "8 × (3/4)"
+    },
+    {
+      "id": "synthetic-deep-id",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "7 ÷ (1/3 × (2 ÷ (5/7)))"
+    },
+    {
+      "id": "synthetic-deep-en",
+      "status": "PASS",
+      "expected": "Linear text value equals AST value",
+      "actual": "7 ÷ (1/3 × (2 ÷ (5/7)))"
+    }
+  ],
+  "counts": {
+    "packages": 4604,
+    "placements": 177640,
+    "expressions": 566827,
+    "texts": 1552634,
+    "grouped_fraction_texts": 76646
+  }
+}

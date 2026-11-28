@@ -1,0 +1,2283 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "KALIBATAKU • LMS Bridge",
+    "version": "1.0.0",
+    "description": "Future same-origin authenticated LMS contract. Static distribution has no configured live endpoint."
+  },
+  "servers": [
+    {
+      "url": "/api/v1"
+    }
+  ],
+  "security": [
+    {
+      "session": []
+    }
+  ],
+  "paths": {
+    "/capabilities": {
+      "get": {
+        "operationId": "getCapabilities",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Capabilities"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/me": {
+      "get": {
+        "operationId": "getIdentity",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Identity"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/assignments": {
+      "get": {
+        "operationId": "listAssignments",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Assignments"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "cursor",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "from",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "to",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "module",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "mode",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "grade",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "level",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "competency_id",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        ]
+      }
+    },
+    "/attempts": {
+      "post": {
+        "operationId": "startAttempt",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AttemptBound"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AttemptBinding"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "session": [],
+            "csrf": []
+          }
+        ]
+      }
+    },
+    "/events/batch": {
+      "post": {
+        "operationId": "sendEventBatch",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BatchReceipt"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EventBatch"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "session": [],
+            "csrf": []
+          }
+        ]
+      }
+    },
+    "/attempts/complete": {
+      "post": {
+        "operationId": "completeAttempt",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CompletionResult"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CompletionRequest"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "session": [],
+            "csrf": []
+          }
+        ]
+      }
+    },
+    "/students": {
+      "get": {
+        "operationId": "listStudents",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Students"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "query",
+            "name": "cursor",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "from",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "to",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "module",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "mode",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "grade",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "level",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "competency_id",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        ]
+      }
+    },
+    "/students/{id}/progress": {
+      "get": {
+        "operationId": "getProgress",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Progress"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "from",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "to",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "module",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "mode",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "grade",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "level",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "competency_id",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        ]
+      }
+    },
+    "/students/{id}/analytics": {
+      "get": {
+        "operationId": "getStudentAnalytics",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Analytics"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "from",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "to",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "module",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "mode",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "grade",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "level",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "competency_id",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        ]
+      }
+    },
+    "/classes/{id}/analytics": {
+      "get": {
+        "operationId": "getClassAnalytics",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Analytics"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "cursor",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "from",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "to",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "module",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "mode",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "grade",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "level",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          {
+            "in": "query",
+            "name": "competency_id",
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        ]
+      }
+    },
+    "/reports": {
+      "post": {
+        "operationId": "requestReport",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReportJob"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReportRequest"
+              }
+            }
+          }
+        },
+        "security": [
+          {
+            "session": [],
+            "csrf": []
+          }
+        ]
+      }
+    },
+    "/reports/{id}": {
+      "get": {
+        "operationId": "getReportStatus",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReportJob"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        ]
+      }
+    },
+    "/reports/{id}/download": {
+      "get": {
+        "operationId": "downloadReport",
+        "responses": {
+          "200": {
+            "description": "Authorized result",
+            "content": {
+              "application/octet-stream": {
+                "schema": {
+                  "type": "string",
+                  "format": "binary"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "Request failed. Retry only when retryable and honor Retry-After.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Rational": {
+        "type": "object",
+        "properties": {
+          "numerator": {
+            "type": "string",
+            "pattern": "^(0|-?[1-9][0-9]*)$",
+            "maxLength": 80
+          },
+          "denominator": {
+            "type": "string",
+            "pattern": "^[1-9][0-9]*$",
+            "maxLength": 80
+          }
+        },
+        "required": [
+          "numerator",
+          "denominator"
+        ],
+        "additionalProperties": false,
+        "description": "Semantic validator also enforces gcd=1 and zero=0/1; JSON Schema cannot enforce these arithmetic relations."
+      },
+      "Provenance": {
+        "type": "object",
+        "properties": {
+          "data_origin": {
+            "type": "string",
+            "enum": [
+              "local_practice",
+              "demo",
+              "lms_client"
+            ]
+          },
+          "dataset_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "local_profile_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "server_subject_ref": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "data_origin",
+          "dataset_id",
+          "local_profile_id",
+          "server_subject_ref"
+        ],
+        "additionalProperties": false
+      },
+      "AttemptContext": {
+        "type": "object",
+        "properties": {
+          "module_id": {
+            "const": "mental-math"
+          },
+          "curriculum_id": {
+            "const": "kalibataku"
+          },
+          "curriculum_version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "package_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "content_version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "material_grade": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "level": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 5
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "practice",
+              "speed",
+              "assessment",
+              "adaptive",
+              "recovery"
+            ]
+          },
+          "locale": {
+            "type": "string",
+            "enum": [
+              "id",
+              "en"
+            ]
+          },
+          "policy_version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "assignment_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "form_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "assessment_cycle_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "feedback_policy_version": {
+            "type": "string",
+            "maxLength": 64
+          },
+          "timing_policy_version": {
+            "type": "string",
+            "maxLength": 64
+          }
+        },
+        "required": [
+          "module_id",
+          "curriculum_id",
+          "curriculum_version",
+          "package_id",
+          "content_version",
+          "material_grade",
+          "level",
+          "mode",
+          "locale",
+          "policy_version",
+          "assignment_id",
+          "form_id",
+          "assessment_cycle_id"
+        ],
+        "additionalProperties": false
+      },
+      "QuestionInstance": {
+        "type": "object",
+        "properties": {
+          "question_instance_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "question_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "question_revision": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "competency_id": {
+            "type": "string",
+            "pattern": "^arithmetic\\.(addition|subtraction|multiplication|division|mixed)\\.g(0[1-9]|1[0-2])\\.l0[1-5]$"
+          }
+        },
+        "required": [
+          "question_instance_id",
+          "question_id",
+          "question_revision",
+          "competency_id"
+        ],
+        "additionalProperties": false
+      },
+      "StartedPayload": {
+        "type": "object",
+        "properties": {
+          "instances": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/QuestionInstance"
+            },
+            "minItems": 1,
+            "maxItems": 200
+          },
+          "order_seed": {
+            "type": "string",
+            "minLength": 1
+          },
+          "started_at_client": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "instances",
+          "order_seed",
+          "started_at_client"
+        ],
+        "additionalProperties": false
+      },
+      "AnswerPayload": {
+        "type": "object",
+        "properties": {
+          "question_instance_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "question_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "question_revision": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "competency_id": {
+            "type": "string",
+            "pattern": "^arithmetic\\.(addition|subtraction|multiplication|division|mixed)\\.g(0[1-9]|1[0-2])\\.l0[1-5]$"
+          },
+          "answer": {
+            "$ref": "#/components/schemas/Rational"
+          },
+          "raw_answer": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "draft_locale": {
+            "type": "string",
+            "enum": [
+              "id",
+              "en"
+            ]
+          },
+          "submission_kind": {
+            "type": "string",
+            "enum": [
+              "first",
+              "revision",
+              "retry"
+            ]
+          },
+          "attempt_number": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "hint_used": {
+            "type": "boolean"
+          },
+          "active_duration_ms": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "elapsed_duration_ms": {
+            "anyOf": [
+              {
+                "type": "integer",
+                "minimum": 0
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "timing_quality": {
+            "type": "string",
+            "enum": [
+              "valid_client_estimate",
+              "resumed_estimate",
+              "interrupted",
+              "clock_anomaly",
+              "unavailable"
+            ]
+          },
+          "client_is_correct": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "key_seen_before": {
+            "type": "boolean"
+          },
+          "hint_before": {
+            "type": "boolean"
+          },
+          "first_correct": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "key_revealed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "key_reveal_reason": {
+            "enum": [
+              "checked_response"
+            ]
+          },
+          "feedback_policy_version": {
+            "type": "string",
+            "maxLength": 64
+          }
+        },
+        "required": [
+          "question_instance_id",
+          "question_id",
+          "question_revision",
+          "competency_id",
+          "answer",
+          "raw_answer",
+          "draft_locale",
+          "submission_kind",
+          "attempt_number",
+          "hint_used",
+          "active_duration_ms",
+          "elapsed_duration_ms",
+          "timing_quality",
+          "client_is_correct"
+        ],
+        "additionalProperties": false
+      },
+      "SkippedPayload": {
+        "type": "object",
+        "properties": {
+          "question_instance_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "question_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "competency_id": {
+            "type": "string",
+            "pattern": "^arithmetic\\.(addition|subtraction|multiplication|division|mixed)\\.g(0[1-9]|1[0-2])\\.l0[1-5]$"
+          },
+          "reason": {
+            "type": "string",
+            "enum": [
+              "user_skip",
+              "time_expired"
+            ]
+          }
+        },
+        "required": [
+          "question_instance_id",
+          "question_id",
+          "competency_id",
+          "reason"
+        ],
+        "additionalProperties": false
+      },
+      "FinalResponse": {
+        "type": "object",
+        "properties": {
+          "question_instance_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "response_event_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 160,
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "answered",
+              "skipped",
+              "blank",
+              "unseen"
+            ]
+          }
+        },
+        "required": [
+          "question_instance_id",
+          "response_event_id",
+          "status"
+        ],
+        "additionalProperties": false
+      },
+      "CompletedPayload": {
+        "type": "object",
+        "properties": {
+          "expected_event_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "final_responses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FinalResponse"
+            },
+            "minItems": 1,
+            "maxItems": 200
+          },
+          "completed_at_client": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "expected_event_count",
+          "final_responses",
+          "completed_at_client"
+        ],
+        "additionalProperties": false
+      },
+      "AbandonedPayload": {
+        "type": "object",
+        "properties": {
+          "reason": {
+            "type": "string",
+            "enum": [
+              "user_ended",
+              "unrecoverable_version",
+              "replaced_by_new_attempt"
+            ]
+          },
+          "ended_at_client": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "reason",
+          "ended_at_client"
+        ],
+        "additionalProperties": false
+      },
+      "Event": {
+        "type": "object",
+        "properties": {
+          "schema_version": {
+            "const": "1.0.0"
+          },
+          "event_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "event_type": {
+            "type": "string",
+            "enum": [
+              "attempt.started",
+              "answer.submitted",
+              "question.skipped",
+              "attempt.completed",
+              "attempt.abandoned"
+            ]
+          },
+          "event_sequence": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          },
+          "attempt_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "provenance": {
+            "$ref": "#/components/schemas/Provenance"
+          },
+          "context": {
+            "$ref": "#/components/schemas/AttemptContext"
+          },
+          "occurred_at_client": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "payload": {
+            "type": "object"
+          },
+          "payload_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        },
+        "required": [
+          "schema_version",
+          "event_id",
+          "event_type",
+          "event_sequence",
+          "attempt_id",
+          "provenance",
+          "context",
+          "occurred_at_client",
+          "payload",
+          "payload_hash"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "event_type": {
+                  "const": "attempt.started"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "payload": {
+                  "$ref": "#/components/schemas/StartedPayload"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "event_type": {
+                  "const": "answer.submitted"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "payload": {
+                  "$ref": "#/components/schemas/AnswerPayload"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "event_type": {
+                  "const": "question.skipped"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "payload": {
+                  "$ref": "#/components/schemas/SkippedPayload"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "event_type": {
+                  "const": "attempt.completed"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "payload": {
+                  "$ref": "#/components/schemas/CompletedPayload"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "event_type": {
+                  "const": "attempt.abandoned"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "payload": {
+                  "$ref": "#/components/schemas/AbandonedPayload"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Hash is SHA-256 of documented canonical envelope excluding payload_hash; server authorization never derives authority from this payload."
+      },
+      "BatchReceipt": {
+        "type": "object",
+        "properties": {
+          "schema_version": {
+            "const": "1.0.0"
+          },
+          "receipt_origin": {
+            "type": "string",
+            "enum": [
+              "mock",
+              "server"
+            ]
+          },
+          "batch_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "received_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "attempt_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "receipts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "event_id": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 160,
+                  "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+                },
+                "payload_hash": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "transport_result": {
+                  "type": "string",
+                  "enum": [
+                    "accepted",
+                    "duplicate",
+                    "rejected",
+                    "retry_required",
+                    "conflict"
+                  ]
+                },
+                "grading_state": {
+                  "type": "string",
+                  "enum": [
+                    "unverified",
+                    "queued",
+                    "verified",
+                    "rejected"
+                  ]
+                },
+                "error_code": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "event_id",
+                "payload_hash",
+                "transport_result",
+                "grading_state",
+                "error_code"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "missing_sequences": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "minItems": 0,
+            "uniqueItems": true
+          }
+        },
+        "required": [
+          "schema_version",
+          "receipt_origin",
+          "batch_id",
+          "received_at",
+          "attempt_id",
+          "receipts",
+          "missing_sequences"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "receipt_origin": {
+                  "const": "mock"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "receipts": {
+                  "items": {
+                    "properties": {
+                      "grading_state": {
+                        "const": "unverified"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "ReportSnapshot": {
+        "type": "object",
+        "properties": {
+          "schema_version": {
+            "const": "1.0.0"
+          },
+          "report_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 160,
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+          },
+          "data_origin": {
+            "type": "string",
+            "enum": [
+              "local_practice",
+              "demo",
+              "lms_client"
+            ]
+          },
+          "verification_status": {
+            "type": "string",
+            "enum": [
+              "unverified",
+              "server_verified"
+            ]
+          },
+          "locale": {
+            "type": "string",
+            "enum": [
+              "id",
+              "en",
+              "bilingual"
+            ]
+          },
+          "period_start_utc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "period_end_exclusive_utc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "display_timezone": {
+            "type": "string",
+            "minLength": 1
+          },
+          "policy_version": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "created_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "assigned_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "correct_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "incorrect_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "skipped_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "blank_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "unseen_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "form_score_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "valid_response_accuracy_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "responded_percent": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              {
+                "type": "null"
+              }
+            ]
+          }
+        },
+        "required": [
+          "schema_version",
+          "report_id",
+          "data_origin",
+          "verification_status",
+          "locale",
+          "period_start_utc",
+          "period_end_exclusive_utc",
+          "display_timezone",
+          "policy_version",
+          "created_at",
+          "assigned_count",
+          "correct_count",
+          "incorrect_count",
+          "skipped_count",
+          "blank_count",
+          "unseen_count",
+          "form_score_percent",
+          "valid_response_accuracy_percent",
+          "responded_percent"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "data_origin": {
+                  "enum": [
+                    "local_practice",
+                    "demo"
+                  ]
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "verification_status": {
+                  "const": "unverified"
+                }
+              }
+            }
+          }
+        ],
+        "description": "Minimal reporting contract fixture; production adds scoped identities, competency rows, notes and metadata with a versioned extension. Counts/formulas must be semantically validated."
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string",
+                "minLength": 1
+              },
+              "message_key": {
+                "type": "string",
+                "minLength": 1
+              },
+              "details": {
+                "type": "object"
+              },
+              "retryable": {
+                "type": "boolean"
+              },
+              "request_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "code",
+              "message_key",
+              "details",
+              "retryable",
+              "request_id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "error"
+        ],
+        "additionalProperties": false
+      },
+      "Capabilities": {
+        "type": "object",
+        "properties": {
+          "schema_versions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "environment_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "max_events": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          },
+          "max_bytes": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 262144
+          }
+        },
+        "required": [
+          "schema_versions",
+          "environment_id",
+          "max_events",
+          "max_bytes"
+        ],
+        "additionalProperties": true
+      },
+      "Identity": {
+        "type": "object",
+        "properties": {
+          "subject": {
+            "type": "string",
+            "minLength": 1
+          },
+          "environment_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "institution_id": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "subject",
+          "environment_id",
+          "roles",
+          "institution_id"
+        ],
+        "additionalProperties": true
+      },
+      "Assignment": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "package_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "policy_version": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "package_id",
+          "content_version",
+          "policy_version"
+        ],
+        "additionalProperties": true
+      },
+      "Assignments": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Assignment"
+            }
+          },
+          "next_cursor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "items",
+          "next_cursor"
+        ],
+        "additionalProperties": false
+      },
+      "AttemptBinding": {
+        "type": "object",
+        "properties": {
+          "attempt_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "package_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "assignment_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "policy_version": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "attempt_id",
+          "package_id",
+          "content_version",
+          "assignment_id",
+          "policy_version"
+        ],
+        "additionalProperties": false
+      },
+      "AttemptBound": {
+        "type": "object",
+        "properties": {
+          "attempt_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "package_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "content_version": {
+            "type": "string",
+            "minLength": 1
+          },
+          "policy_version": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "attempt_id",
+          "package_id",
+          "content_version",
+          "policy_version"
+        ],
+        "additionalProperties": true
+      },
+      "EventBatch": {
+        "type": "object",
+        "properties": {
+          "schema_version": {
+            "const": "1.0.0"
+          },
+          "batch_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "attempt_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Event"
+            },
+            "minItems": 1,
+            "maxItems": 100
+          }
+        },
+        "required": [
+          "schema_version",
+          "batch_id",
+          "attempt_id",
+          "events"
+        ],
+        "additionalProperties": false
+      },
+      "CompletionRequest": {
+        "type": "object",
+        "properties": {
+          "attempt_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "final_event_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expected_event_count": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "required": [
+          "attempt_id",
+          "final_event_id",
+          "expected_event_count"
+        ],
+        "additionalProperties": false
+      },
+      "CompletionResult": {
+        "type": "object",
+        "properties": {
+          "attempt_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "complete",
+              "requires_missing_events"
+            ]
+          },
+          "grading_state": {
+            "enum": [
+              "unverified",
+              "queued",
+              "verified",
+              "rejected"
+            ]
+          },
+          "missing_sequences": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          }
+        },
+        "required": [
+          "attempt_id",
+          "status",
+          "grading_state",
+          "missing_sequences"
+        ],
+        "additionalProperties": true
+      },
+      "Student": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "class_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "id",
+          "class_ids"
+        ],
+        "additionalProperties": true
+      },
+      "Students": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Student"
+            }
+          },
+          "next_cursor": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "items",
+          "next_cursor"
+        ],
+        "additionalProperties": false
+      },
+      "Progress": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "data_origin": {
+            "const": "lms_client"
+          },
+          "policy_version": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "items",
+          "data_origin",
+          "policy_version"
+        ],
+        "additionalProperties": true
+      },
+      "Analytics": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "denominator": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "weighting": {
+            "type": "string",
+            "minLength": 1
+          },
+          "filters": {
+            "type": "object"
+          },
+          "calculated_at": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "required": [
+          "items",
+          "denominator",
+          "weighting",
+          "filters",
+          "calculated_at"
+        ],
+        "additionalProperties": true
+      },
+      "ReportRequest": {
+        "type": "object",
+        "properties": {
+          "scope_type": {
+            "enum": [
+              "student",
+              "class"
+            ]
+          },
+          "scope_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "language": {
+            "enum": [
+              "id",
+              "en",
+              "bilingual"
+            ]
+          },
+          "format": {
+            "enum": [
+              "pdf",
+              "csv",
+              "xlsx",
+              "docx",
+              "json",
+              "zip"
+            ]
+          },
+          "filters": {
+            "type": "object"
+          },
+          "policy_version": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "scope_type",
+          "scope_id",
+          "language",
+          "format",
+          "filters",
+          "policy_version"
+        ],
+        "additionalProperties": false
+      },
+      "ReportJob": {
+        "type": "object",
+        "properties": {
+          "report_job_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "queued",
+              "working",
+              "ready",
+              "failed"
+            ]
+          },
+          "completed": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "total": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "failures": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          }
+        },
+        "required": [
+          "report_job_id",
+          "status",
+          "completed",
+          "total",
+          "failures"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "securitySchemes": {
+      "session": {
+        "type": "apiKey",
+        "in": "cookie",
+        "name": "session"
+      },
+      "csrf": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-CSRF-Token"
+      }
+    }
+  }
+}

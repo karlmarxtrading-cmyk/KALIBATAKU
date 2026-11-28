@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "runner": "v24.22.3",
+  "environment": "Node ephemeral local store; actual v1.0.0 backup imported using current store + engine",
+  "fixture": "tests/bank/legacy-v100-backup.json",
+  "package": "MM-G02-L02-SUB-P001",
+  "question": "arithmetic.subtraction.g02.l02.b83de0ba641e1968eac3eb16af7048fbe525802588ff893d4216461884c45cb7",
+  "scope_preserved": true,
+  "old_revision": "1.0.0",
+  "new_revision": "1.1.0",
+  "draft_resumed": "9",
+  "legacy_events_after_finish": 3,
+  "old_explanation": {
+    "id": "Kurangi 8 dahulu sehingga tersisa 90. Lalu kurangi lagi 81.",
+    "en": "Subtract 8 first to reach 90. Then take away the remaining 81."
+  },
+  "new_explanation": {
+    "id": "Dari 89 ke 90 perlu 1 langkah. Dari 90 ke 98 perlu 8 lagi. Jumlahkan kedua jarak.",
+    "en": "Count 1 from 89 to 90, then 8 more to 98. Add the two distances."
+  },
+  "persisted_complete_legacy_snapshot": true,
+  "same_math": true,
+  "guide_examples": [
+    {
+      "type": "integer",
+      "locale": "id",
+      "copy": "Gunakan angka, misalnya 4.",
+      "accepted": [
+        "4"
+      ]
+    },
+    {
+      "type": "integer",
+      "locale": "en",
+      "copy": "Use digits, for example 4.",
+      "accepted": [
+        "4"
+      ]
+    },
+    {
+      "type": "fraction",
+      "locale": "id",
+      "copy": "Gunakan / untuk pecahan, misalnya 1/2.",
+      "accepted": [
+        "1/2"
+      ]
+    },
+    {
+      "type": "fraction",
+      "locale": "en",
+      "copy": "Use / for a fraction, such as 1/2.",
+      "accepted": [
+        "1/2"
+      ]
+    },
+    {
+      "type": "decimal",
+      "locale": "id",
+      "copy": "Gunakan koma untuk desimal, misalnya 0,5.",
+      "accepted": [
+        "0,5"
+      ]
+    },
+    {
+      "type": "decimal",
+      "locale": "en",
+      "copy": "Use a point for a decimal, for example 0.5.",
+      "accepted": [
+        "0.5"
+      ]
+    },
+    {
+      "type": "mixed",
+      "locale": "id",
+      "copy": "Kamu boleh menulis pecahan atau desimal, misalnya 1/2 atau 0,5.",
+      "accepted": [
+        "1/2",
+        "0,5"
+      ]
+    },
+    {
+      "type": "mixed",
+      "locale": "en",
+      "copy": "You can enter a fraction or a decimal, such as 1/2 or 0.5.",
+      "accepted": [
+        "1/2",
+        "0.5"
+      ]
+    }
+  ]
+}

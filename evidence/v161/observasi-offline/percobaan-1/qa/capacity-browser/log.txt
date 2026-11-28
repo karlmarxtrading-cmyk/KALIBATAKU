@@ -1,0 +1,54 @@
+{
+  "status": "PASS",
+  "command": "python3 tests/v15/backup-capacity-browser.py",
+  "time_utc": "2026-11-28T17:24:05.240130+00:00",
+  "engine": "151.0.7922.34",
+  "storage": "IndexedDB in two isolated, sequential persistent desktop browser contexts",
+  "build_info": {
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "product": "KALIBATAKU"
+  },
+  "backup_module_sha256": "bf5489bf015ff821a4fb20adbcb557b98e4038113efe5fd4b077e23827d4081d",
+  "legacy_oversize_downloads": 0,
+  "legacy_limits_message": true,
+  "recovery_download": "zip",
+  "bytes": 786378,
+  "sha256": "55c9f793fc3fbcee61259bedc1d6b71f44f26c3fb82aa8a0cb79d856182c0920",
+  "preview_reported_draft": true,
+  "restored": {
+    "impact": {
+      "sessions": 1,
+      "events": 1,
+      "records": 100001
+    },
+    "owner": true,
+    "draft": "2/",
+    "dirty": true,
+    "status": "ongoing",
+    "event_types": [
+      "attempt.started"
+    ],
+    "samples": [
+      0,
+      50000,
+      100000
+    ]
+  },
+  "tested_dist": {
+    "offline_release": "83fef50a05e52452",
+    "backup_module_sha256": "bf5489bf015ff821a4fb20adbcb557b98e4038113efe5fd4b077e23827d4081d",
+    "ui_module_sha256": "bdb0ff227bd232c30b572bb153d2daa7f2e5a22245566c978354a49303fc5778"
+  }
+}
+
+[stderr]
+opening profiles
+seeding fixture
+seeded
+legacy export
+opening session
+waiting for recovery control
+download received
+waiting for valid preview
+committing archive

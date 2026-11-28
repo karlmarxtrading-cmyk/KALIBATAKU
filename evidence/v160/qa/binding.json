@@ -1,0 +1,1787 @@
+{
+  "schema": "kalibataku-qa-binding/1",
+  "created_utc": "2026-11-28T16:02:29Z",
+  "status": "PASS",
+  "build": {
+    "dist_tree_sha256": "f6e679cf51e9e24f9017e85743aedf60ac92fa176790eeb61e96562122725df9",
+    "offline_release": "6c43a824957f99ed",
+    "app_version": "1.6.0",
+    "bank_version": "1.2.0",
+    "source_tree_sha256": "bd618847a10ec1cdfdabf9a6e65fbf815ec44504010f9f8f889bcc593eacbc6f"
+  },
+  "runtime": {
+    "node": "v24.22.3",
+    "python": "3.12.14",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "chromium": "Google Chrome for Testing 151.0.7922.34",
+    "playwright": "1.62.0"
+  },
+  "registry_sha256": "053d5f23379684dd7bfe4905f542333e6941e5eb782d592d6731beaaf4d4077e",
+  "suites": [
+    {
+      "id": "compile-check",
+      "command": [
+        "{python}",
+        "tools/project.py",
+        "check"
+      ],
+      "exit_code": 0,
+      "seconds": 9.56,
+      "log": "compile-check/log.txt",
+      "log_sha256": "089cc43ee18c0287cb4842ab6e79d9bcd9f3007702b1f12a684a4fe96f608f33",
+      "receipts": [],
+      "problems": [],
+      "assertions": 139,
+      "status": "PASS"
+    },
+    {
+      "id": "glyphs-reproducible",
+      "command": [
+        "{python}",
+        "tools/build-glyphs.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.07,
+      "log": "glyphs-reproducible/log.txt",
+      "log_sha256": "b9bcfa890c87994d4368619567daa076caf70635c43971cec8b7d93c19e89aeb",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "curriculum",
+      "command": [
+        "{python}",
+        "tools/project.py",
+        "curriculum"
+      ],
+      "exit_code": 0,
+      "seconds": 0.57,
+      "log": "curriculum/log.txt",
+      "log_sha256": "a8c8399db95ba0f7fa65fc249331d99785367b48ae75712c40085684e776097c",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "player-run",
+      "command": [
+        "node",
+        "tests/player/run.mjs",
+        "--evidence"
+      ],
+      "exit_code": 0,
+      "seconds": 0.15,
+      "log": "player-run/log.txt",
+      "log_sha256": "1326f8e0acc47a76d918152e745015ae31137584042a0f09ea1b73d7f945d441",
+      "receipts": [],
+      "problems": [],
+      "assertions": 18,
+      "status": "PASS"
+    },
+    {
+      "id": "player-ledger",
+      "command": [
+        "node",
+        "tests/player/ledger.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.14,
+      "log": "player-ledger/log.txt",
+      "log_sha256": "4565469dd6426febcffe0bbc6fa79d6ddd5641aa85375397c98cc98e32e2120c",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "data-contract",
+      "command": [
+        "node",
+        "tests/data/contract.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.68,
+      "log": "data-contract/log.txt",
+      "log_sha256": "5bf55823701782f3c133683dda6c46f6170eb6d151d1faad7ac8ddefba84b61f",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "teacher-exports",
+      "command": [
+        "node",
+        "tests/teacher/exports.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.53,
+      "log": "teacher-exports/log.txt",
+      "log_sha256": "48596c363592eb7d667eac891c3d8a19172bab2f0e68b73c1b27c809f7fe2eea",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "ui-catalog-tokens",
+      "command": [
+        "node",
+        "tests/ui/catalog-and-tokens.mjs",
+        "--evidence"
+      ],
+      "exit_code": 0,
+      "seconds": 0.34,
+      "log": "ui-catalog-tokens/log.txt",
+      "log_sha256": "fd8efe79d18499a66cb5e422e049358633e8c00e2fe226404134ebc76566743d",
+      "receipts": [],
+      "problems": [],
+      "assertions": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "upgrade-restore-v1.0",
+      "command": [
+        "node",
+        "tests/upgrade/restore.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.1,
+      "log": "upgrade-restore-v1.0/log.txt",
+      "log_sha256": "805d9305627377f5474ec1f001bea37b892b7de60aee135ab49804edd8a02f9e",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "player-ux-domain",
+      "command": [
+        "node",
+        "tests/player/ux-domain.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.16,
+      "log": "player-ux-domain/log.txt",
+      "log_sha256": "eefff1db1bbbde84127252841415a211c1cab4302879c110b9d50c5abd6e9f49",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "bank-snapshot-upgrade",
+      "command": [
+        "node",
+        "tests/bank/snapshot_upgrade.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.16,
+      "log": "bank-snapshot-upgrade/log.txt",
+      "log_sha256": "6122f43fbfbec369235977fa72a8d636126b7cc0c80bd2e652dc21aed0cf48c2",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "upgrade-verified-package",
+      "command": [
+        "node",
+        "tests/upgrade/verified-package.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.06,
+      "log": "upgrade-verified-package/log.txt",
+      "log_sha256": "0097bb6a511e66bc797b6730a457b17bd6cc13d13e9b1ef5f1157e1243f863c9",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "data-ux-contract",
+      "command": [
+        "node",
+        "tests/data/ux-contract.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.63,
+      "log": "data-ux-contract/log.txt",
+      "log_sha256": "b47537fa9837db74c8971666cab2ec562bff6c8f4ad1766af78e8a4a6d85bf07",
+      "receipts": [],
+      "problems": [],
+      "assertions": 7,
+      "status": "PASS"
+    },
+    {
+      "id": "ui-session-plan",
+      "command": [
+        "node",
+        "tests/ui/session-plan.mjs",
+        "--evidence"
+      ],
+      "exit_code": 0,
+      "seconds": 0.14,
+      "log": "ui-session-plan/log.txt",
+      "log_sha256": "30ce2bfcda6342db81c0f6f6ea50819191a6bd618d1cc8e13a71942be9ab992b",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "teacher-ux-evidence",
+      "command": [
+        "node",
+        "tests/teacher/ux-evidence.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 1.23,
+      "log": "teacher-ux-evidence/log.txt",
+      "log_sha256": "666bd150d550c895a0262ba08862ed4ae3e24753e298d92b8d590ee54f81982a",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "bank-verify",
+      "command": [
+        "{python}",
+        "tests/bank/verify_bank.py"
+      ],
+      "exit_code": 0,
+      "seconds": 23.52,
+      "log": "bank-verify/log.txt",
+      "log_sha256": "1cc025e13cb5db53114717b6453031129251c9e06aa9dcccc96a75b148769473",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "bank-audit-distribution",
+      "command": [
+        "node",
+        "tools/audit-bank.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 9.18,
+      "log": "bank-audit-distribution/log.txt",
+      "log_sha256": "b36e9668435e9c3f6584c652f428b5d61f48105f833ccd84ffb1c925eed05d96",
+      "receipts": [],
+      "problems": [],
+      "assertions": 12,
+      "status": "PASS"
+    },
+    {
+      "id": "bank-determinism",
+      "command": [
+        "{python}",
+        "tests/bank/determinism.py"
+      ],
+      "exit_code": 0,
+      "seconds": 49.77,
+      "log": "bank-determinism/log.txt",
+      "log_sha256": "d8ed34bd85d460da6dd6e335c082b499b84ff7a76d3bdbb8b847f823d258120b",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/bank-determinism.json",
+          "file": "bank-determinism/bank-determinism.json",
+          "sha256": "b12ae37afe3efc7738e3640dec8c28ad275324204177083005d2ab11e2a6c1c6",
+          "state": "PASS",
+          "assertions": 2
+        }
+      ],
+      "problems": [],
+      "assertions": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "bank-domain-prose",
+      "command": [
+        "{python}",
+        "tests/bank/domain_prose.py"
+      ],
+      "exit_code": 0,
+      "seconds": 9.16,
+      "log": "bank-domain-prose/log.txt",
+      "log_sha256": "e5d3e9fb6efd26c807caa8ffb54bda50ae7c1ada2e921b587a4208320b70b6eb",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/bank-domain-prose.json",
+          "file": "bank-domain-prose/bank-domain-prose.json",
+          "sha256": "93b3961ab07ed03cec86cbf71fee1af4a01a49c4edbdf590fb81e10d05fc2e98",
+          "state": "PASS",
+          "assertions": 9
+        }
+      ],
+      "problems": [],
+      "assertions": 9,
+      "status": "PASS"
+    },
+    {
+      "id": "math-linear-roundtrip",
+      "command": [
+        "node",
+        "tests/math/linear-roundtrip.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 15.31,
+      "log": "math-linear-roundtrip/log.txt",
+      "log_sha256": "9680cd303a1abb780dca609ffa59f1ed516344b7d91152cec15b054e2453e33c",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/math-linear-roundtrip.json",
+          "file": "math-linear-roundtrip/math-linear-roundtrip.json",
+          "sha256": "5ce6eee99b08cb83c1665d1feb3d828632f5d9935efd1b92ae9ac17e2f31d9e5",
+          "state": "PASS",
+          "assertions": 26
+        }
+      ],
+      "problems": [],
+      "assertions": 26,
+      "status": "PASS"
+    },
+    {
+      "id": "math-exports",
+      "command": [
+        "node",
+        "tests/math/export-linear.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.16,
+      "log": "math-exports/log.txt",
+      "log_sha256": "00437e7d29bb1d408b5fab0ad90d6788487661795ac6f234a623f50740273776",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/math-exports.json",
+          "file": "math-exports/math-exports.json",
+          "sha256": "a76dcee17af292c840a6fe8959ef9ea9c70f08f3c695052ddbd403adb5d88902",
+          "state": "PASS",
+          "assertions": 14
+        }
+      ],
+      "problems": [],
+      "assertions": 14,
+      "status": "PASS"
+    },
+    {
+      "id": "v12-bank-model",
+      "command": [
+        "node",
+        "tests/v12/bank-and-model.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 8.13,
+      "log": "v12-bank-model/log.txt",
+      "log_sha256": "388a76686001d3394f0bf3b5ce90f2d3dedb82664a1f5645781d489216107c31",
+      "receipts": [
+        {
+          "source": "evidence/v12/bank-model.json",
+          "file": "v12-bank-model/bank-model.json",
+          "sha256": "ed56003ac9161293b2bf57c0772b777b8486dff07ab29af42a692eda3a98daf8",
+          "state": "PASS",
+          "assertions": 32
+        }
+      ],
+      "problems": [],
+      "assertions": 32,
+      "status": "PASS"
+    },
+    {
+      "id": "v12-feedback-export",
+      "command": [
+        "node",
+        "tests/v12/feedback-and-export.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.21,
+      "log": "v12-feedback-export/log.txt",
+      "log_sha256": "afbd6cc37f31fcb0b3af32b7cd8cd026915072799007ba6133c54f46cd948f0f",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "documents-reopened",
+      "command": [
+        "{python}",
+        "tests/v13/inspect-documents.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.01,
+      "log": "documents-reopened/log.txt",
+      "log_sha256": "77453dcca5e2a64f027e01e85a1cd445b4481bcccd99f7a0de97777354014068",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/documents-reopened.json",
+          "file": "documents-reopened/documents-reopened.json",
+          "sha256": "3f44af6f33d5d559324edb5423642939543e6dfb688b86c9a331c7875df55362",
+          "state": "PASS",
+          "assertions": 7
+        }
+      ],
+      "problems": [],
+      "assertions": 7,
+      "status": "PASS"
+    },
+    {
+      "id": "data-large-backup",
+      "command": [
+        "node",
+        "tests/data/backup-large.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 61.06,
+      "log": "data-large-backup/log.txt",
+      "log_sha256": "16bb07681b2b1d2b6cb64b39071031737f0271d16892bee753079380e5819604",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/data-large-backup.json",
+          "file": "data-large-backup/data-large-backup.json",
+          "sha256": "69d35e0e344ae91cce715c0e32f75aa94b76763abcfed4f5f0a35b722ac417aa",
+          "state": "PASS",
+          "assertions": 17
+        }
+      ],
+      "problems": [],
+      "assertions": 17,
+      "status": "PASS"
+    },
+    {
+      "id": "data-cache-policy",
+      "command": [
+        "node",
+        "tests/data/cache-policy.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.07,
+      "log": "data-cache-policy/log.txt",
+      "log_sha256": "f24b47f92bfb450c8df54d9c9f1198ac7ffed565d7f6cde0a5a233f7e9008ccb",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/data-cache-policy.json",
+          "file": "data-cache-policy/data-cache-policy.json",
+          "sha256": "9e068e4e9ceb62490a20b859918c5284a1a4a6c865a52d6406267aea2c181d51",
+          "state": "PASS",
+          "assertions": 10
+        }
+      ],
+      "problems": [],
+      "assertions": 10,
+      "status": "PASS"
+    },
+    {
+      "id": "upgrade-bank-1.2",
+      "command": [
+        "node",
+        "tests/upgrade/bank-1.2.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.13,
+      "log": "upgrade-bank-1.2/log.txt",
+      "log_sha256": "7af0e146d7900f5b0ae5880de0c2e87f103b639a8f1b1f32d0897d351cbf14f6",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/upgrade-bank-1.2.json",
+          "file": "upgrade-bank-1.2/upgrade-bank-1.2.json",
+          "sha256": "37c866a658833735103354b366ecc9501049910e1e4497bc90ae345993c14cba",
+          "state": "PASS",
+          "assertions": 6
+        }
+      ],
+      "problems": [],
+      "assertions": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "qa-fault-injection",
+      "command": [
+        "{python}",
+        "tests/qa/fault_injection.py",
+        "--browser"
+      ],
+      "exit_code": 0,
+      "seconds": 8.66,
+      "log": "qa-fault-injection/log.txt",
+      "log_sha256": "2c9d89e7b54fd247cb3a47d30a21a5a7070e0d6ff048d0c31456136d7084f6cf",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/qa-fault-injection.json",
+          "file": "qa-fault-injection/qa-fault-injection.json",
+          "sha256": "db8c72c23b278ac22e4c1880c8bd3e8f980ff17d142bcc5bd3717d919a3c5c5e",
+          "state": "PASS",
+          "assertions": 20
+        }
+      ],
+      "problems": [],
+      "assertions": 20,
+      "status": "PASS"
+    },
+    {
+      "id": "e2e-browser",
+      "command": [
+        "{python}",
+        "tests/integration/browser.py"
+      ],
+      "exit_code": 0,
+      "seconds": 64.68,
+      "log": "e2e-browser/log.txt",
+      "log_sha256": "01fae24a31f91ca790af78f0cae8533462595a88369d9ea7488fb96a50b4c061",
+      "receipts": [
+        {
+          "source": "evidence/acceptance/browser-data.json",
+          "file": "e2e-browser/browser-data.json",
+          "sha256": "7f16499be9c2c80b8f0ecf53e3b1bdfb9bb4cf182fbc83ee89de0190513e06a6",
+          "state": "PASS",
+          "assertions": 11
+        },
+        {
+          "source": "evidence/acceptance/browser-performance.json",
+          "file": "e2e-browser/browser-performance.json",
+          "sha256": "63abef03b2b628e43377ec468d9889474fb23dca9b3914e5826a59513216b75a",
+          "state": "PASS",
+          "assertions": 7
+        },
+        {
+          "source": "evidence/acceptance/browser-layout.json",
+          "file": "e2e-browser/browser-layout.json",
+          "sha256": "86f442e8f3537e584bc383b80d188344c2c224f053a0e81087ba2050c2d3cd46",
+          "state": "PASS",
+          "assertions": 105
+        },
+        {
+          "source": "evidence/acceptance/browser-journeys.json",
+          "file": "e2e-browser/browser-journeys.json",
+          "sha256": "28d48c19b7d433a522bdf682badbbb5363e15208ed88bf3d25e693692d1bf295",
+          "state": "PASS",
+          "assertions": 26
+        },
+        {
+          "source": "evidence/acceptance/browser-semantics.json",
+          "file": "e2e-browser/browser-semantics.json",
+          "sha256": "caf006349f26d38fae4014ac6f807cf056c46f463319dd3c44aafc233c92150c",
+          "state": "PASS",
+          "assertions": 90
+        },
+        {
+          "source": "evidence/acceptance/browser-faults.json",
+          "file": "e2e-browser/browser-faults.json",
+          "sha256": "d0bf6b823f5c47a238f5dd626aefaaca94bd13a9dce17710fbd64bbed6fc94cb",
+          "state": "PASS",
+          "assertions": 3
+        },
+        {
+          "source": "evidence/acceptance/browser-teacher.json",
+          "file": "e2e-browser/browser-teacher.json",
+          "sha256": "6bc8be0f143042413f8cb44d95f08de10bbe36aa7bb0224502f1e2131b0e2bf1",
+          "state": "PASS",
+          "assertions": 13
+        },
+        {
+          "source": "evidence/acceptance/browser-offline.json",
+          "file": "e2e-browser/browser-offline.json",
+          "sha256": "803d57d2e763e11300bcca43f5742c0758b6513a36befe23512abd3ba72a1aab",
+          "state": "PASS",
+          "assertions": 7
+        }
+      ],
+      "problems": [],
+      "assertions": 262,
+      "status": "PASS"
+    },
+    {
+      "id": "ux-extended-browser",
+      "command": [
+        "{python}",
+        "tests/v12/extended.py",
+        "shell",
+        "school",
+        "player",
+        "data",
+        "visual",
+        "reflow"
+      ],
+      "exit_code": 0,
+      "seconds": 117.27,
+      "log": "ux-extended-browser/log.txt",
+      "log_sha256": "91c1c168d95dbebcca2d8f006f25176ae5e52feb02f4fa15dbcb9441a89c822a",
+      "receipts": [
+        {
+          "source": "evidence/ux/acceptance/browser-shell-ux.json",
+          "file": "ux-extended-browser/browser-shell-ux.json",
+          "sha256": "d0f04464613c4edd00d3304735263e1587bcca59dda967b210c8e565615b3093",
+          "state": "PASS",
+          "assertions": 15
+        },
+        {
+          "source": "evidence/ux/acceptance/browser-school-ux.json",
+          "file": "ux-extended-browser/browser-school-ux.json",
+          "sha256": "54aa8aa3dcd5482cbf02058874beda9869d674fca72f84d5fb96c8b1419e9ded",
+          "state": "PASS",
+          "assertions": 13
+        },
+        {
+          "source": "evidence/ux/acceptance/browser-player-ux.json",
+          "file": "ux-extended-browser/browser-player-ux.json",
+          "sha256": "72ca67fa94707782a9b63febd8e98e483b9cdc96ff4dc62bf0357d1f393297ff",
+          "state": "PASS",
+          "assertions": 25
+        },
+        {
+          "source": "evidence/ux/acceptance/browser-data-ux.json",
+          "file": "ux-extended-browser/browser-data-ux.json",
+          "sha256": "e4fe9bf1e4e67b6fbb1d0cab3ce9e6677259efefd3d6021dbeda4e549302a72c",
+          "state": "PASS",
+          "assertions": 20
+        },
+        {
+          "source": "evidence/ux/acceptance/browser-visual-ux.json",
+          "file": "ux-extended-browser/browser-visual-ux.json",
+          "sha256": "f0ee646236f4141c44f36ad2f4bacdf24308f44510fdd15b3961475f38a6bbba",
+          "state": "PASS",
+          "assertions": 192
+        },
+        {
+          "source": "evidence/ux/acceptance/browser-reflow-ux.json",
+          "file": "ux-extended-browser/browser-reflow-ux.json",
+          "sha256": "a071d3701d222d8e815dd4dcf284661ccaf6d4d60fda03a2d4348ec02b98917b",
+          "state": "PASS",
+          "assertions": 144
+        }
+      ],
+      "problems": [],
+      "assertions": 409,
+      "status": "PASS"
+    },
+    {
+      "id": "performance-budgets",
+      "command": [
+        "{python}",
+        "tests/perf/run.py"
+      ],
+      "exit_code": 0,
+      "seconds": 32.05,
+      "log": "performance-budgets/log.txt",
+      "log_sha256": "dd658727ca8f11ea203b769096f25d52c171ffeadcb9de39134fa94b98dc3438",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/performance-budgets.json",
+          "file": "performance-budgets/performance-budgets.json",
+          "sha256": "4c3125d7c2ab509a4e725e04f12249b8eb323d1b6b6b7578e7afb0e560316573",
+          "state": "PASS",
+          "assertions": 27
+        }
+      ],
+      "problems": [],
+      "assertions": 27,
+      "status": "PASS"
+    },
+    {
+      "id": "v12-browser-chromium",
+      "command": [
+        "{python}",
+        "tests/v12/browser.py",
+        "chromium"
+      ],
+      "exit_code": 0,
+      "seconds": 8.17,
+      "log": "v12-browser-chromium/log.txt",
+      "log_sha256": "094a5a620baa9389b740d4d59bdd363658f4fd22906c9083ad2b0dc0db0954be",
+      "receipts": [
+        {
+          "source": "evidence/v12/browser-chromium.json",
+          "file": "v12-browser-chromium/browser-chromium.json",
+          "sha256": "ef6ecf2dbed8109cb075e2b4d4b95ff5ab5a345aa7673e5801e65f0c38341278",
+          "state": "PASS",
+          "assertions": 14
+        }
+      ],
+      "problems": [],
+      "assertions": 14,
+      "status": "PASS"
+    },
+    {
+      "id": "v12-keyboard",
+      "command": [
+        "{python}",
+        "tests/v12/keyboard.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.22,
+      "log": "v12-keyboard/log.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "receipts": [
+        {
+          "source": "evidence/ux/acceptance/keyboard.json",
+          "file": "v12-keyboard/keyboard.json",
+          "sha256": "7bc3c671a80ecd4da77fbf6617724099617a1dd9a5402f9ecde7f7939f4ad3ac",
+          "state": "PASS",
+          "assertions": 15
+        }
+      ],
+      "problems": [],
+      "assertions": 15,
+      "status": "PASS"
+    },
+    {
+      "id": "v12-print-contrast",
+      "command": [
+        "{python}",
+        "tests/v12/print-contrast.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.15,
+      "log": "v12-print-contrast/log.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "receipts": [
+        {
+          "source": "evidence/v12/print-contrast.json",
+          "file": "v12-print-contrast/print-contrast.json",
+          "sha256": "17390f190aa838d139cd6e22f24d96953ff7d5c094b2afdbaac21593a2a71551",
+          "state": "PASS",
+          "assertions": 2
+        }
+      ],
+      "problems": [],
+      "assertions": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "v12-roles-reflow",
+      "command": [
+        "{python}",
+        "tests/v12/roles-reflow.py"
+      ],
+      "exit_code": 0,
+      "seconds": 7.96,
+      "log": "v12-roles-reflow/log.txt",
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "receipts": [
+        {
+          "source": "evidence/v12/roles-reflow.json",
+          "file": "v12-roles-reflow/roles-reflow.json",
+          "sha256": "8c01f875fc2a51318675ec4d6f0982fed50eeb1e49d98550304d226d4e574266",
+          "state": "PASS",
+          "assertions": 240
+        }
+      ],
+      "problems": [],
+      "assertions": 240,
+      "status": "PASS"
+    },
+    {
+      "id": "browser-v13-chromium",
+      "command": [
+        "{python}",
+        "tests/v13/browser.py",
+        "chromium"
+      ],
+      "exit_code": 0,
+      "seconds": 60.14,
+      "log": "browser-v13-chromium/log.txt",
+      "log_sha256": "c8ae0688cbe28892d4ad928b382b89946a85c37250a3f51635bd693a11022866",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/browser-v13-chromium.json",
+          "file": "browser-v13-chromium/browser-v13-chromium.json",
+          "sha256": "82d9c2fe24d2b10ec3d1f0bec0de9c2afe50725c819e768e9907e9a23652a68c",
+          "state": "PASS",
+          "assertions": 11
+        }
+      ],
+      "problems": [],
+      "assertions": 11,
+      "status": "PASS"
+    },
+    {
+      "id": "browser-v13-firefox",
+      "command": [
+        "{python}",
+        "tests/v13/browser.py",
+        "firefox"
+      ],
+      "exit_code": 0,
+      "seconds": 81.06,
+      "log": "browser-v13-firefox/log.txt",
+      "log_sha256": "d6ce2410d089f0edcc8656b74d88db50ba87f7693c004673d848b49766fad62f",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/browser-v13-firefox.json",
+          "file": "browser-v13-firefox/browser-v13-firefox.json",
+          "sha256": "5b563ee88e0438f131231b747cf34a9199c3322f57289f10a5b19bc7bf3cb88b",
+          "state": "PASS",
+          "assertions": 11
+        }
+      ],
+      "problems": [],
+      "assertions": 11,
+      "status": "PASS"
+    },
+    {
+      "id": "browser-v13-webkit",
+      "command": [
+        "{python}",
+        "tests/v13/browser.py",
+        "webkit"
+      ],
+      "exit_code": 0,
+      "seconds": 67.14,
+      "log": "browser-v13-webkit/log.txt",
+      "log_sha256": "d4e9898bd5d7fc6a1c4ae40485bf232054931d03a71d52b1e9ea3489df599200",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/browser-v13-webkit.json",
+          "file": "browser-v13-webkit/browser-v13-webkit.json",
+          "sha256": "5b141a6f82cf8800ba809045c55aba86698fc1e395f03a50e3a90ce6b2fbcb0e",
+          "state": "PASS",
+          "assertions": 11
+        }
+      ],
+      "problems": [],
+      "assertions": 11,
+      "status": "PASS"
+    },
+    {
+      "id": "bank-preservation",
+      "command": [
+        "{python}",
+        "tools/bank-preservation.py"
+      ],
+      "exit_code": 0,
+      "seconds": 1.59,
+      "log": "bank-preservation/log.txt",
+      "log_sha256": "4c654affdadd748f728be001d1a8a2f67a821aa1e5f9dc4ab594efa799af5e80",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "review-roster",
+      "command": [
+        "{python}",
+        "tools/build-roster.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.82,
+      "log": "review-roster/log.txt",
+      "log_sha256": "0f1d89e2db64f6b2df5cf7cfac6887e466d6fca50cb93ed27ca237285c3f358c",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "journey-sidecar",
+      "command": [
+        "{python}",
+        "tools/build-journey.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 14.04,
+      "log": "journey-sidecar/log.txt",
+      "log_sha256": "c1924fa41765ccd289ac913d41119f598a096511ea5e2f9eb01ec5b08ba98c0b",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "journey-model",
+      "command": [
+        "node",
+        "tests/journey/journey.test.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 14.86,
+      "log": "journey-model/log.txt",
+      "log_sha256": "3b85cdbd40fdd889e67be529b69c5e4c85d3e9c306638b62c1fc678cb560bdac",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/journey-model.json",
+          "file": "journey-model/journey-model.json",
+          "sha256": "6d48b4ddf2368b064b4e50139c9b8b33e72d898b946340df9c0519cc8ee7aecc",
+          "state": "PASS",
+          "assertions": 34
+        }
+      ],
+      "problems": [],
+      "assertions": 34,
+      "status": "PASS"
+    },
+    {
+      "id": "journey-next-practice-probe",
+      "command": [
+        "node",
+        "tests/journey/probe-next-practice.mjs",
+        "/tmp/kalibataku-probe-next-practice.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.17,
+      "log": "journey-next-practice-probe/log.txt",
+      "log_sha256": "c158880500d91f6947f64c5d2c00efdb8067bc02c8e99b4914db8646bf6e1d8e",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "journey-exports-reopened",
+      "command": [
+        "{python}",
+        "tests/journey/reopen_exports.py",
+        "evidence/v15/exports"
+      ],
+      "exit_code": 0,
+      "seconds": 0.31,
+      "log": "journey-exports-reopened/log.txt",
+      "log_sha256": "f7aaee4a73f3d355a8de5a6ba85dc08af96326ebaedf42e1bab3d6be1c7c7551",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "data-archive-edges",
+      "command": [
+        "node",
+        "tests/data/archive-edges.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 12.41,
+      "log": "data-archive-edges/log.txt",
+      "log_sha256": "b3eecbd055f613e02210019746e169bc8c4b3b913d041e4580b818694cc22b76",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/data-archive-edges.json",
+          "file": "data-archive-edges/data-archive-edges.json",
+          "sha256": "903eb60d2107ec64f06955c47a6ef43fb842954cb2a1ada4cf688c51f93c6fe4",
+          "state": "PASS",
+          "assertions": 10
+        }
+      ],
+      "problems": [],
+      "assertions": 10,
+      "status": "PASS"
+    },
+    {
+      "id": "journey-browser-chromium",
+      "command": [
+        "{python}",
+        "tests/journey/browser_flow.py",
+        "--out",
+        "evidence/v15/browser"
+      ],
+      "exit_code": 0,
+      "seconds": 13.19,
+      "log": "journey-browser-chromium/log.txt",
+      "log_sha256": "2a3c298ae01e10342d7d787d9790a4c3ea424ddd6d847520c33f4caa6f841f31",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/journey-browser.json",
+          "file": "journey-browser-chromium/journey-browser.json",
+          "sha256": "8afc6983bee39abde25f5efed46fec403a4b35b13d7986f624d6fef18d7ca35d",
+          "state": "PASS",
+          "assertions": 41
+        }
+      ],
+      "problems": [],
+      "assertions": 41,
+      "status": "PASS"
+    },
+    {
+      "id": "journey-perf-lab",
+      "command": [
+        "{python}",
+        "tests/journey/perf.py",
+        "--runs",
+        "5"
+      ],
+      "exit_code": 0,
+      "seconds": 24.82,
+      "log": "journey-perf-lab/log.txt",
+      "log_sha256": "99ef2375ed73de3589619f6621016d6a3fc33c3d1ce6e176a8ba31b7d4b182e7",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/journey-perf-lab.json",
+          "file": "journey-perf-lab/journey-perf-lab.json",
+          "sha256": "3b022f95e211cae37286b5df3240490eb81d413d4a7d869052df6dd9839815f1",
+          "state": "PASS",
+          "assertions": 5
+        }
+      ],
+      "problems": [],
+      "assertions": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "hosting-smoke",
+      "command": [
+        "{python}",
+        "tools/hosting-smoke.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.31,
+      "log": "hosting-smoke/log.txt",
+      "log_sha256": "2b34e7d915216151331cc70277365aa8a10ec23edae25e640eeb89faa6a43be1",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "clean-build-twice",
+      "command": [
+        "{python}",
+        "tools/clean-build.py"
+      ],
+      "exit_code": 0,
+      "seconds": 8.46,
+      "log": "clean-build-twice/log.txt",
+      "log_sha256": "eb35a8e9c51018edf5f4bfdf325829fd30a6bd54db6f3df8c493f776add0e4c8",
+      "receipts": [
+        {
+          "source": "evidence/deployment/clean-build.json",
+          "file": "clean-build-twice/clean-build.json",
+          "sha256": "c90b06650c5ffc138c877196ba5614a033974654722e0ae147ec98a03068f3be",
+          "state": "PASS",
+          "assertions": 2
+        }
+      ],
+      "problems": [],
+      "assertions": 2,
+      "status": "PASS"
+    },
+    {
+      "id": "journey-browser-firefox",
+      "command": [
+        "{python}",
+        "tests/journey/browser_flow.py",
+        "--engine",
+        "firefox",
+        "--out",
+        "evidence/v15/browser/firefox"
+      ],
+      "exit_code": 0,
+      "seconds": 16.67,
+      "log": "journey-browser-firefox/log.txt",
+      "log_sha256": "6303f83d67c6af735263365cdc09e250d711c003ea5ee6e891aecc122def4384",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/journey-browser-firefox.json",
+          "file": "journey-browser-firefox/journey-browser-firefox.json",
+          "sha256": "77d66b031adfb0a821982deb2d850e30bd1b506a09eff70c004c7eb49032d4a4",
+          "state": "PASS",
+          "assertions": 41
+        }
+      ],
+      "problems": [],
+      "assertions": 41,
+      "status": "PASS"
+    },
+    {
+      "id": "journey-browser-webkit",
+      "command": [
+        "{python}",
+        "tests/journey/browser_flow.py",
+        "--engine",
+        "webkit",
+        "--out",
+        "evidence/v15/browser/webkit"
+      ],
+      "exit_code": 0,
+      "seconds": 13.17,
+      "log": "journey-browser-webkit/log.txt",
+      "log_sha256": "6303f83d67c6af735263365cdc09e250d711c003ea5ee6e891aecc122def4384",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/journey-browser-webkit.json",
+          "file": "journey-browser-webkit/journey-browser-webkit.json",
+          "sha256": "893d698d27c726da6602a851afd128c018c84aff3a26e46958b97f963fcc3b50",
+          "state": "PASS",
+          "assertions": 41
+        }
+      ],
+      "problems": [],
+      "assertions": 41,
+      "status": "PASS"
+    },
+    {
+      "id": "progression-bounds",
+      "command": [
+        "node",
+        "tests/journey/progression-bounds.mjs",
+        "evidence/v15/progression/all-nodes.json"
+      ],
+      "exit_code": 0,
+      "seconds": 5.66,
+      "log": "progression-bounds/log.txt",
+      "log_sha256": "2ef870c35793deeb8eeae78bbb95f549ec694d919c9f432be530f50778acb511",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "progression-launch",
+      "command": [
+        "node",
+        "tests/journey/progression-launch.mjs",
+        "--out",
+        "evidence/v15/progression/launch.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.22,
+      "log": "progression-launch/log.txt",
+      "log_sha256": "9b99f7c028dcaee9c0277e6a0e76c8a4d7449da982b68a0c1e3f9110500dd1e3",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "start-intent",
+      "command": [
+        "node",
+        "tests/journey/start-intent.test.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 1.2,
+      "log": "start-intent/log.txt",
+      "log_sha256": "53b864ff21b660000bc4da2353a2273423824851d0995aaf4f702dd1f706f5f0",
+      "receipts": [],
+      "problems": [],
+      "assertions": 22,
+      "status": "PASS"
+    },
+    {
+      "id": "period-readiness",
+      "command": [
+        "node",
+        "tests/journey/report-readiness.mjs",
+        "--dist"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2,
+      "log": "period-readiness/log.txt",
+      "log_sha256": "fb6a4d5e533efd09e5b8e702af845a79c1dd42373dc29f1413c2beccb80b3dc4",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "format-readiness",
+      "command": [
+        "{python}",
+        "tests/journey/inspect-report-readiness.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3,
+      "log": "format-readiness/log.txt",
+      "log_sha256": "dbae85cecd83ce18ca0cc7caec32dae944fe8e17e804b87ccad781b21767a348",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "semantic-restore",
+      "command": [
+        "node",
+        "tests/data/journey-restore.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.73,
+      "log": "semantic-restore/log.txt",
+      "log_sha256": "85b3700b61831dbb253a44dde0e7cde51b4005b1b5a9d9750450df9179a2aa37",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "restore-index",
+      "command": [
+        "{python}",
+        "tools/build-restore-index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.05,
+      "log": "restore-index/log.txt",
+      "log_sha256": "b9c55a261b0936c45c482e17dd45eea8cd8226e9912732b0c13884d0cfbdd15b",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "restore-worker",
+      "command": [
+        "{python}",
+        "tests/data/journey-restore-browser.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.33,
+      "log": "restore-worker/log.txt",
+      "log_sha256": "65bf8459433b5c1e6b2243214d1ea55d30f1d90fbac2b199088b68d93fa2ac1a",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "capacity-rows",
+      "command": [
+        "node",
+        "tests/v15/backup-capacity.mjs",
+        "rows"
+      ],
+      "exit_code": 0,
+      "seconds": 11.29,
+      "log": "capacity-rows/log.txt",
+      "log_sha256": "3946b93cd0f1d0aa15fa1db3722095c3bb747ae473904e6718f7073a7bafa492",
+      "receipts": [],
+      "problems": [],
+      "assertions": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "capacity-bytes",
+      "command": [
+        "node",
+        "tests/v15/backup-capacity.mjs",
+        "bytes"
+      ],
+      "exit_code": 0,
+      "seconds": 5.31,
+      "log": "capacity-bytes/log.txt",
+      "log_sha256": "84468e451ac66401b3aefab42dbf3f02ea7612f10fa15ce62cc9e0083f070150",
+      "receipts": [],
+      "problems": [],
+      "assertions": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "capacity-browser",
+      "command": [
+        "{python}",
+        "tests/v15/backup-capacity-browser.py"
+      ],
+      "exit_code": 0,
+      "seconds": 20.83,
+      "log": "capacity-browser/log.txt",
+      "log_sha256": "aba3ca98bc20f048d30ca51ae6d45b0271d4b9ae10262cda72e56d7ee914eba3",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "intent-browser-chromium",
+      "command": [
+        "{python}",
+        "tests/journey/start_intent_browser.py",
+        "--browser",
+        "chromium",
+        "--out",
+        "evidence/v15/intent/browser-chromium.json"
+      ],
+      "exit_code": 0,
+      "seconds": 6.48,
+      "log": "intent-browser-chromium/log.txt",
+      "log_sha256": "b4fcefe39c84558cfd4b012ff063a2790c18ecf2e0a183bc89b588ce4f588e35",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "offline-capability-chromium",
+      "command": [
+        "{python}",
+        "tests/journey/offline_capability.py",
+        "--engine",
+        "chromium"
+      ],
+      "exit_code": 0,
+      "seconds": 44.98,
+      "log": "offline-capability-chromium/log.txt",
+      "log_sha256": "b2e93686f215796313b581149193bd0a0e4b1076835fb94c5f21543db9ba8281",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/offline-capability-chromium.json",
+          "file": "offline-capability-chromium/offline-capability-chromium.json",
+          "sha256": "9477a83d6cac3f86adbf44084e04de7c485309646db2849a7ce69b0f956455ed",
+          "state": "PASS",
+          "assertions": 10
+        }
+      ],
+      "problems": [],
+      "assertions": 10,
+      "status": "PASS"
+    },
+    {
+      "id": "intent-browser-firefox",
+      "command": [
+        "{python}",
+        "tests/journey/start_intent_browser.py",
+        "--browser",
+        "firefox",
+        "--out",
+        "evidence/v15/intent/browser-firefox.json"
+      ],
+      "exit_code": 0,
+      "seconds": 9.03,
+      "log": "intent-browser-firefox/log.txt",
+      "log_sha256": "64ac5cfa739638e97c37f964bdeaf307759dd254248b97178e9c01558fbf19b4",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "offline-capability-firefox",
+      "command": [
+        "{python}",
+        "tests/journey/offline_capability.py",
+        "--engine",
+        "firefox"
+      ],
+      "exit_code": 0,
+      "seconds": 56.83,
+      "log": "offline-capability-firefox/log.txt",
+      "log_sha256": "a18cdd2df98aa6b7a99c2058b327e957ed961b05f0eb001d2ca52355881af6b7",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/offline-capability-firefox.json",
+          "file": "offline-capability-firefox/offline-capability-firefox.json",
+          "sha256": "af18d792a3518643ecfc2280091212d30e6274a7f049426e624ea9c1f86ffec0",
+          "state": "PASS",
+          "assertions": 10
+        }
+      ],
+      "problems": [],
+      "assertions": 10,
+      "status": "PASS"
+    },
+    {
+      "id": "intent-browser-webkit",
+      "command": [
+        "{python}",
+        "tests/journey/start_intent_browser.py",
+        "--browser",
+        "webkit",
+        "--out",
+        "evidence/v15/intent/browser-webkit.json"
+      ],
+      "exit_code": 0,
+      "seconds": 7.44,
+      "log": "intent-browser-webkit/log.txt",
+      "log_sha256": "22ee10f93e3e47af613c57ca866ec03208288b49d39849ae15602e935051b866",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "offline-capability-webkit",
+      "command": [
+        "{python}",
+        "tests/journey/offline_capability.py",
+        "--engine",
+        "webkit"
+      ],
+      "exit_code": 0,
+      "seconds": 38.47,
+      "log": "offline-capability-webkit/log.txt",
+      "log_sha256": "a18cdd2df98aa6b7a99c2058b327e957ed961b05f0eb001d2ca52355881af6b7",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/offline-capability-webkit.json",
+          "file": "offline-capability-webkit/offline-capability-webkit.json",
+          "sha256": "59cae1ca2fecee1f5cae887c2821a32c48cf66573fbb5254a71dff53b067d1b1",
+          "state": "PASS",
+          "assertions": 10
+        }
+      ],
+      "problems": [],
+      "assertions": 10,
+      "status": "PASS"
+    },
+    {
+      "id": "register-policy",
+      "command": [
+        "{python}",
+        "tests/qa/register-policy.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.02,
+      "log": "register-policy/log.txt",
+      "log_sha256": "d768bb48977db1cd6faa6dc8df8a486d1ea95dbf1ea713716e92dfb984497575",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "bank-occurrence-identity",
+      "command": [
+        "{python}",
+        "tests/journey/verify-final-occurrences.py"
+      ],
+      "exit_code": 0,
+      "seconds": 4.6,
+      "log": "bank-occurrence-identity/log.txt",
+      "log_sha256": "df8b1d6f2df2056cfd6511e1e877cdf18fadaf9cf4d98b06ab8bcad4b520c86c",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "map-native-zoom",
+      "command": [
+        "{python}",
+        "tests/journey/map_native_zoom.py"
+      ],
+      "exit_code": 0,
+      "seconds": 5.05,
+      "log": "map-native-zoom/log.txt",
+      "log_sha256": "88b52eb844ca59d9e9cc036886f63ecc3428ffab8c28998bcf73610d80f3ab13",
+      "receipts": [
+        {
+          "source": "evidence/v13/receipts/map-native-zoom.json",
+          "file": "map-native-zoom/map-native-zoom.json",
+          "sha256": "6e1c91453ffa8a87affecc33323b1e6e2c6f666b246e859d3efde978dd0eeaf3",
+          "state": "PASS",
+          "assertions": 1
+        }
+      ],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "capacity-beyond-string",
+      "command": [
+        "node",
+        "tests/v15/backup-capacity-large-zip.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 18.69,
+      "log": "capacity-beyond-string/log.txt",
+      "log_sha256": "17d66abc629876107e54485754e811d02c373ae3c684130e5625aca5783c03d2",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "viewed-coverage",
+      "command": [
+        "node",
+        "tests/journey/viewed-coverage.mjs",
+        "--dist",
+        "evidence/v151/exposure"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6,
+      "log": "viewed-coverage/log.txt",
+      "log_sha256": "1b148b2b3fd57cb87737c37d56565ad0cb6da8a5372491cd474fbac525fe8f70",
+      "receipts": [
+        {
+          "source": "evidence/v151/exposure/engine.json",
+          "file": "viewed-coverage/engine.json",
+          "sha256": "58d24e9c912e4ec92f5613cdab77b0140c8acd3ce1ca50b4715c2a1adf43b7b4",
+          "state": "PASS",
+          "assertions": 33
+        }
+      ],
+      "problems": [],
+      "assertions": 33,
+      "status": "PASS"
+    },
+    {
+      "id": "viewed-exports",
+      "command": [
+        "{python}",
+        "tests/journey/inspect-report-readiness.py",
+        "evidence/v151/exposure",
+        "--sparse"
+      ],
+      "exit_code": 0,
+      "seconds": 0.27,
+      "log": "viewed-exports/log.txt",
+      "log_sha256": "dbae85cecd83ce18ca0cc7caec32dae944fe8e17e804b87ccad781b21767a348",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "viewed-browser",
+      "command": [
+        "{python}",
+        "tests/journey/viewed-coverage-browser.py",
+        "--out",
+        "evidence/v151/exposure/browser.json"
+      ],
+      "exit_code": 0,
+      "seconds": 4.77,
+      "log": "viewed-browser/log.txt",
+      "log_sha256": "c8b5b08293b0afa1fac5695f3916ded29b6d7e10d8bbb7979744ea08a7200114",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "catalog-offline-v151-chromium",
+      "command": [
+        "{python}",
+        "tests/v151/catalog_offline.py",
+        "--engine",
+        "chromium",
+        "--out",
+        "evidence/v151/new-tests/chromium"
+      ],
+      "exit_code": 0,
+      "seconds": 34.39,
+      "log": "catalog-offline-v151-chromium/log.txt",
+      "log_sha256": "d8428ea009e827313474747e768e1de35a38416dada6cd55b556f859f2f7c946",
+      "receipts": [
+        {
+          "source": "evidence/v151/new-tests/chromium/catalog-offline-v151-chromium.json",
+          "file": "catalog-offline-v151-chromium/catalog-offline-v151-chromium.json",
+          "sha256": "44416c76f307f11904d6d60fec4fd9946dcbb6b157cf16e1a2fbf80aa233a423",
+          "state": "PASS",
+          "assertions": 11
+        }
+      ],
+      "problems": [],
+      "assertions": 11,
+      "status": "PASS"
+    },
+    {
+      "id": "catalog-offline-v151-firefox",
+      "command": [
+        "{python}",
+        "tests/v151/catalog_offline.py",
+        "--engine",
+        "firefox",
+        "--out",
+        "evidence/v151/new-tests/firefox"
+      ],
+      "exit_code": 0,
+      "seconds": 54.37,
+      "log": "catalog-offline-v151-firefox/log.txt",
+      "log_sha256": "dd91dc18aafda4fd4ffd4f73c9462edb5bdd40026481c8ca6f06052a9bd1dbeb",
+      "receipts": [
+        {
+          "source": "evidence/v151/new-tests/firefox/catalog-offline-v151-firefox.json",
+          "file": "catalog-offline-v151-firefox/catalog-offline-v151-firefox.json",
+          "sha256": "48d1da8fec2d94354798a13411cc0a6b0e4f792418c41afe406eef6fd1d25d4c",
+          "state": "PASS",
+          "assertions": 11
+        }
+      ],
+      "problems": [],
+      "assertions": 11,
+      "status": "PASS"
+    },
+    {
+      "id": "catalog-offline-v151-webkit",
+      "command": [
+        "{python}",
+        "tests/v151/catalog_offline.py",
+        "--engine",
+        "webkit",
+        "--out",
+        "evidence/v151/new-tests/webkit"
+      ],
+      "exit_code": 0,
+      "seconds": 32.8,
+      "log": "catalog-offline-v151-webkit/log.txt",
+      "log_sha256": "dd91dc18aafda4fd4ffd4f73c9462edb5bdd40026481c8ca6f06052a9bd1dbeb",
+      "receipts": [
+        {
+          "source": "evidence/v151/new-tests/webkit/catalog-offline-v151-webkit.json",
+          "file": "catalog-offline-v151-webkit/catalog-offline-v151-webkit.json",
+          "sha256": "a7774679c7e5865d947a7f289ae3fc2a906d13069dfbc870ff14ce2c877be563",
+          "state": "PASS",
+          "assertions": 11
+        }
+      ],
+      "problems": [],
+      "assertions": 11,
+      "status": "PASS"
+    },
+    {
+      "id": "time-offset-engine",
+      "command": [
+        "node",
+        "tests/v151/time-offset-engine.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 2.01,
+      "log": "time-offset-engine/log.txt",
+      "log_sha256": "db9c32cbb598698e3044b447d9326d8853320d5bb7bc6e6ed3d6ab568ec878e6",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "time-offset-exports",
+      "command": [
+        "{python}",
+        "tests/v151/time-offset-exports.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.29,
+      "log": "time-offset-exports/log.txt",
+      "log_sha256": "2834c5187d2046d4041c92127b20c4f3379c1ae98b13d4a0cb314cc9cd1284a0",
+      "receipts": [],
+      "problems": [],
+      "assertions": 1,
+      "status": "PASS"
+    },
+    {
+      "id": "external-receipts",
+      "command": [
+        "{python}",
+        "tests/qa/external-receipts.py"
+      ],
+      "exit_code": 0,
+      "seconds": 23.49,
+      "log": "external-receipts/log.txt",
+      "log_sha256": "3a6d48f8e4c04a4afab63c7653f5cd327b95130cdf1a0e5771ec2088e99c68a4",
+      "receipts": [],
+      "problems": [],
+      "assertions": 101,
+      "status": "PASS"
+    },
+    {
+      "id": "enter-cycles-chromium",
+      "command": [
+        "{python}",
+        "tests/v160/enter.py",
+        "chromium"
+      ],
+      "exit_code": 0,
+      "seconds": 3.73,
+      "log": "enter-cycles-chromium/log.txt",
+      "log_sha256": "3d3cd05b86461270ee2c40c71515d7dab221e95ae5ca8180911d58304837dfd6",
+      "receipts": [],
+      "problems": [],
+      "assertions": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "enter-cycles-firefox",
+      "command": [
+        "{python}",
+        "tests/v160/enter.py",
+        "firefox"
+      ],
+      "exit_code": 0,
+      "seconds": 6.27,
+      "log": "enter-cycles-firefox/log.txt",
+      "log_sha256": "c0928af020ba699f62fece591624caf8a8f797f50dfe383f9a20df846e1e9b0c",
+      "receipts": [],
+      "problems": [],
+      "assertions": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "enter-cycles-webkit",
+      "command": [
+        "{python}",
+        "tests/v160/enter.py",
+        "webkit"
+      ],
+      "exit_code": 0,
+      "seconds": 4.37,
+      "log": "enter-cycles-webkit/log.txt",
+      "log_sha256": "9a648633845df87fcfc9212abbc13c5cbf688aa36d0670be36004a28422cc7f8",
+      "receipts": [],
+      "problems": [],
+      "assertions": 6,
+      "status": "PASS"
+    },
+    {
+      "id": "learning-policy-160",
+      "command": [
+        "node",
+        "tests/v160/learning.mjs"
+      ],
+      "exit_code": 0,
+      "seconds": 0.08,
+      "log": "learning-policy-160/log.txt",
+      "log_sha256": "2144ea80ad00b9e764cc80b98f808036ff892db25f0b6032abd23479f8019929",
+      "receipts": [],
+      "problems": [],
+      "assertions": 5,
+      "status": "PASS"
+    },
+    {
+      "id": "portable-path-order",
+      "command": [
+        "{python}",
+        "tests/v160/path_order.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.11,
+      "log": "portable-path-order/log.txt",
+      "log_sha256": "99e0607d817f1d052401a35758c105fc95320bc131141aa49ee00d643c4668aa",
+      "receipts": [],
+      "problems": [],
+      "assertions": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "catalog-context",
+      "command": [
+        "{python}",
+        "tests/v160/routes.py",
+        "catalog"
+      ],
+      "exit_code": 0,
+      "seconds": 1.07,
+      "log": "catalog-context/log.txt",
+      "log_sha256": "3e2ddb42866cdeb442f69508d2470d55e6c2924efc794d2a0af1132add487411",
+      "receipts": [],
+      "problems": [],
+      "assertions": 4,
+      "status": "PASS"
+    },
+    {
+      "id": "route-faults",
+      "command": [
+        "{python}",
+        "tests/v160/routes.py",
+        "routes"
+      ],
+      "exit_code": 0,
+      "seconds": 3.52,
+      "log": "route-faults/log.txt",
+      "log_sha256": "18a0d33f2b98d3e37961413871b8af7a8f74dedddcbd895398d992e4d4c441fd",
+      "receipts": [],
+      "problems": [],
+      "assertions": 3,
+      "status": "PASS"
+    }
+  ],
+  "assertions": 1798
+}

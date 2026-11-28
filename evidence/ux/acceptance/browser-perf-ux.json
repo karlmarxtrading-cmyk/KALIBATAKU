@@ -1,0 +1,3150 @@
+{
+  "suite": "perf-ux",
+  "mode": "both",
+  "utc": "2026-11-25T22:39:30.303Z",
+  "navigator": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.8127.0 Safari/537.36",
+  "hardware_concurrency": 9,
+  "device_memory_gib": 8,
+  "cpu": "Unthrottled",
+  "network": "Managed preview; no artificial network throttling",
+  "method": "Synthetic scripted interaction. Mutation feedback measures DOM update, not trusted event or field INP. The cold path is unique for every navigation.",
+  "runs": [
+    {
+      "number": 1,
+      "viewport": [
+        1080,
+        760
+      ],
+      "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/",
+      "home": [
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/appearance.js",
+          "raw": 870,
+          "transfer": 1170,
+          "start_ms": 12.899999998509884,
+          "duration_ms": 6.600000001490116
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/assets/noto-Regular.woff",
+          "raw": 32636,
+          "transfer": 32936,
+          "start_ms": 13.099999997764826,
+          "duration_ms": 13.5
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/assets/noto-Bold.woff",
+          "raw": 32236,
+          "transfer": 32536,
+          "start_ms": 13.300000000745058,
+          "duration_ms": 17
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/assets/base.css",
+          "raw": 32397,
+          "transfer": 32697,
+          "start_ms": 13.399999998509884,
+          "duration_ms": 16.400000002235174
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/assets/mark.svg",
+          "raw": 274,
+          "transfer": 574,
+          "start_ms": 13.5,
+          "duration_ms": 21.899999998509884
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/app.mjs",
+          "raw": 16462,
+          "transfer": 16762,
+          "start_ms": 13.5,
+          "duration_ms": 21.199999999254942
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/dom.mjs",
+          "raw": 3524,
+          "transfer": 3824,
+          "start_ms": 46.80000000074506,
+          "duration_ms": 10.699999999254942
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/material.mjs",
+          "raw": 1186,
+          "transfer": 1486,
+          "start_ms": 46.80000000074506,
+          "duration_ms": 11.799999997019768
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/locales/id.json",
+          "raw": 9466,
+          "transfer": 9766,
+          "start_ms": 63.80000000074506,
+          "duration_ms": 8.599999997764826
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/store.js",
+          "raw": 13528,
+          "transfer": 13828,
+          "start_ms": 75.69999999925494,
+          "duration_ms": 3
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/common.js",
+          "raw": 1730,
+          "transfer": 2030,
+          "start_ms": 81.69999999925494,
+          "duration_ms": 11.199999999254942
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/db.js",
+          "raw": 5081,
+          "transfer": 5381,
+          "start_ms": 81.80000000074506,
+          "duration_ms": 12.5
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/summary.js",
+          "raw": 3417,
+          "transfer": 3717,
+          "start_ms": 81.89999999850988,
+          "duration_ms": 15.400000002235174
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/validate.js",
+          "raw": 2526,
+          "transfer": 2826,
+          "start_ms": 82,
+          "duration_ms": 16.699999999254942
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/contract-defs.js",
+          "raw": 13255,
+          "transfer": 13555,
+          "start_ms": 99.59999999776483,
+          "duration_ms": 5.200000002980232
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/home.mjs",
+          "raw": 4642,
+          "transfer": 4942,
+          "start_ms": 133,
+          "duration_ms": 3.199999999254942
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/bank.mjs",
+          "raw": 2606,
+          "transfer": 2906,
+          "start_ms": 152.19999999925494,
+          "duration_ms": 12.699999999254942
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/bank/index.json",
+          "raw": 684,
+          "transfer": 984,
+          "start_ms": 187,
+          "duration_ms": 7.399999998509884
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/bank/g01.json",
+          "raw": 552,
+          "transfer": 852,
+          "start_ms": 196.30000000074506,
+          "duration_ms": 5.399999998509884
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/bank/g01/l01.json",
+          "raw": 4893,
+          "transfer": 5193,
+          "start_ms": 208.09999999776483,
+          "duration_ms": 8.300000000745058
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/offline.js",
+          "raw": 8004,
+          "transfer": 8304,
+          "start_ms": 266,
+          "duration_ms": 9.599999997764826
+        }
+      ],
+      "catalog": {
+        "local_dom_feedback_ms": 6.899999998509884,
+        "paint_opportunity_ms": 29.199999999254942,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 86.60000000149012
+      },
+      "launch": {
+        "local_dom_feedback_ms": 2.199999999254942,
+        "paint_opportunity_ms": 21.800000000745058,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 1304
+      },
+      "submit": {
+        "local_dom_feedback_ms": 1.5999999977648258,
+        "paint_opportunity_ms": 15.399999998509884,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 45.80000000074506
+      },
+      "next": {
+        "local_dom_feedback_ms": 0.30000000074505806,
+        "paint_opportunity_ms": 21.400000002235174,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 45.5
+      },
+      "post_player": [
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/catalog.mjs",
+          "raw": 19911,
+          "transfer": 0,
+          "start_ms": 587.5,
+          "duration_ms": 23.099999997764826
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/player/start.mjs",
+          "raw": 7587,
+          "transfer": 0,
+          "start_ms": 697.3999999985099,
+          "duration_ms": 23
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/player/analytics.mjs",
+          "raw": 9283,
+          "transfer": 0,
+          "start_ms": 721,
+          "duration_ms": 30.199999999254942
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/player/engine.mjs",
+          "raw": 9947,
+          "transfer": 0,
+          "start_ms": 722.6999999992549,
+          "duration_ms": 34.600000001490116
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/player/math.mjs",
+          "raw": 4397,
+          "transfer": 0,
+          "start_ms": 722.8000000007451,
+          "duration_ms": 37.399999998509884
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/package-data.mjs",
+          "raw": 1565,
+          "transfer": 0,
+          "start_ms": 722.8000000007451,
+          "duration_ms": 38.69999999925494
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "raw": 12520,
+          "transfer": 0,
+          "start_ms": 875.6999999992549,
+          "duration_ms": 10.600000001490116
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/player/player.css",
+          "raw": 6293,
+          "transfer": 0,
+          "start_ms": 960.5999999977648,
+          "duration_ms": 10.600000001490116
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/player/view.mjs",
+          "raw": 2728,
+          "transfer": 0,
+          "start_ms": 960.8999999985099,
+          "duration_ms": 14.400000002235174
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/player/base.mjs",
+          "raw": 5132,
+          "transfer": 0,
+          "start_ms": 976,
+          "duration_ms": 12.300000000745058
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/math/view.mjs",
+          "raw": 5254,
+          "transfer": 0,
+          "start_ms": 991.1999999992549,
+          "duration_ms": 9.100000001490116
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/math/model.mjs",
+          "raw": 4635,
+          "transfer": 0,
+          "start_ms": 992.3000000007451,
+          "duration_ms": 11.799999997019768
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/player/session.mjs",
+          "raw": 34511,
+          "transfer": 0,
+          "start_ms": 1018.0999999977648,
+          "duration_ms": 11.800000000745058
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/learning/input-guide.mjs",
+          "raw": 2238,
+          "transfer": 0,
+          "start_ms": 1047,
+          "duration_ms": 14.300000000745058
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/vendor/mathjax-4.1.3/mml-svg.js",
+          "raw": 1702534,
+          "transfer": 0,
+          "start_ms": 1078.5999999977648,
+          "duration_ms": 60.80000000074506
+        }
+      ],
+      "preview": {
+        "local_dom_feedback_ms": 2.899999998509884,
+        "paint_opportunity_ms": 38.100000001490116,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 33.100000001490116
+      },
+      "post_teacher": [
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/teacher/index.js",
+          "raw": 23821,
+          "transfer": 0,
+          "start_ms": 2314.800000000745,
+          "duration_ms": 9.899999998509884
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/teacher/ui.js",
+          "raw": 1810,
+          "transfer": 0,
+          "start_ms": 2330.199999999255,
+          "duration_ms": 23.100000001490116
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/teacher/report.js",
+          "raw": 8979,
+          "transfer": 0,
+          "start_ms": 2330.300000000745,
+          "duration_ms": 23.299999997019768
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/teacher/demo.js",
+          "raw": 8553,
+          "transfer": 0,
+          "start_ms": 2330.5,
+          "duration_ms": 32.399999998509884
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/teacher/drafts.js",
+          "raw": 846,
+          "transfer": 0,
+          "start_ms": 2330.599999997765,
+          "duration_ms": 34.30000000074506
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/bridge.js",
+          "raw": 12157,
+          "transfer": 0,
+          "start_ms": 2367,
+          "duration_ms": 8.899999998509884
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/sync.js",
+          "raw": 6685,
+          "transfer": 0,
+          "start_ms": 2367.099999997765,
+          "duration_ms": 13.800000000745058
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/teacher/teacher.css",
+          "raw": 5043,
+          "transfer": 0,
+          "start_ms": 2383.39999999851,
+          "duration_ms": 11.300000000745058
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/teacher/reports-view.js",
+          "raw": 12914,
+          "transfer": 0,
+          "start_ms": 2457.699999999255,
+          "duration_ms": 13.899999998509884
+        },
+        {
+          "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/teacher/document.js",
+          "raw": 13753,
+          "transfer": 0,
+          "start_ms": 2475.699999999255,
+          "duration_ms": 22.5
+        }
+      ],
+      "home_lcp_candidates_ms": [
+        68,
+        276
+      ],
+      "home_lcp_ms": 276,
+      "shifts": [
+        {
+          "at": 593.6999999992549,
+          "value": 0.042953673245614034,
+          "input": false
+        },
+        {
+          "at": 657.3000000007451,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 666.5,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 856.5999999977648,
+          "value": 0.03597941794590643,
+          "input": false
+        },
+        {
+          "at": 898.5,
+          "value": 0.02055643778258339,
+          "input": false
+        },
+        {
+          "at": 947.5999999977648,
+          "value": 0.04225009137426901,
+          "input": false
+        },
+        {
+          "at": 1107.5,
+          "value": 0.05278183251096491,
+          "input": false
+        },
+        {
+          "at": 2202.5,
+          "value": 0.023693800065484893,
+          "input": false
+        },
+        {
+          "at": 2308.099999997765,
+          "value": 0.05068867644371345,
+          "input": false
+        },
+        {
+          "at": 2510.39999999851,
+          "value": 0.038576807687621825,
+          "input": false
+        }
+      ],
+      "cls": 0,
+      "journey_cls": 0.2831287947818524,
+      "long_tasks": [
+        {
+          "at": 764.0999999977648,
+          "ms": 86
+        },
+        {
+          "at": 1259.699999999255,
+          "ms": 271
+        }
+      ],
+      "navigation_ms": 65,
+      "warm_home": {
+        "lcp_ms": 316,
+        "cls": 0,
+        "resources": [
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/appearance.js",
+            "raw": 870,
+            "transfer": 0,
+            "start_ms": 36.30000000074506,
+            "duration_ms": 13.699999999254942
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/assets/noto-Regular.woff",
+            "raw": 32636,
+            "transfer": 0,
+            "start_ms": 36.69999999925494,
+            "duration_ms": 17.600000001490116
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/assets/noto-Bold.woff",
+            "raw": 32236,
+            "transfer": 0,
+            "start_ms": 36.69999999925494,
+            "duration_ms": 23.600000001490116
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/assets/base.css",
+            "raw": 32397,
+            "transfer": 0,
+            "start_ms": 36.80000000074506,
+            "duration_ms": 23.5
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/app.mjs",
+            "raw": 16462,
+            "transfer": 0,
+            "start_ms": 36.80000000074506,
+            "duration_ms": 26.399999998509884
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/assets/mark.svg",
+            "raw": 274,
+            "transfer": 0,
+            "start_ms": 37,
+            "duration_ms": 45.100000001490116
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/dom.mjs",
+            "raw": 3524,
+            "transfer": 0,
+            "start_ms": 67.80000000074506,
+            "duration_ms": 15.099999997764826
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/material.mjs",
+            "raw": 1186,
+            "transfer": 0,
+            "start_ms": 67.89999999850988,
+            "duration_ms": 18.200000002980232
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/locales/id.json",
+            "raw": 9466,
+            "transfer": 0,
+            "start_ms": 101.5,
+            "duration_ms": 9.899999998509884
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/store.js",
+            "raw": 13528,
+            "transfer": 0,
+            "start_ms": 115.89999999850988,
+            "duration_ms": 5.600000001490116
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/common.js",
+            "raw": 1730,
+            "transfer": 0,
+            "start_ms": 133.30000000074506,
+            "duration_ms": 13.099999997764826
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/db.js",
+            "raw": 5081,
+            "transfer": 0,
+            "start_ms": 133.39999999850988,
+            "duration_ms": 15.700000002980232
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/summary.js",
+            "raw": 3417,
+            "transfer": 0,
+            "start_ms": 133.5,
+            "duration_ms": 18.399999998509884
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/validate.js",
+            "raw": 2526,
+            "transfer": 0,
+            "start_ms": 133.60000000149012,
+            "duration_ms": 15.899999998509884
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/contract-defs.js",
+            "raw": 13255,
+            "transfer": 0,
+            "start_ms": 151.60000000149012,
+            "duration_ms": 6.099999997764826
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/home.mjs",
+            "raw": 4642,
+            "transfer": 0,
+            "start_ms": 176,
+            "duration_ms": 7.699999999254942
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/core/bank.mjs",
+            "raw": 2606,
+            "transfer": 0,
+            "start_ms": 198.80000000074506,
+            "duration_ms": 14.599999997764826
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/bank/index.json",
+            "raw": 684,
+            "transfer": 0,
+            "start_ms": 239.89999999850988,
+            "duration_ms": 11
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/bank/g01.json",
+            "raw": 552,
+            "transfer": 0,
+            "start_ms": 251.60000000149012,
+            "duration_ms": 3.7999999970197678
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/bank/g01/l01.json",
+            "raw": 4893,
+            "transfer": 0,
+            "start_ms": 256.5,
+            "duration_ms": 12.300000000745058
+          },
+          {
+            "path": "/probe-lab-cf9dbf71-b1a9-4890-a0cb-c63fe9e2ba09/school/math/data/offline.js",
+            "raw": 8004,
+            "transfer": 0,
+            "start_ms": 294.30000000074506,
+            "duration_ms": 7.800000000745058
+          }
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "viewport": [
+        1080,
+        760
+      ],
+      "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/",
+      "home": [
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/appearance.js",
+          "raw": 870,
+          "transfer": 1170,
+          "start_ms": 36.5,
+          "duration_ms": 12
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/assets/noto-Regular.woff",
+          "raw": 32636,
+          "transfer": 32936,
+          "start_ms": 37,
+          "duration_ms": 16.400000002235174
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/assets/noto-Bold.woff",
+          "raw": 32236,
+          "transfer": 32536,
+          "start_ms": 37.19999999925494,
+          "duration_ms": 17
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/assets/base.css",
+          "raw": 32397,
+          "transfer": 32697,
+          "start_ms": 37.30000000074506,
+          "duration_ms": 7.600000001490116
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/app.mjs",
+          "raw": 16462,
+          "transfer": 16762,
+          "start_ms": 37.30000000074506,
+          "duration_ms": 22.699999999254942
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/assets/mark.svg",
+          "raw": 274,
+          "transfer": 574,
+          "start_ms": 37.400000002235174,
+          "duration_ms": 28.399999998509884
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/material.mjs",
+          "raw": 1186,
+          "transfer": 1486,
+          "start_ms": 72.80000000074506,
+          "duration_ms": 10.600000001490116
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/dom.mjs",
+          "raw": 3524,
+          "transfer": 3824,
+          "start_ms": 72.80000000074506,
+          "duration_ms": 13
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/locales/id.json",
+          "raw": 9466,
+          "transfer": 9766,
+          "start_ms": 89.5,
+          "duration_ms": 3.900000002235174
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/store.js",
+          "raw": 13528,
+          "transfer": 13828,
+          "start_ms": 97.80000000074506,
+          "duration_ms": 10.399999998509884
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/common.js",
+          "raw": 1730,
+          "transfer": 2030,
+          "start_ms": 109.80000000074506,
+          "duration_ms": 12.899999998509884
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/summary.js",
+          "raw": 3417,
+          "transfer": 3717,
+          "start_ms": 110,
+          "duration_ms": 12.199999999254942
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/db.js",
+          "raw": 5081,
+          "transfer": 5381,
+          "start_ms": 110,
+          "duration_ms": 13.100000001490116
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/validate.js",
+          "raw": 2526,
+          "transfer": 2826,
+          "start_ms": 110.30000000074506,
+          "duration_ms": 11.300000000745058
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/contract-defs.js",
+          "raw": 13255,
+          "transfer": 13555,
+          "start_ms": 123.10000000149012,
+          "duration_ms": 3.099999997764826
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/home.mjs",
+          "raw": 4642,
+          "transfer": 4942,
+          "start_ms": 147.90000000223517,
+          "duration_ms": 6.399999998509884
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/bank.mjs",
+          "raw": 2606,
+          "transfer": 2906,
+          "start_ms": 155.69999999925494,
+          "duration_ms": 7.100000001490116
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/bank/index.json",
+          "raw": 684,
+          "transfer": 984,
+          "start_ms": 177.69999999925494,
+          "duration_ms": 2.300000000745058
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/bank/g01.json",
+          "raw": 552,
+          "transfer": 852,
+          "start_ms": 180.69999999925494,
+          "duration_ms": 2.2000000029802322
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/bank/g01/l01.json",
+          "raw": 4893,
+          "transfer": 5193,
+          "start_ms": 183.69999999925494,
+          "duration_ms": 4.700000002980232
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/offline.js",
+          "raw": 8004,
+          "transfer": 8304,
+          "start_ms": 201,
+          "duration_ms": 5
+        }
+      ],
+      "catalog": {
+        "local_dom_feedback_ms": 1.5,
+        "paint_opportunity_ms": 19.899999998509884,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 83.30000000074506
+      },
+      "launch": {
+        "local_dom_feedback_ms": 0.6999999992549419,
+        "paint_opportunity_ms": 17.5,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 838.6000000014901
+      },
+      "submit": {
+        "local_dom_feedback_ms": 1.6000000014901161,
+        "paint_opportunity_ms": 30.400000002235174,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 32.100000001490116
+      },
+      "next": {
+        "local_dom_feedback_ms": 0.5,
+        "paint_opportunity_ms": 28.100000001490116,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 28
+      },
+      "post_player": [
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/catalog.mjs",
+          "raw": 19911,
+          "transfer": 0,
+          "start_ms": 549,
+          "duration_ms": 18.600000001490116
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/player/start.mjs",
+          "raw": 7587,
+          "transfer": 0,
+          "start_ms": 625.5,
+          "duration_ms": 11.400000002235174
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/player/analytics.mjs",
+          "raw": 9283,
+          "transfer": 0,
+          "start_ms": 641.8000000007451,
+          "duration_ms": 7
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/player/engine.mjs",
+          "raw": 9947,
+          "transfer": 0,
+          "start_ms": 641.9000000022352,
+          "duration_ms": 12
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/player/math.mjs",
+          "raw": 4397,
+          "transfer": 0,
+          "start_ms": 642,
+          "duration_ms": 15.199999999254942
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/package-data.mjs",
+          "raw": 1565,
+          "transfer": 0,
+          "start_ms": 647.3000000007451,
+          "duration_ms": 10
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "raw": 12520,
+          "transfer": 0,
+          "start_ms": 674.6999999992549,
+          "duration_ms": 20.400000002235174
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/player/player.css",
+          "raw": 6293,
+          "transfer": 0,
+          "start_ms": 760.1000000014901,
+          "duration_ms": 16.399999998509884
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/player/view.mjs",
+          "raw": 2728,
+          "transfer": 0,
+          "start_ms": 760.4000000022352,
+          "duration_ms": 11.199999999254942
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/player/base.mjs",
+          "raw": 5132,
+          "transfer": 0,
+          "start_ms": 775.5,
+          "duration_ms": 10.699999999254942
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/math/view.mjs",
+          "raw": 5254,
+          "transfer": 0,
+          "start_ms": 787.1999999992549,
+          "duration_ms": 6.300000000745058
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/math/model.mjs",
+          "raw": 4635,
+          "transfer": 0,
+          "start_ms": 787.3000000007451,
+          "duration_ms": 7.399999998509884
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/player/session.mjs",
+          "raw": 34511,
+          "transfer": 0,
+          "start_ms": 805.6000000014901,
+          "duration_ms": 6.099999997764826
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/learning/input-guide.mjs",
+          "raw": 2238,
+          "transfer": 0,
+          "start_ms": 814.1000000014901,
+          "duration_ms": 6.399999998509884
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/vendor/mathjax-4.1.3/mml-svg.js",
+          "raw": 1702534,
+          "transfer": 0,
+          "start_ms": 828.5,
+          "duration_ms": 26.699999999254942
+        }
+      ],
+      "preview": {
+        "local_dom_feedback_ms": 1.1000000014901161,
+        "paint_opportunity_ms": 31.100000001490116,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 30.900000002235174
+      },
+      "post_teacher": [
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/teacher/index.js",
+          "raw": 23821,
+          "transfer": 0,
+          "start_ms": 1637,
+          "duration_ms": 7.5
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/teacher/ui.js",
+          "raw": 1810,
+          "transfer": 0,
+          "start_ms": 1648.5,
+          "duration_ms": 12.300000000745058
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/teacher/report.js",
+          "raw": 8979,
+          "transfer": 0,
+          "start_ms": 1648.6000000014901,
+          "duration_ms": 20.599999997764826
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/teacher/drafts.js",
+          "raw": 846,
+          "transfer": 0,
+          "start_ms": 1648.699999999255,
+          "duration_ms": 21.5
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/teacher/demo.js",
+          "raw": 8553,
+          "transfer": 0,
+          "start_ms": 1648.699999999255,
+          "duration_ms": 21.5
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/bridge.js",
+          "raw": 12157,
+          "transfer": 0,
+          "start_ms": 1671.4000000022352,
+          "duration_ms": 12.399999998509884
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/sync.js",
+          "raw": 6685,
+          "transfer": 0,
+          "start_ms": 1671.6000000014901,
+          "duration_ms": 12.099999997764826
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/teacher/teacher.css",
+          "raw": 5043,
+          "transfer": 0,
+          "start_ms": 1688.199999999255,
+          "duration_ms": 17.400000002235174
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/teacher/reports-view.js",
+          "raw": 12914,
+          "transfer": 0,
+          "start_ms": 1728.1000000014901,
+          "duration_ms": 14.599999997764826
+        },
+        {
+          "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/teacher/document.js",
+          "raw": 13753,
+          "transfer": 0,
+          "start_ms": 1744.4000000022352,
+          "duration_ms": 9.699999999254942
+        }
+      ],
+      "home_lcp_candidates_ms": [
+        88,
+        216
+      ],
+      "home_lcp_ms": 216,
+      "shifts": [
+        {
+          "at": 525.6000000014901,
+          "value": 0.042953673245614034,
+          "input": false
+        },
+        {
+          "at": 605.1000000014901,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 608.6000000014901,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 667.6000000014901,
+          "value": 0.03597941794590643,
+          "input": false
+        },
+        {
+          "at": 706.8000000007451,
+          "value": 0.02055643778258339,
+          "input": false
+        },
+        {
+          "at": 747.1000000014901,
+          "value": 0.04225009137426901,
+          "input": false
+        },
+        {
+          "at": 846.3000000007451,
+          "value": 0.05278183251096491,
+          "input": false
+        },
+        {
+          "at": 1542,
+          "value": 0.023693800065484893,
+          "input": false
+        },
+        {
+          "at": 1631.800000000745,
+          "value": 0.05068867644371345,
+          "input": false
+        },
+        {
+          "at": 1772.800000000745,
+          "value": 0.038576807687621825,
+          "input": false
+        }
+      ],
+      "cls": 0,
+      "journey_cls": 0.39608807897867254,
+      "long_tasks": [
+        {
+          "at": 932.6999999992549,
+          "ms": 165
+        }
+      ],
+      "navigation_ms": 90.10000000149012,
+      "warm_home": {
+        "lcp_ms": 216,
+        "cls": 0,
+        "resources": [
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/appearance.js",
+            "raw": 870,
+            "transfer": 0,
+            "start_ms": 23.699999999254942,
+            "duration_ms": 15.900000002235174
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/assets/noto-Regular.woff",
+            "raw": 32636,
+            "transfer": 0,
+            "start_ms": 23.900000002235174,
+            "duration_ms": 23.199999999254942
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/assets/noto-Bold.woff",
+            "raw": 32236,
+            "transfer": 0,
+            "start_ms": 24.100000001490116,
+            "duration_ms": 23.099999997764826
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/assets/base.css",
+            "raw": 32397,
+            "transfer": 0,
+            "start_ms": 24.300000000745058,
+            "duration_ms": 27.899999998509884
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/app.mjs",
+            "raw": 16462,
+            "transfer": 0,
+            "start_ms": 24.400000002235174,
+            "duration_ms": 28.5
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/assets/mark.svg",
+            "raw": 274,
+            "transfer": 0,
+            "start_ms": 24.5,
+            "duration_ms": 32.69999999925494
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/dom.mjs",
+            "raw": 3524,
+            "transfer": 0,
+            "start_ms": 62.400000002235174,
+            "duration_ms": 9.299999997019768
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/material.mjs",
+            "raw": 1186,
+            "transfer": 0,
+            "start_ms": 62.600000001490116,
+            "duration_ms": 9
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/locales/id.json",
+            "raw": 9466,
+            "transfer": 0,
+            "start_ms": 73.10000000149012,
+            "duration_ms": 7.800000000745058
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/store.js",
+            "raw": 13528,
+            "transfer": 0,
+            "start_ms": 81.90000000223517,
+            "duration_ms": 6.599999997764826
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/common.js",
+            "raw": 1730,
+            "transfer": 0,
+            "start_ms": 90.10000000149012,
+            "duration_ms": 8.399999998509884
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/db.js",
+            "raw": 5081,
+            "transfer": 0,
+            "start_ms": 90.19999999925494,
+            "duration_ms": 11.5
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/summary.js",
+            "raw": 3417,
+            "transfer": 0,
+            "start_ms": 90.19999999925494,
+            "duration_ms": 11.600000001490116
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/validate.js",
+            "raw": 2526,
+            "transfer": 0,
+            "start_ms": 90.40000000223517,
+            "duration_ms": 11.399999998509884
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/contract-defs.js",
+            "raw": 13255,
+            "transfer": 0,
+            "start_ms": 105.30000000074506,
+            "duration_ms": 5.300000000745058
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/home.mjs",
+            "raw": 4642,
+            "transfer": 0,
+            "start_ms": 122.40000000223517,
+            "duration_ms": 5.099999997764826
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/core/bank.mjs",
+            "raw": 2606,
+            "transfer": 0,
+            "start_ms": 129.80000000074506,
+            "duration_ms": 10.300000000745058
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/bank/index.json",
+            "raw": 684,
+            "transfer": 0,
+            "start_ms": 148.10000000149012,
+            "duration_ms": 3.800000000745058
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/bank/g01.json",
+            "raw": 552,
+            "transfer": 0,
+            "start_ms": 153.80000000074506,
+            "duration_ms": 4.5
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/bank/g01/l01.json",
+            "raw": 4893,
+            "transfer": 0,
+            "start_ms": 159.90000000223517,
+            "duration_ms": 7.099999997764826
+          },
+          {
+            "path": "/probe-lab-e6aefa08-6e2a-4673-8468-405c1b387e88/school/math/data/offline.js",
+            "raw": 8004,
+            "transfer": 0,
+            "start_ms": 217.80000000074506,
+            "duration_ms": 8
+          }
+        ]
+      }
+    },
+    {
+      "number": 3,
+      "viewport": [
+        1080,
+        760
+      ],
+      "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/",
+      "home": [
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/appearance.js",
+          "raw": 870,
+          "transfer": 1170,
+          "start_ms": 26.5,
+          "duration_ms": 14.699999999254942
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/assets/noto-Regular.woff",
+          "raw": 32636,
+          "transfer": 32936,
+          "start_ms": 26.800000000745058,
+          "duration_ms": 13.599999997764826
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/assets/noto-Bold.woff",
+          "raw": 32236,
+          "transfer": 32536,
+          "start_ms": 26.899999998509884,
+          "duration_ms": 15.100000001490116
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/assets/base.css",
+          "raw": 32397,
+          "transfer": 32697,
+          "start_ms": 27,
+          "duration_ms": 15.5
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/app.mjs",
+          "raw": 16462,
+          "transfer": 16762,
+          "start_ms": 27.100000001490116,
+          "duration_ms": 15.899999998509884
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/assets/mark.svg",
+          "raw": 274,
+          "transfer": 574,
+          "start_ms": 27.300000000745058,
+          "duration_ms": 28.399999998509884
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/dom.mjs",
+          "raw": 3524,
+          "transfer": 3824,
+          "start_ms": 52.5,
+          "duration_ms": 6.899999998509884
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/material.mjs",
+          "raw": 1186,
+          "transfer": 1486,
+          "start_ms": 53.100000001490116,
+          "duration_ms": 7.5
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/locales/id.json",
+          "raw": 9466,
+          "transfer": 9766,
+          "start_ms": 72.19999999925494,
+          "duration_ms": 8.699999999254942
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/store.js",
+          "raw": 13528,
+          "transfer": 13828,
+          "start_ms": 82.89999999850988,
+          "duration_ms": 2
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/db.js",
+          "raw": 5081,
+          "transfer": 5381,
+          "start_ms": 89.5,
+          "duration_ms": 11.300000000745058
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/common.js",
+          "raw": 1730,
+          "transfer": 2030,
+          "start_ms": 89.5,
+          "duration_ms": 15.100000001490116
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/summary.js",
+          "raw": 3417,
+          "transfer": 3717,
+          "start_ms": 89.69999999925494,
+          "duration_ms": 15.300000000745058
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/validate.js",
+          "raw": 2526,
+          "transfer": 2826,
+          "start_ms": 89.89999999850988,
+          "duration_ms": 17.300000000745058
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/contract-defs.js",
+          "raw": 13255,
+          "transfer": 13555,
+          "start_ms": 109.39999999850988,
+          "duration_ms": 3.2000000029802322
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/home.mjs",
+          "raw": 4642,
+          "transfer": 4942,
+          "start_ms": 124.89999999850988,
+          "duration_ms": 2.100000001490116
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/bank.mjs",
+          "raw": 2606,
+          "transfer": 2906,
+          "start_ms": 135.69999999925494,
+          "duration_ms": 4.5
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/bank/index.json",
+          "raw": 684,
+          "transfer": 984,
+          "start_ms": 147.80000000074506,
+          "duration_ms": 2.099999997764826
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/bank/g01.json",
+          "raw": 552,
+          "transfer": 852,
+          "start_ms": 150.89999999850988,
+          "duration_ms": 3.5
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/bank/g01/l01.json",
+          "raw": 4893,
+          "transfer": 5193,
+          "start_ms": 158.80000000074506,
+          "duration_ms": 3.099999997764826
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/offline.js",
+          "raw": 8004,
+          "transfer": 8304,
+          "start_ms": 198.39999999850988,
+          "duration_ms": 6.100000001490116
+        }
+      ],
+      "catalog": {
+        "local_dom_feedback_ms": 1.3999999985098839,
+        "paint_opportunity_ms": 14.300000000745058,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 146.69999999925494
+      },
+      "launch": {
+        "local_dom_feedback_ms": 1,
+        "paint_opportunity_ms": 20.599999997764826,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 870.0999999977648
+      },
+      "submit": {
+        "local_dom_feedback_ms": 1.5999999977648258,
+        "paint_opportunity_ms": 15.5,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 49.69999999925494
+      },
+      "next": {
+        "local_dom_feedback_ms": 0.19999999925494194,
+        "paint_opportunity_ms": 20,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 44.600000001490116
+      },
+      "post_player": [
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/catalog.mjs",
+          "raw": 19911,
+          "transfer": 0,
+          "start_ms": 521.1999999992549,
+          "duration_ms": 60.30000000074506
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/player/start.mjs",
+          "raw": 7587,
+          "transfer": 0,
+          "start_ms": 672.5,
+          "duration_ms": 6.199999999254942
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/player/analytics.mjs",
+          "raw": 9283,
+          "transfer": 0,
+          "start_ms": 682,
+          "duration_ms": 14.800000000745058
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/player/engine.mjs",
+          "raw": 9947,
+          "transfer": 0,
+          "start_ms": 682.1000000014901,
+          "duration_ms": 19.699999999254942
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/player/math.mjs",
+          "raw": 4397,
+          "transfer": 0,
+          "start_ms": 682.1999999992549,
+          "duration_ms": 22.300000000745058
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/package-data.mjs",
+          "raw": 1565,
+          "transfer": 0,
+          "start_ms": 682.3000000007451,
+          "duration_ms": 22.199999999254942
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "raw": 12520,
+          "transfer": 0,
+          "start_ms": 726.6000000014901,
+          "duration_ms": 10.299999997019768
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/player/player.css",
+          "raw": 6293,
+          "transfer": 0,
+          "start_ms": 774.5,
+          "duration_ms": 14.100000001490116
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/player/view.mjs",
+          "raw": 2728,
+          "transfer": 0,
+          "start_ms": 774.8999999985099,
+          "duration_ms": 17.800000000745058
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/player/base.mjs",
+          "raw": 5132,
+          "transfer": 0,
+          "start_ms": 793.8000000007451,
+          "duration_ms": 7.199999999254942
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/math/view.mjs",
+          "raw": 5254,
+          "transfer": 0,
+          "start_ms": 802.3000000007451,
+          "duration_ms": 12.599999997764826
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/math/model.mjs",
+          "raw": 4635,
+          "transfer": 0,
+          "start_ms": 802.3999999985099,
+          "duration_ms": 13.200000002980232
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/player/session.mjs",
+          "raw": 34511,
+          "transfer": 0,
+          "start_ms": 820.1999999992549,
+          "duration_ms": 6.100000001490116
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/learning/input-guide.mjs",
+          "raw": 2238,
+          "transfer": 0,
+          "start_ms": 830.6999999992549,
+          "duration_ms": 7.300000000745058
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/vendor/mathjax-4.1.3/mml-svg.js",
+          "raw": 1702534,
+          "transfer": 0,
+          "start_ms": 850.5,
+          "duration_ms": 30.600000001490116
+        }
+      ],
+      "preview": {
+        "local_dom_feedback_ms": 0.3999999985098839,
+        "paint_opportunity_ms": 29.600000001490116,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 29.699999999254942
+      },
+      "post_teacher": [
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/teacher/index.js",
+          "raw": 23821,
+          "transfer": 0,
+          "start_ms": 1728.699999999255,
+          "duration_ms": 6.100000001490116
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/teacher/ui.js",
+          "raw": 1810,
+          "transfer": 0,
+          "start_ms": 1737.300000000745,
+          "duration_ms": 8.5
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/teacher/report.js",
+          "raw": 8979,
+          "transfer": 0,
+          "start_ms": 1738.300000000745,
+          "duration_ms": 12.399999998509884
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/teacher/demo.js",
+          "raw": 8553,
+          "transfer": 0,
+          "start_ms": 1738.3999999985099,
+          "duration_ms": 13.200000002980232
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/teacher/drafts.js",
+          "raw": 846,
+          "transfer": 0,
+          "start_ms": 1738.5,
+          "duration_ms": 12.300000000745058
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/bridge.js",
+          "raw": 12157,
+          "transfer": 0,
+          "start_ms": 1753.3999999985099,
+          "duration_ms": 17.300000000745058
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/sync.js",
+          "raw": 6685,
+          "transfer": 0,
+          "start_ms": 1753.5,
+          "duration_ms": 19.600000001490116
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/teacher/teacher.css",
+          "raw": 5043,
+          "transfer": 0,
+          "start_ms": 1775.300000000745,
+          "duration_ms": 6
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/teacher/reports-view.js",
+          "raw": 12914,
+          "transfer": 0,
+          "start_ms": 1810.5,
+          "duration_ms": 17.899999998509884
+        },
+        {
+          "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/teacher/document.js",
+          "raw": 13753,
+          "transfer": 0,
+          "start_ms": 1834.699999999255,
+          "duration_ms": 7
+        }
+      ],
+      "home_lcp_candidates_ms": [
+        100,
+        204
+      ],
+      "home_lcp_ms": 204,
+      "shifts": [
+        {
+          "at": 505.30000000074506,
+          "value": 0.042953673245614034,
+          "input": false
+        },
+        {
+          "at": 641,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 648,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 720.3999999985099,
+          "value": 0.03597941794590643,
+          "input": false
+        },
+        {
+          "at": 742.1999999992549,
+          "value": 0.02055643778258339,
+          "input": false
+        },
+        {
+          "at": 786.5,
+          "value": 0.04225009137426901,
+          "input": false
+        },
+        {
+          "at": 863.5,
+          "value": 0.05278183251096491,
+          "input": false
+        },
+        {
+          "at": 1607.3999999985099,
+          "value": 0.023693800065484893,
+          "input": false
+        },
+        {
+          "at": 1731.3999999985099,
+          "value": 0.05068867644371345,
+          "input": false
+        },
+        {
+          "at": 1853.199999999255,
+          "value": 0.038576807687621825,
+          "input": false
+        }
+      ],
+      "cls": 0,
+      "journey_cls": 0.39608807897867254,
+      "long_tasks": [
+        {
+          "at": 1042.6000000014901,
+          "ms": 152
+        }
+      ],
+      "navigation_ms": 72.69999999925494,
+      "warm_home": {
+        "lcp_ms": 272,
+        "cls": 0,
+        "resources": [
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/appearance.js",
+            "raw": 870,
+            "transfer": 0,
+            "start_ms": 26.599999997764826,
+            "duration_ms": 16.400000002235174
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/assets/noto-Regular.woff",
+            "raw": 32636,
+            "transfer": 0,
+            "start_ms": 28.300000000745058,
+            "duration_ms": 18.5
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/assets/noto-Bold.woff",
+            "raw": 32236,
+            "transfer": 0,
+            "start_ms": 28.5,
+            "duration_ms": 17.5
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/assets/base.css",
+            "raw": 32397,
+            "transfer": 0,
+            "start_ms": 28.5,
+            "duration_ms": 21.599999997764826
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/app.mjs",
+            "raw": 16462,
+            "transfer": 0,
+            "start_ms": 28.599999997764826,
+            "duration_ms": 21.700000002980232
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/assets/mark.svg",
+            "raw": 274,
+            "transfer": 0,
+            "start_ms": 28.699999999254942,
+            "duration_ms": 28.100000001490116
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/dom.mjs",
+            "raw": 3524,
+            "transfer": 0,
+            "start_ms": 68,
+            "duration_ms": 13.800000000745058
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/material.mjs",
+            "raw": 1186,
+            "transfer": 0,
+            "start_ms": 68.5,
+            "duration_ms": 17.599999997764826
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/locales/id.json",
+            "raw": 9466,
+            "transfer": 0,
+            "start_ms": 88.59999999776483,
+            "duration_ms": 6.700000002980232
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/store.js",
+            "raw": 13528,
+            "transfer": 0,
+            "start_ms": 96.59999999776483,
+            "duration_ms": 9.900000002235174
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/common.js",
+            "raw": 1730,
+            "transfer": 0,
+            "start_ms": 112.89999999850988,
+            "duration_ms": 8.800000000745058
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/db.js",
+            "raw": 5081,
+            "transfer": 0,
+            "start_ms": 113,
+            "duration_ms": 13.5
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/summary.js",
+            "raw": 3417,
+            "transfer": 0,
+            "start_ms": 113,
+            "duration_ms": 14.800000000745058
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/validate.js",
+            "raw": 2526,
+            "transfer": 0,
+            "start_ms": 113.09999999776483,
+            "duration_ms": 13.800000000745058
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/contract-defs.js",
+            "raw": 13255,
+            "transfer": 0,
+            "start_ms": 129.59999999776483,
+            "duration_ms": 10.700000002980232
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/home.mjs",
+            "raw": 4642,
+            "transfer": 0,
+            "start_ms": 166,
+            "duration_ms": 12.099999997764826
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/core/bank.mjs",
+            "raw": 2606,
+            "transfer": 0,
+            "start_ms": 186,
+            "duration_ms": 10.399999998509884
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/bank/index.json",
+            "raw": 684,
+            "transfer": 0,
+            "start_ms": 213.09999999776483,
+            "duration_ms": 3.100000001490116
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/bank/g01.json",
+            "raw": 552,
+            "transfer": 0,
+            "start_ms": 217.30000000074506,
+            "duration_ms": 7.299999997019768
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/bank/g01/l01.json",
+            "raw": 4893,
+            "transfer": 0,
+            "start_ms": 227.09999999776483,
+            "duration_ms": 4.200000002980232
+          },
+          {
+            "path": "/probe-lab-90aa95dc-9f53-4a98-85dd-cd5c0a222277/school/math/data/offline.js",
+            "raw": 8004,
+            "transfer": 0,
+            "start_ms": 270.5999999977648,
+            "duration_ms": 8.5
+          }
+        ]
+      }
+    },
+    {
+      "number": 4,
+      "viewport": [
+        1080,
+        760
+      ],
+      "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/",
+      "home": [
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/appearance.js",
+          "raw": 870,
+          "transfer": 1170,
+          "start_ms": 36.600000001490116,
+          "duration_ms": 7.600000001490116
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/assets/noto-Bold.woff",
+          "raw": 32236,
+          "transfer": 32536,
+          "start_ms": 36.80000000074506,
+          "duration_ms": 18.400000002235174
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/assets/noto-Regular.woff",
+          "raw": 32636,
+          "transfer": 32936,
+          "start_ms": 36.80000000074506,
+          "duration_ms": 17.600000001490116
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/assets/base.css",
+          "raw": 32397,
+          "transfer": 32697,
+          "start_ms": 36.900000002235174,
+          "duration_ms": 4.800000000745058
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/app.mjs",
+          "raw": 16462,
+          "transfer": 16762,
+          "start_ms": 37,
+          "duration_ms": 17.700000002980232
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/assets/mark.svg",
+          "raw": 274,
+          "transfer": 574,
+          "start_ms": 37,
+          "duration_ms": 23.900000002235174
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/dom.mjs",
+          "raw": 3524,
+          "transfer": 3824,
+          "start_ms": 73.5,
+          "duration_ms": 2.7000000029802322
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/material.mjs",
+          "raw": 1186,
+          "transfer": 1486,
+          "start_ms": 73.70000000298023,
+          "duration_ms": 6.899999998509884
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/locales/id.json",
+          "raw": 9466,
+          "transfer": 9766,
+          "start_ms": 83.60000000149012,
+          "duration_ms": 7.800000000745058
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/store.js",
+          "raw": 13528,
+          "transfer": 13828,
+          "start_ms": 104.70000000298023,
+          "duration_ms": 6
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/common.js",
+          "raw": 1730,
+          "transfer": 2030,
+          "start_ms": 112.5,
+          "duration_ms": 2.5
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/db.js",
+          "raw": 5081,
+          "transfer": 5381,
+          "start_ms": 112.60000000149012,
+          "duration_ms": 7
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/summary.js",
+          "raw": 3417,
+          "transfer": 3717,
+          "start_ms": 112.60000000149012,
+          "duration_ms": 7.399999998509884
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/validate.js",
+          "raw": 2526,
+          "transfer": 2826,
+          "start_ms": 112.70000000298023,
+          "duration_ms": 8.399999998509884
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/contract-defs.js",
+          "raw": 13255,
+          "transfer": 13555,
+          "start_ms": 125.70000000298023,
+          "duration_ms": 3.599999997764826
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/home.mjs",
+          "raw": 4642,
+          "transfer": 4942,
+          "start_ms": 153,
+          "duration_ms": 2
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/bank.mjs",
+          "raw": 2606,
+          "transfer": 2906,
+          "start_ms": 174.80000000074506,
+          "duration_ms": 5.5
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/bank/index.json",
+          "raw": 684,
+          "transfer": 984,
+          "start_ms": 203.80000000074506,
+          "duration_ms": 6.300000000745058
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/bank/g01.json",
+          "raw": 552,
+          "transfer": 852,
+          "start_ms": 211.5,
+          "duration_ms": 12
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/bank/g01/l01.json",
+          "raw": 4893,
+          "transfer": 5193,
+          "start_ms": 226.30000000074506,
+          "duration_ms": 5.199999999254942
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/offline.js",
+          "raw": 8004,
+          "transfer": 8304,
+          "start_ms": 275.20000000298023,
+          "duration_ms": 5.599999997764826
+        }
+      ],
+      "catalog": {
+        "local_dom_feedback_ms": 1.300000000745058,
+        "paint_opportunity_ms": 12.5,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 83.10000000149012
+      },
+      "launch": {
+        "local_dom_feedback_ms": 0.6999999992549419,
+        "paint_opportunity_ms": 17.899999998509884,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 891.0999999977648
+      },
+      "submit": {
+        "local_dom_feedback_ms": 1.9000000022351742,
+        "paint_opportunity_ms": 26.900000002235174,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 22.100000001490116
+      },
+      "next": {
+        "local_dom_feedback_ms": 0.5,
+        "paint_opportunity_ms": 32.30000000074506,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 24.399999998509884
+      },
+      "post_player": [
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/catalog.mjs",
+          "raw": 19911,
+          "transfer": 0,
+          "start_ms": 598.6000000014901,
+          "duration_ms": 12.199999999254942
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/player/start.mjs",
+          "raw": 7587,
+          "transfer": 0,
+          "start_ms": 682.7000000029802,
+          "duration_ms": 13
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/player/analytics.mjs",
+          "raw": 9283,
+          "transfer": 0,
+          "start_ms": 697.4000000022352,
+          "duration_ms": 9.599999997764826
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/player/engine.mjs",
+          "raw": 9947,
+          "transfer": 0,
+          "start_ms": 697.5,
+          "duration_ms": 10.200000002980232
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/player/math.mjs",
+          "raw": 4397,
+          "transfer": 0,
+          "start_ms": 697.5,
+          "duration_ms": 11.200000002980232
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/package-data.mjs",
+          "raw": 1565,
+          "transfer": 0,
+          "start_ms": 697.6000000014901,
+          "duration_ms": 17.800000000745058
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "raw": 12520,
+          "transfer": 0,
+          "start_ms": 740.2000000029802,
+          "duration_ms": 15.799999997019768
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/player/player.css",
+          "raw": 6293,
+          "transfer": 0,
+          "start_ms": 807.2000000029802,
+          "duration_ms": 10.699999999254942
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/player/view.mjs",
+          "raw": 2728,
+          "transfer": 0,
+          "start_ms": 807.5,
+          "duration_ms": 9.900000002235174
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/player/base.mjs",
+          "raw": 5132,
+          "transfer": 0,
+          "start_ms": 819.3000000007451,
+          "duration_ms": 10.900000002235174
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/math/view.mjs",
+          "raw": 5254,
+          "transfer": 0,
+          "start_ms": 831.6000000014901,
+          "duration_ms": 4.800000000745058
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/math/model.mjs",
+          "raw": 4635,
+          "transfer": 0,
+          "start_ms": 831.7000000029802,
+          "duration_ms": 6.799999997019768
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/player/session.mjs",
+          "raw": 34511,
+          "transfer": 0,
+          "start_ms": 841.8000000007451,
+          "duration_ms": 4.5
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/learning/input-guide.mjs",
+          "raw": 2238,
+          "transfer": 0,
+          "start_ms": 848.8000000007451,
+          "duration_ms": 8.300000000745058
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/vendor/mathjax-4.1.3/mml-svg.js",
+          "raw": 1702534,
+          "transfer": 0,
+          "start_ms": 871.7000000029802,
+          "duration_ms": 18.099999997764826
+        }
+      ],
+      "preview": {
+        "local_dom_feedback_ms": 0.5,
+        "paint_opportunity_ms": 27,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 20.800000000745058
+      },
+      "post_teacher": [
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/teacher/index.js",
+          "raw": 23821,
+          "transfer": 0,
+          "start_ms": 1742.1000000014901,
+          "duration_ms": 7.600000001490116
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/teacher/ui.js",
+          "raw": 1810,
+          "transfer": 0,
+          "start_ms": 1751.5,
+          "duration_ms": 9.600000001490116
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/teacher/report.js",
+          "raw": 8979,
+          "transfer": 0,
+          "start_ms": 1751.6000000014901,
+          "duration_ms": 15.899999998509884
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/teacher/drafts.js",
+          "raw": 846,
+          "transfer": 0,
+          "start_ms": 1751.7000000029802,
+          "duration_ms": 11.099999997764826
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/teacher/demo.js",
+          "raw": 8553,
+          "transfer": 0,
+          "start_ms": 1751.7000000029802,
+          "duration_ms": 15.899999998509884
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/bridge.js",
+          "raw": 12157,
+          "transfer": 0,
+          "start_ms": 1769.300000000745,
+          "duration_ms": 11.300000000745058
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/sync.js",
+          "raw": 6685,
+          "transfer": 0,
+          "start_ms": 1769.300000000745,
+          "duration_ms": 12.199999999254942
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/teacher/teacher.css",
+          "raw": 5043,
+          "transfer": 0,
+          "start_ms": 1784.300000000745,
+          "duration_ms": 11
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/teacher/reports-view.js",
+          "raw": 12914,
+          "transfer": 0,
+          "start_ms": 1813.6000000014901,
+          "duration_ms": 13.100000001490116
+        },
+        {
+          "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/teacher/document.js",
+          "raw": 13753,
+          "transfer": 0,
+          "start_ms": 1827.6000000014901,
+          "duration_ms": 7.800000000745058
+        }
+      ],
+      "home_lcp_candidates_ms": [
+        80,
+        280
+      ],
+      "home_lcp_ms": 280,
+      "shifts": [
+        {
+          "at": 588.1000000014901,
+          "value": 0.042953673245614034,
+          "input": false
+        },
+        {
+          "at": 662.5,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 667,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 729.1000000014901,
+          "value": 0.03597941794590643,
+          "input": false
+        },
+        {
+          "at": 760.7000000029802,
+          "value": 0.02055643778258339,
+          "input": false
+        },
+        {
+          "at": 812.3000000007451,
+          "value": 0.04225009137426901,
+          "input": false
+        },
+        {
+          "at": 888,
+          "value": 0.05278183251096491,
+          "input": false
+        },
+        {
+          "at": 1676.5,
+          "value": 0.023693800065484893,
+          "input": false
+        },
+        {
+          "at": 1744.1000000014901,
+          "value": 0.05068867644371345,
+          "input": false
+        },
+        {
+          "at": 1844.9000000022352,
+          "value": 0.038576807687621825,
+          "input": false
+        }
+      ],
+      "cls": 0,
+      "journey_cls": 0.39608807897867254,
+      "long_tasks": [
+        {
+          "at": 953.7000000029802,
+          "ms": 203
+        }
+      ],
+      "navigation_ms": 84.20000000298023,
+      "warm_home": {
+        "lcp_ms": 272,
+        "cls": 0,
+        "resources": [
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/appearance.js",
+            "raw": 870,
+            "transfer": 0,
+            "start_ms": 29.800000000745058,
+            "duration_ms": 7.5
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/assets/noto-Regular.woff",
+            "raw": 32636,
+            "transfer": 0,
+            "start_ms": 30.100000001490116,
+            "duration_ms": 12.399999998509884
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/assets/noto-Bold.woff",
+            "raw": 32236,
+            "transfer": 0,
+            "start_ms": 30.199999999254942,
+            "duration_ms": 16.700000002980232
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/assets/base.css",
+            "raw": 32397,
+            "transfer": 0,
+            "start_ms": 30.300000000745058,
+            "duration_ms": 19.600000001490116
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/app.mjs",
+            "raw": 16462,
+            "transfer": 0,
+            "start_ms": 30.300000000745058,
+            "duration_ms": 28.800000000745058
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/assets/mark.svg",
+            "raw": 274,
+            "transfer": 0,
+            "start_ms": 30.5,
+            "duration_ms": 33.900000002235174
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/dom.mjs",
+            "raw": 3524,
+            "transfer": 0,
+            "start_ms": 73.10000000149012,
+            "duration_ms": 15.199999999254942
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/material.mjs",
+            "raw": 1186,
+            "transfer": 0,
+            "start_ms": 73.19999999925494,
+            "duration_ms": 15.100000001490116
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/locales/id.json",
+            "raw": 9466,
+            "transfer": 0,
+            "start_ms": 98.30000000074506,
+            "duration_ms": 11
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/store.js",
+            "raw": 13528,
+            "transfer": 0,
+            "start_ms": 110.60000000149012,
+            "duration_ms": 10.300000000745058
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/common.js",
+            "raw": 1730,
+            "transfer": 0,
+            "start_ms": 122.5,
+            "duration_ms": 9.699999999254942
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/db.js",
+            "raw": 5081,
+            "transfer": 0,
+            "start_ms": 122.60000000149012,
+            "duration_ms": 10.699999999254942
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/summary.js",
+            "raw": 3417,
+            "transfer": 0,
+            "start_ms": 122.60000000149012,
+            "duration_ms": 13.599999997764826
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/validate.js",
+            "raw": 2526,
+            "transfer": 0,
+            "start_ms": 122.80000000074506,
+            "duration_ms": 14.399999998509884
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/contract-defs.js",
+            "raw": 13255,
+            "transfer": 0,
+            "start_ms": 138,
+            "duration_ms": 11.800000000745058
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/home.mjs",
+            "raw": 4642,
+            "transfer": 0,
+            "start_ms": 171,
+            "duration_ms": 14.900000002235174
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/core/bank.mjs",
+            "raw": 2606,
+            "transfer": 0,
+            "start_ms": 187.80000000074506,
+            "duration_ms": 14.800000000745058
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/bank/index.json",
+            "raw": 684,
+            "transfer": 0,
+            "start_ms": 215.80000000074506,
+            "duration_ms": 8.800000000745058
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/bank/g01.json",
+            "raw": 552,
+            "transfer": 0,
+            "start_ms": 226.40000000223517,
+            "duration_ms": 3.599999997764826
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/bank/g01/l01.json",
+            "raw": 4893,
+            "transfer": 0,
+            "start_ms": 232.80000000074506,
+            "duration_ms": 4.899999998509884
+          },
+          {
+            "path": "/probe-lab-a7c65c11-0a5e-4d75-9de6-d8d35f7528d4/school/math/data/offline.js",
+            "raw": 8004,
+            "transfer": 0,
+            "start_ms": 269.80000000074506,
+            "duration_ms": 12.699999999254942
+          }
+        ]
+      }
+    },
+    {
+      "number": 5,
+      "viewport": [
+        1080,
+        760
+      ],
+      "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/",
+      "home": [
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/appearance.js",
+          "raw": 870,
+          "transfer": 1170,
+          "start_ms": 30,
+          "duration_ms": 9.300000000745058
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/assets/noto-Regular.woff",
+          "raw": 32636,
+          "transfer": 32936,
+          "start_ms": 30.200000002980232,
+          "duration_ms": 11.5
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/assets/noto-Bold.woff",
+          "raw": 32236,
+          "transfer": 32536,
+          "start_ms": 30.400000002235174,
+          "duration_ms": 9.5
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/assets/base.css",
+          "raw": 32397,
+          "transfer": 32697,
+          "start_ms": 30.5,
+          "duration_ms": 10.300000000745058
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/app.mjs",
+          "raw": 16462,
+          "transfer": 16762,
+          "start_ms": 30.600000001490116,
+          "duration_ms": 14.100000001490116
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/assets/mark.svg",
+          "raw": 274,
+          "transfer": 574,
+          "start_ms": 30.700000002980232,
+          "duration_ms": 19.799999997019768
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/dom.mjs",
+          "raw": 3524,
+          "transfer": 3824,
+          "start_ms": 49.100000001490116,
+          "duration_ms": 6.800000000745058
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/material.mjs",
+          "raw": 1186,
+          "transfer": 1486,
+          "start_ms": 49.20000000298023,
+          "duration_ms": 4.899999998509884
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/locales/id.json",
+          "raw": 9466,
+          "transfer": 9766,
+          "start_ms": 64.5,
+          "duration_ms": 2
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/store.js",
+          "raw": 13528,
+          "transfer": 13828,
+          "start_ms": 73,
+          "duration_ms": 6
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/common.js",
+          "raw": 1730,
+          "transfer": 2030,
+          "start_ms": 80.30000000074506,
+          "duration_ms": 8.600000001490116
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/summary.js",
+          "raw": 3417,
+          "transfer": 3717,
+          "start_ms": 80.60000000149012,
+          "duration_ms": 8.5
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/db.js",
+          "raw": 5081,
+          "transfer": 5381,
+          "start_ms": 80.60000000149012,
+          "duration_ms": 17.399999998509884
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/validate.js",
+          "raw": 2526,
+          "transfer": 2826,
+          "start_ms": 80.70000000298023,
+          "duration_ms": 17.099999997764826
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/contract-defs.js",
+          "raw": 13255,
+          "transfer": 13555,
+          "start_ms": 101.90000000223517,
+          "duration_ms": 6.5
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/home.mjs",
+          "raw": 4642,
+          "transfer": 4942,
+          "start_ms": 128.20000000298023,
+          "duration_ms": 4
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/bank.mjs",
+          "raw": 2606,
+          "transfer": 2906,
+          "start_ms": 138.80000000074506,
+          "duration_ms": 4.199999999254942
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/bank/index.json",
+          "raw": 684,
+          "transfer": 984,
+          "start_ms": 165.30000000074506,
+          "duration_ms": 2.699999999254942
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/bank/g01.json",
+          "raw": 552,
+          "transfer": 852,
+          "start_ms": 169,
+          "duration_ms": 4.400000002235174
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/bank/g01/l01.json",
+          "raw": 4893,
+          "transfer": 5193,
+          "start_ms": 176.5,
+          "duration_ms": 1.800000000745058
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/offline.js",
+          "raw": 8004,
+          "transfer": 8304,
+          "start_ms": 201.20000000298023,
+          "duration_ms": 9.5
+        }
+      ],
+      "catalog": {
+        "local_dom_feedback_ms": 1.5,
+        "paint_opportunity_ms": 21.099999997764826,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 90.79999999701977
+      },
+      "launch": {
+        "local_dom_feedback_ms": 0.6999999992549419,
+        "paint_opportunity_ms": 22.100000001490116,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 691
+      },
+      "submit": {
+        "local_dom_feedback_ms": 1.6000000014901161,
+        "paint_opportunity_ms": 16.399999998509884,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 30.199999999254942
+      },
+      "next": {
+        "local_dom_feedback_ms": 0.5,
+        "paint_opportunity_ms": 18.099999997764826,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 25.5
+      },
+      "post_player": [
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/catalog.mjs",
+          "raw": 19911,
+          "transfer": 0,
+          "start_ms": 540.2000000029802,
+          "duration_ms": 19.299999997019768
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/player/start.mjs",
+          "raw": 7587,
+          "transfer": 0,
+          "start_ms": 632.4000000022352,
+          "duration_ms": 7.300000000745058
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/player/analytics.mjs",
+          "raw": 9283,
+          "transfer": 0,
+          "start_ms": 644,
+          "duration_ms": 10.200000002980232
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/player/engine.mjs",
+          "raw": 9947,
+          "transfer": 0,
+          "start_ms": 644.1000000014901,
+          "duration_ms": 11
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/player/math.mjs",
+          "raw": 4397,
+          "transfer": 0,
+          "start_ms": 644.2000000029802,
+          "duration_ms": 11.699999999254942
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/package-data.mjs",
+          "raw": 1565,
+          "transfer": 0,
+          "start_ms": 648.4000000022352,
+          "duration_ms": 11.399999998509884
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/bank/v1.1/g01/l01/MM-G01-L01-ADD-P001.mjs",
+          "raw": 12520,
+          "transfer": 0,
+          "start_ms": 669.8000000007451,
+          "duration_ms": 8.5
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/player/player.css",
+          "raw": 6293,
+          "transfer": 0,
+          "start_ms": 737,
+          "duration_ms": 12.100000001490116
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/player/view.mjs",
+          "raw": 2728,
+          "transfer": 0,
+          "start_ms": 737.2000000029802,
+          "duration_ms": 11.899999998509884
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/player/base.mjs",
+          "raw": 5132,
+          "transfer": 0,
+          "start_ms": 750.4000000022352,
+          "duration_ms": 8
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/math/view.mjs",
+          "raw": 5254,
+          "transfer": 0,
+          "start_ms": 759,
+          "duration_ms": 13.800000000745058
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/math/model.mjs",
+          "raw": 4635,
+          "transfer": 0,
+          "start_ms": 759.2000000029802,
+          "duration_ms": 14.199999999254942
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/player/session.mjs",
+          "raw": 34511,
+          "transfer": 0,
+          "start_ms": 779.2000000029802,
+          "duration_ms": 3.399999998509884
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/learning/input-guide.mjs",
+          "raw": 2238,
+          "transfer": 0,
+          "start_ms": 784.6000000014901,
+          "duration_ms": 5.399999998509884
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/vendor/mathjax-4.1.3/mml-svg.js",
+          "raw": 1702534,
+          "transfer": 0,
+          "start_ms": 799.8000000007451,
+          "duration_ms": 18.900000002235174
+        }
+      ],
+      "preview": {
+        "local_dom_feedback_ms": 0.3999999985098839,
+        "paint_opportunity_ms": 28,
+        "visible_at_dispatch": "visible",
+        "ready_ms": 28.300000000745058
+      },
+      "post_teacher": [
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/teacher/index.js",
+          "raw": 23821,
+          "transfer": 0,
+          "start_ms": 1457.800000000745,
+          "duration_ms": 21.300000000745058
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/teacher/ui.js",
+          "raw": 1810,
+          "transfer": 0,
+          "start_ms": 1480.800000000745,
+          "duration_ms": 26
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/teacher/report.js",
+          "raw": 8979,
+          "transfer": 0,
+          "start_ms": 1480.9000000022352,
+          "duration_ms": 26.800000000745058
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/teacher/demo.js",
+          "raw": 8553,
+          "transfer": 0,
+          "start_ms": 1481,
+          "duration_ms": 27.5
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/teacher/drafts.js",
+          "raw": 846,
+          "transfer": 0,
+          "start_ms": 1481.1000000014901,
+          "duration_ms": 29.800000000745058
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/bridge.js",
+          "raw": 12157,
+          "transfer": 0,
+          "start_ms": 1510.1000000014901,
+          "duration_ms": 13
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/sync.js",
+          "raw": 6685,
+          "transfer": 0,
+          "start_ms": 1510.300000000745,
+          "duration_ms": 14.400000002235174
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/teacher/teacher.css",
+          "raw": 5043,
+          "transfer": 0,
+          "start_ms": 1527.4000000022352,
+          "duration_ms": 7.5
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/teacher/reports-view.js",
+          "raw": 12914,
+          "transfer": 0,
+          "start_ms": 1569.7000000029802,
+          "duration_ms": 22.699999999254942
+        },
+        {
+          "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/teacher/document.js",
+          "raw": 13753,
+          "transfer": 0,
+          "start_ms": 1593.1000000014901,
+          "duration_ms": 9.800000000745058
+        }
+      ],
+      "home_lcp_candidates_ms": [
+        80,
+        204
+      ],
+      "home_lcp_ms": 204,
+      "shifts": [
+        {
+          "at": 522,
+          "value": 0.042953673245614034,
+          "input": false
+        },
+        {
+          "at": 604.4000000022352,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 612.7000000029802,
+          "value": 0.044303670961257306,
+          "input": false
+        },
+        {
+          "at": 666.6000000014901,
+          "value": 0.03597941794590643,
+          "input": false
+        },
+        {
+          "at": 689.5,
+          "value": 0.02055643778258339,
+          "input": false
+        },
+        {
+          "at": 743.3000000007451,
+          "value": 0.04225009137426901,
+          "input": false
+        },
+        {
+          "at": 808.2000000029802,
+          "value": 0.05278183251096491,
+          "input": false
+        },
+        {
+          "at": 1387.800000000745,
+          "value": 0.023693800065484893,
+          "input": false
+        },
+        {
+          "at": 1459.2000000029802,
+          "value": 0.06456976044712476,
+          "input": false
+        },
+        {
+          "at": 1627.5,
+          "value": 0.038576807687621825,
+          "input": false
+        }
+      ],
+      "cls": 0,
+      "journey_cls": 0.40996916298208386,
+      "long_tasks": [
+        {
+          "at": 894.5,
+          "ms": 152
+        }
+      ],
+      "navigation_ms": 64.80000000074506,
+      "warm_home": {
+        "lcp_ms": 304,
+        "cls": 0,
+        "resources": [
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/appearance.js",
+            "raw": 870,
+            "transfer": 0,
+            "start_ms": 42.600000001490116,
+            "duration_ms": 10.300000000745058
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/assets/noto-Regular.woff",
+            "raw": 32636,
+            "transfer": 0,
+            "start_ms": 43.80000000074506,
+            "duration_ms": 8.800000000745058
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/assets/noto-Bold.woff",
+            "raw": 32236,
+            "transfer": 0,
+            "start_ms": 44.100000001490116,
+            "duration_ms": 13.300000000745058
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/assets/base.css",
+            "raw": 32397,
+            "transfer": 0,
+            "start_ms": 44.20000000298023,
+            "duration_ms": 17.799999997019768
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/app.mjs",
+            "raw": 16462,
+            "transfer": 0,
+            "start_ms": 44.20000000298023,
+            "duration_ms": 19.5
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/assets/mark.svg",
+            "raw": 274,
+            "transfer": 0,
+            "start_ms": 44.30000000074506,
+            "duration_ms": 30.600000001490116
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/dom.mjs",
+            "raw": 3524,
+            "transfer": 0,
+            "start_ms": 71.70000000298023,
+            "duration_ms": 9.199999999254942
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/material.mjs",
+            "raw": 1186,
+            "transfer": 0,
+            "start_ms": 71.90000000223517,
+            "duration_ms": 17.699999999254942
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/locales/id.json",
+            "raw": 9466,
+            "transfer": 0,
+            "start_ms": 92,
+            "duration_ms": 10.900000002235174
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/store.js",
+            "raw": 13528,
+            "transfer": 0,
+            "start_ms": 104.20000000298023,
+            "duration_ms": 23.799999997019768
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/common.js",
+            "raw": 1730,
+            "transfer": 0,
+            "start_ms": 129.40000000223517,
+            "duration_ms": 15.099999997764826
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/db.js",
+            "raw": 5081,
+            "transfer": 0,
+            "start_ms": 129.5,
+            "duration_ms": 15.5
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/summary.js",
+            "raw": 3417,
+            "transfer": 0,
+            "start_ms": 129.70000000298023,
+            "duration_ms": 9.699999999254942
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/validate.js",
+            "raw": 2526,
+            "transfer": 0,
+            "start_ms": 129.80000000074506,
+            "duration_ms": 14.699999999254942
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/contract-defs.js",
+            "raw": 13255,
+            "transfer": 0,
+            "start_ms": 146,
+            "duration_ms": 4.600000001490116
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/home.mjs",
+            "raw": 4642,
+            "transfer": 0,
+            "start_ms": 170.40000000223517,
+            "duration_ms": 5.300000000745058
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/core/bank.mjs",
+            "raw": 2606,
+            "transfer": 0,
+            "start_ms": 182.70000000298023,
+            "duration_ms": 10.799999997019768
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/bank/index.json",
+            "raw": 684,
+            "transfer": 0,
+            "start_ms": 240.20000000298023,
+            "duration_ms": 13.899999998509884
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/bank/g01.json",
+            "raw": 552,
+            "transfer": 0,
+            "start_ms": 255.10000000149012,
+            "duration_ms": 4.300000000745058
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/bank/g01/l01.json",
+            "raw": 4893,
+            "transfer": 0,
+            "start_ms": 260.30000000074506,
+            "duration_ms": 9.699999999254942
+          },
+          {
+            "path": "/probe-lab-4751a2ff-4f1b-477c-8172-f5e704159e29/school/math/data/offline.js",
+            "raw": 8004,
+            "transfer": 0,
+            "start_ms": 301.80000000074506,
+            "duration_ms": 9.699999999254942
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "release": "47c1663e7ea2fa9c",
+  "bootstrap": "e49e79a6eb68a41f4e43f9d5069afe451933629e629a06cc5c2f59b2183bf736",
+  "scale": {
+    "reported_store": {
+      "temporary": false,
+      "reason": null
+    },
+    "dataset": {
+      "primary": 1200,
+      "other": 41,
+      "items_per_session": 10,
+      "batch_reports": 100,
+      "sessions_per_report": 12
+    },
+    "runs": [
+      {
+        "sample": 1,
+        "heap_before": 56800000,
+        "page_ms": 56.899999998509884,
+        "filtered_ms": 300,
+        "filtered_next_ms": 373.3999999985099,
+        "history_dom": 87,
+        "history_articles": 10,
+        "progress_worker_ms": 429.29999999701977,
+        "preview_worker_ms": 66.40000000223517,
+        "batch": {
+          "emitted": 100,
+          "longest_tick_gap_ms": 39.5,
+          "ticks": 205,
+          "input_ms": [
+            0.10000000149011612,
+            0.10000000149011612
+          ],
+          "canceled": false,
+          "zip_entries": 101,
+          "elapsed_ms": 5149.5,
+          "zip_bytes": 40151792,
+          "heap_after": 56800000
+        },
+        "cancel": {
+          "emitted": 3,
+          "longest_tick_gap_ms": 94.90000000223517,
+          "ticks": 10,
+          "input_ms": [
+            0.10000000149011612
+          ],
+          "canceled": true
+        },
+        "heap_after": 56800000,
+        "ended_at": 23552.89999999851
+      },
+      {
+        "sample": 2,
+        "heap_before": 56800000,
+        "page_ms": 145.19999999925494,
+        "filtered_ms": 154.5,
+        "filtered_next_ms": 144.5,
+        "history_dom": 87,
+        "history_articles": 10,
+        "progress_worker_ms": 302.80000000074506,
+        "preview_worker_ms": 48.69999999925494,
+        "batch": {
+          "emitted": 100,
+          "longest_tick_gap_ms": 107.90000000223517,
+          "ticks": 188,
+          "input_ms": [
+            0,
+            0
+          ],
+          "canceled": false,
+          "zip_entries": 101,
+          "elapsed_ms": 4795.89999999851,
+          "zip_bytes": 40151792,
+          "heap_after": 56800000
+        },
+        "cancel": {
+          "emitted": 3,
+          "longest_tick_gap_ms": 53.5,
+          "ticks": 7,
+          "input_ms": [
+            0.10000000149011612
+          ],
+          "canceled": true
+        },
+        "heap_after": 56800000,
+        "ended_at": 29701.89999999851
+      },
+      {
+        "sample": 3,
+        "heap_before": 56800000,
+        "page_ms": 48.5,
+        "filtered_ms": 140.89999999850988,
+        "filtered_next_ms": 256.9000000022352,
+        "history_dom": 87,
+        "history_articles": 10,
+        "progress_worker_ms": 363.8999999985099,
+        "preview_worker_ms": 48,
+        "batch": {
+          "emitted": 100,
+          "longest_tick_gap_ms": 35.69999999925494,
+          "ticks": 161,
+          "input_ms": [
+            0.19999999925494194,
+            0.09999999776482582
+          ],
+          "canceled": false,
+          "zip_entries": 101,
+          "elapsed_ms": 4040.5,
+          "zip_bytes": 40151792,
+          "heap_after": 56800000
+        },
+        "cancel": {
+          "emitted": 3,
+          "longest_tick_gap_ms": 31,
+          "ticks": 8,
+          "input_ms": [
+            0
+          ],
+          "canceled": true
+        },
+        "heap_after": 56800000,
+        "ended_at": 35404.89999999851
+      },
+      {
+        "sample": 4,
+        "heap_before": 56800000,
+        "page_ms": 85.80000000074506,
+        "filtered_ms": 148.5,
+        "filtered_next_ms": 133.20000000298023,
+        "history_dom": 87,
+        "history_articles": 10,
+        "progress_worker_ms": 286.29999999701977,
+        "preview_worker_ms": 45.600000001490116,
+        "batch": {
+          "emitted": 100,
+          "longest_tick_gap_ms": 29,
+          "ticks": 201,
+          "input_ms": [
+            0.10000000149011612,
+            0.19999999925494194
+          ],
+          "canceled": false,
+          "zip_entries": 101,
+          "elapsed_ms": 5032,
+          "zip_bytes": 40151792,
+          "heap_after": 56800000
+        },
+        "cancel": {
+          "emitted": 3,
+          "longest_tick_gap_ms": 63.20000000298023,
+          "ticks": 7,
+          "input_ms": [
+            0
+          ],
+          "canceled": true
+        },
+        "heap_after": 56800000,
+        "ended_at": 41651.199999999255
+      },
+      {
+        "sample": 5,
+        "heap_before": 56800000,
+        "page_ms": 90.19999999925494,
+        "filtered_ms": 132.5,
+        "filtered_next_ms": 130.10000000149012,
+        "history_dom": 87,
+        "history_articles": 10,
+        "progress_worker_ms": 239,
+        "preview_worker_ms": 42.5,
+        "batch": {
+          "emitted": 100,
+          "longest_tick_gap_ms": 31.099999997764826,
+          "ticks": 186,
+          "input_ms": [
+            0.10000000149011612,
+            0.09999999776482582
+          ],
+          "canceled": false,
+          "zip_entries": 101,
+          "elapsed_ms": 4670.10000000149,
+          "zip_bytes": 40151792,
+          "heap_after": 56800000
+        },
+        "cancel": {
+          "emitted": 3,
+          "longest_tick_gap_ms": 40.5,
+          "ticks": 7,
+          "input_ms": [
+            0.09999999776482582
+          ],
+          "canceled": true
+        },
+        "heap_after": 56800000,
+        "ended_at": 47448.099999997765
+      }
+    ],
+    "long_tasks": [
+      {
+        "at": 13431.79999999702,
+        "duration": 260
+      }
+    ],
+    "seed_ms": 283.30000000074506,
+    "first_index_build_and_query_ms": 2435.5
+  },
+  "release_after": "47c1663e7ea2fa9c",
+  "finished": "2026-11-25T22:40:20.371Z"
+}

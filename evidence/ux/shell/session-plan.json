@@ -1,0 +1,154 @@
+{
+  "status": "PASS",
+  "binding": {
+    "release": "47c1663e7ea2fa9c",
+    "files": {
+      "player/start.mjs": "ac1c7990bd3d0a60c2df1172e16789b249918945e2107578130a0512e192028d",
+      "core/catalog.mjs": "24928eb0847421f4edc6d5733348028edd94257edeea52220dbef01e480c430e",
+      "core/material.mjs": "c4ed6e756992cf1196bb4467892ee9f5e257b74591541e2c86a8adde7823dfd4",
+      "core/home.mjs": "354cf9eb9c8eac6bd19519095969c1497fd27056214ed93065e1243efcb59271",
+      "core/package-data.mjs": "2078cc0cad96df07dc5a6853618b26840de30d8c138de2f65fc8c077cb4b749f",
+      "bank/index.json": "538b91acb48e7845cbcb663f3ddd42473a412f8fb279c98264e67a63613306cd"
+    }
+  },
+  "runtime": "v24.22.3",
+  "storage": "Node temporary store",
+  "test": "tests/ui/session-plan.mjs",
+  "modes": {
+    "practice": 3,
+    "recovery": 1,
+    "speed": 1,
+    "adaptive": 1,
+    "assessment": 2
+  },
+  "cases": [
+    {
+      "mode": "practice",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.1.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 2,
+      "attempt_count": 2,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "practice",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.1.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 1,
+      "attempt_count": 1,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "practice",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.1.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 1,
+      "attempt_count": 1,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "recovery",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.1.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 2,
+      "attempt_count": 2,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "speed",
+      "purpose": "introduce",
+      "form_id": null,
+      "version": "1.1.0",
+      "package": "MM-G01-L01-ADD-P001",
+      "displayed_count": 2,
+      "attempt_count": 2,
+      "duration": 120,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "adaptive",
+      "purpose": "consolidate",
+      "form_id": null,
+      "version": "1.1.0",
+      "package": "MM-G01-L01-ADD-P002",
+      "displayed_count": 2,
+      "attempt_count": 2,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "assessment",
+      "purpose": "assessment",
+      "form_id": "MM-G01-L01-ADD-P003.A",
+      "version": "1.1.0",
+      "package": "MM-G01-L01-ADD-P003",
+      "displayed_count": 10,
+      "attempt_count": 10,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    },
+    {
+      "mode": "assessment",
+      "purpose": "assessment",
+      "form_id": "MM-G01-L01-ADD-P004.B",
+      "version": "1.1.0",
+      "package": "MM-G01-L01-ADD-P004",
+      "displayed_count": 10,
+      "attempt_count": 10,
+      "duration": 0,
+      "preview_writes": 0,
+      "double_click_attempts": 1
+    }
+  ],
+  "similar_items": [
+    {
+      "source_final_status": "incorrect",
+      "source_question_id": "arithmetic.addition.g01.l01.62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+      "variant_question_id": "arithmetic.addition.g01.l01.e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+      "source_fingerprint": "62bdbfcd79930aaca69a38a988022d174bdd0a781e988260a2b1e0d5a42b7d07",
+      "variant_fingerprint": "e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+      "template": "MM-TPL-G01-L01-ADD-BASE",
+      "scope_owner": true
+    },
+    {
+      "source_final_status": "correct",
+      "source_question_id": "arithmetic.addition.g01.l01.118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+      "variant_question_id": "arithmetic.addition.g01.l01.e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+      "source_fingerprint": "118c59ee52efe1fbed81605c2223818679738c0c0435277a9c5202e4bb4a626c",
+      "variant_fingerprint": "e1e36a86cbee14ba998abe5fc8911434671be8bd3be63bccb797f464cbfdab5d",
+      "template": "MM-TPL-G01-L01-ADD-BASE",
+      "scope_owner": true
+    }
+  ],
+  "scope_and_preferences": [
+    "legacy unowned study grade ignored",
+    "per-profile topic isolation",
+    "removal clears last topic",
+    "switching profile blocks a prepared session"
+  ],
+  "bounds": [
+    "count exceeds pool rejected",
+    "empty recovery rejected",
+    "ID/EN pluralization"
+  ],
+  "limitations": "Tests run the exported resolver and commit, not physical input, actual assistive technology or a user study."
+}

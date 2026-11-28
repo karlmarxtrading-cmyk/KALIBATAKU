@@ -1,0 +1,1328 @@
+{
+  "schema": "kalibataku-qa-registry/1",
+  "description": "Every suite required by npm run qa:production. Thresholds are minimum counts of evaluated assertions; lowering them invalidates existing bindings.",
+  "suites": [
+    {
+      "id": "compile-check",
+      "kind": "static",
+      "command": [
+        "{python}",
+        "tools/project.py",
+        "check"
+      ],
+      "count_pattern": "^\\+ node --check ",
+      "min_assertions": 100,
+      "requires_build": false,
+      "unit": "file parsed",
+      "findings": [
+        "QA-01"
+      ]
+    },
+    {
+      "id": "glyphs-reproducible",
+      "kind": "static",
+      "command": [
+        "{python}",
+        "tools/build-glyphs.py",
+        "--check"
+      ],
+      "count_pattern": "^glyphs\\.mjs reproducible",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite",
+      "findings": [
+        "TECH-03"
+      ]
+    },
+    {
+      "id": "curriculum",
+      "kind": "static",
+      "command": [
+        "{python}",
+        "tools/project.py",
+        "curriculum"
+      ],
+      "count_pattern": "^281 active recipes and prerequisite graph verified",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite"
+    },
+    {
+      "id": "player-run",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/player/run.mjs",
+        "--evidence"
+      ],
+      "count_pattern": "^TC-\\d+ PASS$",
+      "min_assertions": 18,
+      "requires_build": false,
+      "unit": "test case"
+    },
+    {
+      "id": "player-ledger",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/player/ledger.mjs"
+      ],
+      "count_pattern": "status: 'PASS'",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite"
+    },
+    {
+      "id": "data-contract",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/data/contract.mjs"
+      ],
+      "count_pattern": "^(\\d+)/\\1$",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite (20 contract cases)"
+    },
+    {
+      "id": "teacher-exports",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/teacher/exports.mjs"
+      ],
+      "count_pattern": "^Teacher report and batch assertions passed\\.$",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite"
+    },
+    {
+      "id": "ui-catalog-tokens",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/ui/catalog-and-tokens.mjs",
+        "--evidence"
+      ],
+      "count_pattern": "\"status\": \"PASS\"",
+      "min_assertions": 4,
+      "requires_build": false,
+      "unit": "check"
+    },
+    {
+      "id": "upgrade-restore-v1.0",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/upgrade/restore.mjs"
+      ],
+      "count_pattern": "^PASS: Original export restored",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite"
+    },
+    {
+      "id": "player-ux-domain",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/player/ux-domain.mjs"
+      ],
+      "count_pattern": "^18 player domain/ledger scenarios passed",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite (18 scenarios)"
+    },
+    {
+      "id": "bank-snapshot-upgrade",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/bank/snapshot_upgrade.mjs"
+      ],
+      "count_pattern": "^Snapshot upgrade, re-export and input-guide checks passed\\.$",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite"
+    },
+    {
+      "id": "upgrade-verified-package",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/upgrade/verified-package.mjs"
+      ],
+      "count_pattern": "^PASS package integrity",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite"
+    },
+    {
+      "id": "data-ux-contract",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/data/ux-contract.mjs"
+      ],
+      "count_pattern": " PASS$",
+      "min_assertions": 7,
+      "requires_build": false,
+      "unit": "scenario"
+    },
+    {
+      "id": "ui-session-plan",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/ui/session-plan.mjs",
+        "--evidence"
+      ],
+      "count_pattern": "^  \"status\": \"PASS\"",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite"
+    },
+    {
+      "id": "teacher-ux-evidence",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/teacher/ux-evidence.mjs"
+      ],
+      "count_pattern": "^12 teacher domain checks passed\\.$",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite (12 checks)"
+    },
+    {
+      "id": "bank-verify",
+      "kind": "bank",
+      "command": [
+        "{python}",
+        "tests/bank/verify_bank.py"
+      ],
+      "count_pattern": "\"packages\":4604",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite (domain, oracle per level, DAG, blueprint)",
+      "timeout": 1800
+    },
+    {
+      "id": "bank-audit-distribution",
+      "kind": "node",
+      "command": [
+        "node",
+        "tools/audit-bank.mjs"
+      ],
+      "count_pattern": "^Grade \\d+ \\d+ packages; 0 errors$",
+      "min_assertions": 12,
+      "requires_build": false,
+      "fail_pattern": "packages; [1-9]\\d* errors",
+      "unit": "grade"
+    },
+    {
+      "id": "bank-determinism",
+      "kind": "bank",
+      "command": [
+        "{python}",
+        "tests/bank/determinism.py"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/bank-determinism.json"
+      ],
+      "min_assertions": 2,
+      "timeout": 1800,
+      "findings": [
+        "QA-01",
+        "QA-04"
+      ]
+    },
+    {
+      "id": "bank-domain-prose",
+      "kind": "bank",
+      "command": [
+        "{python}",
+        "tests/bank/domain_prose.py"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/bank-domain-prose.json"
+      ],
+      "min_assertions": 9,
+      "findings": [
+        "MATH-002"
+      ]
+    },
+    {
+      "id": "math-linear-roundtrip",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/math/linear-roundtrip.mjs"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/math-linear-roundtrip.json"
+      ],
+      "min_assertions": 20,
+      "findings": [
+        "MATH-001"
+      ]
+    },
+    {
+      "id": "math-exports",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/math/export-linear.mjs"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/math-exports.json"
+      ],
+      "min_assertions": 14,
+      "findings": [
+        "MATH-001"
+      ]
+    },
+    {
+      "id": "v12-bank-model",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/v12/bank-and-model.mjs"
+      ],
+      "min_assertions": 32,
+      "requires_build": false,
+      "unit": "suite",
+      "receipts": [
+        "evidence/v12/bank-model.json"
+      ],
+      "sample_key": "fixtures",
+      "status_required": false
+    },
+    {
+      "id": "v12-feedback-export",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/v12/feedback-and-export.mjs"
+      ],
+      "count_pattern": "^Five real modes and event-schema, backup and export checks passed\\.$",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite (5 modes)"
+    },
+    {
+      "id": "documents-reopened",
+      "kind": "documents",
+      "command": [
+        "{python}",
+        "tests/v13/inspect-documents.py"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/documents-reopened.json"
+      ],
+      "min_assertions": 7,
+      "allow_blocked": true,
+      "timeout": 900,
+      "findings": [
+        "QA-22"
+      ]
+    },
+    {
+      "id": "data-large-backup",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/data/backup-large.mjs"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/data-large-backup.json"
+      ],
+      "min_assertions": 17,
+      "timeout": 1800,
+      "findings": [
+        "TECH-01"
+      ]
+    },
+    {
+      "id": "data-cache-policy",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/data/cache-policy.mjs"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/data-cache-policy.json"
+      ],
+      "min_assertions": 10,
+      "findings": [
+        "TECH-04"
+      ]
+    },
+    {
+      "id": "upgrade-bank-1.2",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/upgrade/bank-1.2.mjs"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/upgrade-bank-1.2.json"
+      ],
+      "min_assertions": 6,
+      "findings": [
+        "MATH-002"
+      ]
+    },
+    {
+      "id": "qa-fault-injection",
+      "kind": "gate",
+      "command": [
+        "{python}",
+        "tests/qa/fault_injection.py",
+        "--browser"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/qa-fault-injection.json"
+      ],
+      "min_assertions": 20,
+      "timeout": 1800,
+      "findings": [
+        "TECH-02"
+      ]
+    },
+    {
+      "id": "e2e-browser",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/integration/browser.py"
+      ],
+      "receipts": [
+        "evidence/acceptance/browser-data.json",
+        "evidence/acceptance/browser-performance.json",
+        "evidence/acceptance/browser-layout.json",
+        "evidence/acceptance/browser-journeys.json",
+        "evidence/acceptance/browser-semantics.json",
+        "evidence/acceptance/browser-faults.json",
+        "evidence/acceptance/browser-teacher.json",
+        "evidence/acceptance/browser-offline.json"
+      ],
+      "min_assertions": 3,
+      "timeout": 2400
+    },
+    {
+      "id": "ux-extended-browser",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/v12/extended.py",
+        "shell",
+        "school",
+        "player",
+        "data",
+        "visual",
+        "reflow"
+      ],
+      "receipts": [
+        "evidence/ux/acceptance/browser-shell-ux.json",
+        "evidence/ux/acceptance/browser-school-ux.json",
+        "evidence/ux/acceptance/browser-player-ux.json",
+        "evidence/ux/acceptance/browser-data-ux.json",
+        "evidence/ux/acceptance/browser-visual-ux.json",
+        "evidence/ux/acceptance/browser-reflow-ux.json"
+      ],
+      "min_assertions": 10,
+      "timeout": 2400
+    },
+    {
+      "id": "performance-budgets",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/perf/run.py"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/performance-budgets.json"
+      ],
+      "min_assertions": 20,
+      "timeout": 2400,
+      "findings": [
+        "TECH-03"
+      ]
+    },
+    {
+      "id": "v12-browser-chromium",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/v12/browser.py",
+        "chromium"
+      ],
+      "receipts": [
+        "evidence/v12/browser-chromium.json"
+      ],
+      "min_assertions": 14,
+      "timeout": 1800
+    },
+    {
+      "id": "v12-keyboard",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/v12/keyboard.py"
+      ],
+      "receipts": [
+        "evidence/ux/acceptance/keyboard.json"
+      ],
+      "sample_key": "events",
+      "status_required": false,
+      "min_assertions": 8,
+      "timeout": 900
+    },
+    {
+      "id": "v12-print-contrast",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/v12/print-contrast.py"
+      ],
+      "receipts": [
+        "evidence/v12/print-contrast.json"
+      ],
+      "sample_key": "contrast",
+      "min_assertions": 2,
+      "timeout": 900
+    },
+    {
+      "id": "v12-roles-reflow",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/v12/roles-reflow.py"
+      ],
+      "receipts": [
+        "evidence/v12/roles-reflow.json"
+      ],
+      "sample_key": "samples",
+      "min_assertions": 100,
+      "timeout": 1800
+    },
+    {
+      "id": "browser-v13-chromium",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/v13/browser.py",
+        "chromium"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/browser-v13-chromium.json"
+      ],
+      "min_assertions": 11,
+      "timeout": 1800,
+      "findings": [
+        "MATH-001",
+        "TECH-01",
+        "TECH-04",
+        "UX-001",
+        "UX-002",
+        "UX-003",
+        "UX-004",
+        "UX-006"
+      ]
+    },
+    {
+      "id": "browser-v13-firefox",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/v13/browser.py",
+        "firefox"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/browser-v13-firefox.json"
+      ],
+      "min_assertions": 1,
+      "allow_blocked": true,
+      "timeout": 1800
+    },
+    {
+      "id": "browser-v13-webkit",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/v13/browser.py",
+        "webkit"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/browser-v13-webkit.json"
+      ],
+      "min_assertions": 1,
+      "allow_blocked": true,
+      "timeout": 1800
+    },
+    {
+      "id": "bank-preservation",
+      "kind": "bank",
+      "command": [
+        "{python}",
+        "tools/bank-preservation.py"
+      ],
+      "count_pattern": "^bank preserved: 4677 files byte-identical$",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite",
+      "findings": [
+        "BANK-01",
+        "BANK-02"
+      ]
+    },
+    {
+      "id": "review-roster",
+      "kind": "static",
+      "command": [
+        "{python}",
+        "tools/build-roster.py"
+      ],
+      "count_pattern": "^roster 394 templates 177640 placements$",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite",
+      "findings": [
+        "DOC-01"
+      ]
+    },
+    {
+      "id": "journey-sidecar",
+      "kind": "static",
+      "command": [
+        "{python}",
+        "tools/build-journey.py",
+        "--check"
+      ],
+      "count_pattern": "^journey sidecar ok ",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite",
+      "findings": [
+        "PG-01",
+        "PG-04"
+      ]
+    },
+    {
+      "id": "journey-model",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/journey/journey.test.mjs"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/journey-model.json"
+      ],
+      "min_assertions": 34,
+      "timeout": 1200,
+      "findings": [
+        "PG-01",
+        "PG-02",
+        "PG-03",
+        "PG-04",
+        "UX-05",
+        "UX-06"
+      ]
+    },
+    {
+      "id": "journey-next-practice-probe",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/journey/probe-next-practice.mjs",
+        "/tmp/kalibataku-probe-next-practice.json"
+      ],
+      "count_pattern": "\"same_order\": false",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite",
+      "findings": [
+        "PG-02"
+      ]
+    },
+    {
+      "id": "journey-exports-reopened",
+      "kind": "documents",
+      "command": [
+        "{python}",
+        "tests/journey/reopen_exports.py",
+        "evidence/v15/exports"
+      ],
+      "count_pattern": "\"json\": true",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite"
+    },
+    {
+      "id": "data-archive-edges",
+      "kind": "node",
+      "command": [
+        "node",
+        "tests/data/archive-edges.mjs"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/data-archive-edges.json"
+      ],
+      "min_assertions": 10,
+      "timeout": 1200,
+      "findings": [
+        "TEK-01",
+        "TEK-02"
+      ]
+    },
+    {
+      "id": "journey-browser-chromium",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/journey/browser_flow.py",
+        "--out",
+        "evidence/v15/browser"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/journey-browser.json"
+      ],
+      "min_assertions": 41,
+      "timeout": 1800,
+      "findings": [
+        "UX-01",
+        "UX-02",
+        "UX-03",
+        "UX-04",
+        "UX-06"
+      ]
+    },
+    {
+      "id": "journey-perf-lab",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/journey/perf.py",
+        "--runs",
+        "5"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/journey-perf-lab.json"
+      ],
+      "min_assertions": 5,
+      "timeout": 1800
+    },
+    {
+      "id": "hosting-smoke",
+      "kind": "hosting",
+      "command": [
+        "{python}",
+        "tools/hosting-smoke.py"
+      ],
+      "count_pattern": "^PASS \\d+ HTTP/TLS and base-path combinations\\.$",
+      "min_assertions": 1,
+      "requires_build": false,
+      "unit": "suite"
+    },
+    {
+      "id": "clean-build-twice",
+      "kind": "build",
+      "command": [
+        "{python}",
+        "tools/clean-build.py"
+      ],
+      "receipts": [
+        "evidence/deployment/clean-build.json"
+      ],
+      "sample_key": "runs",
+      "min_assertions": 2,
+      "requires_build": false,
+      "timeout": 1800,
+      "findings": [
+        "QA-01"
+      ]
+    },
+    {
+      "id": "journey-browser-firefox",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/journey/browser_flow.py",
+        "--engine",
+        "firefox",
+        "--out",
+        "evidence/v15/browser/firefox"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/journey-browser-firefox.json"
+      ],
+      "min_assertions": 41,
+      "timeout": 1800,
+      "findings": [
+        "UX-01",
+        "UX-02",
+        "UX-03",
+        "UX-04",
+        "UX-06"
+      ]
+    },
+    {
+      "id": "journey-browser-webkit",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/journey/browser_flow.py",
+        "--engine",
+        "webkit",
+        "--out",
+        "evidence/v15/browser/webkit"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/journey-browser-webkit.json"
+      ],
+      "min_assertions": 41,
+      "timeout": 1800,
+      "findings": [
+        "UX-01",
+        "UX-02",
+        "UX-03",
+        "UX-04",
+        "UX-06"
+      ]
+    },
+    {
+      "id": "progression-bounds",
+      "kind": "acceptance",
+      "command": [
+        "node",
+        "tests/journey/progression-bounds.mjs",
+        "evidence/v15/progression/all-nodes.json"
+      ],
+      "count_pattern": "\"status\": \"PASS\"",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "progression-launch",
+      "kind": "acceptance",
+      "command": [
+        "node",
+        "tests/journey/progression-launch.mjs",
+        "--out",
+        "evidence/v15/progression/launch.json"
+      ],
+      "count_pattern": "\"status\":\"PASS\"",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "start-intent",
+      "kind": "acceptance",
+      "command": [
+        "node",
+        "tests/journey/start-intent.test.mjs"
+      ],
+      "count_pattern": "\"status\": \"PASS\"",
+      "min_assertions": 17,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "period-readiness",
+      "kind": "acceptance",
+      "command": [
+        "node",
+        "tests/journey/report-readiness.mjs",
+        "--dist"
+      ],
+      "count_pattern": "^PASS [0-9]+ AUD-04",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "format-readiness",
+      "kind": "acceptance",
+      "command": [
+        "{python}",
+        "tests/journey/inspect-report-readiness.py"
+      ],
+      "count_pattern": "^PASS",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "semantic-restore",
+      "kind": "acceptance",
+      "command": [
+        "node",
+        "tests/data/journey-restore.mjs"
+      ],
+      "count_pattern": "^[0-9]+ PASS",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "restore-index",
+      "kind": "acceptance",
+      "command": [
+        "{python}",
+        "tools/build-restore-index.py",
+        "--check"
+      ],
+      "count_pattern": "^restore index verified$",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "restore-worker",
+      "kind": "acceptance",
+      "command": [
+        "{python}",
+        "tests/data/journey-restore-browser.py"
+      ],
+      "count_pattern": "\"status\": \"PASS\"",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "capacity-rows",
+      "kind": "acceptance",
+      "command": [
+        "node",
+        "tests/v15/backup-capacity.mjs",
+        "rows"
+      ],
+      "count_pattern": "\"status\": \"PASS\"",
+      "min_assertions": 3,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "capacity-bytes",
+      "kind": "acceptance",
+      "command": [
+        "node",
+        "tests/v15/backup-capacity.mjs",
+        "bytes"
+      ],
+      "count_pattern": "\"status\": \"PASS\"",
+      "min_assertions": 3,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "capacity-browser",
+      "kind": "acceptance",
+      "command": [
+        "{python}",
+        "tests/v15/backup-capacity-browser.py"
+      ],
+      "count_pattern": "\"status\": \"PASS\"",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "intent-browser-chromium",
+      "kind": "acceptance",
+      "command": [
+        "{python}",
+        "tests/journey/start_intent_browser.py",
+        "--browser",
+        "chromium",
+        "--out",
+        "evidence/v15/intent/browser-chromium.json"
+      ],
+      "count_pattern": "^PASS [0-9]+",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "offline-capability-chromium",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/journey/offline_capability.py",
+        "--engine",
+        "chromium"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/offline-capability-chromium.json"
+      ],
+      "min_assertions": 10,
+      "timeout": 1800
+    },
+    {
+      "id": "intent-browser-firefox",
+      "kind": "acceptance",
+      "command": [
+        "{python}",
+        "tests/journey/start_intent_browser.py",
+        "--browser",
+        "firefox",
+        "--out",
+        "evidence/v15/intent/browser-firefox.json"
+      ],
+      "count_pattern": "^PASS [0-9]+",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "offline-capability-firefox",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/journey/offline_capability.py",
+        "--engine",
+        "firefox"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/offline-capability-firefox.json"
+      ],
+      "min_assertions": 10,
+      "timeout": 1800
+    },
+    {
+      "id": "intent-browser-webkit",
+      "kind": "acceptance",
+      "command": [
+        "{python}",
+        "tests/journey/start_intent_browser.py",
+        "--browser",
+        "webkit",
+        "--out",
+        "evidence/v15/intent/browser-webkit.json"
+      ],
+      "count_pattern": "^PASS [0-9]+",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "offline-capability-webkit",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/journey/offline_capability.py",
+        "--engine",
+        "webkit"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/offline-capability-webkit.json"
+      ],
+      "min_assertions": 10,
+      "timeout": 1800
+    },
+    {
+      "id": "register-policy",
+      "kind": "acceptance",
+      "command": [
+        "{python}",
+        "tests/qa/register-policy.py"
+      ],
+      "count_pattern": "^PASS AC",
+      "min_assertions": 1,
+      "timeout": 1800,
+      "requires_build": false
+    },
+    {
+      "id": "bank-occurrence-identity",
+      "kind": "bank",
+      "command": [
+        "{python}",
+        "tests/journey/verify-final-occurrences.py"
+      ],
+      "count_pattern": "^PASS 177640 occurrences",
+      "min_assertions": 1,
+      "requires_build": false
+    },
+    {
+      "id": "map-native-zoom",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/journey/map_native_zoom.py"
+      ],
+      "receipts": [
+        "evidence/v13/receipts/map-native-zoom.json"
+      ],
+      "min_assertions": 1
+    },
+    {
+      "id": "capacity-beyond-string",
+      "kind": "archive",
+      "command": [
+        "node",
+        "tests/v15/backup-capacity-large-zip.mjs"
+      ],
+      "count_pattern": "\"status\": \"PASS\"",
+      "min_assertions": 1,
+      "requires_build": false,
+      "timeout": 1200
+    },
+    {
+      "id": "viewed-coverage",
+      "command": [
+        "node",
+        "tests/journey/viewed-coverage.mjs",
+        "--dist",
+        "evidence/v151/exposure"
+      ],
+      "min_assertions": 25,
+      "receipts": [
+        "evidence/v151/exposure/engine.json"
+      ],
+      "sample_key": "cases"
+    },
+    {
+      "id": "viewed-exports",
+      "command": [
+        "{python}",
+        "tests/journey/inspect-report-readiness.py",
+        "evidence/v151/exposure",
+        "--sparse"
+      ],
+      "min_assertions": 1,
+      "count_pattern": "^PASS readiness values from JSON, CSV, XLSX, DOCX and PDF"
+    },
+    {
+      "id": "viewed-browser",
+      "command": [
+        "{python}",
+        "tests/journey/viewed-coverage-browser.py",
+        "--out",
+        "evidence/v151/exposure/browser.json"
+      ],
+      "min_assertions": 1,
+      "count_pattern": "^PASS Firefox: early 1/12; restored sparse 10/12 and subtraction locked"
+    },
+    {
+      "id": "catalog-offline-v151-chromium",
+      "command": [
+        "{python}",
+        "tests/v151/catalog_offline.py",
+        "--engine",
+        "chromium",
+        "--out",
+        "evidence/v151/new-tests/chromium"
+      ],
+      "min_assertions": 11,
+      "receipts": [
+        "evidence/v151/new-tests/chromium/catalog-offline-v151-chromium.json"
+      ]
+    },
+    {
+      "id": "catalog-offline-v151-firefox",
+      "command": [
+        "{python}",
+        "tests/v151/catalog_offline.py",
+        "--engine",
+        "firefox",
+        "--out",
+        "evidence/v151/new-tests/firefox"
+      ],
+      "min_assertions": 11,
+      "receipts": [
+        "evidence/v151/new-tests/firefox/catalog-offline-v151-firefox.json"
+      ]
+    },
+    {
+      "id": "catalog-offline-v151-webkit",
+      "command": [
+        "{python}",
+        "tests/v151/catalog_offline.py",
+        "--engine",
+        "webkit",
+        "--out",
+        "evidence/v151/new-tests/webkit"
+      ],
+      "min_assertions": 11,
+      "receipts": [
+        "evidence/v151/new-tests/webkit/catalog-offline-v151-webkit.json"
+      ]
+    },
+    {
+      "id": "time-offset-engine",
+      "command": [
+        "node",
+        "tests/v151/time-offset-engine.mjs"
+      ],
+      "min_assertions": 1,
+      "count_pattern": "^PASS AUD15-03 time-offset-engine"
+    },
+    {
+      "id": "time-offset-exports",
+      "command": [
+        "{python}",
+        "tests/v151/time-offset-exports.py"
+      ],
+      "min_assertions": 1,
+      "count_pattern": "^PASS AUD15-03 time-offset-exports"
+    },
+    {
+      "id": "external-receipts",
+      "command": [
+        "{python}",
+        "tests/qa/external-receipts.py"
+      ],
+      "min_assertions": 8,
+      "count_pattern": "^PASS "
+    },
+    {
+      "id": "enter-cycles-chromium",
+      "command": [
+        "{python}",
+        "tests/v160/enter.py",
+        "chromium"
+      ],
+      "min_assertions": 6,
+      "count_pattern": "^PASS "
+    },
+    {
+      "id": "enter-cycles-firefox",
+      "command": [
+        "{python}",
+        "tests/v160/enter.py",
+        "firefox"
+      ],
+      "min_assertions": 6,
+      "count_pattern": "^PASS "
+    },
+    {
+      "id": "enter-cycles-webkit",
+      "command": [
+        "{python}",
+        "tests/v160/enter.py",
+        "webkit"
+      ],
+      "min_assertions": 6,
+      "count_pattern": "^PASS "
+    },
+    {
+      "id": "learning-policy-160",
+      "command": [
+        "node",
+        "tests/v160/learning.mjs"
+      ],
+      "min_assertions": 5,
+      "count_pattern": "^PASS "
+    },
+    {
+      "id": "portable-path-order",
+      "command": [
+        "{python}",
+        "tests/v160/path_order.py"
+      ],
+      "min_assertions": 4,
+      "count_pattern": "^PASS "
+    },
+    {
+      "id": "catalog-context",
+      "command": [
+        "{python}",
+        "tests/v160/routes.py",
+        "catalog"
+      ],
+      "min_assertions": 4,
+      "count_pattern": "^PASS "
+    },
+    {
+      "id": "route-faults",
+      "command": [
+        "{python}",
+        "tests/v160/routes.py",
+        "routes"
+      ],
+      "min_assertions": 3,
+      "count_pattern": "^PASS "
+    },
+    {
+      "id": "next-viewport-chromium",
+      "command": [
+        "{python}",
+        "tests/v161/viewport.py",
+        "chromium",
+        "--out",
+        "evidence/v161/viewport/chromium.json"
+      ],
+      "min_assertions": 145,
+      "receipts": [
+        "evidence/v161/viewport/chromium.json"
+      ]
+    },
+    {
+      "id": "next-viewport-firefox",
+      "command": [
+        "{python}",
+        "tests/v161/viewport.py",
+        "firefox",
+        "--out",
+        "evidence/v161/viewport/firefox.json"
+      ],
+      "min_assertions": 150,
+      "receipts": [
+        "evidence/v161/viewport/firefox.json"
+      ]
+    },
+    {
+      "id": "next-viewport-webkit",
+      "command": [
+        "{python}",
+        "tests/v161/viewport.py",
+        "webkit",
+        "--out",
+        "evidence/v161/viewport/webkit.json"
+      ],
+      "min_assertions": 145,
+      "receipts": [
+        "evidence/v161/viewport/webkit.json"
+      ]
+    },
+    {
+      "id": "qa-receipt-shape",
+      "command": [
+        "{python}",
+        "tests/qa/receipt_shape.py"
+      ],
+      "min_assertions": 39,
+      "count_pattern": "^PASS "
+    },
+    {
+      "id": "offline-legacy-repeat-firefox",
+      "command": [
+        "{python}",
+        "tests/v161/offline_repeat.py",
+        "--out",
+        "evidence/v161/offline-repeat/firefox.json"
+      ],
+      "min_assertions": 6,
+      "receipts": [
+        "evidence/v161/offline-repeat/firefox.json"
+      ]
+    },
+    {
+      "id": "compose-commit",
+      "kind": "browser",
+      "command": [
+        "{python}",
+        "tests/v161/compose_commit.py",
+        "--out",
+        "evidence/v161/compose-commit/receipt.json"
+      ],
+      "receipts": [
+        "evidence/v161/compose-commit/receipt.json"
+      ],
+      "min_assertions": 39
+    }
+  ]
+}

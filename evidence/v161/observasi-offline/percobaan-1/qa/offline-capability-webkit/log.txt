@@ -1,0 +1,13 @@
+map PASS
+catalog PASS
+legacy PASS
+assessment PASS
+stale PASS
+corrupt_shard PASS
+corrupt_package PASS
+corrupt_shell PASS
+bootstrap_repair PASS
+map_reflow PASS
+
+[stderr]
+Skipping host requirements validation logic because `PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS` env variable is set.

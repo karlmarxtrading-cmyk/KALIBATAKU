@@ -1,0 +1,116 @@
+{
+  "suite": "AUD-03 start intent, desktop browser + IndexedDB",
+  "browser": "firefox",
+  "shell_release": "460c98b682110f7e",
+  "time": "2026-11-28T09:03:22.025451+00:00",
+  "cases": [
+    {
+      "id": "baseline fixture in browser",
+      "expected": [
+        "completed",
+        0,
+        6
+      ],
+      "actual": [
+        "completed",
+        0,
+        6
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "failed G1 followed by selected G5",
+      "expected": [
+        "S-G05-L01",
+        "intro",
+        1
+      ],
+      "actual": [
+        "S-G05-L01",
+        "intro",
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "deferred choice explained on home",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "id": "reload keeps original session as primary action",
+      "expected": "#/session/f326f79f-553c-4415-b3e7-d7cbc036e2f6",
+      "actual": "#/session/f326f79f-553c-4415-b3e7-d7cbc036e2f6",
+      "status": "PASS"
+    },
+    {
+      "id": "draft after reload and stage change",
+      "expected": "17",
+      "actual": "17",
+      "status": "PASS"
+    },
+    {
+      "id": "all frozen occurrence refs unchanged",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "id": "first mission after final commit follows deferred G7 choice",
+      "expected": [
+        "S-G07-L01",
+        1
+      ],
+      "actual": [
+        "S-G07-L01",
+        1
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "old completed G1 snapshot, every field preserved",
+      "expected": true,
+      "actual": true,
+      "status": "PASS"
+    },
+    {
+      "id": "two-tab IndexedDB writes",
+      "expected": [
+        3,
+        4
+      ],
+      "actual": [
+        3,
+        4
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "both tabs observe latest committed intent",
+      "expected": [
+        "S-G09-L01",
+        "a033ad8a-3439-4bf7-8449-23ccec5e7555"
+      ],
+      "actual": [
+        "S-G09-L01",
+        "a033ad8a-3439-4bf7-8449-23ccec5e7555"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "two tabs launching the same choice return one saved mission",
+      "expected": [
+        true,
+        1
+      ],
+      "actual": [
+        true,
+        1
+      ],
+      "status": "PASS"
+    }
+  ],
+  "browser_version": "153.0",
+  "status": "PASS"
+}

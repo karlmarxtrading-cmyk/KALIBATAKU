@@ -1,0 +1,44 @@
+{
+  "fixture": "Synthetic malformed receipt; no application or human result claimed",
+  "expected": "FAIL: both checks are not assertion objects",
+  "actual_suite": {
+    "id": "malformed",
+    "command": [
+      "{python}",
+      "fixture.py"
+    ],
+    "exit_code": 0,
+    "seconds": 0.02,
+    "log": "malformed/log.txt",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "receipts": [
+      {
+        "source": "evidence/v13/receipts/malformed.json",
+        "file": "malformed/malformed.json",
+        "sha256": "edfccc81e9f53e42451df9decb8ba55f30a0a2d40eaff12a96b1901cf11f74a2",
+        "state": "FAIL",
+        "assertions": 0
+      }
+    ],
+    "problems": [
+      "evidence/v13/receipts/malformed.json: checks[0]: assertion must be an object with a nonempty string id",
+      "evidence/v13/receipts/malformed.json: checks[1]: assertion must be an object with a nonempty string id",
+      "evidence/v13/receipts/malformed.json: empty receipt: no evaluated assertions",
+      "evidence/v13/receipts/malformed.json: only 0 assertions, registry requires 2",
+      "evidence/v13/receipts/malformed.json: declared status PASS differs from rows (FAIL)",
+      "evidence/v13/receipts/malformed.json: assertion count does not match evaluated rows"
+    ],
+    "assertions": 0,
+    "status": "FAIL"
+  },
+  "actual_binding_status": "FAIL",
+  "verify_binding_problems": [
+    "malformed: checks[0]: assertion must be an object with a nonempty string id",
+    "malformed: checks[1]: assertion must be an object with a nonempty string id",
+    "malformed: empty receipt: no evaluated assertions",
+    "malformed: only 0 assertions, registry requires 2",
+    "malformed: declared status PASS differs from rows (FAIL)",
+    "malformed: assertion count does not match evaluated rows",
+    "malformed: suite status FAIL not accepted"
+  ]
+}

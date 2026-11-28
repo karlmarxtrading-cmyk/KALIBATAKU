@@ -1,0 +1,113 @@
+{
+  "artifact_status": "expected_fixtures_not_app_test_results",
+  "policy": "analytics-local-v1",
+  "cases": [
+    {
+      "id": "MET-A",
+      "N": 20,
+      "C": 14,
+      "W": 3,
+      "S": 2,
+      "B": 1,
+      "U": 0,
+      "score_percent": 70,
+      "accuracy_display_one_decimal": "82.4",
+      "responded_percent": 95
+    },
+    {
+      "id": "MET-B",
+      "N": 10,
+      "C": 5,
+      "W": 0,
+      "S": 0,
+      "B": 5,
+      "U": 0,
+      "score_percent": 50,
+      "accuracy_display_one_decimal": "100.0",
+      "responded_percent": 50
+    },
+    {
+      "id": "MET-C",
+      "forms": [
+        {
+          "C": 9,
+          "W": 1,
+          "N": 10
+        },
+        {
+          "C": 50,
+          "W": 50,
+          "N": 100
+        }
+      ],
+      "pooled_accuracy_display_one_decimal": "53.6"
+    },
+    {
+      "id": "MET-D",
+      "question": "24×4",
+      "responses": [
+        {
+          "value": "92",
+          "hint_used": false
+        },
+        {
+          "value": "96",
+          "hint_used": true
+        }
+      ],
+      "first_correct": false,
+      "final_practice_correct": true,
+      "mastery_eligible": false
+    },
+    {
+      "id": "MET-E",
+      "earlier_percent": 58,
+      "later_percent": 86,
+      "comparable": true,
+      "change_percentage_points": 28
+    },
+    {
+      "id": "MET-F",
+      "N": 0,
+      "score_percent": null,
+      "accuracy_percent": null,
+      "responded_percent": null
+    },
+    {
+      "id": "MET-G",
+      "kind": "dirty_invalid_after_valid",
+      "stored_value": "96",
+      "current_draft": "-",
+      "expected": "block_finalization_until_corrected_or_explicitly_marked_blank; never grade old value silently"
+    },
+    {
+      "id": "MET-H",
+      "kind": "assessment_revision_before_feedback",
+      "first_draft": "92",
+      "final_response": "96",
+      "answer": "96",
+      "expected": {
+        "first_response_correct": false,
+        "cycle_mastery_outcome_correct": true
+      }
+    },
+    {
+      "id": "MET-I",
+      "kind": "retest_small_pool",
+      "pool_size": 12,
+      "cycle1": {
+        "correct_unique": 10,
+        "total_unique": 12,
+        "mastered": false
+      },
+      "cycle2_after_targeted_practice": {
+        "correct_unique": 12,
+        "total_unique": 12,
+        "two_new_comparable_forms": true,
+        "other_gates_met": true,
+        "mastered_provisional": true
+      },
+      "history_and_prior_exposure_preserved": true
+    }
+  ]
+}

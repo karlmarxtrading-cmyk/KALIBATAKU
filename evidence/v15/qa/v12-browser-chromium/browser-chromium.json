@@ -1,0 +1,1929 @@
+{
+  "build": "460c98b682110f7e",
+  "engine": "chromium",
+  "version": "151.0.7922.34",
+  "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "utc": "2026-11-28T09:06:47.688196+00:00",
+  "checks": [
+    {
+      "id": "OKE-REVISE",
+      "status": "PASS",
+      "expected": "Invalid input writes zero grades. 999→5 retains a wrong first response and assisted correct revision. Final draft yields 2/2.",
+      "actual": {
+        "first_item": {
+          "key": "2026-11-28T09:06:38.873Z",
+          "first": false,
+          "final": true,
+          "history": [
+            [
+              "999",
+              false,
+              false,
+              false,
+              "1ba8e8b8-9e88-4776-b85f-920ef74c9d8b"
+            ],
+            [
+              "5",
+              true,
+              true,
+              false,
+              "69e9894c-e70b-48e9-b4fa-86bfc3919b2d"
+            ]
+          ]
+        },
+        "score": "2 dari 2 soal benar",
+        "ledger": 5
+      }
+    },
+    {
+      "id": "GRADE-RETRY",
+      "status": "PASS",
+      "expected": "A quota failure on the answer event retains the verdict. Retry writes the original event ID exactly once.",
+      "actual": {
+        "failed_event": "50f1f28c-45ad-4cb9-a6c7-360f85919bf5",
+        "committed_event": "50f1f28c-45ad-4cb9-a6c7-360f85919bf5",
+        "submissions": 1,
+        "raw": "999"
+      }
+    },
+    {
+      "id": "FRACTION",
+      "status": "PASS",
+      "expected": "11/12 + 10/12, input 21/12 and key 7/4 appear as stacked fractions.",
+      "actual": {
+        "question": "11/12 + 10/12",
+        "raw": "21/12",
+        "key": "7/4",
+        "status": "equivalent"
+      }
+    },
+    {
+      "id": "DECIMAL",
+      "status": "PASS",
+      "expected": "Scale survives renderer and language changes; equivalent step keeps decimal notation.",
+      "actual": {
+        "id": "20,0 + 35,3 → 50 + 5,3",
+        "en": "20.0 + 35.3",
+        "raw": "55,3"
+      }
+    },
+    {
+      "id": "ASSESSMENT",
+      "status": "PASS",
+      "expected": "Ongoing evaluation withholds keys. Final review includes question, answer, method and key.",
+      "actual": {
+        "ongoing_key": false,
+        "completed_key": true,
+        "rendered_expressions": 21
+      }
+    },
+    {
+      "id": "SPEED",
+      "status": "PASS",
+      "expected": "Checking a response leaves the running deadline unchanged.",
+      "actual": {
+        "original": 1795856862411,
+        "after": 1795856862411
+      }
+    },
+    {
+      "id": "MATH-32",
+      "status": "PASS",
+      "expected": "32 fixtures × two locales × two themes rendered by actual local SVG typesetter.",
+      "actual": [
+        {
+          "id": "MATH-FX-01",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "0 tambah 5",
+          "text": "0 + 5"
+        },
+        {
+          "id": "MATH-FX-02",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "11 per 12 tambah 10 per 12",
+          "text": "11/12 + 10/12"
+        },
+        {
+          "id": "MATH-FX-03",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "20 koma 0 tambah 35 koma 3",
+          "text": "20,0 + 35,3"
+        },
+        {
+          "id": "MATH-FX-04",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "minus 37 tambah 22",
+          "text": "−37 + 22"
+        },
+        {
+          "id": "MATH-FX-05",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "72 per 5 tambah 91 koma 762",
+          "text": "72/5 + 91,762"
+        },
+        {
+          "id": "MATH-FX-06",
+          "lang": "id",
+          "theme": "light",
+          "svg": 6,
+          "fractions": 4,
+          "state": "svg",
+          "spoken": "buka kurung minus 39 per 20 kali buka kurung minus 28 per 15 tutup kurung tambah buka kurung minus 1 per 3 tutup kurung tutup kurung kali 11 dibagi 2 minus 1 per 2",
+          "text": "(−39/20 × (−28/15) + (−1/3)) × 11 ÷ 2 − 1/2"
+        },
+        {
+          "id": "MATH-FX-07",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "999 kali 0",
+          "text": "999 × 0"
+        },
+        {
+          "id": "MATH-FX-08",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 dibagi 3",
+          "text": "12 ÷ 3"
+        },
+        {
+          "id": "MATH-FX-09",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "2 minus 7",
+          "text": "2 − 7"
+        },
+        {
+          "id": "MATH-FX-10",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "minus 3 minus buka kurung minus 5 tutup kurung",
+          "text": "−3 − (−5)"
+        },
+        {
+          "id": "MATH-FX-11",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "minus 8 kali buka kurung minus 3 tutup kurung",
+          "text": "−8 × (−3)"
+        },
+        {
+          "id": "MATH-FX-12",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "minus 21 dibagi buka kurung minus 7 tutup kurung",
+          "text": "−21 ÷ (−7)"
+        },
+        {
+          "id": "MATH-FX-13",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "1 per 2 tambah 1 per 3",
+          "text": "1/2 + 1/3"
+        },
+        {
+          "id": "MATH-FX-14",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "3 per 4 minus 1 per 8",
+          "text": "3/4 − 1/8"
+        },
+        {
+          "id": "MATH-FX-15",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "7 per 9 kali buka kurung 3 per 14 tutup kurung",
+          "text": "7/9 × (3/14)"
+        },
+        {
+          "id": "MATH-FX-16",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "2 per 3 dibagi buka kurung 4 per 5 tutup kurung",
+          "text": "2/3 ÷ (4/5)"
+        },
+        {
+          "id": "MATH-FX-17",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "minus 1 per 2 tambah 3 per 4",
+          "text": "−1/2 + 3/4"
+        },
+        {
+          "id": "MATH-FX-18",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "minus 3 per 5 dibagi buka kurung minus 2 per 7 tutup kurung",
+          "text": "−3/5 ÷ (−2/7)"
+        },
+        {
+          "id": "MATH-FX-19",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "0 koma 125 kali 8",
+          "text": "0,125 × 8"
+        },
+        {
+          "id": "MATH-FX-20",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1 koma 20 tambah 0 koma 30",
+          "text": "1,20 + 0,30"
+        },
+        {
+          "id": "MATH-FX-21",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1 koma 0 dibagi 3",
+          "text": "1,0 ÷ 3"
+        },
+        {
+          "id": "MATH-FX-22",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1000000 minus 1",
+          "text": "1000000 − 1"
+        },
+        {
+          "id": "MATH-FX-23",
+          "lang": "id",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 minus buka kurung 5 minus 2 tutup kurung",
+          "text": "12 − (5 − 2)"
+        },
+        {
+          "id": "MATH-FX-24",
+          "lang": "id",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 minus 5 minus 2",
+          "text": "12 − 5 − 2"
+        },
+        {
+          "id": "MATH-FX-25",
+          "lang": "id",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "24 dibagi buka kurung 6 dibagi 2 tutup kurung",
+          "text": "24 ÷ (6 ÷ 2)"
+        },
+        {
+          "id": "MATH-FX-26",
+          "lang": "id",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "24 dibagi 6 dibagi 2",
+          "text": "24 ÷ 6 ÷ 2"
+        },
+        {
+          "id": "MATH-FX-27",
+          "lang": "id",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 3,
+          "state": "svg",
+          "spoken": "buka kurung 1 per 2 tambah 1 per 3 tutup kurung dibagi buka kurung 7 per 6 tutup kurung",
+          "text": "(1/2 + 1/3) ÷ (7/6)"
+        },
+        {
+          "id": "MATH-FX-28",
+          "lang": "id",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "1 dibagi buka kurung 2 tambah 1 per 3 tutup kurung",
+          "text": "1 ÷ (2 + 1/3)"
+        },
+        {
+          "id": "MATH-FX-29",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1000000000000000000000000000000 koma 01 tambah 0 koma 02",
+          "text": "1000000000000000000000000000000,01 + 0,02"
+        },
+        {
+          "id": "MATH-FX-30",
+          "lang": "id",
+          "theme": "light",
+          "svg": 1,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "100 per 200",
+          "text": "100/200"
+        },
+        {
+          "id": "MATH-FX-31",
+          "lang": "id",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 3,
+          "state": "svg",
+          "spoken": "1 per 2 kali buka kurung 1 per 2 tutup kurung kali buka kurung 1 per 2 tutup kurung",
+          "text": "1/2 × (1/2) × (1/2)"
+        },
+        {
+          "id": "MATH-FX-32",
+          "lang": "id",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "2 per 8 tambah 0 koma 25",
+          "text": "2/8 + 0,25"
+        },
+        {
+          "id": "MATH-FX-01",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "0 tambah 5",
+          "text": "0 + 5"
+        },
+        {
+          "id": "MATH-FX-02",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "11 per 12 tambah 10 per 12",
+          "text": "11/12 + 10/12"
+        },
+        {
+          "id": "MATH-FX-03",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "20 koma 0 tambah 35 koma 3",
+          "text": "20,0 + 35,3"
+        },
+        {
+          "id": "MATH-FX-04",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "minus 37 tambah 22",
+          "text": "−37 + 22"
+        },
+        {
+          "id": "MATH-FX-05",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "72 per 5 tambah 91 koma 762",
+          "text": "72/5 + 91,762"
+        },
+        {
+          "id": "MATH-FX-06",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 6,
+          "fractions": 4,
+          "state": "svg",
+          "spoken": "buka kurung minus 39 per 20 kali buka kurung minus 28 per 15 tutup kurung tambah buka kurung minus 1 per 3 tutup kurung tutup kurung kali 11 dibagi 2 minus 1 per 2",
+          "text": "(−39/20 × (−28/15) + (−1/3)) × 11 ÷ 2 − 1/2"
+        },
+        {
+          "id": "MATH-FX-07",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "999 kali 0",
+          "text": "999 × 0"
+        },
+        {
+          "id": "MATH-FX-08",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 dibagi 3",
+          "text": "12 ÷ 3"
+        },
+        {
+          "id": "MATH-FX-09",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "2 minus 7",
+          "text": "2 − 7"
+        },
+        {
+          "id": "MATH-FX-10",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "minus 3 minus buka kurung minus 5 tutup kurung",
+          "text": "−3 − (−5)"
+        },
+        {
+          "id": "MATH-FX-11",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "minus 8 kali buka kurung minus 3 tutup kurung",
+          "text": "−8 × (−3)"
+        },
+        {
+          "id": "MATH-FX-12",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "minus 21 dibagi buka kurung minus 7 tutup kurung",
+          "text": "−21 ÷ (−7)"
+        },
+        {
+          "id": "MATH-FX-13",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "1 per 2 tambah 1 per 3",
+          "text": "1/2 + 1/3"
+        },
+        {
+          "id": "MATH-FX-14",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "3 per 4 minus 1 per 8",
+          "text": "3/4 − 1/8"
+        },
+        {
+          "id": "MATH-FX-15",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "7 per 9 kali buka kurung 3 per 14 tutup kurung",
+          "text": "7/9 × (3/14)"
+        },
+        {
+          "id": "MATH-FX-16",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "2 per 3 dibagi buka kurung 4 per 5 tutup kurung",
+          "text": "2/3 ÷ (4/5)"
+        },
+        {
+          "id": "MATH-FX-17",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "minus 1 per 2 tambah 3 per 4",
+          "text": "−1/2 + 3/4"
+        },
+        {
+          "id": "MATH-FX-18",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "minus 3 per 5 dibagi buka kurung minus 2 per 7 tutup kurung",
+          "text": "−3/5 ÷ (−2/7)"
+        },
+        {
+          "id": "MATH-FX-19",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "0 koma 125 kali 8",
+          "text": "0,125 × 8"
+        },
+        {
+          "id": "MATH-FX-20",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1 koma 20 tambah 0 koma 30",
+          "text": "1,20 + 0,30"
+        },
+        {
+          "id": "MATH-FX-21",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1 koma 0 dibagi 3",
+          "text": "1,0 ÷ 3"
+        },
+        {
+          "id": "MATH-FX-22",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1000000 minus 1",
+          "text": "1000000 − 1"
+        },
+        {
+          "id": "MATH-FX-23",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 minus buka kurung 5 minus 2 tutup kurung",
+          "text": "12 − (5 − 2)"
+        },
+        {
+          "id": "MATH-FX-24",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 minus 5 minus 2",
+          "text": "12 − 5 − 2"
+        },
+        {
+          "id": "MATH-FX-25",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "24 dibagi buka kurung 6 dibagi 2 tutup kurung",
+          "text": "24 ÷ (6 ÷ 2)"
+        },
+        {
+          "id": "MATH-FX-26",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "24 dibagi 6 dibagi 2",
+          "text": "24 ÷ 6 ÷ 2"
+        },
+        {
+          "id": "MATH-FX-27",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 3,
+          "state": "svg",
+          "spoken": "buka kurung 1 per 2 tambah 1 per 3 tutup kurung dibagi buka kurung 7 per 6 tutup kurung",
+          "text": "(1/2 + 1/3) ÷ (7/6)"
+        },
+        {
+          "id": "MATH-FX-28",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "1 dibagi buka kurung 2 tambah 1 per 3 tutup kurung",
+          "text": "1 ÷ (2 + 1/3)"
+        },
+        {
+          "id": "MATH-FX-29",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1000000000000000000000000000000 koma 01 tambah 0 koma 02",
+          "text": "1000000000000000000000000000000,01 + 0,02"
+        },
+        {
+          "id": "MATH-FX-30",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 1,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "100 per 200",
+          "text": "100/200"
+        },
+        {
+          "id": "MATH-FX-31",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 3,
+          "state": "svg",
+          "spoken": "1 per 2 kali buka kurung 1 per 2 tutup kurung kali buka kurung 1 per 2 tutup kurung",
+          "text": "1/2 × (1/2) × (1/2)"
+        },
+        {
+          "id": "MATH-FX-32",
+          "lang": "id",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "2 per 8 tambah 0 koma 25",
+          "text": "2/8 + 0,25"
+        },
+        {
+          "id": "MATH-FX-01",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "0 plus 5",
+          "text": "0 + 5"
+        },
+        {
+          "id": "MATH-FX-02",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "11 over 12 plus 10 over 12",
+          "text": "11/12 + 10/12"
+        },
+        {
+          "id": "MATH-FX-03",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "20 point 0 plus 35 point 3",
+          "text": "20.0 + 35.3"
+        },
+        {
+          "id": "MATH-FX-04",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "negative 37 plus 22",
+          "text": "−37 + 22"
+        },
+        {
+          "id": "MATH-FX-05",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "72 over 5 plus 91 point 762",
+          "text": "72/5 + 91.762"
+        },
+        {
+          "id": "MATH-FX-06",
+          "lang": "en",
+          "theme": "light",
+          "svg": 6,
+          "fractions": 4,
+          "state": "svg",
+          "spoken": "open parenthesis negative 39 over 20 times open parenthesis negative 28 over 15 close parenthesis plus open parenthesis negative 1 over 3 close parenthesis close parenthesis times 11 divided by 2 minus 1 over 2",
+          "text": "(−39/20 × (−28/15) + (−1/3)) × 11 ÷ 2 − 1/2"
+        },
+        {
+          "id": "MATH-FX-07",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "999 times 0",
+          "text": "999 × 0"
+        },
+        {
+          "id": "MATH-FX-08",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 divided by 3",
+          "text": "12 ÷ 3"
+        },
+        {
+          "id": "MATH-FX-09",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "2 minus 7",
+          "text": "2 − 7"
+        },
+        {
+          "id": "MATH-FX-10",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "negative 3 minus open parenthesis negative 5 close parenthesis",
+          "text": "−3 − (−5)"
+        },
+        {
+          "id": "MATH-FX-11",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "negative 8 times open parenthesis negative 3 close parenthesis",
+          "text": "−8 × (−3)"
+        },
+        {
+          "id": "MATH-FX-12",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "negative 21 divided by open parenthesis negative 7 close parenthesis",
+          "text": "−21 ÷ (−7)"
+        },
+        {
+          "id": "MATH-FX-13",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "1 over 2 plus 1 over 3",
+          "text": "1/2 + 1/3"
+        },
+        {
+          "id": "MATH-FX-14",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "3 over 4 minus 1 over 8",
+          "text": "3/4 − 1/8"
+        },
+        {
+          "id": "MATH-FX-15",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "7 over 9 times open parenthesis 3 over 14 close parenthesis",
+          "text": "7/9 × (3/14)"
+        },
+        {
+          "id": "MATH-FX-16",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "2 over 3 divided by open parenthesis 4 over 5 close parenthesis",
+          "text": "2/3 ÷ (4/5)"
+        },
+        {
+          "id": "MATH-FX-17",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "negative 1 over 2 plus 3 over 4",
+          "text": "−1/2 + 3/4"
+        },
+        {
+          "id": "MATH-FX-18",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "negative 3 over 5 divided by open parenthesis negative 2 over 7 close parenthesis",
+          "text": "−3/5 ÷ (−2/7)"
+        },
+        {
+          "id": "MATH-FX-19",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "0 point 125 times 8",
+          "text": "0.125 × 8"
+        },
+        {
+          "id": "MATH-FX-20",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1 point 20 plus 0 point 30",
+          "text": "1.20 + 0.30"
+        },
+        {
+          "id": "MATH-FX-21",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1 point 0 divided by 3",
+          "text": "1.0 ÷ 3"
+        },
+        {
+          "id": "MATH-FX-22",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1000000 minus 1",
+          "text": "1000000 − 1"
+        },
+        {
+          "id": "MATH-FX-23",
+          "lang": "en",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 minus open parenthesis 5 minus 2 close parenthesis",
+          "text": "12 − (5 − 2)"
+        },
+        {
+          "id": "MATH-FX-24",
+          "lang": "en",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 minus 5 minus 2",
+          "text": "12 − 5 − 2"
+        },
+        {
+          "id": "MATH-FX-25",
+          "lang": "en",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "24 divided by open parenthesis 6 divided by 2 close parenthesis",
+          "text": "24 ÷ (6 ÷ 2)"
+        },
+        {
+          "id": "MATH-FX-26",
+          "lang": "en",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "24 divided by 6 divided by 2",
+          "text": "24 ÷ 6 ÷ 2"
+        },
+        {
+          "id": "MATH-FX-27",
+          "lang": "en",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 3,
+          "state": "svg",
+          "spoken": "open parenthesis 1 over 2 plus 1 over 3 close parenthesis divided by open parenthesis 7 over 6 close parenthesis",
+          "text": "(1/2 + 1/3) ÷ (7/6)"
+        },
+        {
+          "id": "MATH-FX-28",
+          "lang": "en",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "1 divided by open parenthesis 2 plus 1 over 3 close parenthesis",
+          "text": "1 ÷ (2 + 1/3)"
+        },
+        {
+          "id": "MATH-FX-29",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1000000000000000000000000000000 point 01 plus 0 point 02",
+          "text": "1000000000000000000000000000000.01 + 0.02"
+        },
+        {
+          "id": "MATH-FX-30",
+          "lang": "en",
+          "theme": "light",
+          "svg": 1,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "100 over 200",
+          "text": "100/200"
+        },
+        {
+          "id": "MATH-FX-31",
+          "lang": "en",
+          "theme": "light",
+          "svg": 3,
+          "fractions": 3,
+          "state": "svg",
+          "spoken": "1 over 2 times open parenthesis 1 over 2 close parenthesis times open parenthesis 1 over 2 close parenthesis",
+          "text": "1/2 × (1/2) × (1/2)"
+        },
+        {
+          "id": "MATH-FX-32",
+          "lang": "en",
+          "theme": "light",
+          "svg": 2,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "2 over 8 plus 0 point 25",
+          "text": "2/8 + 0.25"
+        },
+        {
+          "id": "MATH-FX-01",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "0 plus 5",
+          "text": "0 + 5"
+        },
+        {
+          "id": "MATH-FX-02",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "11 over 12 plus 10 over 12",
+          "text": "11/12 + 10/12"
+        },
+        {
+          "id": "MATH-FX-03",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "20 point 0 plus 35 point 3",
+          "text": "20.0 + 35.3"
+        },
+        {
+          "id": "MATH-FX-04",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "negative 37 plus 22",
+          "text": "−37 + 22"
+        },
+        {
+          "id": "MATH-FX-05",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "72 over 5 plus 91 point 762",
+          "text": "72/5 + 91.762"
+        },
+        {
+          "id": "MATH-FX-06",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 6,
+          "fractions": 4,
+          "state": "svg",
+          "spoken": "open parenthesis negative 39 over 20 times open parenthesis negative 28 over 15 close parenthesis plus open parenthesis negative 1 over 3 close parenthesis close parenthesis times 11 divided by 2 minus 1 over 2",
+          "text": "(−39/20 × (−28/15) + (−1/3)) × 11 ÷ 2 − 1/2"
+        },
+        {
+          "id": "MATH-FX-07",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "999 times 0",
+          "text": "999 × 0"
+        },
+        {
+          "id": "MATH-FX-08",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 divided by 3",
+          "text": "12 ÷ 3"
+        },
+        {
+          "id": "MATH-FX-09",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "2 minus 7",
+          "text": "2 − 7"
+        },
+        {
+          "id": "MATH-FX-10",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "negative 3 minus open parenthesis negative 5 close parenthesis",
+          "text": "−3 − (−5)"
+        },
+        {
+          "id": "MATH-FX-11",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "negative 8 times open parenthesis negative 3 close parenthesis",
+          "text": "−8 × (−3)"
+        },
+        {
+          "id": "MATH-FX-12",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "negative 21 divided by open parenthesis negative 7 close parenthesis",
+          "text": "−21 ÷ (−7)"
+        },
+        {
+          "id": "MATH-FX-13",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "1 over 2 plus 1 over 3",
+          "text": "1/2 + 1/3"
+        },
+        {
+          "id": "MATH-FX-14",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "3 over 4 minus 1 over 8",
+          "text": "3/4 − 1/8"
+        },
+        {
+          "id": "MATH-FX-15",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "7 over 9 times open parenthesis 3 over 14 close parenthesis",
+          "text": "7/9 × (3/14)"
+        },
+        {
+          "id": "MATH-FX-16",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "2 over 3 divided by open parenthesis 4 over 5 close parenthesis",
+          "text": "2/3 ÷ (4/5)"
+        },
+        {
+          "id": "MATH-FX-17",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "negative 1 over 2 plus 3 over 4",
+          "text": "−1/2 + 3/4"
+        },
+        {
+          "id": "MATH-FX-18",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 2,
+          "state": "svg",
+          "spoken": "negative 3 over 5 divided by open parenthesis negative 2 over 7 close parenthesis",
+          "text": "−3/5 ÷ (−2/7)"
+        },
+        {
+          "id": "MATH-FX-19",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "0 point 125 times 8",
+          "text": "0.125 × 8"
+        },
+        {
+          "id": "MATH-FX-20",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1 point 20 plus 0 point 30",
+          "text": "1.20 + 0.30"
+        },
+        {
+          "id": "MATH-FX-21",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1 point 0 divided by 3",
+          "text": "1.0 ÷ 3"
+        },
+        {
+          "id": "MATH-FX-22",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1000000 minus 1",
+          "text": "1000000 − 1"
+        },
+        {
+          "id": "MATH-FX-23",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 minus open parenthesis 5 minus 2 close parenthesis",
+          "text": "12 − (5 − 2)"
+        },
+        {
+          "id": "MATH-FX-24",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "12 minus 5 minus 2",
+          "text": "12 − 5 − 2"
+        },
+        {
+          "id": "MATH-FX-25",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "24 divided by open parenthesis 6 divided by 2 close parenthesis",
+          "text": "24 ÷ (6 ÷ 2)"
+        },
+        {
+          "id": "MATH-FX-26",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "24 divided by 6 divided by 2",
+          "text": "24 ÷ 6 ÷ 2"
+        },
+        {
+          "id": "MATH-FX-27",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 3,
+          "state": "svg",
+          "spoken": "open parenthesis 1 over 2 plus 1 over 3 close parenthesis divided by open parenthesis 7 over 6 close parenthesis",
+          "text": "(1/2 + 1/3) ÷ (7/6)"
+        },
+        {
+          "id": "MATH-FX-28",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "1 divided by open parenthesis 2 plus 1 over 3 close parenthesis",
+          "text": "1 ÷ (2 + 1/3)"
+        },
+        {
+          "id": "MATH-FX-29",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 0,
+          "state": "svg",
+          "spoken": "1000000000000000000000000000000 point 01 plus 0 point 02",
+          "text": "1000000000000000000000000000000.01 + 0.02"
+        },
+        {
+          "id": "MATH-FX-30",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 1,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "100 over 200",
+          "text": "100/200"
+        },
+        {
+          "id": "MATH-FX-31",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 3,
+          "fractions": 3,
+          "state": "svg",
+          "spoken": "1 over 2 times open parenthesis 1 over 2 close parenthesis times open parenthesis 1 over 2 close parenthesis",
+          "text": "1/2 × (1/2) × (1/2)"
+        },
+        {
+          "id": "MATH-FX-32",
+          "lang": "en",
+          "theme": "dark",
+          "svg": 2,
+          "fractions": 1,
+          "state": "svg",
+          "spoken": "2 over 8 plus 0 point 25",
+          "text": "2/8 + 0.25"
+        }
+      ]
+    },
+    {
+      "id": "SLOW-START",
+      "status": "PASS",
+      "expected": "A delayed local renderer consumes no starting time and creates no early answer. Full speed duration begins after first SVG.",
+      "actual": {
+        "delay_ms": 1500,
+        "before": {
+          "ready": false,
+          "deadline": null,
+          "duration": 60,
+          "start": "2026-11-28T09:06:43.135Z",
+          "history": 0
+        },
+        "after": {
+          "ready": true,
+          "deadline": 1795856864728,
+          "duration": 60,
+          "start": "2026-11-28T09:06:44.728Z",
+          "history": 0
+        }
+      }
+    },
+    {
+      "id": "LOAD-FAILURE",
+      "status": "PASS",
+      "expected": "Blocked local renderer gives linear expression and actionable retry; typed answer persists.",
+      "actual": {
+        "fallback": "linear",
+        "retry": "SVG",
+        "preserved": "42",
+        "requests": [
+          [
+            "http://127.0.0.1:45617/probe-renderer-cf193f00-2543-49ef-92bc-39dc46259bb1/school/math/math/typeset.mjs",
+            503
+          ],
+          [
+            "http://127.0.0.1:45617/probe-renderer-cf193f00-2543-49ef-92bc-39dc46259bb1/school/math/math/typeset.mjs?retry=1",
+            200
+          ]
+        ]
+      }
+    },
+    {
+      "id": "TEACHER-3",
+      "status": "PASS",
+      "expected": "The assignment recipient, localized note draft and personal report reset preserve the selected person and source.",
+      "actual": {
+        "assignment": "Demo 04",
+        "saved_note": true,
+        "report_alias": "Local"
+      }
+    },
+    {
+      "id": "REFLOW",
+      "status": "PASS",
+      "expected": "Six actual viewport widths and 200% root font with visible SVG and a 48px action.",
+      "actual": [
+        [
+          320,
+          "100%",
+          {
+            "width": 320,
+            "scroll": 320,
+            "button": [
+              218.21875,
+              48
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          320,
+          "200%",
+          {
+            "width": 320,
+            "scroll": 320,
+            "button": [
+              136,
+              168.375
+            ],
+            "ink": true,
+            "overflow": [
+              "SPAN.math-surface",
+              "svg.[object SVGAnimatedString]"
+            ]
+          }
+        ],
+        [
+          360,
+          "100%",
+          {
+            "width": 360,
+            "scroll": 360,
+            "button": [
+              258.21875,
+              48
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          360,
+          "200%",
+          {
+            "width": 360,
+            "scroll": 360,
+            "button": [
+              165.40625,
+              126.78125
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          390,
+          "100%",
+          {
+            "width": 390,
+            "scroll": 390,
+            "button": [
+              287.46875,
+              48
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          390,
+          "200%",
+          {
+            "width": 390,
+            "scroll": 390,
+            "button": [
+              195.40625,
+              126.78125
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          768,
+          "100%",
+          {
+            "width": 768,
+            "scroll": 768,
+            "button": [
+              147,
+              48
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          768,
+          "200%",
+          {
+            "width": 768,
+            "scroll": 768,
+            "button": [
+              292,
+              85.1875
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          1024,
+          "100%",
+          {
+            "width": 1024,
+            "scroll": 1024,
+            "button": [
+              147,
+              48
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          1024,
+          "200%",
+          {
+            "width": 1024,
+            "scroll": 1024,
+            "button": [
+              292,
+              85.1875
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          1440,
+          "100%",
+          {
+            "width": 1440,
+            "scroll": 1440,
+            "button": [
+              147,
+              48
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ],
+        [
+          1440,
+          "200%",
+          {
+            "width": 1440,
+            "scroll": 1440,
+            "button": [
+              292,
+              85.1875
+            ],
+            "ink": true,
+            "overflow": []
+          }
+        ]
+      ]
+    },
+    {
+      "id": "LIFECYCLE",
+      "status": "PASS",
+      "expected": "Stale nodes cannot receive late SVG. Measure the boundaries of every arithmetic fixture at large text size.",
+      "actual": {
+        "removed_first_svg": 0,
+        "replacement": "svg",
+        "cases": [
+          {
+            "fixture": "MATH-FX-01",
+            "container": 280,
+            "outer": 144,
+            "scroll": 144,
+            "groups": 2,
+            "widest_group": 105
+          },
+          {
+            "fixture": "MATH-FX-02",
+            "container": 280,
+            "outer": 221,
+            "scroll": 221,
+            "groups": 2,
+            "widest_group": 143
+          },
+          {
+            "fixture": "MATH-FX-03",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 2,
+            "widest_group": 196
+          },
+          {
+            "fixture": "MATH-FX-04",
+            "container": 280,
+            "outer": 254,
+            "scroll": 254,
+            "groups": 2,
+            "widest_group": 142
+          },
+          {
+            "fixture": "MATH-FX-05",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 2,
+            "widest_group": 269
+          },
+          {
+            "fixture": "MATH-FX-06",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 6,
+            "widest_group": 215
+          },
+          {
+            "fixture": "MATH-FX-07",
+            "container": 280,
+            "outer": 218,
+            "scroll": 218,
+            "groups": 2,
+            "widest_group": 112
+          },
+          {
+            "fixture": "MATH-FX-08",
+            "container": 280,
+            "outer": 181,
+            "scroll": 181,
+            "groups": 2,
+            "widest_group": 105
+          },
+          {
+            "fixture": "MATH-FX-09",
+            "container": 280,
+            "outer": 144,
+            "scroll": 144,
+            "groups": 2,
+            "widest_group": 105
+          },
+          {
+            "fixture": "MATH-FX-10",
+            "container": 280,
+            "outer": 256,
+            "scroll": 256,
+            "groups": 2,
+            "widest_group": 180
+          },
+          {
+            "fixture": "MATH-FX-11",
+            "container": 280,
+            "outer": 256,
+            "scroll": 256,
+            "groups": 2,
+            "widest_group": 180
+          },
+          {
+            "fixture": "MATH-FX-12",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 2,
+            "widest_group": 180
+          },
+          {
+            "fixture": "MATH-FX-13",
+            "container": 280,
+            "outer": 155,
+            "scroll": 155,
+            "groups": 2,
+            "widest_group": 111
+          },
+          {
+            "fixture": "MATH-FX-14",
+            "container": 280,
+            "outer": 155,
+            "scroll": 155,
+            "groups": 2,
+            "widest_group": 111
+          },
+          {
+            "fixture": "MATH-FX-15",
+            "container": 280,
+            "outer": 188,
+            "scroll": 188,
+            "groups": 2,
+            "widest_group": 143
+          },
+          {
+            "fixture": "MATH-FX-16",
+            "container": 280,
+            "outer": 155,
+            "scroll": 155,
+            "groups": 2,
+            "widest_group": 111
+          },
+          {
+            "fixture": "MATH-FX-17",
+            "container": 280,
+            "outer": 188,
+            "scroll": 188,
+            "groups": 2,
+            "widest_group": 111
+          },
+          {
+            "fixture": "MATH-FX-18",
+            "container": 280,
+            "outer": 259,
+            "scroll": 259,
+            "groups": 2,
+            "widest_group": 182
+          },
+          {
+            "fixture": "MATH-FX-19",
+            "container": 280,
+            "outer": 271,
+            "scroll": 271,
+            "groups": 2,
+            "widest_group": 166
+          },
+          {
+            "fixture": "MATH-FX-20",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 2,
+            "widest_group": 196
+          },
+          {
+            "fixture": "MATH-FX-21",
+            "container": 280,
+            "outer": 198,
+            "scroll": 198,
+            "groups": 2,
+            "widest_group": 105
+          },
+          {
+            "fixture": "MATH-FX-22",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 2,
+            "widest_group": 259
+          },
+          {
+            "fixture": "MATH-FX-23",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 3,
+            "widest_group": 124
+          },
+          {
+            "fixture": "MATH-FX-24",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 3,
+            "widest_group": 105
+          },
+          {
+            "fixture": "MATH-FX-25",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 3,
+            "widest_group": 124
+          },
+          {
+            "fixture": "MATH-FX-26",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 3,
+            "widest_group": 105
+          },
+          {
+            "fixture": "MATH-FX-27",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 3,
+            "widest_group": 130
+          },
+          {
+            "fixture": "MATH-FX-28",
+            "container": 280,
+            "outer": 280,
+            "scroll": 280,
+            "groups": 3,
+            "widest_group": 130
+          },
+          {
+            "fixture": "MATH-FX-29",
+            "container": 280,
+            "outer": 280,
+            "scroll": 1228,
+            "groups": 2,
+            "widest_group": 1228
+          },
+          {
+            "fixture": "MATH-FX-30",
+            "container": 280,
+            "outer": 110,
+            "scroll": 110,
+            "groups": 1,
+            "widest_group": 110
+          },
+          {
+            "fixture": "MATH-FX-31",
+            "container": 280,
+            "outer": 266,
+            "scroll": 266,
+            "groups": 3,
+            "widest_group": 111
+          },
+          {
+            "fixture": "MATH-FX-32",
+            "container": 280,
+            "outer": 240,
+            "scroll": 240,
+            "groups": 2,
+            "widest_group": 196
+          }
+        ]
+      }
+    },
+    {
+      "id": "FOCUS-CONTRAST",
+      "status": "PASS",
+      "expected": "Focusable action and written verdict in normal and forced-colors media. Actual media state recorded.",
+      "actual": [
+        {
+          "requested": "none",
+          "theme": "light",
+          "color": "rgb(255, 255, 255)",
+          "background": "rgb(20, 92, 75)",
+          "outline": "solid",
+          "width": "3px",
+          "status": "Correct",
+          "highContrast": false
+        },
+        {
+          "requested": "none",
+          "theme": "dark",
+          "color": "rgb(16, 41, 31)",
+          "background": "rgb(139, 213, 181)",
+          "outline": "solid",
+          "width": "3px",
+          "status": "Correct",
+          "highContrast": false
+        },
+        {
+          "requested": "active",
+          "theme": "light",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "solid",
+          "width": "3px",
+          "status": "Correct",
+          "highContrast": true
+        },
+        {
+          "requested": "active",
+          "theme": "dark",
+          "color": "rgb(0, 0, 0)",
+          "background": "rgb(255, 255, 255)",
+          "outline": "solid",
+          "width": "3px",
+          "status": "Correct",
+          "highContrast": true
+        }
+      ]
+    },
+    {
+      "id": "ORIGIN",
+      "expected": "No external runtime request",
+      "status": "PASS",
+      "actual": []
+    }
+  ],
+  "page_errors": [],
+  "method": "Native engine with local HTTP, synthetic profiles and real controls. Viewports and forced colors are simulated. No physical device or AT listener."
+}

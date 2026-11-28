@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_origin": "mock",
+  "batch_id": "BATCH-CONTRACT-01",
+  "received_at": "2026-11-25T12:00:05Z",
+  "attempt_id": "ATT-CONTRACT-01",
+  "receipts": [
+    {
+      "event_id": "EVT-CONTRACT-0002",
+      "payload_hash": "028327f01591f34d311c29209ad98871620135e8e3e2002e155f698d9ffb8341",
+      "transport_result": "accepted",
+      "grading_state": "unverified",
+      "error_code": null
+    }
+  ],
+  "missing_sequences": []
+}

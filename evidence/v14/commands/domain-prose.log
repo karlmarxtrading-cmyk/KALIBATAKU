@@ -1,0 +1,15 @@
+# command: python3 tests/bank/domain_prose.py
+# started: 2026-11-28T04:22:41Z
+# node v22.23.5 · Python 3.13.18
+bank-complete PASS
+g01-g06-no-signed-prose PASS
+g01-g06-nonnegative-steps PASS
+steps-move-forward PASS
+fixture-G03-L05-DIV-924 PASS
+fixture-G02-L03-MIX-5x9 PASS
+fixture-G03-L01-ADD-291 PASS
+math-identity-preserved PASS
+editorial-log PASS
+MATH-002-domain-prose: PASS · 9 assertions · 0 failed []
+# exit: 0
+# finished: 2026-11-28T04:22:50Z

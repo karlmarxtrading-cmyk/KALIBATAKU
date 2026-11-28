@@ -1,0 +1,466 @@
+{
+  "format": "kalibataku-profile-backup",
+  "schema_version": "1.0.0",
+  "release_id": "kalibataku-static-1",
+  "data_origin": "local_practice",
+  "exported_at": "2026-11-28T17:24:39.012Z",
+  "verification_status": "unverified",
+  "profile": {
+    "id": "5d733d69-fac4-4506-bceb-5e1e31031843",
+    "name": "Demo uji fixture-pecahan"
+  },
+  "records": {
+    "attempts": [
+      {
+        "id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9",
+        "data": {
+          "attempt_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9",
+          "schema_version": "1.0.0",
+          "status": "completed",
+          "profile_id": "5d733d69-fac4-4506-bceb-5e1e31031843",
+          "data_origin": "local_practice",
+          "mode": "practice",
+          "package_id": "MM-G05-L03-ADD-P001",
+          "package_title": {
+            "id": "Pengenalan 001 · Penjumlahan — Pecahan berpenyebut sama",
+            "en": "Introduction 001 · Addition — Like-denominator fractions"
+          },
+          "grade": 5,
+          "level": 3,
+          "operation": "ADD",
+          "target_competency_id": "arithmetic.addition.g05.l03",
+          "content_version": "1.2.0",
+          "curriculum_version": "1.0.0-draft.2",
+          "policy_version": "mastery-local-v1",
+          "feedback_policy_version": "visible-key-v2",
+          "timing_policy_version": "continuous-deadline-v2",
+          "form_id": null,
+          "form_family_id": null,
+          "form_instance_id": null,
+          "assessment_cycle_id": null,
+          "assignment_id": null,
+          "pool_size": 20,
+          "order_seed": "205",
+          "index": 0,
+          "created_at": "2026-11-28T17:24:38.969Z",
+          "started_at": "2026-11-28T17:24:38.970Z",
+          "completed_at": "2026-11-28T17:24:38.980Z",
+          "duration_seconds": 0,
+          "deadline": null,
+          "ready": true,
+          "adaptive": null,
+          "flow_policy_version": "direct-result-v1",
+          "locale": "id",
+          "items": [
+            {
+              "question": {
+                "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+                "question_revision": "1.2.0",
+                "competency_id": "arithmetic.addition.g05.l03",
+                "template_id": "MM-TPL-G05-L03-ADD-LIKE",
+                "template_version": "1.2.0",
+                "fingerprint": "42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+                "fingerprint_policy": "canonical-ast-v1",
+                "question_type": "numeric_essay",
+                "answer_policy": "exact_rational",
+                "answer": {
+                  "numerator": "7",
+                  "denominator": "4"
+                },
+                "expression_ast": {
+                  "kind": "binary",
+                  "operation": "ADD",
+                  "left": {
+                    "kind": "rational",
+                    "numerator": "11",
+                    "denominator": "12",
+                    "display": {
+                      "kind": "fraction",
+                      "numerator": "11",
+                      "denominator": "12"
+                    }
+                  },
+                  "right": {
+                    "kind": "rational",
+                    "numerator": "5",
+                    "denominator": "6",
+                    "display": {
+                      "kind": "fraction",
+                      "numerator": "10",
+                      "denominator": "12"
+                    }
+                  }
+                },
+                "neutral_expression": "(11⁄12) + (10⁄12)",
+                "strategy_tags": [
+                  "FR"
+                ],
+                "hint": {
+                  "id": "Nyatakan kedua bilangan dalam satuan 1/12.",
+                  "en": "Express both numbers in units of 1/12."
+                },
+                "explanation": {
+                  "id": "Dengan penyebut 12, pembilangnya 11 dan 10. Hitung 11 + (10) = 21, lalu sederhanakan 21/12.",
+                  "en": "With denominator 12, the numerators are 11 and 10. Compute 11 + (10) = 21, then simplify 21/12."
+                },
+                "solution_steps": [
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "binary",
+                      "operation": "DIV",
+                      "left": {
+                        "kind": "binary",
+                        "operation": "ADD",
+                        "left": {
+                          "kind": "rational",
+                          "numerator": "11",
+                          "denominator": "1"
+                        },
+                        "right": {
+                          "kind": "rational",
+                          "numerator": "10",
+                          "denominator": "1"
+                        }
+                      },
+                      "right": {
+                        "kind": "rational",
+                        "numerator": "12",
+                        "denominator": "1"
+                      }
+                    },
+                    "text": {
+                      "id": "Dengan penyebut 12, pembilangnya 11 dan 10. Hitung 11 + (10) = 21, lalu sederhanakan 21/12.",
+                      "en": "With denominator 12, the numerators are 11 and 10. Compute 11 + (10) = 21, then simplify 21/12."
+                    }
+                  },
+                  {
+                    "kind": "equivalent_expression",
+                    "expression_ast": {
+                      "kind": "rational",
+                      "numerator": "7",
+                      "denominator": "4"
+                    },
+                    "text": {
+                      "id": "Hasil akhirnya 7⁄4.",
+                      "en": "The final value is 7⁄4."
+                    }
+                  }
+                ]
+              },
+              "question_instance_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9.1",
+              "seen": true,
+              "draft": "21/12",
+              "draft_locale": "id",
+              "dirty": false,
+              "history": [
+                {
+                  "question_instance_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9.1",
+                  "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+                  "question_revision": "1.2.0",
+                  "competency_id": "arithmetic.addition.g05.l03",
+                  "answer": {
+                    "numerator": "99",
+                    "denominator": "1"
+                  },
+                  "raw_answer": "99",
+                  "draft_locale": "id",
+                  "submission_kind": "first",
+                  "attempt_number": 1,
+                  "hint_used": false,
+                  "active_duration_ms": 0,
+                  "elapsed_duration_ms": 8,
+                  "timing_quality": "valid_client_estimate",
+                  "client_is_correct": false,
+                  "key_seen_before": false,
+                  "hint_before": false,
+                  "feedback_policy_version": "visible-key-v2",
+                  "first_correct": false,
+                  "key_revealed_at": "2026-11-28T17:24:38.978Z",
+                  "key_reveal_reason": "checked_response",
+                  "event_id": "01fef67b-9427-42bb-a390-4b4918c777a4",
+                  "is_correct": false
+                },
+                {
+                  "question_instance_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9.1",
+                  "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+                  "question_revision": "1.2.0",
+                  "competency_id": "arithmetic.addition.g05.l03",
+                  "answer": {
+                    "numerator": "7",
+                    "denominator": "4"
+                  },
+                  "raw_answer": "21/12",
+                  "draft_locale": "id",
+                  "submission_kind": "retry",
+                  "attempt_number": 2,
+                  "hint_used": false,
+                  "active_duration_ms": 0,
+                  "elapsed_duration_ms": 9,
+                  "timing_quality": "valid_client_estimate",
+                  "client_is_correct": true,
+                  "key_seen_before": true,
+                  "hint_before": false,
+                  "feedback_policy_version": "visible-key-v2",
+                  "first_correct": false,
+                  "key_revealed_at": "2026-11-28T17:24:38.978Z",
+                  "key_reveal_reason": "checked_response",
+                  "event_id": "59366c3f-05e2-4b23-bc9d-910e7e9c20ab",
+                  "is_correct": true
+                }
+              ],
+              "hint_used": false,
+              "feedback": true,
+              "final_status": "correct",
+              "active_ms": 0,
+              "timing_quality": "valid_client_estimate",
+              "first_seen_at": "2026-11-28T17:24:38.970Z",
+              "key_revealed_at": "2026-11-28T17:24:38.978Z",
+              "key_reveal_reason": "checked_response",
+              "first_correct": false,
+              "final_correct": true,
+              "last_event_id": "59366c3f-05e2-4b23-bc9d-910e7e9c20ab"
+            }
+          ],
+          "_rev": 4,
+          "_seq": 4,
+          "_saved_at": "2026-11-28T17:24:38.980Z",
+          "finish_reason": "submitted",
+          "metrics": {
+            "N": 1,
+            "C": 1,
+            "W": 0,
+            "S": 0,
+            "B": 0,
+            "U": 0,
+            "score_percent": 100,
+            "accuracy_percent": 100,
+            "responded_percent": 100,
+            "first_response_count": 1,
+            "first_correct": 0,
+            "first_response_accuracy": 0,
+            "retries": 1,
+            "hints": 0
+          }
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": "533aa045-5233-4edc-b2ff-9415f96f9558",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "533aa045-5233-4edc-b2ff-9415f96f9558",
+          "event_type": "attempt.started",
+          "event_sequence": 1,
+          "attempt_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "5d733d69-fac4-4506-bceb-5e1e31031843",
+            "server_subject_ref": null
+          },
+          "context": {
+            "feedback_policy_version": "visible-key-v2",
+            "timing_policy_version": "continuous-deadline-v2",
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G05-L03-ADD-P001",
+            "content_version": "1.2.0",
+            "material_grade": 5,
+            "level": 3,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-28T17:24:38.971Z",
+          "payload": {
+            "instances": [
+              {
+                "question_instance_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9.1",
+                "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+                "question_revision": "1.2.0",
+                "competency_id": "arithmetic.addition.g05.l03"
+              }
+            ],
+            "order_seed": "205",
+            "started_at_client": "2026-11-28T17:24:38.970Z"
+          },
+          "payload_hash": "ac0d5fb1f72bcb1b300ca07574c154932452f7725b27213ce9212469ad6cd93a"
+        }
+      },
+      {
+        "id": "01fef67b-9427-42bb-a390-4b4918c777a4",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "01fef67b-9427-42bb-a390-4b4918c777a4",
+          "event_type": "answer.submitted",
+          "event_sequence": 2,
+          "attempt_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "5d733d69-fac4-4506-bceb-5e1e31031843",
+            "server_subject_ref": null
+          },
+          "context": {
+            "feedback_policy_version": "visible-key-v2",
+            "timing_policy_version": "continuous-deadline-v2",
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G05-L03-ADD-P001",
+            "content_version": "1.2.0",
+            "material_grade": 5,
+            "level": 3,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-28T17:24:38.978Z",
+          "payload": {
+            "question_instance_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9.1",
+            "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+            "question_revision": "1.2.0",
+            "competency_id": "arithmetic.addition.g05.l03",
+            "answer": {
+              "numerator": "99",
+              "denominator": "1"
+            },
+            "raw_answer": "99",
+            "draft_locale": "id",
+            "submission_kind": "first",
+            "attempt_number": 1,
+            "hint_used": false,
+            "active_duration_ms": 0,
+            "elapsed_duration_ms": 8,
+            "timing_quality": "valid_client_estimate",
+            "client_is_correct": false,
+            "key_seen_before": false,
+            "hint_before": false,
+            "feedback_policy_version": "visible-key-v2",
+            "first_correct": false,
+            "key_revealed_at": "2026-11-28T17:24:38.978Z",
+            "key_reveal_reason": "checked_response"
+          },
+          "payload_hash": "ad3bc997098fb47ad1b036d71710673c8b5ab41e0a6076b92a1aeaeb6a746c84"
+        }
+      },
+      {
+        "id": "59366c3f-05e2-4b23-bc9d-910e7e9c20ab",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "59366c3f-05e2-4b23-bc9d-910e7e9c20ab",
+          "event_type": "answer.submitted",
+          "event_sequence": 3,
+          "attempt_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "5d733d69-fac4-4506-bceb-5e1e31031843",
+            "server_subject_ref": null
+          },
+          "context": {
+            "feedback_policy_version": "visible-key-v2",
+            "timing_policy_version": "continuous-deadline-v2",
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G05-L03-ADD-P001",
+            "content_version": "1.2.0",
+            "material_grade": 5,
+            "level": 3,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-28T17:24:38.979Z",
+          "payload": {
+            "question_instance_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9.1",
+            "question_id": "arithmetic.addition.g05.l03.42ea356f716ba8e7213d45556f558aa2e9b3d7d1678c0ab098547c6404104fba",
+            "question_revision": "1.2.0",
+            "competency_id": "arithmetic.addition.g05.l03",
+            "answer": {
+              "numerator": "7",
+              "denominator": "4"
+            },
+            "raw_answer": "21/12",
+            "draft_locale": "id",
+            "submission_kind": "retry",
+            "attempt_number": 2,
+            "hint_used": false,
+            "active_duration_ms": 0,
+            "elapsed_duration_ms": 9,
+            "timing_quality": "valid_client_estimate",
+            "client_is_correct": true,
+            "key_seen_before": true,
+            "hint_before": false,
+            "feedback_policy_version": "visible-key-v2",
+            "first_correct": false,
+            "key_revealed_at": "2026-11-28T17:24:38.978Z",
+            "key_reveal_reason": "checked_response"
+          },
+          "payload_hash": "c5fa0bf5d70f05e0ac7d7750cd58c2f9bd7cac16fb74237a52d1d1d9df66010b"
+        }
+      },
+      {
+        "id": "6eb5a841-a650-462a-965d-95a385ab3e1d",
+        "data": {
+          "schema_version": "1.0.0",
+          "event_id": "6eb5a841-a650-462a-965d-95a385ab3e1d",
+          "event_type": "attempt.completed",
+          "event_sequence": 4,
+          "attempt_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9",
+          "provenance": {
+            "data_origin": "local_practice",
+            "dataset_id": "device",
+            "local_profile_id": "5d733d69-fac4-4506-bceb-5e1e31031843",
+            "server_subject_ref": null
+          },
+          "context": {
+            "feedback_policy_version": "visible-key-v2",
+            "timing_policy_version": "continuous-deadline-v2",
+            "module_id": "mental-math",
+            "curriculum_id": "kalibataku",
+            "curriculum_version": "1.0.0-draft.2",
+            "package_id": "MM-G05-L03-ADD-P001",
+            "content_version": "1.2.0",
+            "material_grade": 5,
+            "level": 3,
+            "mode": "practice",
+            "locale": "id",
+            "policy_version": "mastery-local-v1",
+            "assignment_id": null,
+            "form_id": null,
+            "assessment_cycle_id": null
+          },
+          "occurred_at_client": "2026-11-28T17:24:38.980Z",
+          "payload": {
+            "expected_event_count": 4,
+            "final_responses": [
+              {
+                "question_instance_id": "ffbf52b4-c18a-4ec0-8e53-015e849c00f9.1",
+                "response_event_id": "59366c3f-05e2-4b23-bc9d-910e7e9c20ab",
+                "status": "answered"
+              }
+            ],
+            "completed_at_client": "2026-11-28T17:24:38.980Z"
+          },
+          "payload_hash": "0b96411a2c4a505eaa06729c277be0a352c5233fec256d6501a5ce3ec3c010d0"
+        }
+      }
+    ],
+    "records": []
+  },
+  "checksum": "2d8b08b1a4e1e4e19a0d0422ef29545d0a7930c6b35db7d779d9c5b4dca9cb6c"
+}

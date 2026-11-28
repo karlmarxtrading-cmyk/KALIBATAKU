@@ -1,0 +1,1913 @@
+{
+  "schema": "kalibataku-qa-receipt/1",
+  "suite": "compose-commit",
+  "started": "2026-11-28T17:23:59.744412+00:00",
+  "build": {
+    "offline_release": "83fef50a05e52452"
+  },
+  "runtime": {
+    "python": "3.12.14",
+    "os": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "browsers": {
+      "chromium": "151.0.7922.34",
+      "firefox": "153.0",
+      "webkit": "26.5"
+    }
+  },
+  "checks": [
+    {
+      "id": "chromium-native-1-grade",
+      "status": "PASS",
+      "expected": "Committed trusted text then one fresh Enter yields one grade",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 1,
+        "completionEvents": 0,
+        "history": [
+          {
+            "correct": false,
+            "assisted": false
+          }
+        ],
+        "focus": "",
+        "trace": [
+          {
+            "type": "input",
+            "at": 955.6999999992549,
+            "value": "71",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 966.5,
+            "value": "71",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 974.0999999996275,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-native-1-next",
+      "status": "PASS",
+      "expected": "The next new Enter advances one index with no extra grade",
+      "actual": {
+        "index": 1,
+        "gradeEvents": 1,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "input",
+            "at": 955.6999999992549,
+            "value": "71",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 966.5,
+            "value": "71",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 974.0999999996275,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1048.4000000003725,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1051.4000000003725,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-native-2-grade",
+      "status": "PASS",
+      "expected": "Committed trusted text then one fresh Enter yields one grade",
+      "actual": {
+        "index": 1,
+        "gradeEvents": 2,
+        "completionEvents": 0,
+        "history": [
+          {
+            "correct": false,
+            "assisted": false
+          }
+        ],
+        "focus": "",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1102.5999999996275,
+            "value": "72",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1103.7999999988824,
+            "value": "72",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1114,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-native-2-next",
+      "status": "PASS",
+      "expected": "The next new Enter advances one index with no extra grade",
+      "actual": {
+        "index": 2,
+        "gradeEvents": 2,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1102.5999999996275,
+            "value": "72",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1103.7999999988824,
+            "value": "72",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1114,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1182.0999999996275,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1186.9000000003725,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-native-3-grade",
+      "status": "PASS",
+      "expected": "Committed trusted text then one fresh Enter yields one grade",
+      "actual": {
+        "index": 2,
+        "gradeEvents": 3,
+        "completionEvents": 0,
+        "history": [
+          {
+            "correct": false,
+            "assisted": false
+          }
+        ],
+        "focus": "",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1247.5,
+            "value": "73",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1248.2999999988824,
+            "value": "73",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1254.5999999996275,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-native-3-next",
+      "status": "PASS",
+      "expected": "The next new Enter advances one index with no extra grade",
+      "actual": {
+        "index": 3,
+        "gradeEvents": 3,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1247.5,
+            "value": "73",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1248.2999999988824,
+            "value": "73",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1254.5999999996275,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1331.199999999255,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1333.699999999255,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-native-4-grade",
+      "status": "PASS",
+      "expected": "Committed trusted text then one fresh Enter yields one grade",
+      "actual": {
+        "index": 3,
+        "gradeEvents": 4,
+        "completionEvents": 0,
+        "history": [
+          {
+            "correct": false,
+            "assisted": false
+          }
+        ],
+        "focus": "",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1394.199999999255,
+            "value": "74",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1395.0999999996275,
+            "value": "74",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1397.4000000003725,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-native-4-next",
+      "status": "PASS",
+      "expected": "The next new Enter advances one index with no extra grade",
+      "actual": {
+        "index": 4,
+        "gradeEvents": 4,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1394.199999999255,
+            "value": "74",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1395.0999999996275,
+            "value": "74",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1397.4000000003725,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1465.199999999255,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1475.699999999255,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-candidate",
+      "status": "PASS",
+      "expected": "IME acceptance, implicit submit or IME-marked Enter leaves the item ungraded",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "compositionstart",
+            "at": 817.8000000007451,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keydown",
+            "at": 817.9000000003725,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 229,
+            "repeat": false,
+            "composing": true,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "submit",
+            "at": 818.0999999996275,
+            "value": null,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "compositionend",
+            "at": 818.0999999996275,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "input",
+            "at": 818.4000000003725,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertCompositionText",
+            "trusted": false
+          },
+          {
+            "type": "submit",
+            "at": 818.4000000003725,
+            "value": null,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 818.4000000003725,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": true,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 818.4000000003725,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-229",
+      "status": "PASS",
+      "expected": "IME acceptance, implicit submit or IME-marked Enter leaves the item ungraded",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "keydown",
+            "at": 903.3000000007451,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 229,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 903.4000000003725,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-flagged",
+      "status": "PASS",
+      "expected": "IME acceptance, implicit submit or IME-marked Enter leaves the item ungraded",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "keydown",
+            "at": 983.2000000011176,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": true,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 983.2000000011176,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "chromium-fresh-before-timer",
+      "status": "FAIL",
+      "expected": "A fresh Enter after end plus final input grades in the same task",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "compositionstart",
+            "at": 1052.4000000003725,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "compositionend",
+            "at": 1052.4000000003725,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "input",
+            "at": 1052.7000000011176,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertCompositionText",
+            "trusted": false
+          },
+          {
+            "type": "keydown",
+            "at": 1052.7000000011176,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 1052.800000000745,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ],
+        "observation": "Locator expected to be focused"
+      }
+    },
+    {
+      "id": "firefox-native-1-grade",
+      "status": "FAIL",
+      "expected": "Committed trusted text then one fresh Enter yields one grade",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "compositionstart",
+            "at": 2259,
+            "value": "",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "compositionend",
+            "at": 2259,
+            "value": "71",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "input",
+            "at": 2260,
+            "value": "71",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertCompositionText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 2262,
+            "value": "71",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 2274,
+            "value": "71",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ],
+        "observation": "Locator expected to be focused"
+      }
+    },
+    {
+      "id": "firefox-candidate",
+      "status": "PASS",
+      "expected": "IME acceptance, implicit submit or IME-marked Enter leaves the item ungraded",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "compositionstart",
+            "at": 1602,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keydown",
+            "at": 1603,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 229,
+            "repeat": false,
+            "composing": true,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "submit",
+            "at": 1605,
+            "value": null,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "compositionend",
+            "at": 1605,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "input",
+            "at": 1605,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertCompositionText",
+            "trusted": false
+          },
+          {
+            "type": "submit",
+            "at": 1607,
+            "value": null,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1607,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": true,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 1607,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "firefox-229",
+      "status": "PASS",
+      "expected": "IME acceptance, implicit submit or IME-marked Enter leaves the item ungraded",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "keydown",
+            "at": 1722,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 229,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 1722,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "firefox-flagged",
+      "status": "PASS",
+      "expected": "IME acceptance, implicit submit or IME-marked Enter leaves the item ungraded",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "keydown",
+            "at": 1845,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": true,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 1845,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "firefox-fresh-before-timer",
+      "status": "FAIL",
+      "expected": "A fresh Enter after end plus final input grades in the same task",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "compositionstart",
+            "at": 2009,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "compositionend",
+            "at": 2009,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "input",
+            "at": 2009,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertCompositionText",
+            "trusted": false
+          },
+          {
+            "type": "keydown",
+            "at": 2009,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 2009,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ],
+        "observation": "Locator expected to be focused"
+      }
+    },
+    {
+      "id": "webkit-native-1-grade",
+      "status": "PASS",
+      "expected": "Committed trusted text then one fresh Enter yields one grade",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 1,
+        "completionEvents": 0,
+        "history": [
+          {
+            "correct": false,
+            "assisted": false
+          }
+        ],
+        "focus": "",
+        "trace": [
+          {
+            "type": "input",
+            "at": 658,
+            "value": "71",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 659,
+            "value": "71",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 665,
+            "value": "71",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-native-1-next",
+      "status": "PASS",
+      "expected": "The next new Enter advances one index with no extra grade",
+      "actual": {
+        "index": 1,
+        "gradeEvents": 1,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "input",
+            "at": 658,
+            "value": "71",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 659,
+            "value": "71",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 665,
+            "value": "71",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 743,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 753,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-native-2-grade",
+      "status": "PASS",
+      "expected": "Committed trusted text then one fresh Enter yields one grade",
+      "actual": {
+        "index": 1,
+        "gradeEvents": 2,
+        "completionEvents": 0,
+        "history": [
+          {
+            "correct": false,
+            "assisted": false
+          }
+        ],
+        "focus": "",
+        "trace": [
+          {
+            "type": "input",
+            "at": 858,
+            "value": "72",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 859,
+            "value": "72",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 862,
+            "value": "72",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-native-2-next",
+      "status": "PASS",
+      "expected": "The next new Enter advances one index with no extra grade",
+      "actual": {
+        "index": 2,
+        "gradeEvents": 2,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "input",
+            "at": 858,
+            "value": "72",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 859,
+            "value": "72",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 862,
+            "value": "72",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 972,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 989,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-native-3-grade",
+      "status": "PASS",
+      "expected": "Committed trusted text then one fresh Enter yields one grade",
+      "actual": {
+        "index": 2,
+        "gradeEvents": 3,
+        "completionEvents": 0,
+        "history": [
+          {
+            "correct": false,
+            "assisted": false
+          }
+        ],
+        "focus": "",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1138,
+            "value": "73",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1138,
+            "value": "73",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1146,
+            "value": "73",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-native-3-next",
+      "status": "PASS",
+      "expected": "The next new Enter advances one index with no extra grade",
+      "actual": {
+        "index": 3,
+        "gradeEvents": 3,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1138,
+            "value": "73",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1138,
+            "value": "73",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1146,
+            "value": "73",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1442,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1449,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-native-4-grade",
+      "status": "PASS",
+      "expected": "Committed trusted text then one fresh Enter yields one grade",
+      "actual": {
+        "index": 3,
+        "gradeEvents": 4,
+        "completionEvents": 0,
+        "history": [
+          {
+            "correct": false,
+            "assisted": false
+          }
+        ],
+        "focus": "",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1534,
+            "value": "74",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1540,
+            "value": "74",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1556,
+            "value": "74",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-native-4-next",
+      "status": "PASS",
+      "expected": "The next new Enter advances one index with no extra grade",
+      "actual": {
+        "index": 4,
+        "gradeEvents": 4,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "input",
+            "at": 1534,
+            "value": "74",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertText",
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1540,
+            "value": "74",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1556,
+            "value": "74",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 1644,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keyup",
+            "at": 1646,
+            "value": null,
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": true
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-candidate",
+      "status": "PASS",
+      "expected": "IME acceptance, implicit submit or IME-marked Enter leaves the item ungraded",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "compositionstart",
+            "at": 661,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keydown",
+            "at": 661,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 229,
+            "repeat": false,
+            "composing": true,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "submit",
+            "at": 661,
+            "value": null,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "compositionend",
+            "at": 661,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "input",
+            "at": 661,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertCompositionText",
+            "trusted": false
+          },
+          {
+            "type": "submit",
+            "at": 662,
+            "value": null,
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": true
+          },
+          {
+            "type": "keydown",
+            "at": 662,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": true,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 662,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-229",
+      "status": "PASS",
+      "expected": "IME acceptance, implicit submit or IME-marked Enter leaves the item ungraded",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "keydown",
+            "at": 883,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 229,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 883,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-flagged",
+      "status": "PASS",
+      "expected": "IME acceptance, implicit submit or IME-marked Enter leaves the item ungraded",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "keydown",
+            "at": 945,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": true,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 945,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ]
+      }
+    },
+    {
+      "id": "webkit-fresh-before-timer",
+      "status": "FAIL",
+      "expected": "A fresh Enter after end plus final input grades in the same task",
+      "actual": {
+        "index": 0,
+        "gradeEvents": 0,
+        "completionEvents": 0,
+        "history": [],
+        "focus": "kp-answer",
+        "trace": [
+          {
+            "type": "compositionstart",
+            "at": 1005,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "compositionend",
+            "at": 1005,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": null,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "input",
+            "at": 1006,
+            "value": "81",
+            "key": null,
+            "code": null,
+            "keyCode": null,
+            "repeat": null,
+            "composing": false,
+            "inputType": "insertCompositionText",
+            "trusted": false
+          },
+          {
+            "type": "keydown",
+            "at": 1006,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          },
+          {
+            "type": "keyup",
+            "at": 1006,
+            "value": "81",
+            "key": "Enter",
+            "code": "Enter",
+            "keyCode": 13,
+            "repeat": false,
+            "composing": false,
+            "inputType": null,
+            "trusted": false
+          }
+        ],
+        "observation": "Locator expected to be focused"
+      }
+    }
+  ],
+  "scope": "Desktop browser input events and controlled DOM event sequences. Physical IMEs require device evidence.",
+  "finished": "2026-11-28T17:24:34.835372+00:00",
+  "status": "FAIL",
+  "assertions": 29
+}

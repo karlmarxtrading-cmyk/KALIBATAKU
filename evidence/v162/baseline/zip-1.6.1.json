@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-11-28T18:30:10.905590+00:00",
+  "zip_filename": "KALIBATAKU_1.6.1_KANDIDAT_HOLD.zip",
+  "zip_sha256": "37169d1c06edd8216acd3a263282004d893494c74d3dabc6dcb9376e9d7bf198",
+  "zip_bytes": 128603591,
+  "uncompressed_bytes": 526493714,
+  "local_central_crc_sha_verified": 7418,
+  "inventory_rows": 7416,
+  "sha256sums_rows": 7417,
+  "sha256sums_sha256": "eec04d84058697f19a15ee2565b54f1d732cfb2669130f6c537350e0d1205b90",
+  "file_inventory_sha256": "8a6b7a151e262b87b02fd76519cc1f2cdcaccebbb33c5ca254f4d8e9e2c3e46d",
+  "build": {
+    "app_version": "1.6.1",
+    "bank_version": "1.2.0",
+    "offline_release": "a2f40449c4738fe6",
+    "dist_tree_sha256": "9693b517c9ef39df3e03a264e5484a7d83281b87673f204c654737e29fe4653b",
+    "source_tree_sha256": "fdd195f40a594faef3fe582ae00a1156850321de3dc78f05785fac96ee792b41",
+    "release_label": "HOLD",
+    "dist_files": 5054,
+    "source_files": 633,
+    "bank_files": 4677,
+    "bank_tree_sha256": "6811a3554f5ecc3f0626bd258553f08016484c38e5acbe902fd1c34881f0fd43",
+    "qa_logs": 94,
+    "qa_receipt_hashes": 52,
+    "qa_binding_sha256": "19fe3aa1e36c6d5e260c6077c817352fd85e7fcf98d7fe957c6447ecaa6bdf8d"
+  }
+}

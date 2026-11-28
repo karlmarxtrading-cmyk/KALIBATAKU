@@ -1,0 +1,11 @@
+{
+  "time": "2026-11-28T08:25:27.477Z",
+  "runtime": "v24.22.3",
+  "rows": 100001,
+  "json_written": true,
+  "bytes": 7967166,
+  "json_reader": "BACKUP_TOO_LARGE",
+  "zip_read_rows": 100001,
+  "recovery_ongoing_rows": 100003,
+  "recovery_draft_failure": "BACKUP_TOO_LARGE"
+}

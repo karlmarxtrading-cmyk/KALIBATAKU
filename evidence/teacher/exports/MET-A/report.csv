@@ -1,0 +1,74 @@
+﻿"Summary","Siswa","Sumber","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Summary","Demo Éka, ""Arum""","SIMULASI / DEMONSTRATION DATA",20,14,3,2,1,0,70,82.3529411764706,95
+"Competencies","Kompetensi","Kelas","Level","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Competencies","arithmetic.multiplication.g03.l02",3,2,"Perkalian",20,14,3,2,1,0,70,82.3529411764706,95
+"Operations","Operasi","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Operations","Penjumlahan",0,0,0,0,0,0,,,
+"Operations","Pengurangan",0,0,0,0,0,0,,,
+"Operations","Perkalian",20,14,3,2,1,0,70,82.3529411764706,95
+"Operations","Pembagian",0,0,0,0,0,0,,,
+"Operations","Campuran",0,0,0,0,0,0,,,
+"Sessions","ID","UTC","Paket","Mode","Status","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Sessions","4284512e-d0f3-46be-b096-e282d047b5aa","2026-11-05T01:00:00.000Z","TEST-MUL","Evaluasi","Selesai",20,14,3,2,1,0,70,82.3529411764706,95
+"Dictionary","Ukuran","Definisi"
+"Dictionary","Skor paket","14 / 20"
+"Dictionary","Akurasi jawaban","14 / 17"
+"Dictionary","Soal ditanggapi","19 / 20"
+"Dictionary","Jawaban pertama benar","14 / 17"
+"Dictionary","Penyebut nol","Kosong = belum dievaluasi"
+"Metadata","schema_version","1.0.0"
+"Metadata","report_id","R-abf20328-4dec-40a4-8362-42a6b00b6d60"
+"Metadata","data_origin","demo"
+"Metadata","verification_status","unverified"
+"Metadata","locale","id"
+"Metadata","period_start_utc","1969-12-31T17:00:00.000Z"
+"Metadata","period_end_exclusive_utc","2099-12-31T17:00:00.000Z"
+"Metadata","display_timezone","Asia/Jakarta"
+"Metadata","policy_version","analytics-local-v1"
+"Metadata","created_at","2026-11-25T12:05:00Z"
+"Metadata","assigned_count",20
+"Metadata","correct_count",14
+"Metadata","incorrect_count",3
+"Metadata","skipped_count",2
+"Metadata","blank_count",1
+"Metadata","unseen_count",0
+"Metadata","form_score_percent",70
+"Metadata","valid_response_accuracy_percent",82.3529411764706
+"Metadata","responded_percent",95
+"Metadata","subject_id","demo-01"
+"Metadata","subject_alias","Demo Éka, ""Arum"""
+"Metadata","source","demo"
+"Metadata","classId",""
+"Metadata","studentId","demo-01"
+"Metadata","from",""
+"Metadata","to",""
+"Metadata","timezone","Asia/Jakarta"
+"Metadata","module","mental-math"
+"Metadata","grade",""
+"Metadata","level",""
+"Metadata","operation",""
+"Metadata","mode",""
+"Metadata","status",""
+"Metadata","packageId",""
+"Metadata","content_versions","1.0.0"
+"Metadata","change_pp",
+"Notes","Penulis","UTC","Revisi","Catatan","ID","Menggantikan","Status"
+"Math","Sumber","ID","Ekspresi","Pembilang kunci","Penyebut kunci","Respons pertama","Respons terakhir"
+"Math","demo","4284512e-d0f3-46be-b096-e282d047b5aa","2 × 4","8","1","7","7"
+"Family","SIMULASI / DEMONSTRATION DATA"
+"Family","Demo Éka, ""Arum"""
+"Family","3A · Semua tanggal · Asia/Jakarta"
+"Family","Sesi selesai dalam periode ini: 1 · Berjalan: 0"
+"Family","Yang sudah terlihat"
+"Family","Perkalian · kelas 3 · level 2 · Evaluasi — 14 dari 17 soal yang dijawab benar pada upaya pertama tanpa bantuan."
+"Family","Fokus pendampingan"
+"Family","Perkalian · kelas 3 · level 2 · Evaluasi — 3 dari 17 respons pertama perlu diperbaiki."
+"Family","Contoh dari sesi 5 Nov 2026, 08.00 · Evaluasi"
+"Family","2 × 4"
+"Family","Jawaban pertama · 7"
+"Family","Belum diuji melalui evaluasi pada periode ini — Penjumlahan, Pengurangan, Pembagian, Campuran."
+"Family","Rencana latihan berikutnya"
+"Family","Bahas satu contoh perkalian · kelas 3 · level 2 · Evaluasi bersama, lalu minta siswa mencoba satu soal sejenis sendiri (14 dari 17 respons pertama benar)."
+"Family","Tanggal tinjauan · Belum ditetapkan bersama guru."
+"Contexts","Kelas","Level","Operasi","Mode","Respons pertama benar","Jumlah respons pertama","Dengan petunjuk","Soal","Benar","Salah","Dilewati","Kosong","Belum dilihat","Skor (%)","Akurasi (%)","Ditanggapi (%)"
+"Contexts",3,2,"Perkalian","Evaluasi",14,17,0,20,14,3,2,1,0,70,82.3529411764706,95

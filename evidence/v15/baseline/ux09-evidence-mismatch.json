@@ -1,0 +1,46 @@
+{
+  "kind": "packaged evidence inspection; not a fresh browser test",
+  "register_file": "REGISTER_AC_1.4.csv",
+  "register_line": 29,
+  "row": {
+    "namespace_id": "AC:UX-09",
+    "id": "UX-09",
+    "prioritas": "WAJIB",
+    "fase": "WAJIB",
+    "lingkup": "Siswa",
+    "persyaratan": "Kontrol inti dapat dicapai dengan keyboard sistem",
+    "cara_uji": "Ponsel fisik portrait/landscape",
+    "bukti_lulus": "Input/OKE/Lanjut terlihat; tidak ada saling tutup",
+    "status_audit_awal": "BELUM_DIJALANKAN",
+    "implementasi": "Seluruh alur dapat dijalankan dengan keyboard; peta berupa daftar dengan tombol aksi",
+    "metode_uji": "journey-browser-chromium [keyboard-reaches-map]; v12-keyboard",
+    "lingkungan": "Linux x86_64 container; Node v22.23.5; Python 3.13.18; Google Chrome for Testing 153.0.8010.12 (headless, Playwright 1.63.0); no physical devices, no screen readers, no public domain",
+    "hasil_aktual": "PASS",
+    "evidence_path": "evidence/v14/qa/journey-browser-chromium/journey-browser.json | evidence/v14/qa/journey-browser-chromium/log.txt | evidence/v14/qa/v12-keyboard/keyboard.json | evidence/v14/qa/v12-keyboard/log.txt",
+    "build_hash": "137cc1a9b76ed428 / dist 4b4948fcbe986c69",
+    "blocker": ""
+  },
+  "mapped_test_definition": {
+    "file": "tests/qa/criteria-1.4.json",
+    "lines": [
+      392,
+      403
+    ]
+  },
+  "historical_receipt": {
+    "file": "evidence/v14/qa/journey-browser-chromium/journey-browser.json",
+    "scope": "Adventure flow in Chromium (Playwright, headless; harness context bypasses CSP only so Playwright can poll the page — CSP itself is verified by the 1.3 header suites)",
+    "runtime": {
+      "browser": "chromium",
+      "executable": "/usr/bin/google-chrome"
+    },
+    "started": "2026-11-28T04:20:25.516543+00:00",
+    "finished": "2026-11-28T04:20:43.794504+00:00",
+    "keyboard_check": {
+      "id": "keyboard-reaches-map",
+      "status": "PASS",
+      "expected": "Tab reaches a map node action with visible focus",
+      "actual": "Lanjutkan · Penjumlahan · Pasangan bilangan sampai 5"
+    }
+  }
+}

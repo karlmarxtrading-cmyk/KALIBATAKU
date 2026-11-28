@@ -1,0 +1,111 @@
+{
+  "status": "REPRODUCED_IN_ALL_FIVE_FORMATS",
+  "meaning": "Semantically equivalent accepted timestamps produce different report contents; this is a reporting defect, not an encoder discrepancy.",
+  "readers": {
+    "json_csv_xml": "Python stdlib",
+    "pdf": "PyMuPDF 1.26.6"
+  },
+  "scope": "Output semantics only; this is not evidence of physical Word/Excel rendering or assistive-technology behavior.",
+  "results": [
+    {
+      "representation": "utc",
+      "format": "json",
+      "file": "utc.json",
+      "sha256": "5995477b23b813707d33ec932314f5208362ecd723d8a640cc8ad957f3f60435",
+      "completed": 4,
+      "assigned": 32,
+      "correct": 32,
+      "session_rows": 4,
+      "check": "PASS: artifact contains the snapshot values"
+    },
+    {
+      "representation": "utc",
+      "format": "csv",
+      "file": "utc.csv",
+      "sha256": "5ae6b6b5523679199aca76d8bf841ae6618fe449923bc1d73a101b5677760ddd",
+      "assigned": 32,
+      "correct": 32,
+      "session_rows": 4,
+      "check": "PASS: artifact contains the snapshot values"
+    },
+    {
+      "representation": "utc",
+      "format": "xlsx",
+      "file": "utc.xlsx",
+      "sha256": "f38b8c63bfbf11c08817aaef64932952702c505224bca0cc3ea5670b3695ceaf",
+      "assigned": 32,
+      "correct": 32,
+      "check": "PASS: artifact contains the snapshot values"
+    },
+    {
+      "representation": "utc",
+      "format": "docx",
+      "file": "utc.docx",
+      "sha256": "5b2aca30fead149978c42c397f77d06251de3788dd0ba52d990c5a046f316c80",
+      "completed": 4,
+      "missions_in_period": 3,
+      "independent_answers_empty": false,
+      "check": "PASS: artifact contains the snapshot values"
+    },
+    {
+      "representation": "utc",
+      "format": "pdf",
+      "file": "utc.pdf",
+      "sha256": "e056cea7107ad0d85fa6e4a2999b2d6298c2bbe8a4535de487b6b55de4e1db33",
+      "completed": 4,
+      "missions_in_period": 3,
+      "independent_answers_empty": false,
+      "check": "PASS: artifact contains the snapshot values"
+    },
+    {
+      "representation": "offset",
+      "format": "json",
+      "file": "offset.json",
+      "sha256": "b9425e0b9780629dedea228677a2964e2799c238da17e52cfd96cd3a96eafb53",
+      "completed": 0,
+      "assigned": 0,
+      "correct": 0,
+      "session_rows": 0,
+      "check": "PASS: artifact contains the snapshot values"
+    },
+    {
+      "representation": "offset",
+      "format": "csv",
+      "file": "offset.csv",
+      "sha256": "f98e877f2c000919b5cb0533302cb5458bc4d7f863aa6fa6632975d092932411",
+      "assigned": 0,
+      "correct": 0,
+      "session_rows": 0,
+      "check": "PASS: artifact contains the snapshot values"
+    },
+    {
+      "representation": "offset",
+      "format": "xlsx",
+      "file": "offset.xlsx",
+      "sha256": "8564ea995146c5ccde9a2ac9a9bfb05618c48bf4dfe1d9f0401192836dbb174f",
+      "assigned": 0,
+      "correct": 0,
+      "check": "PASS: artifact contains the snapshot values"
+    },
+    {
+      "representation": "offset",
+      "format": "docx",
+      "file": "offset.docx",
+      "sha256": "2f3b2924dfc29af1bd804663e7d3fb7d7097675b7f6934286062b379dad3e90e",
+      "completed": 0,
+      "missions_in_period": 0,
+      "independent_answers_empty": true,
+      "check": "PASS: artifact contains the snapshot values"
+    },
+    {
+      "representation": "offset",
+      "format": "pdf",
+      "file": "offset.pdf",
+      "sha256": "10dc15a5372c683bbf33461049c198995f2053c2f6dbc4f1c582f3a27b2e4dba",
+      "completed": 0,
+      "missions_in_period": 0,
+      "independent_answers_empty": true,
+      "check": "PASS: artifact contains the snapshot values"
+    }
+  ]
+}

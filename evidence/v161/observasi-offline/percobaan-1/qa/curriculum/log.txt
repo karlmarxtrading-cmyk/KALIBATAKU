@@ -1,0 +1,385 @@
++ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 qa/source_audit_verifier.py
+{
+  "status": "PASS",
+  "scope": "source_curriculum_examples_and_known_errata_only_not_production_bank",
+  "registry": "/workspace/scratch/94a2cb03b99b/k161/qwork/kalibataku-qa-egqqa8ab/spec/00_SUMBER/KALIBATAKU_CURRICULUM_REGISTRY_v1.json",
+  "sha256": "3f4df37542b5a7570e405483001810013365f6641bb8ebb0c24359d94ff01012",
+  "matches_original_source_bytes": true,
+  "curriculum_version": "1.0.0-draft.1",
+  "audit_profile": "original_four_expected_findings",
+  "profile_selected_by": "curriculum_version",
+  "method": "Independent recursive-descent expression parser, Fraction exact arithmetic, whitelist AST evaluator; no eval.",
+  "counts": {
+    "slots": 300,
+    "active": 281,
+    "package_target_ceiling": 4604,
+    "question_slot_target_ceiling": 177640,
+    "expression_checks": 281,
+    "exact_answers_passed": 281,
+    "ast_checks": 281,
+    "ast_checks_passed": 281,
+    "display_answer_checks": 281,
+    "display_answer_checks_passed": 281,
+    "inactive": 19
+  },
+  "active_by_grade": {
+    "1": 11,
+    "2": 20,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 25,
+    "10": 25,
+    "11": 25,
+    "12": 25
+  },
+  "findings": [
+    {
+      "issue_id": "AC-001",
+      "competency_id": "arithmetic.addition.g02.l05",
+      "expression": "198+42",
+      "reason": "Requires operands 10–299, sum ≤500, and at least one multiple of 10 or distance 1."
+    },
+    {
+      "issue_id": "AC-002",
+      "competency_id": "arithmetic.mixed.g11.l03",
+      "expression": "144⁄175×245⁄216+1⁄3",
+      "observed": 2,
+      "required": [
+        3,
+        4
+      ]
+    },
+    {
+      "issue_id": "AC-003",
+      "competency_id": "arithmetic.division.g12.l01",
+      "expression": "249950÷25",
+      "reason": "Requires integer quotient magnitude 10–5000 and stated near-base/friendly divisor."
+    },
+    {
+      "issue_id": "AC-004",
+      "competency_id": "arithmetic.mixed.g12.l02",
+      "expression": "(1⁄64+0.015625)×3200",
+      "observed": 2,
+      "required": [
+        3,
+        4
+      ]
+    }
+  ],
+  "errors": [],
+  "small_pool_exact_counts": {
+    "G01-L01-ADD": 12,
+    "G01-L01-SUB": 21,
+    "G01-L02-ADD": 36,
+    "G01-L02-SUB": 66,
+    "G01-L03-ADD": 55,
+    "G01-L03-SUB": 55,
+    "G01-L04-ADD": 25,
+    "G01-L04-SUB": 45,
+    "G01-L05-ADD": 115,
+    "G01-L05-SUB": 955,
+    "G01-L05-MIX": 405,
+    "G02-L03-MUL": 30,
+    "G02-L04-MUL": 36,
+    "G02-L05-MUL": 45,
+    "G03-L01-MUL": 66
+  },
+  "pool_count_convention": "Finite source domains; ADD/MUL operand swaps canonicalized; ordered SUB; fraction literals are values, not extra DIV nodes.",
+  "limitations": [
+    "Editorial constraints for all 281 cells are not fully executable here.",
+    "Only the four documented source conflicts and stated generic mathematical/structural checks are asserted.",
+    "The future generated bank, website, UX, LMS, academic pilot and production readiness are not tested by this script."
+  ]
+}
++ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 qa/source_audit_verifier.py --registry curriculum/KALIBATAKU_CURRICULUM_REGISTRY_v1_0_DRAFT2.json --patched
+{
+  "status": "PASS",
+  "scope": "source_curriculum_examples_and_known_errata_only_not_production_bank",
+  "registry": "/workspace/scratch/94a2cb03b99b/k161/qwork/kalibataku-qa-egqqa8ab/spec/curriculum/KALIBATAKU_CURRICULUM_REGISTRY_v1_0_DRAFT2.json",
+  "sha256": "e12014971bded91fc35a52260a0c54c4ef5c546c78fad573f79c826fffb0c37e",
+  "matches_original_source_bytes": false,
+  "curriculum_version": "1.0.0-draft.2",
+  "audit_profile": "patched_zero_known_findings",
+  "profile_selected_by": "--patched",
+  "method": "Independent recursive-descent expression parser, Fraction exact arithmetic, whitelist AST evaluator; no eval.",
+  "counts": {
+    "slots": 300,
+    "active": 281,
+    "package_target_ceiling": 4604,
+    "question_slot_target_ceiling": 177640,
+    "expression_checks": 281,
+    "exact_answers_passed": 281,
+    "ast_checks": 281,
+    "ast_checks_passed": 281,
+    "display_answer_checks": 281,
+    "display_answer_checks_passed": 281,
+    "inactive": 19
+  },
+  "active_by_grade": {
+    "1": 11,
+    "2": 20,
+    "3": 25,
+    "4": 25,
+    "5": 25,
+    "6": 25,
+    "7": 25,
+    "8": 25,
+    "9": 25,
+    "10": 25,
+    "11": 25,
+    "12": 25
+  },
+  "findings": [],
+  "errors": [],
+  "small_pool_exact_counts": {
+    "G01-L01-ADD": 12,
+    "G01-L01-SUB": 21,
+    "G01-L02-ADD": 36,
+    "G01-L02-SUB": 66,
+    "G01-L03-ADD": 55,
+    "G01-L03-SUB": 55,
+    "G01-L04-ADD": 25,
+    "G01-L04-SUB": 45,
+    "G01-L05-ADD": 115,
+    "G01-L05-SUB": 955,
+    "G01-L05-MIX": 405,
+    "G02-L03-MUL": 30,
+    "G02-L04-MUL": 36,
+    "G02-L05-MUL": 45,
+    "G03-L01-MUL": 66
+  },
+  "pool_count_convention": "Finite source domains; ADD/MUL operand swaps canonicalized; ordered SUB; fraction literals are values, not extra DIV nodes.",
+  "limitations": [
+    "Editorial constraints for all 281 cells are not fully executable here.",
+    "Only the four documented source conflicts and stated generic mathematical/structural checks are asserted.",
+    "The future generated bank, website, UX, LMS, academic pilot and production readiness are not tested by this script."
+  ]
+}
++ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 qa/verify_handoff.py
+{
+  "status": "PASS",
+  "scope": "specification_handoff_only_not_website_or_production_bank",
+  "checks": [
+    {
+      "check": "all_json_parse_without_duplicate_keys",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "original_source_bytes_preserved",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "original_source_audit_with_known_findings",
+      "status": "PASS",
+      "detail": {
+        "exact_answers": 281,
+        "known_findings": 4,
+        "scope": "source_curriculum_examples_and_known_errata_only_not_production_bank"
+      }
+    },
+    {
+      "check": "patched_source_audit",
+      "status": "PASS",
+      "detail": {
+        "exact_answers": 281,
+        "known_findings": 0,
+        "scope": "source_curriculum_examples_and_known_errata_only_not_production_bank"
+      }
+    },
+    {
+      "check": "competency_plan_300_cells_281_active_19_inactive",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "package_plan_4604_targets_177640_slots",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "planned_packages_have_unique_ids",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "every_planned_active_cell_has_correct_quota_and_two_assessment_forms",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "plans_not_misrepresented_as_runtime_bank",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "68_unique_requirements",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "90_contiguous_test_cases_all_not_run",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "requirements_resolve_docs_and_test_ids",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "27_decisions_resolve_references",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "test_matrix_matches_document",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "core_schema_meta_validation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "four_contract_examples_structurally_valid",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "example_math_solution_fingerprint_event_hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "mock_receipt_matches_event_and_is_unverified",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "esm_example_is_data_only_same_as_json",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_zero_denominator",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_missing_language",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_unknown_operation",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_mock_verified",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_schema_demo_report_verified",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_semantic_package_count",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_semantic_mutated_event_hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_semantic_wrong_solution_step",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "46_answer_fixture_values_and_grammar_consistent",
+      "status": "PASS",
+      "detail": "Validates fixtures only; does not test a future JavaScript parser or its error-code precedence."
+    },
+    {
+      "check": "analytics_numeric_fixture_arithmetic",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "mastery_policy_has_cycle_and_explicit_eligibility",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "ui_artifacts_match_ux_source_hash",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "18_theme_contrast_pairs_recalculated",
+      "status": "PASS",
+      "detail": {
+        "minimum_text_ratio": 4.85152728
+      }
+    },
+    {
+      "check": "23_bilingual_microcopy_pairs",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "18_screens_present",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "release_status_schema_and_template",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_release_pass_without_evidence",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "negative_release_verdict_without_release_id",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "main_markdown_fences_balanced",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "manifest_covers_all_files",
+      "status": "PASS",
+      "detail": null
+    },
+    {
+      "check": "manifest_file_hashes",
+      "status": "PASS",
+      "detail": null
+    }
+  ],
+  "errors": [],
+  "future_website_tests_status": "NOT_RUN",
+  "limitations": [
+    "All 281 editorial rule predicates are not implemented here.",
+    "No website, mass question bank, real LMS, deployment or pedagogical pilot is certified by this check."
+  ]
+}
+281 active recipes and prerequisite graph verified.

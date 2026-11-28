@@ -1,0 +1,27 @@
+{
+  "name": "kalibataku-mental-math",
+  "version": "1.6.2",
+  "private": true,
+  "type": "module",
+  "description": "Latihan berhitung mental bilingual, kelas 1–12",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "curriculum:check": "python3 tools/project.py curriculum",
+    "bank:build": "python3 tools/project.py bank",
+    "bank:verify": "python3 tests/bank/verify_bank.py && node tools/audit-bank.mjs",
+    "check": "python3 tools/project.py check",
+    "test": "python3 tools/project.py test",
+    "test:e2e": "python3 tests/integration/browser.py",
+    "build": "python3 tools/project.py build",
+    "preview": "python3 tools/preview.py",
+    "release:verify": "python3 tools/project.py verify",
+    "qa:production": "python3 tools/qa_gate.py",
+    "qa:assess": "python3 tools/auto_release.py --write",
+    "qa:faults": "python3 tests/qa/fault_injection.py --browser",
+    "release:preflight": "python3 tools/release_pack.py preflight",
+    "release:roundtrip": "python3 tools/package_check.py",
+    "release:pack": "python3 tools/release_pack.py seal"
+  }
+}

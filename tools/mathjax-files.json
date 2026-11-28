@@ -1,0 +1,10 @@
+{
+  "mml-svg.js": "9770449680b57e66b5e398086b34e57afdea1dc4a27b6ad9267e21ad3c6ae51a",
+  "package-info.json": "440cfcbfb317456a774bc7186e857a1f135954105e32a4312d6cdd555f3a4257",
+  "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "sre/speech-worker.js": "80bd663f2d48505291dcc256728a4fe3be1be4b73d3675b905bd51b1c431745b",
+  "newcm/package-info.json": "b6fd3b04fb134b062950f1af6eb9f0fffc08e48c044f109f25775afa8ffc87ed",
+  "sre/mathmaps/base.json": "72558700556d997a95e9281044e330eba9a472dda43642a9b5cc0483294d875f",
+  "sre/mathmaps/nemeth.json": "16f30ad5bc7db02bbcce4623b108626f1a73d65660799891f23efd76dcaa333e",
+  "sre/mathmaps/en.json": "5e60d1843351966a159cc409eb73e9abc7c7e375a3311c40d35843d70fee79fb"
+}
